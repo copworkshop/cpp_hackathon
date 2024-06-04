@@ -11,4 +11,7 @@ python3 -m venv venv
 pip3 install gcovr "conan==1.64.1"
 conan config install ./conan
 
-echo "Use 'source venv/bin/activate' to activate the virtual environment."
+printf "
+Use 'source venv/bin/activate' to activate the virtual environment.
+Press Enter to proceed..."
+read -r _unused_variable
