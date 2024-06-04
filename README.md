@@ -14,15 +14,13 @@ You were told that application was poorly maintained, so you were given some tim
 3.  Enable WSL2 and install Ubuntu machine. [Instructions](https://docs.microsoft.com/en-us/windows/wsl/install). 
     TL;DR:
     ```powershell
-    1. 
+
     dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-    2.
+
     dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-    3.
-    wsl --set-default-version 2
-    4. 
+
     wsl --install -d Ubuntu
-    5. Restart machine
+
     shutdown /r /t 0
     ```
     Wait for the machine to restart.
@@ -32,7 +30,7 @@ You were told that application was poorly maintained, so you were given some tim
     git clone git@github.com:copworkshop/cpp_hackathon.git
     cd cpp_hackathon
     ```
-6.  Run `./bootstrap.sh' script to install necessary tools and dependencies.
+6.  Run `./bootstrap.sh` script to install necessary tools and dependencies.
     ```
     NOTE: You may need to run `chmod +x *.sh` to make scripts executable.
     ```
@@ -43,14 +41,11 @@ You were told that application was poorly maintained, so you were given some tim
     ```
 8.  Run `./prepare.sh` script to prepare necessary conan packages.
 
-#### If you are not using VSCode (not recomended):
-9.  Use `./build.sh` or direct cmake commands to build and run tests.
-10. Configure your IDE to use CoPilot.
-#### If you are using VSCode:
+#### If you are using VSCode (Recomended approach):
 9. Open repository in VSCode from WSL. 
-``` 
-code .
-```
+    ``` 
+    code .
+    ```
 10. Set up IDE (VSCode preferred) to work with WSL environment. [Instructions](https://code.visualstudio.com/docs/cpp/config-wsl)
     TL;DR:
     ```
@@ -65,13 +60,18 @@ code .
     1. Install CoPilot extension in VSCode.
     2. Sign-in to your lab Github account.
     ```
+#### Alternative: If you are not using VSCode:
+9.  Use `./build.sh` or direct cmake commands to build and run tests.
+10. Configure your IDE to use CoPilot.
 
 
 ## Workflow:
 
 ### Working on this repository:
 1. Use `./build.sh` script to build and run tests for local verification.
+
 OR
+
 2. Use VSCode `Ctrl+Shift+B` to build and run tests.
 
 
