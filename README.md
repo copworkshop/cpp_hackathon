@@ -30,7 +30,7 @@ You were told that application was poorly maintained, so you were given some tim
     git clone git@github.com:copworkshop/cpp_hackathon.git
     cd cpp_hackathon
     ```
-6.  Run `./bootstrap.sh` script to install necessary tools and dependencies.
+6.  Run `sudo ./bootstrap.sh` script to install necessary tools and dependencies.
     ```
     NOTE: You may need to run `chmod +x *.sh` to make scripts executable.
     ```
