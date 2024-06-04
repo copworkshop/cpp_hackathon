@@ -32,7 +32,7 @@ You were told that application was poorly maintained, so you were given some tim
     git clone git@github.com:copworkshop/cpp_hackathon.git
     cd cpp_hackathon
     ```
-6.  Run `./bootstrap.sh' script to install necessary tools and dependencies.
+6.  Run `./bootstrap.sh` script to install necessary tools and dependencies.
     ```
     NOTE: You may need to run `chmod +x *.sh` to make scripts executable.
     ```
@@ -48,9 +48,9 @@ You were told that application was poorly maintained, so you were given some tim
 10. Configure your IDE to use CoPilot.
 #### If you are using VSCode:
 9. Open repository in VSCode from WSL. 
-``` 
-code .
-```
+    ``` 
+    code .
+    ```
 10. Set up IDE (VSCode preferred) to work with WSL environment. [Instructions](https://code.visualstudio.com/docs/cpp/config-wsl)
     TL;DR:
     ```
@@ -71,7 +71,9 @@ code .
 
 ### Working on this repository:
 1. Use `./build.sh` script to build and run tests for local verification.
+
 OR
+
 2. Use VSCode `Ctrl+Shift+B` to build and run tests.
 
 
