@@ -43,10 +43,7 @@ You were told that application was poorly maintained, so you were given some tim
     ```
 8.  Run `./prepare.sh` script to prepare necessary conan packages.
 
-#### If you are not using VSCode (not recomended):
-9.  Use `./build.sh` or direct cmake commands to build and run tests.
-10. Configure your IDE to use CoPilot.
-#### If you are using VSCode:
+#### If you are using VSCode (Recomended approach):
 9. Open repository in VSCode from WSL. 
     ``` 
     code .
@@ -65,6 +62,9 @@ You were told that application was poorly maintained, so you were given some tim
     1. Install CoPilot extension in VSCode.
     2. Sign-in to your lab Github account.
     ```
+#### Alternative: If you are not using VSCode:
+9.  Use `./build.sh` or direct cmake commands to build and run tests.
+10. Configure your IDE to use CoPilot.
 
 
 ## Workflow:
