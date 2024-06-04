@@ -14,15 +14,13 @@ You were told that application was poorly maintained, so you were given some tim
 3.  Enable WSL2 and install Ubuntu machine. [Instructions](https://docs.microsoft.com/en-us/windows/wsl/install). 
     TL;DR:
     ```powershell
-    1. 
+
     dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-    2.
+
     dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-    3.
-    wsl --set-default-version 2
-    4. 
+
     wsl --install -d Ubuntu
-    5. Restart machine
+
     shutdown /r /t 0
     ```
     Wait for the machine to restart.
