@@ -39,6 +39,7 @@ endif()
 
 add_subdirectory(PWCommon)
 add_subdirectory(PWServer)
+add_subdirectory(PWGRPCService)
 
 if(ENABLE_TESTS)
     enable_testing()
