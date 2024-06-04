@@ -4,6 +4,10 @@ set -e
 set -x
 
 conan config install ./conan
+if ! [ -f ~/.conan/profiles/default ]; then
+    conan profile new default --detect
+fi
+conan profile update settings.compiler.libcxx=libstdc++11 default
 pip install gcovr
 
 THIS_DIR=$(pwd)

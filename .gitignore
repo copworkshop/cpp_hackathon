@@ -1,3 +1,6 @@
 */Debug/*
 */Release/*
 /build
+venv
+Lib
+Scripts
