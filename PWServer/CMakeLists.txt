@@ -46,6 +46,10 @@ install(TARGETS PWServerExe
     RUNTIME DESTINATION .
 )
 
+install(TARGETS PWInventoryCWrapper
+    LIBRARY DESTINATION .
+)
+
 install(FILES inventory.json
     db.json
     DESTINATION .
