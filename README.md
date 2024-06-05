@@ -24,22 +24,30 @@ You were told that application was poorly maintained, so you were given some tim
     shutdown /r /t 0
     ```
     Wait for the machine to restart.
-4.	Generate ssh key and add it to your Github account. [Instructions](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
-5.  Clone hackathon repository to your wsl environment using ssh:
+
+```
+IMPORTANT: From now on:
+* all actions on github account shall be done using github credentials associated with lab 
+  (the same credentials you will use to sign in to CoPilot in later steps)
+* Unless explicitly stated, all setup commands shall be executed via WSL bash terminal.
+```
+    
+5.	Generate ssh key and add it to Github account associated to the lab. [Instructions](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+6.  Clone hackathon repository to your wsl environment using ssh:
     ```
     git clone git@github.com:copworkshop/cpp_hackathon.git
     cd cpp_hackathon
     ```
-6.  Run `sudo ./bootstrap.sh` script to install necessary tools and dependencies.
+7.  Run `sudo ./bootstrap.sh` script to install necessary tools and dependencies.
     ```
     NOTE: You may need to run `chmod +x *.sh` to make scripts executable.
     ```
 
-7.  Activate Python Virtual Env using `source venv/bin/activate` command.
+8.  Activate Python Virtual Env using `source venv/bin/activate` command.
     ```
     NOTE: You must activate the virtual environment each time you open a new terminal.
     ```
-8.  Run `./prepare.sh` script to prepare necessary conan packages.
+9.  Run `./prepare.sh` script to prepare necessary conan packages.
 
 #### If you are using VSCode (Recomended approach):
 9. Open repository in VSCode from WSL. 
