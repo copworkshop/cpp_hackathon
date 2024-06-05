@@ -1,0 +1,6 @@
+{
+  "connectionString": "tcp:testccphack050624.mysql.database.azure.com",
+  "user": "azureuser",
+  "password": "hmix52FPM*oY",
+  "database": "testccphack050624"
+}

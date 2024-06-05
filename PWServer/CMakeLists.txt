@@ -1,6 +1,6 @@
 
 find_package(nlohmann_json REQUIRED)
-find_package(MYSQL REQUIRED)
+find_package(MySQL REQUIRED)
 
 add_library(PW_Server)
 add_library(PW::SERVER ALIAS PW_Server)
