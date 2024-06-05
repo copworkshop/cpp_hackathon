@@ -36,3 +36,5 @@ protected:
 
 	std::vector<InventoryItem> items;
 };
+
+

@@ -16,6 +16,7 @@ option(ENABLE_TESTS "Enable tests" ON)
 option(ENABLE_STATIC_ANALYSIS "Enables static analysis. Requires CPPCheck" OFF)
 option(ENABLE_CODE_COVERAGE "Enables code coverage." ON)
 option(CI_CD_COVERAGE "Checker for CI" OFF)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 if(CMAKE_VERSION VERSION_LESS "3.1")
     if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")

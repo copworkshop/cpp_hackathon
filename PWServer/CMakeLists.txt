@@ -26,7 +26,10 @@ target_include_directories(PW_Server
     PUBLIC
         ${CMAKE_CURRENT_LIST_DIR}
 )
+add_library(PWInventoryCWrapper SHARED PWInventoryCWrapper.cpp)
 
+target_compile_features(PWInventoryCWrapper PRIVATE cxx_std_14)
+target_link_libraries(PWInventoryCWrapper PRIVATE PW::SERVER)
 add_executable(PWServerExe)
 
 target_sources(PWServerExe
