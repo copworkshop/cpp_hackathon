@@ -1,5 +1,6 @@
 
 find_package(nlohmann_json REQUIRED)
+find_package(MYSQL REQUIRED)
 
 add_library(PW_Server)
 add_library(PW::SERVER ALIAS PW_Server)
@@ -11,12 +12,14 @@ target_sources(PW_Server
         PWServer.cpp
         PWServer.h
         inventory.json
+        db.json
 )
 
 target_link_libraries(PW_Server
     PUBLIC
         PW::COMMON
         nlohmann_json::nlohmann_json
+        MySQL::MySQL
 )
 
 target_include_directories(PW_Server 
@@ -41,5 +44,6 @@ install(TARGETS PWServerExe
 )
 
 install(FILES inventory.json
+    db.json
     DESTINATION .
 )

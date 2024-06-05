@@ -19,7 +19,7 @@ public:
 class PWInventory final  : public IPWInventory {
 
 public:
-	PWInventory(const std::vector<InventoryItem>& storage) : items(storage) {}
+	PWInventory(const std::vector<InventoryItem>& storage) : items(storage),_useSQL(false) {}
 	PWInventory() = default;
 	PWInventory(const PWInventory&) = delete;
 	PWInventory& operator=(const PWInventory &) = delete;
@@ -29,7 +29,10 @@ public:
 	void UpdateQuality() override;
 	InventoryItem& operator[](int index) override;
 	int Count() const override;
-
+	void useSQL(bool use) { _useSQL = use; }
 protected:
+
+	bool _useSQL;
+
 	std::vector<InventoryItem> items;
 };

@@ -30,6 +30,8 @@ pushd ${INSTALL_DIR}
 
 echo ### Test run ###
 ./PWServerExe /infile ./inventory.json /outfile ./inventory.json
+./PWServerExe /db ./db.json /outfile ./db_out.json
+
 echo ### Test run finished ###
 
 popd
