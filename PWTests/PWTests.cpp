@@ -1,5 +1,6 @@
 #include <gtest/gtest.h>
 #include <PWInventory.h>
+#include <PWServer.h>
 
 #include <fstream>
 
@@ -8,23 +9,11 @@
 // 	PWInventory inventory{ { InventoryItem{ "Foo", 0 , 0 } } };
 // 	EXPECT_EQ(inventory[0].name, "Bar");
 // }
-TEST(PWInventory, FooGood) {
-	PWInventory inventory{ { InventoryItem{ "Foo", 0 , 0 } } };
-	EXPECT_EQ(inventory[0].name, "Foo");
-}
 
-TEST(PWInventory, LoadFileNotExist) {
-	PWInventory inventory;
-	std::string filename = "nonexistent_file.txt";
-	EXPECT_THROW(inventory.Load(filename), PWException);
-}
-
-TEST(PWInventory, LoadFileExist) {
-	PWInventory inventory;
-	std::string filename = "existing_file.json";
-
+void CreateExampleFile(const std::string & filename)
+{
 	// Generate dummy JSON file
-	std::ofstream file("existing_file.json");
+	std::ofstream file(filename);
 	file << R"(
 	{
 		"inventory": [
@@ -47,6 +36,24 @@ TEST(PWInventory, LoadFileExist) {
 	}
 	)";
 	file.close();
+}
+
+TEST(PWInventory, FooGood) {
+	PWInventory inventory{ { InventoryItem{ "Foo", 0 , 0 } } };
+	EXPECT_EQ(inventory[0].name, "Foo");
+}
+
+TEST(PWInventory, LoadFileNotExist) {
+	PWInventory inventory;
+	std::string filename = "nonexistent_file.txt";
+	EXPECT_THROW(inventory.Load(filename), PWException);
+}
+
+TEST(PWInventory, LoadFileExist) {
+	PWInventory inventory;
+	std::string filename = "existing_file.json";
+	CreateExampleFile(filename);
+
 	EXPECT_NO_THROW(inventory.Load(filename));
 }
 
@@ -156,4 +163,13 @@ TEST(PWInventory, UpdateQualityPolkaDotBegonia) {
 	inventory.UpdateQuality();
 	EXPECT_EQ(inventory[0].sellBy, 9);
 	EXPECT_EQ(inventory[0].value, 21);
+}
+
+TEST(PWServer, StartNoThrow) {
+	std::string invfile = "existing_file.json";
+	std::string outfile = "outfile_file.json";
+	PWServer server(invfile, outfile);
+	CreateExampleFile("existing_file.json");
+
+	EXPECT_NO_THROW(server.Start());
 }
