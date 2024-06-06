@@ -32,6 +32,4 @@ public:
 
 protected:
 	std::vector<InventoryItem> items;
-	void UpdateQualityForNormalItem(InventoryItem& item);
-	void UpdateQualityForSpecialItem(InventoryItem& item);
 };
