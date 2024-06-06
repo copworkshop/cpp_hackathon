@@ -70,3 +70,42 @@ TEST(PWInventory, OperatorNoThrow) {
 	EXPECT_NO_THROW(inventory[1]);
 	EXPECT_NO_THROW(inventory[2]);
 }
+
+TEST(PWInventory, SaveFileCannotOpen) {
+	PWInventory inventory{ { InventoryItem{ "Item1", 0 , 0 }, InventoryItem{ "Item2", 0 , 0 }, InventoryItem{ "Item3", 0 , 0 } } };
+	std::string filename{};
+	EXPECT_THROW(inventory.Save(filename), PWException);
+}
+
+TEST(PWInventory, SaveFileSuccess) {
+	PWInventory inventory{ { InventoryItem{ "Item1", 0 , 0 }, InventoryItem{ "Item2", 0 , 0 }, InventoryItem{ "Item3", 0 , 0 } } };
+	std::string filename = "output_file.json";
+	EXPECT_NO_THROW(inventory.Save(filename));
+
+	// Verify that the file was created and contains the expected content
+	std::ifstream file(filename);
+	std::string fileContent((std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>());
+	file.close();
+
+	std::string expectedContent = R"({
+  "inventory": [
+    {
+      "name": "Item1",
+      "sellby": 0,
+      "value": 0
+    },
+    {
+      "name": "Item2",
+      "sellby": 0,
+      "value": 0
+    },
+    {
+      "name": "Item3",
+      "sellby": 0,
+      "value": 0
+    }
+  ]
+})";
+
+	EXPECT_EQ(fileContent, expectedContent);
+}
