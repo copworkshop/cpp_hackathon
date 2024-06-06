@@ -1,0 +1,20 @@
+name: CI
+on:
+  push:
+    branches:
+      - team/middlewest
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Install Doxygen
+      run: sudo apt-get install doxygen graphviz
+    - name: Generate Doxygen
+      run: doxygen Doxyfile
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@4.1.5
+      with:
+        branch: gh-pages
+        folder: docs/html
