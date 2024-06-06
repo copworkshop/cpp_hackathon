@@ -120,6 +120,15 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPWInventory.html#a617d0f35516bc26a04f0a558a97f05f0">UpdateQuality</a> () override</td></tr>
 <tr class="memdesc:a617d0f35516bc26a04f0a558a97f05f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the quality of all items in the inventory. <br /></td></tr>
 <tr class="separator:a617d0f35516bc26a04f0a558a97f05f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add378b8f5e092465960b3649be0e4266"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPWInventory.html#add378b8f5e092465960b3649be0e4266">UpdateQualityForItem</a> (<a class="el" href="classInventoryItem.html">InventoryItem</a> &amp;item)</td></tr>
+<tr class="memdesc:add378b8f5e092465960b3649be0e4266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the quality of the specified item.  <a href="classPWInventory.html#add378b8f5e092465960b3649be0e4266">More...</a><br /></td></tr>
+<tr class="separator:add378b8f5e092465960b3649be0e4266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36cdb22b2b777c7798cbb16ab7f72763"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPWInventory.html#a36cdb22b2b777c7798cbb16ab7f72763">UpdateQualityForRegularItems</a> (<a class="el" href="classInventoryItem.html">InventoryItem</a> &amp;item)</td></tr>
+<tr class="memdesc:a36cdb22b2b777c7798cbb16ab7f72763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the quality of regular items in the inventory.  <a href="classPWInventory.html#a36cdb22b2b777c7798cbb16ab7f72763">More...</a><br /></td></tr>
+<tr class="separator:a36cdb22b2b777c7798cbb16ab7f72763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af89705445e0354a9accc474708474f76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPWInventory.html#af89705445e0354a9accc474708474f76">UpdateQualityForSpecialItems</a> (<a class="el" href="classInventoryItem.html">InventoryItem</a> &amp;item)</td></tr>
+<tr class="memdesc:af89705445e0354a9accc474708474f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the quality of special items in the inventory.  <a href="classPWInventory.html#af89705445e0354a9accc474708474f76">More...</a><br /></td></tr>
+<tr class="separator:af89705445e0354a9accc474708474f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d3a56a9dc625300ed60512c60a80ff9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInventoryItem.html">InventoryItem</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPWInventory.html#a5d3a56a9dc625300ed60512c60a80ff9">operator[]</a> (int index) override</td></tr>
 <tr class="memdesc:a5d3a56a9dc625300ed60512c60a80ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesses the item at the specified index.  <a href="classPWInventory.html#a5d3a56a9dc625300ed60512c60a80ff9">More...</a><br /></td></tr>
 <tr class="separator:a5d3a56a9dc625300ed60512c60a80ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -307,6 +316,84 @@ Protected Attributes</h2></td></tr>
 </dl>
 
 <p>Implements <a class="el" href="classIPWInventory.html">IPWInventory</a>.</p>
+
+</div>
+</div>
+<a id="add378b8f5e092465960b3649be0e4266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add378b8f5e092465960b3649be0e4266">&#9670;&nbsp;</a></span>UpdateQualityForItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PWInventory::UpdateQualityForItem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInventoryItem.html">InventoryItem</a> &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the quality of the specified item. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>The item to update the quality for. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a36cdb22b2b777c7798cbb16ab7f72763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36cdb22b2b777c7798cbb16ab7f72763">&#9670;&nbsp;</a></span>UpdateQualityForRegularItems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PWInventory::UpdateQualityForRegularItems </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInventoryItem.html">InventoryItem</a> &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the quality of regular items in the inventory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>The item to update the quality for. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af89705445e0354a9accc474708474f76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af89705445e0354a9accc474708474f76">&#9670;&nbsp;</a></span>UpdateQualityForSpecialItems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PWInventory::UpdateQualityForSpecialItems </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInventoryItem.html">InventoryItem</a> &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the quality of special items in the inventory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>The item to update the quality for. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
