@@ -1,0 +1,29 @@
+{
+  "inventory": [
+    {
+      "name": "Polka Dot Begonia",
+      "sellby": 5,
+      "value": 30
+    },
+    {
+      "name": "Gardening Workshop",
+      "sellby": 15,
+      "value": 20
+    },
+    {
+      "name": "White Monstera",
+      "sellby": 7,
+      "value": 80
+    },
+    {
+      "name": "Orchid",
+      "sellby": 10,
+      "value": 50
+    },
+    {
+      "name": "Cactus",
+      "sellby": 6,
+      "value": 10
+    }
+  ]
+}
