@@ -1,0 +1,35 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ team_ghc_ca ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: sudo apt-get install lcov
+
+    - name: Build
+      run: g++ -fprofile-arcs -ftest-coverage -o test PWTests.cpp
+
+    - name: Test
+      run: ./test
+
+    - name: Coverage
+      run: |
+        lcov --directory . --capture --output-file coverage.info
+        lcov --remove coverage.info '/usr/*' --output-file coverage.info
+        lcov --list coverage.info
+
+    - name: Upload coverage to GitHub Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: coverage
+        path: coverage.info
+        token: ${{ secrets.GH_TOKEN }}
