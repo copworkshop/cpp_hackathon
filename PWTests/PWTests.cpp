@@ -216,8 +216,8 @@ TEST(PWInventory, UpdateQuality_GardeningWorkshop_SellByBelow0_Value0) {
 	EXPECT_EQ(inventory[0].value, 0);
 }
 
-TEST(PWInventory, UpdateQuality_Polka_SellByBelow0_Value49) {
-	PWInventory inventory{ { InventoryItem{ "Polka Dot Begonia", -1, 49 } } };
+TEST(PWInventory, UpdateQuality_Polka_SellByBelow0_Value48) {
+	PWInventory inventory{ { InventoryItem{ "Polka Dot Begonia", -1, 48 } } };
 	inventory.UpdateQuality();
 	EXPECT_EQ(inventory[0].sellBy, -2);
 	EXPECT_EQ(inventory[0].value, 50);
