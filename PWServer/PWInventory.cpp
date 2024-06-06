@@ -3,12 +3,14 @@
 namespace {
 void updateValue(InventoryItem& item)
 {
-	item.value = std::min(item.value + 1, 50);
+	if (item.name == "Polka Dot Begonia") { item.value = std::min(item.value + 1, 50); return; }
 
 	if (item.name == "Gardening Workshop")
 	{
-		int increaseBy = item.sellBy < 11 ? (item.sellBy < 6 ? 3 : 2) : 1;
+		int increaseBy = item.sellBy < 11 ? item.sellBy < 6 ? 3 : 2 : 1;
 		item.value = std::min(item.value + increaseBy, 50);
+
+		return;
 	}
 
 	if (item.name == "White Monstera") return;
