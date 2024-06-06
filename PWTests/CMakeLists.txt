@@ -8,6 +8,7 @@ target_sources(test_project
     PRIVATE
         main.cpp
         PWTests.cpp
+        test_PWInventory.cpp
 )
 
 target_link_libraries(test_project
