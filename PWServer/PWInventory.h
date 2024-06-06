@@ -24,6 +24,11 @@ public:
 	PWInventory(const PWInventory&) = delete;
 	PWInventory& operator=(const PWInventory &) = delete;
 
+    void UpdateItemQuality(InventoryItem& item);
+    void UpdateRegularItemQuality(InventoryItem& item);
+    void UpdateSpecialItemQuality(InventoryItem& item);
+    void UpdateExpiredItemQuality(InventoryItem& item);
+
 	void Load(const std::string& file) override;
 	void Save(const std::string& file) override;
 	void UpdateQuality() override;

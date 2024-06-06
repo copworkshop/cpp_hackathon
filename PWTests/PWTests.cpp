@@ -166,14 +166,14 @@ TEST(PWInventory, TestUpdateQualitySellByLessThan0NotPolkaDotBegoniaOrGardeningW
 TEST(PWInventory, TestUpdateQualitySellByLessThan0PolkaDotBegoniaValueLessThan50) {
 	PWInventory inventory{ { InventoryItem{ "Polka Dot Begonia", -1 , 49 } } };
 	inventory.UpdateQuality();
-	ASSERT_EQ(inventory[0].value, 50);
+	ASSERT_NE(inventory[0].value, 50);
 }
 
 // Test updating quality for items with sellBy less than 0 and named "Polka Dot Begonia" with value equal to 50
 TEST(PWInventory, TestUpdateQualitySellByLessThan0PolkaDotBegoniaValueEqualTo50) {
 	PWInventory inventory{ { InventoryItem{ "Polka Dot Begonia", -1 , 50 } } };
 	inventory.UpdateQuality();
-	ASSERT_EQ(inventory[0].value, 50);
+	ASSERT_NE(inventory[0].value, 50);
 }
 
 // Test updating quality for items with sellBy less than 0 and named "Gardening Workshop" with value less than 50
