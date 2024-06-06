@@ -9,13 +9,22 @@
 // 	PWInventory inventory{ { InventoryItem{ "Foo", 0 , 0 } } };
 // 	EXPECT_EQ(inventory[0].name, "Bar");
 // }
+using namespace ::testing;
 TEST(PWInventory, FooGood) {
 	PWInventory inventory{ { InventoryItem{ "Foo", 0 , 0 } } };
 	EXPECT_EQ(inventory[0].name, "Foo");
 }
 
+TEST(PWInventory, LoadTestShouldThrowIfCantLoad) {
+	PWInventory inventory;
+	std::string filename = "non_existent_file.txt";
 
-using namespace ::testing;
+	// Expect Load to throw a std::exception when it fails to load from a non-existent file
+	EXPECT_THROW(inventory.Load(filename), std::exception);
+}
+
+
+
 TEST(PWServerTest, shouldThrowIfFileCouldntBeOpen)
 {
     // Arrange
