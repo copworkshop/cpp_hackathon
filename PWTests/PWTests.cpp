@@ -28,8 +28,8 @@ TEST(PWInventory, LoadShouldLoadSampleFile) {
 	std::string filename = "../../../PWServer/inventory.json";
 
 	inventory.Load(filename);
+	EXPECT_EQ(5, inventory.Count());
 }
-
 
 TEST(PWServerTest, shouldThrowIfFileCouldntBeOpen)
 {
