@@ -1,4 +1,6 @@
 #include "PWInventory.h"
+#include <iostream> // Make sure to include this at the top of your file
+
 
 void PWInventory::Save(const std::string& file)
 {
@@ -62,18 +64,30 @@ void PWInventory::UpdateQuality()
 {
 	for (size_t i = 0; i < items.size(); i++)
 	{
+
+		std::cout << "Processing item " << i << ": " << items[i].name << std::endl;
+        std::cout << "Initial value: " << items[i].value << ", sellBy: " << items[i].sellBy << std::endl;
+
 		if (items[i].name != "Polka Dot Begonia" && items[i].name != "Gardening Workshop")
 		{
+
 			if (items[i].value > 0)
 			{
+			std::cout << "Item value is greater than 0" << std::endl;
+
+
 				if (items[i].name != "White Monstera")
 				{
+					std::cout << "Item name is not 'White Monstera'" << std::endl;
+
 					items[i].value = items[i].value - 1;
 				}
 			}
 		}
 		else
 		{
+			            std::cout << "Item name is either 'Polka Dot Begonia' or 'Gardening Workshop'" << std::endl;
+
 			if (items[i].value < 50)
 			{
 				items[i].value = items[i].value + 1;
@@ -82,17 +96,27 @@ void PWInventory::UpdateQuality()
 				{
 					if (items[i].sellBy < 11)
 					{
+
+						    std::cout << "sellBy is less than 11" << std::endl;
+
 						if (items[i].value < 50)
 						{
 							items[i].value = items[i].value + 1;
+							        std::cout << "Incremented value: " << items[i].value << std::endl;
+
 						}
 					}
 
 					if (items[i].sellBy < 6)
 					{
+
+						    std::cout << "sellBy is less than 6" << std::endl;
+
 						if (items[i].value < 50)
 						{
 							items[i].value = items[i].value + 1;
+							        std::cout << "Incremented value: " << items[i].value << std::endl;
+
 						}
 					}
 				}
@@ -102,6 +126,8 @@ void PWInventory::UpdateQuality()
 		if (items[i].name != "White Monstera")
 		{
 			items[i].sellBy = items[i].sellBy - 1;
+			std::cout << "Decremented value: " << items[i].sellBy << std::endl;
+
 		}
 
 		if (items[i].sellBy < 0)
@@ -115,12 +141,16 @@ void PWInventory::UpdateQuality()
 						if (items[i].name != "White Monstera")
 						{
 							items[i].value = items[i].value - 1;
+							std::cout << "Decremented value: " << items[i].value << std::endl;
+
 						}
 					}
 				}
 				else
 				{
 					items[i].value = items[i].value - items[i].value;
+					std::cout << "Decremented value: " << items[i].value << std::endl;
+
 				}
 			}
 			else
@@ -128,6 +158,8 @@ void PWInventory::UpdateQuality()
 				if (items[i].value < 50)
 				{
 					items[i].value = items[i].value + 1;
+					std::cout << "Incremented value: " << items[i].value << std::endl;
+
 				}
 			}
 		}
