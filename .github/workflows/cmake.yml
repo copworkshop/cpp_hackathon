@@ -112,3 +112,14 @@ jobs:
       working-directory: ${{github.workspace}}/server
       run:
         python -m tornado.test.runtests tests
+    - name: Install Google Test
+    run: sudo apt-get install libgtest-dev && cd /usr/src/gtest && sudo cmake . && sudo make && sudo cp *.a /usr/lib
+
+    - name: Build and Test
+      run: |
+        mkdir build
+        cd build
+        cmake ..
+        make
+        ctest --output-on-failure
+    
