@@ -62,73 +62,50 @@ void PWInventory::UpdateQuality()
 {
 	for (size_t i = 0; i < items.size(); i++)
 	{
-		if (items[i].name != "Polka Dot Begonia" && items[i].name != "Gardening Workshop")
+		if (items[i].name == "Polka Dot Begonia" || items[i].name == "Gardening Workshop")
 		{
-			if (items[i].value > 0)
+			if (items[i].value < 50)
 			{
-				if (items[i].name != "White Monstera")
+				items[i].value++;
+				if (items[i].name == "Gardening Workshop")
 				{
-					items[i].value = items[i].value - 1;
+					if (items[i].sellBy < 11 && items[i].value < 50)
+					{
+						items[i].value++;
+					}
+					if (items[i].sellBy < 6 && items[i].value < 50)
+					{
+						items[i].value++;
+					}
 				}
 			}
 		}
 		else
 		{
-			if (items[i].value < 50)
+			if (items[i].value > 0 && items[i].name != "White Monstera")
 			{
-				items[i].value = items[i].value + 1;
-
-				if (items[i].name == "Gardening Workshop")
-				{
-					if (items[i].sellBy < 11)
-					{
-						if (items[i].value < 50)
-						{
-							items[i].value = items[i].value + 1;
-						}
-					}
-
-					if (items[i].sellBy < 6)
-					{
-						if (items[i].value < 50)
-						{
-							items[i].value = items[i].value + 1;
-						}
-					}
-				}
+				items[i].value--;
 			}
 		}
-
+ 
 		if (items[i].name != "White Monstera")
 		{
-			items[i].sellBy = items[i].sellBy - 1;
+			items[i].sellBy--;
 		}
-
+ 
 		if (items[i].sellBy < 0)
 		{
-			if (items[i].name != "Polka Dot Begonia")
+			if (items[i].name == "Polka Dot Begonia" && items[i].value < 50)
 			{
-				if (items[i].name != "Gardening Workshop")
-				{
-					if (items[i].value > 0)
-					{
-						if (items[i].name != "White Monstera")
-						{
-							items[i].value = items[i].value - 1;
-						}
-					}
-				}
-				else
-				{
-					items[i].value = items[i].value - items[i].value;
-				}
+				items[i].value++;
 			}
-			else
+			else if (items[i].name == "Gardening Workshop" && items[i].value < 50)
 			{
-				if (items[i].value < 50)
-				{
-					items[i].value = items[i].value + 1;
-				}
+				items[i].value = 0;
+			}
+			else if (items[i].value > 0 && items[i].name != "White Monstera")
+			{
+				items[i].value--;
 			}
 		}
 	}
