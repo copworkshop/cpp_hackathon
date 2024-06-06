@@ -14,8 +14,8 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-        - name: Generate Doxygen Documentation
-          uses: mattnotmitt/doxygen-action@v1.9.5
+        - uses: actions/checkout@v4.1.5
+        - uses: mattnotmitt/doxygen-action@v1.9.5
 
     # Deploy job
     deploy:
