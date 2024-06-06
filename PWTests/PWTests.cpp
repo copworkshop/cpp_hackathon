@@ -15,7 +15,7 @@ TEST(PWInventory, FooGood) {
 	EXPECT_EQ(inventory[0].name, "Foo");
 }
 
-TEST(PWInventory, LoadTestShouldThrowIfCantLoad) {
+TEST(PWInventory, LoadShouldThrowIfCantLoad) {
 	PWInventory inventory;
 	std::string filename = "non_existent_file.txt";
 
@@ -23,6 +23,12 @@ TEST(PWInventory, LoadTestShouldThrowIfCantLoad) {
 	EXPECT_THROW(inventory.Load(filename), std::exception);
 }
 
+TEST(PWInventory, LoadShouldLoadSampleFile) {
+	PWInventory inventory;
+	std::string filename = "../../../PWServer/inventory.json";
+
+	inventory.Load(filename);
+}
 
 
 TEST(PWServerTest, shouldThrowIfFileCouldntBeOpen)
