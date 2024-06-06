@@ -1,20 +1,28 @@
-name: Generate GitHub Pages
+name: Generate and Deploy Doxygen Documentation
 
 on:
     push:
-      branches: 
-        - "master"
-        - "team/**"
+        branches: 
+            - "master"
+            - "team/**"
     pull_request:
-      branches: [ "master" ]
+        branches: [ "master" ]
 
 jobs:
     deploy:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Generate Github Pages
-              uses: DenverCoder1/doxygen-github-pages-action@v1.3.0
+            - uses: actions/checkout@v2
+
+            - name: Install Doxygen
+              run: sudo apt-get install doxygen graphviz
+
+            - name: Generate Doxygen Documentation
+              run: doxygen Doxyfile
+
+            - name: Deploy to GitHub Pages
+              uses: JamesIves/github-pages-deploy-action@4.1.5
               with:
+                branch: gh-pages
                 folder: html
-                github_token: ${{ secrets.GITHUB_TOKEN }}
