@@ -29,6 +29,10 @@ public:
 	void UpdateQuality() override;
 	InventoryItem& operator[](int index) override;
 	int Count() const override;
+	void updatePolkaDotBegonia(InventoryItem &item);
+    void updateGardeningWorkshop(InventoryItem &item);
+    void updateWhiteMonstera(InventoryItem &item);
+    void updateOther(InventoryItem &item);
 
 protected:
 	std::vector<InventoryItem> items;

@@ -1,4 +1,7 @@
 #include "PWInventory.h"
+#include "InventoryItem.h"
+
+
 
 void PWInventory::Save(const std::string& file)
 {
@@ -58,80 +61,57 @@ void PWInventory::Load(const std::string& file)
 	}
 }
 
-void PWInventory::UpdateQuality()
-{
-	for (size_t i = 0; i < items.size(); i++)
-	{
-		if (items[i].name != "Polka Dot Begonia" && items[i].name != "Gardening Workshop")
-		{
-			if (items[i].value > 0)
-			{
-				if (items[i].name != "White Monstera")
-				{
-					items[i].value = items[i].value - 1;
-				}
-			}
-		}
-		else
-		{
-			if (items[i].value < 50)
-			{
-				items[i].value = items[i].value + 1;
+void PWInventory::updatePolkaDotBegonia(InventoryItem &item) {
+    if (item.sellBy < 0 && item.value < 50) {
+        item.value++;
+    }
+    item.sellBy--;
+}
 
-				if (items[i].name == "Gardening Workshop")
-				{
-					if (items[i].sellBy < 11)
-					{
-						if (items[i].value < 50)
-						{
-							items[i].value = items[i].value + 1;
-						}
-					}
+void PWInventory::updateGardeningWorkshop(InventoryItem &item) {
+    if (item.value < 50) {
+        item.value++;
+        if (item.sellBy < 11 && item.value < 50) {
+            item.value++;
+        }
+        if (item.sellBy < 6 && item.value < 50) {
+            item.value++;
+        }
+    }
+    if (item.sellBy < 0) {
+        item.value = 0;
+    }
+    item.sellBy--;
+}
 
-					if (items[i].sellBy < 6)
-					{
-						if (items[i].value < 50)
-						{
-							items[i].value = items[i].value + 1;
-						}
-					}
-				}
-			}
-		}
+void PWInventory::UpdateQuality() {
+    for (size_t i = 0; i < items.size(); i++) {
+        if (items[i].name == "Polka Dot Begonia") {
+            updatePolkaDotBegonia(items[i]);
+        } else if (items[i].name == "Gardening Workshop") {
+            updateGardeningWorkshop(items[i]);
+        } else if (items[i].name == "White Monstera") {
+            updateWhiteMonstera(items[i]);
+        } else {
+            updateOther(items[i]);
+        }
+    }
+}
 
-		if (items[i].name != "White Monstera")
-		{
-			items[i].sellBy = items[i].sellBy - 1;
-		}
 
-		if (items[i].sellBy < 0)
-		{
-			if (items[i].name != "Polka Dot Begonia")
-			{
-				if (items[i].name != "Gardening Workshop")
-				{
-					if (items[i].value > 0)
-					{
-						if (items[i].name != "White Monstera")
-						{
-							items[i].value = items[i].value - 1;
-						}
-					}
-				}
-				else
-				{
-					items[i].value = items[i].value - items[i].value;
-				}
-			}
-			else
-			{
-				if (items[i].value < 50)
-				{
-					items[i].value = items[i].value + 1;
-				}
-			}
-		}
-	}
+
+void PWInventory::updateWhiteMonstera(InventoryItem &item) {
+    // No changes to White Monstera
+}
+
+void PWInventory::updateOther(InventoryItem &item) {
+    if (item.value > 0) {
+        item.value--;
+    }
+    if (item.sellBy < 0 && item.value > 0) {
+        item.value--;
+    }
+    item.sellBy--;
 }
 
 InventoryItem& PWInventory::operator[](int index)
