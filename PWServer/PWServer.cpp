@@ -1,7 +1,5 @@
 #include "PWServer.h"
 #include "PWInventory.h"
-#include <mysql_driver.h>
-#include <mysql_connection.h>
 
 #include <iostream>
 #include <PWException.h>
