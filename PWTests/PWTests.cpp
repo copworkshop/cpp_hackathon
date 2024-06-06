@@ -50,3 +50,12 @@ TEST(PWInventory, LoadFileExist) {
 	EXPECT_NO_THROW(inventory.Load(filename));
 }
 
+TEST(PWInventory, CountEmpty) {
+	PWInventory inventory;
+	EXPECT_EQ(inventory.Count(), 0);
+}
+
+TEST(PWInventory, CountNonEmpty) {
+	PWInventory inventory{ { InventoryItem{ "Item1", 0 , 0 }, InventoryItem{ "Item2", 0 , 0 }, InventoryItem{ "Item3", 0 , 0 } } };
+	EXPECT_EQ(inventory.Count(), 3);
+}
