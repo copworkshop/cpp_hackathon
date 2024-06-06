@@ -115,3 +115,45 @@ TEST(PWException, MessageConstructor) {
 	PWException exception(message);
 	EXPECT_STREQ(exception.what(), message);
 }
+
+TEST(PWInventory, UpdateQualityExpiredItem) {
+	PWInventory inventory{ { InventoryItem{ "Expired Item", 0, 20 } } };
+	inventory.UpdateQuality();
+	EXPECT_EQ(inventory[0].sellBy, -1);
+	EXPECT_EQ(inventory[0].value, 18);
+}
+
+TEST(PWInventory, UpdateQualityLegendaryItem) {
+	PWInventory inventory{ { InventoryItem{ "Legendary Item", 10, 80 } } };
+	inventory.UpdateQuality();
+	EXPECT_EQ(inventory[0].sellBy, 9);
+	EXPECT_EQ(inventory[0].value, 79);
+}
+
+TEST(PWInventory, UpdateQualityAgedBrie) {
+	PWInventory inventory{ { InventoryItem{ "Aged Brie", 10, 20 } } };
+	inventory.UpdateQuality();
+	EXPECT_EQ(inventory[0].sellBy, 9);
+	EXPECT_EQ(inventory[0].value, 19);
+}
+
+TEST(PWInventory, UpdateQualityBackstagePasses) {
+	PWInventory inventory{ { InventoryItem{ "Backstage Passes", 10, 20 } } };
+	inventory.UpdateQuality();
+	EXPECT_EQ(inventory[0].sellBy, 9);
+	EXPECT_EQ(inventory[0].value, 19);
+}
+
+TEST(PWInventory, UpdateQualityConjuredItem) {
+	PWInventory inventory{ { InventoryItem{ "Conjured Item", 10, 20 } } };
+	inventory.UpdateQuality();
+	EXPECT_EQ(inventory[0].sellBy, 9);
+	EXPECT_EQ(inventory[0].value, 19);
+}
+
+TEST(PWInventory, UpdateQualityPolkaDotBegonia) {
+	PWInventory inventory{ { InventoryItem{ "Polka Dot Begonia", 10, 20 } } };
+	inventory.UpdateQuality();
+	EXPECT_EQ(inventory[0].sellBy, 9);
+	EXPECT_EQ(inventory[0].value, 21);
+}
