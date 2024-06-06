@@ -1063,6 +1063,8 @@ FILTER_SOURCE_PATTERNS =
 
 USE_MDFILE_AS_MAINPAGE =
 
+MAINPAGE_DOXY = "./mainpage.dox"
+
 #---------------------------------------------------------------------------
 # Configuration options related to source browsing
 #---------------------------------------------------------------------------

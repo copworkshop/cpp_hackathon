@@ -1,0 +1,8 @@
+/**
+\mainpage PWServer Class Documentation
+\section intro_sec Introduction
+This is the class documentation for PWServer. 
+PWServer is responsible for initializing the inventory, updating the inventory quality, and saving the inventory.
+\section class_sec Class
+The PWServer class is defined in PWServer.h and implemented in PWServer.cpp.
+*/
