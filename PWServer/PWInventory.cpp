@@ -150,28 +150,3 @@ int PWInventory::Count() const
 {
 	return items.size();
 }
-
-void PWInventory::AddItem(const InventoryItem& item)
-{
-	items.push_back(item);
-}
-
-void PWInventory::RemoveItem(int index)
-{
-	if (index < 0 || index >= items.size())
-	{
-		throw PWException("Item index %d is out of range not found in inventory\n", index);
-	}
-
-	items.erase(items.begin() + index);
-}
-
-InventoryItem& PWInventory::GetItem(int index)
-{
-	if (index < 0 || index >= items.size())
-	{
-		throw PWException("Item index %d is out of range not found in inventory\n", index);
-	}
-
-	return items[index];
-}

@@ -13,22 +13,6 @@ TEST(PWInventory, FooGood) {
 	EXPECT_EQ(inventory[0].name, "Foo");
 }
 
-TEST(PWInventory, AddItem) {
-	PWInventory inventory{ { InventoryItem{ "Foo", 0 , 0 } } };
-	inventory.AddItem(InventoryItem{ "Bar", 0 , 0 });
-	EXPECT_EQ(inventory[1].name, "Bar");
-}
-
-TEST(PWInventory, GetItem) {
-    PWInventory inventory{ { InventoryItem{ "Foo", 0 , 0 }, InventoryItem{ "Bar", 0 , 0 } } };
-
-    EXPECT_EQ(inventory.GetItem(0).name, "Foo");
-    EXPECT_EQ(inventory.GetItem(1).name, "Bar");
-    EXPECT_THROW(inventory.GetItem(-1).name, PWException);
-    EXPECT_THROW(inventory.GetItem(2).name, PWException);
-    EXPECT_THROW(inventory.GetItem(3).name, PWException);
-    EXPECT_THROW(inventory.GetItem(4).name, PWException);
-}
 // Test loading from a non-existent file
 TEST(PWInventory, TestLoadNonExistentFile) {
     PWInventory inventory;
