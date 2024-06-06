@@ -47,6 +47,9 @@ jobs:
       with:
         version: 1.64
 
+    - name: Install Doxygen
+      run: sudo apt-get install doxygen graphviz
+
     - name: Setup LCOV
       uses: hrishikesh-kadam/setup-lcov@v1
 
@@ -112,9 +115,6 @@ jobs:
       working-directory: ${{github.workspace}}/server
       run:
         python -m tornado.test.runtests tests
-
-    - name: Install Doxygen
-      run: sudo apt-get install doxygen graphviz
 
     - name: Generate Doxygen
       run: |
