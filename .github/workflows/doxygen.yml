@@ -1,0 +1,33 @@
+name: Generate and Deploy Doxygen Documentation
+
+on:
+    push:
+        branches: 
+            - "master"
+            - "team/**"
+    pull_request:
+        branches: [ "master" ]
+
+jobs:
+    # Build job
+    build:
+        # Grant GITHUB_TOKEN the permissions required to commit to branch
+        permissions:
+            contents: write   # to commit to gh-pages branch
+
+        runs-on: ubuntu-latest
+
+        steps:
+        - uses: actions/checkout@v4.1.5
+
+        # Generate Doxygen documentation
+        - name: Generate Doxygen Documentation
+          uses: mattnotmitt/doxygen-action@v1.9.5
+
+        # Push the generated documentation to the gh-pages-CodeAvengers branch
+        - name: Push to gh-pages-CodeAvengers
+          uses: JamesIves/github-pages-deploy-action@4.1.5
+          with:
+            branch: gh-pages-CodeAvengers
+            folder: html
+            target-folder: html
