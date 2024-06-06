@@ -26,9 +26,6 @@ public:
 
 	void Load(const std::string& file) override;
 	void Save(const std::string& file) override;
-	void AddItem(const InventoryItem& item);
-	void RemoveItem(int index);
-	InventoryItem& GetItem(int index);
 	void UpdateQuality() override;
 	InventoryItem& operator[](int index) override;
 	int Count() const override;
