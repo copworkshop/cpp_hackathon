@@ -22,7 +22,7 @@ jobs:
 
         # Upload the generated documentation to the artifact store
         - name: Upload Doxygen Documentation
-          uses: actions/upload-pages-artifact
+          uses: actions/upload-pages-artifact@v3.0.1
           with:
             path: html
 
