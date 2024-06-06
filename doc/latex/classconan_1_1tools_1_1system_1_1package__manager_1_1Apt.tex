@@ -1,0 +1,39 @@
+\hypertarget{classconan_1_1tools_1_1system_1_1package__manager_1_1Apt}{}\doxysection{conan.\+tools.\+system.\+package\+\_\+manager.\+Apt Class Reference}
+\label{classconan_1_1tools_1_1system_1_1package__manager_1_1Apt}\index{conan.tools.system.package\_manager.Apt@{conan.tools.system.package\_manager.Apt}}
+
+
+Inheritance diagram for conan.\+tools.\+system.\+package\+\_\+manager.\+Apt\+:
+% FIG 0
+
+
+Collaboration diagram for conan.\+tools.\+system.\+package\+\_\+manager.\+Apt\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1system_1_1package__manager_1_1Apt_a5dd56b594fda61326588c661f5acd872}\label{classconan_1_1tools_1_1system_1_1package__manager_1_1Apt_a5dd56b594fda61326588c661f5acd872}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, conanfile, arch\+\_\+names=None)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1system_1_1package__manager_1_1Apt_a3116b86535d3e8aae80c50c4f388ff58}\label{classconan_1_1tools_1_1system_1_1package__manager_1_1Apt_a3116b86535d3e8aae80c50c4f388ff58}} 
+def {\bfseries install} (self, packages, update=False, check=False, recommends=False)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1system_1_1package__manager_1_1Apt_a55ff728a448302f42949b66c20f414a1}\label{classconan_1_1tools_1_1system_1_1package__manager_1_1Apt_a55ff728a448302f42949b66c20f414a1}} 
+string {\bfseries tool\+\_\+name} = \char`\"{}apt-\/get\char`\"{}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1system_1_1package__manager_1_1Apt_ad8afc2fcd732e6998177c35e7b181eea}\label{classconan_1_1tools_1_1system_1_1package__manager_1_1Apt_ad8afc2fcd732e6998177c35e7b181eea}} 
+string {\bfseries install\+\_\+command} = \char`\"{}\{sudo\}\{tool\} install -\/y \{recommends\}\{packages\}\char`\"{}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1system_1_1package__manager_1_1Apt_abca3cc7b84c14dd54d43ffa44b4481ac}\label{classconan_1_1tools_1_1system_1_1package__manager_1_1Apt_abca3cc7b84c14dd54d43ffa44b4481ac}} 
+string {\bfseries update\+\_\+command} = \char`\"{}\{sudo\}\{tool\} update\char`\"{}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1system_1_1package__manager_1_1Apt_aac5611e1b2b97eca8c9275cc7787607a}\label{classconan_1_1tools_1_1system_1_1package__manager_1_1Apt_aac5611e1b2b97eca8c9275cc7787607a}} 
+string {\bfseries check\+\_\+command} = \char`\"{}dpkg-\/query -\/W -\/f=\textquotesingle{}\$\{\{Status\}\}\textquotesingle{} \{package\} $\vert$ grep -\/q \textbackslash{}\char`\"{}ok installed\textbackslash{}\char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conan/tools/system/package\+\_\+manager.\+py\end{DoxyCompactItemize}

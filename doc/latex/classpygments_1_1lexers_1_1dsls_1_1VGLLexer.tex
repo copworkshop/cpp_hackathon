@@ -1,0 +1,76 @@
+\hypertarget{classpygments_1_1lexers_1_1dsls_1_1VGLLexer}{}\doxysection{pygments.\+lexers.\+dsls.\+VGLLexer Class Reference}
+\label{classpygments_1_1lexers_1_1dsls_1_1VGLLexer}\index{pygments.lexers.dsls.VGLLexer@{pygments.lexers.dsls.VGLLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+dsls.\+VGLLexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+dsls.\+VGLLexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dsls_1_1VGLLexer_afc60fa139c8837577bf3a548c132c916}\label{classpygments_1_1lexers_1_1dsls_1_1VGLLexer_afc60fa139c8837577bf3a548c132c916}} 
+string {\bfseries name} = \textquotesingle{}VGL\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dsls_1_1VGLLexer_ae84f1996180e93fae2d3041ffaac125a}\label{classpygments_1_1lexers_1_1dsls_1_1VGLLexer_ae84f1996180e93fae2d3041ffaac125a}} 
+string {\bfseries url} = \textquotesingle{}http\+://www.\+thermoscientific.\+com/samplemanager\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dsls_1_1VGLLexer_adb37f65031538e69f92dc604cc152c26}\label{classpygments_1_1lexers_1_1dsls_1_1VGLLexer_adb37f65031538e69f92dc604cc152c26}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}vgl\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dsls_1_1VGLLexer_ae5be98a2c14b9b5aa921bc634546f575}\label{classpygments_1_1lexers_1_1dsls_1_1VGLLexer_ae5be98a2c14b9b5aa921bc634546f575}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.rpf\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dsls_1_1VGLLexer_a64000f75c3690ff32acf89f9e367be54}\label{classpygments_1_1lexers_1_1dsls_1_1VGLLexer_a64000f75c3690ff32acf89f9e367be54}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+6\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dsls_1_1VGLLexer_af8008dd30ee6a8eca962423fdd721cf3}\label{classpygments_1_1lexers_1_1dsls_1_1VGLLexer_af8008dd30ee6a8eca962423fdd721cf3}} 
+{\bfseries flags} = re.\+MULTILINE $\vert$ re.\+DOTALL $\vert$ re.\+IGNORECASE
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For SampleManager VGL source code.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dsls_1_1VGLLexer_a457eb80f46653287a637d7e88bc54908}\label{classpygments_1_1lexers_1_1dsls_1_1VGLLexer_a457eb80f46653287a637d7e88bc54908}} 
+\index{pygments.lexers.dsls.VGLLexer@{pygments.lexers.dsls.VGLLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.dsls.VGLLexer@{pygments.lexers.dsls.VGLLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+dsls.\+VGLLexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\{[\string^\}]*\(\backslash\)\}'}, Comment.Multiline),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'declare'}, Keyword.Constant),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(if|then|else|endif|while|do|endwhile|and|or|prompt|object'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'|create|on|line|with|global|routine|value|endroutine|constant'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'|global|set|join|library|compile\_option|file|exists|create|copy'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'|delete|enable|windows|name|notprotected)(?! *[=<>.,()])'},}
+\DoxyCodeLine{             Keyword),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(true|false|null|empty|error|locked)'}, Keyword.Constant),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string~\string^*\#!\%\&\(\backslash\)[\(\backslash\)]()<>|+=:;,./?-\/]'}, Operator),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'"{}[\string^"{}]*"{}'}, String),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\).)([a-\/z\_\$][\(\backslash\)w\$]*)'}, bygroups(Operator, Name.Attribute)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[0-\/9][0-\/9]*(\(\backslash\).[0-\/9]+(e[+\(\backslash\)-\/]?[0-\/9]+)?)?'}, Number),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[a-\/z\_\$][\(\backslash\)w\$]*'}, Name),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\(\backslash\)r\(\backslash\)n]+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace)}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/dsls.\+py\end{DoxyCompactItemize}

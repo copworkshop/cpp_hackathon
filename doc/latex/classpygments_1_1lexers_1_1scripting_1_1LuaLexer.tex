@@ -1,0 +1,132 @@
+\hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuaLexer}{}\doxysection{pygments.\+lexers.\+scripting.\+Lua\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1scripting_1_1LuaLexer}\index{pygments.lexers.scripting.LuaLexer@{pygments.lexers.scripting.LuaLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+scripting.\+Lua\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+scripting.\+Lua\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_ad136b2b3dca249318f95cdc5cf26bed0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_ab92707e44969bbfa6a733d3d20dcfb96}{get\+\_\+tokens\+\_\+unprocessed}} (self, text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_a564afefbf664168bbf58b7163503b956}\label{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_a564afefbf664168bbf58b7163503b956}} 
+{\bfseries func\+\_\+name\+\_\+highlighting}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_aefea7e849511518eebf9eae0000ed15b}\label{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_aefea7e849511518eebf9eae0000ed15b}} 
+{\bfseries disabled\+\_\+modules}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_a2984876f97cb17ce87402902d6506703}\label{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_a2984876f97cb17ce87402902d6506703}} 
+string {\bfseries name} = \textquotesingle{}Lua\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_a034fe9f920910ab9b4890d4d08b9951f}\label{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_a034fe9f920910ab9b4890d4d08b9951f}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+lua.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_ab1b165d354244d20e73e7b46d097976f}\label{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_ab1b165d354244d20e73e7b46d097976f}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}lua\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_ac1e215d0a57ecb5058d106d475b08e13}\label{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_ac1e215d0a57ecb5058d106d475b08e13}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.lua\textquotesingle{}, \textquotesingle{}$\ast$.wlua\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_a2edc07d9adda848ae31de0af4b242e2e}\label{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_a2edc07d9adda848ae31de0af4b242e2e}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/lua\textquotesingle{}, \textquotesingle{}application/x-\/lua\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_a07a85b4422897b3ac8d4a547f87a1837}\label{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_a07a85b4422897b3ac8d4a547f87a1837}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_aa2339a1a0b26a3d186bfdb6e2b9b20de}\label{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_aa2339a1a0b26a3d186bfdb6e2b9b20de}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For Lua source code.
+
+Additional options accepted:
+
+`func_name_highlighting`
+    If given and ``True``, highlight builtin function names
+    (default: ``True``).
+`disabled_modules`
+    If given, must be a list of module names whose function names
+    should not be highlighted. By default all modules are highlighted.
+
+    To get a list of allowed modules have a look into the
+    `_lua_builtins` module:
+
+    .. sourcecode:: pycon
+
+        >>> from pygments.lexers._lua_builtins import MODULES
+        >>> MODULES.keys()
+        ['string', 'coroutine', 'modules', 'io', 'basic', ...]
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_ad136b2b3dca249318f95cdc5cf26bed0}\label{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_ad136b2b3dca249318f95cdc5cf26bed0}} 
+\index{pygments.lexers.scripting.LuaLexer@{pygments.lexers.scripting.LuaLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.scripting.LuaLexer@{pygments.lexers.scripting.LuaLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+scripting.\+Lua\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_ab92707e44969bbfa6a733d3d20dcfb96}\label{classpygments_1_1lexers_1_1scripting_1_1LuaLexer_ab92707e44969bbfa6a733d3d20dcfb96}} 
+\index{pygments.lexers.scripting.LuaLexer@{pygments.lexers.scripting.LuaLexer}!get\_tokens\_unprocessed@{get\_tokens\_unprocessed}}
+\index{get\_tokens\_unprocessed@{get\_tokens\_unprocessed}!pygments.lexers.scripting.LuaLexer@{pygments.lexers.scripting.LuaLexer}}
+\doxysubsubsection{\texorpdfstring{get\_tokens\_unprocessed()}{get\_tokens\_unprocessed()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+scripting.\+Lua\+Lexer.\+get\+\_\+tokens\+\_\+unprocessed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method should process the text and return an iterable of
+``(index, tokentype, value)`` tuples where ``index`` is the starting
+position of the token within the input text.
+
+It must be overridden by subclasses. It is recommended to
+implement it as a generator to maximize effectiveness.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_aad5c02b7f661f64f91cf8c8d880e9f67}{pygments.\+lexer.\+Lexer}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classpygments_1_1lexers_1_1scripting_1_1MoonScriptLexer_ae154889eaf006d2f6af5bc841e0ef38f}{pygments.\+lexers.\+scripting.\+Moon\+Script\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/scripting.\+py\end{DoxyCompactItemize}

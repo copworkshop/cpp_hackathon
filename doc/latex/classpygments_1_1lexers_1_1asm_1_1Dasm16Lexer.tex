@@ -1,0 +1,120 @@
+\hypertarget{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer}{}\doxysection{pygments.\+lexers.\+asm.\+Dasm16\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer}\index{pygments.lexers.asm.Dasm16Lexer@{pygments.lexers.asm.Dasm16Lexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+asm.\+Dasm16\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+asm.\+Dasm16\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_a614e6feb07bbdf6eb71312e70220d818}\label{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_a614e6feb07bbdf6eb71312e70220d818}} 
+def {\bfseries guess\+\_\+identifier} (lexer, match)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_aa4efa55382ca72cb3d271c15afc2ad16}\label{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_aa4efa55382ca72cb3d271c15afc2ad16}} 
+string {\bfseries name} = \textquotesingle{}DASM16\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_ad411416584835e7ccb421b5a2889f543}\label{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_ad411416584835e7ccb421b5a2889f543}} 
+string {\bfseries url} = \textquotesingle{}http\+://0x10c.\+com/doc/dcpu-\/16.txt\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_a3b9204dd309bc0fd8afc06be4cb9a42a}\label{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_a3b9204dd309bc0fd8afc06be4cb9a42a}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}dasm16\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_a94363f5958eb9237481a2c4bf69d2471}\label{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_a94363f5958eb9237481a2c4bf69d2471}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.dasm16\textquotesingle{}, \textquotesingle{}$\ast$.dasm\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_acf98cc9572afe737beea5550f2b3df64}\label{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_acf98cc9572afe737beea5550f2b3df64}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/dasm16\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_acf279cdf38876f4a12517459f1320fdf}\label{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_acf279cdf38876f4a12517459f1320fdf}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+4\textquotesingle{}
+\item 
+list {\bfseries INSTRUCTIONS}
+\item 
+list {\bfseries REGISTERS}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_a973afeee93f3171e427522bba38fb379}\label{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_a973afeee93f3171e427522bba38fb379}} 
+string {\bfseries char} = r\textquotesingle{}\mbox{[}a-\/zA-\/Z0-\/9\+\_\+\$@.\mbox{]}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_af5f465d1ac0834e4acb1de07272375a6}\label{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_af5f465d1ac0834e4acb1de07272375a6}} 
+string {\bfseries identifier} = r\textquotesingle{}(?\+:\mbox{[}a-\/zA-\/Z\$\+\_\+\mbox{]}\textquotesingle{} + char + r\textquotesingle{}$\ast$$\vert$\textbackslash{}.\textquotesingle{} + char + \textquotesingle{}+)\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_a788ccc94712231a5ab9b962cf656e8ab}\label{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_a788ccc94712231a5ab9b962cf656e8ab}} 
+string {\bfseries number} = r\textquotesingle{}\mbox{[}+-\/\mbox{]}?(?\+:0\mbox{[}xX\mbox{]}\mbox{[}a-\/zA-\/Z0-\/9\mbox{]}+$\vert$\textbackslash{}d+)\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_ae479c85f41b485a48c079388648bee43}\label{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_ae479c85f41b485a48c079388648bee43}} 
+string {\bfseries binary\+\_\+number} = r\textquotesingle{}0b\mbox{[}01\+\_\+\mbox{]}+\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_aac9af43668d0e5ee73429ccebab6e0f3}\label{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_aac9af43668d0e5ee73429ccebab6e0f3}} 
+string {\bfseries instruction} = r\textquotesingle{}(?i)(\textquotesingle{} + \textquotesingle{}$\vert$\textquotesingle{}.join(INSTRUCTIONS) + \textquotesingle{})\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_aed7a06a42c806208199b895b7f0a9308}\label{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_aed7a06a42c806208199b895b7f0a9308}} 
+string {\bfseries single\+\_\+char} = r\char`\"{}\textquotesingle{}\textbackslash{}\textbackslash{}?\char`\"{} + char + \char`\"{}\textquotesingle{}\char`\"{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_a6a5b6c1eee6b1a2e2c1d71258468509c}\label{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_a6a5b6c1eee6b1a2e2c1d71258468509c}} 
+string {\bfseries string} = r\textquotesingle{}\char`\"{}(\textbackslash{}\textbackslash{}\char`\"{}$\vert$\mbox{[}$^\wedge$\char`\"{}\mbox{]})$\ast$\char`\"{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_a3d622ab1dc2076b86deece9a2c42a5d7}\label{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_a3d622ab1dc2076b86deece9a2c42a5d7}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For DCPU-16 Assembly.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_ad18d7b53b7069e9a12745d0e82a7b98d}\label{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_ad18d7b53b7069e9a12745d0e82a7b98d}} 
+\index{pygments.lexers.asm.Dasm16Lexer@{pygments.lexers.asm.Dasm16Lexer}!INSTRUCTIONS@{INSTRUCTIONS}}
+\index{INSTRUCTIONS@{INSTRUCTIONS}!pygments.lexers.asm.Dasm16Lexer@{pygments.lexers.asm.Dasm16Lexer}}
+\doxysubsubsection{\texorpdfstring{INSTRUCTIONS}{INSTRUCTIONS}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+asm.\+Dasm16\+Lexer.\+INSTRUCTIONS\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [}
+\DoxyCodeLine{        \textcolor{stringliteral}{'SET'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'ADD'}, \textcolor{stringliteral}{'SUB'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'MUL'}, \textcolor{stringliteral}{'MLI'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'DIV'}, \textcolor{stringliteral}{'DVI'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'MOD'}, \textcolor{stringliteral}{'MDI'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'AND'}, \textcolor{stringliteral}{'BOR'}, \textcolor{stringliteral}{'XOR'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'SHR'}, \textcolor{stringliteral}{'ASR'}, \textcolor{stringliteral}{'SHL'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'IFB'}, \textcolor{stringliteral}{'IFC'}, \textcolor{stringliteral}{'IFE'}, \textcolor{stringliteral}{'IFN'}, \textcolor{stringliteral}{'IFG'}, \textcolor{stringliteral}{'IFA'}, \textcolor{stringliteral}{'IFL'}, \textcolor{stringliteral}{'IFU'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'ADX'}, \textcolor{stringliteral}{'SBX'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'STI'}, \textcolor{stringliteral}{'STD'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'JSR'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'INT'}, \textcolor{stringliteral}{'IAG'}, \textcolor{stringliteral}{'IAS'}, \textcolor{stringliteral}{'RFI'}, \textcolor{stringliteral}{'IAQ'}, \textcolor{stringliteral}{'HWN'}, \textcolor{stringliteral}{'HWQ'}, \textcolor{stringliteral}{'HWI'},}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_a62cefdefb94afc436ef6bb357ae671d5}\label{classpygments_1_1lexers_1_1asm_1_1Dasm16Lexer_a62cefdefb94afc436ef6bb357ae671d5}} 
+\index{pygments.lexers.asm.Dasm16Lexer@{pygments.lexers.asm.Dasm16Lexer}!REGISTERS@{REGISTERS}}
+\index{REGISTERS@{REGISTERS}!pygments.lexers.asm.Dasm16Lexer@{pygments.lexers.asm.Dasm16Lexer}}
+\doxysubsubsection{\texorpdfstring{REGISTERS}{REGISTERS}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+asm.\+Dasm16\+Lexer.\+REGISTERS\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [}
+\DoxyCodeLine{        \textcolor{stringliteral}{'A'}, \textcolor{stringliteral}{'B'}, \textcolor{stringliteral}{'C'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'X'}, \textcolor{stringliteral}{'Y'}, \textcolor{stringliteral}{'Z'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'I'}, \textcolor{stringliteral}{'J'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'SP'}, \textcolor{stringliteral}{'PC'}, \textcolor{stringliteral}{'EX'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'POP'}, \textcolor{stringliteral}{'PEEK'}, \textcolor{stringliteral}{'PUSH'}}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/asm.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase}{}\doxysection{dateutil.\+tz.\+win.\+tzwinbase Class Reference}
+\label{classdateutil_1_1tz_1_1win_1_1tzwinbase}\index{dateutil.tz.win.tzwinbase@{dateutil.tz.win.tzwinbase}}
+
+
+Inheritance diagram for dateutil.\+tz.\+win.\+tzwinbase\+:
+% FIG 0
+
+
+Collaboration diagram for dateutil.\+tz.\+win.\+tzwinbase\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_a519685bd5f3c6a6114da8bd84f8d0be4}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase_a519685bd5f3c6a6114da8bd84f8d0be4}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_a77b7ad263c6a1e477e43debafd40aa49}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase_a77b7ad263c6a1e477e43debafd40aa49}} 
+def {\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, other)
+\item 
+def \mbox{\hyperlink{classdateutil_1_1tz_1_1win_1_1tzwinbase_a2f7c9d016f8f34e967668385f88f4434}{display}} (self)
+\item 
+def \mbox{\hyperlink{classdateutil_1_1tz_1_1win_1_1tzwinbase_a933b1fa2bdf0c9ab64a95ae1543d3177}{transitions}} (self, year)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classdateutil_1_1tz_1_1win_1_1tzwinbase_a0adde8a45e76676235aae7766f7189a7}{list}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}tzinfo class based on win32's timezones available in the registry.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_a2f7c9d016f8f34e967668385f88f4434}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase_a2f7c9d016f8f34e967668385f88f4434}} 
+\index{dateutil.tz.win.tzwinbase@{dateutil.tz.win.tzwinbase}!display@{display}}
+\index{display@{display}!dateutil.tz.win.tzwinbase@{dateutil.tz.win.tzwinbase}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily def dateutil.\+tz.\+win.\+tzwinbase.\+display (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the display name of the time zone.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_a0adde8a45e76676235aae7766f7189a7}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase_a0adde8a45e76676235aae7766f7189a7}} 
+\index{dateutil.tz.win.tzwinbase@{dateutil.tz.win.tzwinbase}!list@{list}}
+\index{list@{list}!dateutil.tz.win.tzwinbase@{dateutil.tz.win.tzwinbase}}
+\doxysubsubsection{\texorpdfstring{list()}{list()}}
+{\footnotesize\ttfamily def dateutil.\+tz.\+win.\+tzwinbase.\+list (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Return a list of all time zones known to the system.\end{DoxyVerb}
+ \mbox{\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_a933b1fa2bdf0c9ab64a95ae1543d3177}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase_a933b1fa2bdf0c9ab64a95ae1543d3177}} 
+\index{dateutil.tz.win.tzwinbase@{dateutil.tz.win.tzwinbase}!transitions@{transitions}}
+\index{transitions@{transitions}!dateutil.tz.win.tzwinbase@{dateutil.tz.win.tzwinbase}}
+\doxysubsubsection{\texorpdfstring{transitions()}{transitions()}}
+{\footnotesize\ttfamily def dateutil.\+tz.\+win.\+tzwinbase.\+transitions (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{year }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}For a given year, get the DST on and off transition times, expressed
+always on the standard time side. For zones with no transitions, this
+function returns ``None``.
+
+:param year:
+    The year whose transitions you would like to query.
+
+:return:
+    Returns a :class:`tuple` of :class:`datetime.datetime` objects,
+    ``(dston, dstoff)`` for zones with an annual DST transition, or
+    ``None`` for fixed offset zones.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/dateutil/tz/win.\+py\end{DoxyCompactItemize}

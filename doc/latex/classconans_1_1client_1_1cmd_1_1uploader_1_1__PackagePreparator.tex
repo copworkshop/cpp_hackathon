@@ -1,0 +1,42 @@
+\hypertarget{classconans_1_1client_1_1cmd_1_1uploader_1_1__PackagePreparator}{}\doxysection{conans.\+client.\+cmd.\+uploader.\+\_\+\+Package\+Preparator Class Reference}
+\label{classconans_1_1client_1_1cmd_1_1uploader_1_1__PackagePreparator}\index{conans.client.cmd.uploader.\_PackagePreparator@{conans.client.cmd.uploader.\_PackagePreparator}}
+
+
+Inheritance diagram for conans.\+client.\+cmd.\+uploader.\+\_\+\+Package\+Preparator\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+cmd.\+uploader.\+\_\+\+Package\+Preparator\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1cmd_1_1uploader_1_1__PackagePreparator_acb43375d1082856c7f99f2a0db8f3e29}\label{classconans_1_1client_1_1cmd_1_1uploader_1_1__PackagePreparator_acb43375d1082856c7f99f2a0db8f3e29}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, cache, remote\+\_\+manager, hook\+\_\+manager, output)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1cmd_1_1uploader_1_1__PackagePreparator_a26884988ad33c8ef415d45d4846a9b8c}{prepare\+\_\+recipe}} (self, ref, conanfile, remote, remotes, policy)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1cmd_1_1uploader_1_1__PackagePreparator_a35e07997314b68fa6b73ff01aab0a693}\label{classconans_1_1client_1_1cmd_1_1uploader_1_1__PackagePreparator_a35e07997314b68fa6b73ff01aab0a693}} 
+def {\bfseries prepare\+\_\+package} (self, pref, integrity\+\_\+check, policy, p\+\_\+remote)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1cmd_1_1uploader_1_1__PackagePreparator_a26884988ad33c8ef415d45d4846a9b8c}\label{classconans_1_1client_1_1cmd_1_1uploader_1_1__PackagePreparator_a26884988ad33c8ef415d45d4846a9b8c}} 
+\index{conans.client.cmd.uploader.\_PackagePreparator@{conans.client.cmd.uploader.\_PackagePreparator}!prepare\_recipe@{prepare\_recipe}}
+\index{prepare\_recipe@{prepare\_recipe}!conans.client.cmd.uploader.\_PackagePreparator@{conans.client.cmd.uploader.\_PackagePreparator}}
+\doxysubsubsection{\texorpdfstring{prepare\_recipe()}{prepare\_recipe()}}
+{\footnotesize\ttfamily def conans.\+client.\+cmd.\+uploader.\+\_\+\+Package\+Preparator.\+prepare\+\_\+recipe (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ref,  }\item[{}]{conanfile,  }\item[{}]{remote,  }\item[{}]{remotes,  }\item[{}]{policy }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} do a bunch of things that are necessary before actually executing the upload:
+- retrieve exports_sources to complete the recipe if necessary
+- compress the artifacts in conan_export.tgz and conan_export_sources.tgz
+- check if package is ok to be uploaded, if scm info missing, will raise
+- check if the remote recipe is newer, raise
+- compare and decide which files need to be uploaded (and deleted from server)
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/cmd/uploader.\+py\end{DoxyCompactItemize}

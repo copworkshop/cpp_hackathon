@@ -1,0 +1,54 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1TeaTemplateRootLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Tea\+Template\+Root\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1TeaTemplateRootLexer}\index{pygments.lexers.templates.TeaTemplateRootLexer@{pygments.lexers.templates.TeaTemplateRootLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Tea\+Template\+Root\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Tea\+Template\+Root\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Base for the `TeaTemplateLexer`. Yields `Token.Other` for area outside of
+code blocks.
+
+.. versionadded:: 1.5
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1TeaTemplateRootLexer_a54ca38b294222aec20c9dcc4150d6403}\label{classpygments_1_1lexers_1_1templates_1_1TeaTemplateRootLexer_a54ca38b294222aec20c9dcc4150d6403}} 
+\index{pygments.lexers.templates.TeaTemplateRootLexer@{pygments.lexers.templates.TeaTemplateRootLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.templates.TeaTemplateRootLexer@{pygments.lexers.templates.TeaTemplateRootLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+templates.\+Tea\+Template\+Root\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'<\%\(\backslash\)S?'}, Keyword, \textcolor{stringliteral}{'sec'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^<]+'}, Other),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'<'}, Other),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'sec'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\%>'}, Keyword, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            \textcolor{comment}{\# note: '\(\backslash\)w\(\backslash\)W' != '.' without DOTALL.}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\(\backslash\)w\(\backslash\)W]+?(?=\%>|\(\backslash\)Z)'}, using(TeaLangLexer)),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

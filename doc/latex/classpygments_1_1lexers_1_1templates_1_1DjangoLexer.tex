@@ -1,0 +1,81 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1DjangoLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Django\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1DjangoLexer}\index{pygments.lexers.templates.DjangoLexer@{pygments.lexers.templates.DjangoLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Django\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Django\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1DjangoLexer_a2a9cdfa99aba61e265552a74b9ae0c1f}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1DjangoLexer_ab74d344eb58abac06d482e8466a59195}\label{classpygments_1_1lexers_1_1templates_1_1DjangoLexer_ab74d344eb58abac06d482e8466a59195}} 
+string {\bfseries name} = \textquotesingle{}Django/Jinja\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1DjangoLexer_aabdd78d5067067134202d0bd3bfa772c}\label{classpygments_1_1lexers_1_1templates_1_1DjangoLexer_aabdd78d5067067134202d0bd3bfa772c}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}django\textquotesingle{}, \textquotesingle{}jinja\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1DjangoLexer_a4a89d15045000bb32c1372e2c48f92ba}\label{classpygments_1_1lexers_1_1templates_1_1DjangoLexer_a4a89d15045000bb32c1372e2c48f92ba}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}application/x-\/django-\/templating\textquotesingle{}, \textquotesingle{}application/x-\/jinja\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1DjangoLexer_a1ec5a88e8ee5694a9a19ac5c05f33ab3}\label{classpygments_1_1lexers_1_1templates_1_1DjangoLexer_a1ec5a88e8ee5694a9a19ac5c05f33ab3}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+djangoproject.\+com/documentation/templates\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1DjangoLexer_a0cfacc7b6d61d53bf05d71d40004068e}\label{classpygments_1_1lexers_1_1templates_1_1DjangoLexer_a0cfacc7b6d61d53bf05d71d40004068e}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1DjangoLexer_a048bc90f873b755f6e1afd2f5e1528b4}\label{classpygments_1_1lexers_1_1templates_1_1DjangoLexer_a048bc90f873b755f6e1afd2f5e1528b4}} 
+{\bfseries flags} = re.\+M $\vert$ re.\+S
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1DjangoLexer_a83009448aa46ec04cf1283080285e5a9}\label{classpygments_1_1lexers_1_1templates_1_1DjangoLexer_a83009448aa46ec04cf1283080285e5a9}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Generic `Django <https://www.djangoproject.com/documentation/templates/>`_
+and `Jinja <https://jinja.palletsprojects.com>`_ template lexer.
+
+It just highlights django/jinja code between the preprocessor directives,
+other data is left untouched by the lexer.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1DjangoLexer_a2a9cdfa99aba61e265552a74b9ae0c1f}\label{classpygments_1_1lexers_1_1templates_1_1DjangoLexer_a2a9cdfa99aba61e265552a74b9ae0c1f}} 
+\index{pygments.lexers.templates.DjangoLexer@{pygments.lexers.templates.DjangoLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.templates.DjangoLexer@{pygments.lexers.templates.DjangoLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Django\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

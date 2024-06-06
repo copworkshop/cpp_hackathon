@@ -1,0 +1,88 @@
+\hypertarget{classcharset__normalizer_1_1md_1_1CjkInvalidStopPlugin}{}\doxysection{charset\+\_\+normalizer.\+md.\+Cjk\+Invalid\+Stop\+Plugin Class Reference}
+\label{classcharset__normalizer_1_1md_1_1CjkInvalidStopPlugin}\index{charset\_normalizer.md.CjkInvalidStopPlugin@{charset\_normalizer.md.CjkInvalidStopPlugin}}
+
+
+Inheritance diagram for charset\+\_\+normalizer.\+md.\+Cjk\+Invalid\+Stop\+Plugin\+:
+% FIG 0
+
+
+Collaboration diagram for charset\+\_\+normalizer.\+md.\+Cjk\+Invalid\+Stop\+Plugin\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1CjkInvalidStopPlugin_a5ea6a545d530955fa7ef60c728b6ab51}\label{classcharset__normalizer_1_1md_1_1CjkInvalidStopPlugin_a5ea6a545d530955fa7ef60c728b6ab51}} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+bool \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1CjkInvalidStopPlugin_a79a4f4d5c1c9cebe7426531f7a602882}{eligible}} (self, str character)
+\item 
+None \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1CjkInvalidStopPlugin_a48c2f5853fe11f42cace9a4d8bda61e8}{feed}} (self, str character)
+\item 
+None \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1CjkInvalidStopPlugin_a1a0b5e1eaf0021e9b05356712dd8d9b1}{reset}} (self)
+\item 
+float \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1CjkInvalidStopPlugin_a8ed249825b563a2719e930fa58986a71}{ratio}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}GB(Chinese) based encoding often render the stop incorrectly when the content does not fit and
+can be easily detected. Searching for the overuse of '丅' and '丄'.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1CjkInvalidStopPlugin_a79a4f4d5c1c9cebe7426531f7a602882}\label{classcharset__normalizer_1_1md_1_1CjkInvalidStopPlugin_a79a4f4d5c1c9cebe7426531f7a602882}} 
+\index{charset\_normalizer.md.CjkInvalidStopPlugin@{charset\_normalizer.md.CjkInvalidStopPlugin}!eligible@{eligible}}
+\index{eligible@{eligible}!charset\_normalizer.md.CjkInvalidStopPlugin@{charset\_normalizer.md.CjkInvalidStopPlugin}}
+\doxysubsubsection{\texorpdfstring{eligible()}{eligible()}}
+{\footnotesize\ttfamily  bool charset\+\_\+normalizer.\+md.\+Cjk\+Invalid\+Stop\+Plugin.\+eligible (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{character }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine if given character should be fed in.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1MessDetectorPlugin_a6c90e20b89fb11f27a99c4bb1b7b4aeb}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1CjkInvalidStopPlugin_a48c2f5853fe11f42cace9a4d8bda61e8}\label{classcharset__normalizer_1_1md_1_1CjkInvalidStopPlugin_a48c2f5853fe11f42cace9a4d8bda61e8}} 
+\index{charset\_normalizer.md.CjkInvalidStopPlugin@{charset\_normalizer.md.CjkInvalidStopPlugin}!feed@{feed}}
+\index{feed@{feed}!charset\_normalizer.md.CjkInvalidStopPlugin@{charset\_normalizer.md.CjkInvalidStopPlugin}}
+\doxysubsubsection{\texorpdfstring{feed()}{feed()}}
+{\footnotesize\ttfamily  None charset\+\_\+normalizer.\+md.\+Cjk\+Invalid\+Stop\+Plugin.\+feed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{character }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The main routine to be executed upon character.
+Insert the logic in witch the text would be considered chaotic.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1MessDetectorPlugin_a1d7b6ef49fad244c8841e7dacf4a1bdb}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1CjkInvalidStopPlugin_a8ed249825b563a2719e930fa58986a71}\label{classcharset__normalizer_1_1md_1_1CjkInvalidStopPlugin_a8ed249825b563a2719e930fa58986a71}} 
+\index{charset\_normalizer.md.CjkInvalidStopPlugin@{charset\_normalizer.md.CjkInvalidStopPlugin}!ratio@{ratio}}
+\index{ratio@{ratio}!charset\_normalizer.md.CjkInvalidStopPlugin@{charset\_normalizer.md.CjkInvalidStopPlugin}}
+\doxysubsubsection{\texorpdfstring{ratio()}{ratio()}}
+{\footnotesize\ttfamily  float charset\+\_\+normalizer.\+md.\+Cjk\+Invalid\+Stop\+Plugin.\+ratio (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute the chaos ratio based on what your feed() has seen.
+Must NOT be lower than 0.; No restriction gt 0.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1MessDetectorPlugin_ac8f7c272b946d769ca5d6c478b6dd8a1}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1CjkInvalidStopPlugin_a1a0b5e1eaf0021e9b05356712dd8d9b1}\label{classcharset__normalizer_1_1md_1_1CjkInvalidStopPlugin_a1a0b5e1eaf0021e9b05356712dd8d9b1}} 
+\index{charset\_normalizer.md.CjkInvalidStopPlugin@{charset\_normalizer.md.CjkInvalidStopPlugin}!reset@{reset}}
+\index{reset@{reset}!charset\_normalizer.md.CjkInvalidStopPlugin@{charset\_normalizer.md.CjkInvalidStopPlugin}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily  None charset\+\_\+normalizer.\+md.\+Cjk\+Invalid\+Stop\+Plugin.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Permit to reset the plugin to the initial state.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1MessDetectorPlugin_a82ba1b462302d9374e38614cd8a918b9}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/charset\+\_\+normalizer/md.\+py\end{DoxyCompactItemize}

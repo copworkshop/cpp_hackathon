@@ -1,0 +1,84 @@
+\hypertarget{namespaceconans_1_1client_1_1subsystems}{}\doxysection{conans.\+client.\+subsystems Namespace Reference}
+\label{namespaceconans_1_1client_1_1subsystems}\index{conans.client.subsystems@{conans.client.subsystems}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceconans_1_1client_1_1subsystems_a7053394de5857709809fbcf6f323008f}\label{namespaceconans_1_1client_1_1subsystems_a7053394de5857709809fbcf6f323008f}} 
+def {\bfseries command\+\_\+env\+\_\+wrapper} (conanfile, command, envfiles, envfiles\+\_\+folder, scope=\char`\"{}build\char`\"{})
+\item 
+def \mbox{\hyperlink{namespaceconans_1_1client_1_1subsystems_abbd9ec13848242aa5a5a95d9868d29e6}{deduce\+\_\+subsystem}} (conanfile, scope)
+\item 
+def \mbox{\hyperlink{namespaceconans_1_1client_1_1subsystems_a24b64be3861647c131af79c94e2215cb}{subsystem\+\_\+path}} (subsystem, path)
+\item 
+\mbox{\Hypertarget{namespaceconans_1_1client_1_1subsystems_a31046d03fa054f2ba3540e682c16197d}\label{namespaceconans_1_1client_1_1subsystems_a31046d03fa054f2ba3540e682c16197d}} 
+def {\bfseries get\+\_\+cased\+\_\+path} (name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceconans_1_1client_1_1subsystems_a662a85c9b23fe0fc928026c158e2d97c}\label{namespaceconans_1_1client_1_1subsystems_a662a85c9b23fe0fc928026c158e2d97c}} 
+string {\bfseries WINDOWS} = \char`\"{}windows\char`\"{}
+\item 
+\mbox{\Hypertarget{namespaceconans_1_1client_1_1subsystems_a3f712236356296408db8a0809350752d}\label{namespaceconans_1_1client_1_1subsystems_a3f712236356296408db8a0809350752d}} 
+string {\bfseries MSYS2} = \textquotesingle{}msys2\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespaceconans_1_1client_1_1subsystems_a2e95b6ecf0401ac3c669a452a81d2cb9}\label{namespaceconans_1_1client_1_1subsystems_a2e95b6ecf0401ac3c669a452a81d2cb9}} 
+string {\bfseries MSYS} = \textquotesingle{}msys\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespaceconans_1_1client_1_1subsystems_abe8481dfb585bdfbfe0f18709f5adae7}\label{namespaceconans_1_1client_1_1subsystems_abe8481dfb585bdfbfe0f18709f5adae7}} 
+string {\bfseries CYGWIN} = \textquotesingle{}cygwin\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespaceconans_1_1client_1_1subsystems_a934e1a92f693c0f94aff6a7d92d8dfef}\label{namespaceconans_1_1client_1_1subsystems_a934e1a92f693c0f94aff6a7d92d8dfef}} 
+string {\bfseries WSL} = \textquotesingle{}wsl\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespaceconans_1_1client_1_1subsystems_ab809677ea8d890d5420cca488930507c}\label{namespaceconans_1_1client_1_1subsystems_ab809677ea8d890d5420cca488930507c}} 
+string {\bfseries SFU} = \textquotesingle{}sfu\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Potential scenarios:
+
+- Running from a Windows native "cmd"
+  - Targeting Windows native (os.subsystem = None)
+    - No need of bash (no conf at all)
+    - Need to build in bash (tools.microsoft.bash:subsystem=xxx,
+                             tools.microsoft.bash:path=<path>,
+                             conanfile.win_bash)
+    - Need to run (tests) in bash (tools.microsoft.bash:subsystem=xxx,
+                                   tools.microsoft.bash:path=<path>,
+                                   conanfile.win_bash_run)
+  - Targeting Subsystem (os.subsystem = msys2/cygwin)
+    - Always builds and runs in bash (tools.microsoft.bash:path)
+
+- Running from a subsytem terminal (tools.microsoft.bash:subsystem=xxx,
+                                    tools.microsoft.bash:path=None) NO ERROR mode for not specifying it? =CURRENT?
+  - Targeting Windows native (os.subsystem = None)
+  - Targeting Subsystem (os.subsystem = msys2/cygwin)\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceconans_1_1client_1_1subsystems_abbd9ec13848242aa5a5a95d9868d29e6}\label{namespaceconans_1_1client_1_1subsystems_abbd9ec13848242aa5a5a95d9868d29e6}} 
+\index{conans.client.subsystems@{conans.client.subsystems}!deduce\_subsystem@{deduce\_subsystem}}
+\index{deduce\_subsystem@{deduce\_subsystem}!conans.client.subsystems@{conans.client.subsystems}}
+\doxysubsubsection{\texorpdfstring{deduce\_subsystem()}{deduce\_subsystem()}}
+{\footnotesize\ttfamily def conans.\+client.\+subsystems.\+deduce\+\_\+subsystem (\begin{DoxyParamCaption}\item[{}]{conanfile,  }\item[{}]{scope }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} used by:
+- EnvVars: to decide if using :  ; as path separator, translate paths to subsystem
+           and decide to generate a .bat or .sh
+- Autotools: to define the full abs path to the "configure" script
+- GnuDeps: to map all the paths from dependencies
+- Aggregation of envfiles: to map each aggregated path to the subsystem
+- unix_path: util for recipes
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceconans_1_1client_1_1subsystems_a24b64be3861647c131af79c94e2215cb}\label{namespaceconans_1_1client_1_1subsystems_a24b64be3861647c131af79c94e2215cb}} 
+\index{conans.client.subsystems@{conans.client.subsystems}!subsystem\_path@{subsystem\_path}}
+\index{subsystem\_path@{subsystem\_path}!conans.client.subsystems@{conans.client.subsystems}}
+\doxysubsubsection{\texorpdfstring{subsystem\_path()}{subsystem\_path()}}
+{\footnotesize\ttfamily def conans.\+client.\+subsystems.\+subsystem\+\_\+path (\begin{DoxyParamCaption}\item[{}]{subsystem,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}"Used to translate windows paths to MSYS unix paths like
+c/users/path/to/file. Not working in a regular console or MinGW!
+\end{DoxyVerb}
+ 

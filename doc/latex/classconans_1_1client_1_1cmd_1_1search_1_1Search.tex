@@ -1,0 +1,50 @@
+\hypertarget{classconans_1_1client_1_1cmd_1_1search_1_1Search}{}\doxysection{conans.\+client.\+cmd.\+search.\+Search Class Reference}
+\label{classconans_1_1client_1_1cmd_1_1search_1_1Search}\index{conans.client.cmd.search.Search@{conans.client.cmd.search.Search}}
+
+
+Inheritance diagram for conans.\+client.\+cmd.\+search.\+Search\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+cmd.\+search.\+Search\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1cmd_1_1search_1_1Search_a874917aabd1b2b4eb6811821e8698c94}\label{classconans_1_1client_1_1cmd_1_1search_1_1Search_a874917aabd1b2b4eb6811821e8698c94}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, cache, remote\+\_\+manager, remotes)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1cmd_1_1search_1_1Search_a923568f0ae4e6dc96a9e10746f510eda}\label{classconans_1_1client_1_1cmd_1_1search_1_1Search_a923568f0ae4e6dc96a9e10746f510eda}} 
+def {\bfseries search\+\_\+recipes} (self, pattern, remote\+\_\+name=None, case\+\_\+sensitive=False)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1cmd_1_1search_1_1Search_ae3424022379b7dfb73c7626a4f22b200}{search\+\_\+packages}} (self, ref=None, remote\+\_\+name=None, query=None, outdated=False)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1cmd_1_1search_1_1Search_afc1766f441db0b7b1486193f9b6b7249}\label{classconans_1_1client_1_1cmd_1_1search_1_1Search_afc1766f441db0b7b1486193f9b6b7249}} 
+{\bfseries remote\+\_\+ref} = namedtuple(\textquotesingle{}remote\+\_\+ref\textquotesingle{}, \textquotesingle{}ordered\+\_\+packages recipe\+\_\+hash\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1cmd_1_1search_1_1Search_ae3424022379b7dfb73c7626a4f22b200}\label{classconans_1_1client_1_1cmd_1_1search_1_1Search_ae3424022379b7dfb73c7626a4f22b200}} 
+\index{conans.client.cmd.search.Search@{conans.client.cmd.search.Search}!search\_packages@{search\_packages}}
+\index{search\_packages@{search\_packages}!conans.client.cmd.search.Search@{conans.client.cmd.search.Search}}
+\doxysubsubsection{\texorpdfstring{search\_packages()}{search\_packages()}}
+{\footnotesize\ttfamily def conans.\+client.\+cmd.\+search.\+Search.\+search\+\_\+packages (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ref = {\ttfamily None},  }\item[{}]{remote\+\_\+name = {\ttfamily None},  }\item[{}]{query = {\ttfamily None},  }\item[{}]{outdated = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Return the single information saved in conan.vars about all the packages
+    or the packages which match with a pattern
+
+    Attributes:
+        pattern = string to match packages
+        remote_name = search on another origin to get packages info
+        packages_pattern = String query with binary
+                           packages properties: "arch=x86 AND os=Windows"
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/cmd/search.\+py\end{DoxyCompactItemize}

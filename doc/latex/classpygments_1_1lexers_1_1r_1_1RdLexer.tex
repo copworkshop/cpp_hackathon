@@ -1,0 +1,81 @@
+\hypertarget{classpygments_1_1lexers_1_1r_1_1RdLexer}{}\doxysection{pygments.\+lexers.\+r.\+Rd\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1r_1_1RdLexer}\index{pygments.lexers.r.RdLexer@{pygments.lexers.r.RdLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+r.\+Rd\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+r.\+Rd\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1r_1_1RdLexer_a4ae6c5c6c1a65d061116e51c31879afa}\label{classpygments_1_1lexers_1_1r_1_1RdLexer_a4ae6c5c6c1a65d061116e51c31879afa}} 
+string {\bfseries name} = \textquotesingle{}Rd\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1r_1_1RdLexer_a134d22b0399dbc1c2c76b87117056948}\label{classpygments_1_1lexers_1_1r_1_1RdLexer_a134d22b0399dbc1c2c76b87117056948}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}rd\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1r_1_1RdLexer_addcfdf92f1d44ce3dea0d25310e2e29e}\label{classpygments_1_1lexers_1_1r_1_1RdLexer_addcfdf92f1d44ce3dea0d25310e2e29e}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.Rd\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1r_1_1RdLexer_adf771763ef0d02653aaf0d1e26bf7dd0}\label{classpygments_1_1lexers_1_1r_1_1RdLexer_adf771763ef0d02653aaf0d1e26bf7dd0}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/r-\/doc\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1r_1_1RdLexer_ad899c45ef794273d37259d1693da567e}\label{classpygments_1_1lexers_1_1r_1_1RdLexer_ad899c45ef794273d37259d1693da567e}} 
+string {\bfseries url} = \textquotesingle{}http\+://cran.\+r-\/project.\+org/doc/manuals/R-\/exts.\+html\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1r_1_1RdLexer_a41b7b23e710b982833e35a9aab3cab35}\label{classpygments_1_1lexers_1_1r_1_1RdLexer_a41b7b23e710b982833e35a9aab3cab35}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+6\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Pygments Lexer for R documentation (Rd) files
+
+This is a very minimal implementation, highlighting little more
+than the macros. A description of Rd syntax is found in `Writing R
+Extensions <http://cran.r-project.org/doc/manuals/R-exts.html>`_
+and `Parsing Rd files <http://developer.r-project.org/parseRd.pdf>`_.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1r_1_1RdLexer_adad9f4e2a2db0915ccda88f3809e4263}\label{classpygments_1_1lexers_1_1r_1_1RdLexer_adad9f4e2a2db0915ccda88f3809e4263}} 
+\index{pygments.lexers.r.RdLexer@{pygments.lexers.r.RdLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.r.RdLexer@{pygments.lexers.r.RdLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+r.\+Rd\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            \textcolor{comment}{\# catch escaped brackets and percent sign}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\(\backslash\)[\(\backslash\)\(\backslash\)\{\}\%]'}, String.Escape),}
+\DoxyCodeLine{            \textcolor{comment}{\# comments}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\%.*\$'}, Comment),}
+\DoxyCodeLine{            \textcolor{comment}{\# special macros with no arguments}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\(\backslash\)(?:cr|l?dots|R|tab)\(\backslash\)b'}, Keyword.Constant),}
+\DoxyCodeLine{            \textcolor{comment}{\# macros}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\(\backslash\)[a-\/zA-\/Z]+\(\backslash\)b'}, Keyword),}
+\DoxyCodeLine{            \textcolor{comment}{\# special preprocessor macros}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^\(\backslash\)s*\#(?:ifn?def|endif).*\(\backslash\)b'}, Comment.Preproc),}
+\DoxyCodeLine{            \textcolor{comment}{\# non-\/escaped brackets}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\{\}]'}, Name.Builtin),}
+\DoxyCodeLine{            \textcolor{comment}{\# everything else}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^\(\backslash\)\(\backslash\)\%\(\backslash\)n\{\}]+'}, Text),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'.'}, Text),}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/r.\+py\end{DoxyCompactItemize}

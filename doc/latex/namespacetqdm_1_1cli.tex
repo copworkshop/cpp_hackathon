@@ -1,0 +1,64 @@
+\hypertarget{namespacetqdm_1_1cli}{}\doxysection{tqdm.\+cli Namespace Reference}
+\label{namespacetqdm_1_1cli}\index{tqdm.cli@{tqdm.cli}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1cli_a7085ea14b129e76a227ff936608709b6}\label{namespacetqdm_1_1cli_a7085ea14b129e76a227ff936608709b6}} 
+def {\bfseries cast} (val, typ)
+\item 
+def \mbox{\hyperlink{namespacetqdm_1_1cli_abba27b9cdd72a89a892063a97e031bba}{posix\+\_\+pipe}} (fin, fout, delim=b\textquotesingle{}\textbackslash{}\textbackslash{}n\textquotesingle{}, buf\+\_\+size=256, callback=lambda float\+:\+None, callback\+\_\+len=True)
+\item 
+def \mbox{\hyperlink{namespacetqdm_1_1cli_abc09f1d22f803143e8ad0b8605f58f2c}{main}} (fp=sys.\+stderr, argv=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1cli_a824a22f3e5d8a93ef0ac444e9abc419f}\label{namespacetqdm_1_1cli_a824a22f3e5d8a93ef0ac444e9abc419f}} 
+{\bfseries log} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1cli_a6dae854b2e48b7c1d04af93313b8f35d}\label{namespacetqdm_1_1cli_a6dae854b2e48b7c1d04af93313b8f35d}} 
+{\bfseries RE\+\_\+\+OPTS} = re.\+compile(r\textquotesingle{}\textbackslash{}n \{4\}(\textbackslash{}S+)\textbackslash{}s\{2,\}\+:\textbackslash{}s$\ast$(\mbox{[}$^\wedge$,\mbox{]}+)\textquotesingle{})
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1cli_a131f2681965e6826b5eeb3af484e5328}\label{namespacetqdm_1_1cli_a131f2681965e6826b5eeb3af484e5328}} 
+{\bfseries RE\+\_\+\+SHLEX} = re.\+compile(r\textquotesingle{}\textbackslash{}s$\ast$(?$<$!\textbackslash{}S)-\/-\/?(\mbox{[}$^\wedge$\textbackslash{}s=\mbox{]}+)(\textbackslash{}s+$\vert$=$\vert$\$)\textquotesingle{})
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1cli_ac4a3902b37e24214f3ea3d4f7e7e3265}\label{namespacetqdm_1_1cli_ac4a3902b37e24214f3ea3d4f7e7e3265}} 
+tuple {\bfseries UNSUPPORTED\+\_\+\+OPTS} = (\textquotesingle{}iterable\textquotesingle{}, \textquotesingle{}gui\textquotesingle{}, \textquotesingle{}out\textquotesingle{}, \textquotesingle{}file\textquotesingle{})
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1cli_a9c202f3d68d11f292c5a467dde52b3be}\label{namespacetqdm_1_1cli_a9c202f3d68d11f292c5a467dde52b3be}} 
+string {\bfseries CLI\+\_\+\+EXTRA\+\_\+\+DOC}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Module version for monitoring CLI pipes (`... | python -m tqdm | ...`).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetqdm_1_1cli_abc09f1d22f803143e8ad0b8605f58f2c}\label{namespacetqdm_1_1cli_abc09f1d22f803143e8ad0b8605f58f2c}} 
+\index{tqdm.cli@{tqdm.cli}!main@{main}}
+\index{main@{main}!tqdm.cli@{tqdm.cli}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def tqdm.\+cli.\+main (\begin{DoxyParamCaption}\item[{}]{fp = {\ttfamily sys.stderr},  }\item[{}]{argv = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parameters (internal use only)
+---------
+fp  : file-like object for tqdm
+argv  : list (default: sys.argv[1:])
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacetqdm_1_1cli_abba27b9cdd72a89a892063a97e031bba}\label{namespacetqdm_1_1cli_abba27b9cdd72a89a892063a97e031bba}} 
+\index{tqdm.cli@{tqdm.cli}!posix\_pipe@{posix\_pipe}}
+\index{posix\_pipe@{posix\_pipe}!tqdm.cli@{tqdm.cli}}
+\doxysubsubsection{\texorpdfstring{posix\_pipe()}{posix\_pipe()}}
+{\footnotesize\ttfamily def tqdm.\+cli.\+posix\+\_\+pipe (\begin{DoxyParamCaption}\item[{}]{fin,  }\item[{}]{fout,  }\item[{}]{delim = {\ttfamily b\textquotesingle{}\textbackslash{}\textbackslash{}n\textquotesingle{}},  }\item[{}]{buf\+\_\+size = {\ttfamily 256},  }\item[{}]{callback = {\ttfamily lambda~float\+:~None},  }\item[{}]{callback\+\_\+len = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Params
+------
+fin  : binary file with `read(buf_size : int)` method
+fout  : binary file with `write` (and optionally `flush`) methods.
+callback  : function(float), e.g.: `tqdm.update`
+callback_len  : If (default: True) do `callback(len(buffer))`.
+  Otherwise, do `callback(data) for data in buffer.split(delim)`.
+\end{DoxyVerb}
+ 

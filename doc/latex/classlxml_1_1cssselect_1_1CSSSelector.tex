@@ -1,0 +1,57 @@
+\hypertarget{classlxml_1_1cssselect_1_1CSSSelector}{}\doxysection{lxml.\+cssselect.\+CSSSelector Class Reference}
+\label{classlxml_1_1cssselect_1_1CSSSelector}\index{lxml.cssselect.CSSSelector@{lxml.cssselect.CSSSelector}}
+
+
+Inheritance diagram for lxml.\+cssselect.\+CSSSelector\+:
+% FIG 0
+
+
+Collaboration diagram for lxml.\+cssselect.\+CSSSelector\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlxml_1_1cssselect_1_1CSSSelector_abc1530aa3a6f162b8e12dc45a922ea6c}\label{classlxml_1_1cssselect_1_1CSSSelector_abc1530aa3a6f162b8e12dc45a922ea6c}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, css, namespaces=None, translator=\textquotesingle{}xml\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classlxml_1_1cssselect_1_1CSSSelector_a51974c1a0a42a9233ca9251695abcb0a}\label{classlxml_1_1cssselect_1_1CSSSelector_a51974c1a0a42a9233ca9251695abcb0a}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlxml_1_1cssselect_1_1CSSSelector_a4808a717a951722d6b22c90947503d31}\label{classlxml_1_1cssselect_1_1CSSSelector_a4808a717a951722d6b22c90947503d31}} 
+{\bfseries css}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A CSS selector.
+
+Usage::
+
+    >>> from lxml import etree, cssselect
+    >>> select = cssselect.CSSSelector("a tag > child")
+
+    >>> root = etree.XML("<a><b><c/><tag><child>TEXT</child></tag></b></a>")
+    >>> [ el.tag for el in select(root) ]
+    ['child']
+
+To use CSS namespaces, you need to pass a prefix-to-namespace
+mapping as ``namespaces`` keyword argument::
+
+    >>> rdfns = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+    >>> select_ns = cssselect.CSSSelector('root > rdf|Description',
+    ...                                   namespaces={'rdf': rdfns})
+
+    >>> rdf = etree.XML((
+    ...     '<root xmlns:rdf="%s">'
+    ...       '<rdf:Description>blah</rdf:Description>'
+    ...     '</root>') % rdfns)
+    >>> [(el.tag, el.text) for el in select_ns(rdf)]
+    [('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}Description', 'blah')]\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/lxml/cssselect.\+py\end{DoxyCompactItemize}

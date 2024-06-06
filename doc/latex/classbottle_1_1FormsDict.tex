@@ -1,0 +1,86 @@
+\hypertarget{classbottle_1_1FormsDict}{}\doxysection{bottle.\+Forms\+Dict Class Reference}
+\label{classbottle_1_1FormsDict}\index{bottle.FormsDict@{bottle.FormsDict}}
+
+
+Inheritance diagram for bottle.\+Forms\+Dict\+:
+% FIG 0
+
+
+Collaboration diagram for bottle.\+Forms\+Dict\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classbottle_1_1FormsDict_a4e729b061e34d32515692e29fb4df75e}{decode}} (self, encoding=None)
+\item 
+def \mbox{\hyperlink{classbottle_1_1FormsDict_af7914abeec3e5f364d9473f25e405ddb}{getunicode}} (self, name, default=None, encoding=None)
+\item 
+\mbox{\Hypertarget{classbottle_1_1FormsDict_aa48d5a5e70a94727c1ae26263654e0e2}\label{classbottle_1_1FormsDict_aa48d5a5e70a94727c1ae26263654e0e2}} 
+def {\bfseries \+\_\+\+\_\+getattr\+\_\+\+\_\+} (self, name, default=unicode())
+\item 
+def \mbox{\hyperlink{classbottle_1_1FormsDict_a4e729b061e34d32515692e29fb4df75e}{decode}} (self, encoding=None)
+\item 
+def \mbox{\hyperlink{classbottle_1_1FormsDict_af7914abeec3e5f364d9473f25e405ddb}{getunicode}} (self, name, default=None, encoding=None)
+\item 
+\mbox{\Hypertarget{classbottle_1_1FormsDict_aa48d5a5e70a94727c1ae26263654e0e2}\label{classbottle_1_1FormsDict_aa48d5a5e70a94727c1ae26263654e0e2}} 
+def {\bfseries \+\_\+\+\_\+getattr\+\_\+\+\_\+} (self, name, default=unicode())
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbottle_1_1FormsDict_a7b306a5eeff4cd1b66a4a0df1db3a6f6}\label{classbottle_1_1FormsDict_a7b306a5eeff4cd1b66a4a0df1db3a6f6}} 
+string {\bfseries input\+\_\+encoding} = \textquotesingle{}utf8\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classbottle_1_1FormsDict_a3fc97f333c0b8d0231272c8e3b628ba6}\label{classbottle_1_1FormsDict_a3fc97f333c0b8d0231272c8e3b628ba6}} 
+bool {\bfseries recode\+\_\+unicode} = True
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} This :class:`MultiDict` subclass is used to store request form data.
+    Additionally to the normal dict-like item access methods (which return
+    unmodified data as native strings), this container also supports
+    attribute-like access to its values. Attributes are automatically de-
+    or recoded to match :attr:`input_encoding` (default: 'utf8'). Missing
+    attributes default to an empty string. \end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbottle_1_1FormsDict_a4e729b061e34d32515692e29fb4df75e}\label{classbottle_1_1FormsDict_a4e729b061e34d32515692e29fb4df75e}} 
+\index{bottle.FormsDict@{bottle.FormsDict}!decode@{decode}}
+\index{decode@{decode}!bottle.FormsDict@{bottle.FormsDict}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Forms\+Dict.\+decode (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{encoding = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Returns a copy with all keys and values de- or recoded to match
+    :attr:`input_encoding`. Some libraries (e.g. WTForms) want a
+    unicode dictionary. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1FormsDict_a4e729b061e34d32515692e29fb4df75e}\label{classbottle_1_1FormsDict_a4e729b061e34d32515692e29fb4df75e}} 
+\index{bottle.FormsDict@{bottle.FormsDict}!decode@{decode}}
+\index{decode@{decode}!bottle.FormsDict@{bottle.FormsDict}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Forms\+Dict.\+decode (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{encoding = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Returns a copy with all keys and values de- or recoded to match
+    :attr:`input_encoding`. Some libraries (e.g. WTForms) want a
+    unicode dictionary. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1FormsDict_af7914abeec3e5f364d9473f25e405ddb}\label{classbottle_1_1FormsDict_af7914abeec3e5f364d9473f25e405ddb}} 
+\index{bottle.FormsDict@{bottle.FormsDict}!getunicode@{getunicode}}
+\index{getunicode@{getunicode}!bottle.FormsDict@{bottle.FormsDict}}
+\doxysubsubsection{\texorpdfstring{getunicode()}{getunicode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Forms\+Dict.\+getunicode (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{default = {\ttfamily None},  }\item[{}]{encoding = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Return the value as a unicode string, or the default. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1FormsDict_af7914abeec3e5f364d9473f25e405ddb}\label{classbottle_1_1FormsDict_af7914abeec3e5f364d9473f25e405ddb}} 
+\index{bottle.FormsDict@{bottle.FormsDict}!getunicode@{getunicode}}
+\index{getunicode@{getunicode}!bottle.FormsDict@{bottle.FormsDict}}
+\doxysubsubsection{\texorpdfstring{getunicode()}{getunicode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Forms\+Dict.\+getunicode (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{default = {\ttfamily None},  }\item[{}]{encoding = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Return the value as a unicode string, or the default. \end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/bin/bottle.\+py\end{DoxyCompactItemize}

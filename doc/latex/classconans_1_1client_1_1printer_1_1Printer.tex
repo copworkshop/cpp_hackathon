@@ -1,0 +1,84 @@
+\hypertarget{classconans_1_1client_1_1printer_1_1Printer}{}\doxysection{conans.\+client.\+printer.\+Printer Class Reference}
+\label{classconans_1_1client_1_1printer_1_1Printer}\index{conans.client.printer.Printer@{conans.client.printer.Printer}}
+
+
+Inheritance diagram for conans.\+client.\+printer.\+Printer\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+printer.\+Printer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1printer_1_1Printer_a69c044f649a34a09365c1512e5d74028}\label{classconans_1_1client_1_1printer_1_1Printer_a69c044f649a34a09365c1512e5d74028}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, out)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1printer_1_1Printer_a5f63d3c410a5975be1a571683f133417}\label{classconans_1_1client_1_1printer_1_1Printer_a5f63d3c410a5975be1a571683f133417}} 
+def {\bfseries print\+\_\+inspect} (self, inspect, raw=False)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1printer_1_1Printer_a560a7e0a4ac995627c6ea07b4518ed18}{print\+\_\+info}} (self, data, \+\_\+info, package\+\_\+filter=None, show\+\_\+paths=False, show\+\_\+revisions=False)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1printer_1_1Printer_ad0ff1045ed4fdc58ccd3ef7f9340c8b3}{print\+\_\+search\+\_\+recipes}} (self, search\+\_\+info, pattern, raw, all\+\_\+remotes\+\_\+search)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1printer_1_1Printer_adcb9f98d2b39b4550b1efe1586aab6c8}\label{classconans_1_1client_1_1printer_1_1Printer_adcb9f98d2b39b4550b1efe1586aab6c8}} 
+def {\bfseries print\+\_\+search\+\_\+packages} (self, search\+\_\+info, ref, packages\+\_\+query, raw, outdated=False)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1printer_1_1Printer_a0c7e97a4c16a326f43896828dfedd43c}\label{classconans_1_1client_1_1printer_1_1Printer_a0c7e97a4c16a326f43896828dfedd43c}} 
+def {\bfseries print\+\_\+profile} (self, name, profile)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dictionary {\bfseries INDENT\+\_\+\+COLOR}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1printer_1_1Printer_a981459e55a28e13f0df6dfaa290b698c}\label{classconans_1_1client_1_1printer_1_1Printer_a981459e55a28e13f0df6dfaa290b698c}} 
+int {\bfseries INDENT\+\_\+\+SPACES} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} Print some specific information \end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1printer_1_1Printer_a560a7e0a4ac995627c6ea07b4518ed18}\label{classconans_1_1client_1_1printer_1_1Printer_a560a7e0a4ac995627c6ea07b4518ed18}} 
+\index{conans.client.printer.Printer@{conans.client.printer.Printer}!print\_info@{print\_info}}
+\index{print\_info@{print\_info}!conans.client.printer.Printer@{conans.client.printer.Printer}}
+\doxysubsubsection{\texorpdfstring{print\_info()}{print\_info()}}
+{\footnotesize\ttfamily def conans.\+client.\+printer.\+Printer.\+print\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data,  }\item[{}]{\+\_\+info,  }\item[{}]{package\+\_\+filter = {\ttfamily None},  }\item[{}]{show\+\_\+paths = {\ttfamily False},  }\item[{}]{show\+\_\+revisions = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Print in console the dependency information for a conan file
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1client_1_1printer_1_1Printer_ad0ff1045ed4fdc58ccd3ef7f9340c8b3}\label{classconans_1_1client_1_1printer_1_1Printer_ad0ff1045ed4fdc58ccd3ef7f9340c8b3}} 
+\index{conans.client.printer.Printer@{conans.client.printer.Printer}!print\_search\_recipes@{print\_search\_recipes}}
+\index{print\_search\_recipes@{print\_search\_recipes}!conans.client.printer.Printer@{conans.client.printer.Printer}}
+\doxysubsubsection{\texorpdfstring{print\_search\_recipes()}{print\_search\_recipes()}}
+{\footnotesize\ttfamily def conans.\+client.\+printer.\+Printer.\+print\+\_\+search\+\_\+recipes (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{search\+\_\+info,  }\item[{}]{pattern,  }\item[{}]{raw,  }\item[{}]{all\+\_\+remotes\+\_\+search }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Print all the exported conans information
+param pattern: wildcards, e.g., "opencv/*"
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1printer_1_1Printer_a330f82c90df4ff1dffaffbbd1f2e1991}\label{classconans_1_1client_1_1printer_1_1Printer_a330f82c90df4ff1dffaffbbd1f2e1991}} 
+\index{conans.client.printer.Printer@{conans.client.printer.Printer}!INDENT\_COLOR@{INDENT\_COLOR}}
+\index{INDENT\_COLOR@{INDENT\_COLOR}!conans.client.printer.Printer@{conans.client.printer.Printer}}
+\doxysubsubsection{\texorpdfstring{INDENT\_COLOR}{INDENT\_COLOR}}
+{\footnotesize\ttfamily dictionary conans.\+client.\+printer.\+Printer.\+INDENT\+\_\+\+COLOR\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{0: Color.BRIGHT\_CYAN,}
+\DoxyCodeLine{                    1: Color.BRIGHT\_RED,}
+\DoxyCodeLine{                    2: Color.BRIGHT\_GREEN,}
+\DoxyCodeLine{                    3: Color.BRIGHT\_YELLOW,}
+\DoxyCodeLine{                    4: Color.BRIGHT\_MAGENTA\}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/printer.\+py\end{DoxyCompactItemize}

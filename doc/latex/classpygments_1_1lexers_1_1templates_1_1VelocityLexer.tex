@@ -1,0 +1,83 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Velocity\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1VelocityLexer}\index{pygments.lexers.templates.VelocityLexer@{pygments.lexers.templates.VelocityLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Velocity\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Velocity\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1VelocityLexer_a1d4ecd058f09cfb33082d42f8de0178b}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityLexer_a978a33f3760034618a5526ddc5696642}\label{classpygments_1_1lexers_1_1templates_1_1VelocityLexer_a978a33f3760034618a5526ddc5696642}} 
+string {\bfseries name} = \textquotesingle{}Velocity\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityLexer_a96fb8c2c350f449dba25dcee70750e6f}\label{classpygments_1_1lexers_1_1templates_1_1VelocityLexer_a96fb8c2c350f449dba25dcee70750e6f}} 
+string {\bfseries url} = \textquotesingle{}https\+://velocity.\+apache.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityLexer_aed610d510bce31bfc3a9a346e08f4ab4}\label{classpygments_1_1lexers_1_1templates_1_1VelocityLexer_aed610d510bce31bfc3a9a346e08f4ab4}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}velocity\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityLexer_a6c49fdbe3a2b80b15f72a61415460da2}\label{classpygments_1_1lexers_1_1templates_1_1VelocityLexer_a6c49fdbe3a2b80b15f72a61415460da2}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.vm\textquotesingle{}, \textquotesingle{}$\ast$.fhtml\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityLexer_a011ffd58cadc9eb6816dd92d39fbe77e}\label{classpygments_1_1lexers_1_1templates_1_1VelocityLexer_a011ffd58cadc9eb6816dd92d39fbe77e}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityLexer_a41658433050d9d2a6acbe0d17c032bf4}\label{classpygments_1_1lexers_1_1templates_1_1VelocityLexer_a41658433050d9d2a6acbe0d17c032bf4}} 
+{\bfseries flags} = re.\+MULTILINE $\vert$ re.\+DOTALL
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityLexer_a341b8c08aad5104b5847343c0bb1d499}\label{classpygments_1_1lexers_1_1templates_1_1VelocityLexer_a341b8c08aad5104b5847343c0bb1d499}} 
+string {\bfseries identifier} = r\textquotesingle{}\mbox{[}a-\/zA-\/Z\+\_\+\mbox{]}\textbackslash{}w$\ast$\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityLexer_a2bd0db0c9eafb78acbeebd9e0d216a59}\label{classpygments_1_1lexers_1_1templates_1_1VelocityLexer_a2bd0db0c9eafb78acbeebd9e0d216a59}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Generic Velocity template lexer.
+
+Just highlights velocity directives and variable references, other
+data is left untouched by the lexer.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityLexer_a1d4ecd058f09cfb33082d42f8de0178b}\label{classpygments_1_1lexers_1_1templates_1_1VelocityLexer_a1d4ecd058f09cfb33082d42f8de0178b}} 
+\index{pygments.lexers.templates.VelocityLexer@{pygments.lexers.templates.VelocityLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.templates.VelocityLexer@{pygments.lexers.templates.VelocityLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Velocity\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

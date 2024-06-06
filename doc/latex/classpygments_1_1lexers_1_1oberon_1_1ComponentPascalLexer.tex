@@ -1,0 +1,69 @@
+\hypertarget{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer}{}\doxysection{pygments.\+lexers.\+oberon.\+Component\+Pascal\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer}\index{pygments.lexers.oberon.ComponentPascalLexer@{pygments.lexers.oberon.ComponentPascalLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+oberon.\+Component\+Pascal\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+oberon.\+Component\+Pascal\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer_ac36bd5976b66ef21cdbe499151a58628}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer_a729d0b9cc7ad458fe131991711ea4db6}\label{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer_a729d0b9cc7ad458fe131991711ea4db6}} 
+string {\bfseries name} = \textquotesingle{}Component Pascal\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer_afcaf5166c8ba141a7337db0605d22394}\label{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer_afcaf5166c8ba141a7337db0605d22394}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}componentpascal\textquotesingle{}, \textquotesingle{}cp\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer_a3e27753f26e0420a892eee66fe756891}\label{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer_a3e27753f26e0420a892eee66fe756891}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.cp\textquotesingle{}, \textquotesingle{}$\ast$.cps\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer_af472b831c30e8749f60664ded9022a00}\label{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer_af472b831c30e8749f60664ded9022a00}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/component-\/pascal\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer_a4d15200a37347e4bd67c3e98611c81df}\label{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer_a4d15200a37347e4bd67c3e98611c81df}} 
+string {\bfseries url} = \textquotesingle{}https\+://blackboxframework.\+org\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer_a4dc7daa578fd8a613b474e7a501cf951}\label{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer_a4dc7daa578fd8a613b474e7a501cf951}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+1\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer_a1b9eb21adee80469276de7982f8e9567}\label{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer_a1b9eb21adee80469276de7982f8e9567}} 
+{\bfseries flags} = re.\+MULTILINE $\vert$ re.\+DOTALL
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer_a083e12be5518e8e50757342aba229974}\label{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer_a083e12be5518e8e50757342aba229974}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For Component Pascal source code.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer_ac36bd5976b66ef21cdbe499151a58628}\label{classpygments_1_1lexers_1_1oberon_1_1ComponentPascalLexer_ac36bd5976b66ef21cdbe499151a58628}} 
+\index{pygments.lexers.oberon.ComponentPascalLexer@{pygments.lexers.oberon.ComponentPascalLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.oberon.ComponentPascalLexer@{pygments.lexers.oberon.ComponentPascalLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+oberon.\+Component\+Pascal\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The only other lexer using .cp is the C++ one, so we check if for
+a few common Pascal keywords here. Those are unfortunately quite
+common across various business languages as well.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/oberon.\+py\end{DoxyCompactItemize}

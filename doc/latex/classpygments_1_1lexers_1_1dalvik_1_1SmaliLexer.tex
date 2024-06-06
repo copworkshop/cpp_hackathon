@@ -1,0 +1,78 @@
+\hypertarget{classpygments_1_1lexers_1_1dalvik_1_1SmaliLexer}{}\doxysection{pygments.\+lexers.\+dalvik.\+Smali\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1dalvik_1_1SmaliLexer}\index{pygments.lexers.dalvik.SmaliLexer@{pygments.lexers.dalvik.SmaliLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+dalvik.\+Smali\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+dalvik.\+Smali\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1dalvik_1_1SmaliLexer_aa4b42ba2e94239512e104755a3c98a50}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dalvik_1_1SmaliLexer_a24ea1e43fb3ca1e26b9d15b8329294aa}\label{classpygments_1_1lexers_1_1dalvik_1_1SmaliLexer_a24ea1e43fb3ca1e26b9d15b8329294aa}} 
+string {\bfseries name} = \textquotesingle{}Smali\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dalvik_1_1SmaliLexer_a74a19beb9786570a8524628c32187d3f}\label{classpygments_1_1lexers_1_1dalvik_1_1SmaliLexer_a74a19beb9786570a8524628c32187d3f}} 
+string {\bfseries url} = \textquotesingle{}http\+://code.\+google.\+com/p/smali/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dalvik_1_1SmaliLexer_af39427643d86d92d1bfe1591150f4ffd}\label{classpygments_1_1lexers_1_1dalvik_1_1SmaliLexer_af39427643d86d92d1bfe1591150f4ffd}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}smali\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dalvik_1_1SmaliLexer_a932fc840b02b6befcff2d313b223c850}\label{classpygments_1_1lexers_1_1dalvik_1_1SmaliLexer_a932fc840b02b6befcff2d313b223c850}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.smali\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dalvik_1_1SmaliLexer_a4d10d7ee248c44b5b09e75a68a74ffc5}\label{classpygments_1_1lexers_1_1dalvik_1_1SmaliLexer_a4d10d7ee248c44b5b09e75a68a74ffc5}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/smali\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dalvik_1_1SmaliLexer_a72e745cdc60f18d6a26077b2eaf1e7db}\label{classpygments_1_1lexers_1_1dalvik_1_1SmaliLexer_a72e745cdc60f18d6a26077b2eaf1e7db}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+6\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dalvik_1_1SmaliLexer_a36dca520d610cb757c3044f78c43d617}\label{classpygments_1_1lexers_1_1dalvik_1_1SmaliLexer_a36dca520d610cb757c3044f78c43d617}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For Smali (Android/Dalvik) assembly
+code.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dalvik_1_1SmaliLexer_aa4b42ba2e94239512e104755a3c98a50}\label{classpygments_1_1lexers_1_1dalvik_1_1SmaliLexer_aa4b42ba2e94239512e104755a3c98a50}} 
+\index{pygments.lexers.dalvik.SmaliLexer@{pygments.lexers.dalvik.SmaliLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.dalvik.SmaliLexer@{pygments.lexers.dalvik.SmaliLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+dalvik.\+Smali\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/dalvik.\+py\end{DoxyCompactItemize}

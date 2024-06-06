@@ -1,0 +1,55 @@
+\hypertarget{classjwt_1_1jwks__client_1_1PyJWKClient}{}\doxysection{jwt.\+jwks\+\_\+client.\+Py\+JWKClient Class Reference}
+\label{classjwt_1_1jwks__client_1_1PyJWKClient}\index{jwt.jwks\_client.PyJWKClient@{jwt.jwks\_client.PyJWKClient}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjwt_1_1jwks__client_1_1PyJWKClient_aafc85498504c71abfb9e532eb393db5a}\label{classjwt_1_1jwks__client_1_1PyJWKClient_aafc85498504c71abfb9e532eb393db5a}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str uri, bool cache\+\_\+keys=False, int max\+\_\+cached\+\_\+keys=16, bool cache\+\_\+jwk\+\_\+set=True, int lifespan=300, Optional\mbox{[}Dict\mbox{[}str, Any\mbox{]}\mbox{]} headers=None, int timeout=30, Optional\mbox{[}SSLContext\mbox{]} ssl\+\_\+context=None)
+\item 
+\mbox{\Hypertarget{classjwt_1_1jwks__client_1_1PyJWKClient_a02a4f75b342e14baeec257686067dff7}\label{classjwt_1_1jwks__client_1_1PyJWKClient_a02a4f75b342e14baeec257686067dff7}} 
+Any {\bfseries fetch\+\_\+data} (self)
+\item 
+\mbox{\Hypertarget{classjwt_1_1jwks__client_1_1PyJWKClient_aa12dbb8c1cd75d830b4ad5f17706abe2}\label{classjwt_1_1jwks__client_1_1PyJWKClient_aa12dbb8c1cd75d830b4ad5f17706abe2}} 
+\mbox{\hyperlink{classjwt_1_1api__jwk_1_1PyJWKSet}{Py\+JWKSet}} {\bfseries get\+\_\+jwk\+\_\+set} (self, bool refresh=False)
+\item 
+\mbox{\Hypertarget{classjwt_1_1jwks__client_1_1PyJWKClient_a8b9c1312c23ab2c2757f6b1cf71bab56}\label{classjwt_1_1jwks__client_1_1PyJWKClient_a8b9c1312c23ab2c2757f6b1cf71bab56}} 
+List\mbox{[}\mbox{\hyperlink{classjwt_1_1api__jwk_1_1PyJWK}{Py\+JWK}}\mbox{]} {\bfseries get\+\_\+signing\+\_\+keys} (self, bool refresh=False)
+\item 
+\mbox{\Hypertarget{classjwt_1_1jwks__client_1_1PyJWKClient_a4ae4b05d5082d7f788eb9ebcb2c751bf}\label{classjwt_1_1jwks__client_1_1PyJWKClient_a4ae4b05d5082d7f788eb9ebcb2c751bf}} 
+\mbox{\hyperlink{classjwt_1_1api__jwk_1_1PyJWK}{Py\+JWK}} {\bfseries get\+\_\+signing\+\_\+key} (self, str kid)
+\item 
+\mbox{\Hypertarget{classjwt_1_1jwks__client_1_1PyJWKClient_af918cee0a6047a5a23e415e764b3148a}\label{classjwt_1_1jwks__client_1_1PyJWKClient_af918cee0a6047a5a23e415e764b3148a}} 
+\mbox{\hyperlink{classjwt_1_1api__jwk_1_1PyJWK}{Py\+JWK}} {\bfseries get\+\_\+signing\+\_\+key\+\_\+from\+\_\+jwt} (self, str token)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjwt_1_1jwks__client_1_1PyJWKClient_aaeb02cbe990f951afdf92e5ec181351e}\label{classjwt_1_1jwks__client_1_1PyJWKClient_aaeb02cbe990f951afdf92e5ec181351e}} 
+Optional\mbox{[}\mbox{\hyperlink{classjwt_1_1api__jwk_1_1PyJWK}{Py\+JWK}}\mbox{]} {\bfseries match\+\_\+kid} (List\mbox{[}\mbox{\hyperlink{classjwt_1_1api__jwk_1_1PyJWK}{Py\+JWK}}\mbox{]} signing\+\_\+keys, str kid)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjwt_1_1jwks__client_1_1PyJWKClient_ae4aa6e840ad0800587a7ed2d4bcf146c}\label{classjwt_1_1jwks__client_1_1PyJWKClient_ae4aa6e840ad0800587a7ed2d4bcf146c}} 
+{\bfseries uri}
+\item 
+\mbox{\Hypertarget{classjwt_1_1jwks__client_1_1PyJWKClient_ac670f8c44de6273a4e769e6b89f9b91c}\label{classjwt_1_1jwks__client_1_1PyJWKClient_ac670f8c44de6273a4e769e6b89f9b91c}} 
+{\bfseries headers}
+\item 
+\mbox{\Hypertarget{classjwt_1_1jwks__client_1_1PyJWKClient_ad289e190c53f54e15ea8196f007758c4}\label{classjwt_1_1jwks__client_1_1PyJWKClient_ad289e190c53f54e15ea8196f007758c4}} 
+{\bfseries timeout}
+\item 
+\mbox{\Hypertarget{classjwt_1_1jwks__client_1_1PyJWKClient_a8b34932b75df62be869845271249cbcd}\label{classjwt_1_1jwks__client_1_1PyJWKClient_a8b34932b75df62be869845271249cbcd}} 
+{\bfseries ssl\+\_\+context}
+\item 
+\mbox{\Hypertarget{classjwt_1_1jwks__client_1_1PyJWKClient_a922268de47f8d960db5a34e938134117}\label{classjwt_1_1jwks__client_1_1PyJWKClient_a922268de47f8d960db5a34e938134117}} 
+{\bfseries jwk\+\_\+set\+\_\+cache}
+\item 
+\mbox{\Hypertarget{classjwt_1_1jwks__client_1_1PyJWKClient_a569d8d72875ee2e70cff2d35819cc47e}\label{classjwt_1_1jwks__client_1_1PyJWKClient_a569d8d72875ee2e70cff2d35819cc47e}} 
+{\bfseries get\+\_\+signing\+\_\+key}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jwt/jwks\+\_\+client.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,39 @@
+\hypertarget{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelDependenciesBZLGenerator}{}\doxysection{conan.\+tools.\+google.\+bazeldeps.\+\_\+\+Bazel\+Dependencies\+BZLGenerator Class Reference}
+\label{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelDependenciesBZLGenerator}\index{conan.tools.google.bazeldeps.\_BazelDependenciesBZLGenerator@{conan.tools.google.bazeldeps.\_BazelDependenciesBZLGenerator}}
+
+
+Collaboration diagram for conan.\+tools.\+google.\+bazeldeps.\+\_\+\+Bazel\+Dependencies\+BZLGenerator\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelDependenciesBZLGenerator_a83b4af881e6f928158a6f9d02c896611}\label{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelDependenciesBZLGenerator_a83b4af881e6f928158a6f9d02c896611}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, conanfile, dependencies)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelDependenciesBZLGenerator_a5086390c6f630a837ac60d9ea2d62f57}\label{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelDependenciesBZLGenerator_a5086390c6f630a837ac60d9ea2d62f57}} 
+def {\bfseries generate} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelDependenciesBZLGenerator_a3b94432aea8076aebdf81bc53f752c7c}\label{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelDependenciesBZLGenerator_a3b94432aea8076aebdf81bc53f752c7c}} 
+string {\bfseries filename} = \char`\"{}dependencies.\+bzl\char`\"{}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelDependenciesBZLGenerator_a6d2f7bffd10992989f3443a72e48b3ac}\label{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelDependenciesBZLGenerator_a6d2f7bffd10992989f3443a72e48b3ac}} 
+{\bfseries template} = textwrap.\+dedent()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Bazel needs to know all the dependencies for its current project. So, the only way
+to do that is to tell the WORKSPACE file how to load all the Conan ones. This is the goal
+of the function created by this class, the ``load_conan_dependencies`` one.
+
+More information:
+    * https://bazel.build/reference/be/workspace#new_local_repository
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conan/tools/google/bazeldeps.\+py\end{DoxyCompactItemize}

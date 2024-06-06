@@ -1,0 +1,57 @@
+\hypertarget{classpygments_1_1lexers_1_1configs_1_1PacmanConfLexer}{}\doxysection{pygments.\+lexers.\+configs.\+Pacman\+Conf\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1configs_1_1PacmanConfLexer}\index{pygments.lexers.configs.PacmanConfLexer@{pygments.lexers.configs.PacmanConfLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+configs.\+Pacman\+Conf\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+configs.\+Pacman\+Conf\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1PacmanConfLexer_ad82d9a63586fce15b45a30370eb4396e}\label{classpygments_1_1lexers_1_1configs_1_1PacmanConfLexer_ad82d9a63586fce15b45a30370eb4396e}} 
+string {\bfseries name} = \textquotesingle{}Pacman\+Conf\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1PacmanConfLexer_ac6820453c75df34f6aab71bc618ef10a}\label{classpygments_1_1lexers_1_1configs_1_1PacmanConfLexer_ac6820453c75df34f6aab71bc618ef10a}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+archlinux.\+org/pacman/pacman.\+conf.\+5.\+html\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1PacmanConfLexer_abf1b45e563a248fe22900c370e3261ff}\label{classpygments_1_1lexers_1_1configs_1_1PacmanConfLexer_abf1b45e563a248fe22900c370e3261ff}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}pacmanconf\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1PacmanConfLexer_ac0958f9246986f1bd717046a9987ad7e}\label{classpygments_1_1lexers_1_1configs_1_1PacmanConfLexer_ac0958f9246986f1bd717046a9987ad7e}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}pacman.\+conf\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1PacmanConfLexer_a72143882895b574dfe24a1aa1f47b3b1}\label{classpygments_1_1lexers_1_1configs_1_1PacmanConfLexer_a72143882895b574dfe24a1aa1f47b3b1}} 
+list {\bfseries mimetypes} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1PacmanConfLexer_a8af838fca58a6aad1c85143969d48370}\label{classpygments_1_1lexers_1_1configs_1_1PacmanConfLexer_a8af838fca58a6aad1c85143969d48370}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+1\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1PacmanConfLexer_a578d258d72bf356af51e377391f4a442}\label{classpygments_1_1lexers_1_1configs_1_1PacmanConfLexer_a578d258d72bf356af51e377391f4a442}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for pacman.conf.
+
+Actually, IniLexer works almost fine for this format,
+but it yield error token. It is because pacman.conf has
+a form without assignment like:
+
+    UseSyslog
+    Color
+    TotalDownload
+    CheckSpace
+    VerbosePkgLists
+
+These are flags to switch on.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/configs.\+py\end{DoxyCompactItemize}

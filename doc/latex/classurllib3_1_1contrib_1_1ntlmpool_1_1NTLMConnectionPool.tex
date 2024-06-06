@@ -1,0 +1,65 @@
+\hypertarget{classurllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool}{}\doxysection{urllib3.\+contrib.\+ntlmpool.\+NTLMConnection\+Pool Class Reference}
+\label{classurllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool}\index{urllib3.contrib.ntlmpool.NTLMConnectionPool@{urllib3.contrib.ntlmpool.NTLMConnectionPool}}
+
+
+Inheritance diagram for urllib3.\+contrib.\+ntlmpool.\+NTLMConnection\+Pool\+:
+% FIG 0
+
+
+Collaboration diagram for urllib3.\+contrib.\+ntlmpool.\+NTLMConnection\+Pool\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classurllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_af80d33e54290b5242eaaa26457c5b074}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, user, pw, authurl, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+\mbox{\Hypertarget{classurllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_aa772d16ac92008552692f081edcddaa6}\label{classurllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_aa772d16ac92008552692f081edcddaa6}} 
+def {\bfseries urlopen} (self, method, url, body=None, headers=None, retries=3, redirect=True, assert\+\_\+same\+\_\+host=True)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a251e31a86a04d5b8227a74e9df1d0851}\label{classurllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a251e31a86a04d5b8227a74e9df1d0851}} 
+{\bfseries authurl}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_aa5e8563e0d5eb6bfb69edf066bc8f94e}\label{classurllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_aa5e8563e0d5eb6bfb69edf066bc8f94e}} 
+{\bfseries rawuser}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_aac70ed64737bfe199a30c3df418a4981}\label{classurllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_aac70ed64737bfe199a30c3df418a4981}} 
+{\bfseries domain}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_acdb6a897ca301e012f4f6a2bffc7cd4d}\label{classurllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_acdb6a897ca301e012f4f6a2bffc7cd4d}} 
+{\bfseries user}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_ab56b630385fdd0eb3aac6231715198e8}\label{classurllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_ab56b630385fdd0eb3aac6231715198e8}} 
+{\bfseries pw}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a6824b94ee9d621e1f177a2f130749059}\label{classurllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a6824b94ee9d621e1f177a2f130749059}} 
+string {\bfseries scheme} = \char`\"{}https\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Implements an NTLM authentication version of an urllib3 connection pool
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classurllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_af80d33e54290b5242eaaa26457c5b074}\label{classurllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_af80d33e54290b5242eaaa26457c5b074}} 
+\index{urllib3.contrib.ntlmpool.NTLMConnectionPool@{urllib3.contrib.ntlmpool.NTLMConnectionPool}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!urllib3.contrib.ntlmpool.NTLMConnectionPool@{urllib3.contrib.ntlmpool.NTLMConnectionPool}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def urllib3.\+contrib.\+ntlmpool.\+NTLMConnection\+Pool.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{user,  }\item[{}]{pw,  }\item[{}]{authurl,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}authurl is a random URL on the server that is protected by NTLM.
+user is the Windows user, probably in the DOMAIN\\username format.
+pw is the password for the user.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/urllib3/contrib/ntlmpool.\+py\end{DoxyCompactItemize}

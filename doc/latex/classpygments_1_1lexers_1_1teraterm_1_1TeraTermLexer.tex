@@ -1,0 +1,77 @@
+\hypertarget{classpygments_1_1lexers_1_1teraterm_1_1TeraTermLexer}{}\doxysection{pygments.\+lexers.\+teraterm.\+Tera\+Term\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1teraterm_1_1TeraTermLexer}\index{pygments.lexers.teraterm.TeraTermLexer@{pygments.lexers.teraterm.TeraTermLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+teraterm.\+Tera\+Term\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+teraterm.\+Tera\+Term\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1teraterm_1_1TeraTermLexer_a21516c40ad7e983fc3e2440e7d996c15}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1teraterm_1_1TeraTermLexer_afca5cbf37cbea192243bdcc1b16c7667}\label{classpygments_1_1lexers_1_1teraterm_1_1TeraTermLexer_afca5cbf37cbea192243bdcc1b16c7667}} 
+string {\bfseries name} = \textquotesingle{}Tera Term macro\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1teraterm_1_1TeraTermLexer_af49fd8c9ef056bababa931d77c5bbcc6}\label{classpygments_1_1lexers_1_1teraterm_1_1TeraTermLexer_af49fd8c9ef056bababa931d77c5bbcc6}} 
+string {\bfseries url} = \textquotesingle{}https\+://ttssh2.\+osdn.\+jp/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1teraterm_1_1TeraTermLexer_a7d4c223771ca1933ae194de9e3a9890c}\label{classpygments_1_1lexers_1_1teraterm_1_1TeraTermLexer_a7d4c223771ca1933ae194de9e3a9890c}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}teratermmacro\textquotesingle{}, \textquotesingle{}teraterm\textquotesingle{}, \textquotesingle{}ttl\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1teraterm_1_1TeraTermLexer_aa7c77fbb194ec1ad86fbe4f88a78c9d3}\label{classpygments_1_1lexers_1_1teraterm_1_1TeraTermLexer_aa7c77fbb194ec1ad86fbe4f88a78c9d3}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.ttl\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1teraterm_1_1TeraTermLexer_a36f37cd34f329b4381470618de6dc14c}\label{classpygments_1_1lexers_1_1teraterm_1_1TeraTermLexer_a36f37cd34f329b4381470618de6dc14c}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/teratermmacro\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1teraterm_1_1TeraTermLexer_a121ad5d84f479ce8e8718f35c9b565e7}\label{classpygments_1_1lexers_1_1teraterm_1_1TeraTermLexer_a121ad5d84f479ce8e8718f35c9b565e7}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+4\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1teraterm_1_1TeraTermLexer_aef12d99fe7ffc841b49b0f2286c4a77b}\label{classpygments_1_1lexers_1_1teraterm_1_1TeraTermLexer_aef12d99fe7ffc841b49b0f2286c4a77b}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For Tera Term macro source code.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1teraterm_1_1TeraTermLexer_a21516c40ad7e983fc3e2440e7d996c15}\label{classpygments_1_1lexers_1_1teraterm_1_1TeraTermLexer_a21516c40ad7e983fc3e2440e7d996c15}} 
+\index{pygments.lexers.teraterm.TeraTermLexer@{pygments.lexers.teraterm.TeraTermLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.teraterm.TeraTermLexer@{pygments.lexers.teraterm.TeraTermLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+teraterm.\+Tera\+Term\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/teraterm.\+py\end{DoxyCompactItemize}

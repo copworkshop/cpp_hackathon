@@ -1,0 +1,93 @@
+\hypertarget{classpygments_1_1lexers_1_1python_1_1PythonConsoleLexer}{}\doxysection{pygments.\+lexers.\+python.\+Python\+Console\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1python_1_1PythonConsoleLexer}\index{pygments.lexers.python.PythonConsoleLexer@{pygments.lexers.python.PythonConsoleLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+python.\+Python\+Console\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+python.\+Python\+Console\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1python_1_1PythonConsoleLexer_a3ccb07239cffed746cebd38ced7492bb}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1python_1_1PythonConsoleLexer_a927cb26065f1436877113aca8365dbce}\label{classpygments_1_1lexers_1_1python_1_1PythonConsoleLexer_a927cb26065f1436877113aca8365dbce}} 
+string {\bfseries name} = \textquotesingle{}Python console session\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1python_1_1PythonConsoleLexer_a2a1ebd4b872785f8788c7afc5050d1ba}\label{classpygments_1_1lexers_1_1python_1_1PythonConsoleLexer_a2a1ebd4b872785f8788c7afc5050d1ba}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}pycon\textquotesingle{}, \textquotesingle{}python-\/console\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1python_1_1PythonConsoleLexer_a1d08d66cd92de0cd33d1c4bfe518998f}\label{classpygments_1_1lexers_1_1python_1_1PythonConsoleLexer_a1d08d66cd92de0cd33d1c4bfe518998f}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/python-\/doctest\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1python_1_1PythonConsoleLexer_aa768ef1ad1d6608b3d9480310833c9a2}\label{classpygments_1_1lexers_1_1python_1_1PythonConsoleLexer_aa768ef1ad1d6608b3d9480310833c9a2}} 
+string {\bfseries url} = \textquotesingle{}https\+://python.\+org\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1python_1_1PythonConsoleLexer_a3c09a54fa2d8cc7c9aa570e880b050e0}\label{classpygments_1_1lexers_1_1python_1_1PythonConsoleLexer_a3c09a54fa2d8cc7c9aa570e880b050e0}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For Python console output or doctests, such as:
+
+.. sourcecode:: pycon
+
+    >>> a = 'foo'
+    >>> print(a)
+    foo
+    >>> 1 / 0
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    ZeroDivisionError: integer division or modulo by zero
+
+Additional options:
+
+`python3`
+    Use Python 3 lexer for code.  Default is ``True``.
+
+    .. versionadded:: 1.0
+    .. versionchanged:: 2.5
+       Now defaults to ``True``.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1python_1_1PythonConsoleLexer_a3ccb07239cffed746cebd38ced7492bb}\label{classpygments_1_1lexers_1_1python_1_1PythonConsoleLexer_a3ccb07239cffed746cebd38ced7492bb}} 
+\index{pygments.lexers.python.PythonConsoleLexer@{pygments.lexers.python.PythonConsoleLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.python.PythonConsoleLexer@{pygments.lexers.python.PythonConsoleLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+python.\+Python\+Console\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/python.\+py\end{DoxyCompactItemize}

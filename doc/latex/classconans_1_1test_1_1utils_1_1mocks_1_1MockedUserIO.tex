@@ -1,0 +1,76 @@
+\hypertarget{classconans_1_1test_1_1utils_1_1mocks_1_1MockedUserIO}{}\doxysection{conans.\+test.\+utils.\+mocks.\+Mocked\+User\+IO Class Reference}
+\label{classconans_1_1test_1_1utils_1_1mocks_1_1MockedUserIO}\index{conans.test.utils.mocks.MockedUserIO@{conans.test.utils.mocks.MockedUserIO}}
+
+
+Inheritance diagram for conans.\+test.\+utils.\+mocks.\+Mocked\+User\+IO\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+test.\+utils.\+mocks.\+Mocked\+User\+IO\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classconans_1_1test_1_1utils_1_1mocks_1_1MockedUserIO_a3805c18eedbcfa2577d53918db860ca9}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, logins, ins=sys.\+stdin, out=None)
+\item 
+def \mbox{\hyperlink{classconans_1_1test_1_1utils_1_1mocks_1_1MockedUserIO_a12416ffd70fc8cd3952eeec36cfad4db}{get\+\_\+username}} (self, remote\+\_\+name)
+\item 
+def \mbox{\hyperlink{classconans_1_1test_1_1utils_1_1mocks_1_1MockedUserIO_ab53c06236501be6aac46c2a06cc5670f}{get\+\_\+password}} (self, remote\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1test_1_1utils_1_1mocks_1_1MockedUserIO_ae0d2de0a9c04ae7adf75ee2df67b9df5}\label{classconans_1_1test_1_1utils_1_1mocks_1_1MockedUserIO_ae0d2de0a9c04ae7adf75ee2df67b9df5}} 
+{\bfseries logins}
+\item 
+\mbox{\Hypertarget{classconans_1_1test_1_1utils_1_1mocks_1_1MockedUserIO_a5dfd8a4fb110b7cd8be3a32b12ece13a}\label{classconans_1_1test_1_1utils_1_1mocks_1_1MockedUserIO_a5dfd8a4fb110b7cd8be3a32b12ece13a}} 
+{\bfseries login\+\_\+index}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Mock for testing. If get_username or get_password is requested will raise
+an exception except we have a value to return.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classconans_1_1test_1_1utils_1_1mocks_1_1MockedUserIO_a3805c18eedbcfa2577d53918db860ca9}\label{classconans_1_1test_1_1utils_1_1mocks_1_1MockedUserIO_a3805c18eedbcfa2577d53918db860ca9}} 
+\index{conans.test.utils.mocks.MockedUserIO@{conans.test.utils.mocks.MockedUserIO}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!conans.test.utils.mocks.MockedUserIO@{conans.test.utils.mocks.MockedUserIO}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def conans.\+test.\+utils.\+mocks.\+Mocked\+User\+IO.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{logins,  }\item[{}]{ins = {\ttfamily sys.stdin},  }\item[{}]{out = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}logins is a dict of {remote: list(user, password)}
+will return sequentially
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1test_1_1utils_1_1mocks_1_1MockedUserIO_ab53c06236501be6aac46c2a06cc5670f}\label{classconans_1_1test_1_1utils_1_1mocks_1_1MockedUserIO_ab53c06236501be6aac46c2a06cc5670f}} 
+\index{conans.test.utils.mocks.MockedUserIO@{conans.test.utils.mocks.MockedUserIO}!get\_password@{get\_password}}
+\index{get\_password@{get\_password}!conans.test.utils.mocks.MockedUserIO@{conans.test.utils.mocks.MockedUserIO}}
+\doxysubsubsection{\texorpdfstring{get\_password()}{get\_password()}}
+{\footnotesize\ttfamily def conans.\+test.\+utils.\+mocks.\+Mocked\+User\+IO.\+get\+\_\+password (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{remote\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Overridable for testing purpose\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconans_1_1client_1_1userio_1_1UserIO_a3d165e0d5491edbb88740f0cd974a37d}{conans.\+client.\+userio.\+User\+IO}}.
+
+\mbox{\Hypertarget{classconans_1_1test_1_1utils_1_1mocks_1_1MockedUserIO_a12416ffd70fc8cd3952eeec36cfad4db}\label{classconans_1_1test_1_1utils_1_1mocks_1_1MockedUserIO_a12416ffd70fc8cd3952eeec36cfad4db}} 
+\index{conans.test.utils.mocks.MockedUserIO@{conans.test.utils.mocks.MockedUserIO}!get\_username@{get\_username}}
+\index{get\_username@{get\_username}!conans.test.utils.mocks.MockedUserIO@{conans.test.utils.mocks.MockedUserIO}}
+\doxysubsubsection{\texorpdfstring{get\_username()}{get\_username()}}
+{\footnotesize\ttfamily def conans.\+test.\+utils.\+mocks.\+Mocked\+User\+IO.\+get\+\_\+username (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{remote\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Overridable for testing purpose\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconans_1_1client_1_1userio_1_1UserIO_ab7b4efecaa4e7ed32ea9f67830f40c12}{conans.\+client.\+userio.\+User\+IO}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/test/utils/mocks.\+py\end{DoxyCompactItemize}

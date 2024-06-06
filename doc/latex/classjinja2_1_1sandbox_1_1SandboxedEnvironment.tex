@@ -1,0 +1,168 @@
+\hypertarget{classjinja2_1_1sandbox_1_1SandboxedEnvironment}{}\doxysection{jinja2.\+sandbox.\+Sandboxed\+Environment Class Reference}
+\label{classjinja2_1_1sandbox_1_1SandboxedEnvironment}\index{jinja2.sandbox.SandboxedEnvironment@{jinja2.sandbox.SandboxedEnvironment}}
+
+
+Inheritance diagram for jinja2.\+sandbox.\+Sandboxed\+Environment\+:
+% FIG 0
+
+
+Collaboration diagram for jinja2.\+sandbox.\+Sandboxed\+Environment\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjinja2_1_1sandbox_1_1SandboxedEnvironment_a5b7084e92161580b72e9a30cea2d468e}\label{classjinja2_1_1sandbox_1_1SandboxedEnvironment_a5b7084e92161580b72e9a30cea2d468e}} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, $\ast$t.\+Any args, $\ast$$\ast$t.\+Any kwargs)
+\item 
+bool \mbox{\hyperlink{classjinja2_1_1sandbox_1_1SandboxedEnvironment_af61c048f4a82d470d97d009b59a56a9a}{is\+\_\+safe\+\_\+attribute}} (self, t.\+Any obj, str attr, t.\+Any value)
+\item 
+bool \mbox{\hyperlink{classjinja2_1_1sandbox_1_1SandboxedEnvironment_aa6470d97dcc717385d665ac7f83c11a5}{is\+\_\+safe\+\_\+callable}} (self, t.\+Any obj)
+\item 
+t.\+Any \mbox{\hyperlink{classjinja2_1_1sandbox_1_1SandboxedEnvironment_a95246dcc8f5d3c1319cb925981cf601e}{call\+\_\+binop}} (self, \mbox{\hyperlink{classjinja2_1_1runtime_1_1Context}{Context}} context, str operator, t.\+Any left, t.\+Any right)
+\item 
+t.\+Any \mbox{\hyperlink{classjinja2_1_1sandbox_1_1SandboxedEnvironment_af5cdbe6d5e7fc1548ef20623f35e7a4f}{call\+\_\+unop}} (self, \mbox{\hyperlink{classjinja2_1_1runtime_1_1Context}{Context}} context, str operator, t.\+Any arg)
+\item 
+t.\+Union\mbox{[}t.\+Any, \mbox{\hyperlink{classjinja2_1_1runtime_1_1Undefined}{Undefined}}\mbox{]} \mbox{\hyperlink{classjinja2_1_1sandbox_1_1SandboxedEnvironment_a49f981155f611c092b19b662553ec41f}{getitem}} (self, t.\+Any obj, t.\+Union\mbox{[}str, t.\+Any\mbox{]} argument)
+\item 
+t.\+Union\mbox{[}t.\+Any, \mbox{\hyperlink{classjinja2_1_1runtime_1_1Undefined}{Undefined}}\mbox{]} \mbox{\hyperlink{classjinja2_1_1sandbox_1_1SandboxedEnvironment_aa670244404c96a2201bc9f1c8ab931e7}{getattr}} (self, t.\+Any obj, str attribute)
+\item 
+\mbox{\hyperlink{classjinja2_1_1runtime_1_1Undefined}{Undefined}} \mbox{\hyperlink{classjinja2_1_1sandbox_1_1SandboxedEnvironment_aa4251207a932bc94f930ad71ddac240e}{unsafe\+\_\+undefined}} (self, t.\+Any obj, str attribute)
+\item 
+str \mbox{\hyperlink{classjinja2_1_1sandbox_1_1SandboxedEnvironment_aa828b2489eee93c472881de9362ea145}{format\+\_\+string}} (self, str s, t.\+Tuple\mbox{[}t.\+Any,...\mbox{]} args, t.\+Dict\mbox{[}str, t.\+Any\mbox{]} kwargs, t.\+Optional\mbox{[}t.\+Callable\mbox{[}..., t.\+Any\mbox{]}\mbox{]} format\+\_\+func=None)
+\item 
+t.\+Any \mbox{\hyperlink{classjinja2_1_1sandbox_1_1SandboxedEnvironment_a28164f4f7dc2249384ec2fc52b79a23c}{call}} (\+\_\+\+\_\+self, \mbox{\hyperlink{classjinja2_1_1runtime_1_1Context}{Context}} \+\_\+\+\_\+context, t.\+Any \+\_\+\+\_\+obj, $\ast$t.\+Any args, $\ast$$\ast$t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjinja2_1_1sandbox_1_1SandboxedEnvironment_a35544e885ad8c937aee47e4c99c461c7}\label{classjinja2_1_1sandbox_1_1SandboxedEnvironment_a35544e885ad8c937aee47e4c99c461c7}} 
+{\bfseries binop\+\_\+table}
+\item 
+\mbox{\Hypertarget{classjinja2_1_1sandbox_1_1SandboxedEnvironment_ad1155960a508889c55392d6d5522c045}\label{classjinja2_1_1sandbox_1_1SandboxedEnvironment_ad1155960a508889c55392d6d5522c045}} 
+{\bfseries unop\+\_\+table}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjinja2_1_1sandbox_1_1SandboxedEnvironment_a131e08dabc6c5136f5d892e67e9e4fd7}\label{classjinja2_1_1sandbox_1_1SandboxedEnvironment_a131e08dabc6c5136f5d892e67e9e4fd7}} 
+bool {\bfseries sandboxed} = True
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The sandboxed environment.  It works like the regular environment but
+tells the compiler to generate sandboxed code.  Additionally subclasses of
+this environment may override the methods that tell the runtime what
+attributes or functions are safe to access.
+
+If the template tries to access insecure code a :exc:`SecurityError` is
+raised.  However also other exceptions may occur during the rendering so
+the caller has to ensure that all exceptions are caught.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classjinja2_1_1sandbox_1_1SandboxedEnvironment_a28164f4f7dc2249384ec2fc52b79a23c}\label{classjinja2_1_1sandbox_1_1SandboxedEnvironment_a28164f4f7dc2249384ec2fc52b79a23c}} 
+\index{jinja2.sandbox.SandboxedEnvironment@{jinja2.sandbox.SandboxedEnvironment}!call@{call}}
+\index{call@{call}!jinja2.sandbox.SandboxedEnvironment@{jinja2.sandbox.SandboxedEnvironment}}
+\doxysubsubsection{\texorpdfstring{call()}{call()}}
+{\footnotesize\ttfamily  t.\+Any jinja2.\+sandbox.\+Sandboxed\+Environment.\+call (\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+self,  }\item[{\mbox{\hyperlink{classjinja2_1_1runtime_1_1Context}{Context}}}]{\+\_\+\+\_\+context,  }\item[{t.\+Any}]{\+\_\+\+\_\+obj,  }\item[{$\ast$t.\+Any}]{args,  }\item[{$\ast$$\ast$t.\+Any}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call an object from sandboxed code.\end{DoxyVerb}
+ \mbox{\Hypertarget{classjinja2_1_1sandbox_1_1SandboxedEnvironment_a95246dcc8f5d3c1319cb925981cf601e}\label{classjinja2_1_1sandbox_1_1SandboxedEnvironment_a95246dcc8f5d3c1319cb925981cf601e}} 
+\index{jinja2.sandbox.SandboxedEnvironment@{jinja2.sandbox.SandboxedEnvironment}!call\_binop@{call\_binop}}
+\index{call\_binop@{call\_binop}!jinja2.sandbox.SandboxedEnvironment@{jinja2.sandbox.SandboxedEnvironment}}
+\doxysubsubsection{\texorpdfstring{call\_binop()}{call\_binop()}}
+{\footnotesize\ttfamily  t.\+Any jinja2.\+sandbox.\+Sandboxed\+Environment.\+call\+\_\+binop (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classjinja2_1_1runtime_1_1Context}{Context}}}]{context,  }\item[{str}]{operator,  }\item[{t.\+Any}]{left,  }\item[{t.\+Any     }]{right }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}For intercepted binary operator calls (:meth:`intercepted_binops`)
+this function is executed instead of the builtin operator.  This can
+be used to fine tune the behavior of certain operators.
+
+.. versionadded:: 2.6
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classjinja2_1_1sandbox_1_1SandboxedEnvironment_af5cdbe6d5e7fc1548ef20623f35e7a4f}\label{classjinja2_1_1sandbox_1_1SandboxedEnvironment_af5cdbe6d5e7fc1548ef20623f35e7a4f}} 
+\index{jinja2.sandbox.SandboxedEnvironment@{jinja2.sandbox.SandboxedEnvironment}!call\_unop@{call\_unop}}
+\index{call\_unop@{call\_unop}!jinja2.sandbox.SandboxedEnvironment@{jinja2.sandbox.SandboxedEnvironment}}
+\doxysubsubsection{\texorpdfstring{call\_unop()}{call\_unop()}}
+{\footnotesize\ttfamily  t.\+Any jinja2.\+sandbox.\+Sandboxed\+Environment.\+call\+\_\+unop (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classjinja2_1_1runtime_1_1Context}{Context}}}]{context,  }\item[{str}]{operator,  }\item[{t.\+Any}]{arg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}For intercepted unary operator calls (:meth:`intercepted_unops`)
+this function is executed instead of the builtin operator.  This can
+be used to fine tune the behavior of certain operators.
+
+.. versionadded:: 2.6
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classjinja2_1_1sandbox_1_1SandboxedEnvironment_aa828b2489eee93c472881de9362ea145}\label{classjinja2_1_1sandbox_1_1SandboxedEnvironment_aa828b2489eee93c472881de9362ea145}} 
+\index{jinja2.sandbox.SandboxedEnvironment@{jinja2.sandbox.SandboxedEnvironment}!format\_string@{format\_string}}
+\index{format\_string@{format\_string}!jinja2.sandbox.SandboxedEnvironment@{jinja2.sandbox.SandboxedEnvironment}}
+\doxysubsubsection{\texorpdfstring{format\_string()}{format\_string()}}
+{\footnotesize\ttfamily  str jinja2.\+sandbox.\+Sandboxed\+Environment.\+format\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{s,  }\item[{t.\+Tuple\mbox{[}t.\+Any, ...\mbox{]}}]{args,  }\item[{t.\+Dict\mbox{[}str, t.\+Any\mbox{]}}]{kwargs,  }\item[{t.\+Optional\mbox{[}t.\+Callable\mbox{[}..., t.\+Any\mbox{]}\mbox{]} }]{format\+\_\+func = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If a format call is detected, then this is routed through this
+method so that our safety sandbox can be used for it.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classjinja2_1_1sandbox_1_1SandboxedEnvironment_aa670244404c96a2201bc9f1c8ab931e7}\label{classjinja2_1_1sandbox_1_1SandboxedEnvironment_aa670244404c96a2201bc9f1c8ab931e7}} 
+\index{jinja2.sandbox.SandboxedEnvironment@{jinja2.sandbox.SandboxedEnvironment}!getattr@{getattr}}
+\index{getattr@{getattr}!jinja2.sandbox.SandboxedEnvironment@{jinja2.sandbox.SandboxedEnvironment}}
+\doxysubsubsection{\texorpdfstring{getattr()}{getattr()}}
+{\footnotesize\ttfamily  t.\+Union\mbox{[}t.\+Any, \mbox{\hyperlink{classjinja2_1_1runtime_1_1Undefined}{Undefined}}\mbox{]} jinja2.\+sandbox.\+Sandboxed\+Environment.\+getattr (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{t.\+Any}]{obj,  }\item[{str}]{attribute }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Subscribe an object from sandboxed code and prefer the
+attribute.  The attribute passed *must* be a bytestring.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1environment_1_1Environment_a7f381581b4a95b1cd53f5fa48e233fe0}{jinja2.\+environment.\+Environment}}.
+
+\mbox{\Hypertarget{classjinja2_1_1sandbox_1_1SandboxedEnvironment_a49f981155f611c092b19b662553ec41f}\label{classjinja2_1_1sandbox_1_1SandboxedEnvironment_a49f981155f611c092b19b662553ec41f}} 
+\index{jinja2.sandbox.SandboxedEnvironment@{jinja2.sandbox.SandboxedEnvironment}!getitem@{getitem}}
+\index{getitem@{getitem}!jinja2.sandbox.SandboxedEnvironment@{jinja2.sandbox.SandboxedEnvironment}}
+\doxysubsubsection{\texorpdfstring{getitem()}{getitem()}}
+{\footnotesize\ttfamily  t.\+Union\mbox{[}t.\+Any, \mbox{\hyperlink{classjinja2_1_1runtime_1_1Undefined}{Undefined}}\mbox{]} jinja2.\+sandbox.\+Sandboxed\+Environment.\+getitem (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{t.\+Any}]{obj,  }\item[{t.\+Union\mbox{[}str, t.\+Any\mbox{]}     }]{argument }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Subscribe an object from sandboxed code.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1environment_1_1Environment_adaac0af940852c76683f69125182a15c}{jinja2.\+environment.\+Environment}}.
+
+\mbox{\Hypertarget{classjinja2_1_1sandbox_1_1SandboxedEnvironment_af61c048f4a82d470d97d009b59a56a9a}\label{classjinja2_1_1sandbox_1_1SandboxedEnvironment_af61c048f4a82d470d97d009b59a56a9a}} 
+\index{jinja2.sandbox.SandboxedEnvironment@{jinja2.sandbox.SandboxedEnvironment}!is\_safe\_attribute@{is\_safe\_attribute}}
+\index{is\_safe\_attribute@{is\_safe\_attribute}!jinja2.sandbox.SandboxedEnvironment@{jinja2.sandbox.SandboxedEnvironment}}
+\doxysubsubsection{\texorpdfstring{is\_safe\_attribute()}{is\_safe\_attribute()}}
+{\footnotesize\ttfamily  bool jinja2.\+sandbox.\+Sandboxed\+Environment.\+is\+\_\+safe\+\_\+attribute (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{t.\+Any}]{obj,  }\item[{str}]{attr,  }\item[{t.\+Any}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The sandboxed environment will call this method to check if the
+attribute of an object is safe to access.  Per default all attributes
+starting with an underscore are considered private as well as the
+special attributes of internal python objects as returned by the
+:func:`is_internal_attribute` function.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classjinja2_1_1sandbox_1_1ImmutableSandboxedEnvironment_a5b06f2c1df95c92cf0fc156ec02620ab}{jinja2.\+sandbox.\+Immutable\+Sandboxed\+Environment}}.
+
+\mbox{\Hypertarget{classjinja2_1_1sandbox_1_1SandboxedEnvironment_aa6470d97dcc717385d665ac7f83c11a5}\label{classjinja2_1_1sandbox_1_1SandboxedEnvironment_aa6470d97dcc717385d665ac7f83c11a5}} 
+\index{jinja2.sandbox.SandboxedEnvironment@{jinja2.sandbox.SandboxedEnvironment}!is\_safe\_callable@{is\_safe\_callable}}
+\index{is\_safe\_callable@{is\_safe\_callable}!jinja2.sandbox.SandboxedEnvironment@{jinja2.sandbox.SandboxedEnvironment}}
+\doxysubsubsection{\texorpdfstring{is\_safe\_callable()}{is\_safe\_callable()}}
+{\footnotesize\ttfamily  bool jinja2.\+sandbox.\+Sandboxed\+Environment.\+is\+\_\+safe\+\_\+callable (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{t.\+Any}]{obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if an object is safely callable. By default callables
+are considered safe unless decorated with :func:`unsafe`.
+
+This also recognizes the Django convention of setting
+``func.alters_data = True``.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classjinja2_1_1sandbox_1_1SandboxedEnvironment_aa4251207a932bc94f930ad71ddac240e}\label{classjinja2_1_1sandbox_1_1SandboxedEnvironment_aa4251207a932bc94f930ad71ddac240e}} 
+\index{jinja2.sandbox.SandboxedEnvironment@{jinja2.sandbox.SandboxedEnvironment}!unsafe\_undefined@{unsafe\_undefined}}
+\index{unsafe\_undefined@{unsafe\_undefined}!jinja2.sandbox.SandboxedEnvironment@{jinja2.sandbox.SandboxedEnvironment}}
+\doxysubsubsection{\texorpdfstring{unsafe\_undefined()}{unsafe\_undefined()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classjinja2_1_1runtime_1_1Undefined}{Undefined}} jinja2.\+sandbox.\+Sandboxed\+Environment.\+unsafe\+\_\+undefined (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{t.\+Any}]{obj,  }\item[{str}]{attribute }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an undefined object for unsafe attributes.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jinja2/sandbox.\+py\end{DoxyCompactItemize}

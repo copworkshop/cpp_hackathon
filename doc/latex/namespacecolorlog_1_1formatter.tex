@@ -1,0 +1,69 @@
+\hypertarget{namespacecolorlog_1_1formatter}{}\doxysection{colorlog.\+formatter Namespace Reference}
+\label{namespacecolorlog_1_1formatter}\index{colorlog.formatter@{colorlog.formatter}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcolorlog_1_1formatter_1_1ColoredRecord}{Colored\+Record}}
+\item 
+class \mbox{\hyperlink{classcolorlog_1_1formatter_1_1ColoredFormatter}{Colored\+Formatter}}
+\item 
+class \mbox{\hyperlink{classcolorlog_1_1formatter_1_1LevelFormatter}{Level\+Formatter}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacecolorlog_1_1formatter_ae06f03e6257bf54668dc03df0c0397a1}\label{namespacecolorlog_1_1formatter_ae06f03e6257bf54668dc03df0c0397a1}} 
+{\bfseries Escape\+Codes} = typing.\+Mapping\mbox{[}str, str\mbox{]}
+\item 
+\mbox{\Hypertarget{namespacecolorlog_1_1formatter_a6851f43447c7d419fc849a007126b788}\label{namespacecolorlog_1_1formatter_a6851f43447c7d419fc849a007126b788}} 
+{\bfseries Log\+Colors} = typing.\+Mapping\mbox{[}str, str\mbox{]}
+\item 
+\mbox{\Hypertarget{namespacecolorlog_1_1formatter_afc0d5d93d507ce7badca8af6191018f8}\label{namespacecolorlog_1_1formatter_afc0d5d93d507ce7badca8af6191018f8}} 
+{\bfseries Secondary\+Log\+Colors} = typing.\+Mapping\mbox{[}str, Log\+Colors\mbox{]}
+\item 
+dictionary {\bfseries default\+\_\+log\+\_\+colors}
+\item 
+dictionary {\bfseries default\+\_\+formats}
+\item 
+\mbox{\Hypertarget{namespacecolorlog_1_1formatter_a475d1da33c6b0c411c1e747c30f28aca}\label{namespacecolorlog_1_1formatter_a475d1da33c6b0c411c1e747c30f28aca}} 
+{\bfseries TTYColored\+Formatter} = \mbox{\hyperlink{classcolorlog_1_1formatter_1_1ColoredFormatter}{Colored\+Formatter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The ColoredFormatter class.\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacecolorlog_1_1formatter_a24f072d897bf5c10597b1ed2c43f9e4c}\label{namespacecolorlog_1_1formatter_a24f072d897bf5c10597b1ed2c43f9e4c}} 
+\index{colorlog.formatter@{colorlog.formatter}!default\_formats@{default\_formats}}
+\index{default\_formats@{default\_formats}!colorlog.formatter@{colorlog.formatter}}
+\doxysubsubsection{\texorpdfstring{default\_formats}{default\_formats}}
+{\footnotesize\ttfamily dictionary colorlog.\+formatter.\+default\+\_\+formats}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{}
+\DoxyCodeLine{2     \textcolor{stringliteral}{"{}\%"{}}: \textcolor{stringliteral}{"{}\%(log\_color)s\%(levelname)s:\%(name)s:\%(message)s"{}},}
+\DoxyCodeLine{3     \textcolor{stringliteral}{"{}\{"{}}: \textcolor{stringliteral}{"{}\{log\_color\}\{levelname\}:\{name\}:\{message\}"{}},}
+\DoxyCodeLine{4     \textcolor{stringliteral}{"{}\$"{}}: \textcolor{stringliteral}{"{}\$\{log\_color\}\$\{levelname\}:\$\{name\}:\$\{message\}"{}},}
+\DoxyCodeLine{5 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacecolorlog_1_1formatter_a99585dc0746c97aa6caae6f4501bbe78}\label{namespacecolorlog_1_1formatter_a99585dc0746c97aa6caae6f4501bbe78}} 
+\index{colorlog.formatter@{colorlog.formatter}!default\_log\_colors@{default\_log\_colors}}
+\index{default\_log\_colors@{default\_log\_colors}!colorlog.formatter@{colorlog.formatter}}
+\doxysubsubsection{\texorpdfstring{default\_log\_colors}{default\_log\_colors}}
+{\footnotesize\ttfamily dictionary colorlog.\+formatter.\+default\+\_\+log\+\_\+colors}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{}
+\DoxyCodeLine{2     \textcolor{stringliteral}{"{}DEBUG"{}}: \textcolor{stringliteral}{"{}white"{}},}
+\DoxyCodeLine{3     \textcolor{stringliteral}{"{}INFO"{}}: \textcolor{stringliteral}{"{}green"{}},}
+\DoxyCodeLine{4     \textcolor{stringliteral}{"{}WARNING"{}}: \textcolor{stringliteral}{"{}yellow"{}},}
+\DoxyCodeLine{5     \textcolor{stringliteral}{"{}ERROR"{}}: \textcolor{stringliteral}{"{}red"{}},}
+\DoxyCodeLine{6     \textcolor{stringliteral}{"{}CRITICAL"{}}: \textcolor{stringliteral}{"{}bold\_red"{}},}
+\DoxyCodeLine{7 \}}
+
+\end{DoxyCode}

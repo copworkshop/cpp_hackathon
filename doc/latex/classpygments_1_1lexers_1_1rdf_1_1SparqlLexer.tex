@@ -1,0 +1,153 @@
+\hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer}{}\doxysection{pygments.\+lexers.\+rdf.\+Sparql\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer}\index{pygments.lexers.rdf.SparqlLexer@{pygments.lexers.rdf.SparqlLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+rdf.\+Sparql\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+rdf.\+Sparql\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a2e10bc2f6327d092d155ca516babe5a2}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a2e10bc2f6327d092d155ca516babe5a2}} 
+string {\bfseries name} = \textquotesingle{}SPARQL\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a09ed0d824d78d588661dde9ccf70e83c}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a09ed0d824d78d588661dde9ccf70e83c}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}sparql\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a01e4e16b43bab33fa85d7a54af325419}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a01e4e16b43bab33fa85d7a54af325419}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.rq\textquotesingle{}, \textquotesingle{}$\ast$.sparql\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_aa36115e771de0c5313902f23b885f8d2}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_aa36115e771de0c5313902f23b885f8d2}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}application/sparql-\/query\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_abfa3eacf80977028abd3aa72a55049ea}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_abfa3eacf80977028abd3aa72a55049ea}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+w3.\+org/TR/sparql11-\/query\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a5259fdd6fd242d7656e10683bdf31981}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a5259fdd6fd242d7656e10683bdf31981}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+0\textquotesingle{}
+\item 
+tuple {\bfseries PN\+\_\+\+CHARS\+\_\+\+BASE\+\_\+\+GRP}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a6613a601b855a860aaef97530d08615d}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a6613a601b855a860aaef97530d08615d}} 
+tuple {\bfseries PN\+\_\+\+CHARS\+\_\+\+U\+\_\+\+GRP} = (PN\+\_\+\+CHARS\+\_\+\+BASE\+\_\+\+GRP + \textquotesingle{}\+\_\+\textquotesingle{})
+\item 
+tuple {\bfseries PN\+\_\+\+CHARS\+\_\+\+GRP}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_aa993a23ce83f8eb10ef6869a7c36a96e}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_aa993a23ce83f8eb10ef6869a7c36a96e}} 
+string {\bfseries HEX\+\_\+\+GRP} = \textquotesingle{}0-\/9A-\/Fa-\/f\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a0c503e4a17aae5779334ce50162a2bd1}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a0c503e4a17aae5779334ce50162a2bd1}} 
+string {\bfseries PN\+\_\+\+LOCAL\+\_\+\+ESC\+\_\+\+CHARS\+\_\+\+GRP} = r\textquotesingle{} \+\_\+$\sim$.\textbackslash{}-\/!\$\&\char`\"{}()$\ast$+,;=/?\#@\%\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a5d2cf2f4f59b7c4d03dd704cd09bbed1}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a5d2cf2f4f59b7c4d03dd704cd09bbed1}} 
+string {\bfseries PN\+\_\+\+CHARS\+\_\+\+BASE} = \textquotesingle{}\mbox{[}\textquotesingle{} + PN\+\_\+\+CHARS\+\_\+\+BASE\+\_\+\+GRP + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a22e2f38abfce5510d6f57774e5a4c0a6}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a22e2f38abfce5510d6f57774e5a4c0a6}} 
+string {\bfseries PN\+\_\+\+CHARS\+\_\+U} = \textquotesingle{}\mbox{[}\textquotesingle{} + PN\+\_\+\+CHARS\+\_\+\+U\+\_\+\+GRP + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a5a6a28442f7eed2502f73714097d042e}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a5a6a28442f7eed2502f73714097d042e}} 
+string {\bfseries PN\+\_\+\+CHARS} = \textquotesingle{}\mbox{[}\textquotesingle{} + PN\+\_\+\+CHARS\+\_\+\+GRP + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a4d9a0b2e56320cdf145bf02d464e9ea3}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a4d9a0b2e56320cdf145bf02d464e9ea3}} 
+string {\bfseries HEX} = \textquotesingle{}\mbox{[}\textquotesingle{} + HEX\+\_\+\+GRP + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_affd9ff22a9881c0f84a61a56cdc23018}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_affd9ff22a9881c0f84a61a56cdc23018}} 
+string {\bfseries PN\+\_\+\+LOCAL\+\_\+\+ESC\+\_\+\+CHARS} = \textquotesingle{}\mbox{[}\textquotesingle{} + PN\+\_\+\+LOCAL\+\_\+\+ESC\+\_\+\+CHARS\+\_\+\+GRP + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_add4f2600037549e30ae570ee07eca290}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_add4f2600037549e30ae570ee07eca290}} 
+string {\bfseries IRIREF} = r\textquotesingle{}$<$(?\+:\mbox{[}$^\wedge$$<$$>$\char`\"{}\{\}$\vert$$^\wedge$\`{}\textbackslash{}\textbackslash{}\textbackslash{}x00-\/\textbackslash{}x20\mbox{]})$\ast$$>$\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a2ece46d5eab85fe5c3610c8485980c93}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a2ece46d5eab85fe5c3610c8485980c93}} 
+string {\bfseries BLANK\+\_\+\+NODE\+\_\+\+LABEL} = \textquotesingle{}\+\_\+\+:\mbox{[}0-\/9\textquotesingle{} + PN\+\_\+\+CHARS\+\_\+\+U\+\_\+\+GRP + \textquotesingle{}\mbox{]}(?\+:\mbox{[}\textquotesingle{} + PN\+\_\+\+CHARS\+\_\+\+GRP + \textbackslash{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_ac62f5de2cb941cb70df853f1e4f581fd}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_ac62f5de2cb941cb70df853f1e4f581fd}} 
+string {\bfseries PN\+\_\+\+PREFIX} = PN\+\_\+\+CHARS\+\_\+\+BASE + \textquotesingle{}(?\+:\mbox{[}\textquotesingle{} + PN\+\_\+\+CHARS\+\_\+\+GRP + \textquotesingle{}.\mbox{]}$\ast$\textquotesingle{} + PN\+\_\+\+CHARS + \textquotesingle{})?\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_afc5d8eb1ea2b36ee73d3609e0e0a7485}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_afc5d8eb1ea2b36ee73d3609e0e0a7485}} 
+string {\bfseries VARNAME} = \textquotesingle{}\mbox{[}0-\/9\textquotesingle{} + PN\+\_\+\+CHARS\+\_\+\+U\+\_\+\+GRP + \textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{} + PN\+\_\+\+CHARS\+\_\+\+U\+\_\+\+GRP + \textbackslash{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_ae9d3efcc2bc6801f37a0ee747df178ed}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_ae9d3efcc2bc6801f37a0ee747df178ed}} 
+string {\bfseries PERCENT} = \textquotesingle{}\%\textquotesingle{} + HEX + HEX
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_ade4be0ab6f8bf6caa6607e5b7af50b5f}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_ade4be0ab6f8bf6caa6607e5b7af50b5f}} 
+string {\bfseries PN\+\_\+\+LOCAL\+\_\+\+ESC} = r\textquotesingle{}\textbackslash{}\textbackslash{}\textquotesingle{} + PN\+\_\+\+LOCAL\+\_\+\+ESC\+\_\+\+CHARS
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a141c04c96efa8e876ddd07f9c1217f56}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a141c04c96efa8e876ddd07f9c1217f56}} 
+string {\bfseries PLX} = \textquotesingle{}(?\+:\textquotesingle{} + PERCENT + \textquotesingle{})$\vert$(?\+:\textquotesingle{} + PN\+\_\+\+LOCAL\+\_\+\+ESC + \textquotesingle{})\textquotesingle{}
+\item 
+tuple {\bfseries PN\+\_\+\+LOCAL}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a9754e2f55093adbccb45b6fcc4219ed8}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a9754e2f55093adbccb45b6fcc4219ed8}} 
+string {\bfseries EXPONENT} = r\textquotesingle{}\mbox{[}eE\mbox{]}\mbox{[}+-\/\mbox{]}?\textbackslash{}d+\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a85b5e26de0faee082c3e01f4a627e3fe}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a85b5e26de0faee082c3e01f4a627e3fe}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for SPARQL query language.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_af2ea1dd980be21260a3a2926b0636daa}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_af2ea1dd980be21260a3a2926b0636daa}} 
+\index{pygments.lexers.rdf.SparqlLexer@{pygments.lexers.rdf.SparqlLexer}!PN\_CHARS\_BASE\_GRP@{PN\_CHARS\_BASE\_GRP}}
+\index{PN\_CHARS\_BASE\_GRP@{PN\_CHARS\_BASE\_GRP}!pygments.lexers.rdf.SparqlLexer@{pygments.lexers.rdf.SparqlLexer}}
+\doxysubsubsection{\texorpdfstring{PN\_CHARS\_BASE\_GRP}{PN\_CHARS\_BASE\_GRP}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+rdf.\+Sparql\+Lexer.\+PN\+\_\+\+CHARS\+\_\+\+BASE\+\_\+\+GRP\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (\textcolor{stringliteral}{'a-\/zA-\/Z'}}
+\DoxyCodeLine{                         \textcolor{stringliteral}{'\(\backslash\)u00c0-\/\(\backslash\)u00d6'}}
+\DoxyCodeLine{                         \textcolor{stringliteral}{'\(\backslash\)u00d8-\/\(\backslash\)u00f6'}}
+\DoxyCodeLine{                         \textcolor{stringliteral}{'\(\backslash\)u00f8-\/\(\backslash\)u02ff'}}
+\DoxyCodeLine{                         \textcolor{stringliteral}{'\(\backslash\)u0370-\/\(\backslash\)u037d'}}
+\DoxyCodeLine{                         \textcolor{stringliteral}{'\(\backslash\)u037f-\/\(\backslash\)u1fff'}}
+\DoxyCodeLine{                         \textcolor{stringliteral}{'\(\backslash\)u200c-\/\(\backslash\)u200d'}}
+\DoxyCodeLine{                         \textcolor{stringliteral}{'\(\backslash\)u2070-\/\(\backslash\)u218f'}}
+\DoxyCodeLine{                         \textcolor{stringliteral}{'\(\backslash\)u2c00-\/\(\backslash\)u2fef'}}
+\DoxyCodeLine{                         \textcolor{stringliteral}{'\(\backslash\)u3001-\/\(\backslash\)ud7ff'}}
+\DoxyCodeLine{                         \textcolor{stringliteral}{'\(\backslash\)uf900-\/\(\backslash\)ufdcf'}}
+\DoxyCodeLine{                         \textcolor{stringliteral}{'\(\backslash\)ufdf0-\/\(\backslash\)ufffd'})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_ae41e6859202fa03c24f1007846f6a76e}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_ae41e6859202fa03c24f1007846f6a76e}} 
+\index{pygments.lexers.rdf.SparqlLexer@{pygments.lexers.rdf.SparqlLexer}!PN\_CHARS\_GRP@{PN\_CHARS\_GRP}}
+\index{PN\_CHARS\_GRP@{PN\_CHARS\_GRP}!pygments.lexers.rdf.SparqlLexer@{pygments.lexers.rdf.SparqlLexer}}
+\doxysubsubsection{\texorpdfstring{PN\_CHARS\_GRP}{PN\_CHARS\_GRP}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+rdf.\+Sparql\+Lexer.\+PN\+\_\+\+CHARS\+\_\+\+GRP\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (PN\_CHARS\_U\_GRP +}
+\DoxyCodeLine{                    \textcolor{stringliteral}{r'\(\backslash\)-\/'} +}
+\DoxyCodeLine{                    \textcolor{stringliteral}{r'0-\/9'} +}
+\DoxyCodeLine{                    \textcolor{stringliteral}{'\(\backslash\)u00b7'} +}
+\DoxyCodeLine{                    \textcolor{stringliteral}{'\(\backslash\)u0300-\/\(\backslash\)u036f'} +}
+\DoxyCodeLine{                    \textcolor{stringliteral}{'\(\backslash\)u203f-\/\(\backslash\)u2040'})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a6ed4a69b12f4513ac42aa23e9927ae0e}\label{classpygments_1_1lexers_1_1rdf_1_1SparqlLexer_a6ed4a69b12f4513ac42aa23e9927ae0e}} 
+\index{pygments.lexers.rdf.SparqlLexer@{pygments.lexers.rdf.SparqlLexer}!PN\_LOCAL@{PN\_LOCAL}}
+\index{PN\_LOCAL@{PN\_LOCAL}!pygments.lexers.rdf.SparqlLexer@{pygments.lexers.rdf.SparqlLexer}}
+\doxysubsubsection{\texorpdfstring{PN\_LOCAL}{PN\_LOCAL}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+rdf.\+Sparql\+Lexer.\+PN\+\_\+\+LOCAL\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (\textcolor{stringliteral}{'(?:['} + PN\_CHARS\_U\_GRP + \textcolor{stringliteral}{':0-\/9'} + \textcolor{stringliteral}{']|'} + PLX + \textcolor{stringliteral}{')'} +}
+\DoxyCodeLine{                \textcolor{stringliteral}{'(?:(?:['} + PN\_CHARS\_GRP + \textcolor{stringliteral}{'.:]|'} + PLX + \textcolor{stringliteral}{')*(?:['} +}
+\DoxyCodeLine{                PN\_CHARS\_GRP + \textcolor{stringliteral}{':]|'} + PLX + \textcolor{stringliteral}{'))?'})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/rdf.\+py\end{DoxyCompactItemize}

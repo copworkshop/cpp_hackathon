@@ -1,0 +1,55 @@
+\hypertarget{classjinja2_1_1nodes_1_1Compare}{}\doxysection{jinja2.\+nodes.\+Compare Class Reference}
+\label{classjinja2_1_1nodes_1_1Compare}\index{jinja2.nodes.Compare@{jinja2.nodes.Compare}}
+
+
+Inheritance diagram for jinja2.\+nodes.\+Compare\+:
+% FIG 0
+
+
+Collaboration diagram for jinja2.\+nodes.\+Compare\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Any \mbox{\hyperlink{classjinja2_1_1nodes_1_1Compare_a6a9f849f506c29040b03df130fe33a85}{as\+\_\+const}} (self, t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1EvalContext}{Eval\+Context}}\mbox{]} eval\+\_\+ctx=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjinja2_1_1nodes_1_1Compare_aad10cee9eb579dd82e419863c96b3329}\label{classjinja2_1_1nodes_1_1Compare_aad10cee9eb579dd82e419863c96b3329}} 
+tuple {\bfseries fields} = (\char`\"{}expr\char`\"{}, \char`\"{}ops\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Compares an expression with some other expressions.  `ops` must be a
+list of :class:`Operand`\\s.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classjinja2_1_1nodes_1_1Compare_a6a9f849f506c29040b03df130fe33a85}\label{classjinja2_1_1nodes_1_1Compare_a6a9f849f506c29040b03df130fe33a85}} 
+\index{jinja2.nodes.Compare@{jinja2.nodes.Compare}!as\_const@{as\_const}}
+\index{as\_const@{as\_const}!jinja2.nodes.Compare@{jinja2.nodes.Compare}}
+\doxysubsubsection{\texorpdfstring{as\_const()}{as\_const()}}
+{\footnotesize\ttfamily  t.\+Any jinja2.\+nodes.\+Compare.\+as\+\_\+const (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1EvalContext}{Eval\+Context}}\mbox{]} }]{eval\+\_\+ctx = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the value of the expression as constant or raise
+:exc:`Impossible` if this was not possible.
+
+An :class:`EvalContext` can be provided, if none is given
+a default context is created which requires the nodes to have
+an attached environment.
+
+.. versionchanged:: 2.4
+   the `eval_ctx` parameter was added.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1nodes_1_1Expr_afc3c83d61cdf1d87d4a3f54637efb194}{jinja2.\+nodes.\+Expr}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jinja2/nodes.\+py\end{DoxyCompactItemize}

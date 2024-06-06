@@ -1,0 +1,77 @@
+\hypertarget{classpygments_1_1lexers_1_1asm_1_1DObjdumpLexer}{}\doxysection{pygments.\+lexers.\+asm.\+DObjdump\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1asm_1_1DObjdumpLexer}\index{pygments.lexers.asm.DObjdumpLexer@{pygments.lexers.asm.DObjdumpLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+asm.\+DObjdump\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+asm.\+DObjdump\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1asm_1_1DObjdumpLexer_aa65c321378a7650bfbe601d3b15346d0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1DObjdumpLexer_ae520d478cca6810f9706c4cabd1107bc}\label{classpygments_1_1lexers_1_1asm_1_1DObjdumpLexer_ae520d478cca6810f9706c4cabd1107bc}} 
+string {\bfseries name} = \textquotesingle{}d-\/objdump\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1DObjdumpLexer_a43d7f14bc40a52ff30c6792fb3d5c579}\label{classpygments_1_1lexers_1_1asm_1_1DObjdumpLexer_a43d7f14bc40a52ff30c6792fb3d5c579}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}d-\/objdump\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1DObjdumpLexer_a3028b3080d34032e44f6eb1172fde8f4}\label{classpygments_1_1lexers_1_1asm_1_1DObjdumpLexer_a3028b3080d34032e44f6eb1172fde8f4}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.d-\/objdump\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1DObjdumpLexer_a10c7d6fb0234b172e4d3401cb7278dd1}\label{classpygments_1_1lexers_1_1asm_1_1DObjdumpLexer_a10c7d6fb0234b172e4d3401cb7278dd1}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/d-\/objdump\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1DObjdumpLexer_aa19d0ab3d0855029532d49ef53837012}\label{classpygments_1_1lexers_1_1asm_1_1DObjdumpLexer_aa19d0ab3d0855029532d49ef53837012}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+gnu.\+org/software/binutils\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1DObjdumpLexer_add3df454bfec11da76291d3021a433d6}\label{classpygments_1_1lexers_1_1asm_1_1DObjdumpLexer_add3df454bfec11da76291d3021a433d6}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For the output of ``objdump -Sr`` on compiled D files.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1DObjdumpLexer_aa65c321378a7650bfbe601d3b15346d0}\label{classpygments_1_1lexers_1_1asm_1_1DObjdumpLexer_aa65c321378a7650bfbe601d3b15346d0}} 
+\index{pygments.lexers.asm.DObjdumpLexer@{pygments.lexers.asm.DObjdumpLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.asm.DObjdumpLexer@{pygments.lexers.asm.DObjdumpLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+asm.\+DObjdump\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/asm.\+py\end{DoxyCompactItemize}

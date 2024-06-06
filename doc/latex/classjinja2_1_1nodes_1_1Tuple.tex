@@ -1,0 +1,69 @@
+\hypertarget{classjinja2_1_1nodes_1_1Tuple}{}\doxysection{jinja2.\+nodes.\+Tuple Class Reference}
+\label{classjinja2_1_1nodes_1_1Tuple}\index{jinja2.nodes.Tuple@{jinja2.nodes.Tuple}}
+
+
+Inheritance diagram for jinja2.\+nodes.\+Tuple\+:
+% FIG 0
+
+
+Collaboration diagram for jinja2.\+nodes.\+Tuple\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Tuple\mbox{[}t.\+Any,...\mbox{]} \mbox{\hyperlink{classjinja2_1_1nodes_1_1Tuple_accdf45a192eebbf02d5eae6a977dedd2}{as\+\_\+const}} (self, t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1EvalContext}{Eval\+Context}}\mbox{]} eval\+\_\+ctx=None)
+\item 
+bool \mbox{\hyperlink{classjinja2_1_1nodes_1_1Tuple_a513d955b1f8c1939986dd7dc268b2a50}{can\+\_\+assign}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjinja2_1_1nodes_1_1Tuple_af6ab3d64ea732b6fa636fedc623fe566}\label{classjinja2_1_1nodes_1_1Tuple_af6ab3d64ea732b6fa636fedc623fe566}} 
+tuple {\bfseries fields} = (\char`\"{}items\char`\"{}, \char`\"{}ctx\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For loop unpacking and some other things like multiple arguments
+for subscripts.  Like for :class:`Name` `ctx` specifies if the tuple
+is used for loading the names or storing.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classjinja2_1_1nodes_1_1Tuple_accdf45a192eebbf02d5eae6a977dedd2}\label{classjinja2_1_1nodes_1_1Tuple_accdf45a192eebbf02d5eae6a977dedd2}} 
+\index{jinja2.nodes.Tuple@{jinja2.nodes.Tuple}!as\_const@{as\_const}}
+\index{as\_const@{as\_const}!jinja2.nodes.Tuple@{jinja2.nodes.Tuple}}
+\doxysubsubsection{\texorpdfstring{as\_const()}{as\_const()}}
+{\footnotesize\ttfamily  t.\+Tuple\mbox{[}t.\+Any, ...\mbox{]} jinja2.\+nodes.\+Tuple.\+as\+\_\+const (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1EvalContext}{Eval\+Context}}\mbox{]} }]{eval\+\_\+ctx = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the value of the expression as constant or raise
+:exc:`Impossible` if this was not possible.
+
+An :class:`EvalContext` can be provided, if none is given
+a default context is created which requires the nodes to have
+an attached environment.
+
+.. versionchanged:: 2.4
+   the `eval_ctx` parameter was added.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1nodes_1_1Expr_afc3c83d61cdf1d87d4a3f54637efb194}{jinja2.\+nodes.\+Expr}}.
+
+\mbox{\Hypertarget{classjinja2_1_1nodes_1_1Tuple_a513d955b1f8c1939986dd7dc268b2a50}\label{classjinja2_1_1nodes_1_1Tuple_a513d955b1f8c1939986dd7dc268b2a50}} 
+\index{jinja2.nodes.Tuple@{jinja2.nodes.Tuple}!can\_assign@{can\_assign}}
+\index{can\_assign@{can\_assign}!jinja2.nodes.Tuple@{jinja2.nodes.Tuple}}
+\doxysubsubsection{\texorpdfstring{can\_assign()}{can\_assign()}}
+{\footnotesize\ttfamily  bool jinja2.\+nodes.\+Tuple.\+can\+\_\+assign (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if it's possible to assign something to this node.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1nodes_1_1Expr_ad2393d414e2f6418e67e29bb99ae8629}{jinja2.\+nodes.\+Expr}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jinja2/nodes.\+py\end{DoxyCompactItemize}

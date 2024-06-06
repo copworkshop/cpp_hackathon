@@ -1,0 +1,72 @@
+\hypertarget{classpygments_1_1lexers_1_1textfmts_1_1GettextLexer}{}\doxysection{pygments.\+lexers.\+textfmts.\+Gettext\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1textfmts_1_1GettextLexer}\index{pygments.lexers.textfmts.GettextLexer@{pygments.lexers.textfmts.GettextLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+textfmts.\+Gettext\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+textfmts.\+Gettext\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1GettextLexer_a1a11d67c49131394e67f3b9b1c6452bc}\label{classpygments_1_1lexers_1_1textfmts_1_1GettextLexer_a1a11d67c49131394e67f3b9b1c6452bc}} 
+string {\bfseries name} = \textquotesingle{}Gettext Catalog\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1GettextLexer_a9dc1d7c1de5a81aa5a34d474c684350c}\label{classpygments_1_1lexers_1_1textfmts_1_1GettextLexer_a9dc1d7c1de5a81aa5a34d474c684350c}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}pot\textquotesingle{}, \textquotesingle{}po\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1GettextLexer_a9e36249c08fe01fa2e2575be277d11c7}\label{classpygments_1_1lexers_1_1textfmts_1_1GettextLexer_a9e36249c08fe01fa2e2575be277d11c7}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.pot\textquotesingle{}, \textquotesingle{}$\ast$.po\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1GettextLexer_a1d2ce896b12d0861ab154be2bb8daa0d}\label{classpygments_1_1lexers_1_1textfmts_1_1GettextLexer_a1d2ce896b12d0861ab154be2bb8daa0d}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}application/x-\/gettext\textquotesingle{}, \textquotesingle{}text/x-\/gettext\textquotesingle{}, \textquotesingle{}text/gettext\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1GettextLexer_ad898c85da984994bd393ffe51393171b}\label{classpygments_1_1lexers_1_1textfmts_1_1GettextLexer_ad898c85da984994bd393ffe51393171b}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+gnu.\+org/software/gettext\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1GettextLexer_a2706a6d8af1665538d3031182e11bcbf}\label{classpygments_1_1lexers_1_1textfmts_1_1GettextLexer_a2706a6d8af1665538d3031182e11bcbf}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}0.\+9\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for Gettext catalog files.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1GettextLexer_aa2cb49507a27dc4cf82d93e16775a1b5}\label{classpygments_1_1lexers_1_1textfmts_1_1GettextLexer_aa2cb49507a27dc4cf82d93e16775a1b5}} 
+\index{pygments.lexers.textfmts.GettextLexer@{pygments.lexers.textfmts.GettextLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.textfmts.GettextLexer@{pygments.lexers.textfmts.GettextLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+textfmts.\+Gettext\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^\#,\(\backslash\)s.*?\$'}, Keyword.Type),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^\#:\(\backslash\)s.*?\$'}, Keyword.Declaration),}
+\DoxyCodeLine{            \textcolor{comment}{\# (r'\string^\#\$', Comment),}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^(\#|\#\(\backslash\).\(\backslash\)s|\#\(\backslash\)|\(\backslash\)s|\#\string~\(\backslash\)s|\#\(\backslash\)s).*\$'}, Comment.Single),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^("{})([A-\/Za-\/z-\/]+:)(.*"{})\$'},}
+\DoxyCodeLine{             bygroups(String, Name.Property, String)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^"{}.*"{}\$'}, String),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^(msgid|msgid\_plural|msgstr|msgctxt)(\(\backslash\)s+)("{}.*"{})\$'},}
+\DoxyCodeLine{             bygroups(Name.Variable, Text, String)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^(msgstr\(\backslash\)[)(\(\backslash\)d)(\(\backslash\)])(\(\backslash\)s+)("{}.*"{})\$'},}
+\DoxyCodeLine{             bygroups(Name.Variable, Number.Integer, Name.Variable, Text, String)),}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/textfmts.\+py\end{DoxyCompactItemize}

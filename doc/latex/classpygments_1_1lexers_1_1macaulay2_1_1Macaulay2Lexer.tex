@@ -1,0 +1,83 @@
+\hypertarget{classpygments_1_1lexers_1_1macaulay2_1_1Macaulay2Lexer}{}\doxysection{pygments.\+lexers.\+macaulay2.\+Macaulay2\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1macaulay2_1_1Macaulay2Lexer}\index{pygments.lexers.macaulay2.Macaulay2Lexer@{pygments.lexers.macaulay2.Macaulay2Lexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+macaulay2.\+Macaulay2\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+macaulay2.\+Macaulay2\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1macaulay2_1_1Macaulay2Lexer_a09806bdd40124215b93161fa81613559}\label{classpygments_1_1lexers_1_1macaulay2_1_1Macaulay2Lexer_a09806bdd40124215b93161fa81613559}} 
+string {\bfseries name} = \textquotesingle{}Macaulay2\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1macaulay2_1_1Macaulay2Lexer_ae0be65da7ecd7e285ae94d4f16dbd35f}\label{classpygments_1_1lexers_1_1macaulay2_1_1Macaulay2Lexer_ae0be65da7ecd7e285ae94d4f16dbd35f}} 
+string {\bfseries url} = \textquotesingle{}https\+://macaulay2.\+com/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1macaulay2_1_1Macaulay2Lexer_a7d66f4ff824b6076930308bed482274a}\label{classpygments_1_1lexers_1_1macaulay2_1_1Macaulay2Lexer_a7d66f4ff824b6076930308bed482274a}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}macaulay2\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1macaulay2_1_1Macaulay2Lexer_aea51ce6c3800fa09180220df155fdf14}\label{classpygments_1_1lexers_1_1macaulay2_1_1Macaulay2Lexer_aea51ce6c3800fa09180220df155fdf14}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.m2\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1macaulay2_1_1Macaulay2Lexer_aba21a60bdb6b46a9b684a30711c75fa7}\label{classpygments_1_1lexers_1_1macaulay2_1_1Macaulay2Lexer_aba21a60bdb6b46a9b684a30711c75fa7}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+12\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for Macaulay2, a software system for research in algebraic geometry.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1macaulay2_1_1Macaulay2Lexer_a5b1b5e9e165933fa87c1123873343d64}\label{classpygments_1_1lexers_1_1macaulay2_1_1Macaulay2Lexer_a5b1b5e9e165933fa87c1123873343d64}} 
+\index{pygments.lexers.macaulay2.Macaulay2Lexer@{pygments.lexers.macaulay2.Macaulay2Lexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.macaulay2.Macaulay2Lexer@{pygments.lexers.macaulay2.Macaulay2Lexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+macaulay2.\+Macaulay2\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'-\/-\/.*\$'}, Comment.Single),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'-\/\(\backslash\)*'}, Comment.Multiline, \textcolor{stringliteral}{'block comment'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'"{}'}, String, \textcolor{stringliteral}{'quote string'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'///'}, String, \textcolor{stringliteral}{'slash string'}),}
+\DoxyCodeLine{            (words(M2KEYWORDS, prefix=\textcolor{stringliteral}{r'\(\backslash\)b'}, suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}), Keyword),}
+\DoxyCodeLine{            (words(M2DATATYPES, prefix=\textcolor{stringliteral}{r'\(\backslash\)b'}, suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}), Name.Builtin),}
+\DoxyCodeLine{            (words(M2FUNCTIONS, prefix=\textcolor{stringliteral}{r'\(\backslash\)b'}, suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}), Name.Function),}
+\DoxyCodeLine{            (words(M2CONSTANTS, prefix=\textcolor{stringliteral}{r'\(\backslash\)b'}, suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}), Name.Constant),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Text.Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'.'}, Text)}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'block comment'} : [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^*-\/]+'}, Comment.Multiline),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)*-\/'}, Comment.Multiline, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[*-\/]'}, Comment.Multiline)}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'quote string'} : [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^\(\backslash\)\(\backslash\)"{}]+'}, String),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'"{}'}, String, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\(\backslash\)"{}?'}, String),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'slash string'} : [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^/]+'}, String),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(//)+(?!/)'}, String),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'/(//)+(?!/)'}, String, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'/'}, String)}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/macaulay2.\+py\end{DoxyCompactItemize}

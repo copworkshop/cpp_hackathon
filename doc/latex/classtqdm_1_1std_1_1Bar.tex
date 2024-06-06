@@ -1,0 +1,95 @@
+\hypertarget{classtqdm_1_1std_1_1Bar}{}\doxysection{tqdm.\+std.\+Bar Class Reference}
+\label{classtqdm_1_1std_1_1Bar}\index{tqdm.std.Bar@{tqdm.std.Bar}}
+
+
+Inheritance diagram for tqdm.\+std.\+Bar\+:
+% FIG 0
+
+
+Collaboration diagram for tqdm.\+std.\+Bar\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1Bar_a54fd498ac07c7ca09932be8326ee602c}\label{classtqdm_1_1std_1_1Bar_a54fd498ac07c7ca09932be8326ee602c}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, frac, default\+\_\+len=10, charset=UTF, colour=None)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1Bar_ad357f581c839d5c83f41627630a530d7}\label{classtqdm_1_1std_1_1Bar_ad357f581c839d5c83f41627630a530d7}} 
+def {\bfseries colour} (self)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1Bar_a0e1e27dc52ef0998cdc00bb5032800af}\label{classtqdm_1_1std_1_1Bar_a0e1e27dc52ef0998cdc00bb5032800af}} 
+def {\bfseries colour} (self, value)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1Bar_a5962c419cbff5f926d5c665ad5e07677}\label{classtqdm_1_1std_1_1Bar_a5962c419cbff5f926d5c665ad5e07677}} 
+def {\bfseries \+\_\+\+\_\+format\+\_\+\+\_\+} (self, format\+\_\+spec)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1Bar_a94f0f57dd710473f04ca18461142ddb1}\label{classtqdm_1_1std_1_1Bar_a94f0f57dd710473f04ca18461142ddb1}} 
+{\bfseries frac}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1Bar_a24e9828383f9e2432446eaf21bb797cc}\label{classtqdm_1_1std_1_1Bar_a24e9828383f9e2432446eaf21bb797cc}} 
+{\bfseries default\+\_\+len}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1Bar_a59606e4c52d8d4a42b44854b82360c98}\label{classtqdm_1_1std_1_1Bar_a59606e4c52d8d4a42b44854b82360c98}} 
+{\bfseries charset}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1Bar_a9af9d5d68dd7757783f098b5c9714f05}\label{classtqdm_1_1std_1_1Bar_a9af9d5d68dd7757783f098b5c9714f05}} 
+{\bfseries colour}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1Bar_a8179ad7d4f52559a1181bb7eb3ca32af}\label{classtqdm_1_1std_1_1Bar_a8179ad7d4f52559a1181bb7eb3ca32af}} 
+string {\bfseries ASCII} = \char`\"{} 123456789\#\char`\"{}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1Bar_a4f56d3d88681522e16091da4f183c9e4}\label{classtqdm_1_1std_1_1Bar_a4f56d3d88681522e16091da4f183c9e4}} 
+string {\bfseries UTF} = u\char`\"{} \char`\"{} + u\textquotesingle{}\textquotesingle{}.join(map(chr, range(0x258F, 0x2587, -\/1)))
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1Bar_a8341ced39fb4a7718d819506d8b9ca45}\label{classtqdm_1_1std_1_1Bar_a8341ced39fb4a7718d819506d8b9ca45}} 
+string {\bfseries BLANK} = \char`\"{} \char`\"{}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1Bar_a27a8b778fe384105480aeb868bb3c4c8}\label{classtqdm_1_1std_1_1Bar_a27a8b778fe384105480aeb868bb3c4c8}} 
+string {\bfseries COLOUR\+\_\+\+RESET} = \textquotesingle{}\textbackslash{}x1b\mbox{[}0m\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1Bar_abb094ee3f60e9f27f62dbff5dd521458}\label{classtqdm_1_1std_1_1Bar_abb094ee3f60e9f27f62dbff5dd521458}} 
+string {\bfseries COLOUR\+\_\+\+RGB} = \textquotesingle{}\textbackslash{}x1b\mbox{[}38;2;\%d;\%d;\%dm\textquotesingle{}
+\item 
+dictionary {\bfseries COLOURS}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}`str.format`-able bar with format specifiers: `[width][type]`
+
+- `width`
+  + unspecified (default): use `self.default_len`
+  + `int >= 0`: overrides `self.default_len`
+  + `int < 0`: subtract from `self.default_len`
+- `type`
+  + `a`: ascii (`charset=self.ASCII` override)
+  + `u`: unicode (`charset=self.UTF` override)
+  + `b`: blank (`charset="  "` override)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classtqdm_1_1std_1_1Bar_a8190f99f66cb3e42d33d5fa62cc1af0c}\label{classtqdm_1_1std_1_1Bar_a8190f99f66cb3e42d33d5fa62cc1af0c}} 
+\index{tqdm.std.Bar@{tqdm.std.Bar}!COLOURS@{COLOURS}}
+\index{COLOURS@{COLOURS}!tqdm.std.Bar@{tqdm.std.Bar}}
+\doxysubsubsection{\texorpdfstring{COLOURS}{COLOURS}}
+{\footnotesize\ttfamily dictionary tqdm.\+std.\+Bar.\+COLOURS\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{\textcolor{stringliteral}{'BLACK'}: \textcolor{stringliteral}{'\(\backslash\)x1b[30m'}, \textcolor{stringliteral}{'RED'}: \textcolor{stringliteral}{'\(\backslash\)x1b[31m'}, \textcolor{stringliteral}{'GREEN'}: \textcolor{stringliteral}{'\(\backslash\)x1b[32m'},}
+\DoxyCodeLine{               \textcolor{stringliteral}{'YELLOW'}: \textcolor{stringliteral}{'\(\backslash\)x1b[33m'}, \textcolor{stringliteral}{'BLUE'}: \textcolor{stringliteral}{'\(\backslash\)x1b[34m'}, \textcolor{stringliteral}{'MAGENTA'}: \textcolor{stringliteral}{'\(\backslash\)x1b[35m'},}
+\DoxyCodeLine{               \textcolor{stringliteral}{'CYAN'}: \textcolor{stringliteral}{'\(\backslash\)x1b[36m'}, \textcolor{stringliteral}{'WHITE'}: \textcolor{stringliteral}{'\(\backslash\)x1b[37m'}\}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/tqdm/std.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,17 @@
+digraph "jinja2.exceptions.TemplatesNotFound"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="jinja2.exceptions.Templates\lNotFound",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="jinja2.exceptions.Template\lNotFound",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjinja2_1_1exceptions_1_1TemplateNotFound.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="IOError",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="LookupError",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="jinja2.exceptions.Template\lError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjinja2_1_1exceptions_1_1TemplateError.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Exception",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

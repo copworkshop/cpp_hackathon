@@ -1,0 +1,116 @@
+\hypertarget{namespacepygments_1_1lexer}{}\doxysection{pygments.\+lexer Namespace Reference}
+\label{namespacepygments_1_1lexer}\index{pygments.lexer@{pygments.lexer}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1LexerMeta}{Lexer\+Meta}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer}{Lexer}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1DelegatingLexer}{Delegating\+Lexer}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1include}{include}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1__inherit}{\+\_\+inherit}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1combined}{combined}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1__PseudoMatch}{\+\_\+\+Pseudo\+Match}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1__This}{\+\_\+\+This}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1default}{default}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1words}{words}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1RegexLexerMeta}{Regex\+Lexer\+Meta}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1RegexLexer}{Regex\+Lexer}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1LexerContext}{Lexer\+Context}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1ExtendedRegexLexer}{Extended\+Regex\+Lexer}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1ProfilingRegexLexerMeta}{Profiling\+Regex\+Lexer\+Meta}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1ProfilingRegexLexer}{Profiling\+Regex\+Lexer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacepygments_1_1lexer_af8b61e13b8c2c6af37cf0872f3ef97b5}{bygroups}} ($\ast$args)
+\item 
+def \mbox{\hyperlink{namespacepygments_1_1lexer_aa786ec0940e0be7d8886d2432f03becc}{using}} (\+\_\+other, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{namespacepygments_1_1lexer_a220164f322646d89d81c1c99a8b988fb}{do\+\_\+insertions}} (insertions, tokens)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1lexer_aa77bdf239556bc288fb5e279a6066ee4}\label{namespacepygments_1_1lexer_aa77bdf239556bc288fb5e279a6066ee4}} 
+{\bfseries line\+\_\+re} = re.\+compile(\textquotesingle{}.$\ast$?\textbackslash{}n\textquotesingle{})
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1lexer_acc527ed512eae3b08db14208898acd2b}\label{namespacepygments_1_1lexer_acc527ed512eae3b08db14208898acd2b}} 
+{\bfseries inherit} = \mbox{\hyperlink{classpygments_1_1lexer_1_1__inherit}{\+\_\+inherit}}()
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1lexer_aada5742d294a3310e592f2a4ab21f696}\label{namespacepygments_1_1lexer_aada5742d294a3310e592f2a4ab21f696}} 
+{\bfseries this} = \mbox{\hyperlink{classpygments_1_1lexer_1_1__This}{\+\_\+\+This}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}    pygments.lexer
+    ~~~~~~~~~~~~~~
+
+    Base lexer classes.
+
+    :copyright: Copyright 2006-2024 by the Pygments team, see AUTHORS.
+    :license: BSD, see LICENSE for details.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepygments_1_1lexer_af8b61e13b8c2c6af37cf0872f3ef97b5}\label{namespacepygments_1_1lexer_af8b61e13b8c2c6af37cf0872f3ef97b5}} 
+\index{pygments.lexer@{pygments.lexer}!bygroups@{bygroups}}
+\index{bygroups@{bygroups}!pygments.lexer@{pygments.lexer}}
+\doxysubsubsection{\texorpdfstring{bygroups()}{bygroups()}}
+{\footnotesize\ttfamily def pygments.\+lexer.\+bygroups (\begin{DoxyParamCaption}\item[{$\ast$}]{args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Callback that yields multiple actions for each group in the match.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygments_1_1lexer_a220164f322646d89d81c1c99a8b988fb}\label{namespacepygments_1_1lexer_a220164f322646d89d81c1c99a8b988fb}} 
+\index{pygments.lexer@{pygments.lexer}!do\_insertions@{do\_insertions}}
+\index{do\_insertions@{do\_insertions}!pygments.lexer@{pygments.lexer}}
+\doxysubsubsection{\texorpdfstring{do\_insertions()}{do\_insertions()}}
+{\footnotesize\ttfamily def pygments.\+lexer.\+do\+\_\+insertions (\begin{DoxyParamCaption}\item[{}]{insertions,  }\item[{}]{tokens }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Helper for lexers which must combine the results of several
+sublexers.
+
+``insertions`` is a list of ``(index, itokens)`` pairs.
+Each ``itokens`` iterable should be inserted at position
+``index`` into the token stream given by the ``tokens``
+argument.
+
+The result is a combined token stream.
+
+TODO: clean up the code here.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygments_1_1lexer_aa786ec0940e0be7d8886d2432f03becc}\label{namespacepygments_1_1lexer_aa786ec0940e0be7d8886d2432f03becc}} 
+\index{pygments.lexer@{pygments.lexer}!using@{using}}
+\index{using@{using}!pygments.lexer@{pygments.lexer}}
+\doxysubsubsection{\texorpdfstring{using()}{using()}}
+{\footnotesize\ttfamily def pygments.\+lexer.\+using (\begin{DoxyParamCaption}\item[{}]{\+\_\+other,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Callback that processes the match with a different lexer.
+
+The keyword arguments are forwarded to the lexer, except `state` which
+is handled separately.
+
+`state` specifies the state that the new lexer will start in, and can
+be an enumerable such as ('root', 'inline', 'string') or a simple
+string which is assumed to be on top of the root state.
+
+Note: For that to work, `_other` must not be an `ExtendedRegexLexer`.
+\end{DoxyVerb}
+ 

@@ -1,0 +1,103 @@
+\hypertarget{classlxml_1_1html_1_1InputElement}{}\doxysection{lxml.\+html.\+Input\+Element Class Reference}
+\label{classlxml_1_1html_1_1InputElement}\index{lxml.html.InputElement@{lxml.html.InputElement}}
+
+
+Inheritance diagram for lxml.\+html.\+Input\+Element\+:
+% FIG 0
+
+
+Collaboration diagram for lxml.\+html.\+Input\+Element\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classlxml_1_1html_1_1InputElement_a06a9237dcccd45421d6f2316071bd97d}{value}} (self)
+\begin{DoxyCompactList}\small\item\em FIXME\+: I\textquotesingle{}m a little uncomfortable with the use of .checked. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1InputElement_a1452e3413dbce071416f15b8c9ab7708}\label{classlxml_1_1html_1_1InputElement_a1452e3413dbce071416f15b8c9ab7708}} 
+def {\bfseries value} (self, value)
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1InputElement_a06a9237dcccd45421d6f2316071bd97d}\label{classlxml_1_1html_1_1InputElement_a06a9237dcccd45421d6f2316071bd97d}} 
+def {\bfseries value} (self)
+\item 
+def \mbox{\hyperlink{classlxml_1_1html_1_1InputElement_af5da12f10fef26970d07d5871cb20426}{type}} (self)
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1InputElement_aeac2ef7aa05e8728e60ab471544e5794}\label{classlxml_1_1html_1_1InputElement_aeac2ef7aa05e8728e60ab471544e5794}} 
+def {\bfseries type} (self, \mbox{\hyperlink{classlxml_1_1html_1_1InputElement_a06a9237dcccd45421d6f2316071bd97d}{value}})
+\item 
+def \mbox{\hyperlink{classlxml_1_1html_1_1InputElement_a536b53f65ea916f9b1a943d509889400}{checkable}} (self)
+\item 
+def \mbox{\hyperlink{classlxml_1_1html_1_1InputElement_ab79a9c8c0ff3b1608c7902db661dfd7d}{checked}} (self)
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1InputElement_a359ff6a816bfb040f3c5869bc0d0195b}\label{classlxml_1_1html_1_1InputElement_a359ff6a816bfb040f3c5869bc0d0195b}} 
+def {\bfseries checked} (self, \mbox{\hyperlink{classlxml_1_1html_1_1InputElement_a06a9237dcccd45421d6f2316071bd97d}{value}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1InputElement_ab53c5254739bbc2bafa7c23364f49db6}\label{classlxml_1_1html_1_1InputElement_ab53c5254739bbc2bafa7c23364f49db6}} 
+{\bfseries checked}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represents an ``<input>`` element.
+
+You can get the type with ``.type`` (which is lower-cased and
+defaults to ``'text'``).
+
+Also you can get and set the value with ``.value``
+
+Checkboxes and radios have the attribute ``input.checkable ==
+True`` (for all others it is false) and a boolean attribute
+``.checked``.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlxml_1_1html_1_1InputElement_a536b53f65ea916f9b1a943d509889400}\label{classlxml_1_1html_1_1InputElement_a536b53f65ea916f9b1a943d509889400}} 
+\index{lxml.html.InputElement@{lxml.html.InputElement}!checkable@{checkable}}
+\index{checkable@{checkable}!lxml.html.InputElement@{lxml.html.InputElement}}
+\doxysubsubsection{\texorpdfstring{checkable()}{checkable()}}
+{\footnotesize\ttfamily def lxml.\+html.\+Input\+Element.\+checkable (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Boolean: can this element be checked?
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classlxml_1_1html_1_1InputElement_ab79a9c8c0ff3b1608c7902db661dfd7d}\label{classlxml_1_1html_1_1InputElement_ab79a9c8c0ff3b1608c7902db661dfd7d}} 
+\index{lxml.html.InputElement@{lxml.html.InputElement}!checked@{checked}}
+\index{checked@{checked}!lxml.html.InputElement@{lxml.html.InputElement}}
+\doxysubsubsection{\texorpdfstring{checked()}{checked()}}
+{\footnotesize\ttfamily def lxml.\+html.\+Input\+Element.\+checked (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Boolean attribute to get/set the presence of the ``checked``
+attribute.
+
+You can only use this on checkable input types.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classlxml_1_1html_1_1InputElement_af5da12f10fef26970d07d5871cb20426}\label{classlxml_1_1html_1_1InputElement_af5da12f10fef26970d07d5871cb20426}} 
+\index{lxml.html.InputElement@{lxml.html.InputElement}!type@{type}}
+\index{type@{type}!lxml.html.InputElement@{lxml.html.InputElement}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily def lxml.\+html.\+Input\+Element.\+type (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the type of this element (using the type attribute).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classlxml_1_1html_1_1InputElement_a06a9237dcccd45421d6f2316071bd97d}\label{classlxml_1_1html_1_1InputElement_a06a9237dcccd45421d6f2316071bd97d}} 
+\index{lxml.html.InputElement@{lxml.html.InputElement}!value@{value}}
+\index{value@{value}!lxml.html.InputElement@{lxml.html.InputElement}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily def lxml.\+html.\+Input\+Element.\+value (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+FIXME\+: I\textquotesingle{}m a little uncomfortable with the use of .checked. 
+
+\begin{DoxyVerb}Get/set the value of this element, using the ``value`` attribute.
+
+Also, if this is a checkbox and it has no value, this defaults
+to ``'on'``.  If it is a checkbox or radio that is not
+checked, this returns None.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/lxml/html/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

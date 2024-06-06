@@ -1,0 +1,91 @@
+\hypertarget{classpygments_1_1lexers_1_1esoteric_1_1RedcodeLexer}{}\doxysection{pygments.\+lexers.\+esoteric.\+Redcode\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1esoteric_1_1RedcodeLexer}\index{pygments.lexers.esoteric.RedcodeLexer@{pygments.lexers.esoteric.RedcodeLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+esoteric.\+Redcode\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+esoteric.\+Redcode\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1esoteric_1_1RedcodeLexer_a3c65a19ba63ff9fc594436c5c86e98fa}\label{classpygments_1_1lexers_1_1esoteric_1_1RedcodeLexer_a3c65a19ba63ff9fc594436c5c86e98fa}} 
+string {\bfseries name} = \textquotesingle{}Redcode\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1esoteric_1_1RedcodeLexer_a40ddd5c741abd542d1f04440e6e9ef0a}\label{classpygments_1_1lexers_1_1esoteric_1_1RedcodeLexer_a40ddd5c741abd542d1f04440e6e9ef0a}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}redcode\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1esoteric_1_1RedcodeLexer_a036203a785b4fb149ffc2492d88498e1}\label{classpygments_1_1lexers_1_1esoteric_1_1RedcodeLexer_a036203a785b4fb149ffc2492d88498e1}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.cw\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1esoteric_1_1RedcodeLexer_adea6646d986e3b152ef3d6d761bc6250}\label{classpygments_1_1lexers_1_1esoteric_1_1RedcodeLexer_adea6646d986e3b152ef3d6d761bc6250}} 
+string {\bfseries url} = \textquotesingle{}https\+://en.\+wikipedia.\+org/wiki/Core\+\_\+\+War\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1esoteric_1_1RedcodeLexer_a89a21d3f9832d6f29c973dfe8ac21f21}\label{classpygments_1_1lexers_1_1esoteric_1_1RedcodeLexer_a89a21d3f9832d6f29c973dfe8ac21f21}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}0.\+8\textquotesingle{}
+\item 
+tuple {\bfseries opcodes}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1esoteric_1_1RedcodeLexer_a5af75a040389249a11c2451066784ccd}\label{classpygments_1_1lexers_1_1esoteric_1_1RedcodeLexer_a5af75a040389249a11c2451066784ccd}} 
+tuple {\bfseries modifiers} = (\textquotesingle{}A\textquotesingle{}, \textquotesingle{}B\textquotesingle{}, \textquotesingle{}AB\textquotesingle{}, \textquotesingle{}BA\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{}X\textquotesingle{}, \textquotesingle{}I\textquotesingle{})
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A simple Redcode lexer based on ICWS'94.
+Contributed by Adam Blinkinsop <blinks@acm.org>.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1esoteric_1_1RedcodeLexer_a08208e2737a8c9f5d13b6cab1ccedb5f}\label{classpygments_1_1lexers_1_1esoteric_1_1RedcodeLexer_a08208e2737a8c9f5d13b6cab1ccedb5f}} 
+\index{pygments.lexers.esoteric.RedcodeLexer@{pygments.lexers.esoteric.RedcodeLexer}!opcodes@{opcodes}}
+\index{opcodes@{opcodes}!pygments.lexers.esoteric.RedcodeLexer@{pygments.lexers.esoteric.RedcodeLexer}}
+\doxysubsubsection{\texorpdfstring{opcodes}{opcodes}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+esoteric.\+Redcode\+Lexer.\+opcodes\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (\textcolor{stringliteral}{'DAT'}, \textcolor{stringliteral}{'MOV'}, \textcolor{stringliteral}{'ADD'}, \textcolor{stringliteral}{'SUB'}, \textcolor{stringliteral}{'MUL'}, \textcolor{stringliteral}{'DIV'}, \textcolor{stringliteral}{'MOD'},}
+\DoxyCodeLine{               \textcolor{stringliteral}{'JMP'}, \textcolor{stringliteral}{'JMZ'}, \textcolor{stringliteral}{'JMN'}, \textcolor{stringliteral}{'DJN'}, \textcolor{stringliteral}{'CMP'}, \textcolor{stringliteral}{'SLT'}, \textcolor{stringliteral}{'SPL'},}
+\DoxyCodeLine{               \textcolor{stringliteral}{'ORG'}, \textcolor{stringliteral}{'EQU'}, \textcolor{stringliteral}{'END'})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1esoteric_1_1RedcodeLexer_a6f24e3717619ed996fd571bf1f6a5b64}\label{classpygments_1_1lexers_1_1esoteric_1_1RedcodeLexer_a6f24e3717619ed996fd571bf1f6a5b64}} 
+\index{pygments.lexers.esoteric.RedcodeLexer@{pygments.lexers.esoteric.RedcodeLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.esoteric.RedcodeLexer@{pygments.lexers.esoteric.RedcodeLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+esoteric.\+Redcode\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            \textcolor{comment}{\# Whitespace:}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r';.*\$'}, Comment.Single),}
+\DoxyCodeLine{            \textcolor{comment}{\# Lexemes:}}
+\DoxyCodeLine{            \textcolor{comment}{\#  Identifiers}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)b(\{\})\(\backslash\)b'}.format(\textcolor{stringliteral}{'|'}.join(opcodes)), Name.Function),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)b(\{\})\(\backslash\)b'}.format(\textcolor{stringliteral}{'|'}.join(modifiers)), Name.Decorator),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[A-\/Za-\/z\_]\(\backslash\)w+'}, Name),}
+\DoxyCodeLine{            \textcolor{comment}{\#  Operators}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[-\/+*/\%]'}, Operator),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\#\$@<>]'}, Operator),  \textcolor{comment}{\# mode}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[.,]'}, Punctuation),  \textcolor{comment}{\# mode}}
+\DoxyCodeLine{            \textcolor{comment}{\#  Numbers}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[-\/+]?\(\backslash\)d+'}, Number.Integer),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/esoteric.\+py\end{DoxyCompactItemize}

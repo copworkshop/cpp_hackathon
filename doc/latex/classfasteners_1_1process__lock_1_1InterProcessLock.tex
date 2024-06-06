@@ -1,0 +1,112 @@
+\hypertarget{classfasteners_1_1process__lock_1_1InterProcessLock}{}\doxysection{fasteners.\+process\+\_\+lock.\+Inter\+Process\+Lock Class Reference}
+\label{classfasteners_1_1process__lock_1_1InterProcessLock}\index{fasteners.process\_lock.InterProcessLock@{fasteners.process\_lock.InterProcessLock}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classfasteners_1_1process__lock_1_1InterProcessLock_aa871747078f1fbe47a52a6b2e582ae0d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Union\mbox{[}Path, str\mbox{]} path, Callable\mbox{[}\mbox{[}float\mbox{]}, None\mbox{]} sleep\+\_\+func=time.\+sleep, Optional\mbox{[}logging.\+Logger\mbox{]} logger=None)
+\item 
+bool \mbox{\hyperlink{classfasteners_1_1process__lock_1_1InterProcessLock_ae178574c8c72583a87b6b522cabae2b6}{acquire}} (self, bool blocking=True, float delay=0.\+01, float max\+\_\+delay=0.\+1, Optional\mbox{[}float\mbox{]} timeout=None)
+\item 
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessLock_a9507e8b768e95bcc1aaad40ca54af4f3}\label{classfasteners_1_1process__lock_1_1InterProcessLock_a9507e8b768e95bcc1aaad40ca54af4f3}} 
+def {\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classfasteners_1_1process__lock_1_1InterProcessLock_a5fa702fea784814e1d87d065301ee433}{release}} (self)
+\item 
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessLock_a79291b674243ff486e68369e4fc1aec3}\label{classfasteners_1_1process__lock_1_1InterProcessLock_a79291b674243ff486e68369e4fc1aec3}} 
+def {\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, exc\+\_\+type, exc\+\_\+val, exc\+\_\+tb)
+\item 
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessLock_a7ef230dd5f8f40bafdc42ed898d8ae5a}\label{classfasteners_1_1process__lock_1_1InterProcessLock_a7ef230dd5f8f40bafdc42ed898d8ae5a}} 
+def {\bfseries exists} (self)
+\item 
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessLock_af2dd2470b6de86b46a7a6c6565a0ef03}\label{classfasteners_1_1process__lock_1_1InterProcessLock_af2dd2470b6de86b46a7a6c6565a0ef03}} 
+def {\bfseries trylock} (self)
+\item 
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessLock_a6a668f15a9b6e86a1e1c7fe1755c3f26}\label{classfasteners_1_1process__lock_1_1InterProcessLock_a6a668f15a9b6e86a1e1c7fe1755c3f26}} 
+def {\bfseries unlock} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessLock_a805609b7c3f1bf7df5d9930b3a285e29}\label{classfasteners_1_1process__lock_1_1InterProcessLock_a805609b7c3f1bf7df5d9930b3a285e29}} 
+{\bfseries lockfile}
+\item 
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessLock_a29b046381975c30cdc249440fb7b929c}\label{classfasteners_1_1process__lock_1_1InterProcessLock_a29b046381975c30cdc249440fb7b929c}} 
+{\bfseries path}
+\item 
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessLock_a354bbc982725b57b6ce3b98098974539}\label{classfasteners_1_1process__lock_1_1InterProcessLock_a354bbc982725b57b6ce3b98098974539}} 
+{\bfseries acquired}
+\item 
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessLock_a0520c4c0455e0fd8151cf68f0a0f8167}\label{classfasteners_1_1process__lock_1_1InterProcessLock_a0520c4c0455e0fd8151cf68f0a0f8167}} 
+{\bfseries sleep\+\_\+func}
+\item 
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessLock_a8e5da8afb6f639d7d65c03ff8030357b}\label{classfasteners_1_1process__lock_1_1InterProcessLock_a8e5da8afb6f639d7d65c03ff8030357b}} 
+{\bfseries logger}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessLock_a02c6ed6f2fabcd544a8935e2fc20b1d1}\label{classfasteners_1_1process__lock_1_1InterProcessLock_a02c6ed6f2fabcd544a8935e2fc20b1d1}} 
+float {\bfseries MAX\+\_\+\+DELAY} = 0.\+1
+\item 
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessLock_a3be7413234007f1e721646351ec45caf}\label{classfasteners_1_1process__lock_1_1InterProcessLock_a3be7413234007f1e721646351ec45caf}} 
+float {\bfseries DELAY\+\_\+\+INCREMENT} = 0.\+01
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An interprocess lock.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessLock_aa871747078f1fbe47a52a6b2e582ae0d}\label{classfasteners_1_1process__lock_1_1InterProcessLock_aa871747078f1fbe47a52a6b2e582ae0d}} 
+\index{fasteners.process\_lock.InterProcessLock@{fasteners.process\_lock.InterProcessLock}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!fasteners.process\_lock.InterProcessLock@{fasteners.process\_lock.InterProcessLock}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def fasteners.\+process\+\_\+lock.\+Inter\+Process\+Lock.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Union\mbox{[}Path, str\mbox{]}}]{path,  }\item[{Callable\mbox{[}\mbox{[}float\mbox{]}, None\mbox{]} }]{sleep\+\_\+func = {\ttfamily time.sleep},  }\item[{Optional\mbox{[}logging.\+Logger\mbox{]} }]{logger = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}args:
+    path:
+        Path to the file that will be used for locking.
+    sleep_func:
+        Optional function to use for sleeping.
+    logger:
+        Optional logger to use for logging.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessLock_ae178574c8c72583a87b6b522cabae2b6}\label{classfasteners_1_1process__lock_1_1InterProcessLock_ae178574c8c72583a87b6b522cabae2b6}} 
+\index{fasteners.process\_lock.InterProcessLock@{fasteners.process\_lock.InterProcessLock}!acquire@{acquire}}
+\index{acquire@{acquire}!fasteners.process\_lock.InterProcessLock@{fasteners.process\_lock.InterProcessLock}}
+\doxysubsubsection{\texorpdfstring{acquire()}{acquire()}}
+{\footnotesize\ttfamily  bool fasteners.\+process\+\_\+lock.\+Inter\+Process\+Lock.\+acquire (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool }]{blocking = {\ttfamily True},  }\item[{float }]{delay = {\ttfamily 0.01},  }\item[{float }]{max\+\_\+delay = {\ttfamily 0.1},  }\item[{Optional\mbox{[}float\mbox{]} }]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Attempt to acquire the lock.
+
+Args:
+    blocking:
+        Whether to wait to try to acquire the lock.
+    delay:
+        When `blocking`, starting delay as well as the delay increment
+        (in seconds).
+    max_delay:
+        When `blocking` the maximum delay in between attempts to
+        acquire (in seconds).
+    timeout:
+        When `blocking`, maximal waiting time (in seconds).
+
+Returns:
+    whether or not the acquisition succeeded
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessLock_a5fa702fea784814e1d87d065301ee433}\label{classfasteners_1_1process__lock_1_1InterProcessLock_a5fa702fea784814e1d87d065301ee433}} 
+\index{fasteners.process\_lock.InterProcessLock@{fasteners.process\_lock.InterProcessLock}!release@{release}}
+\index{release@{release}!fasteners.process\_lock.InterProcessLock@{fasteners.process\_lock.InterProcessLock}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily def fasteners.\+process\+\_\+lock.\+Inter\+Process\+Lock.\+release (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Release the previously acquired lock.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/fasteners/process\+\_\+lock.\+py\end{DoxyCompactItemize}

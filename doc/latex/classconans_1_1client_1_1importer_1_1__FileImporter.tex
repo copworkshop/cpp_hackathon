@@ -1,0 +1,58 @@
+\hypertarget{classconans_1_1client_1_1importer_1_1__FileImporter}{}\doxysection{conans.\+client.\+importer.\+\_\+\+File\+Importer Class Reference}
+\label{classconans_1_1client_1_1importer_1_1__FileImporter}\index{conans.client.importer.\_FileImporter@{conans.client.importer.\_FileImporter}}
+
+
+Inheritance diagram for conans.\+client.\+importer.\+\_\+\+File\+Importer\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+importer.\+\_\+\+File\+Importer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1importer_1_1__FileImporter_a1f615401fc60c71946af3b5159734642}\label{classconans_1_1client_1_1importer_1_1__FileImporter_a1f615401fc60c71946af3b5159734642}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, conanfile, dst\+\_\+folder)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1importer_1_1__FileImporter_a3da86666813287777b1d7e7d8f7a1768}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, pattern, dst=\char`\"{}\char`\"{}, src=\char`\"{}\char`\"{}, root\+\_\+package=None, folder=False, ignore\+\_\+case=True, excludes=None, keep\+\_\+path=True)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1importer_1_1__FileImporter_ac759fec8a44acc71cf6399628055a78d}\label{classconans_1_1client_1_1importer_1_1__FileImporter_ac759fec8a44acc71cf6399628055a78d}} 
+{\bfseries copied\+\_\+files}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} manages the copy of files, resources, libs from the local store to the user
+space. E.g.: shared libs, dlls, they will be in the package folder of your
+configuration in the store. But you dont want to add every package to the
+system PATH. Those shared libs can be copied to the user folder, close to
+the exes where they can be found without modifying the path.
+Useful also for copying other resources as images or data files.
+It can be also used for Golang projects, in which the packages are always
+source based and need to be copied to the user folder to be built
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1importer_1_1__FileImporter_a3da86666813287777b1d7e7d8f7a1768}\label{classconans_1_1client_1_1importer_1_1__FileImporter_a3da86666813287777b1d7e7d8f7a1768}} 
+\index{conans.client.importer.\_FileImporter@{conans.client.importer.\_FileImporter}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!conans.client.importer.\_FileImporter@{conans.client.importer.\_FileImporter}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily def conans.\+client.\+importer.\+\_\+\+File\+Importer.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pattern,  }\item[{}]{dst = {\ttfamily \char`\"{}\char`\"{}},  }\item[{}]{src = {\ttfamily \char`\"{}\char`\"{}},  }\item[{}]{root\+\_\+package = {\ttfamily None},  }\item[{}]{folder = {\ttfamily False},  }\item[{}]{ignore\+\_\+case = {\ttfamily True},  }\item[{}]{excludes = {\ttfamily None},  }\item[{}]{keep\+\_\+path = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}param pattern: an fnmatch file pattern of the files that should be copied. Eg. *.dll
+param dst: the destination local folder, wrt to current conanfile dir, to which
+           the files will be copied. Eg: "bin"
+param src: the source folder in which those files will be searched. This folder
+           will be stripped from the dst name. Eg.: lib/Debug/x86
+param root_package: fnmatch pattern of the package name ("OpenCV", "Boost") from
+                    which files will be copied. Default: all packages in deps
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/importer.\+py\end{DoxyCompactItemize}

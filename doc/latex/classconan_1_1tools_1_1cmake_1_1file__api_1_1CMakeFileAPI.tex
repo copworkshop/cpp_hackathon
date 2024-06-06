@@ -1,0 +1,110 @@
+\hypertarget{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI}{}\doxysection{conan.\+tools.\+cmake.\+file\+\_\+api.\+CMake\+File\+API Class Reference}
+\label{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI}\index{conan.tools.cmake.file\_api.CMakeFileAPI@{conan.tools.cmake.file\_api.CMakeFileAPI}}
+
+
+Inheritance diagram for conan.\+tools.\+cmake.\+file\+\_\+api.\+CMake\+File\+API\+:
+% FIG 0
+
+
+Collaboration diagram for conan.\+tools.\+cmake.\+file\+\_\+api.\+CMake\+File\+API\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_1_1CodeModelReplyV2}{Code\+Model\+Reply\+V2}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a7ffc5e8d48c6be39a3e374ab0d62e7ce}\label{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a7ffc5e8d48c6be39a3e374ab0d62e7ce}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, conanfile)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_ac4ebfcce2981f88c0c1a8d6c5f73dc11}{api\+\_\+dir}} (self)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a5138a22ef79dbdeb3ae2e71f5b868761}{query\+\_\+dir}} (self)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a51d57de0f3ced92743ca28ba59c8d101}{reply\+\_\+dir}} (self)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a3470fc77340ac3242a2f07389dff4665}{query}} (self, query)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a5f8b25713640362e18b7a5eda032ae0b}{reply}} (self, reply)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a6e3f747ccaaee8c96501444a0ab628fe}{build\+\_\+type}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a42c446d784f61e2429a48021d14acc51}\label{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a42c446d784f61e2429a48021d14acc51}} 
+string {\bfseries CODEMODELV2} = \char`\"{}codemodel-\/v2\char`\"{}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a22bac61f42197adc224da378762c1a54}\label{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a22bac61f42197adc224da378762c1a54}} 
+list {\bfseries SKIP\+\_\+\+TARGETS} = \mbox{[}\char`\"{}ZERO\+\_\+\+CHECK\char`\"{}, \char`\"{}ALL\+\_\+\+BUILD\char`\"{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a2512b723b24a53e34c270256a890a762}\label{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a2512b723b24a53e34c270256a890a762}} 
+list {\bfseries SUPPORTED\+\_\+\+TARGET\+\_\+\+TYPES} = \mbox{[}\textquotesingle{}STATIC\+\_\+\+LIBRARY\textquotesingle{}, \textquotesingle{}SHARED\+\_\+\+LIBRARY\textquotesingle{}, \textquotesingle{}MODULE\+\_\+\+LIBRARY\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}implements https://cmake.org/cmake/help/latest/manual/cmake-file-api.7.html
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_ac4ebfcce2981f88c0c1a8d6c5f73dc11}\label{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_ac4ebfcce2981f88c0c1a8d6c5f73dc11}} 
+\index{conan.tools.cmake.file\_api.CMakeFileAPI@{conan.tools.cmake.file\_api.CMakeFileAPI}!api\_dir@{api\_dir}}
+\index{api\_dir@{api\_dir}!conan.tools.cmake.file\_api.CMakeFileAPI@{conan.tools.cmake.file\_api.CMakeFileAPI}}
+\doxysubsubsection{\texorpdfstring{api\_dir()}{api\_dir()}}
+{\footnotesize\ttfamily def conan.\+tools.\+cmake.\+file\+\_\+api.\+CMake\+File\+API.\+api\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:return: api directory <build>/.cmake/api/v1/
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a6e3f747ccaaee8c96501444a0ab628fe}\label{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a6e3f747ccaaee8c96501444a0ab628fe}} 
+\index{conan.tools.cmake.file\_api.CMakeFileAPI@{conan.tools.cmake.file\_api.CMakeFileAPI}!build\_type@{build\_type}}
+\index{build\_type@{build\_type}!conan.tools.cmake.file\_api.CMakeFileAPI@{conan.tools.cmake.file\_api.CMakeFileAPI}}
+\doxysubsubsection{\texorpdfstring{build\_type()}{build\_type()}}
+{\footnotesize\ttfamily def conan.\+tools.\+cmake.\+file\+\_\+api.\+CMake\+File\+API.\+build\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:return: active build type (configuration)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a3470fc77340ac3242a2f07389dff4665}\label{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a3470fc77340ac3242a2f07389dff4665}} 
+\index{conan.tools.cmake.file\_api.CMakeFileAPI@{conan.tools.cmake.file\_api.CMakeFileAPI}!query@{query}}
+\index{query@{query}!conan.tools.cmake.file\_api.CMakeFileAPI@{conan.tools.cmake.file\_api.CMakeFileAPI}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily def conan.\+tools.\+cmake.\+file\+\_\+api.\+CMake\+File\+API.\+query (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{query }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}prepare the CMake File API query (the actual query will be done during the configure step)
+:param query: type of the CMake File API query (e.g. CODEMODELV2)
+:return: new query object
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a5138a22ef79dbdeb3ae2e71f5b868761}\label{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a5138a22ef79dbdeb3ae2e71f5b868761}} 
+\index{conan.tools.cmake.file\_api.CMakeFileAPI@{conan.tools.cmake.file\_api.CMakeFileAPI}!query\_dir@{query\_dir}}
+\index{query\_dir@{query\_dir}!conan.tools.cmake.file\_api.CMakeFileAPI@{conan.tools.cmake.file\_api.CMakeFileAPI}}
+\doxysubsubsection{\texorpdfstring{query\_dir()}{query\_dir()}}
+{\footnotesize\ttfamily def conan.\+tools.\+cmake.\+file\+\_\+api.\+CMake\+File\+API.\+query\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:return: api query sub-directory <build>/.cmake/api/v1/query
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a5f8b25713640362e18b7a5eda032ae0b}\label{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a5f8b25713640362e18b7a5eda032ae0b}} 
+\index{conan.tools.cmake.file\_api.CMakeFileAPI@{conan.tools.cmake.file\_api.CMakeFileAPI}!reply@{reply}}
+\index{reply@{reply}!conan.tools.cmake.file\_api.CMakeFileAPI@{conan.tools.cmake.file\_api.CMakeFileAPI}}
+\doxysubsubsection{\texorpdfstring{reply()}{reply()}}
+{\footnotesize\ttfamily def conan.\+tools.\+cmake.\+file\+\_\+api.\+CMake\+File\+API.\+reply (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{reply }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}obtain the CMake File API reply (which should have been made during the configure step)
+:param reply: type of the CMake File API reply (e.g. CODEMODELV2)
+:return: new reply object
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a51d57de0f3ced92743ca28ba59c8d101}\label{classconan_1_1tools_1_1cmake_1_1file__api_1_1CMakeFileAPI_a51d57de0f3ced92743ca28ba59c8d101}} 
+\index{conan.tools.cmake.file\_api.CMakeFileAPI@{conan.tools.cmake.file\_api.CMakeFileAPI}!reply\_dir@{reply\_dir}}
+\index{reply\_dir@{reply\_dir}!conan.tools.cmake.file\_api.CMakeFileAPI@{conan.tools.cmake.file\_api.CMakeFileAPI}}
+\doxysubsubsection{\texorpdfstring{reply\_dir()}{reply\_dir()}}
+{\footnotesize\ttfamily def conan.\+tools.\+cmake.\+file\+\_\+api.\+CMake\+File\+API.\+reply\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:return: api reply sub-directory <build>/.cmake/api/v1/reply
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conan/tools/cmake/file\+\_\+api.\+py\end{DoxyCompactItemize}

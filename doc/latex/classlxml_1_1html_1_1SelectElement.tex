@@ -1,0 +1,83 @@
+\hypertarget{classlxml_1_1html_1_1SelectElement}{}\doxysection{lxml.\+html.\+Select\+Element Class Reference}
+\label{classlxml_1_1html_1_1SelectElement}\index{lxml.html.SelectElement@{lxml.html.SelectElement}}
+
+
+Inheritance diagram for lxml.\+html.\+Select\+Element\+:
+% FIG 0
+
+
+Collaboration diagram for lxml.\+html.\+Select\+Element\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classlxml_1_1html_1_1SelectElement_ac3ac734e5e126929a3736035ec4c8f74}{value}} (self)
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1SelectElement_a51a927b578f7aa5da9506d5a4af79452}\label{classlxml_1_1html_1_1SelectElement_a51a927b578f7aa5da9506d5a4af79452}} 
+def {\bfseries value} (self, value)
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1SelectElement_ac3ac734e5e126929a3736035ec4c8f74}\label{classlxml_1_1html_1_1SelectElement_ac3ac734e5e126929a3736035ec4c8f74}} 
+def {\bfseries value} (self)
+\item 
+def \mbox{\hyperlink{classlxml_1_1html_1_1SelectElement_a2ec5d45449263fe8235d5d6e2ee4f8b8}{value\+\_\+options}} (self)
+\item 
+def \mbox{\hyperlink{classlxml_1_1html_1_1SelectElement_ac8e1c8739453399c4ab9d345baf41769}{multiple}} (self)
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1SelectElement_a474c6cdb5a9342ac4d786b36f426bc40}\label{classlxml_1_1html_1_1SelectElement_a474c6cdb5a9342ac4d786b36f426bc40}} 
+def {\bfseries multiple} (self, value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1SelectElement_a7a6e626aa9081b62065808a6518ca648}\label{classlxml_1_1html_1_1SelectElement_a7a6e626aa9081b62065808a6518ca648}} 
+{\bfseries value}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}``<select>`` element.  You can get the name with ``.name``.
+
+``.value`` will be the value of the selected option, unless this
+is a multi-select element (``<select multiple>``), in which case
+it will be a set-like object.  In either case ``.value_options``
+gives the possible values.
+
+The boolean attribute ``.multiple`` shows if this is a
+multi-select.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlxml_1_1html_1_1SelectElement_ac8e1c8739453399c4ab9d345baf41769}\label{classlxml_1_1html_1_1SelectElement_ac8e1c8739453399c4ab9d345baf41769}} 
+\index{lxml.html.SelectElement@{lxml.html.SelectElement}!multiple@{multiple}}
+\index{multiple@{multiple}!lxml.html.SelectElement@{lxml.html.SelectElement}}
+\doxysubsubsection{\texorpdfstring{multiple()}{multiple()}}
+{\footnotesize\ttfamily def lxml.\+html.\+Select\+Element.\+multiple (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Boolean attribute: is there a ``multiple`` attribute on this element.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classlxml_1_1html_1_1SelectElement_ac3ac734e5e126929a3736035ec4c8f74}\label{classlxml_1_1html_1_1SelectElement_ac3ac734e5e126929a3736035ec4c8f74}} 
+\index{lxml.html.SelectElement@{lxml.html.SelectElement}!value@{value}}
+\index{value@{value}!lxml.html.SelectElement@{lxml.html.SelectElement}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily def lxml.\+html.\+Select\+Element.\+value (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get/set the value of this select (the selected option).
+
+If this is a multi-select, this is a set-like object that
+represents all the selected options.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classlxml_1_1html_1_1SelectElement_a2ec5d45449263fe8235d5d6e2ee4f8b8}\label{classlxml_1_1html_1_1SelectElement_a2ec5d45449263fe8235d5d6e2ee4f8b8}} 
+\index{lxml.html.SelectElement@{lxml.html.SelectElement}!value\_options@{value\_options}}
+\index{value\_options@{value\_options}!lxml.html.SelectElement@{lxml.html.SelectElement}}
+\doxysubsubsection{\texorpdfstring{value\_options()}{value\_options()}}
+{\footnotesize\ttfamily def lxml.\+html.\+Select\+Element.\+value\+\_\+options (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}All the possible values this select can have (the ``value``
+attribute of all the ``<option>`` elements.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/lxml/html/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

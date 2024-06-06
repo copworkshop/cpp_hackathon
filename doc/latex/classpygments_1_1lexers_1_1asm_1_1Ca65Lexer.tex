@@ -1,0 +1,83 @@
+\hypertarget{classpygments_1_1lexers_1_1asm_1_1Ca65Lexer}{}\doxysection{pygments.\+lexers.\+asm.\+Ca65\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1asm_1_1Ca65Lexer}\index{pygments.lexers.asm.Ca65Lexer@{pygments.lexers.asm.Ca65Lexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+asm.\+Ca65\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+asm.\+Ca65\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Ca65Lexer_ace2e96926f11b19ce4cc9683bc157239}\label{classpygments_1_1lexers_1_1asm_1_1Ca65Lexer_ace2e96926f11b19ce4cc9683bc157239}} 
+def {\bfseries analyse\+\_\+text} (self, text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Ca65Lexer_a6bbc5c73a7e07e9ae1804e66ab23305e}\label{classpygments_1_1lexers_1_1asm_1_1Ca65Lexer_a6bbc5c73a7e07e9ae1804e66ab23305e}} 
+string {\bfseries name} = \textquotesingle{}ca65 assembler\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Ca65Lexer_a90d9cd0711233644d1f5af8a6e34ae13}\label{classpygments_1_1lexers_1_1asm_1_1Ca65Lexer_a90d9cd0711233644d1f5af8a6e34ae13}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}ca65\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Ca65Lexer_a99b1b03dbd4619fb503613c87fd18d89}\label{classpygments_1_1lexers_1_1asm_1_1Ca65Lexer_a99b1b03dbd4619fb503613c87fd18d89}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.s\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Ca65Lexer_acbb859f308682cc2163707df8643b912}\label{classpygments_1_1lexers_1_1asm_1_1Ca65Lexer_acbb859f308682cc2163707df8643b912}} 
+string {\bfseries url} = \textquotesingle{}https\+://cc65.\+github.\+io\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Ca65Lexer_ab689167e65ad67a0af7e5da9b237d0a9}\label{classpygments_1_1lexers_1_1asm_1_1Ca65Lexer_ab689167e65ad67a0af7e5da9b237d0a9}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+6\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Ca65Lexer_a3fbe0a33b0ce2e98c998a7b6e742186c}\label{classpygments_1_1lexers_1_1asm_1_1Ca65Lexer_a3fbe0a33b0ce2e98c998a7b6e742186c}} 
+{\bfseries flags} = re.\+IGNORECASE
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For ca65 assembler sources.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asm_1_1Ca65Lexer_a76a07aac9d5aedba1ac08a5717e3ece1}\label{classpygments_1_1lexers_1_1asm_1_1Ca65Lexer_a76a07aac9d5aedba1ac08a5717e3ece1}} 
+\index{pygments.lexers.asm.Ca65Lexer@{pygments.lexers.asm.Ca65Lexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.asm.Ca65Lexer@{pygments.lexers.asm.Ca65Lexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+asm.\+Ca65\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r';.*'}, Comment.Single),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[a-\/z\_.@\$][\(\backslash\)w.@\$]*:'}, Name.Label),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'((ld|st)[axy]|(in|de)[cxy]|asl|lsr|ro[lr]|adc|sbc|cmp|cp[xy]'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'|cl[cvdi]|se[cdi]|jmp|jsr|bne|beq|bpl|bmi|bvc|bvs|bcc|bcs'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'|p[lh][ap]|rt[is]|brk|nop|ta[xy]|t[xy]a|txs|tsx|and|ora|eor'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'|bit)\(\backslash\)b'}, Keyword),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\).\(\backslash\)w+'}, Keyword.Pseudo),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[-\/+\string~*/\string^\&|!<>=]'}, Operator),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'"{}[\string^"{}\(\backslash\)n]*.'}, String),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r"{}'[\string^'\(\backslash\)n]*."{}}, String.Char),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\$[0-\/9a-\/f]+|[0-\/9a-\/f]+h\(\backslash\)b'}, Number.Hex),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)d+'}, Number.Integer),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\%[01]+'}, Number.Bin),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\#,.:()=\(\backslash\)[\(\backslash\)]]'}, Punctuation),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[a-\/z\_.@\$][\(\backslash\)w.@\$]*'}, Name),}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/asm.\+py\end{DoxyCompactItemize}

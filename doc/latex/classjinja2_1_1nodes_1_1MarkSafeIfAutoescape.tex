@@ -1,0 +1,57 @@
+\hypertarget{classjinja2_1_1nodes_1_1MarkSafeIfAutoescape}{}\doxysection{jinja2.\+nodes.\+Mark\+Safe\+If\+Autoescape Class Reference}
+\label{classjinja2_1_1nodes_1_1MarkSafeIfAutoescape}\index{jinja2.nodes.MarkSafeIfAutoescape@{jinja2.nodes.MarkSafeIfAutoescape}}
+
+
+Inheritance diagram for jinja2.\+nodes.\+Mark\+Safe\+If\+Autoescape\+:
+% FIG 0
+
+
+Collaboration diagram for jinja2.\+nodes.\+Mark\+Safe\+If\+Autoescape\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Union\mbox{[}\mbox{\hyperlink{classmarkupsafe_1_1Markup}{Markup}}, t.\+Any\mbox{]} \mbox{\hyperlink{classjinja2_1_1nodes_1_1MarkSafeIfAutoescape_a869bec2d678b25113b904a05f3522b32}{as\+\_\+const}} (self, t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1EvalContext}{Eval\+Context}}\mbox{]} eval\+\_\+ctx=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjinja2_1_1nodes_1_1MarkSafeIfAutoescape_aad3497a1b939f4f82c24b9f722dd9c36}\label{classjinja2_1_1nodes_1_1MarkSafeIfAutoescape_aad3497a1b939f4f82c24b9f722dd9c36}} 
+tuple {\bfseries fields} = (\char`\"{}expr\char`\"{},)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Mark the wrapped expression as safe (wrap it as `Markup`) but
+only if autoescaping is active.
+
+.. versionadded:: 2.5
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classjinja2_1_1nodes_1_1MarkSafeIfAutoescape_a869bec2d678b25113b904a05f3522b32}\label{classjinja2_1_1nodes_1_1MarkSafeIfAutoescape_a869bec2d678b25113b904a05f3522b32}} 
+\index{jinja2.nodes.MarkSafeIfAutoescape@{jinja2.nodes.MarkSafeIfAutoescape}!as\_const@{as\_const}}
+\index{as\_const@{as\_const}!jinja2.nodes.MarkSafeIfAutoescape@{jinja2.nodes.MarkSafeIfAutoescape}}
+\doxysubsubsection{\texorpdfstring{as\_const()}{as\_const()}}
+{\footnotesize\ttfamily  t.\+Union\mbox{[}\mbox{\hyperlink{classmarkupsafe_1_1Markup}{Markup}}, t.\+Any\mbox{]} jinja2.\+nodes.\+Mark\+Safe\+If\+Autoescape.\+as\+\_\+const (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1EvalContext}{Eval\+Context}}\mbox{]} }]{eval\+\_\+ctx = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the value of the expression as constant or raise
+:exc:`Impossible` if this was not possible.
+
+An :class:`EvalContext` can be provided, if none is given
+a default context is created which requires the nodes to have
+an attached environment.
+
+.. versionchanged:: 2.4
+   the `eval_ctx` parameter was added.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1nodes_1_1Expr_afc3c83d61cdf1d87d4a3f54637efb194}{jinja2.\+nodes.\+Expr}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jinja2/nodes.\+py\end{DoxyCompactItemize}

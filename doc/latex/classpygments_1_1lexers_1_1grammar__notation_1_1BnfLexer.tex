@@ -1,0 +1,91 @@
+\hypertarget{classpygments_1_1lexers_1_1grammar__notation_1_1BnfLexer}{}\doxysection{pygments.\+lexers.\+grammar\+\_\+notation.\+Bnf\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1grammar__notation_1_1BnfLexer}\index{pygments.lexers.grammar\_notation.BnfLexer@{pygments.lexers.grammar\_notation.BnfLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+grammar\+\_\+notation.\+Bnf\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+grammar\+\_\+notation.\+Bnf\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1grammar__notation_1_1BnfLexer_a54dfae5b1de8a84fd6de96530fdceb52}\label{classpygments_1_1lexers_1_1grammar__notation_1_1BnfLexer_a54dfae5b1de8a84fd6de96530fdceb52}} 
+string {\bfseries name} = \textquotesingle{}BNF\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1grammar__notation_1_1BnfLexer_afaeaa06b7b0c078f1e36bdef258037f4}\label{classpygments_1_1lexers_1_1grammar__notation_1_1BnfLexer_afaeaa06b7b0c078f1e36bdef258037f4}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}bnf\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1grammar__notation_1_1BnfLexer_a420a3734aff88b74ea6868905f3237f2}\label{classpygments_1_1lexers_1_1grammar__notation_1_1BnfLexer_a420a3734aff88b74ea6868905f3237f2}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.bnf\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1grammar__notation_1_1BnfLexer_acb570e02c21f9ddce011cc15eae345f6}\label{classpygments_1_1lexers_1_1grammar__notation_1_1BnfLexer_acb570e02c21f9ddce011cc15eae345f6}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/bnf\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1grammar__notation_1_1BnfLexer_a8fb77ab60c2646291963d4f7c799c711}\label{classpygments_1_1lexers_1_1grammar__notation_1_1BnfLexer_a8fb77ab60c2646291963d4f7c799c711}} 
+string {\bfseries url} = \textquotesingle{}https\+://en.\+wikipedia.\+org/wiki/Backus\%E2\%80\%93Naur\+\_\+form\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1grammar__notation_1_1BnfLexer_aeb99e767cf9cf13906e2a3a1ade82036}\label{classpygments_1_1lexers_1_1grammar__notation_1_1BnfLexer_aeb99e767cf9cf13906e2a3a1ade82036}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+1\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This lexer is for grammar notations which are similar to
+original BNF.
+
+In order to maximize a number of targets of this lexer,
+let's decide some designs:
+
+* We don't distinguish `Terminal Symbol`.
+
+* We do assume that `NonTerminal Symbol` are always enclosed
+  with arrow brackets.
+
+* We do assume that `NonTerminal Symbol` may include
+  any printable characters except arrow brackets and ASCII 0x20.
+  This assumption is for `RBNF <http://www.rfc-base.org/txt/rfc-5511.txt>`_.
+
+* We do assume that target notation doesn't support comment.
+
+* We don't distinguish any operators and punctuation except
+  `::=`.
+
+Though these decision making might cause too minimal highlighting
+and you might be disappointed, but it is reasonable for us.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1grammar__notation_1_1BnfLexer_ad11266ab6d62d7954f813af287596740}\label{classpygments_1_1lexers_1_1grammar__notation_1_1BnfLexer_ad11266ab6d62d7954f813af287596740}} 
+\index{pygments.lexers.grammar\_notation.BnfLexer@{pygments.lexers.grammar\_notation.BnfLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.grammar\_notation.BnfLexer@{pygments.lexers.grammar\_notation.BnfLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+grammar\+\_\+notation.\+Bnf\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(<)([ -\/;=?-\/\string~]+)(>)'},}
+\DoxyCodeLine{             bygroups(Punctuation, Name.Class, Punctuation)),}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{comment}{\# an only operator}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'::='}, Operator),}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{comment}{\# fallback}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^<>:]+'}, Text),  \textcolor{comment}{\# for performance}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'.'}, Text),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/grammar\+\_\+notation.\+py\end{DoxyCompactItemize}

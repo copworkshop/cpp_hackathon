@@ -1,0 +1,65 @@
+\hypertarget{classtqdm_1_1contrib_1_1slack_1_1tqdm__slack}{}\doxysection{tqdm.\+contrib.\+slack.\+tqdm\+\_\+slack Class Reference}
+\label{classtqdm_1_1contrib_1_1slack_1_1tqdm__slack}\index{tqdm.contrib.slack.tqdm\_slack@{tqdm.contrib.slack.tqdm\_slack}}
+
+
+Inheritance diagram for tqdm.\+contrib.\+slack.\+tqdm\+\_\+slack\+:
+% FIG 0
+
+
+Collaboration diagram for tqdm.\+contrib.\+slack.\+tqdm\+\_\+slack\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classtqdm_1_1contrib_1_1slack_1_1tqdm__slack_a8bf4628cf36427d4a78fb0a31711f5f3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1slack_1_1tqdm__slack_a34d4e67a8b3c5cdae7ad3eafb0e199af}\label{classtqdm_1_1contrib_1_1slack_1_1tqdm__slack_a34d4e67a8b3c5cdae7ad3eafb0e199af}} 
+def {\bfseries display} (self, $\ast$$\ast$kwargs)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1slack_1_1tqdm__slack_a9b5c3cd306c6109f74ffe8d6ead125ab}\label{classtqdm_1_1contrib_1_1slack_1_1tqdm__slack_a9b5c3cd306c6109f74ffe8d6ead125ab}} 
+def {\bfseries clear} (self, $\ast$args, $\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1slack_1_1tqdm__slack_a59ada61b85c9ed6a8a0be3bb1f29b1a2}\label{classtqdm_1_1contrib_1_1slack_1_1tqdm__slack_a59ada61b85c9ed6a8a0be3bb1f29b1a2}} 
+{\bfseries sio}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Standard `tqdm.auto.tqdm` but also sends updates to a Slack app.
+May take a few seconds to create (`__init__`).
+
+- create a Slack app with the `chat:write` scope & invite it to a
+  channel: <https://api.slack.com/authentication/basics>
+- copy the bot `{token}` & `{channel}` and paste below
+>>> from tqdm.contrib.slack import tqdm, trange
+>>> for i in tqdm(iterable, token='{token}', channel='{channel}'):
+...     ...
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1slack_1_1tqdm__slack_a8bf4628cf36427d4a78fb0a31711f5f3}\label{classtqdm_1_1contrib_1_1slack_1_1tqdm__slack_a8bf4628cf36427d4a78fb0a31711f5f3}} 
+\index{tqdm.contrib.slack.tqdm\_slack@{tqdm.contrib.slack.tqdm\_slack}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!tqdm.contrib.slack.tqdm\_slack@{tqdm.contrib.slack.tqdm\_slack}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def tqdm.\+contrib.\+slack.\+tqdm\+\_\+slack.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parameters
+----------
+token  : str, required. Slack token
+    [default: ${TQDM_SLACK_TOKEN}].
+channel  : int, required. Slack channel
+    [default: ${TQDM_SLACK_CHANNEL}].
+mininterval  : float, optional.
+  Minimum of [default: 1.5] to avoid rate limit.
+
+See `tqdm.auto.tqdm.__init__` for other parameters.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/tqdm/contrib/slack.\+py\end{DoxyCompactItemize}

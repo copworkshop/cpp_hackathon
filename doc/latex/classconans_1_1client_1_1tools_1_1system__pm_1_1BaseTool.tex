@@ -1,0 +1,43 @@
+\hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1BaseTool}{}\doxysection{conans.\+client.\+tools.\+system\+\_\+pm.\+Base\+Tool Class Reference}
+\label{classconans_1_1client_1_1tools_1_1system__pm_1_1BaseTool}\index{conans.client.tools.system\_pm.BaseTool@{conans.client.tools.system\_pm.BaseTool}}
+
+
+Inheritance diagram for conans.\+client.\+tools.\+system\+\_\+pm.\+Base\+Tool\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+tools.\+system\+\_\+pm.\+Base\+Tool\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1BaseTool_a3672c0eadf5ce61def5bf35352e2083c}\label{classconans_1_1client_1_1tools_1_1system__pm_1_1BaseTool_a3672c0eadf5ce61def5bf35352e2083c}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, output=None)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1tools_1_1system__pm_1_1BaseTool_ad406ed642d4be5c45465269aa03d724a}{get\+\_\+package\+\_\+name}} (self, package, arch, arch\+\_\+names)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1BaseTool_ad406ed642d4be5c45465269aa03d724a}\label{classconans_1_1client_1_1tools_1_1system__pm_1_1BaseTool_ad406ed642d4be5c45465269aa03d724a}} 
+\index{conans.client.tools.system\_pm.BaseTool@{conans.client.tools.system\_pm.BaseTool}!get\_package\_name@{get\_package\_name}}
+\index{get\_package\_name@{get\_package\_name}!conans.client.tools.system\_pm.BaseTool@{conans.client.tools.system\_pm.BaseTool}}
+\doxysubsubsection{\texorpdfstring{get\_package\_name()}{get\_package\_name()}}
+{\footnotesize\ttfamily def conans.\+client.\+tools.\+system\+\_\+pm.\+Base\+Tool.\+get\+\_\+package\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{package,  }\item[{}]{arch,  }\item[{}]{arch\+\_\+names }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Retrieve package name to installed according the target arch.
+
+:param package: Regular package name e.g libusb-dev
+:param arch: Host arch from Conanfile.settings
+:param arch_names: Dictionary with suffix/prefix names e.g {"x86_64": "amd64"}
+:return: Package name for Tool e.g. libusb-dev:i386
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classconans_1_1client_1_1tools_1_1system__pm_1_1ZypperTool_a1dafe666346c05375b6a77f9f0862bac}{conans.\+client.\+tools.\+system\+\_\+pm.\+Zypper\+Tool}}, \mbox{\hyperlink{classconans_1_1client_1_1tools_1_1system__pm_1_1PacManTool_a085d94d1d8400f13447008f6db9782ff}{conans.\+client.\+tools.\+system\+\_\+pm.\+Pac\+Man\+Tool}}, \mbox{\hyperlink{classconans_1_1client_1_1tools_1_1system__pm_1_1YumTool_a05b5e951cbdcd193a0c00ae56c4418ab}{conans.\+client.\+tools.\+system\+\_\+pm.\+Yum\+Tool}}, and \mbox{\hyperlink{classconans_1_1client_1_1tools_1_1system__pm_1_1AptTool_a5cc83dcd9bb8f488f91c9f77e66bf99e}{conans.\+client.\+tools.\+system\+\_\+pm.\+Apt\+Tool}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/tools/system\+\_\+pm.\+py\end{DoxyCompactItemize}

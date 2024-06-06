@@ -1,0 +1,47 @@
+\hypertarget{classlxml_1_1html_1_1diff_1_1token}{}\doxysection{lxml.\+html.\+diff.\+token Class Reference}
+\label{classlxml_1_1html_1_1diff_1_1token}\index{lxml.html.diff.token@{lxml.html.diff.token}}
+
+
+Inheritance diagram for lxml.\+html.\+diff.\+token\+:
+% FIG 0
+
+
+Collaboration diagram for lxml.\+html.\+diff.\+token\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1diff_1_1token_a2bacffedaa77c22c04f15adedf4f8964}\label{classlxml_1_1html_1_1diff_1_1token_a2bacffedaa77c22c04f15adedf4f8964}} 
+def {\bfseries \+\_\+\+\_\+new\+\_\+\+\_\+} (cls, text, pre\+\_\+tags=None, post\+\_\+tags=None, trailing\+\_\+whitespace=\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1diff_1_1token_aa965aa8069686d64ea5b46ea5998ccdc}\label{classlxml_1_1html_1_1diff_1_1token_aa965aa8069686d64ea5b46ea5998ccdc}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1diff_1_1token_a1504d937d4e2c1f550fcae06b630cac1}\label{classlxml_1_1html_1_1diff_1_1token_a1504d937d4e2c1f550fcae06b630cac1}} 
+def {\bfseries html} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1diff_1_1token_a92dfa830f04e6484b42de3f56c4b95b3}\label{classlxml_1_1html_1_1diff_1_1token_a92dfa830f04e6484b42de3f56c4b95b3}} 
+bool {\bfseries hide\+\_\+when\+\_\+equal} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} Represents a diffable token, generally a word that is displayed to
+the user.  Opening tags are attached to this token when they are
+adjacent (pre_tags) and closing tags that follow the word
+(post_tags).  Some exceptions occur when there are empty tags
+adjacent to a word, so there may be close tags in pre_tags, or
+open tags in post_tags.
+
+We also keep track of whether the word was originally followed by
+whitespace, even though we do not want to treat the word as
+equivalent to a similar word that does not have a trailing
+space.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/lxml/html/diff.\+py\end{DoxyCompactItemize}

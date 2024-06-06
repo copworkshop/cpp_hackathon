@@ -1,0 +1,75 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahXmlLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Cheetah\+Xml\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1CheetahXmlLexer}\index{pygments.lexers.templates.CheetahXmlLexer@{pygments.lexers.templates.CheetahXmlLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Cheetah\+Xml\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Cheetah\+Xml\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1CheetahXmlLexer_aff9e10fbaf33469043325e01ec848d4b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahXmlLexer_a5f1760b3f478aa4a92460a42b1fd66f8}\label{classpygments_1_1lexers_1_1templates_1_1CheetahXmlLexer_a5f1760b3f478aa4a92460a42b1fd66f8}} 
+string {\bfseries name} = \textquotesingle{}XML+Cheetah\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahXmlLexer_a06c0d85ca08da1c0c2a722a392691e23}\label{classpygments_1_1lexers_1_1templates_1_1CheetahXmlLexer_a06c0d85ca08da1c0c2a722a392691e23}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}xml+cheetah\textquotesingle{}, \textquotesingle{}xml+spitfire\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahXmlLexer_a0724801d7ed59fe6f09fc2bdacea6756}\label{classpygments_1_1lexers_1_1templates_1_1CheetahXmlLexer_a0724801d7ed59fe6f09fc2bdacea6756}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}application/xml+cheetah\textquotesingle{}, \textquotesingle{}application/xml+spitfire\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahXmlLexer_a444e9794377bc1b65d75586ab53941d7}\label{classpygments_1_1lexers_1_1templates_1_1CheetahXmlLexer_a444e9794377bc1b65d75586ab53941d7}} 
+string {\bfseries url} = \textquotesingle{}http\+://www.\+cheetahtemplate.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahXmlLexer_a943f09dd0cb2c306dbb12408f2b03873}\label{classpygments_1_1lexers_1_1templates_1_1CheetahXmlLexer_a943f09dd0cb2c306dbb12408f2b03873}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Subclass of the `CheetahLexer` that highlights unlexed data
+with the `XmlLexer`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahXmlLexer_aff9e10fbaf33469043325e01ec848d4b}\label{classpygments_1_1lexers_1_1templates_1_1CheetahXmlLexer_aff9e10fbaf33469043325e01ec848d4b}} 
+\index{pygments.lexers.templates.CheetahXmlLexer@{pygments.lexers.templates.CheetahXmlLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.templates.CheetahXmlLexer@{pygments.lexers.templates.CheetahXmlLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Cheetah\+Xml\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

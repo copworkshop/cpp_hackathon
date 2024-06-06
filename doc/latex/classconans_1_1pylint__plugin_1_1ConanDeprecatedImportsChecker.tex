@@ -1,0 +1,73 @@
+\hypertarget{classconans_1_1pylint__plugin_1_1ConanDeprecatedImportsChecker}{}\doxysection{conans.\+pylint\+\_\+plugin.\+Conan\+Deprecated\+Imports\+Checker Class Reference}
+\label{classconans_1_1pylint__plugin_1_1ConanDeprecatedImportsChecker}\index{conans.pylint\_plugin.ConanDeprecatedImportsChecker@{conans.pylint\_plugin.ConanDeprecatedImportsChecker}}
+
+
+Inheritance diagram for conans.\+pylint\+\_\+plugin.\+Conan\+Deprecated\+Imports\+Checker\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+pylint\+\_\+plugin.\+Conan\+Deprecated\+Imports\+Checker\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classconans_1_1pylint__plugin_1_1ConanDeprecatedImportsChecker_a609bf02edf9600c32a5fb1fadc42016d}{process\+\_\+module}} (self, node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1pylint__plugin_1_1ConanDeprecatedImportsChecker_adae565b064f6557031f7b880b2f5e645}\label{classconans_1_1pylint__plugin_1_1ConanDeprecatedImportsChecker_adae565b064f6557031f7b880b2f5e645}} 
+{\bfseries deprecated\+\_\+imports\+\_\+pattern} = re.\+compile(r\char`\"{}(from$\vert$import)\textbackslash{}s+conans\mbox{[}\textbackslash{}.$\vert$\textbackslash{}s\mbox{]}.$\ast$\char`\"{})
+\item 
+\mbox{\Hypertarget{classconans_1_1pylint__plugin_1_1ConanDeprecatedImportsChecker_aa4e5e47bd1282fc11ec0061cb72f3268}\label{classconans_1_1pylint__plugin_1_1ConanDeprecatedImportsChecker_aa4e5e47bd1282fc11ec0061cb72f3268}} 
+string {\bfseries name} = \char`\"{}conan\+\_\+deprecated\+\_\+imports\char`\"{}
+\item 
+dictionary {\bfseries msgs}
+\item 
+\mbox{\Hypertarget{classconans_1_1pylint__plugin_1_1ConanDeprecatedImportsChecker_aa3fc55385d0ca1bdf0c0224744c7d5ec}\label{classconans_1_1pylint__plugin_1_1ConanDeprecatedImportsChecker_aa3fc55385d0ca1bdf0c0224744c7d5ec}} 
+tuple {\bfseries options} = ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Check "from conans*" imports which disappears in Conan 2.x. Only "from conan*" is valid
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1pylint__plugin_1_1ConanDeprecatedImportsChecker_a609bf02edf9600c32a5fb1fadc42016d}\label{classconans_1_1pylint__plugin_1_1ConanDeprecatedImportsChecker_a609bf02edf9600c32a5fb1fadc42016d}} 
+\index{conans.pylint\_plugin.ConanDeprecatedImportsChecker@{conans.pylint\_plugin.ConanDeprecatedImportsChecker}!process\_module@{process\_module}}
+\index{process\_module@{process\_module}!conans.pylint\_plugin.ConanDeprecatedImportsChecker@{conans.pylint\_plugin.ConanDeprecatedImportsChecker}}
+\doxysubsubsection{\texorpdfstring{process\_module()}{process\_module()}}
+{\footnotesize\ttfamily def conans.\+pylint\+\_\+plugin.\+Conan\+Deprecated\+Imports\+Checker.\+process\+\_\+module (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{node }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Processing the module's content that is accessible via node.stream() function
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classconans_1_1pylint__plugin_1_1ConanDeprecatedImportsChecker_aaaf979351f4a682a696c8d9ad78a5a7a}\label{classconans_1_1pylint__plugin_1_1ConanDeprecatedImportsChecker_aaaf979351f4a682a696c8d9ad78a5a7a}} 
+\index{conans.pylint\_plugin.ConanDeprecatedImportsChecker@{conans.pylint\_plugin.ConanDeprecatedImportsChecker}!msgs@{msgs}}
+\index{msgs@{msgs}!conans.pylint\_plugin.ConanDeprecatedImportsChecker@{conans.pylint\_plugin.ConanDeprecatedImportsChecker}}
+\doxysubsubsection{\texorpdfstring{msgs}{msgs}}
+{\footnotesize\ttfamily dictionary conans.\+pylint\+\_\+plugin.\+Conan\+Deprecated\+Imports\+Checker.\+msgs\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}E9000"{}}: (}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}Using deprecated imports from 'conans'. Check migration guide at https://docs.conan.io/en/latest/conan\_v2.html"{}},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}conan1.x-\/deprecated-\/imports"{}},}
+\DoxyCodeLine{            (}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}Use imports from 'conan' instead of 'conans'"{}}}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{} because 'conan' will be the root package for Conan 2.x"{}}}
+\DoxyCodeLine{            )}
+\DoxyCodeLine{        )}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/pylint\+\_\+plugin.\+py\end{DoxyCompactItemize}

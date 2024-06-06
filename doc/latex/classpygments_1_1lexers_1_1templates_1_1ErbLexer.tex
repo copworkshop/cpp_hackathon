@@ -1,0 +1,129 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1ErbLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Erb\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1ErbLexer}\index{pygments.lexers.templates.ErbLexer@{pygments.lexers.templates.ErbLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Erb\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Erb\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1ErbLexer_a1a9ec71f38ef724e10704293a31e9576}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1ErbLexer_a950b90dc8252d8a4c887c44ab4f67435}{get\+\_\+tokens\+\_\+unprocessed}} (self, text)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1ErbLexer_aceee0903e6f159d763b22402781653a3}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1ErbLexer_a424cd5f735020d22638bef7abb851831}\label{classpygments_1_1lexers_1_1templates_1_1ErbLexer_a424cd5f735020d22638bef7abb851831}} 
+{\bfseries ruby\+\_\+lexer}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1ErbLexer_abb038c4e67287d8133d85a125793a751}\label{classpygments_1_1lexers_1_1templates_1_1ErbLexer_abb038c4e67287d8133d85a125793a751}} 
+string {\bfseries name} = \textquotesingle{}ERB\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1ErbLexer_a5f0cdf5ab37d30f443848a85f62e5ab4}\label{classpygments_1_1lexers_1_1templates_1_1ErbLexer_a5f0cdf5ab37d30f443848a85f62e5ab4}} 
+string {\bfseries url} = \textquotesingle{}https\+://github.\+com/ruby/erb\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1ErbLexer_ae315e07a4ccdc6645d19814d4a9daca3}\label{classpygments_1_1lexers_1_1templates_1_1ErbLexer_ae315e07a4ccdc6645d19814d4a9daca3}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}erb\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1ErbLexer_af9478ba1a54db5828bc37a0ccb9a93cf}\label{classpygments_1_1lexers_1_1templates_1_1ErbLexer_af9478ba1a54db5828bc37a0ccb9a93cf}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}application/x-\/ruby-\/templating\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1ErbLexer_a5d59202147f1716d3bd0ad0b5350cd46}\label{classpygments_1_1lexers_1_1templates_1_1ErbLexer_a5d59202147f1716d3bd0ad0b5350cd46}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Generic ERB (Ruby Templating) lexer.
+
+Just highlights ruby code between the preprocessor directives, other data
+is left untouched by the lexer.
+
+All options are also forwarded to the `RubyLexer`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1ErbLexer_a1a9ec71f38ef724e10704293a31e9576}\label{classpygments_1_1lexers_1_1templates_1_1ErbLexer_a1a9ec71f38ef724e10704293a31e9576}} 
+\index{pygments.lexers.templates.ErbLexer@{pygments.lexers.templates.ErbLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.templates.ErbLexer@{pygments.lexers.templates.ErbLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Erb\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1ErbLexer_aceee0903e6f159d763b22402781653a3}\label{classpygments_1_1lexers_1_1templates_1_1ErbLexer_aceee0903e6f159d763b22402781653a3}} 
+\index{pygments.lexers.templates.ErbLexer@{pygments.lexers.templates.ErbLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.templates.ErbLexer@{pygments.lexers.templates.ErbLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Erb\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1ErbLexer_a950b90dc8252d8a4c887c44ab4f67435}\label{classpygments_1_1lexers_1_1templates_1_1ErbLexer_a950b90dc8252d8a4c887c44ab4f67435}} 
+\index{pygments.lexers.templates.ErbLexer@{pygments.lexers.templates.ErbLexer}!get\_tokens\_unprocessed@{get\_tokens\_unprocessed}}
+\index{get\_tokens\_unprocessed@{get\_tokens\_unprocessed}!pygments.lexers.templates.ErbLexer@{pygments.lexers.templates.ErbLexer}}
+\doxysubsubsection{\texorpdfstring{get\_tokens\_unprocessed()}{get\_tokens\_unprocessed()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Erb\+Lexer.\+get\+\_\+tokens\+\_\+unprocessed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Since ERB doesn't allow "<%" and other tags inside of ruby
+blocks we have to use a split approach here that fails for
+that too.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_aad5c02b7f661f64f91cf8c8d880e9f67}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,63 @@
+\hypertarget{classjinja2_1_1runtime_1_1Undefined}{}\doxysection{jinja2.\+runtime.\+Undefined Class Reference}
+\label{classjinja2_1_1runtime_1_1Undefined}\index{jinja2.runtime.Undefined@{jinja2.runtime.Undefined}}
+
+
+Inheritance diagram for jinja2.\+runtime.\+Undefined\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjinja2_1_1runtime_1_1Undefined_af9dbe86be6f4e915f30e497a5a67f830}\label{classjinja2_1_1runtime_1_1Undefined_af9dbe86be6f4e915f30e497a5a67f830}} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, t.\+Optional\mbox{[}str\mbox{]} hint=None, t.\+Any obj=missing, t.\+Optional\mbox{[}str\mbox{]} name=None, t.\+Type\mbox{[}\mbox{\hyperlink{classjinja2_1_1exceptions_1_1TemplateRuntimeError}{Template\+Runtime\+Error}}\mbox{]} exc=\mbox{\hyperlink{classjinja2_1_1exceptions_1_1UndefinedError}{Undefined\+Error}})
+\item 
+\mbox{\Hypertarget{classjinja2_1_1runtime_1_1Undefined_a72b5c6477bf9448a483d62a30b9abcd8}\label{classjinja2_1_1runtime_1_1Undefined_a72b5c6477bf9448a483d62a30b9abcd8}} 
+t.\+Any {\bfseries \+\_\+\+\_\+getattr\+\_\+\+\_\+} (self, str name)
+\item 
+\mbox{\Hypertarget{classjinja2_1_1runtime_1_1Undefined_a9d96597b6e5b540b3058cfea615a3e75}\label{classjinja2_1_1runtime_1_1Undefined_a9d96597b6e5b540b3058cfea615a3e75}} 
+bool {\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, t.\+Any other)
+\item 
+\mbox{\Hypertarget{classjinja2_1_1runtime_1_1Undefined_a886f6a8e399bb90da7870913af46657c}\label{classjinja2_1_1runtime_1_1Undefined_a886f6a8e399bb90da7870913af46657c}} 
+bool {\bfseries \+\_\+\+\_\+ne\+\_\+\+\_\+} (self, t.\+Any other)
+\item 
+\mbox{\Hypertarget{classjinja2_1_1runtime_1_1Undefined_ab11df9936799c4538bf27feef022b551}\label{classjinja2_1_1runtime_1_1Undefined_ab11df9936799c4538bf27feef022b551}} 
+int {\bfseries \+\_\+\+\_\+hash\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classjinja2_1_1runtime_1_1Undefined_aacd423aa7d5d8f016a2fff83ed2f99a3}\label{classjinja2_1_1runtime_1_1Undefined_aacd423aa7d5d8f016a2fff83ed2f99a3}} 
+str {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classjinja2_1_1runtime_1_1Undefined_a95a510432e125e4c0717353e14e2a1cb}\label{classjinja2_1_1runtime_1_1Undefined_a95a510432e125e4c0717353e14e2a1cb}} 
+int {\bfseries \+\_\+\+\_\+len\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classjinja2_1_1runtime_1_1Undefined_a3dece2f24a8ed3d03e69805c06ebdbe0}\label{classjinja2_1_1runtime_1_1Undefined_a3dece2f24a8ed3d03e69805c06ebdbe0}} 
+t.\+Iterator\mbox{[}t.\+Any\mbox{]} {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classjinja2_1_1runtime_1_1Undefined_a14437a4eda48deb10d566267f515ad0b}\label{classjinja2_1_1runtime_1_1Undefined_a14437a4eda48deb10d566267f515ad0b}} 
+t.\+Async\+Iterator\mbox{[}t.\+Any\mbox{]} {\bfseries \+\_\+\+\_\+aiter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classjinja2_1_1runtime_1_1Undefined_af0258682d01d8bffd9f460a428006f14}\label{classjinja2_1_1runtime_1_1Undefined_af0258682d01d8bffd9f460a428006f14}} 
+bool {\bfseries \+\_\+\+\_\+bool\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classjinja2_1_1runtime_1_1Undefined_a97a4664365bd1844e41a89be99b42376}\label{classjinja2_1_1runtime_1_1Undefined_a97a4664365bd1844e41a89be99b42376}} 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The default undefined type.  This undefined type can be printed and
+iterated over, but every other access will raise an :exc:`UndefinedError`:
+
+>>> foo = Undefined(name='foo')
+>>> str(foo)
+''
+>>> not foo
+True
+>>> foo + 42
+Traceback (most recent call last):
+  ...
+jinja2.exceptions.UndefinedError: 'foo' is undefined
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jinja2/runtime.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,176 @@
+\hypertarget{classurllib3_1_1poolmanager_1_1PoolManager}{}\doxysection{urllib3.\+poolmanager.\+Pool\+Manager Class Reference}
+\label{classurllib3_1_1poolmanager_1_1PoolManager}\index{urllib3.poolmanager.PoolManager@{urllib3.poolmanager.PoolManager}}
+
+
+Inheritance diagram for urllib3.\+poolmanager.\+Pool\+Manager\+:
+% FIG 0
+
+
+Collaboration diagram for urllib3.\+poolmanager.\+Pool\+Manager\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1PoolManager_afd31e08150f520f6c418b39a6b83244a}\label{classurllib3_1_1poolmanager_1_1PoolManager_afd31e08150f520f6c418b39a6b83244a}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, num\+\_\+pools=10, headers=None, $\ast$$\ast$connection\+\_\+pool\+\_\+kw)
+\item 
+\mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1PoolManager_a59620d2e3b681a4ec76b0713a49715bd}\label{classurllib3_1_1poolmanager_1_1PoolManager_a59620d2e3b681a4ec76b0713a49715bd}} 
+def {\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1PoolManager_a7e2470f56768f311f909741bd571e0ae}\label{classurllib3_1_1poolmanager_1_1PoolManager_a7e2470f56768f311f909741bd571e0ae}} 
+def {\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, exc\+\_\+type, exc\+\_\+val, exc\+\_\+tb)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1poolmanager_1_1PoolManager_a5ebe7cbdf0499f2cc2ba783a8792f117}{clear}} (self)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1poolmanager_1_1PoolManager_a984ad10715cd5eb8d215aebbffa7384e}{connection\+\_\+from\+\_\+host}} (self, host, port=None, scheme=\char`\"{}http\char`\"{}, pool\+\_\+kwargs=None)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1poolmanager_1_1PoolManager_a91ac1e6ee6bba90dcfc794559180ec8b}{connection\+\_\+from\+\_\+context}} (self, request\+\_\+context)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1poolmanager_1_1PoolManager_a02981f1aeea5b112c4e1a0741247646b}{connection\+\_\+from\+\_\+pool\+\_\+key}} (self, pool\+\_\+key, request\+\_\+context=None)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1poolmanager_1_1PoolManager_a15801ac63f59d01cccb53c1dcba93873}{connection\+\_\+from\+\_\+url}} (self, url, pool\+\_\+kwargs=None)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1poolmanager_1_1PoolManager_a688edca7f32cc4762114f197ecca0d1b}{urlopen}} (self, method, url, redirect=True, $\ast$$\ast$kw)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1PoolManager_a87ee6bb1a61acffbc6d2c6cc91ff823d}\label{classurllib3_1_1poolmanager_1_1PoolManager_a87ee6bb1a61acffbc6d2c6cc91ff823d}} 
+{\bfseries connection\+\_\+pool\+\_\+kw}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1PoolManager_a026faad93e2fca6ebef94e86c796c263}\label{classurllib3_1_1poolmanager_1_1PoolManager_a026faad93e2fca6ebef94e86c796c263}} 
+{\bfseries pools}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1PoolManager_ac47cb60e987b4a2b6e5c076e2c17ad96}\label{classurllib3_1_1poolmanager_1_1PoolManager_ac47cb60e987b4a2b6e5c076e2c17ad96}} 
+{\bfseries pool\+\_\+classes\+\_\+by\+\_\+scheme}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1PoolManager_a6a46e31dbaa2ae9f1dda9407b9a9aa94}\label{classurllib3_1_1poolmanager_1_1PoolManager_a6a46e31dbaa2ae9f1dda9407b9a9aa94}} 
+{\bfseries key\+\_\+fn\+\_\+by\+\_\+scheme}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1PoolManager_a4d7d4ea1ad5595093dc334605b37ccab}\label{classurllib3_1_1poolmanager_1_1PoolManager_a4d7d4ea1ad5595093dc334605b37ccab}} 
+{\bfseries proxy} = None
+\item 
+\mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1PoolManager_a7b5d35270c38cc8306822ea9b6ab662a}\label{classurllib3_1_1poolmanager_1_1PoolManager_a7b5d35270c38cc8306822ea9b6ab662a}} 
+{\bfseries proxy\+\_\+config} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Allows for arbitrary requests while transparently keeping track of
+necessary connection pools for you.
+
+:param num_pools:
+    Number of connection pools to cache before discarding the least
+    recently used pool.
+
+:param headers:
+    Headers to include with all requests, unless other headers are given
+    explicitly.
+
+:param \\**connection_pool_kw:
+    Additional parameters are used to create fresh
+    :class:`urllib3.connectionpool.ConnectionPool` instances.
+
+Example::
+
+    >>> manager = PoolManager(num_pools=2)
+    >>> r = manager.request('GET', 'http://google.com/')
+    >>> r = manager.request('GET', 'http://google.com/mail')
+    >>> r = manager.request('GET', 'http://yahoo.com/')
+    >>> len(manager.pools)
+    2\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1PoolManager_a5ebe7cbdf0499f2cc2ba783a8792f117}\label{classurllib3_1_1poolmanager_1_1PoolManager_a5ebe7cbdf0499f2cc2ba783a8792f117}} 
+\index{urllib3.poolmanager.PoolManager@{urllib3.poolmanager.PoolManager}!clear@{clear}}
+\index{clear@{clear}!urllib3.poolmanager.PoolManager@{urllib3.poolmanager.PoolManager}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily def urllib3.\+poolmanager.\+Pool\+Manager.\+clear (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Empty our store of pools and direct them all to close.
+
+This will not affect in-flight connections, but they will not be
+re-used after completion.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1PoolManager_a91ac1e6ee6bba90dcfc794559180ec8b}\label{classurllib3_1_1poolmanager_1_1PoolManager_a91ac1e6ee6bba90dcfc794559180ec8b}} 
+\index{urllib3.poolmanager.PoolManager@{urllib3.poolmanager.PoolManager}!connection\_from\_context@{connection\_from\_context}}
+\index{connection\_from\_context@{connection\_from\_context}!urllib3.poolmanager.PoolManager@{urllib3.poolmanager.PoolManager}}
+\doxysubsubsection{\texorpdfstring{connection\_from\_context()}{connection\_from\_context()}}
+{\footnotesize\ttfamily def urllib3.\+poolmanager.\+Pool\+Manager.\+connection\+\_\+from\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request\+\_\+context }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a :class:`urllib3.connectionpool.ConnectionPool` based on the request context.
+
+``request_context`` must at least contain the ``scheme`` key and its
+value must be a key in ``key_fn_by_scheme`` instance variable.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1PoolManager_a984ad10715cd5eb8d215aebbffa7384e}\label{classurllib3_1_1poolmanager_1_1PoolManager_a984ad10715cd5eb8d215aebbffa7384e}} 
+\index{urllib3.poolmanager.PoolManager@{urllib3.poolmanager.PoolManager}!connection\_from\_host@{connection\_from\_host}}
+\index{connection\_from\_host@{connection\_from\_host}!urllib3.poolmanager.PoolManager@{urllib3.poolmanager.PoolManager}}
+\doxysubsubsection{\texorpdfstring{connection\_from\_host()}{connection\_from\_host()}}
+{\footnotesize\ttfamily def urllib3.\+poolmanager.\+Pool\+Manager.\+connection\+\_\+from\+\_\+host (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{host,  }\item[{}]{port = {\ttfamily None},  }\item[{}]{scheme = {\ttfamily \char`\"{}http\char`\"{}},  }\item[{}]{pool\+\_\+kwargs = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a :class:`urllib3.connectionpool.ConnectionPool` based on the host, port, and scheme.
+
+If ``port`` isn't given, it will be derived from the ``scheme`` using
+``urllib3.connectionpool.port_by_scheme``. If ``pool_kwargs`` is
+provided, it is merged with the instance's ``connection_pool_kw``
+variable and used to create the new connection pool, if one is
+needed.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classurllib3_1_1poolmanager_1_1ProxyManager_a07bf04a6211bbb5b0bbacb7b0914a9f1}{urllib3.\+poolmanager.\+Proxy\+Manager}}.
+
+\mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1PoolManager_a02981f1aeea5b112c4e1a0741247646b}\label{classurllib3_1_1poolmanager_1_1PoolManager_a02981f1aeea5b112c4e1a0741247646b}} 
+\index{urllib3.poolmanager.PoolManager@{urllib3.poolmanager.PoolManager}!connection\_from\_pool\_key@{connection\_from\_pool\_key}}
+\index{connection\_from\_pool\_key@{connection\_from\_pool\_key}!urllib3.poolmanager.PoolManager@{urllib3.poolmanager.PoolManager}}
+\doxysubsubsection{\texorpdfstring{connection\_from\_pool\_key()}{connection\_from\_pool\_key()}}
+{\footnotesize\ttfamily def urllib3.\+poolmanager.\+Pool\+Manager.\+connection\+\_\+from\+\_\+pool\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pool\+\_\+key,  }\item[{}]{request\+\_\+context = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a :class:`urllib3.connectionpool.ConnectionPool` based on the provided pool key.
+
+``pool_key`` should be a namedtuple that only contains immutable
+objects. At a minimum it must have the ``scheme``, ``host``, and
+``port`` fields.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1PoolManager_a15801ac63f59d01cccb53c1dcba93873}\label{classurllib3_1_1poolmanager_1_1PoolManager_a15801ac63f59d01cccb53c1dcba93873}} 
+\index{urllib3.poolmanager.PoolManager@{urllib3.poolmanager.PoolManager}!connection\_from\_url@{connection\_from\_url}}
+\index{connection\_from\_url@{connection\_from\_url}!urllib3.poolmanager.PoolManager@{urllib3.poolmanager.PoolManager}}
+\doxysubsubsection{\texorpdfstring{connection\_from\_url()}{connection\_from\_url()}}
+{\footnotesize\ttfamily def urllib3.\+poolmanager.\+Pool\+Manager.\+connection\+\_\+from\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{url,  }\item[{}]{pool\+\_\+kwargs = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Similar to :func:`urllib3.connectionpool.connection_from_url`.
+
+If ``pool_kwargs`` is not provided and a new pool needs to be
+constructed, ``self.connection_pool_kw`` is used to initialize
+the :class:`urllib3.connectionpool.ConnectionPool`. If ``pool_kwargs``
+is provided, it is used instead. Note that if a new pool does not
+need to be created for the request, the provided ``pool_kwargs`` are
+not used.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1PoolManager_a688edca7f32cc4762114f197ecca0d1b}\label{classurllib3_1_1poolmanager_1_1PoolManager_a688edca7f32cc4762114f197ecca0d1b}} 
+\index{urllib3.poolmanager.PoolManager@{urllib3.poolmanager.PoolManager}!urlopen@{urlopen}}
+\index{urlopen@{urlopen}!urllib3.poolmanager.PoolManager@{urllib3.poolmanager.PoolManager}}
+\doxysubsubsection{\texorpdfstring{urlopen()}{urlopen()}}
+{\footnotesize\ttfamily def urllib3.\+poolmanager.\+Pool\+Manager.\+urlopen (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{method,  }\item[{}]{url,  }\item[{}]{redirect = {\ttfamily True},  }\item[{$\ast$$\ast$}]{kw }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Same as :meth:`urllib3.HTTPConnectionPool.urlopen`
+with custom cross-host redirect logic and only sends the request-uri
+portion of the ``url``.
+
+The given ``url`` parameter must be absolute, such that an appropriate
+:class:`urllib3.connectionpool.ConnectionPool` can be chosen for it.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classurllib3_1_1poolmanager_1_1ProxyManager_ab8905f067c5f9f2b6a3ff8daddff7d8a}{urllib3.\+poolmanager.\+Proxy\+Manager}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/urllib3/poolmanager.\+py\end{DoxyCompactItemize}

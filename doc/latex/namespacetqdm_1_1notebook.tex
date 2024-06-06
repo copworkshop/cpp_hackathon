@@ -1,0 +1,74 @@
+\hypertarget{namespacetqdm_1_1notebook}{}\doxysection{tqdm.\+notebook Namespace Reference}
+\label{namespacetqdm_1_1notebook}\index{tqdm.notebook@{tqdm.notebook}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1notebook_1_1TqdmHBox}{Tqdm\+HBox}}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1notebook_1_1tqdm__notebook}{tqdm\+\_\+notebook}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacetqdm_1_1notebook_a9d52ed1981e97d1e67054c899f39da68}{tnrange}} ($\ast$args, $\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1notebook_af7e04e9d7e541eb77ee2c30f122a2aa1}\label{namespacetqdm_1_1notebook_af7e04e9d7e541eb77ee2c30f122a2aa1}} 
+int {\bfseries IPY} = 0
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1notebook_a0c2fe8cc5b7162744a30b70de80b0a09}\label{namespacetqdm_1_1notebook_a0c2fe8cc5b7162744a30b70de80b0a09}} 
+{\bfseries message}
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1notebook_a05c197cac52bf707d33a490437d2d77c}\label{namespacetqdm_1_1notebook_a05c197cac52bf707d33a490437d2d77c}} 
+{\bfseries IProgress} = None
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1notebook_a413e434e5bf938645b9960d47a30a0cb}\label{namespacetqdm_1_1notebook_a413e434e5bf938645b9960d47a30a0cb}} 
+{\bfseries HBox} = object
+\item 
+tuple {\bfseries WARN\+\_\+\+NOIPYW}
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1notebook_a71d46a5b8a02797d618eb79d4f3a38be}\label{namespacetqdm_1_1notebook_a71d46a5b8a02797d618eb79d4f3a38be}} 
+{\bfseries tqdm} = \mbox{\hyperlink{classtqdm_1_1notebook_1_1tqdm__notebook}{tqdm\+\_\+notebook}}
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1notebook_aed7078774cdc4292a06073a30f5f294c}\label{namespacetqdm_1_1notebook_aed7078774cdc4292a06073a30f5f294c}} 
+def {\bfseries trange} = \mbox{\hyperlink{namespacetqdm_1_1notebook_a9d52ed1981e97d1e67054c899f39da68}{tnrange}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}IPython/Jupyter Notebook progressbar decorator for iterators.
+Includes a default `range` iterator printing to `stderr`.
+
+Usage:
+>>> from tqdm.notebook import trange, tqdm
+>>> for i in trange(10):
+...     ...
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetqdm_1_1notebook_a9d52ed1981e97d1e67054c899f39da68}\label{namespacetqdm_1_1notebook_a9d52ed1981e97d1e67054c899f39da68}} 
+\index{tqdm.notebook@{tqdm.notebook}!tnrange@{tnrange}}
+\index{tnrange@{tnrange}!tqdm.notebook@{tqdm.notebook}}
+\doxysubsubsection{\texorpdfstring{tnrange()}{tnrange()}}
+{\footnotesize\ttfamily def tqdm.\+notebook.\+tnrange (\begin{DoxyParamCaption}\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for `tqdm.notebook.tqdm(range(*args), **kwargs)`.\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacetqdm_1_1notebook_a69ea643bac582313c79b7946b1e4001a}\label{namespacetqdm_1_1notebook_a69ea643bac582313c79b7946b1e4001a}} 
+\index{tqdm.notebook@{tqdm.notebook}!WARN\_NOIPYW@{WARN\_NOIPYW}}
+\index{WARN\_NOIPYW@{WARN\_NOIPYW}!tqdm.notebook@{tqdm.notebook}}
+\doxysubsubsection{\texorpdfstring{WARN\_NOIPYW}{WARN\_NOIPYW}}
+{\footnotesize\ttfamily tuple tqdm.\+notebook.\+WARN\+\_\+\+NOIPYW}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  (\textcolor{stringliteral}{"{}IProgress not found. Please update jupyter and ipywidgets."{}}}
+\DoxyCodeLine{2                \textcolor{stringliteral}{"{} See https://ipywidgets.readthedocs.io/en/stable"{}}}
+\DoxyCodeLine{3                \textcolor{stringliteral}{"{}/user\_install.html"{}})}
+
+\end{DoxyCode}

@@ -1,0 +1,77 @@
+\hypertarget{classpygments_1_1lexers_1_1configs_1_1DockerLexer}{}\doxysection{pygments.\+lexers.\+configs.\+Docker\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1configs_1_1DockerLexer}\index{pygments.lexers.configs.DockerLexer@{pygments.lexers.configs.DockerLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+configs.\+Docker\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+configs.\+Docker\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1DockerLexer_a581d065122c75e96eb5fa3cf17f6146d}\label{classpygments_1_1lexers_1_1configs_1_1DockerLexer_a581d065122c75e96eb5fa3cf17f6146d}} 
+string {\bfseries name} = \textquotesingle{}Docker\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1DockerLexer_a3a5da266c2c61ef45a94c9b269ec06ce}\label{classpygments_1_1lexers_1_1configs_1_1DockerLexer_a3a5da266c2c61ef45a94c9b269ec06ce}} 
+string {\bfseries url} = \textquotesingle{}http\+://docker.\+io\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1DockerLexer_ab70c2d86868a3d10ea6aa77bc82675ac}\label{classpygments_1_1lexers_1_1configs_1_1DockerLexer_ab70c2d86868a3d10ea6aa77bc82675ac}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}docker\textquotesingle{}, \textquotesingle{}dockerfile\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1DockerLexer_aa1818dbdcfe00d631b603ec4f07caf98}\label{classpygments_1_1lexers_1_1configs_1_1DockerLexer_aa1818dbdcfe00d631b603ec4f07caf98}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}Dockerfile\textquotesingle{}, \textquotesingle{}$\ast$.docker\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1DockerLexer_a59b85df3bcd706278ccd8b68964601af}\label{classpygments_1_1lexers_1_1configs_1_1DockerLexer_a59b85df3bcd706278ccd8b68964601af}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/dockerfile-\/config\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1DockerLexer_adb2145b2da9746f22570982624de743c}\label{classpygments_1_1lexers_1_1configs_1_1DockerLexer_adb2145b2da9746f22570982624de743c}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+0\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1DockerLexer_a085d33ffdf4c9e27968add3929b059eb}\label{classpygments_1_1lexers_1_1configs_1_1DockerLexer_a085d33ffdf4c9e27968add3929b059eb}} 
+{\bfseries flags} = re.\+IGNORECASE $\vert$ re.\+MULTILINE
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for Docker configuration files.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1DockerLexer_afb4a3ce7f68df724fcb107247e7be20a}\label{classpygments_1_1lexers_1_1configs_1_1DockerLexer_afb4a3ce7f68df724fcb107247e7be20a}} 
+\index{pygments.lexers.configs.DockerLexer@{pygments.lexers.configs.DockerLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.configs.DockerLexer@{pygments.lexers.configs.DockerLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+configs.\+Docker\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#.*'}, Comment),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(FROM)([ \(\backslash\)t]*)(\(\backslash\)S*)([ \(\backslash\)t]*)(?:(AS)([ \(\backslash\)t]*)(\(\backslash\)S*))?'},}
+\DoxyCodeLine{             bygroups(Keyword, Whitespace, String, Whitespace, Keyword, Whitespace, String)),}
+\DoxyCodeLine{            (rf\textcolor{stringliteral}{'(ONBUILD)(\(\backslash\)s+)(\{\_lb\})'}, bygroups(Keyword, Whitespace, using(BashLexer))),}
+\DoxyCodeLine{            (rf\textcolor{stringliteral}{'(HEALTHCHECK)(\(\backslash\)s+)((\{\_lb\}-\/-\/\(\backslash\)w+=\(\backslash\)w+\{\_lb\})*)'},}
+\DoxyCodeLine{                bygroups(Keyword, Whitespace, using(BashLexer))),}
+\DoxyCodeLine{            (rf\textcolor{stringliteral}{'(VOLUME|ENTRYPOINT|CMD|SHELL)(\(\backslash\)s+)(\{\_lb\})(\(\backslash\)[.*?\(\backslash\)])'},}
+\DoxyCodeLine{                bygroups(Keyword, Whitespace, using(BashLexer), using(JsonLexer))),}
+\DoxyCodeLine{            (rf\textcolor{stringliteral}{'(LABEL|ENV|ARG)(\(\backslash\)s+)((\{\_lb\}\(\backslash\)w+=\(\backslash\)w+\{\_lb\})*)'},}
+\DoxyCodeLine{                bygroups(Keyword, Whitespace, using(BashLexer))),}
+\DoxyCodeLine{            (rf\textcolor{stringliteral}{'(\{\_keywords\}|VOLUME)\(\backslash\)b(\(\backslash\)s+)(.*)'}, bygroups(Keyword, Whitespace, String)),}
+\DoxyCodeLine{            (rf\textcolor{stringliteral}{'(\{\_bash\_keywords\})(\(\backslash\)s+)'}, bygroups(Keyword, Whitespace)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(.*\(\backslash\)\(\backslash\)\(\backslash\)n)*.+'}, using(BashLexer)),}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/configs.\+py\end{DoxyCompactItemize}

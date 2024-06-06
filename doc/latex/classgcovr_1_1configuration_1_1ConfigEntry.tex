@@ -1,0 +1,66 @@
+\hypertarget{classgcovr_1_1configuration_1_1ConfigEntry}{}\doxysection{gcovr.\+configuration.\+Config\+Entry Class Reference}
+\label{classgcovr_1_1configuration_1_1ConfigEntry}\index{gcovr.configuration.ConfigEntry@{gcovr.configuration.ConfigEntry}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgcovr_1_1configuration_1_1ConfigEntry_a3d39fa8c2a0c66e25341380b8eefdaf9}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+bool \mbox{\hyperlink{classgcovr_1_1configuration_1_1ConfigEntry_a112e167b5ff3b764b73630178da37446}{value\+\_\+as\+\_\+bool}} (self)
+\item 
+Value\+Error \mbox{\hyperlink{classgcovr_1_1configuration_1_1ConfigEntry_a4a022826bf5f358f75be919521fc9a7e}{error}} (self, str pattern, $\ast$args, $\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A "key = value" config file entry.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgcovr_1_1configuration_1_1ConfigEntry_a3d39fa8c2a0c66e25341380b8eefdaf9}\label{classgcovr_1_1configuration_1_1ConfigEntry_a3d39fa8c2a0c66e25341380b8eefdaf9}} 
+\index{gcovr.configuration.ConfigEntry@{gcovr.configuration.ConfigEntry}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!gcovr.configuration.ConfigEntry@{gcovr.configuration.ConfigEntry}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def gcovr.\+configuration.\+Config\+Entry.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Display the config entry.
+
+>>> print(ConfigEntry("the-key", "value",
+...                   filename="foo.cfg", lineno=17))
+foo.cfg: 17: the-key = value
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgcovr_1_1configuration_1_1ConfigEntry_a4a022826bf5f358f75be919521fc9a7e}\label{classgcovr_1_1configuration_1_1ConfigEntry_a4a022826bf5f358f75be919521fc9a7e}} 
+\index{gcovr.configuration.ConfigEntry@{gcovr.configuration.ConfigEntry}!error@{error}}
+\index{error@{error}!gcovr.configuration.ConfigEntry@{gcovr.configuration.ConfigEntry}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily  Value\+Error gcovr.\+configuration.\+Config\+Entry.\+error (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{pattern,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Format but NOT RAISE a ValueError.
+
+>>> entry = ConfigEntry('jobs', 'nun', lineno=3)
+>>> raise entry.error("expected number but got {value!r}")
+Traceback (most recent call last):
+ValueError: <config>: 3: jobs: expected number but got 'nun'
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgcovr_1_1configuration_1_1ConfigEntry_a112e167b5ff3b764b73630178da37446}\label{classgcovr_1_1configuration_1_1ConfigEntry_a112e167b5ff3b764b73630178da37446}} 
+\index{gcovr.configuration.ConfigEntry@{gcovr.configuration.ConfigEntry}!value\_as\_bool@{value\_as\_bool}}
+\index{value\_as\_bool@{value\_as\_bool}!gcovr.configuration.ConfigEntry@{gcovr.configuration.ConfigEntry}}
+\doxysubsubsection{\texorpdfstring{value\_as\_bool()}{value\_as\_bool()}}
+{\footnotesize\ttfamily  bool gcovr.\+configuration.\+Config\+Entry.\+value\+\_\+as\+\_\+bool (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The value converted to a boolean.
+
+>>> ConfigEntry("k", "yes").value_as_bool
+True
+
+>>> ConfigEntry("k", "no").value_as_bool
+False
+
+>>> ConfigEntry("k", "foo").value_as_bool
+Traceback (most recent call last):
+ValueError: <config>: ??: k: boolean option must be "yes" or "no"
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/gcovr/configuration.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+\hypertarget{classpygments_1_1lexers_1_1sql_1_1RqlLexer}{}\doxysection{pygments.\+lexers.\+sql.\+Rql\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1sql_1_1RqlLexer}\index{pygments.lexers.sql.RqlLexer@{pygments.lexers.sql.RqlLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+sql.\+Rql\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+sql.\+Rql\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1sql_1_1RqlLexer_ad91e4d1e3f8ff1a5be80d40a1f4d4148}\label{classpygments_1_1lexers_1_1sql_1_1RqlLexer_ad91e4d1e3f8ff1a5be80d40a1f4d4148}} 
+string {\bfseries name} = \textquotesingle{}RQL\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1sql_1_1RqlLexer_a598832644e5f7d23ba569c5c86d469dd}\label{classpygments_1_1lexers_1_1sql_1_1RqlLexer_a598832644e5f7d23ba569c5c86d469dd}} 
+string {\bfseries url} = \textquotesingle{}http\+://www.\+logilab.\+org/project/rql\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1sql_1_1RqlLexer_a3c2eca630620ddc3a8fad1b60ccc3480}\label{classpygments_1_1lexers_1_1sql_1_1RqlLexer_a3c2eca630620ddc3a8fad1b60ccc3480}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}rql\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1sql_1_1RqlLexer_a51bbc0db4df8778c70d75b299ac4fc7d}\label{classpygments_1_1lexers_1_1sql_1_1RqlLexer_a51bbc0db4df8778c70d75b299ac4fc7d}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.rql\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1sql_1_1RqlLexer_af0dbbaf5ee59020eafb0011caca0120f}\label{classpygments_1_1lexers_1_1sql_1_1RqlLexer_af0dbbaf5ee59020eafb0011caca0120f}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/rql\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1sql_1_1RqlLexer_a918cf0863d7a85fa3d926e80dec7dd5b}\label{classpygments_1_1lexers_1_1sql_1_1RqlLexer_a918cf0863d7a85fa3d926e80dec7dd5b}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+0\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1sql_1_1RqlLexer_a9bead32c7efa306d39793b77c1624fc9}\label{classpygments_1_1lexers_1_1sql_1_1RqlLexer_a9bead32c7efa306d39793b77c1624fc9}} 
+{\bfseries flags} = re.\+IGNORECASE
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for Relation Query Language.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1sql_1_1RqlLexer_a553a21af9054d0d2e323ceb8b4ac831e}\label{classpygments_1_1lexers_1_1sql_1_1RqlLexer_a553a21af9054d0d2e323ceb8b4ac831e}} 
+\index{pygments.lexers.sql.RqlLexer@{pygments.lexers.sql.RqlLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.sql.RqlLexer@{pygments.lexers.sql.RqlLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+sql.\+Rql\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(DELETE|SET|INSERT|UNION|DISTINCT|WITH|WHERE|BEING|OR'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'|AND|NOT|GROUPBY|HAVING|ORDERBY|ASC|DESC|LIMIT|OFFSET'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'|TODAY|NOW|TRUE|FALSE|NULL|EXISTS)\(\backslash\)b'}, Keyword),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[+*/<>=\%-\/]'}, Operator),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(Any|is|instance\_of|CWEType|CWRelation)\(\backslash\)b'}, Name.Builtin),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[0-\/9]+'}, Number.Integer),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[A-\/Z\_]\(\backslash\)w*\(\backslash\)??'}, Name),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r"{}'(''|[\string^'])*'"{}}, String.Single),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'"{}("{}"{}|[\string^"{}])*"{}'}, String.Single),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[;:()\(\backslash\)[\(\backslash\)],.]'}, Punctuation)}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/sql.\+py\end{DoxyCompactItemize}

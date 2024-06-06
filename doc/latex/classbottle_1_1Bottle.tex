@@ -1,0 +1,585 @@
+\hypertarget{classbottle_1_1Bottle}{}\doxysection{bottle.\+Bottle Class Reference}
+\label{classbottle_1_1Bottle}\index{bottle.Bottle@{bottle.Bottle}}
+
+
+Inheritance diagram for bottle.\+Bottle\+:
+% FIG 0
+
+
+Collaboration diagram for bottle.\+Bottle\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbottle_1_1Bottle_ade7f3c28562fc05abca007e370631957}\label{classbottle_1_1Bottle_ade7f3c28562fc05abca007e370631957}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, catchall=True, autojson=True)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a8e0d35ac959d7c0b854f8fed1d5ba6e0}{add\+\_\+hook}} (self, name, func)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_ad00821628f80f7db1a65c13108ef3242}{remove\+\_\+hook}} (self, name, func)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_adaa9992d06fa1457b74ae9e12ccc4366}{trigger\+\_\+hook}} (self, \+\_\+\+\_\+name, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a251d61c46f66485d9a917d3b5014396b}{hook}} (self, name)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a13e7a513994c4abf8623d35f6fb57923}{mount}} (self, prefix, app, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a21890c83739892ee8707eebe0c107cbf}{merge}} (self, routes)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a7c6c49c66c49a00667dca23281e1ef31}{install}} (self, plugin)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a0d9035d37448361c08f4a93dd1081e43}{uninstall}} (self, plugin)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a38e8afae5f3218afcebe27a597e8b4ff}{reset}} (self, \mbox{\hyperlink{classbottle_1_1Bottle_a04fc62ad4fb69a21996bd5b6614dc079}{route}}=None)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_aabbd931ba2f9e120ff21044d0a0be013}{close}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_af2cd292e5a344ec710e1a8b60ffdf33f}{run}} (self, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_ae12d710b47287f1a3cb950166bab7b59}{match}} (self, environ)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_ae99aa7d6492e9d97c5a3325bdbf97350}{get\+\_\+url}} (self, routename, $\ast$$\ast$kargs)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a8d8e2744fc9634d90caeead7ab11b7f1}{add\+\_\+route}} (self, \mbox{\hyperlink{classbottle_1_1Bottle_a04fc62ad4fb69a21996bd5b6614dc079}{route}})
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a04fc62ad4fb69a21996bd5b6614dc079}{route}} (self, path=None, method=\textquotesingle{}GET\textquotesingle{}, callback=None, name=None, apply=None, skip=None, $\ast$$\ast$config)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a765a3136605dfc3eb85c074b6e24f104}{get}} (self, path=None, method=\textquotesingle{}GET\textquotesingle{}, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_abd651b653b2c88d45de046c125e095f3}{post}} (self, path=None, method=\textquotesingle{}POST\textquotesingle{}, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_ac34b970026b989395c7876e23693eade}{put}} (self, path=None, method=\textquotesingle{}PUT\textquotesingle{}, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a0d88084bdaf19a5fb653ab2341ea4033}{delete}} (self, path=None, method=\textquotesingle{}DELETE\textquotesingle{}, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_af3640180d08cde6c3444194381ab4fb1}{error}} (self, code=500)
+\item 
+\mbox{\Hypertarget{classbottle_1_1Bottle_a076b068fb5728273234d52ce300e9fbe}\label{classbottle_1_1Bottle_a076b068fb5728273234d52ce300e9fbe}} 
+def {\bfseries default\+\_\+error\+\_\+handler} (self, res)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a3d7b9d01e02240b77a7a83a0cd725f26}{wsgi}} (self, environ, start\+\_\+response)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_aa8917ea04b308a4a27bd820db17c436d}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, environ, start\+\_\+response)
+\item 
+\mbox{\Hypertarget{classbottle_1_1Bottle_ade7f3c28562fc05abca007e370631957}\label{classbottle_1_1Bottle_ade7f3c28562fc05abca007e370631957}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, catchall=True, autojson=True)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a8e0d35ac959d7c0b854f8fed1d5ba6e0}{add\+\_\+hook}} (self, name, func)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_ad00821628f80f7db1a65c13108ef3242}{remove\+\_\+hook}} (self, name, func)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_adaa9992d06fa1457b74ae9e12ccc4366}{trigger\+\_\+hook}} (self, \+\_\+\+\_\+name, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a251d61c46f66485d9a917d3b5014396b}{hook}} (self, name)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a13e7a513994c4abf8623d35f6fb57923}{mount}} (self, prefix, app, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a21890c83739892ee8707eebe0c107cbf}{merge}} (self, routes)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a7c6c49c66c49a00667dca23281e1ef31}{install}} (self, plugin)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a0d9035d37448361c08f4a93dd1081e43}{uninstall}} (self, plugin)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a38e8afae5f3218afcebe27a597e8b4ff}{reset}} (self, \mbox{\hyperlink{classbottle_1_1Bottle_a04fc62ad4fb69a21996bd5b6614dc079}{route}}=None)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_aabbd931ba2f9e120ff21044d0a0be013}{close}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_af2cd292e5a344ec710e1a8b60ffdf33f}{run}} (self, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_ae12d710b47287f1a3cb950166bab7b59}{match}} (self, environ)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_ae99aa7d6492e9d97c5a3325bdbf97350}{get\+\_\+url}} (self, routename, $\ast$$\ast$kargs)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a8d8e2744fc9634d90caeead7ab11b7f1}{add\+\_\+route}} (self, \mbox{\hyperlink{classbottle_1_1Bottle_a04fc62ad4fb69a21996bd5b6614dc079}{route}})
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a04fc62ad4fb69a21996bd5b6614dc079}{route}} (self, path=None, method=\textquotesingle{}GET\textquotesingle{}, callback=None, name=None, apply=None, skip=None, $\ast$$\ast$config)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a765a3136605dfc3eb85c074b6e24f104}{get}} (self, path=None, method=\textquotesingle{}GET\textquotesingle{}, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_abd651b653b2c88d45de046c125e095f3}{post}} (self, path=None, method=\textquotesingle{}POST\textquotesingle{}, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_ac34b970026b989395c7876e23693eade}{put}} (self, path=None, method=\textquotesingle{}PUT\textquotesingle{}, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a0d88084bdaf19a5fb653ab2341ea4033}{delete}} (self, path=None, method=\textquotesingle{}DELETE\textquotesingle{}, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_af3640180d08cde6c3444194381ab4fb1}{error}} (self, code=500)
+\item 
+\mbox{\Hypertarget{classbottle_1_1Bottle_a076b068fb5728273234d52ce300e9fbe}\label{classbottle_1_1Bottle_a076b068fb5728273234d52ce300e9fbe}} 
+def {\bfseries default\+\_\+error\+\_\+handler} (self, res)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_a3d7b9d01e02240b77a7a83a0cd725f26}{wsgi}} (self, environ, start\+\_\+response)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Bottle_aa8917ea04b308a4a27bd820db17c436d}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, environ, start\+\_\+response)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbottle_1_1Bottle_a1853c53f77b224635f95bbf3fd3ada78}\label{classbottle_1_1Bottle_a1853c53f77b224635f95bbf3fd3ada78}} 
+{\bfseries config}
+\item 
+\mbox{\Hypertarget{classbottle_1_1Bottle_a15bc4d082d5d4e2b1432b777609208d3}\label{classbottle_1_1Bottle_a15bc4d082d5d4e2b1432b777609208d3}} 
+{\bfseries resources}
+\item 
+\mbox{\Hypertarget{classbottle_1_1Bottle_abcb59515804239185283b1a8fb53ea6d}\label{classbottle_1_1Bottle_abcb59515804239185283b1a8fb53ea6d}} 
+{\bfseries routes}
+\item 
+\mbox{\Hypertarget{classbottle_1_1Bottle_ab80b8a1daa3788300f02aa231d081fd5}\label{classbottle_1_1Bottle_ab80b8a1daa3788300f02aa231d081fd5}} 
+{\bfseries router}
+\item 
+\mbox{\Hypertarget{classbottle_1_1Bottle_ac0a25a07a22bc32e6b67b6013d097e23}\label{classbottle_1_1Bottle_ac0a25a07a22bc32e6b67b6013d097e23}} 
+{\bfseries error\+\_\+handler}
+\item 
+\mbox{\Hypertarget{classbottle_1_1Bottle_a8ae84bc88093d2e5dcd0cf9f65eff540}\label{classbottle_1_1Bottle_a8ae84bc88093d2e5dcd0cf9f65eff540}} 
+{\bfseries plugins}
+\item 
+\mbox{\Hypertarget{classbottle_1_1Bottle_aae340800dc143daaa670c6bc4c933a71}\label{classbottle_1_1Bottle_aae340800dc143daaa670c6bc4c933a71}} 
+{\bfseries stopped}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbottle_1_1Bottle_a18858d7cfc213385d97a97bf924d15c1}\label{classbottle_1_1Bottle_a18858d7cfc213385d97a97bf924d15c1}} 
+{\bfseries catchall} = \mbox{\hyperlink{classbottle_1_1DictProperty}{Dict\+Property}}(\textquotesingle{}config\textquotesingle{}, \textquotesingle{}catchall\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} Each Bottle object represents a single, distinct web application and
+    consists of routes, callbacks, plugins, resources and configuration.
+    Instances are callable WSGI applications.
+
+    :param catchall: If true (default), handle all exceptions. Turn off to
+                     let debugging middleware handle exceptions.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbottle_1_1Bottle_aa8917ea04b308a4a27bd820db17c436d}\label{classbottle_1_1Bottle_aa8917ea04b308a4a27bd820db17c436d}} 
+\index{bottle.Bottle@{bottle.Bottle}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{environ,  }\item[{}]{start\+\_\+response }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Each instance of :class:'Bottle' is a WSGI application. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_aa8917ea04b308a4a27bd820db17c436d}\label{classbottle_1_1Bottle_aa8917ea04b308a4a27bd820db17c436d}} 
+\index{bottle.Bottle@{bottle.Bottle}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{environ,  }\item[{}]{start\+\_\+response }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Each instance of :class:'Bottle' is a WSGI application. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a8e0d35ac959d7c0b854f8fed1d5ba6e0}\label{classbottle_1_1Bottle_a8e0d35ac959d7c0b854f8fed1d5ba6e0}} 
+\index{bottle.Bottle@{bottle.Bottle}!add\_hook@{add\_hook}}
+\index{add\_hook@{add\_hook}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{add\_hook()}{add\_hook()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+add\+\_\+hook (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Attach a callback to a hook. Three hooks are currently implemented:
+
+    before_request
+        Executed once before each request. The request context is
+        available, but no routing has happened yet.
+    after_request
+        Executed once after each request regardless of its outcome.
+    app_reset
+        Called whenever :meth:`Bottle.reset` is called.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a8e0d35ac959d7c0b854f8fed1d5ba6e0}\label{classbottle_1_1Bottle_a8e0d35ac959d7c0b854f8fed1d5ba6e0}} 
+\index{bottle.Bottle@{bottle.Bottle}!add\_hook@{add\_hook}}
+\index{add\_hook@{add\_hook}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{add\_hook()}{add\_hook()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+add\+\_\+hook (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Attach a callback to a hook. Three hooks are currently implemented:
+
+    before_request
+        Executed once before each request. The request context is
+        available, but no routing has happened yet.
+    after_request
+        Executed once after each request regardless of its outcome.
+    app_reset
+        Called whenever :meth:`Bottle.reset` is called.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a8d8e2744fc9634d90caeead7ab11b7f1}\label{classbottle_1_1Bottle_a8d8e2744fc9634d90caeead7ab11b7f1}} 
+\index{bottle.Bottle@{bottle.Bottle}!add\_route@{add\_route}}
+\index{add\_route@{add\_route}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{add\_route()}{add\_route()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+add\+\_\+route (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{route }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Add a route object, but do not change the :data:`Route.app`
+    attribute.\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a8d8e2744fc9634d90caeead7ab11b7f1}\label{classbottle_1_1Bottle_a8d8e2744fc9634d90caeead7ab11b7f1}} 
+\index{bottle.Bottle@{bottle.Bottle}!add\_route@{add\_route}}
+\index{add\_route@{add\_route}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{add\_route()}{add\_route()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+add\+\_\+route (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{route }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Add a route object, but do not change the :data:`Route.app`
+    attribute.\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_aabbd931ba2f9e120ff21044d0a0be013}\label{classbottle_1_1Bottle_aabbd931ba2f9e120ff21044d0a0be013}} 
+\index{bottle.Bottle@{bottle.Bottle}!close@{close}}
+\index{close@{close}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Close the application and all installed plugins. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_aabbd931ba2f9e120ff21044d0a0be013}\label{classbottle_1_1Bottle_aabbd931ba2f9e120ff21044d0a0be013}} 
+\index{bottle.Bottle@{bottle.Bottle}!close@{close}}
+\index{close@{close}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Close the application and all installed plugins. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a0d88084bdaf19a5fb653ab2341ea4033}\label{classbottle_1_1Bottle_a0d88084bdaf19a5fb653ab2341ea4033}} 
+\index{bottle.Bottle@{bottle.Bottle}!delete@{delete}}
+\index{delete@{delete}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+delete (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path = {\ttfamily None},  }\item[{}]{method = {\ttfamily \textquotesingle{}DELETE\textquotesingle{}},  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Equals :meth:`route` with a ``DELETE`` method parameter. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a0d88084bdaf19a5fb653ab2341ea4033}\label{classbottle_1_1Bottle_a0d88084bdaf19a5fb653ab2341ea4033}} 
+\index{bottle.Bottle@{bottle.Bottle}!delete@{delete}}
+\index{delete@{delete}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+delete (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path = {\ttfamily None},  }\item[{}]{method = {\ttfamily \textquotesingle{}DELETE\textquotesingle{}},  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Equals :meth:`route` with a ``DELETE`` method parameter. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_af3640180d08cde6c3444194381ab4fb1}\label{classbottle_1_1Bottle_af3640180d08cde6c3444194381ab4fb1}} 
+\index{bottle.Bottle@{bottle.Bottle}!error@{error}}
+\index{error@{error}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+error (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{code = {\ttfamily 500} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Decorator: Register an output handler for a HTTP error code\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_af3640180d08cde6c3444194381ab4fb1}\label{classbottle_1_1Bottle_af3640180d08cde6c3444194381ab4fb1}} 
+\index{bottle.Bottle@{bottle.Bottle}!error@{error}}
+\index{error@{error}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+error (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{code = {\ttfamily 500} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Decorator: Register an output handler for a HTTP error code\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a765a3136605dfc3eb85c074b6e24f104}\label{classbottle_1_1Bottle_a765a3136605dfc3eb85c074b6e24f104}} 
+\index{bottle.Bottle@{bottle.Bottle}!get@{get}}
+\index{get@{get}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+get (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path = {\ttfamily None},  }\item[{}]{method = {\ttfamily \textquotesingle{}GET\textquotesingle{}},  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Equals :meth:`route`. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a765a3136605dfc3eb85c074b6e24f104}\label{classbottle_1_1Bottle_a765a3136605dfc3eb85c074b6e24f104}} 
+\index{bottle.Bottle@{bottle.Bottle}!get@{get}}
+\index{get@{get}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+get (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path = {\ttfamily None},  }\item[{}]{method = {\ttfamily \textquotesingle{}GET\textquotesingle{}},  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Equals :meth:`route`. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_ae99aa7d6492e9d97c5a3325bdbf97350}\label{classbottle_1_1Bottle_ae99aa7d6492e9d97c5a3325bdbf97350}} 
+\index{bottle.Bottle@{bottle.Bottle}!get\_url@{get\_url}}
+\index{get\_url@{get\_url}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{get\_url()}{get\_url()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+get\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{routename,  }\item[{$\ast$$\ast$}]{kargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Return a string that matches a named route \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_ae99aa7d6492e9d97c5a3325bdbf97350}\label{classbottle_1_1Bottle_ae99aa7d6492e9d97c5a3325bdbf97350}} 
+\index{bottle.Bottle@{bottle.Bottle}!get\_url@{get\_url}}
+\index{get\_url@{get\_url}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{get\_url()}{get\_url()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+get\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{routename,  }\item[{$\ast$$\ast$}]{kargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Return a string that matches a named route \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a251d61c46f66485d9a917d3b5014396b}\label{classbottle_1_1Bottle_a251d61c46f66485d9a917d3b5014396b}} 
+\index{bottle.Bottle@{bottle.Bottle}!hook@{hook}}
+\index{hook@{hook}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{hook()}{hook()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+hook (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Return a decorator that attaches a callback to a hook. See
+    :meth:`add_hook` for details.\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a251d61c46f66485d9a917d3b5014396b}\label{classbottle_1_1Bottle_a251d61c46f66485d9a917d3b5014396b}} 
+\index{bottle.Bottle@{bottle.Bottle}!hook@{hook}}
+\index{hook@{hook}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{hook()}{hook()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+hook (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Return a decorator that attaches a callback to a hook. See
+    :meth:`add_hook` for details.\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a7c6c49c66c49a00667dca23281e1ef31}\label{classbottle_1_1Bottle_a7c6c49c66c49a00667dca23281e1ef31}} 
+\index{bottle.Bottle@{bottle.Bottle}!install@{install}}
+\index{install@{install}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{install()}{install()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+install (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plugin }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Add a plugin to the list of plugins and prepare it for being
+    applied to all routes of this application. A plugin may be a simple
+    decorator or an object that implements the :class:`Plugin` API.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a7c6c49c66c49a00667dca23281e1ef31}\label{classbottle_1_1Bottle_a7c6c49c66c49a00667dca23281e1ef31}} 
+\index{bottle.Bottle@{bottle.Bottle}!install@{install}}
+\index{install@{install}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{install()}{install()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+install (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plugin }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Add a plugin to the list of plugins and prepare it for being
+    applied to all routes of this application. A plugin may be a simple
+    decorator or an object that implements the :class:`Plugin` API.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_ae12d710b47287f1a3cb950166bab7b59}\label{classbottle_1_1Bottle_ae12d710b47287f1a3cb950166bab7b59}} 
+\index{bottle.Bottle@{bottle.Bottle}!match@{match}}
+\index{match@{match}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+match (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{environ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Search for a matching route and return a (:class:`Route` , urlargs)
+    tuple. The second value is a dictionary with parameters extracted
+    from the URL. Raise :exc:`HTTPError` (404/405) on a non-match.\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_ae12d710b47287f1a3cb950166bab7b59}\label{classbottle_1_1Bottle_ae12d710b47287f1a3cb950166bab7b59}} 
+\index{bottle.Bottle@{bottle.Bottle}!match@{match}}
+\index{match@{match}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+match (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{environ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Search for a matching route and return a (:class:`Route` , urlargs)
+    tuple. The second value is a dictionary with parameters extracted
+    from the URL. Raise :exc:`HTTPError` (404/405) on a non-match.\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a21890c83739892ee8707eebe0c107cbf}\label{classbottle_1_1Bottle_a21890c83739892ee8707eebe0c107cbf}} 
+\index{bottle.Bottle@{bottle.Bottle}!merge@{merge}}
+\index{merge@{merge}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+merge (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{routes }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Merge the routes of another :class:`Bottle` application or a list of
+    :class:`Route` objects into this application. The routes keep their
+    'owner', meaning that the :data:`Route.app` attribute is not
+    changed. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a21890c83739892ee8707eebe0c107cbf}\label{classbottle_1_1Bottle_a21890c83739892ee8707eebe0c107cbf}} 
+\index{bottle.Bottle@{bottle.Bottle}!merge@{merge}}
+\index{merge@{merge}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+merge (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{routes }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Merge the routes of another :class:`Bottle` application or a list of
+    :class:`Route` objects into this application. The routes keep their
+    'owner', meaning that the :data:`Route.app` attribute is not
+    changed. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a13e7a513994c4abf8623d35f6fb57923}\label{classbottle_1_1Bottle_a13e7a513994c4abf8623d35f6fb57923}} 
+\index{bottle.Bottle@{bottle.Bottle}!mount@{mount}}
+\index{mount@{mount}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{mount()}{mount()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+mount (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{prefix,  }\item[{}]{app,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Mount an application (:class:`Bottle` or plain WSGI) to a specific
+    URL prefix. Example::
+
+        root_app.mount('/admin/', admin_app)
+
+    :param prefix: path prefix or `mount-point`. If it ends in a slash,
+        that slash is mandatory.
+    :param app: an instance of :class:`Bottle` or a WSGI application.
+
+    All other parameters are passed to the underlying :meth:`route` call.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a13e7a513994c4abf8623d35f6fb57923}\label{classbottle_1_1Bottle_a13e7a513994c4abf8623d35f6fb57923}} 
+\index{bottle.Bottle@{bottle.Bottle}!mount@{mount}}
+\index{mount@{mount}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{mount()}{mount()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+mount (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{prefix,  }\item[{}]{app,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Mount an application (:class:`Bottle` or plain WSGI) to a specific
+    URL prefix. Example::
+
+        root_app.mount('/admin/', admin_app)
+
+    :param prefix: path prefix or `mount-point`. If it ends in a slash,
+        that slash is mandatory.
+    :param app: an instance of :class:`Bottle` or a WSGI application.
+
+    All other parameters are passed to the underlying :meth:`route` call.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_abd651b653b2c88d45de046c125e095f3}\label{classbottle_1_1Bottle_abd651b653b2c88d45de046c125e095f3}} 
+\index{bottle.Bottle@{bottle.Bottle}!post@{post}}
+\index{post@{post}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{post()}{post()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+post (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path = {\ttfamily None},  }\item[{}]{method = {\ttfamily \textquotesingle{}POST\textquotesingle{}},  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Equals :meth:`route` with a ``POST`` method parameter. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_abd651b653b2c88d45de046c125e095f3}\label{classbottle_1_1Bottle_abd651b653b2c88d45de046c125e095f3}} 
+\index{bottle.Bottle@{bottle.Bottle}!post@{post}}
+\index{post@{post}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{post()}{post()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+post (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path = {\ttfamily None},  }\item[{}]{method = {\ttfamily \textquotesingle{}POST\textquotesingle{}},  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Equals :meth:`route` with a ``POST`` method parameter. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_ac34b970026b989395c7876e23693eade}\label{classbottle_1_1Bottle_ac34b970026b989395c7876e23693eade}} 
+\index{bottle.Bottle@{bottle.Bottle}!put@{put}}
+\index{put@{put}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+put (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path = {\ttfamily None},  }\item[{}]{method = {\ttfamily \textquotesingle{}PUT\textquotesingle{}},  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Equals :meth:`route` with a ``PUT`` method parameter. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_ac34b970026b989395c7876e23693eade}\label{classbottle_1_1Bottle_ac34b970026b989395c7876e23693eade}} 
+\index{bottle.Bottle@{bottle.Bottle}!put@{put}}
+\index{put@{put}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+put (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path = {\ttfamily None},  }\item[{}]{method = {\ttfamily \textquotesingle{}PUT\textquotesingle{}},  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Equals :meth:`route` with a ``PUT`` method parameter. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_ad00821628f80f7db1a65c13108ef3242}\label{classbottle_1_1Bottle_ad00821628f80f7db1a65c13108ef3242}} 
+\index{bottle.Bottle@{bottle.Bottle}!remove\_hook@{remove\_hook}}
+\index{remove\_hook@{remove\_hook}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{remove\_hook()}{remove\_hook()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+remove\+\_\+hook (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Remove a callback from a hook. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_ad00821628f80f7db1a65c13108ef3242}\label{classbottle_1_1Bottle_ad00821628f80f7db1a65c13108ef3242}} 
+\index{bottle.Bottle@{bottle.Bottle}!remove\_hook@{remove\_hook}}
+\index{remove\_hook@{remove\_hook}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{remove\_hook()}{remove\_hook()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+remove\+\_\+hook (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Remove a callback from a hook. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a38e8afae5f3218afcebe27a597e8b4ff}\label{classbottle_1_1Bottle_a38e8afae5f3218afcebe27a597e8b4ff}} 
+\index{bottle.Bottle@{bottle.Bottle}!reset@{reset}}
+\index{reset@{reset}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+reset (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{route = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Reset all routes (force plugins to be re-applied) and clear all
+    caches. If an ID or route object is given, only that specific route
+    is affected. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a38e8afae5f3218afcebe27a597e8b4ff}\label{classbottle_1_1Bottle_a38e8afae5f3218afcebe27a597e8b4ff}} 
+\index{bottle.Bottle@{bottle.Bottle}!reset@{reset}}
+\index{reset@{reset}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+reset (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{route = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Reset all routes (force plugins to be re-applied) and clear all
+    caches. If an ID or route object is given, only that specific route
+    is affected. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a04fc62ad4fb69a21996bd5b6614dc079}\label{classbottle_1_1Bottle_a04fc62ad4fb69a21996bd5b6614dc079}} 
+\index{bottle.Bottle@{bottle.Bottle}!route@{route}}
+\index{route@{route}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{route()}{route()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+route (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path = {\ttfamily None},  }\item[{}]{method = {\ttfamily \textquotesingle{}GET\textquotesingle{}},  }\item[{}]{callback = {\ttfamily None},  }\item[{}]{name = {\ttfamily None},  }\item[{}]{apply = {\ttfamily None},  }\item[{}]{skip = {\ttfamily None},  }\item[{$\ast$$\ast$}]{config }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} A decorator to bind a function to a request URL. Example::
+
+        @app.route('/hello/:name')
+        def hello(name):
+            return 'Hello %s' % name
+
+    The ``:name`` part is a wildcard. See :class:`Router` for syntax
+    details.
+
+    :param path: Request path or a list of paths to listen to. If no
+      path is specified, it is automatically generated from the
+      signature of the function.
+    :param method: HTTP method (`GET`, `POST`, `PUT`, ...) or a list of
+      methods to listen to. (default: `GET`)
+    :param callback: An optional shortcut to avoid the decorator
+      syntax. ``route(..., callback=func)`` equals ``route(...)(func)``
+    :param name: The name for this route. (default: None)
+    :param apply: A decorator or plugin or a list of plugins. These are
+      applied to the route callback in addition to installed plugins.
+    :param skip: A list of plugins, plugin classes or names. Matching
+      plugins are not installed to this route. ``True`` skips all.
+
+    Any additional keyword arguments are stored as route-specific
+    configuration and passed to plugins (see :meth:`Plugin.apply`).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a04fc62ad4fb69a21996bd5b6614dc079}\label{classbottle_1_1Bottle_a04fc62ad4fb69a21996bd5b6614dc079}} 
+\index{bottle.Bottle@{bottle.Bottle}!route@{route}}
+\index{route@{route}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{route()}{route()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+route (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path = {\ttfamily None},  }\item[{}]{method = {\ttfamily \textquotesingle{}GET\textquotesingle{}},  }\item[{}]{callback = {\ttfamily None},  }\item[{}]{name = {\ttfamily None},  }\item[{}]{apply = {\ttfamily None},  }\item[{}]{skip = {\ttfamily None},  }\item[{$\ast$$\ast$}]{config }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} A decorator to bind a function to a request URL. Example::
+
+        @app.route('/hello/:name')
+        def hello(name):
+            return 'Hello %s' % name
+
+    The ``:name`` part is a wildcard. See :class:`Router` for syntax
+    details.
+
+    :param path: Request path or a list of paths to listen to. If no
+      path is specified, it is automatically generated from the
+      signature of the function.
+    :param method: HTTP method (`GET`, `POST`, `PUT`, ...) or a list of
+      methods to listen to. (default: `GET`)
+    :param callback: An optional shortcut to avoid the decorator
+      syntax. ``route(..., callback=func)`` equals ``route(...)(func)``
+    :param name: The name for this route. (default: None)
+    :param apply: A decorator or plugin or a list of plugins. These are
+      applied to the route callback in addition to installed plugins.
+    :param skip: A list of plugins, plugin classes or names. Matching
+      plugins are not installed to this route. ``True`` skips all.
+
+    Any additional keyword arguments are stored as route-specific
+    configuration and passed to plugins (see :meth:`Plugin.apply`).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_af2cd292e5a344ec710e1a8b60ffdf33f}\label{classbottle_1_1Bottle_af2cd292e5a344ec710e1a8b60ffdf33f}} 
+\index{bottle.Bottle@{bottle.Bottle}!run@{run}}
+\index{run@{run}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+run (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Calls :func:`run` with the same parameters. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_af2cd292e5a344ec710e1a8b60ffdf33f}\label{classbottle_1_1Bottle_af2cd292e5a344ec710e1a8b60ffdf33f}} 
+\index{bottle.Bottle@{bottle.Bottle}!run@{run}}
+\index{run@{run}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+run (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Calls :func:`run` with the same parameters. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_adaa9992d06fa1457b74ae9e12ccc4366}\label{classbottle_1_1Bottle_adaa9992d06fa1457b74ae9e12ccc4366}} 
+\index{bottle.Bottle@{bottle.Bottle}!trigger\_hook@{trigger\_hook}}
+\index{trigger\_hook@{trigger\_hook}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{trigger\_hook()}{trigger\_hook()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+trigger\+\_\+hook (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{\+\_\+\+\_\+name,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Trigger a hook and return a list of results. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_adaa9992d06fa1457b74ae9e12ccc4366}\label{classbottle_1_1Bottle_adaa9992d06fa1457b74ae9e12ccc4366}} 
+\index{bottle.Bottle@{bottle.Bottle}!trigger\_hook@{trigger\_hook}}
+\index{trigger\_hook@{trigger\_hook}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{trigger\_hook()}{trigger\_hook()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+trigger\+\_\+hook (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{\+\_\+\+\_\+name,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Trigger a hook and return a list of results. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a0d9035d37448361c08f4a93dd1081e43}\label{classbottle_1_1Bottle_a0d9035d37448361c08f4a93dd1081e43}} 
+\index{bottle.Bottle@{bottle.Bottle}!uninstall@{uninstall}}
+\index{uninstall@{uninstall}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{uninstall()}{uninstall()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+uninstall (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plugin }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Uninstall plugins. Pass an instance to remove a specific plugin, a type
+    object to remove all plugins that match that type, a string to remove
+    all plugins with a matching ``name`` attribute or ``True`` to remove all
+    plugins. Return the list of removed plugins. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a0d9035d37448361c08f4a93dd1081e43}\label{classbottle_1_1Bottle_a0d9035d37448361c08f4a93dd1081e43}} 
+\index{bottle.Bottle@{bottle.Bottle}!uninstall@{uninstall}}
+\index{uninstall@{uninstall}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{uninstall()}{uninstall()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+uninstall (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plugin }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Uninstall plugins. Pass an instance to remove a specific plugin, a type
+    object to remove all plugins that match that type, a string to remove
+    all plugins with a matching ``name`` attribute or ``True`` to remove all
+    plugins. Return the list of removed plugins. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a3d7b9d01e02240b77a7a83a0cd725f26}\label{classbottle_1_1Bottle_a3d7b9d01e02240b77a7a83a0cd725f26}} 
+\index{bottle.Bottle@{bottle.Bottle}!wsgi@{wsgi}}
+\index{wsgi@{wsgi}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{wsgi()}{wsgi()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+wsgi (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{environ,  }\item[{}]{start\+\_\+response }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The bottle WSGI-interface. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Bottle_a3d7b9d01e02240b77a7a83a0cd725f26}\label{classbottle_1_1Bottle_a3d7b9d01e02240b77a7a83a0cd725f26}} 
+\index{bottle.Bottle@{bottle.Bottle}!wsgi@{wsgi}}
+\index{wsgi@{wsgi}!bottle.Bottle@{bottle.Bottle}}
+\doxysubsubsection{\texorpdfstring{wsgi()}{wsgi()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Bottle.\+wsgi (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{environ,  }\item[{}]{start\+\_\+response }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The bottle WSGI-interface. \end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/bin/bottle.\+py\end{DoxyCompactItemize}

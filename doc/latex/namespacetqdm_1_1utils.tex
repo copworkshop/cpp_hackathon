@@ -1,0 +1,113 @@
+\hypertarget{namespacetqdm_1_1utils}{}\doxysection{tqdm.\+utils Namespace Reference}
+\label{namespacetqdm_1_1utils}\index{tqdm.utils@{tqdm.utils}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1utils_1_1FormatReplace}{Format\+Replace}}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1utils_1_1Comparable}{Comparable}}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1utils_1_1ObjectWrapper}{Object\+Wrapper}}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1utils_1_1SimpleTextIOWrapper}{Simple\+Text\+IOWrapper}}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1utils_1_1DisableOnWriteError}{Disable\+On\+Write\+Error}}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1utils_1_1CallbackIOWrapper}{Callback\+IOWrapper}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacetqdm_1_1utils_ae225e599986a01a3919c3bc21b7be209}{envwrap}} (prefix, types=None, is\+\_\+method=False)
+\item 
+def \mbox{\hyperlink{namespacetqdm_1_1utils_a1f6fd9d183f1d53d8fbdd20bbaafb569}{disp\+\_\+len}} (data)
+\item 
+def \mbox{\hyperlink{namespacetqdm_1_1utils_af55cfbd8648461e5bad26b2d84843c51}{disp\+\_\+trim}} (data, length)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1utils_a2716945adec5cc3daf44832d7b15de9e}\label{namespacetqdm_1_1utils_a2716945adec5cc3daf44832d7b15de9e}} 
+{\bfseries CUR\+\_\+\+OS} = sys.\+platform
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1utils_a98339832b020e3845c2e46dfd502a629}\label{namespacetqdm_1_1utils_a98339832b020e3845c2e46dfd502a629}} 
+{\bfseries IS\+\_\+\+WIN} = any(CUR\+\_\+\+OS.\+startswith(i) for i in \mbox{[}\textquotesingle{}win32\textquotesingle{}, \textquotesingle{}cygwin\textquotesingle{}\mbox{]})
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1utils_a02b14e95ae1cb618877a8a8ccfb82603}\label{namespacetqdm_1_1utils_a02b14e95ae1cb618877a8a8ccfb82603}} 
+{\bfseries IS\+\_\+\+NIX} = any(CUR\+\_\+\+OS.\+startswith(i) for i in \mbox{[}\textquotesingle{}aix\textquotesingle{}, \textquotesingle{}linux\textquotesingle{}, \textquotesingle{}darwin\textquotesingle{}\mbox{]})
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1utils_a42809359a6e3c3b8929bf705189aca70}\label{namespacetqdm_1_1utils_a42809359a6e3c3b8929bf705189aca70}} 
+{\bfseries RE\+\_\+\+ANSI} = re.\+compile(r\char`\"{}\textbackslash{}x1b\textbackslash{}\mbox{[}\mbox{[};\textbackslash{}d\mbox{]}$\ast$\mbox{[}A-\/Za-\/z\mbox{]}\char`\"{})
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1utils_a036e1189177070ad4ceae0dd55d51281}\label{namespacetqdm_1_1utils_a036e1189177070ad4ceae0dd55d51281}} 
+{\bfseries colorama} = None
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1utils_aa691a678bb458e7cadc30e18b271ed1b}\label{namespacetqdm_1_1utils_aa691a678bb458e7cadc30e18b271ed1b}} 
+{\bfseries strip}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}General helpers required for `tqdm.std`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetqdm_1_1utils_a1f6fd9d183f1d53d8fbdd20bbaafb569}\label{namespacetqdm_1_1utils_a1f6fd9d183f1d53d8fbdd20bbaafb569}} 
+\index{tqdm.utils@{tqdm.utils}!disp\_len@{disp\_len}}
+\index{disp\_len@{disp\_len}!tqdm.utils@{tqdm.utils}}
+\doxysubsubsection{\texorpdfstring{disp\_len()}{disp\_len()}}
+{\footnotesize\ttfamily def tqdm.\+utils.\+disp\+\_\+len (\begin{DoxyParamCaption}\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the real on-screen length of a string which may contain
+ANSI control codes and wide chars.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacetqdm_1_1utils_af55cfbd8648461e5bad26b2d84843c51}\label{namespacetqdm_1_1utils_af55cfbd8648461e5bad26b2d84843c51}} 
+\index{tqdm.utils@{tqdm.utils}!disp\_trim@{disp\_trim}}
+\index{disp\_trim@{disp\_trim}!tqdm.utils@{tqdm.utils}}
+\doxysubsubsection{\texorpdfstring{disp\_trim()}{disp\_trim()}}
+{\footnotesize\ttfamily def tqdm.\+utils.\+disp\+\_\+trim (\begin{DoxyParamCaption}\item[{}]{data,  }\item[{}]{length }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Trim a string which may contain ANSI control characters.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacetqdm_1_1utils_ae225e599986a01a3919c3bc21b7be209}\label{namespacetqdm_1_1utils_ae225e599986a01a3919c3bc21b7be209}} 
+\index{tqdm.utils@{tqdm.utils}!envwrap@{envwrap}}
+\index{envwrap@{envwrap}!tqdm.utils@{tqdm.utils}}
+\doxysubsubsection{\texorpdfstring{envwrap()}{envwrap()}}
+{\footnotesize\ttfamily def tqdm.\+utils.\+envwrap (\begin{DoxyParamCaption}\item[{}]{prefix,  }\item[{}]{types = {\ttfamily None},  }\item[{}]{is\+\_\+method = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Override parameter defaults via `os.environ[prefix + param_name]`.
+Maps UPPER_CASE env vars map to lower_case param names.
+camelCase isn't supported (because Windows ignores case).
+
+Precedence (highest first):
+
+- call (`foo(a=3)`)
+- environ (`FOO_A=2`)
+- signature (`def foo(a=1)`)
+
+Parameters
+----------
+prefix  : str
+    Env var prefix, e.g. "FOO_"
+types  : dict, optional
+    Fallback mappings `{'param_name': type, ...}` if types cannot be
+    inferred from function signature.
+    Consider using `types=collections.defaultdict(lambda: ast.literal_eval)`.
+is_method  : bool, optional
+    Whether to use `functools.partialmethod`. If (default: False) use `functools.partial`.
+
+Examples
+--------
+```
+$ cat foo.py
+from tqdm.utils import envwrap
+@envwrap("FOO_")
+def test(a=1, b=2, c=3):
+    print(f"received: a={a}, b={b}, c={c}")
+
+$ FOO_A=42 FOO_C=1337 python -c 'import foo; foo.test(c=99)'
+received: a=42, b=2, c=99
+```
+\end{DoxyVerb}
+ 

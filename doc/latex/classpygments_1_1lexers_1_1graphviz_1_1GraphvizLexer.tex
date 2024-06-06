@@ -1,0 +1,87 @@
+\hypertarget{classpygments_1_1lexers_1_1graphviz_1_1GraphvizLexer}{}\doxysection{pygments.\+lexers.\+graphviz.\+Graphviz\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1graphviz_1_1GraphvizLexer}\index{pygments.lexers.graphviz.GraphvizLexer@{pygments.lexers.graphviz.GraphvizLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+graphviz.\+Graphviz\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+graphviz.\+Graphviz\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1graphviz_1_1GraphvizLexer_abf18aca92b22fff19c24e710acb6f0f0}\label{classpygments_1_1lexers_1_1graphviz_1_1GraphvizLexer_abf18aca92b22fff19c24e710acb6f0f0}} 
+string {\bfseries name} = \textquotesingle{}Graphviz\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1graphviz_1_1GraphvizLexer_a7e6fbb4cccbb80a88dc7af17d3c68717}\label{classpygments_1_1lexers_1_1graphviz_1_1GraphvizLexer_a7e6fbb4cccbb80a88dc7af17d3c68717}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+graphviz.\+org/doc/info/lang.\+html\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1graphviz_1_1GraphvizLexer_a64defe324fa78426137b1cd821bbc909}\label{classpygments_1_1lexers_1_1graphviz_1_1GraphvizLexer_a64defe324fa78426137b1cd821bbc909}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}graphviz\textquotesingle{}, \textquotesingle{}dot\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1graphviz_1_1GraphvizLexer_ac9c7e67ab0d6b791fca535d23feb00c2}\label{classpygments_1_1lexers_1_1graphviz_1_1GraphvizLexer_ac9c7e67ab0d6b791fca535d23feb00c2}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.gv\textquotesingle{}, \textquotesingle{}$\ast$.dot\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1graphviz_1_1GraphvizLexer_adec5581c3caa0bf0477964f8f8fc79e9}\label{classpygments_1_1lexers_1_1graphviz_1_1GraphvizLexer_adec5581c3caa0bf0477964f8f8fc79e9}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/graphviz\textquotesingle{}, \textquotesingle{}text/vnd.\+graphviz\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1graphviz_1_1GraphvizLexer_aa86c85c417ab28a57898489a6bd56698}\label{classpygments_1_1lexers_1_1graphviz_1_1GraphvizLexer_aa86c85c417ab28a57898489a6bd56698}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+8\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For graphviz DOT graph description language.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1graphviz_1_1GraphvizLexer_a5a165536878fe35a238ae373b639caab}\label{classpygments_1_1lexers_1_1graphviz_1_1GraphvizLexer_a5a165536878fe35a238ae373b639caab}} 
+\index{pygments.lexers.graphviz.GraphvizLexer@{pygments.lexers.graphviz.GraphvizLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.graphviz.GraphvizLexer@{pygments.lexers.graphviz.GraphvizLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+graphviz.\+Graphviz\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\#|//).*?\$'}, Comment.Single),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'/(\(\backslash\)\(\backslash\)\(\backslash\)n)?[*](.|\(\backslash\)n)*?[*](\(\backslash\)\(\backslash\)\(\backslash\)n)?/'}, Comment.Multiline),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(?i)(node|edge|graph|digraph|subgraph|strict)\(\backslash\)b'}, Keyword),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'-\/-\/|-\/>'}, Operator),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\{\}[\(\backslash\)]:;,]'}, Punctuation),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)b\(\backslash\)D\(\backslash\)w*)(\(\backslash\)s*)(=)(\(\backslash\)s*)'},}
+\DoxyCodeLine{                bygroups(Name.Attribute, Whitespace, Punctuation, Whitespace),}
+\DoxyCodeLine{                \textcolor{stringliteral}{'attr\_id'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)b(n|ne|e|se|s|sw|w|nw|c|\_)\(\backslash\)b'}, Name.Builtin),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)b\(\backslash\)D\(\backslash\)w*'}, Name.Tag),  \textcolor{comment}{\# node}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[-\/]?((\(\backslash\).[0-\/9]+)|([0-\/9]+(\(\backslash\).[0-\/9]*)?))'}, Number),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'"{}(\(\backslash\)\(\backslash\)"{}|[\string^"{}])*?"{}'}, Name.Tag),  \textcolor{comment}{\# quoted node}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'<'}, Punctuation, \textcolor{stringliteral}{'xml'}),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'attr\_id'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)b\(\backslash\)D\(\backslash\)w*'}, String, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[-\/]?((\(\backslash\).[0-\/9]+)|([0-\/9]+(\(\backslash\).[0-\/9]*)?))'}, Number, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'"{}(\(\backslash\)\(\backslash\)"{}|[\string^"{}])*?"{}'}, String.Double, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'<'}, Punctuation, (\textcolor{stringliteral}{'\#pop'}, \textcolor{stringliteral}{'xml'})),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'xml'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'<'}, Punctuation, \textcolor{stringliteral}{'\#push'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'>'}, Punctuation, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^<>\(\backslash\)s]'}, Name.Tag),}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/graphviz.\+py\end{DoxyCompactItemize}

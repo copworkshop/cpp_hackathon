@@ -1,0 +1,48 @@
+\hypertarget{classtqdm_1_1contrib_1_1utils__worker_1_1MonoWorker}{}\doxysection{tqdm.\+contrib.\+utils\+\_\+worker.\+Mono\+Worker Class Reference}
+\label{classtqdm_1_1contrib_1_1utils__worker_1_1MonoWorker}\index{tqdm.contrib.utils\_worker.MonoWorker@{tqdm.contrib.utils\_worker.MonoWorker}}
+
+
+Inheritance diagram for tqdm.\+contrib.\+utils\+\_\+worker.\+Mono\+Worker\+:
+% FIG 0
+
+
+Collaboration diagram for tqdm.\+contrib.\+utils\+\_\+worker.\+Mono\+Worker\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1utils__worker_1_1MonoWorker_ac40d660eda70e29bf08b6cfdedf1e799}\label{classtqdm_1_1contrib_1_1utils__worker_1_1MonoWorker_ac40d660eda70e29bf08b6cfdedf1e799}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classtqdm_1_1contrib_1_1utils__worker_1_1MonoWorker_a7356b31c0fec220e390da56427600769}{submit}} (self, func, $\ast$args, $\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1utils__worker_1_1MonoWorker_a839e9631ccef49357e5d297701ccf121}\label{classtqdm_1_1contrib_1_1utils__worker_1_1MonoWorker_a839e9631ccef49357e5d297701ccf121}} 
+{\bfseries pool}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1utils__worker_1_1MonoWorker_a5edf8e3b9eccc57794b593bee74bd603}\label{classtqdm_1_1contrib_1_1utils__worker_1_1MonoWorker_a5edf8e3b9eccc57794b593bee74bd603}} 
+{\bfseries futures}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Supports one running task and one waiting task.
+The waiting task is the most recent submitted (others are discarded).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1utils__worker_1_1MonoWorker_a7356b31c0fec220e390da56427600769}\label{classtqdm_1_1contrib_1_1utils__worker_1_1MonoWorker_a7356b31c0fec220e390da56427600769}} 
+\index{tqdm.contrib.utils\_worker.MonoWorker@{tqdm.contrib.utils\_worker.MonoWorker}!submit@{submit}}
+\index{submit@{submit}!tqdm.contrib.utils\_worker.MonoWorker@{tqdm.contrib.utils\_worker.MonoWorker}}
+\doxysubsubsection{\texorpdfstring{submit()}{submit()}}
+{\footnotesize\ttfamily def tqdm.\+contrib.\+utils\+\_\+worker.\+Mono\+Worker.\+submit (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}`func(*args, **kwargs)` may replace currently waiting task.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/tqdm/contrib/utils\+\_\+worker.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,113 @@
+\hypertarget{classpygments_1_1lexers_1_1promql_1_1PromQLLexer}{}\doxysection{pygments.\+lexers.\+promql.\+Prom\+QLLexer Class Reference}
+\label{classpygments_1_1lexers_1_1promql_1_1PromQLLexer}\index{pygments.lexers.promql.PromQLLexer@{pygments.lexers.promql.PromQLLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+promql.\+Prom\+QLLexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+promql.\+Prom\+QLLexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1promql_1_1PromQLLexer_a048e76d17486f99b18a2dab05e620c7e}\label{classpygments_1_1lexers_1_1promql_1_1PromQLLexer_a048e76d17486f99b18a2dab05e620c7e}} 
+string {\bfseries name} = \char`\"{}Prom\+QL\char`\"{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1promql_1_1PromQLLexer_a86121ab73bd524da65763742e4ebac79}\label{classpygments_1_1lexers_1_1promql_1_1PromQLLexer_a86121ab73bd524da65763742e4ebac79}} 
+string {\bfseries url} = \textquotesingle{}https\+://prometheus.\+io/docs/prometheus/latest/querying/basics/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1promql_1_1PromQLLexer_a42903b22c839c9306e7d35c569f3b7a5}\label{classpygments_1_1lexers_1_1promql_1_1PromQLLexer_a42903b22c839c9306e7d35c569f3b7a5}} 
+list {\bfseries aliases} = \mbox{[}\char`\"{}promql\char`\"{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1promql_1_1PromQLLexer_af56b3ed86b6986766f3e9f5341639a5e}\label{classpygments_1_1lexers_1_1promql_1_1PromQLLexer_af56b3ed86b6986766f3e9f5341639a5e}} 
+list {\bfseries filenames} = \mbox{[}\char`\"{}$\ast$.promql\char`\"{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1promql_1_1PromQLLexer_abeb82111773381e684eca87fe3e98435}\label{classpygments_1_1lexers_1_1promql_1_1PromQLLexer_abeb82111773381e684eca87fe3e98435}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+tuple {\bfseries base\+\_\+keywords}
+\item 
+tuple {\bfseries aggregator\+\_\+keywords}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1promql_1_1PromQLLexer_a6ea8c143934440c81133bfd676551582}\label{classpygments_1_1lexers_1_1promql_1_1PromQLLexer_a6ea8c143934440c81133bfd676551582}} 
+tuple {\bfseries function\+\_\+keywords}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1promql_1_1PromQLLexer_ad8f095fa32aec3a7cb4dbb8e785f4416}\label{classpygments_1_1lexers_1_1promql_1_1PromQLLexer_ad8f095fa32aec3a7cb4dbb8e785f4416}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For PromQL queries.
+
+For details about the grammar see:
+https://github.com/prometheus/prometheus/tree/master/promql/parser
+
+.. versionadded: 2.7
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1promql_1_1PromQLLexer_a08ffed008f775da1518b9c779db1bb31}\label{classpygments_1_1lexers_1_1promql_1_1PromQLLexer_a08ffed008f775da1518b9c779db1bb31}} 
+\index{pygments.lexers.promql.PromQLLexer@{pygments.lexers.promql.PromQLLexer}!aggregator\_keywords@{aggregator\_keywords}}
+\index{aggregator\_keywords@{aggregator\_keywords}!pygments.lexers.promql.PromQLLexer@{pygments.lexers.promql.PromQLLexer}}
+\doxysubsubsection{\texorpdfstring{aggregator\_keywords}{aggregator\_keywords}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+promql.\+Prom\+QLLexer.\+aggregator\+\_\+keywords\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (}
+\DoxyCodeLine{        words(}
+\DoxyCodeLine{            (}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}sum"{}},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}min"{}},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}max"{}},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}avg"{}},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}group"{}},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}stddev"{}},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}stdvar"{}},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}count"{}},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}count\_values"{}},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}bottomk"{}},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}topk"{}},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}quantile"{}},}
+\DoxyCodeLine{            ),}
+\DoxyCodeLine{            suffix=\textcolor{stringliteral}{r"{}\(\backslash\)b"{}},}
+\DoxyCodeLine{        ),}
+\DoxyCodeLine{        Keyword,}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1promql_1_1PromQLLexer_a01510554de62fd0bd8841654d1b8b24c}\label{classpygments_1_1lexers_1_1promql_1_1PromQLLexer_a01510554de62fd0bd8841654d1b8b24c}} 
+\index{pygments.lexers.promql.PromQLLexer@{pygments.lexers.promql.PromQLLexer}!base\_keywords@{base\_keywords}}
+\index{base\_keywords@{base\_keywords}!pygments.lexers.promql.PromQLLexer@{pygments.lexers.promql.PromQLLexer}}
+\doxysubsubsection{\texorpdfstring{base\_keywords}{base\_keywords}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+promql.\+Prom\+QLLexer.\+base\+\_\+keywords\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (}
+\DoxyCodeLine{        words(}
+\DoxyCodeLine{            (}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}bool"{}},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}by"{}},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}group\_left"{}},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}group\_right"{}},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}ignoring"{}},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}offset"{}},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}on"{}},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}without"{}},}
+\DoxyCodeLine{            ),}
+\DoxyCodeLine{            suffix=\textcolor{stringliteral}{r"{}\(\backslash\)b"{}},}
+\DoxyCodeLine{        ),}
+\DoxyCodeLine{        Keyword,}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/promql.\+py\end{DoxyCompactItemize}

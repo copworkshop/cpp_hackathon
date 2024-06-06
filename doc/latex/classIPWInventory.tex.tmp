@@ -1,0 +1,29 @@
+\hypertarget{classIPWInventory}{}\doxysection{IPWInventory Class Reference}
+\label{classIPWInventory}\index{IPWInventory@{IPWInventory}}
+
+
+Inheritance diagram for IPWInventory\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIPWInventory_abc6899bfe51df3da0273d9c9bf2dd037}\label{classIPWInventory_abc6899bfe51df3da0273d9c9bf2dd037}} 
+virtual void {\bfseries Update\+Quality} ()=0
+\item 
+\mbox{\Hypertarget{classIPWInventory_a0445cf473e5e04f75c57a2ff5d24352e}\label{classIPWInventory_a0445cf473e5e04f75c57a2ff5d24352e}} 
+virtual void {\bfseries Load} (const std\+::string \&file)=0
+\item 
+\mbox{\Hypertarget{classIPWInventory_a26135c6a88b71e2a5d3787573e0e1ddb}\label{classIPWInventory_a26135c6a88b71e2a5d3787573e0e1ddb}} 
+virtual void {\bfseries Save} (const std\+::string \&file)=0
+\item 
+\mbox{\Hypertarget{classIPWInventory_ab8437e45ef85025c009c69c45b74e03d}\label{classIPWInventory_ab8437e45ef85025c009c69c45b74e03d}} 
+virtual \mbox{\hyperlink{classInventoryItem}{Inventory\+Item}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int index)=0
+\item 
+\mbox{\Hypertarget{classIPWInventory_a689105d3a6812d8ab9a68d6a797472b8}\label{classIPWInventory_a689105d3a6812d8ab9a68d6a797472b8}} 
+virtual int {\bfseries Count} () const =0
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+PWServer/PWInventory.\+h\end{DoxyCompactItemize}

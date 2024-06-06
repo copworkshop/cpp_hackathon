@@ -1,0 +1,77 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1GenshiTextLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Genshi\+Text\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1GenshiTextLexer}\index{pygments.lexers.templates.GenshiTextLexer@{pygments.lexers.templates.GenshiTextLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Genshi\+Text\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Genshi\+Text\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1GenshiTextLexer_ab0538df30f9de2b46a0522993671ea7a}\label{classpygments_1_1lexers_1_1templates_1_1GenshiTextLexer_ab0538df30f9de2b46a0522993671ea7a}} 
+string {\bfseries name} = \textquotesingle{}Genshi Text\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1GenshiTextLexer_a398f0e0023b18dfd6eaf10cc38a1bd27}\label{classpygments_1_1lexers_1_1templates_1_1GenshiTextLexer_a398f0e0023b18dfd6eaf10cc38a1bd27}} 
+string {\bfseries url} = \textquotesingle{}https\+://genshi.\+edgewall.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1GenshiTextLexer_acc8fe8b3825b63fec8a2c6200a099d9a}\label{classpygments_1_1lexers_1_1templates_1_1GenshiTextLexer_acc8fe8b3825b63fec8a2c6200a099d9a}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}genshitext\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1GenshiTextLexer_a26d7f521634ca1685cc8405be54118c4}\label{classpygments_1_1lexers_1_1templates_1_1GenshiTextLexer_a26d7f521634ca1685cc8405be54118c4}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}application/x-\/genshi-\/text\textquotesingle{}, \textquotesingle{}text/x-\/genshi\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1GenshiTextLexer_af6d32782343efac9025b6bb38dc46abd}\label{classpygments_1_1lexers_1_1templates_1_1GenshiTextLexer_af6d32782343efac9025b6bb38dc46abd}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A lexer that highlights genshi text templates.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1GenshiTextLexer_a2513b400144b3007aa6f528c47b2af00}\label{classpygments_1_1lexers_1_1templates_1_1GenshiTextLexer_a2513b400144b3007aa6f528c47b2af00}} 
+\index{pygments.lexers.templates.GenshiTextLexer@{pygments.lexers.templates.GenshiTextLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.templates.GenshiTextLexer@{pygments.lexers.templates.GenshiTextLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+templates.\+Genshi\+Text\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^\#\$\(\backslash\)s]+'}, Other),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^(\(\backslash\)s*)(\#\#.*)\$'}, bygroups(Text, Comment)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^(\(\backslash\)s*)(\#)'}, bygroups(Text, Comment.Preproc), \textcolor{stringliteral}{'directive'}),}
+\DoxyCodeLine{            include(\textcolor{stringliteral}{'variable'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\#\$\(\backslash\)s]'}, Other),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'directive'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)n'}, Text, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(?:def|for|if)\(\backslash\)s+.*'}, using(PythonLexer), \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(choose|when|with)([\string^\(\backslash\)S\(\backslash\)n]+)(.*)'},}
+\DoxyCodeLine{             bygroups(Keyword, Text, using(PythonLexer)), \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(choose|otherwise)\(\backslash\)b'}, Keyword, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(end\(\backslash\)w*)([\string^\(\backslash\)S\(\backslash\)n]*)(.*)'}, bygroups(Keyword, Text, Comment), \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'variable'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(?<!\(\backslash\)\$)(\(\backslash\)\$\(\backslash\)\{)(.+?)(\(\backslash\)\})'},}
+\DoxyCodeLine{             bygroups(Comment.Preproc, using(PythonLexer), Comment.Preproc)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(?<!\(\backslash\)\$)(\(\backslash\)\$)([a-\/zA-\/Z\_][\(\backslash\)w.]*)'},}
+\DoxyCodeLine{             Name.Variable),}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

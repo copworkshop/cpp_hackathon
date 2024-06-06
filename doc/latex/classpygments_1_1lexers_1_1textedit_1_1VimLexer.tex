@@ -1,0 +1,176 @@
+\hypertarget{classpygments_1_1lexers_1_1textedit_1_1VimLexer}{}\doxysection{pygments.\+lexers.\+textedit.\+Vim\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1textedit_1_1VimLexer}\index{pygments.lexers.textedit.VimLexer@{pygments.lexers.textedit.VimLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+textedit.\+Vim\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+textedit.\+Vim\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1textedit_1_1VimLexer_adef36be598da4ded0dee2023a3b16732}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1textedit_1_1VimLexer_a01b6eeccfc034fd33cb3b3676e19e686}{is\+\_\+in}} (self, w, mapping)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1textedit_1_1VimLexer_a0804afd5d22831d5d965fbe8f1596761}{get\+\_\+tokens\+\_\+unprocessed}} (self, text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textedit_1_1VimLexer_aea1c96008f4715a41d166535b64cd857}\label{classpygments_1_1lexers_1_1textedit_1_1VimLexer_aea1c96008f4715a41d166535b64cd857}} 
+string {\bfseries name} = \textquotesingle{}VimL\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textedit_1_1VimLexer_a909e45709079fbd8557f7d35d3eff097}\label{classpygments_1_1lexers_1_1textedit_1_1VimLexer_a909e45709079fbd8557f7d35d3eff097}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}vim\textquotesingle{}\mbox{]}
+\item 
+list {\bfseries filenames}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textedit_1_1VimLexer_a2bad093d7180bc447d585e4fd979ba3a}\label{classpygments_1_1lexers_1_1textedit_1_1VimLexer_a2bad093d7180bc447d585e4fd979ba3a}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/vim\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textedit_1_1VimLexer_a116b69f20e1206a82e23ecf61b97dce5}\label{classpygments_1_1lexers_1_1textedit_1_1VimLexer_a116b69f20e1206a82e23ecf61b97dce5}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+vim.\+org\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textedit_1_1VimLexer_a6b86f7a1db4c42da510126b8a9d67bbb}\label{classpygments_1_1lexers_1_1textedit_1_1VimLexer_a6b86f7a1db4c42da510126b8a9d67bbb}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}0.\+8\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textedit_1_1VimLexer_a397b7fe1e4b42ceffe36c333673f526e}\label{classpygments_1_1lexers_1_1textedit_1_1VimLexer_a397b7fe1e4b42ceffe36c333673f526e}} 
+{\bfseries flags} = re.\+MULTILINE
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for VimL script files.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textedit_1_1VimLexer_adef36be598da4ded0dee2023a3b16732}\label{classpygments_1_1lexers_1_1textedit_1_1VimLexer_adef36be598da4ded0dee2023a3b16732}} 
+\index{pygments.lexers.textedit.VimLexer@{pygments.lexers.textedit.VimLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.textedit.VimLexer@{pygments.lexers.textedit.VimLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+textedit.\+Vim\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textedit_1_1VimLexer_a0804afd5d22831d5d965fbe8f1596761}\label{classpygments_1_1lexers_1_1textedit_1_1VimLexer_a0804afd5d22831d5d965fbe8f1596761}} 
+\index{pygments.lexers.textedit.VimLexer@{pygments.lexers.textedit.VimLexer}!get\_tokens\_unprocessed@{get\_tokens\_unprocessed}}
+\index{get\_tokens\_unprocessed@{get\_tokens\_unprocessed}!pygments.lexers.textedit.VimLexer@{pygments.lexers.textedit.VimLexer}}
+\doxysubsubsection{\texorpdfstring{get\_tokens\_unprocessed()}{get\_tokens\_unprocessed()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+textedit.\+Vim\+Lexer.\+get\+\_\+tokens\+\_\+unprocessed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method should process the text and return an iterable of
+``(index, tokentype, value)`` tuples where ``index`` is the starting
+position of the token within the input text.
+
+It must be overridden by subclasses. It is recommended to
+implement it as a generator to maximize effectiveness.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_aad5c02b7f661f64f91cf8c8d880e9f67}{pygments.\+lexer.\+Lexer}}.
+
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textedit_1_1VimLexer_a01b6eeccfc034fd33cb3b3676e19e686}\label{classpygments_1_1lexers_1_1textedit_1_1VimLexer_a01b6eeccfc034fd33cb3b3676e19e686}} 
+\index{pygments.lexers.textedit.VimLexer@{pygments.lexers.textedit.VimLexer}!is\_in@{is\_in}}
+\index{is\_in@{is\_in}!pygments.lexers.textedit.VimLexer@{pygments.lexers.textedit.VimLexer}}
+\doxysubsubsection{\texorpdfstring{is\_in()}{is\_in()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+textedit.\+Vim\+Lexer.\+is\+\_\+in (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{w,  }\item[{}]{mapping }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}It's kind of difficult to decide if something might be a keyword
+in VimL because it allows you to abbreviate them.  In fact,
+'ab[breviate]' is a good example.  :ab, :abbre, or :abbreviate are
+valid ways to call it so rather than making really awful regexps
+like::
+
+    \bab(?:b(?:r(?:e(?:v(?:i(?:a(?:t(?:e)?)?)?)?)?)?)?)?\b
+
+we match `\b\w+\b` and then call is_in() on those tokens.  See
+`scripts/get_vimkw.py` for how the lists are extracted.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textedit_1_1VimLexer_a8fe60ae8c65dd7423a8d2d2aa4beb140}\label{classpygments_1_1lexers_1_1textedit_1_1VimLexer_a8fe60ae8c65dd7423a8d2d2aa4beb140}} 
+\index{pygments.lexers.textedit.VimLexer@{pygments.lexers.textedit.VimLexer}!filenames@{filenames}}
+\index{filenames@{filenames}!pygments.lexers.textedit.VimLexer@{pygments.lexers.textedit.VimLexer}}
+\doxysubsubsection{\texorpdfstring{filenames}{filenames}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+textedit.\+Vim\+Lexer.\+filenames\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [\textcolor{stringliteral}{'*.vim'}, \textcolor{stringliteral}{'.vimrc'}, \textcolor{stringliteral}{'.exrc'}, \textcolor{stringliteral}{'.gvimrc'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'\_vimrc'}, \textcolor{stringliteral}{'\_exrc'}, \textcolor{stringliteral}{'\_gvimrc'}, \textcolor{stringliteral}{'vimrc'}, \textcolor{stringliteral}{'gvimrc'}]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textedit_1_1VimLexer_a753cb57c88c791301c6c2da329cd3433}\label{classpygments_1_1lexers_1_1textedit_1_1VimLexer_a753cb57c88c791301c6c2da329cd3433}} 
+\index{pygments.lexers.textedit.VimLexer@{pygments.lexers.textedit.VimLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.textedit.VimLexer@{pygments.lexers.textedit.VimLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+textedit.\+Vim\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^([ \(\backslash\)t:]*)('} + \_python + \textcolor{stringliteral}{r')([ \(\backslash\)t]*)(<<)([ \(\backslash\)t]*)(.*)((?:\(\backslash\)n|.)*)(\(\backslash\)6)'},}
+\DoxyCodeLine{             bygroups(using(this), Keyword, Text, Operator, Text, Text,}
+\DoxyCodeLine{                      using(PythonLexer), Text)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^([ \(\backslash\)t:]*)('} + \_python + \textcolor{stringliteral}{r')([ \(\backslash\)t])(.*)'},}
+\DoxyCodeLine{             bygroups(using(this), Keyword, Text, using(PythonLexer))),}
+\DoxyCodeLine{}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^\(\backslash\)s*"{}.*'}, Comment),}
+\DoxyCodeLine{}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[ \(\backslash\)t]+'}, Text),}
+\DoxyCodeLine{            \textcolor{comment}{\# TODO: regexes can have other delims}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'/[\string^/\(\backslash\)\(\backslash\)\(\backslash\)n]*(?:\(\backslash\)\(\backslash\)[\(\backslash\)s\(\backslash\)S][\string^/\(\backslash\)\(\backslash\)\(\backslash\)n]*)*/'}, String.Regex),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'"{}[\string^"{}\(\backslash\)\(\backslash\)\(\backslash\)n]*(?:\(\backslash\)\(\backslash\)[\(\backslash\)s\(\backslash\)S][\string^"{}\(\backslash\)\(\backslash\)\(\backslash\)n]*)*"{}'}, String.Double),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r"{}'[\string^\(\backslash\)n']*(?:''[\string^\(\backslash\)n']*)*'"{}}, String.Single),}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{comment}{\# Who decided that doublequote was a good comment character??}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(?<=\(\backslash\)s)"{}[\string^\(\backslash\)-\/:.\%\#=*].*'}, Comment),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'-\/?\(\backslash\)d+'}, Number),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#[0-\/9a-\/f]\{6\}'}, Number.Hex),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^:'}, Punctuation),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[()<>+=!|,\string~-\/]'}, Punctuation),  \textcolor{comment}{\# Inexact list.  Looks decent.}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)b(let|if|else|endif|elseif|fun|function|endfunction)\(\backslash\)b'},}
+\DoxyCodeLine{             Keyword),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)b(NONE|bold|italic|underline|dark|light)\(\backslash\)b'}, Name.Builtin),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)b\(\backslash\)w+\(\backslash\)b'}, Name.Other),  \textcolor{comment}{\# These are postprocessed below}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'.'}, Text),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/textedit.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,62 @@
+\hypertarget{classtqdm_1_1utils_1_1ObjectWrapper}{}\doxysection{tqdm.\+utils.\+Object\+Wrapper Class Reference}
+\label{classtqdm_1_1utils_1_1ObjectWrapper}\index{tqdm.utils.ObjectWrapper@{tqdm.utils.ObjectWrapper}}
+
+
+Inheritance diagram for tqdm.\+utils.\+Object\+Wrapper\+:
+% FIG 0
+
+
+Collaboration diagram for tqdm.\+utils.\+Object\+Wrapper\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1utils_1_1ObjectWrapper_abdd4cd236e693a8c4d72592162bb0079}\label{classtqdm_1_1utils_1_1ObjectWrapper_abdd4cd236e693a8c4d72592162bb0079}} 
+def {\bfseries \+\_\+\+\_\+getattr\+\_\+\+\_\+} (self, name)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1utils_1_1ObjectWrapper_a739658273f92a582575034c041562d37}\label{classtqdm_1_1utils_1_1ObjectWrapper_a739658273f92a582575034c041562d37}} 
+def {\bfseries \+\_\+\+\_\+setattr\+\_\+\+\_\+} (self, name, value)
+\item 
+def \mbox{\hyperlink{classtqdm_1_1utils_1_1ObjectWrapper_ac112f0f5ada670da8c77639403fa5faf}{wrapper\+\_\+getattr}} (self, name)
+\item 
+def \mbox{\hyperlink{classtqdm_1_1utils_1_1ObjectWrapper_ab7e50576c57f3a9b7b5962c2077b13ff}{wrapper\+\_\+setattr}} (self, name, value)
+\item 
+def \mbox{\hyperlink{classtqdm_1_1utils_1_1ObjectWrapper_abe9a5b7131d49493d5866497e5dfd14f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, wrapped)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtqdm_1_1utils_1_1ObjectWrapper_abe9a5b7131d49493d5866497e5dfd14f}\label{classtqdm_1_1utils_1_1ObjectWrapper_abe9a5b7131d49493d5866497e5dfd14f}} 
+\index{tqdm.utils.ObjectWrapper@{tqdm.utils.ObjectWrapper}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!tqdm.utils.ObjectWrapper@{tqdm.utils.ObjectWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def tqdm.\+utils.\+Object\+Wrapper.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{wrapped }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Thin wrapper around a given object
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classtqdm_1_1contrib_1_1DummyTqdmFile_ac8acf45f8b95818c3a0e77f4dceaecf1}{tqdm.\+contrib.\+Dummy\+Tqdm\+File}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtqdm_1_1utils_1_1ObjectWrapper_ac112f0f5ada670da8c77639403fa5faf}\label{classtqdm_1_1utils_1_1ObjectWrapper_ac112f0f5ada670da8c77639403fa5faf}} 
+\index{tqdm.utils.ObjectWrapper@{tqdm.utils.ObjectWrapper}!wrapper\_getattr@{wrapper\_getattr}}
+\index{wrapper\_getattr@{wrapper\_getattr}!tqdm.utils.ObjectWrapper@{tqdm.utils.ObjectWrapper}}
+\doxysubsubsection{\texorpdfstring{wrapper\_getattr()}{wrapper\_getattr()}}
+{\footnotesize\ttfamily def tqdm.\+utils.\+Object\+Wrapper.\+wrapper\+\_\+getattr (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Actual `self.getattr` rather than self._wrapped.getattr\end{DoxyVerb}
+ \mbox{\Hypertarget{classtqdm_1_1utils_1_1ObjectWrapper_ab7e50576c57f3a9b7b5962c2077b13ff}\label{classtqdm_1_1utils_1_1ObjectWrapper_ab7e50576c57f3a9b7b5962c2077b13ff}} 
+\index{tqdm.utils.ObjectWrapper@{tqdm.utils.ObjectWrapper}!wrapper\_setattr@{wrapper\_setattr}}
+\index{wrapper\_setattr@{wrapper\_setattr}!tqdm.utils.ObjectWrapper@{tqdm.utils.ObjectWrapper}}
+\doxysubsubsection{\texorpdfstring{wrapper\_setattr()}{wrapper\_setattr()}}
+{\footnotesize\ttfamily def tqdm.\+utils.\+Object\+Wrapper.\+wrapper\+\_\+setattr (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Actual `self.setattr` rather than self._wrapped.setattr\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/tqdm/utils.\+py\end{DoxyCompactItemize}

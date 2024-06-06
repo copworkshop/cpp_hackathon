@@ -1,0 +1,73 @@
+\hypertarget{classpygments_1_1lexers_1_1php_1_1PhpLexer}{}\doxysection{pygments.\+lexers.\+php.\+Php\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1php_1_1PhpLexer}\index{pygments.lexers.php.PhpLexer@{pygments.lexers.php.PhpLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+php.\+Php\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+php.\+Php\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1php_1_1PhpLexer_a4b51a2ceb499dec782c9bb1d4c27de2f}\label{classpygments_1_1lexers_1_1php_1_1PhpLexer_a4b51a2ceb499dec782c9bb1d4c27de2f}} 
+string {\bfseries name} = \textquotesingle{}PHP\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1php_1_1PhpLexer_a4fadcd19e0a6c249b693f7d27255ffe5}\label{classpygments_1_1lexers_1_1php_1_1PhpLexer_a4fadcd19e0a6c249b693f7d27255ffe5}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+php.\+net/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1php_1_1PhpLexer_a6af5cc9b238e2f4159dd2b60c4cb71c8}\label{classpygments_1_1lexers_1_1php_1_1PhpLexer_a6af5cc9b238e2f4159dd2b60c4cb71c8}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}php\textquotesingle{}, \textquotesingle{}php3\textquotesingle{}, \textquotesingle{}php4\textquotesingle{}, \textquotesingle{}php5\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1php_1_1PhpLexer_a326fb9487e93849814c5ea6438a4a329}\label{classpygments_1_1lexers_1_1php_1_1PhpLexer_a326fb9487e93849814c5ea6438a4a329}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.php\textquotesingle{}, \textquotesingle{}$\ast$.php\mbox{[}345\mbox{]}\textquotesingle{}, \textquotesingle{}$\ast$.inc\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1php_1_1PhpLexer_adbb7d7ab861905b6a7d14f78dd36db23}\label{classpygments_1_1lexers_1_1php_1_1PhpLexer_adbb7d7ab861905b6a7d14f78dd36db23}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/php\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1php_1_1PhpLexer_a7d12fcc673119c7dc33cf51346ca81d9}\label{classpygments_1_1lexers_1_1php_1_1PhpLexer_a7d12fcc673119c7dc33cf51346ca81d9}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1php_1_1PhpLexer_adcd55ef571a20ed898b5ef7b43235675}\label{classpygments_1_1lexers_1_1php_1_1PhpLexer_adcd55ef571a20ed898b5ef7b43235675}} 
+{\bfseries flags} = re.\+IGNORECASE $\vert$ re.\+DOTALL $\vert$ re.\+MULTILINE
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For PHP source code.
+For PHP embedded in HTML, use the `HtmlPhpLexer`.
+
+Additional options accepted:
+
+`startinline`
+    If given and ``True`` the lexer starts highlighting with
+    php code (i.e.: no starting ``<?php`` required).  The default
+    is ``False``.
+`funcnamehighlighting`
+    If given and ``True``, highlight builtin function names
+    (default: ``True``).
+`disabledmodules`
+    If given, must be a list of module names whose function names
+    should not be highlighted. By default all modules are highlighted
+    except the special ``'unknown'`` module that includes functions
+    that are known to php but are undocumented.
+
+    To get a list of allowed modules have a look into the
+    `_php_builtins` module:
+
+    .. sourcecode:: pycon
+
+        >>> from pygments.lexers._php_builtins import MODULES
+        >>> MODULES.keys()
+        ['PHP Options/Info', 'Zip', 'dba', ...]
+
+    In fact the names of those modules match the module names from
+    the php documentation.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/php.\+py\end{DoxyCompactItemize}

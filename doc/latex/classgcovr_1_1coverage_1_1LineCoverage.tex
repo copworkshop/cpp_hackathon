@@ -1,0 +1,64 @@
+\hypertarget{classgcovr_1_1coverage_1_1LineCoverage}{}\doxysection{gcovr.\+coverage.\+Line\+Coverage Class Reference}
+\label{classgcovr_1_1coverage_1_1LineCoverage}\index{gcovr.coverage.LineCoverage@{gcovr.coverage.LineCoverage}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgcovr_1_1coverage_1_1LineCoverage_a4d320e71d1247ff9a179cf04d5080a0e}\label{classgcovr_1_1coverage_1_1LineCoverage_a4d320e71d1247ff9a179cf04d5080a0e}} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, int lineno, int count, bool excluded=False, str md5=None)
+\item 
+\mbox{\Hypertarget{classgcovr_1_1coverage_1_1LineCoverage_a26561de4ab977163c23cd7afeaac4bae}\label{classgcovr_1_1coverage_1_1LineCoverage_a26561de4ab977163c23cd7afeaac4bae}} 
+bool {\bfseries is\+\_\+excluded} (self)
+\item 
+\mbox{\Hypertarget{classgcovr_1_1coverage_1_1LineCoverage_aea856ca9230f23d387afc277c1b6c2d4}\label{classgcovr_1_1coverage_1_1LineCoverage_aea856ca9230f23d387afc277c1b6c2d4}} 
+bool {\bfseries is\+\_\+reportable} (self)
+\item 
+\mbox{\Hypertarget{classgcovr_1_1coverage_1_1LineCoverage_abc8200bd444676bf6ed5e8b97825f0ce}\label{classgcovr_1_1coverage_1_1LineCoverage_abc8200bd444676bf6ed5e8b97825f0ce}} 
+bool {\bfseries is\+\_\+covered} (self)
+\item 
+\mbox{\Hypertarget{classgcovr_1_1coverage_1_1LineCoverage_a07d260eec169b33e573b952d812db859}\label{classgcovr_1_1coverage_1_1LineCoverage_a07d260eec169b33e573b952d812db859}} 
+bool {\bfseries is\+\_\+uncovered} (self)
+\item 
+\mbox{\Hypertarget{classgcovr_1_1coverage_1_1LineCoverage_a5df802a520194d306f9800b6b6b40973}\label{classgcovr_1_1coverage_1_1LineCoverage_a5df802a520194d306f9800b6b6b40973}} 
+bool {\bfseries has\+\_\+uncovered\+\_\+branch} (self)
+\item 
+\mbox{\Hypertarget{classgcovr_1_1coverage_1_1LineCoverage_ad2372ae0f7aa2b3e40f8eba9a453906a}\label{classgcovr_1_1coverage_1_1LineCoverage_ad2372ae0f7aa2b3e40f8eba9a453906a}} 
+bool {\bfseries has\+\_\+uncovered\+\_\+decision} (self)
+\item 
+\mbox{\Hypertarget{classgcovr_1_1coverage_1_1LineCoverage_a9c5423816a785538f41517d9d7d0a97f}\label{classgcovr_1_1coverage_1_1LineCoverage_a9c5423816a785538f41517d9d7d0a97f}} 
+\mbox{\hyperlink{classgcovr_1_1coverage_1_1CoverageStat}{Coverage\+Stat}} {\bfseries branch\+\_\+coverage} (self)
+\item 
+\mbox{\Hypertarget{classgcovr_1_1coverage_1_1LineCoverage_a9bf61a0dfd2ece5e7f3ab71625a21720}\label{classgcovr_1_1coverage_1_1LineCoverage_a9bf61a0dfd2ece5e7f3ab71625a21720}} 
+\mbox{\hyperlink{classgcovr_1_1coverage_1_1DecisionCoverageStat}{Decision\+Coverage\+Stat}} {\bfseries decision\+\_\+coverage} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgcovr_1_1coverage_1_1LineCoverage_ade28c36b4b0e87e2c77a6e8818c5c16b}\label{classgcovr_1_1coverage_1_1LineCoverage_ade28c36b4b0e87e2c77a6e8818c5c16b}} 
+{\bfseries count}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represent coverage information about a line.
+
+Each line is either *excluded* or *reportable*.
+
+A *reportable* line is either *covered* or *uncovered*.
+
+The default state of a line is *coverable*/*reportable*/*uncovered*.
+
+Args:
+    lineno (int):
+        The line number.
+    count (int):
+        How often this line was executed at least partially.
+    excluded (bool, optional):
+        Whether this line is excluded by a marker.
+    md5 (str):
+        The md5 checksum of the source code line.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/gcovr/coverage.\+py\end{DoxyCompactItemize}

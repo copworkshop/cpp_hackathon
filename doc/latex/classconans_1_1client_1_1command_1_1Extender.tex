@@ -1,0 +1,31 @@
+\hypertarget{classconans_1_1client_1_1command_1_1Extender}{}\doxysection{conans.\+client.\+command.\+Extender Class Reference}
+\label{classconans_1_1client_1_1command_1_1Extender}\index{conans.client.command.Extender@{conans.client.command.Extender}}
+
+
+Inheritance diagram for conans.\+client.\+command.\+Extender\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+command.\+Extender\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1command_1_1Extender_a24e911cc5df214ac15789237c6125ca6}\label{classconans_1_1client_1_1command_1_1Extender_a24e911cc5df214ac15789237c6125ca6}} 
+def {\bfseries \+\_\+\+\_\+call\+\_\+\+\_\+} (self, parser, namespace, values, option\+\_\+strings=None)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Allows using the same flag several times in command and creates a list with the values.
+For example:
+    conan install MyPackage/1.2@user/channel -o qt:value -o mode:2 -s cucumber:true
+  It creates:
+      options = ['qt:value', 'mode:2']
+      settings = ['cucumber:true']
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/command.\+py\end{DoxyCompactItemize}

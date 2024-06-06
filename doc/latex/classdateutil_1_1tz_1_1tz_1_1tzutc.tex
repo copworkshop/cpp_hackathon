@@ -1,0 +1,103 @@
+\hypertarget{classdateutil_1_1tz_1_1tz_1_1tzutc}{}\doxysection{dateutil.\+tz.\+tz.\+tzutc Class Reference}
+\label{classdateutil_1_1tz_1_1tz_1_1tzutc}\index{dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}}
+
+
+Inheritance diagram for dateutil.\+tz.\+tz.\+tzutc\+:
+% FIG 0
+
+
+Collaboration diagram for dateutil.\+tz.\+tz.\+tzutc\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzutc_ade9369259a30b9b7c3bc5911375d4333}\label{classdateutil_1_1tz_1_1tz_1_1tzutc_ade9369259a30b9b7c3bc5911375d4333}} 
+def {\bfseries utcoffset} (self, dt)
+\item 
+\mbox{\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzutc_a9720fdfaa7e1e09e3b9467499cced534}\label{classdateutil_1_1tz_1_1tz_1_1tzutc_a9720fdfaa7e1e09e3b9467499cced534}} 
+def {\bfseries dst} (self, dt)
+\item 
+\mbox{\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzutc_a1828b8080ae35b15063af36d17ba1fd2}\label{classdateutil_1_1tz_1_1tz_1_1tzutc_a1828b8080ae35b15063af36d17ba1fd2}} 
+def {\bfseries tzname} (self, dt)
+\item 
+def \mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzutc_aaca952d8eb6f9f90e92ec48ab1487fb8}{is\+\_\+ambiguous}} (self, dt)
+\item 
+def \mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzutc_aeaaa6833ebd3c9c1568b8d4e57b16329}{fromutc}} (self, dt)
+\item 
+\mbox{\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzutc_ad8650e6d39bfd697ded0f72c5d1d824d}\label{classdateutil_1_1tz_1_1tz_1_1tzutc_ad8650e6d39bfd697ded0f72c5d1d824d}} 
+def {\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, other)
+\item 
+\mbox{\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzutc_a5ce88af5c0b17d6dab1818dc36b5062a}\label{classdateutil_1_1tz_1_1tz_1_1tzutc_a5ce88af5c0b17d6dab1818dc36b5062a}} 
+def {\bfseries \+\_\+\+\_\+ne\+\_\+\+\_\+} (self, other)
+\item 
+\mbox{\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzutc_a9c129b5c78ba1c65072337f097062e82}\label{classdateutil_1_1tz_1_1tz_1_1tzutc_a9c129b5c78ba1c65072337f097062e82}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This is a tzinfo object that represents the UTC time zone.
+
+**Examples:**
+
+.. doctest::
+
+    >>> from datetime import *
+    >>> from dateutil.tz import *
+
+    >>> datetime.now()
+    datetime.datetime(2003, 9, 27, 9, 40, 1, 521290)
+
+    >>> datetime.now(tzutc())
+    datetime.datetime(2003, 9, 27, 12, 40, 12, 156379, tzinfo=tzutc())
+
+    >>> datetime.now(tzutc()).tzname()
+    'UTC'
+
+.. versionchanged:: 2.7.0
+    ``tzutc()`` is now a singleton, so the result of ``tzutc()`` will
+    always return the same object.
+
+    .. doctest::
+
+        >>> from dateutil.tz import tzutc, UTC
+        >>> tzutc() is tzutc()
+        True
+        >>> tzutc() is UTC
+        True
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzutc_aeaaa6833ebd3c9c1568b8d4e57b16329}\label{classdateutil_1_1tz_1_1tz_1_1tzutc_aeaaa6833ebd3c9c1568b8d4e57b16329}} 
+\index{dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}!fromutc@{fromutc}}
+\index{fromutc@{fromutc}!dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}}
+\doxysubsubsection{\texorpdfstring{fromutc()}{fromutc()}}
+{\footnotesize\ttfamily def dateutil.\+tz.\+tz.\+tzutc.\+fromutc (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dt }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Fast track version of fromutc() returns the original ``dt`` object for
+any valid :py:class:`datetime.datetime` object.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzutc_aaca952d8eb6f9f90e92ec48ab1487fb8}\label{classdateutil_1_1tz_1_1tz_1_1tzutc_aaca952d8eb6f9f90e92ec48ab1487fb8}} 
+\index{dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}!is\_ambiguous@{is\_ambiguous}}
+\index{is\_ambiguous@{is\_ambiguous}!dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}}
+\doxysubsubsection{\texorpdfstring{is\_ambiguous()}{is\_ambiguous()}}
+{\footnotesize\ttfamily def dateutil.\+tz.\+tz.\+tzutc.\+is\+\_\+ambiguous (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dt }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Whether or not the "wall time" of a given datetime is ambiguous in this
+zone.
+
+:param dt:
+    A :py:class:`datetime.datetime`, naive or time zone aware.
+
+
+:return:
+    Returns ``True`` if ambiguous, ``False`` otherwise.
+
+.. versionadded:: 2.6.0
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/dateutil/tz/tz.\+py\end{DoxyCompactItemize}

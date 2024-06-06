@@ -1,0 +1,94 @@
+\hypertarget{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage}{}\doxysection{conan.\+tools.\+files.\+cpp\+\_\+package.\+Cpp\+Package Class Reference}
+\label{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage}\index{conan.tools.files.cpp\_package.CppPackage@{conan.tools.files.cpp\_package.CppPackage}}
+
+
+Inheritance diagram for conan.\+tools.\+files.\+cpp\+\_\+package.\+Cpp\+Package\+:
+% FIG 0
+
+
+Collaboration diagram for conan.\+tools.\+files.\+cpp\+\_\+package.\+Cpp\+Package\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage_1_1Component}{Component}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage_afdbbfd135020f2bdcd8de26788e0d9a6}\label{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage_afdbbfd135020f2bdcd8de26788e0d9a6}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage_ae7482cc360bc8c5e0d54de610012b521}{load}} (cls, filename=DEFAULT\+\_\+\+FILENAME)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage_a0b19de7d525f620df0bb62c19b17805c}{save}} (self, filename=DEFAULT\+\_\+\+FILENAME)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage_a5b5e0991621c1dcd9e0a2d16e82c17fb}{package\+\_\+info}} (self, conanfile)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage_a2346e316db12e569c1fe87eee1ca076c}{add\+\_\+component}} (self, name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage_aa91bdc2dbdd149027a4ee9aad01e2828}\label{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage_aa91bdc2dbdd149027a4ee9aad01e2828}} 
+{\bfseries components}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage_ae35050f158386c574a2cf21ecf432151}\label{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage_ae35050f158386c574a2cf21ecf432151}} 
+string {\bfseries DEFAULT\+\_\+\+FILENAME} = \char`\"{}cpp\+\_\+package.\+json\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}models conan_package.json, serializable object
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage_a2346e316db12e569c1fe87eee1ca076c}\label{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage_a2346e316db12e569c1fe87eee1ca076c}} 
+\index{conan.tools.files.cpp\_package.CppPackage@{conan.tools.files.cpp\_package.CppPackage}!add\_component@{add\_component}}
+\index{add\_component@{add\_component}!conan.tools.files.cpp\_package.CppPackage@{conan.tools.files.cpp\_package.CppPackage}}
+\doxysubsubsection{\texorpdfstring{add\_component()}{add\_component()}}
+{\footnotesize\ttfamily def conan.\+tools.\+files.\+cpp\+\_\+package.\+Cpp\+Package.\+add\+\_\+component (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}appens a new CppPackage.Configuration into the internal dictionary
+:param name: name of the given configuration (e.g. Debug)
+:return: a new CppPackage.Configuration instance (empty)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage_ae7482cc360bc8c5e0d54de610012b521}\label{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage_ae7482cc360bc8c5e0d54de610012b521}} 
+\index{conan.tools.files.cpp\_package.CppPackage@{conan.tools.files.cpp\_package.CppPackage}!load@{load}}
+\index{load@{load}!conan.tools.files.cpp\_package.CppPackage@{conan.tools.files.cpp\_package.CppPackage}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily def conan.\+tools.\+files.\+cpp\+\_\+package.\+Cpp\+Package.\+load (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{filename = {\ttfamily DEFAULT\+\_\+FILENAME} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}loads package model into memory from the conan_package.json file
+:param filename: path to the cpp_package.json
+:return: a new instance of CppPackage
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage_a5b5e0991621c1dcd9e0a2d16e82c17fb}\label{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage_a5b5e0991621c1dcd9e0a2d16e82c17fb}} 
+\index{conan.tools.files.cpp\_package.CppPackage@{conan.tools.files.cpp\_package.CppPackage}!package\_info@{package\_info}}
+\index{package\_info@{package\_info}!conan.tools.files.cpp\_package.CppPackage@{conan.tools.files.cpp\_package.CppPackage}}
+\doxysubsubsection{\texorpdfstring{package\_info()}{package\_info()}}
+{\footnotesize\ttfamily def conan.\+tools.\+files.\+cpp\+\_\+package.\+Cpp\+Package.\+package\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{conanfile }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}performs an automatically generated package_info method on conanfile, populating
+conanfile.package_info with the information available inside cpp_package.json
+:return: None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage_a0b19de7d525f620df0bb62c19b17805c}\label{classconan_1_1tools_1_1files_1_1cpp__package_1_1CppPackage_a0b19de7d525f620df0bb62c19b17805c}} 
+\index{conan.tools.files.cpp\_package.CppPackage@{conan.tools.files.cpp\_package.CppPackage}!save@{save}}
+\index{save@{save}!conan.tools.files.cpp\_package.CppPackage@{conan.tools.files.cpp\_package.CppPackage}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily def conan.\+tools.\+files.\+cpp\+\_\+package.\+Cpp\+Package.\+save (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename = {\ttfamily DEFAULT\+\_\+FILENAME} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}saves package model from memory into the cpp_package.json file
+:param filename: path to the cpp_package.json
+:return: None
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conan/tools/files/cpp\+\_\+package.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\hypertarget{classtqdm_1_1contrib_1_1discord_1_1tqdm__discord}{}\doxysection{tqdm.\+contrib.\+discord.\+tqdm\+\_\+discord Class Reference}
+\label{classtqdm_1_1contrib_1_1discord_1_1tqdm__discord}\index{tqdm.contrib.discord.tqdm\_discord@{tqdm.contrib.discord.tqdm\_discord}}
+
+
+Inheritance diagram for tqdm.\+contrib.\+discord.\+tqdm\+\_\+discord\+:
+% FIG 0
+
+
+Collaboration diagram for tqdm.\+contrib.\+discord.\+tqdm\+\_\+discord\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classtqdm_1_1contrib_1_1discord_1_1tqdm__discord_a0e94914825aeb2c29fa8b6208119faac}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1discord_1_1tqdm__discord_ae9d7e88470986399805d858127b5dc50}\label{classtqdm_1_1contrib_1_1discord_1_1tqdm__discord_ae9d7e88470986399805d858127b5dc50}} 
+def {\bfseries display} (self, $\ast$$\ast$kwargs)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1discord_1_1tqdm__discord_ab2d6b9dd70e07d0bd2cb5b5fe797bb15}\label{classtqdm_1_1contrib_1_1discord_1_1tqdm__discord_ab2d6b9dd70e07d0bd2cb5b5fe797bb15}} 
+def {\bfseries clear} (self, $\ast$args, $\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1discord_1_1tqdm__discord_a544bda7dc02c378e75bb7fbf564951ec}\label{classtqdm_1_1contrib_1_1discord_1_1tqdm__discord_a544bda7dc02c378e75bb7fbf564951ec}} 
+{\bfseries dio}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Standard `tqdm.auto.tqdm` but also sends updates to a Discord Bot.
+May take a few seconds to create (`__init__`).
+
+- create a discord bot (not public, no requirement of OAuth2 code
+  grant, only send message permissions) & invite it to a channel:
+  <https://discordpy.readthedocs.io/en/latest/discord.html>
+- copy the bot `{token}` & `{channel_id}` and paste below
+
+>>> from tqdm.contrib.discord import tqdm, trange
+>>> for i in tqdm(iterable, token='{token}', channel_id='{channel_id}'):
+...     ...
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1discord_1_1tqdm__discord_a0e94914825aeb2c29fa8b6208119faac}\label{classtqdm_1_1contrib_1_1discord_1_1tqdm__discord_a0e94914825aeb2c29fa8b6208119faac}} 
+\index{tqdm.contrib.discord.tqdm\_discord@{tqdm.contrib.discord.tqdm\_discord}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!tqdm.contrib.discord.tqdm\_discord@{tqdm.contrib.discord.tqdm\_discord}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def tqdm.\+contrib.\+discord.\+tqdm\+\_\+discord.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parameters
+----------
+token  : str, required. Discord token
+    [default: ${TQDM_DISCORD_TOKEN}].
+channel_id  : int, required. Discord channel ID
+    [default: ${TQDM_DISCORD_CHANNEL_ID}].
+mininterval  : float, optional.
+  Minimum of [default: 1.5] to avoid rate limit.
+
+See `tqdm.auto.tqdm.__init__` for other parameters.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/tqdm/contrib/discord.\+py\end{DoxyCompactItemize}

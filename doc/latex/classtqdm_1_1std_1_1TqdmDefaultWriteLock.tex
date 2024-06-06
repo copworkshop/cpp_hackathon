@@ -1,0 +1,64 @@
+\hypertarget{classtqdm_1_1std_1_1TqdmDefaultWriteLock}{}\doxysection{tqdm.\+std.\+Tqdm\+Default\+Write\+Lock Class Reference}
+\label{classtqdm_1_1std_1_1TqdmDefaultWriteLock}\index{tqdm.std.TqdmDefaultWriteLock@{tqdm.std.TqdmDefaultWriteLock}}
+
+
+Inheritance diagram for tqdm.\+std.\+Tqdm\+Default\+Write\+Lock\+:
+% FIG 0
+
+
+Collaboration diagram for tqdm.\+std.\+Tqdm\+Default\+Write\+Lock\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1TqdmDefaultWriteLock_ae477641b7d30d8b203846448406a71b0}\label{classtqdm_1_1std_1_1TqdmDefaultWriteLock_ae477641b7d30d8b203846448406a71b0}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1TqdmDefaultWriteLock_a8aa6d7290c742d185cccb029deace5bc}\label{classtqdm_1_1std_1_1TqdmDefaultWriteLock_a8aa6d7290c742d185cccb029deace5bc}} 
+def {\bfseries acquire} (self, $\ast$a, $\ast$$\ast$k)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1TqdmDefaultWriteLock_acba42062e9e1c89abd15e1a8e88ca984}\label{classtqdm_1_1std_1_1TqdmDefaultWriteLock_acba42062e9e1c89abd15e1a8e88ca984}} 
+def {\bfseries release} (self)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1TqdmDefaultWriteLock_a011c64c62f1d292434d3374b30b9ebf4}\label{classtqdm_1_1std_1_1TqdmDefaultWriteLock_a011c64c62f1d292434d3374b30b9ebf4}} 
+def {\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1TqdmDefaultWriteLock_ac0cc30fc912ba495e5cdf9ded09ce326}\label{classtqdm_1_1std_1_1TqdmDefaultWriteLock_ac0cc30fc912ba495e5cdf9ded09ce326}} 
+def {\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, $\ast$exc)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1TqdmDefaultWriteLock_ab7651434fbc7108eeb7ff24ef30e7e37}\label{classtqdm_1_1std_1_1TqdmDefaultWriteLock_ab7651434fbc7108eeb7ff24ef30e7e37}} 
+def {\bfseries create\+\_\+mp\+\_\+lock} (cls)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1TqdmDefaultWriteLock_ab14756bb8aa3e95885b5d256660c16a6}\label{classtqdm_1_1std_1_1TqdmDefaultWriteLock_ab14756bb8aa3e95885b5d256660c16a6}} 
+def {\bfseries create\+\_\+th\+\_\+lock} (cls)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1TqdmDefaultWriteLock_a448b971794736ab541f8299fdd73bbbc}\label{classtqdm_1_1std_1_1TqdmDefaultWriteLock_a448b971794736ab541f8299fdd73bbbc}} 
+{\bfseries locks}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1TqdmDefaultWriteLock_a94e4b6cff6d658490001e407767f6882}\label{classtqdm_1_1std_1_1TqdmDefaultWriteLock_a94e4b6cff6d658490001e407767f6882}} 
+{\bfseries mp\+\_\+lock}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1TqdmDefaultWriteLock_ac487c3f4f9edecd854ff3db57abb6e10}\label{classtqdm_1_1std_1_1TqdmDefaultWriteLock_ac487c3f4f9edecd854ff3db57abb6e10}} 
+{\bfseries th\+\_\+lock} = \mbox{\hyperlink{namespacetqdm_1_1std_ae54e45a01a9e5409ea4113e606915937}{TRLock}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Provide a default write lock for thread and multiprocessing safety.
+Works only on platforms supporting `fork` (so Windows is excluded).
+You must initialise a `tqdm` or `TqdmDefaultWriteLock` instance
+before forking in order for the write lock to work.
+On Windows, you need to supply the lock from the parent to the children as
+an argument to joblib or the parallelism lib you use.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/tqdm/std.\+py\end{DoxyCompactItemize}

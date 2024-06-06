@@ -1,0 +1,78 @@
+\hypertarget{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator}{}\doxysection{conan.\+tools.\+google.\+bazeldeps.\+\_\+\+Bazel\+BUILDGenerator Class Reference}
+\label{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator}\index{conan.tools.google.bazeldeps.\_BazelBUILDGenerator@{conan.tools.google.bazeldeps.\_BazelBUILDGenerator}}
+
+
+Collaboration diagram for conan.\+tools.\+google.\+bazeldeps.\+\_\+\+Bazel\+BUILDGenerator\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator_ac834e1b91d3a751d3184b32827df5be5}\label{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator_ac834e1b91d3a751d3184b32827df5be5}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, conanfile, dep, root\+\_\+package\+\_\+info, components\+\_\+info)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator_a6346347de06b573e4bb3fea202430f02}{build\+\_\+file\+\_\+pah}} (self)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator_a102261ef3d4ea5ed01964ee7055cf3d6}{absolute\+\_\+build\+\_\+file\+\_\+pah}} (self)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator_a24cf65d28985da08b9150422714b6666}{package\+\_\+folder}} (self)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator_aa1484c29b13eb717620a3c4d011e98e4}{repository\+\_\+name}} (self)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator_a07b0fc96246cee2bb91b0cca50f771f4}\label{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator_a07b0fc96246cee2bb91b0cca50f771f4}} 
+def {\bfseries generate} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator_ae93aa88e4b5c637cc6ba7550647066ad}\label{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator_ae93aa88e4b5c637cc6ba7550647066ad}} 
+string {\bfseries filename} = \char`\"{}BUILD.\+bazel\char`\"{}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator_a0a74948592327c907d10a55146aaa58a}\label{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator_a0a74948592327c907d10a55146aaa58a}} 
+{\bfseries template} = textwrap.\+dedent()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This class creates the BUILD.bazel for each dependency where it's declared all the
+necessary information to load the libraries
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator_a102261ef3d4ea5ed01964ee7055cf3d6}\label{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator_a102261ef3d4ea5ed01964ee7055cf3d6}} 
+\index{conan.tools.google.bazeldeps.\_BazelBUILDGenerator@{conan.tools.google.bazeldeps.\_BazelBUILDGenerator}!absolute\_build\_file\_pah@{absolute\_build\_file\_pah}}
+\index{absolute\_build\_file\_pah@{absolute\_build\_file\_pah}!conan.tools.google.bazeldeps.\_BazelBUILDGenerator@{conan.tools.google.bazeldeps.\_BazelBUILDGenerator}}
+\doxysubsubsection{\texorpdfstring{absolute\_build\_file\_pah()}{absolute\_build\_file\_pah()}}
+{\footnotesize\ttfamily def conan.\+tools.\+google.\+bazeldeps.\+\_\+\+Bazel\+BUILDGenerator.\+absolute\+\_\+build\+\_\+file\+\_\+pah (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the absolute path to the BUILD file created by Conan
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator_a6346347de06b573e4bb3fea202430f02}\label{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator_a6346347de06b573e4bb3fea202430f02}} 
+\index{conan.tools.google.bazeldeps.\_BazelBUILDGenerator@{conan.tools.google.bazeldeps.\_BazelBUILDGenerator}!build\_file\_pah@{build\_file\_pah}}
+\index{build\_file\_pah@{build\_file\_pah}!conan.tools.google.bazeldeps.\_BazelBUILDGenerator@{conan.tools.google.bazeldeps.\_BazelBUILDGenerator}}
+\doxysubsubsection{\texorpdfstring{build\_file\_pah()}{build\_file\_pah()}}
+{\footnotesize\ttfamily def conan.\+tools.\+google.\+bazeldeps.\+\_\+\+Bazel\+BUILDGenerator.\+build\+\_\+file\+\_\+pah (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the absolute path to the BUILD file created by Conan
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator_a24cf65d28985da08b9150422714b6666}\label{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator_a24cf65d28985da08b9150422714b6666}} 
+\index{conan.tools.google.bazeldeps.\_BazelBUILDGenerator@{conan.tools.google.bazeldeps.\_BazelBUILDGenerator}!package\_folder@{package\_folder}}
+\index{package\_folder@{package\_folder}!conan.tools.google.bazeldeps.\_BazelBUILDGenerator@{conan.tools.google.bazeldeps.\_BazelBUILDGenerator}}
+\doxysubsubsection{\texorpdfstring{package\_folder()}{package\_folder()}}
+{\footnotesize\ttfamily def conan.\+tools.\+google.\+bazeldeps.\+\_\+\+Bazel\+BUILDGenerator.\+package\+\_\+folder (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the package folder path
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator_aa1484c29b13eb717620a3c4d011e98e4}\label{classconan_1_1tools_1_1google_1_1bazeldeps_1_1__BazelBUILDGenerator_aa1484c29b13eb717620a3c4d011e98e4}} 
+\index{conan.tools.google.bazeldeps.\_BazelBUILDGenerator@{conan.tools.google.bazeldeps.\_BazelBUILDGenerator}!repository\_name@{repository\_name}}
+\index{repository\_name@{repository\_name}!conan.tools.google.bazeldeps.\_BazelBUILDGenerator@{conan.tools.google.bazeldeps.\_BazelBUILDGenerator}}
+\doxysubsubsection{\texorpdfstring{repository\_name()}{repository\_name()}}
+{\footnotesize\ttfamily def conan.\+tools.\+google.\+bazeldeps.\+\_\+\+Bazel\+BUILDGenerator.\+repository\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wrapper to get the final name used for the root dependency cc_library declaration
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conan/tools/google/bazeldeps.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,138 @@
+\hypertarget{classconans_1_1model_1_1conf_1_1ConfDefinition}{}\doxysection{conans.\+model.\+conf.\+Conf\+Definition Class Reference}
+\label{classconans_1_1model_1_1conf_1_1ConfDefinition}\index{conans.model.conf.ConfDefinition@{conans.model.conf.ConfDefinition}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1ConfDefinition_af59b67b3f22b49078b34d4f86986498a}\label{classconans_1_1model_1_1conf_1_1ConfDefinition_af59b67b3f22b49078b34d4f86986498a}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1ConfDefinition_a0cce7a798a35a465378bc542c7cad516}\label{classconans_1_1model_1_1conf_1_1ConfDefinition_a0cce7a798a35a465378bc542c7cad516}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1ConfDefinition_a65ebf6abd0f18fd4a039e418a0fb9a0d}\label{classconans_1_1model_1_1conf_1_1ConfDefinition_a65ebf6abd0f18fd4a039e418a0fb9a0d}} 
+def {\bfseries \+\_\+\+\_\+bool\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1conf_1_1ConfDefinition_ab69dc2eb7c2ea58c15650a5ceb6c0d97}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, module\+\_\+name)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1conf_1_1ConfDefinition_a58d918b7e858cb99cb2ae22f6cc7ac8d}{\+\_\+\+\_\+delitem\+\_\+\+\_\+}} (self, module\+\_\+name)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1conf_1_1ConfDefinition_a199fc43bdf13d0e5df527afdf6aa8552}{get}} (self, conf\+\_\+name, default=None, check\+\_\+type=None)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1conf_1_1ConfDefinition_a2bbd652985a4a57ee4562b1b7edf0981}{pop}} (self, conf\+\_\+name, default=None)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1conf_1_1ConfDefinition_aae1a0a492c641057125dae5e794455e7}{get\+\_\+conanfile\+\_\+conf}} (self, ref)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1conf_1_1ConfDefinition_a49680019e54e4960a3682b4fdede6eab}{update\+\_\+conf\+\_\+definition}} (self, other)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1conf_1_1ConfDefinition_aee8d54c8c23ae5bc72e6372eebb7334d}{rebase\+\_\+conf\+\_\+definition}} (self, other)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1conf_1_1ConfDefinition_a384aa3c9d0f779d682db77d9263d05e5}{update}} (self, key, value, profile=False, method=\char`\"{}define\char`\"{})
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1ConfDefinition_a9b25be19ca9974a316eef0616a53e2d6}\label{classconans_1_1model_1_1conf_1_1ConfDefinition_a9b25be19ca9974a316eef0616a53e2d6}} 
+def {\bfseries as\+\_\+list} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1ConfDefinition_ab5eaf6b10b45c7d4723d6031c10aa6aa}\label{classconans_1_1model_1_1conf_1_1ConfDefinition_ab5eaf6b10b45c7d4723d6031c10aa6aa}} 
+def {\bfseries dumps} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1ConfDefinition_a5513be68c813a99994754ffbb3c04312}\label{classconans_1_1model_1_1conf_1_1ConfDefinition_a5513be68c813a99994754ffbb3c04312}} 
+def {\bfseries loads} (self, text, profile=False)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple {\bfseries actions}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1ConfDefinition_a58d918b7e858cb99cb2ae22f6cc7ac8d}\label{classconans_1_1model_1_1conf_1_1ConfDefinition_a58d918b7e858cb99cb2ae22f6cc7ac8d}} 
+\index{conans.model.conf.ConfDefinition@{conans.model.conf.ConfDefinition}!\_\_delitem\_\_@{\_\_delitem\_\_}}
+\index{\_\_delitem\_\_@{\_\_delitem\_\_}!conans.model.conf.ConfDefinition@{conans.model.conf.ConfDefinition}}
+\doxysubsubsection{\texorpdfstring{\_\_delitem\_\_()}{\_\_delitem\_\_()}}
+{\footnotesize\ttfamily def conans.\+model.\+conf.\+Conf\+Definition.\+\_\+\+\_\+delitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{module\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}DEPRECATED: it's going to disappear in Conan 2.0.  Use self.pop() instead.
+if a module name is requested for this, it goes to the None-Global config by default
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1ConfDefinition_ab69dc2eb7c2ea58c15650a5ceb6c0d97}\label{classconans_1_1model_1_1conf_1_1ConfDefinition_ab69dc2eb7c2ea58c15650a5ceb6c0d97}} 
+\index{conans.model.conf.ConfDefinition@{conans.model.conf.ConfDefinition}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!conans.model.conf.ConfDefinition@{conans.model.conf.ConfDefinition}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily def conans.\+model.\+conf.\+Conf\+Definition.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{module\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}DEPRECATED: it's going to disappear in Conan 2.0. Use self.get() instead.
+if a module name is requested for this, it goes to the None-Global config by default
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1ConfDefinition_a199fc43bdf13d0e5df527afdf6aa8552}\label{classconans_1_1model_1_1conf_1_1ConfDefinition_a199fc43bdf13d0e5df527afdf6aa8552}} 
+\index{conans.model.conf.ConfDefinition@{conans.model.conf.ConfDefinition}!get@{get}}
+\index{get@{get}!conans.model.conf.ConfDefinition@{conans.model.conf.ConfDefinition}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily def conans.\+model.\+conf.\+Conf\+Definition.\+get (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{conf\+\_\+name,  }\item[{}]{default = {\ttfamily None},  }\item[{}]{check\+\_\+type = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the value of the  conf name requested and convert it to the [type]-like passed.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1ConfDefinition_aae1a0a492c641057125dae5e794455e7}\label{classconans_1_1model_1_1conf_1_1ConfDefinition_aae1a0a492c641057125dae5e794455e7}} 
+\index{conans.model.conf.ConfDefinition@{conans.model.conf.ConfDefinition}!get\_conanfile\_conf@{get\_conanfile\_conf}}
+\index{get\_conanfile\_conf@{get\_conanfile\_conf}!conans.model.conf.ConfDefinition@{conans.model.conf.ConfDefinition}}
+\doxysubsubsection{\texorpdfstring{get\_conanfile\_conf()}{get\_conanfile\_conf()}}
+{\footnotesize\ttfamily def conans.\+model.\+conf.\+Conf\+Definition.\+get\+\_\+conanfile\+\_\+conf (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ref }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} computes package-specific Conf
+it is only called when conanfile.buildenv is called
+the last one found in the profile file has top priority
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1ConfDefinition_a2bbd652985a4a57ee4562b1b7edf0981}\label{classconans_1_1model_1_1conf_1_1ConfDefinition_a2bbd652985a4a57ee4562b1b7edf0981}} 
+\index{conans.model.conf.ConfDefinition@{conans.model.conf.ConfDefinition}!pop@{pop}}
+\index{pop@{pop}!conans.model.conf.ConfDefinition@{conans.model.conf.ConfDefinition}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily def conans.\+model.\+conf.\+Conf\+Definition.\+pop (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{conf\+\_\+name,  }\item[{}]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove the conf name passed.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1ConfDefinition_aee8d54c8c23ae5bc72e6372eebb7334d}\label{classconans_1_1model_1_1conf_1_1ConfDefinition_aee8d54c8c23ae5bc72e6372eebb7334d}} 
+\index{conans.model.conf.ConfDefinition@{conans.model.conf.ConfDefinition}!rebase\_conf\_definition@{rebase\_conf\_definition}}
+\index{rebase\_conf\_definition@{rebase\_conf\_definition}!conans.model.conf.ConfDefinition@{conans.model.conf.ConfDefinition}}
+\doxysubsubsection{\texorpdfstring{rebase\_conf\_definition()}{rebase\_conf\_definition()}}
+{\footnotesize\ttfamily def conans.\+model.\+conf.\+Conf\+Definition.\+rebase\+\_\+conf\+\_\+definition (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}for taking the new global.conf and composing with the profile [conf]
+:type other: ConfDefinition
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1ConfDefinition_a384aa3c9d0f779d682db77d9263d05e5}\label{classconans_1_1model_1_1conf_1_1ConfDefinition_a384aa3c9d0f779d682db77d9263d05e5}} 
+\index{conans.model.conf.ConfDefinition@{conans.model.conf.ConfDefinition}!update@{update}}
+\index{update@{update}!conans.model.conf.ConfDefinition@{conans.model.conf.ConfDefinition}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily def conans.\+model.\+conf.\+Conf\+Definition.\+update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{value,  }\item[{}]{profile = {\ttfamily False},  }\item[{}]{method = {\ttfamily \char`\"{}define\char`\"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Define/append/prepend/unset any Conf line
+>> update("tools.microsoft.msbuild:verbosity", "Detailed")
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1ConfDefinition_a49680019e54e4960a3682b4fdede6eab}\label{classconans_1_1model_1_1conf_1_1ConfDefinition_a49680019e54e4960a3682b4fdede6eab}} 
+\index{conans.model.conf.ConfDefinition@{conans.model.conf.ConfDefinition}!update\_conf\_definition@{update\_conf\_definition}}
+\index{update\_conf\_definition@{update\_conf\_definition}!conans.model.conf.ConfDefinition@{conans.model.conf.ConfDefinition}}
+\doxysubsubsection{\texorpdfstring{update\_conf\_definition()}{update\_conf\_definition()}}
+{\footnotesize\ttfamily def conans.\+model.\+conf.\+Conf\+Definition.\+update\+\_\+conf\+\_\+definition (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:type other: ConfDefinition
+:param other: The argument profile has priority/precedence over the current one.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1ConfDefinition_a5fa1fd7ef6f722e41b8e901a7ef0dd2b}\label{classconans_1_1model_1_1conf_1_1ConfDefinition_a5fa1fd7ef6f722e41b8e901a7ef0dd2b}} 
+\index{conans.model.conf.ConfDefinition@{conans.model.conf.ConfDefinition}!actions@{actions}}
+\index{actions@{actions}!conans.model.conf.ConfDefinition@{conans.model.conf.ConfDefinition}}
+\doxysubsubsection{\texorpdfstring{actions}{actions}}
+{\footnotesize\ttfamily tuple conans.\+model.\+conf.\+Conf\+Definition.\+actions\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  ((\textcolor{stringliteral}{"{}+="{}}, \textcolor{stringliteral}{"{}append"{}}), (\textcolor{stringliteral}{"{}=+"{}}, \textcolor{stringliteral}{"{}prepend"{}}),}
+\DoxyCodeLine{               (\textcolor{stringliteral}{"{}=!"{}}, \textcolor{stringliteral}{"{}unset"{}}), (\textcolor{stringliteral}{"{}="{}}, \textcolor{stringliteral}{"{}define"{}}))}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/model/conf.\+py\end{DoxyCompactItemize}

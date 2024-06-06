@@ -1,0 +1,107 @@
+\hypertarget{namespacelxml_1_1doctestcompare}{}\doxysection{lxml.\+doctestcompare Namespace Reference}
+\label{namespacelxml_1_1doctestcompare}\index{lxml.doctestcompare@{lxml.doctestcompare}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classlxml_1_1doctestcompare_1_1LXMLOutputChecker}{LXMLOutput\+Checker}}
+\item 
+class \mbox{\hyperlink{classlxml_1_1doctestcompare_1_1LHTMLOutputChecker}{LHTMLOutput\+Checker}}
+\item 
+class \mbox{\hyperlink{classlxml_1_1doctestcompare_1_1__RestoreChecker}{\+\_\+\+Restore\+Checker}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacelxml_1_1doctestcompare_a4e5313fc82339203c550f1357e34a71a}\label{namespacelxml_1_1doctestcompare_a4e5313fc82339203c550f1357e34a71a}} 
+def {\bfseries strip} (v)
+\item 
+\mbox{\Hypertarget{namespacelxml_1_1doctestcompare_ad4c9adbdd4b521fe18d1c2ab9668bd34}\label{namespacelxml_1_1doctestcompare_ad4c9adbdd4b521fe18d1c2ab9668bd34}} 
+def {\bfseries norm\+\_\+whitespace} (v)
+\item 
+\mbox{\Hypertarget{namespacelxml_1_1doctestcompare_a0ae58ce9fb1ead974c99ce16cfb7211a}\label{namespacelxml_1_1doctestcompare_a0ae58ce9fb1ead974c99ce16cfb7211a}} 
+def {\bfseries html\+\_\+fromstring} (html)
+\item 
+def \mbox{\hyperlink{namespacelxml_1_1doctestcompare_a176edb27eb55e3b4aa1796fbc9ad8852}{install}} (html=False)
+\item 
+def \mbox{\hyperlink{namespacelxml_1_1doctestcompare_af06739bfd046891c81a390e7a47acfd9}{temp\+\_\+install}} (html=False, del\+\_\+module=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacelxml_1_1doctestcompare_a83a1c8011668210a2c8b37d2895057fa}\label{namespacelxml_1_1doctestcompare_a83a1c8011668210a2c8b37d2895057fa}} 
+{\bfseries PARSE\+\_\+\+HTML} = doctest.\+register\+\_\+optionflag(\textquotesingle{}PARSE\+\_\+\+HTML\textquotesingle{})
+\item 
+\mbox{\Hypertarget{namespacelxml_1_1doctestcompare_a7c329637a5203e16f2d96b2310413919}\label{namespacelxml_1_1doctestcompare_a7c329637a5203e16f2d96b2310413919}} 
+{\bfseries PARSE\+\_\+\+XML} = doctest.\+register\+\_\+optionflag(\textquotesingle{}PARSE\+\_\+\+XML\textquotesingle{})
+\item 
+\mbox{\Hypertarget{namespacelxml_1_1doctestcompare_af991c58b0c6f67eedd2cb32b82109312}\label{namespacelxml_1_1doctestcompare_af991c58b0c6f67eedd2cb32b82109312}} 
+{\bfseries NOPARSE\+\_\+\+MARKUP} = doctest.\+register\+\_\+optionflag(\textquotesingle{}NOPARSE\+\_\+\+MARKUP\textquotesingle{})
+\item 
+\mbox{\Hypertarget{namespacelxml_1_1doctestcompare_a4ec8b1b20495449625a96a61f7fe4a14}\label{namespacelxml_1_1doctestcompare_a4ec8b1b20495449625a96a61f7fe4a14}} 
+{\bfseries Output\+Checker} = doctest.\+Output\+Checker
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}lxml-based doctest output comparison.
+
+Note: normally, you should just import the `lxml.usedoctest` and
+`lxml.html.usedoctest` modules from within a doctest, instead of this
+one::
+
+    >>> import lxml.usedoctest # for XML output
+
+    >>> import lxml.html.usedoctest # for HTML output
+
+To use this module directly, you must call ``lxmldoctest.install()``,
+which will cause doctest to use this in all subsequent calls.
+
+This changes the way output is checked and comparisons are made for
+XML or HTML-like content.
+
+XML or HTML content is noticed because the example starts with ``<``
+(it's HTML if it starts with ``<html``).  You can also use the
+``PARSE_HTML`` and ``PARSE_XML`` flags to force parsing.
+
+Some rough wildcard-like things are allowed.  Whitespace is generally
+ignored (except in attributes).  In text (attributes and text in the
+body) you can use ``...`` as a wildcard.  In an example it also
+matches any trailing tags in the element, though it does not match
+leading tags.  You may create a tag ``<any>`` or include an ``any``
+attribute in the tag.  An ``any`` tag matches any tag, while the
+attribute matches any and all attributes.
+
+When a match fails, the reformatted example and gotten text is
+displayed (indented), and a rough diff-like output is given.  Anything
+marked with ``+`` is in the output but wasn't supposed to be, and
+similarly ``-`` means its in the example but wasn't in the output.
+
+You can disable parsing on one line with ``# doctest:+NOPARSE_MARKUP``
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacelxml_1_1doctestcompare_a176edb27eb55e3b4aa1796fbc9ad8852}\label{namespacelxml_1_1doctestcompare_a176edb27eb55e3b4aa1796fbc9ad8852}} 
+\index{lxml.doctestcompare@{lxml.doctestcompare}!install@{install}}
+\index{install@{install}!lxml.doctestcompare@{lxml.doctestcompare}}
+\doxysubsubsection{\texorpdfstring{install()}{install()}}
+{\footnotesize\ttfamily def lxml.\+doctestcompare.\+install (\begin{DoxyParamCaption}\item[{}]{html = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Install doctestcompare for all future doctests.
+
+If html is true, then by default the HTML parser will be used;
+otherwise the XML parser is used.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacelxml_1_1doctestcompare_af06739bfd046891c81a390e7a47acfd9}\label{namespacelxml_1_1doctestcompare_af06739bfd046891c81a390e7a47acfd9}} 
+\index{lxml.doctestcompare@{lxml.doctestcompare}!temp\_install@{temp\_install}}
+\index{temp\_install@{temp\_install}!lxml.doctestcompare@{lxml.doctestcompare}}
+\doxysubsubsection{\texorpdfstring{temp\_install()}{temp\_install()}}
+{\footnotesize\ttfamily def lxml.\+doctestcompare.\+temp\+\_\+install (\begin{DoxyParamCaption}\item[{}]{html = {\ttfamily False},  }\item[{}]{del\+\_\+module = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Use this *inside* a doctest to enable this checker for this
+doctest only.
+
+If html is true, then by default the HTML parser will be used;
+otherwise the XML parser is used.
+\end{DoxyVerb}
+ 

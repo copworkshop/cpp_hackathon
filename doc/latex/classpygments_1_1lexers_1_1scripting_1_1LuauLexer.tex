@@ -1,0 +1,126 @@
+\hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuauLexer}{}\doxysection{pygments.\+lexers.\+scripting.\+Luau\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1scripting_1_1LuauLexer}\index{pygments.lexers.scripting.LuauLexer@{pygments.lexers.scripting.LuauLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+scripting.\+Luau\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+scripting.\+Luau\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a264981eafb56911fe5f94593f254d5e2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a85e52bdcd1a943a97972c6200531f542}{get\+\_\+tokens\+\_\+unprocessed}} (self, text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a9becec0db828ec33248a2ad2b1de7f79}\label{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a9becec0db828ec33248a2ad2b1de7f79}} 
+{\bfseries include\+\_\+luau\+\_\+builtins}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a960ba27c67ac06bb150badbfdfaf2d28}\label{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a960ba27c67ac06bb150badbfdfaf2d28}} 
+{\bfseries include\+\_\+roblox\+\_\+builtins}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a81588cc2357a9f5bed7867063bd3b880}\label{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a81588cc2357a9f5bed7867063bd3b880}} 
+{\bfseries additional\+\_\+builtins}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a63483977d649a557443043495ddc484b}\label{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a63483977d649a557443043495ddc484b}} 
+{\bfseries disabled\+\_\+builtins}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_ad67ff5dd7ddee4e5229c0ab148d8af5c}\label{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_ad67ff5dd7ddee4e5229c0ab148d8af5c}} 
+string {\bfseries name} = \textquotesingle{}Luau\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a3fe6b71f96671d35b2e06979d9c5bd99}\label{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a3fe6b71f96671d35b2e06979d9c5bd99}} 
+string {\bfseries url} = \textquotesingle{}https\+://luau-\/lang.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a365a30fd4216e806d33c3ea734b77064}\label{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a365a30fd4216e806d33c3ea734b77064}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}luau\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_af1b650915a3ac3fa669f691ebba66e56}\label{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_af1b650915a3ac3fa669f691ebba66e56}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.luau\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a13b3ba01247888b423c1dc4b24d57279}\label{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a13b3ba01247888b423c1dc4b24d57279}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+18\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a3ce62f3f60f03662974a3843bfaf8f82}\label{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a3ce62f3f60f03662974a3843bfaf8f82}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For Luau source code.
+
+Additional options accepted:
+
+`include_luau_builtins`
+    If given and ``True``, automatically highlight Luau builtins
+    (default: ``True``).
+`include_roblox_builtins`
+    If given and ``True``, automatically highlight Roblox-specific builtins
+    (default: ``False``).
+`additional_builtins`
+    If given, must be a list of additional builtins to highlight.
+`disabled_builtins`
+    If given, must be a list of builtins that will not be highlighted.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a264981eafb56911fe5f94593f254d5e2}\label{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a264981eafb56911fe5f94593f254d5e2}} 
+\index{pygments.lexers.scripting.LuauLexer@{pygments.lexers.scripting.LuauLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.scripting.LuauLexer@{pygments.lexers.scripting.LuauLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+scripting.\+Luau\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a85e52bdcd1a943a97972c6200531f542}\label{classpygments_1_1lexers_1_1scripting_1_1LuauLexer_a85e52bdcd1a943a97972c6200531f542}} 
+\index{pygments.lexers.scripting.LuauLexer@{pygments.lexers.scripting.LuauLexer}!get\_tokens\_unprocessed@{get\_tokens\_unprocessed}}
+\index{get\_tokens\_unprocessed@{get\_tokens\_unprocessed}!pygments.lexers.scripting.LuauLexer@{pygments.lexers.scripting.LuauLexer}}
+\doxysubsubsection{\texorpdfstring{get\_tokens\_unprocessed()}{get\_tokens\_unprocessed()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+scripting.\+Luau\+Lexer.\+get\+\_\+tokens\+\_\+unprocessed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method should process the text and return an iterable of
+``(index, tokentype, value)`` tuples where ``index`` is the starting
+position of the token within the input text.
+
+It must be overridden by subclasses. It is recommended to
+implement it as a generator to maximize effectiveness.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_aad5c02b7f661f64f91cf8c8d880e9f67}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/scripting.\+py\end{DoxyCompactItemize}

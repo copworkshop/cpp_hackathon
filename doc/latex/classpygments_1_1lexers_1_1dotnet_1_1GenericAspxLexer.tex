@@ -1,0 +1,64 @@
+\hypertarget{classpygments_1_1lexers_1_1dotnet_1_1GenericAspxLexer}{}\doxysection{pygments.\+lexers.\+dotnet.\+Generic\+Aspx\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1dotnet_1_1GenericAspxLexer}\index{pygments.lexers.dotnet.GenericAspxLexer@{pygments.lexers.dotnet.GenericAspxLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+dotnet.\+Generic\+Aspx\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+dotnet.\+Generic\+Aspx\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1GenericAspxLexer_a9f8d1a72dde024e21b5e67d4de67e0eb}\label{classpygments_1_1lexers_1_1dotnet_1_1GenericAspxLexer_a9f8d1a72dde024e21b5e67d4de67e0eb}} 
+string {\bfseries name} = \textquotesingle{}aspx-\/gen\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1GenericAspxLexer_afcadd4d613addb9079a599c407507c18}\label{classpygments_1_1lexers_1_1dotnet_1_1GenericAspxLexer_afcadd4d613addb9079a599c407507c18}} 
+list {\bfseries filenames} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1GenericAspxLexer_a6ba09bb753a1f6bb233f917977aadb5e}\label{classpygments_1_1lexers_1_1dotnet_1_1GenericAspxLexer_a6ba09bb753a1f6bb233f917977aadb5e}} 
+list {\bfseries mimetypes} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1GenericAspxLexer_a49324ca1a83a0c6544e5f995c1a50403}\label{classpygments_1_1lexers_1_1dotnet_1_1GenericAspxLexer_a49324ca1a83a0c6544e5f995c1a50403}} 
+string {\bfseries url} = \textquotesingle{}https\+://dotnet.\+microsoft.\+com/en-\/us/apps/aspnet\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1GenericAspxLexer_a99795847b12e1572ccf2e9968d1d8ca4}\label{classpygments_1_1lexers_1_1dotnet_1_1GenericAspxLexer_a99795847b12e1572ccf2e9968d1d8ca4}} 
+{\bfseries flags} = re.\+DOTALL
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for ASP.NET pages.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1GenericAspxLexer_aa23d04a634068cf89ebad9c6a10e8dca}\label{classpygments_1_1lexers_1_1dotnet_1_1GenericAspxLexer_aa23d04a634068cf89ebad9c6a10e8dca}} 
+\index{pygments.lexers.dotnet.GenericAspxLexer@{pygments.lexers.dotnet.GenericAspxLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.dotnet.GenericAspxLexer@{pygments.lexers.dotnet.GenericAspxLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+dotnet.\+Generic\+Aspx\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(<\%[@=\#]?)(.*?)(\%>)'}, bygroups(Name.Tag, Other, Name.Tag)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(<script.*?>)(.*?)(</script>)'}, bygroups(using(XmlLexer),}
+\DoxyCodeLine{                                                        Other,}
+\DoxyCodeLine{                                                        using(XmlLexer))),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(.+?)(?=<)'}, using(XmlLexer)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'.+'}, using(XmlLexer)),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/dotnet.\+py\end{DoxyCompactItemize}

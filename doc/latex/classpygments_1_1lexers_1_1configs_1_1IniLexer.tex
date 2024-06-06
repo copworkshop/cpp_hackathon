@@ -1,0 +1,122 @@
+\hypertarget{classpygments_1_1lexers_1_1configs_1_1IniLexer}{}\doxysection{pygments.\+lexers.\+configs.\+Ini\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1configs_1_1IniLexer}\index{pygments.lexers.configs.IniLexer@{pygments.lexers.configs.IniLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+configs.\+Ini\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+configs.\+Ini\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1configs_1_1IniLexer_a4328920aa68ff9f181c02d758f23e210}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1IniLexer_ab1855f6b6d1d4c8deaac14dbe31d4751}\label{classpygments_1_1lexers_1_1configs_1_1IniLexer_ab1855f6b6d1d4c8deaac14dbe31d4751}} 
+string {\bfseries name} = \textquotesingle{}INI\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1IniLexer_a4ab7cdd873576a49c5b0f518985a4471}\label{classpygments_1_1lexers_1_1configs_1_1IniLexer_a4ab7cdd873576a49c5b0f518985a4471}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}ini\textquotesingle{}, \textquotesingle{}cfg\textquotesingle{}, \textquotesingle{}dosini\textquotesingle{}\mbox{]}
+\item 
+list {\bfseries filenames}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1IniLexer_aa804a4026bbf454b054d482d8f0373ae}\label{classpygments_1_1lexers_1_1configs_1_1IniLexer_aa804a4026bbf454b054d482d8f0373ae}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/ini\textquotesingle{}, \textquotesingle{}text/inf\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1IniLexer_a285763a148abbf63895f9186e279186e}\label{classpygments_1_1lexers_1_1configs_1_1IniLexer_a285763a148abbf63895f9186e279186e}} 
+string {\bfseries url} = \textquotesingle{}https\+://en.\+wikipedia.\+org/wiki/INI\+\_\+file\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1IniLexer_ae93e03bb8beba0c253bb6054d1f4e6c5}\label{classpygments_1_1lexers_1_1configs_1_1IniLexer_ae93e03bb8beba0c253bb6054d1f4e6c5}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for configuration files in INI style.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1IniLexer_a4328920aa68ff9f181c02d758f23e210}\label{classpygments_1_1lexers_1_1configs_1_1IniLexer_a4328920aa68ff9f181c02d758f23e210}} 
+\index{pygments.lexers.configs.IniLexer@{pygments.lexers.configs.IniLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.configs.IniLexer@{pygments.lexers.configs.IniLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+configs.\+Ini\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1IniLexer_a0269ddf40e16d0319eb511892d049c76}\label{classpygments_1_1lexers_1_1configs_1_1IniLexer_a0269ddf40e16d0319eb511892d049c76}} 
+\index{pygments.lexers.configs.IniLexer@{pygments.lexers.configs.IniLexer}!filenames@{filenames}}
+\index{filenames@{filenames}!pygments.lexers.configs.IniLexer@{pygments.lexers.configs.IniLexer}}
+\doxysubsubsection{\texorpdfstring{filenames}{filenames}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+configs.\+Ini\+Lexer.\+filenames\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [}
+\DoxyCodeLine{        \textcolor{stringliteral}{'*.ini'}, \textcolor{stringliteral}{'*.cfg'}, \textcolor{stringliteral}{'*.inf'}, \textcolor{stringliteral}{'.editorconfig'},}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1IniLexer_aabd8c3426739e172668549e7fa0b1fe3}\label{classpygments_1_1lexers_1_1configs_1_1IniLexer_aabd8c3426739e172668549e7fa0b1fe3}} 
+\index{pygments.lexers.configs.IniLexer@{pygments.lexers.configs.IniLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.configs.IniLexer@{pygments.lexers.configs.IniLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+configs.\+Ini\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[;\#].*'}, Comment.Single),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)[.*?\(\backslash\)])([ \(\backslash\)t]*)\$'}, bygroups(Keyword, Whitespace)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(.*?)([  \(\backslash\)t]*)([=:])([ \(\backslash\)t]*)([\string^;\#\(\backslash\)n]*)(\(\backslash\)\(\backslash\))(\(\backslash\)s+)'},}
+\DoxyCodeLine{             bygroups(Name.Attribute, Whitespace, Operator, Whitespace, String,}
+\DoxyCodeLine{                      Text, Whitespace),}
+\DoxyCodeLine{             \textcolor{stringliteral}{"{}value"{}}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(.*?)([ \(\backslash\)t]*)([=:])([  \(\backslash\)t]*)([\string^ ;\#\(\backslash\)n]*(?: +[\string^ ;\#\(\backslash\)n]+)*)'},}
+\DoxyCodeLine{             bygroups(Name.Attribute, Whitespace, Operator, Whitespace, String)),}
+\DoxyCodeLine{            \textcolor{comment}{\# standalone option, supported by some INI parsers}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(.+?)\$'}, Name.Attribute),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'value'}: [     \textcolor{comment}{\# line continuation}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)s*)(.*)(\(\backslash\)\(\backslash\))([ \(\backslash\)t]*)'},}
+\DoxyCodeLine{             bygroups(Whitespace, String, Text, Whitespace)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'.*\$'}, String, \textcolor{stringliteral}{"{}\#pop"{}}),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/configs.\+py\end{DoxyCompactItemize}

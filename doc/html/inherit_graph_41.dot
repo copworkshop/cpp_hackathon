@@ -1,0 +1,22 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3684 [label="TestCase",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3684 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="colorama.tests.ansi\l_test.AnsiTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcolorama_1_1tests_1_1ansi__test_1_1AnsiTest.html",tooltip=" "];
+  Node3684 -> Node3686 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3686 [label="colorama.tests.ansitowin32\l_test.AnsiToWin32Test",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcolorama_1_1tests_1_1ansitowin32__test_1_1AnsiToWin32Test.html",tooltip=" "];
+  Node3684 -> Node3687 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3687 [label="colorama.tests.ansitowin32\l_test.StreamWrapperTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcolorama_1_1tests_1_1ansitowin32__test_1_1StreamWrapperTest.html",tooltip=" "];
+  Node3684 -> Node3688 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3688 [label="colorama.tests.initialise\l_test.InitTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcolorama_1_1tests_1_1initialise__test_1_1InitTest.html",tooltip=" "];
+  Node3684 -> Node3689 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3689 [label="colorama.tests.initialise\l_test.JustFixWindowsConsoleTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcolorama_1_1tests_1_1initialise__test_1_1JustFixWindowsConsoleTest.html",tooltip=" "];
+  Node3684 -> Node3690 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3690 [label="colorama.tests.isatty\l_test.IsattyTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcolorama_1_1tests_1_1isatty__test_1_1IsattyTest.html",tooltip=" "];
+  Node3684 -> Node3691 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3691 [label="colorama.tests.winterm\l_test.WinTermTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcolorama_1_1tests_1_1winterm__test_1_1WinTermTest.html",tooltip=" "];
+}

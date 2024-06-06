@@ -1,0 +1,72 @@
+\hypertarget{classyaml_1_1resolver_1_1BaseResolver}{}\doxysection{yaml.\+resolver.\+Base\+Resolver Class Reference}
+\label{classyaml_1_1resolver_1_1BaseResolver}\index{yaml.resolver.BaseResolver@{yaml.resolver.BaseResolver}}
+
+
+Inheritance diagram for yaml.\+resolver.\+Base\+Resolver\+:
+% FIG 0
+
+
+Collaboration diagram for yaml.\+resolver.\+Base\+Resolver\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classyaml_1_1resolver_1_1BaseResolver_a2ff92ba0509e95b71ff734e0f92b2fec}\label{classyaml_1_1resolver_1_1BaseResolver_a2ff92ba0509e95b71ff734e0f92b2fec}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classyaml_1_1resolver_1_1BaseResolver_a3f7f35b2cac53847607fd656178540ec}\label{classyaml_1_1resolver_1_1BaseResolver_a3f7f35b2cac53847607fd656178540ec}} 
+def {\bfseries add\+\_\+implicit\+\_\+resolver} (cls, tag, regexp, first)
+\item 
+\mbox{\Hypertarget{classyaml_1_1resolver_1_1BaseResolver_ae7261637d8480f1911896ba3e4594f81}\label{classyaml_1_1resolver_1_1BaseResolver_ae7261637d8480f1911896ba3e4594f81}} 
+def {\bfseries add\+\_\+path\+\_\+resolver} (cls, tag, path, kind=None)
+\item 
+\mbox{\Hypertarget{classyaml_1_1resolver_1_1BaseResolver_ad99ecde9daf00bfaa63b92803ff6b783}\label{classyaml_1_1resolver_1_1BaseResolver_ad99ecde9daf00bfaa63b92803ff6b783}} 
+def {\bfseries descend\+\_\+resolver} (self, current\+\_\+node, current\+\_\+index)
+\item 
+\mbox{\Hypertarget{classyaml_1_1resolver_1_1BaseResolver_a1cf79ad737fc1a27585be9948842ac9c}\label{classyaml_1_1resolver_1_1BaseResolver_a1cf79ad737fc1a27585be9948842ac9c}} 
+def {\bfseries ascend\+\_\+resolver} (self)
+\item 
+\mbox{\Hypertarget{classyaml_1_1resolver_1_1BaseResolver_a66a4e9d5da191903316b399efe88428a}\label{classyaml_1_1resolver_1_1BaseResolver_a66a4e9d5da191903316b399efe88428a}} 
+def {\bfseries check\+\_\+resolver\+\_\+prefix} (self, depth, path, kind, current\+\_\+node, current\+\_\+index)
+\item 
+\mbox{\Hypertarget{classyaml_1_1resolver_1_1BaseResolver_ac90e55069366b63c2aebd6c282ea3643}\label{classyaml_1_1resolver_1_1BaseResolver_ac90e55069366b63c2aebd6c282ea3643}} 
+def {\bfseries resolve} (self, kind, value, implicit)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classyaml_1_1resolver_1_1BaseResolver_ae4119d6222ecb5b601dbd7d82199fe7d}\label{classyaml_1_1resolver_1_1BaseResolver_ae4119d6222ecb5b601dbd7d82199fe7d}} 
+{\bfseries resolver\+\_\+exact\+\_\+paths}
+\item 
+\mbox{\Hypertarget{classyaml_1_1resolver_1_1BaseResolver_a8fc3fc0baeb4ad5b258a789a81c8afbc}\label{classyaml_1_1resolver_1_1BaseResolver_a8fc3fc0baeb4ad5b258a789a81c8afbc}} 
+{\bfseries resolver\+\_\+prefix\+\_\+paths}
+\item 
+\mbox{\Hypertarget{classyaml_1_1resolver_1_1BaseResolver_a78ea4fb274cdb95b97ffd47d4111af6e}\label{classyaml_1_1resolver_1_1BaseResolver_a78ea4fb274cdb95b97ffd47d4111af6e}} 
+{\bfseries yaml\+\_\+implicit\+\_\+resolvers}
+\item 
+\mbox{\Hypertarget{classyaml_1_1resolver_1_1BaseResolver_ab75da03a5529133476a56b79fb9cbe8b}\label{classyaml_1_1resolver_1_1BaseResolver_ab75da03a5529133476a56b79fb9cbe8b}} 
+{\bfseries yaml\+\_\+path\+\_\+resolvers}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classyaml_1_1resolver_1_1BaseResolver_a618b785e7499f9d3643acc9cf7b6df3b}\label{classyaml_1_1resolver_1_1BaseResolver_a618b785e7499f9d3643acc9cf7b6df3b}} 
+string {\bfseries DEFAULT\+\_\+\+SCALAR\+\_\+\+TAG} = \textquotesingle{}tag\+:yaml.\+org,2002\+:str\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classyaml_1_1resolver_1_1BaseResolver_a87c25763c005e65a05ad6444a3391b0a}\label{classyaml_1_1resolver_1_1BaseResolver_a87c25763c005e65a05ad6444a3391b0a}} 
+string {\bfseries DEFAULT\+\_\+\+SEQUENCE\+\_\+\+TAG} = \textquotesingle{}tag\+:yaml.\+org,2002\+:seq\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classyaml_1_1resolver_1_1BaseResolver_a8e253f6902e55cf0f9832e81b6be91bc}\label{classyaml_1_1resolver_1_1BaseResolver_a8e253f6902e55cf0f9832e81b6be91bc}} 
+string {\bfseries DEFAULT\+\_\+\+MAPPING\+\_\+\+TAG} = \textquotesingle{}tag\+:yaml.\+org,2002\+:map\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classyaml_1_1resolver_1_1BaseResolver_a5f50f133502500c34ea4b8b98bda59ec}\label{classyaml_1_1resolver_1_1BaseResolver_a5f50f133502500c34ea4b8b98bda59ec}} 
+dictionary {\bfseries yaml\+\_\+implicit\+\_\+resolvers} = \{\}
+\item 
+\mbox{\Hypertarget{classyaml_1_1resolver_1_1BaseResolver_a46553b53c13858a720b3d94ea12a8470}\label{classyaml_1_1resolver_1_1BaseResolver_a46553b53c13858a720b3d94ea12a8470}} 
+dictionary {\bfseries yaml\+\_\+path\+\_\+resolvers} = \{\}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/yaml/resolver.\+py\end{DoxyCompactItemize}

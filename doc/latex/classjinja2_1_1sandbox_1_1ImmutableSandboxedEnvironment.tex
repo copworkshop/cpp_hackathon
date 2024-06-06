@@ -1,0 +1,47 @@
+\hypertarget{classjinja2_1_1sandbox_1_1ImmutableSandboxedEnvironment}{}\doxysection{jinja2.\+sandbox.\+Immutable\+Sandboxed\+Environment Class Reference}
+\label{classjinja2_1_1sandbox_1_1ImmutableSandboxedEnvironment}\index{jinja2.sandbox.ImmutableSandboxedEnvironment@{jinja2.sandbox.ImmutableSandboxedEnvironment}}
+
+
+Inheritance diagram for jinja2.\+sandbox.\+Immutable\+Sandboxed\+Environment\+:
+% FIG 0
+
+
+Collaboration diagram for jinja2.\+sandbox.\+Immutable\+Sandboxed\+Environment\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classjinja2_1_1sandbox_1_1ImmutableSandboxedEnvironment_a5b06f2c1df95c92cf0fc156ec02620ab}{is\+\_\+safe\+\_\+attribute}} (self, t.\+Any obj, str attr, t.\+Any value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Works exactly like the regular `SandboxedEnvironment` but does not
+permit modifications on the builtin mutable objects `list`, `set`, and
+`dict` by using the :func:`modifies_known_mutable` function.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classjinja2_1_1sandbox_1_1ImmutableSandboxedEnvironment_a5b06f2c1df95c92cf0fc156ec02620ab}\label{classjinja2_1_1sandbox_1_1ImmutableSandboxedEnvironment_a5b06f2c1df95c92cf0fc156ec02620ab}} 
+\index{jinja2.sandbox.ImmutableSandboxedEnvironment@{jinja2.sandbox.ImmutableSandboxedEnvironment}!is\_safe\_attribute@{is\_safe\_attribute}}
+\index{is\_safe\_attribute@{is\_safe\_attribute}!jinja2.sandbox.ImmutableSandboxedEnvironment@{jinja2.sandbox.ImmutableSandboxedEnvironment}}
+\doxysubsubsection{\texorpdfstring{is\_safe\_attribute()}{is\_safe\_attribute()}}
+{\footnotesize\ttfamily  bool jinja2.\+sandbox.\+Immutable\+Sandboxed\+Environment.\+is\+\_\+safe\+\_\+attribute (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{t.\+Any}]{obj,  }\item[{str}]{attr,  }\item[{t.\+Any}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The sandboxed environment will call this method to check if the
+attribute of an object is safe to access.  Per default all attributes
+starting with an underscore are considered private as well as the
+special attributes of internal python objects as returned by the
+:func:`is_internal_attribute` function.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1sandbox_1_1SandboxedEnvironment_af61c048f4a82d470d97d009b59a56a9a}{jinja2.\+sandbox.\+Sandboxed\+Environment}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jinja2/sandbox.\+py\end{DoxyCompactItemize}

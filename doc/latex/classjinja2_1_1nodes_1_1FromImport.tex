@@ -1,0 +1,35 @@
+\hypertarget{classjinja2_1_1nodes_1_1FromImport}{}\doxysection{jinja2.\+nodes.\+From\+Import Class Reference}
+\label{classjinja2_1_1nodes_1_1FromImport}\index{jinja2.nodes.FromImport@{jinja2.nodes.FromImport}}
+
+
+Inheritance diagram for jinja2.\+nodes.\+From\+Import\+:
+% FIG 0
+
+
+Collaboration diagram for jinja2.\+nodes.\+From\+Import\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjinja2_1_1nodes_1_1FromImport_ab87e7b6965fcd36ab1ee36b8158cc3cc}\label{classjinja2_1_1nodes_1_1FromImport_ab87e7b6965fcd36ab1ee36b8158cc3cc}} 
+tuple {\bfseries fields} = (\char`\"{}template\char`\"{}, \char`\"{}names\char`\"{}, \char`\"{}with\+\_\+context\char`\"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A node that represents the from import tag.  It's important to not
+pass unsafe names to the name attribute.  The compiler translates the
+attribute lookups directly into getattr calls and does *not* use the
+subscript callback of the interface.  As exported variables may not
+start with double underscores (which the parser asserts) this is not a
+problem for regular Jinja code, but if this node is used in an extension
+extra care must be taken.
+
+The list of names may contain tuples if aliases are wanted.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jinja2/nodes.\+py\end{DoxyCompactItemize}

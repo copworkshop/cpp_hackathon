@@ -1,0 +1,71 @@
+\hypertarget{classpygments_1_1lexers_1_1rita_1_1RitaLexer}{}\doxysection{pygments.\+lexers.\+rita.\+Rita\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1rita_1_1RitaLexer}\index{pygments.lexers.rita.RitaLexer@{pygments.lexers.rita.RitaLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+rita.\+Rita\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+rita.\+Rita\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rita_1_1RitaLexer_a23893521fefa7de9538ce75006e22ae9}\label{classpygments_1_1lexers_1_1rita_1_1RitaLexer_a23893521fefa7de9538ce75006e22ae9}} 
+string {\bfseries name} = \textquotesingle{}Rita\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rita_1_1RitaLexer_ad0c5e53006431a2efca62b6e54bd09c6}\label{classpygments_1_1lexers_1_1rita_1_1RitaLexer_ad0c5e53006431a2efca62b6e54bd09c6}} 
+string {\bfseries url} = \textquotesingle{}https\+://github.\+com/zaibacu/rita-\/dsl\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rita_1_1RitaLexer_a9bd51376ba4016c118724968a81f3556}\label{classpygments_1_1lexers_1_1rita_1_1RitaLexer_a9bd51376ba4016c118724968a81f3556}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.rita\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rita_1_1RitaLexer_ac069ab49d1ba8152e8df5bf3e5afdc9b}\label{classpygments_1_1lexers_1_1rita_1_1RitaLexer_ac069ab49d1ba8152e8df5bf3e5afdc9b}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}rita\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rita_1_1RitaLexer_a4ba873d031072a3e896022b8466a5499}\label{classpygments_1_1lexers_1_1rita_1_1RitaLexer_a4ba873d031072a3e896022b8466a5499}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/rita\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rita_1_1RitaLexer_a8de1d6dde63495171233271ba188e7d1}\label{classpygments_1_1lexers_1_1rita_1_1RitaLexer_a8de1d6dde63495171233271ba188e7d1}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+11\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for RITA.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rita_1_1RitaLexer_acf9dee60c0b8853cc93b6ebe160c0fa6}\label{classpygments_1_1lexers_1_1rita_1_1RitaLexer_acf9dee60c0b8853cc93b6ebe160c0fa6}} 
+\index{pygments.lexers.rita.RitaLexer@{pygments.lexers.rita.RitaLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.rita.RitaLexer@{pygments.lexers.rita.RitaLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+rita.\+Rita\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)n'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#(.*?)\(\backslash\)n'}, Comment.Single),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'@(.*?)\(\backslash\)n'}, Operator),  \textcolor{comment}{\# Yes, whole line as an operator}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'"{}(\(\backslash\)w|\(\backslash\)d|\(\backslash\)s|(\(\backslash\)\(\backslash\)"{})|[\(\backslash\)'\_\(\backslash\)-\/./,\(\backslash\)?\(\backslash\)!])+?"{}'}, Literal),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)'(\(\backslash\)w|\(\backslash\)d|\(\backslash\)s|(\(\backslash\)\(\backslash\)\(\backslash\)')|["{}\_\(\backslash\)-\/./,\(\backslash\)?\(\backslash\)!])+?\(\backslash\)''}, Literal),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'([A-\/Z\_]+)'}, Keyword),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'([a-\/z0-\/9\_]+)'}, Name),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'((-\/>)|[!?+*|=])'}, Operator),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\(\backslash\)(\(\backslash\)),\(\backslash\)\{\(\backslash\)\}]'}, Punctuation)}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/rita.\+py\end{DoxyCompactItemize}

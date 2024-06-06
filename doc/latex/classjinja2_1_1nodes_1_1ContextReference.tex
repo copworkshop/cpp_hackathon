@@ -1,0 +1,34 @@
+\hypertarget{classjinja2_1_1nodes_1_1ContextReference}{}\doxysection{jinja2.\+nodes.\+Context\+Reference Class Reference}
+\label{classjinja2_1_1nodes_1_1ContextReference}\index{jinja2.nodes.ContextReference@{jinja2.nodes.ContextReference}}
+
+
+Inheritance diagram for jinja2.\+nodes.\+Context\+Reference\+:
+% FIG 0
+
+
+Collaboration diagram for jinja2.\+nodes.\+Context\+Reference\+:
+% FIG 1
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Returns the current template context.  It can be used like a
+:class:`Name` node, with a ``'load'`` ctx and will return the
+current :class:`~jinja2.runtime.Context` object.
+
+Here an example that assigns the current template name to a
+variable named `foo`::
+
+    Assign(Name('foo', ctx='store'),
+           Getattr(ContextReference(), 'name'))
+
+This is basically equivalent to using the
+:func:`~jinja2.pass_context` decorator when using the high-level
+API, which causes a reference to the context to be passed as the
+first argument to a function.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jinja2/nodes.\+py\end{DoxyCompactItemize}

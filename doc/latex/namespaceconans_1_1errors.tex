@@ -1,0 +1,101 @@
+\hypertarget{namespaceconans_1_1errors}{}\doxysection{conans.\+errors Namespace Reference}
+\label{namespaceconans_1_1errors}\index{conans.errors@{conans.errors}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1CalledProcessErrorWithStderr}{Called\+Process\+Error\+With\+Stderr}}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1ConanException}{Conan\+Exception}}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1ConanV2Exception}{Conan\+V2\+Exception}}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1OnlyV2Available}{Only\+V2\+Available}}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1NoRestV2Available}{No\+Rest\+V2\+Available}}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1NoRemoteAvailable}{No\+Remote\+Available}}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1InvalidNameException}{Invalid\+Name\+Exception}}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1ConanConnectionError}{Conan\+Connection\+Error}}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1ConanOutdatedClient}{Conan\+Outdated\+Client}}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1ConanExceptionInUserConanfileMethod}{Conan\+Exception\+In\+User\+Conanfile\+Method}}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1ConanInvalidSystemRequirements}{Conan\+Invalid\+System\+Requirements}}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1ConanInvalidConfiguration}{Conan\+Invalid\+Configuration}}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1ConanMigrationError}{Conan\+Migration\+Error}}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1InternalErrorException}{Internal\+Error\+Exception}}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1RequestErrorException}{Request\+Error\+Exception}}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1AuthenticationException}{Authentication\+Exception}}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1ForbiddenException}{Forbidden\+Exception}}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1NotFoundException}{Not\+Found\+Exception}}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1RecipeNotFoundException}{Recipe\+Not\+Found\+Exception}}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1PackageNotFoundException}{Package\+Not\+Found\+Exception}}
+\item 
+class \mbox{\hyperlink{classconans_1_1errors_1_1UserInterfaceErrorException}{User\+Interface\+Error\+Exception}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceconans_1_1errors_ae591f6ceca45b2789ccfabb1d20931dd}{conanfile\+\_\+exception\+\_\+formatter}} (conanfile\+\_\+name, func\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dictionary {\bfseries EXCEPTION\+\_\+\+CODE\+\_\+\+MAPPING}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}    Exceptions raised and handled in Conan server.
+    These exceptions are mapped between server (as an HTTP response) and client
+    through the REST API. When an error happens in server its translated to an HTTP
+    error code that its sent to client. Client reads the server code and raise the
+    matching exception.
+
+    see return_plugin.py\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceconans_1_1errors_ae591f6ceca45b2789ccfabb1d20931dd}\label{namespaceconans_1_1errors_ae591f6ceca45b2789ccfabb1d20931dd}} 
+\index{conans.errors@{conans.errors}!conanfile\_exception\_formatter@{conanfile\_exception\_formatter}}
+\index{conanfile\_exception\_formatter@{conanfile\_exception\_formatter}!conans.errors@{conans.errors}}
+\doxysubsubsection{\texorpdfstring{conanfile\_exception\_formatter()}{conanfile\_exception\_formatter()}}
+{\footnotesize\ttfamily def conans.\+errors.\+conanfile\+\_\+exception\+\_\+formatter (\begin{DoxyParamCaption}\item[{}]{conanfile\+\_\+name,  }\item[{}]{func\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decorator to throw an exception formatted with the line of the conanfile where the error ocurrs.
+:param reference: Reference of the conanfile
+:return:
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceconans_1_1errors_adf78d0eed07ff846c66d6ead9895ff66}\label{namespaceconans_1_1errors_adf78d0eed07ff846c66d6ead9895ff66}} 
+\index{conans.errors@{conans.errors}!EXCEPTION\_CODE\_MAPPING@{EXCEPTION\_CODE\_MAPPING}}
+\index{EXCEPTION\_CODE\_MAPPING@{EXCEPTION\_CODE\_MAPPING}!conans.errors@{conans.errors}}
+\doxysubsubsection{\texorpdfstring{EXCEPTION\_CODE\_MAPPING}{EXCEPTION\_CODE\_MAPPING}}
+{\footnotesize\ttfamily dictionary conans.\+errors.\+EXCEPTION\+\_\+\+CODE\+\_\+\+MAPPING}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{InternalErrorException: 500,}
+\DoxyCodeLine{2                           RequestErrorException: 400,}
+\DoxyCodeLine{3                           AuthenticationException: 401,}
+\DoxyCodeLine{4                           ForbiddenException: 403,}
+\DoxyCodeLine{5                           NotFoundException: 404,}
+\DoxyCodeLine{6                           RecipeNotFoundException: 404,}
+\DoxyCodeLine{7                           PackageNotFoundException: 404,}
+\DoxyCodeLine{8                           UserInterfaceErrorException: 420\}}
+
+\end{DoxyCode}

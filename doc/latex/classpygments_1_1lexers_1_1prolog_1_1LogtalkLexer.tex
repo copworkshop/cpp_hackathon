@@ -1,0 +1,77 @@
+\hypertarget{classpygments_1_1lexers_1_1prolog_1_1LogtalkLexer}{}\doxysection{pygments.\+lexers.\+prolog.\+Logtalk\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1prolog_1_1LogtalkLexer}\index{pygments.lexers.prolog.LogtalkLexer@{pygments.lexers.prolog.LogtalkLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+prolog.\+Logtalk\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+prolog.\+Logtalk\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1prolog_1_1LogtalkLexer_aa03b245e99b27dc638c59615c208dc4b}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1prolog_1_1LogtalkLexer_a75804c9ccf562471b774a724dab4fdf4}\label{classpygments_1_1lexers_1_1prolog_1_1LogtalkLexer_a75804c9ccf562471b774a724dab4fdf4}} 
+string {\bfseries name} = \textquotesingle{}Logtalk\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1prolog_1_1LogtalkLexer_a8d0f5d9e9266376b699f201d70df020e}\label{classpygments_1_1lexers_1_1prolog_1_1LogtalkLexer_a8d0f5d9e9266376b699f201d70df020e}} 
+string {\bfseries url} = \textquotesingle{}http\+://logtalk.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1prolog_1_1LogtalkLexer_a6d72c259e9721fff43ab23ee537319ee}\label{classpygments_1_1lexers_1_1prolog_1_1LogtalkLexer_a6d72c259e9721fff43ab23ee537319ee}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}logtalk\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1prolog_1_1LogtalkLexer_ab4f69f3148d2e31f66b3ef41e6c77fc2}\label{classpygments_1_1lexers_1_1prolog_1_1LogtalkLexer_ab4f69f3148d2e31f66b3ef41e6c77fc2}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.lgt\textquotesingle{}, \textquotesingle{}$\ast$.logtalk\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1prolog_1_1LogtalkLexer_a0094e47cd8da0b58da0900ad9e74637d}\label{classpygments_1_1lexers_1_1prolog_1_1LogtalkLexer_a0094e47cd8da0b58da0900ad9e74637d}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/logtalk\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1prolog_1_1LogtalkLexer_a940e78dcea86ab4b8a2c96a3db6a8d45}\label{classpygments_1_1lexers_1_1prolog_1_1LogtalkLexer_a940e78dcea86ab4b8a2c96a3db6a8d45}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}0.\+10\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1prolog_1_1LogtalkLexer_ab6ca0e23d5637edec30b3b3e65fb16a2}\label{classpygments_1_1lexers_1_1prolog_1_1LogtalkLexer_ab6ca0e23d5637edec30b3b3e65fb16a2}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For Logtalk source code.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1prolog_1_1LogtalkLexer_aa03b245e99b27dc638c59615c208dc4b}\label{classpygments_1_1lexers_1_1prolog_1_1LogtalkLexer_aa03b245e99b27dc638c59615c208dc4b}} 
+\index{pygments.lexers.prolog.LogtalkLexer@{pygments.lexers.prolog.LogtalkLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.prolog.LogtalkLexer@{pygments.lexers.prolog.LogtalkLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+prolog.\+Logtalk\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/prolog.\+py\end{DoxyCompactItemize}

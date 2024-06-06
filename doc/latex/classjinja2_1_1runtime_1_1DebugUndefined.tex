@@ -1,0 +1,36 @@
+\hypertarget{classjinja2_1_1runtime_1_1DebugUndefined}{}\doxysection{jinja2.\+runtime.\+Debug\+Undefined Class Reference}
+\label{classjinja2_1_1runtime_1_1DebugUndefined}\index{jinja2.runtime.DebugUndefined@{jinja2.runtime.DebugUndefined}}
+
+
+Inheritance diagram for jinja2.\+runtime.\+Debug\+Undefined\+:
+% FIG 0
+
+
+Collaboration diagram for jinja2.\+runtime.\+Debug\+Undefined\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjinja2_1_1runtime_1_1DebugUndefined_a74029eed532813c4ddfbd7fbf28c053b}\label{classjinja2_1_1runtime_1_1DebugUndefined_a74029eed532813c4ddfbd7fbf28c053b}} 
+str {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An undefined that returns the debug info when printed.
+
+>>> foo = DebugUndefined(name='foo')
+>>> str(foo)
+'{{ foo }}'
+>>> not foo
+True
+>>> foo + 42
+Traceback (most recent call last):
+  ...
+jinja2.exceptions.UndefinedError: 'foo' is undefined
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jinja2/runtime.\+py\end{DoxyCompactItemize}

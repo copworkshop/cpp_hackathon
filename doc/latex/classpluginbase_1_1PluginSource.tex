@@ -1,0 +1,148 @@
+\hypertarget{classpluginbase_1_1PluginSource}{}\doxysection{pluginbase.\+Plugin\+Source Class Reference}
+\label{classpluginbase_1_1PluginSource}\index{pluginbase.PluginSource@{pluginbase.PluginSource}}
+
+
+Inheritance diagram for pluginbase.\+Plugin\+Source\+:
+% FIG 0
+
+
+Collaboration diagram for pluginbase.\+Plugin\+Source\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpluginbase_1_1PluginSource_a128419861cf658449fdb0b1a6ba6c2d0}\label{classpluginbase_1_1PluginSource_a128419861cf658449fdb0b1a6ba6c2d0}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, base, identifier=None, searchpath=None, persist=False)
+\item 
+\mbox{\Hypertarget{classpluginbase_1_1PluginSource_a58f6a14c59ea46d2e20ac739d2167302}\label{classpluginbase_1_1PluginSource_a58f6a14c59ea46d2e20ac739d2167302}} 
+def {\bfseries \+\_\+\+\_\+del\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classpluginbase_1_1PluginSource_a733153f89680474969418f0212f46578}{list\+\_\+plugins}} (self)
+\item 
+def \mbox{\hyperlink{classpluginbase_1_1PluginSource_a4b1484f5149e53b232a6587913626aac}{load\+\_\+plugin}} (self, name)
+\item 
+def \mbox{\hyperlink{classpluginbase_1_1PluginSource_a35345d7f866ca03b4d57af9242a55243}{open\+\_\+resource}} (self, plugin, filename)
+\item 
+def \mbox{\hyperlink{classpluginbase_1_1PluginSource_a7f67607c07d3567abbac844295b49d41}{cleanup}} (self)
+\item 
+\mbox{\Hypertarget{classpluginbase_1_1PluginSource_a38128c157f1fe458c854c7384521c4d6}\label{classpluginbase_1_1PluginSource_a38128c157f1fe458c854c7384521c4d6}} 
+def {\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classpluginbase_1_1PluginSource_a9b39428f2e961a51dd9cfb203f6fb4b5}\label{classpluginbase_1_1PluginSource_a9b39428f2e961a51dd9cfb203f6fb4b5}} 
+def {\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, exc\+\_\+type, exc\+\_\+value, tb)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpluginbase_1_1PluginSource_aef153658e8119aba64feac1320e8cedd}\label{classpluginbase_1_1PluginSource_aef153658e8119aba64feac1320e8cedd}} 
+{\bfseries persist}
+\item 
+\mbox{\Hypertarget{classpluginbase_1_1PluginSource_adfa448c56b61b0be25557f5de88aa7a2}\label{classpluginbase_1_1PluginSource_adfa448c56b61b0be25557f5de88aa7a2}} 
+{\bfseries identifier}
+\item 
+\mbox{\Hypertarget{classpluginbase_1_1PluginSource_ad0c1908ac9e635e54a9b983f55f92ffc}\label{classpluginbase_1_1PluginSource_ad0c1908ac9e635e54a9b983f55f92ffc}} 
+{\bfseries base}
+\item 
+\mbox{\Hypertarget{classpluginbase_1_1PluginSource_aa8ef18247e5ff03f678e25f923fb48c7}\label{classpluginbase_1_1PluginSource_aa8ef18247e5ff03f678e25f923fb48c7}} 
+{\bfseries searchpath}
+\item 
+\mbox{\Hypertarget{classpluginbase_1_1PluginSource_ad0a178e7c98d48425f9546a3d29bb6cc}\label{classpluginbase_1_1PluginSource_ad0a178e7c98d48425f9546a3d29bb6cc}} 
+{\bfseries spaceid}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpluginbase_1_1PluginSource_ac8a3c4146d91c97a6a033a04c0be8e3f}\label{classpluginbase_1_1PluginSource_ac8a3c4146d91c97a6a033a04c0be8e3f}} 
+bool {\bfseries persist} = False
+\item 
+\mbox{\Hypertarget{classpluginbase_1_1PluginSource_a8cf14c2622ac3bd2cf29370078fad23f}\label{classpluginbase_1_1PluginSource_a8cf14c2622ac3bd2cf29370078fad23f}} 
+{\bfseries mod} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The plugin source is what ultimately decides where plugins are
+loaded from.  Plugin bases can have multiple plugin sources which act
+as isolation layer.  While this is not a security system it generally
+is not possible for plugins from different sources to accidentally
+cross talk.
+
+Once a plugin source has been created it can be used in a ``with``
+statement to change the behavior of the ``import`` statement in the
+block to define which source to load the plugins from::
+
+    plugin_source = plugin_base.make_plugin_source(
+        searchpath=['./path/to/plugins', './path/to/more/plugins'])
+
+    with plugin_source:
+        from myapplication.plugins import my_plugin
+
+:param base: the base this plugin source belongs to.
+:param identifier: optionally a stable identifier.  If it's not defined
+                   a random identifier is picked.  It's useful to set this
+                   to a stable value to have consistent tracebacks
+                   between restarts and to support pickle.
+:param searchpath: a list of paths where plugins are looked for.
+:param persist: optionally this can be set to `True` and the plugins
+                will not be cleaned up when the plugin source gets
+                garbage collected.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpluginbase_1_1PluginSource_a7f67607c07d3567abbac844295b49d41}\label{classpluginbase_1_1PluginSource_a7f67607c07d3567abbac844295b49d41}} 
+\index{pluginbase.PluginSource@{pluginbase.PluginSource}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!pluginbase.PluginSource@{pluginbase.PluginSource}}
+\doxysubsubsection{\texorpdfstring{cleanup()}{cleanup()}}
+{\footnotesize\ttfamily def pluginbase.\+Plugin\+Source.\+cleanup (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Cleans up all loaded plugins manually.  This is necessary to
+call only if :attr:`persist` is enabled.  Otherwise this happens
+automatically when the source gets garbage collected.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpluginbase_1_1PluginSource_a733153f89680474969418f0212f46578}\label{classpluginbase_1_1PluginSource_a733153f89680474969418f0212f46578}} 
+\index{pluginbase.PluginSource@{pluginbase.PluginSource}!list\_plugins@{list\_plugins}}
+\index{list\_plugins@{list\_plugins}!pluginbase.PluginSource@{pluginbase.PluginSource}}
+\doxysubsubsection{\texorpdfstring{list\_plugins()}{list\_plugins()}}
+{\footnotesize\ttfamily def pluginbase.\+Plugin\+Source.\+list\+\_\+plugins (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a sorted list of all plugins that are available in this
+plugin source.  This can be useful to automatically discover plugins
+that are available and is usually used together with
+:meth:`load_plugin`.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpluginbase_1_1PluginSource_a4b1484f5149e53b232a6587913626aac}\label{classpluginbase_1_1PluginSource_a4b1484f5149e53b232a6587913626aac}} 
+\index{pluginbase.PluginSource@{pluginbase.PluginSource}!load\_plugin@{load\_plugin}}
+\index{load\_plugin@{load\_plugin}!pluginbase.PluginSource@{pluginbase.PluginSource}}
+\doxysubsubsection{\texorpdfstring{load\_plugin()}{load\_plugin()}}
+{\footnotesize\ttfamily def pluginbase.\+Plugin\+Source.\+load\+\_\+plugin (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This automatically loads a plugin by the given name from the
+current source and returns the module.  This is a convenient
+alternative to the import statement and saves you from invoking
+``__import__`` or a similar function yourself.
+
+:param name: the name of the plugin to load.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpluginbase_1_1PluginSource_a35345d7f866ca03b4d57af9242a55243}\label{classpluginbase_1_1PluginSource_a35345d7f866ca03b4d57af9242a55243}} 
+\index{pluginbase.PluginSource@{pluginbase.PluginSource}!open\_resource@{open\_resource}}
+\index{open\_resource@{open\_resource}!pluginbase.PluginSource@{pluginbase.PluginSource}}
+\doxysubsubsection{\texorpdfstring{open\_resource()}{open\_resource()}}
+{\footnotesize\ttfamily def pluginbase.\+Plugin\+Source.\+open\+\_\+resource (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plugin,  }\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function locates a resource inside the plugin and returns
+a byte stream to the contents of it.  If the resource cannot be
+loaded an :exc:`IOError` will be raised.  Only plugins that are
+real Python packages can contain resources.  Plain old Python
+modules do not allow this for obvious reasons.
+
+.. versionadded:: 0.3
+
+:param plugin: the name of the plugin to open the resource of.
+:param filename: the name of the file within the plugin to open.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pluginbase.\+py\end{DoxyCompactItemize}

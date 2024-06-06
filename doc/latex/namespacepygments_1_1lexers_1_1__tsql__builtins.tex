@@ -1,0 +1,96 @@
+\hypertarget{namespacepygments_1_1lexers_1_1__tsql__builtins}{}\doxysection{pygments.\+lexers.\+\_\+tsql\+\_\+builtins Namespace Reference}
+\label{namespacepygments_1_1lexers_1_1__tsql__builtins}\index{pygments.lexers.\_tsql\_builtins@{pygments.lexers.\_tsql\_builtins}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple {\bfseries OPERATORS}
+\item 
+tuple {\bfseries OPERATOR\+\_\+\+WORDS}
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1lexers_1_1__tsql__builtins_ac3fe963854f7d7f0057badfcfb53057d}\label{namespacepygments_1_1lexers_1_1__tsql__builtins_ac3fe963854f7d7f0057badfcfb53057d}} 
+{\bfseries KEYWORDS} = sorted(set(\+\_\+\+KEYWORDS\+\_\+\+FUTURE + \+\_\+\+KEYWORDS\+\_\+\+ODBC + \+\_\+\+KEYWORDS\+\_\+\+SERVER))
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1lexers_1_1__tsql__builtins_aea041617adcbaf5835b80c45a094441f}\label{namespacepygments_1_1lexers_1_1__tsql__builtins_aea041617adcbaf5835b80c45a094441f}} 
+tuple {\bfseries TYPES}
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1lexers_1_1__tsql__builtins_aead67afc333b7a7b03ee192e908068c7}\label{namespacepygments_1_1lexers_1_1__tsql__builtins_aead67afc333b7a7b03ee192e908068c7}} 
+tuple {\bfseries FUNCTIONS}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}    pygments.lexers._tsql_builtins
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    These are manually translated lists from https://msdn.microsoft.com.
+
+    :copyright: Copyright 2006-2024 by the Pygments team, see AUTHORS.
+    :license: BSD, see LICENSE for details.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepygments_1_1lexers_1_1__tsql__builtins_ad12912cefbb8aaaac00f4020069f49c8}\label{namespacepygments_1_1lexers_1_1__tsql__builtins_ad12912cefbb8aaaac00f4020069f49c8}} 
+\index{pygments.lexers.\_tsql\_builtins@{pygments.lexers.\_tsql\_builtins}!OPERATOR\_WORDS@{OPERATOR\_WORDS}}
+\index{OPERATOR\_WORDS@{OPERATOR\_WORDS}!pygments.lexers.\_tsql\_builtins@{pygments.lexers.\_tsql\_builtins}}
+\doxysubsubsection{\texorpdfstring{OPERATOR\_WORDS}{OPERATOR\_WORDS}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+\_\+tsql\+\_\+builtins.\+OPERATOR\+\_\+\+WORDS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  (}
+\DoxyCodeLine{2     \textcolor{stringliteral}{'all'},}
+\DoxyCodeLine{3     \textcolor{stringliteral}{'and'},}
+\DoxyCodeLine{4     \textcolor{stringliteral}{'any'},}
+\DoxyCodeLine{5     \textcolor{stringliteral}{'between'},}
+\DoxyCodeLine{6     \textcolor{stringliteral}{'except'},}
+\DoxyCodeLine{7     \textcolor{stringliteral}{'exists'},}
+\DoxyCodeLine{8     \textcolor{stringliteral}{'in'},}
+\DoxyCodeLine{9     \textcolor{stringliteral}{'intersect'},}
+\DoxyCodeLine{10     \textcolor{stringliteral}{'like'},}
+\DoxyCodeLine{11     \textcolor{stringliteral}{'not'},}
+\DoxyCodeLine{12     \textcolor{stringliteral}{'or'},}
+\DoxyCodeLine{13     \textcolor{stringliteral}{'some'},}
+\DoxyCodeLine{14     \textcolor{stringliteral}{'union'},}
+\DoxyCodeLine{15 )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepygments_1_1lexers_1_1__tsql__builtins_aad5de20aebfcf6e45ef5b2e8fbecb861}\label{namespacepygments_1_1lexers_1_1__tsql__builtins_aad5de20aebfcf6e45ef5b2e8fbecb861}} 
+\index{pygments.lexers.\_tsql\_builtins@{pygments.lexers.\_tsql\_builtins}!OPERATORS@{OPERATORS}}
+\index{OPERATORS@{OPERATORS}!pygments.lexers.\_tsql\_builtins@{pygments.lexers.\_tsql\_builtins}}
+\doxysubsubsection{\texorpdfstring{OPERATORS}{OPERATORS}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+\_\+tsql\+\_\+builtins.\+OPERATORS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  (}
+\DoxyCodeLine{2     \textcolor{stringliteral}{'!<'},}
+\DoxyCodeLine{3     \textcolor{stringliteral}{'!='},}
+\DoxyCodeLine{4     \textcolor{stringliteral}{'!>'},}
+\DoxyCodeLine{5     \textcolor{stringliteral}{'<'},}
+\DoxyCodeLine{6     \textcolor{stringliteral}{'<='},}
+\DoxyCodeLine{7     \textcolor{stringliteral}{'<>'},}
+\DoxyCodeLine{8     \textcolor{stringliteral}{'='},}
+\DoxyCodeLine{9     \textcolor{stringliteral}{'>'},}
+\DoxyCodeLine{10     \textcolor{stringliteral}{'>='},}
+\DoxyCodeLine{11     \textcolor{stringliteral}{'+'},}
+\DoxyCodeLine{12     \textcolor{stringliteral}{'+='},}
+\DoxyCodeLine{13     \textcolor{stringliteral}{'-\/'},}
+\DoxyCodeLine{14     \textcolor{stringliteral}{'-\/='},}
+\DoxyCodeLine{15     \textcolor{stringliteral}{'*'},}
+\DoxyCodeLine{16     \textcolor{stringliteral}{'*='},}
+\DoxyCodeLine{17     \textcolor{stringliteral}{'/'},}
+\DoxyCodeLine{18     \textcolor{stringliteral}{'/='},}
+\DoxyCodeLine{19     \textcolor{stringliteral}{'\%'},}
+\DoxyCodeLine{20     \textcolor{stringliteral}{'\%='},}
+\DoxyCodeLine{21     \textcolor{stringliteral}{'\&'},}
+\DoxyCodeLine{22     \textcolor{stringliteral}{'\&='},}
+\DoxyCodeLine{23     \textcolor{stringliteral}{'|'},}
+\DoxyCodeLine{24     \textcolor{stringliteral}{'|='},}
+\DoxyCodeLine{25     \textcolor{stringliteral}{'\string^'},}
+\DoxyCodeLine{26     \textcolor{stringliteral}{'\string^='},}
+\DoxyCodeLine{27     \textcolor{stringliteral}{'\string~'},}
+\DoxyCodeLine{28     \textcolor{stringliteral}{'::'},}
+\DoxyCodeLine{29 )}
+
+\end{DoxyCode}

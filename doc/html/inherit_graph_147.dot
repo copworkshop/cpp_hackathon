@@ -1,0 +1,24 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3167 [label="UnicodeError",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3167 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="idna.core.IDNAError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classidna_1_1core_1_1IDNAError.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="idna.core.IDNABidiError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classidna_1_1core_1_1IDNABidiError.html",tooltip=" "];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="idna.core.InvalidCodepoint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classidna_1_1core_1_1InvalidCodepoint.html",tooltip=" "];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="idna.core.InvalidCodepoint\lContext",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classidna_1_1core_1_1InvalidCodepointContext.html",tooltip=" "];
+  Node3167 -> Node3172 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3172 [label="pip._vendor.idna.core.IDNAError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1idna_1_1core_1_1IDNAError.html",tooltip=" "];
+  Node3172 -> Node3173 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3173 [label="pip._vendor.idna.core.IDNABidi\lError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1idna_1_1core_1_1IDNABidiError.html",tooltip=" "];
+  Node3172 -> Node3174 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3174 [label="pip._vendor.idna.core.Invalid\lCodepoint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1idna_1_1core_1_1InvalidCodepoint.html",tooltip=" "];
+  Node3172 -> Node3175 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3175 [label="pip._vendor.idna.core.Invalid\lCodepointContext",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1idna_1_1core_1_1InvalidCodepointContext.html",tooltip=" "];
+}

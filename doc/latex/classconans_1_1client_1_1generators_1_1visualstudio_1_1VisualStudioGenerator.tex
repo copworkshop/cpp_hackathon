@@ -1,0 +1,68 @@
+\hypertarget{classconans_1_1client_1_1generators_1_1visualstudio_1_1VisualStudioGenerator}{}\doxysection{conans.\+client.\+generators.\+visualstudio.\+Visual\+Studio\+Generator Class Reference}
+\label{classconans_1_1client_1_1generators_1_1visualstudio_1_1VisualStudioGenerator}\index{conans.client.generators.visualstudio.VisualStudioGenerator@{conans.client.generators.visualstudio.VisualStudioGenerator}}
+
+
+Inheritance diagram for conans.\+client.\+generators.\+visualstudio.\+Visual\+Studio\+Generator\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+generators.\+visualstudio.\+Visual\+Studio\+Generator\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1generators_1_1visualstudio_1_1VisualStudioGenerator_ae7f88eff3f25840d63ea3de83fb6cf4e}\label{classconans_1_1client_1_1generators_1_1visualstudio_1_1VisualStudioGenerator_ae7f88eff3f25840d63ea3de83fb6cf4e}} 
+def {\bfseries filename} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1generators_1_1visualstudio_1_1VisualStudioGenerator_ab4844b377fa5363b14ecbc7a3da35d4b}\label{classconans_1_1client_1_1generators_1_1visualstudio_1_1VisualStudioGenerator_ab4844b377fa5363b14ecbc7a3da35d4b}} 
+def {\bfseries content} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries template}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1generators_1_1visualstudio_1_1VisualStudioGenerator_ad6df49f8f211d1b9b8af793f7bc5f9a5}\label{classconans_1_1client_1_1generators_1_1visualstudio_1_1VisualStudioGenerator_ad6df49f8f211d1b9b8af793f7bc5f9a5}} 
+string {\bfseries properties\+\_\+template}
+\item 
+string {\bfseries item\+\_\+template}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1generators_1_1visualstudio_1_1VisualStudioGenerator_a82f472a980c1ea6547f3be78656edee5}\label{classconans_1_1client_1_1generators_1_1visualstudio_1_1VisualStudioGenerator_a82f472a980c1ea6547f3be78656edee5}} 
+\index{conans.client.generators.visualstudio.VisualStudioGenerator@{conans.client.generators.visualstudio.VisualStudioGenerator}!item\_template@{item\_template}}
+\index{item\_template@{item\_template}!conans.client.generators.visualstudio.VisualStudioGenerator@{conans.client.generators.visualstudio.VisualStudioGenerator}}
+\doxysubsubsection{\texorpdfstring{item\_template}{item\_template}}
+{\footnotesize\ttfamily string conans.\+client.\+generators.\+visualstudio.\+Visual\+Studio\+Generator.\+item\+\_\+template\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \textcolor{stringliteral}{'''}}
+\DoxyCodeLine{\textcolor{stringliteral}{    <Conan-\/\{name\}-\/Root>\{root\_dir\}</Conan-\/\{name\}-\/Root>'''}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classconans_1_1client_1_1generators_1_1visualstudio_1_1VisualStudioGenerator_a2b5223cf9c44c68c2dbc67b32865c895}\label{classconans_1_1client_1_1generators_1_1visualstudio_1_1VisualStudioGenerator_a2b5223cf9c44c68c2dbc67b32865c895}} 
+\index{conans.client.generators.visualstudio.VisualStudioGenerator@{conans.client.generators.visualstudio.VisualStudioGenerator}!template@{template}}
+\index{template@{template}!conans.client.generators.visualstudio.VisualStudioGenerator@{conans.client.generators.visualstudio.VisualStudioGenerator}}
+\doxysubsubsection{\texorpdfstring{template}{template}}
+{\footnotesize\ttfamily string conans.\+client.\+generators.\+visualstudio.\+Visual\+Studio\+Generator.\+template\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \textcolor{stringliteral}{'''<?xml version="{}1.0"{} encoding="{}utf-\/8"{}?>}}
+\DoxyCodeLine{\textcolor{stringliteral}{<Project ToolsVersion="{}4.0"{} xmlns="{}http://schemas.microsoft.com/developer/msbuild/2003"{}>}}
+\DoxyCodeLine{\textcolor{stringliteral}{  <ImportGroup Label="{}PropertySheets"{} />}}
+\DoxyCodeLine{\textcolor{stringliteral}{  <PropertyGroup Label="{}UserMacros"{} />}}
+\DoxyCodeLine{\textcolor{stringliteral}{  <PropertyGroup Label="{}Conan-\/RootDirs"{}>\{item\_properties\}}}
+\DoxyCodeLine{\textcolor{stringliteral}{  </PropertyGroup>}}
+\DoxyCodeLine{\textcolor{stringliteral}{  \{properties\}}}
+\DoxyCodeLine{\textcolor{stringliteral}{  <ItemGroup />}}
+\DoxyCodeLine{\textcolor{stringliteral}{</Project>'''}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/generators/visualstudio.\+py\end{DoxyCompactItemize}

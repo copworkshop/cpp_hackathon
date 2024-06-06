@@ -1,0 +1,38 @@
+\hypertarget{struct__xsltElemPreComp}{}\doxysection{\+\_\+xslt\+Elem\+Pre\+Comp Struct Reference}
+\label{struct__xsltElemPreComp}\index{\_xsltElemPreComp@{\_xsltElemPreComp}}
+
+
+{\ttfamily \#include $<$xslt\+Internals.\+h$>$}
+
+
+
+Collaboration diagram for \+\_\+xslt\+Elem\+Pre\+Comp\+:
+% FIG 0
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct__xsltElemPreComp_a0b87d31043960e0975afb2cbe708400f}\label{struct__xsltElemPreComp_a0b87d31043960e0975afb2cbe708400f}} 
+\mbox{\hyperlink{struct__xsltElemPreComp}{xslt\+Elem\+Pre\+Comp\+Ptr}} {\bfseries next}
+\item 
+\mbox{\Hypertarget{struct__xsltElemPreComp_a722aac07f32fc092e21577f9d808cfb0}\label{struct__xsltElemPreComp_a722aac07f32fc092e21577f9d808cfb0}} 
+xslt\+Style\+Type {\bfseries type}
+\item 
+\mbox{\Hypertarget{struct__xsltElemPreComp_ab6b1602b503b5b0415fcf6036ec3b347}\label{struct__xsltElemPreComp_ab6b1602b503b5b0415fcf6036ec3b347}} 
+xslt\+Transform\+Function {\bfseries func}
+\item 
+\mbox{\Hypertarget{struct__xsltElemPreComp_acb617a5e1706482bfd24c5253417626f}\label{struct__xsltElemPreComp_acb617a5e1706482bfd24c5253417626f}} 
+xml\+Node\+Ptr {\bfseries inst}
+\item 
+\mbox{\Hypertarget{struct__xsltElemPreComp_a04141bfdfc01d832823774e5bc8b3952}\label{struct__xsltElemPreComp_a04141bfdfc01d832823774e5bc8b3952}} 
+xslt\+Elem\+Pre\+Comp\+Deallocator {\bfseries free}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+xslt\+Elem\+Pre\+Comp\+:
+
+The basic structure for compiled items of the AST of the XSLT processor. This structure is also intended to be extended by extension implementors. TODO\+: This is somehow not nice, since it has a \char`\"{}free\char`\"{} field, which derived stylesheet-\/structs do not have. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/lxml/includes/libxslt/xslt\+Internals.\+h\end{DoxyCompactItemize}

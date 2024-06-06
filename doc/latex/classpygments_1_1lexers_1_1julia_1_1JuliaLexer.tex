@@ -1,0 +1,77 @@
+\hypertarget{classpygments_1_1lexers_1_1julia_1_1JuliaLexer}{}\doxysection{pygments.\+lexers.\+julia.\+Julia\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1julia_1_1JuliaLexer}\index{pygments.lexers.julia.JuliaLexer@{pygments.lexers.julia.JuliaLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+julia.\+Julia\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+julia.\+Julia\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1julia_1_1JuliaLexer_abdf63d9b9bf49774aa31f5fe5e7aa510}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1julia_1_1JuliaLexer_a2d4e226fbca17c17746a1ecec10b760f}\label{classpygments_1_1lexers_1_1julia_1_1JuliaLexer_a2d4e226fbca17c17746a1ecec10b760f}} 
+string {\bfseries name} = \textquotesingle{}Julia\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1julia_1_1JuliaLexer_a0e3bcb66f5a5d3cf8248e6dc2c803fe4}\label{classpygments_1_1lexers_1_1julia_1_1JuliaLexer_a0e3bcb66f5a5d3cf8248e6dc2c803fe4}} 
+string {\bfseries url} = \textquotesingle{}https\+://julialang.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1julia_1_1JuliaLexer_adac884668d12d865d6e2b1a05c56ebf3}\label{classpygments_1_1lexers_1_1julia_1_1JuliaLexer_adac884668d12d865d6e2b1a05c56ebf3}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}julia\textquotesingle{}, \textquotesingle{}jl\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1julia_1_1JuliaLexer_a7f0060e90c78a8831657c92d44f562c2}\label{classpygments_1_1lexers_1_1julia_1_1JuliaLexer_a7f0060e90c78a8831657c92d44f562c2}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.jl\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1julia_1_1JuliaLexer_a6bcfaaad917baae960620ef563e39df7}\label{classpygments_1_1lexers_1_1julia_1_1JuliaLexer_a6bcfaaad917baae960620ef563e39df7}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/julia\textquotesingle{}, \textquotesingle{}application/x-\/julia\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1julia_1_1JuliaLexer_a14301534f48e89fcf2ac78259d0530ea}\label{classpygments_1_1lexers_1_1julia_1_1JuliaLexer_a14301534f48e89fcf2ac78259d0530ea}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+6\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1julia_1_1JuliaLexer_a3b28bbd97b51935051811db7e8c32f83}\label{classpygments_1_1lexers_1_1julia_1_1JuliaLexer_a3b28bbd97b51935051811db7e8c32f83}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For Julia source code.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1julia_1_1JuliaLexer_abdf63d9b9bf49774aa31f5fe5e7aa510}\label{classpygments_1_1lexers_1_1julia_1_1JuliaLexer_abdf63d9b9bf49774aa31f5fe5e7aa510}} 
+\index{pygments.lexers.julia.JuliaLexer@{pygments.lexers.julia.JuliaLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.julia.JuliaLexer@{pygments.lexers.julia.JuliaLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+julia.\+Julia\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/julia.\+py\end{DoxyCompactItemize}

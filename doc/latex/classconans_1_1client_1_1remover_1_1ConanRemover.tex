@@ -1,0 +1,44 @@
+\hypertarget{classconans_1_1client_1_1remover_1_1ConanRemover}{}\doxysection{conans.\+client.\+remover.\+Conan\+Remover Class Reference}
+\label{classconans_1_1client_1_1remover_1_1ConanRemover}\index{conans.client.remover.ConanRemover@{conans.client.remover.ConanRemover}}
+
+
+Inheritance diagram for conans.\+client.\+remover.\+Conan\+Remover\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+remover.\+Conan\+Remover\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1remover_1_1ConanRemover_affb1c9802bb7e10947696cf1f22f1d05}\label{classconans_1_1client_1_1remover_1_1ConanRemover_affb1c9802bb7e10947696cf1f22f1d05}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, cache, remote\+\_\+manager, user\+\_\+io, remotes)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1remover_1_1ConanRemover_a52097a25e3539dfc51b3837ea2bdcb69}{remove}} (self, pattern, remote\+\_\+name, src=None, build\+\_\+ids=None, package\+\_\+ids\+\_\+filter=None, force=False, packages\+\_\+query=None, outdated=False)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} Class responsible for removing locally/remotely conans, package folders, etc. \end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1remover_1_1ConanRemover_a52097a25e3539dfc51b3837ea2bdcb69}\label{classconans_1_1client_1_1remover_1_1ConanRemover_a52097a25e3539dfc51b3837ea2bdcb69}} 
+\index{conans.client.remover.ConanRemover@{conans.client.remover.ConanRemover}!remove@{remove}}
+\index{remove@{remove}!conans.client.remover.ConanRemover@{conans.client.remover.ConanRemover}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily def conans.\+client.\+remover.\+Conan\+Remover.\+remove (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pattern,  }\item[{}]{remote\+\_\+name,  }\item[{}]{src = {\ttfamily None},  }\item[{}]{build\+\_\+ids = {\ttfamily None},  }\item[{}]{package\+\_\+ids\+\_\+filter = {\ttfamily None},  }\item[{}]{force = {\ttfamily False},  }\item[{}]{packages\+\_\+query = {\ttfamily None},  }\item[{}]{outdated = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Remove local/remote conans, package folders, etc.
+@param src: Remove src folder
+@param pattern: it could be OpenCV* or OpenCV or a ConanFileReference
+@param build_ids: Lists with ids or empty for all. (Its a filter)
+@param package_ids_filter: Lists with ids or empty for all. (Its a filter)
+@param force: if True, it will be deleted without requesting anything
+@param packages_query: Only if src is a reference. Query settings and options
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/remover.\+py\end{DoxyCompactItemize}

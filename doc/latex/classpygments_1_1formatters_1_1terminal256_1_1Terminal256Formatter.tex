@@ -1,0 +1,130 @@
+\hypertarget{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter}{}\doxysection{pygments.\+formatters.\+terminal256.\+Terminal256\+Formatter Class Reference}
+\label{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter}\index{pygments.formatters.terminal256.Terminal256Formatter@{pygments.formatters.terminal256.Terminal256Formatter}}
+
+
+Inheritance diagram for pygments.\+formatters.\+terminal256.\+Terminal256\+Formatter\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+formatters.\+terminal256.\+Terminal256\+Formatter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_afe80a5d79e7bb29704144a656283cc76}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_a6f2dda19678ebebdc7bcdbe1a5d4cc00}{format}} (self, tokensource, outfile)
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_a74e453aa9a52b535dd873c09315b9c8c}\label{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_a74e453aa9a52b535dd873c09315b9c8c}} 
+def {\bfseries format\+\_\+unencoded} (self, tokensource, outfile)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_aff44b207c1b2184e238e0ad087c5a968}\label{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_aff44b207c1b2184e238e0ad087c5a968}} 
+{\bfseries xterm\+\_\+colors}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_ae94a484ff7410651bf55d2d8043756ad}\label{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_ae94a484ff7410651bf55d2d8043756ad}} 
+{\bfseries best\+\_\+match}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_a3c4783df3bb598c454c1213f80c24517}\label{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_a3c4783df3bb598c454c1213f80c24517}} 
+{\bfseries style\+\_\+string}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_a1ba664b2e1b091fb8cbcd7b9f5f8028a}\label{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_a1ba664b2e1b091fb8cbcd7b9f5f8028a}} 
+{\bfseries usebold}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_aa5814efcb1141c8de62a73c928679662}\label{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_aa5814efcb1141c8de62a73c928679662}} 
+{\bfseries useunderline}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_a1d76d32ebfb142f48c6819502f2525be}\label{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_a1d76d32ebfb142f48c6819502f2525be}} 
+{\bfseries useitalic}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_a85c1d7587660320a8bccc74463c80cf3}\label{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_a85c1d7587660320a8bccc74463c80cf3}} 
+{\bfseries linenos}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_a220ac37567b5b4d76234bafe722cee26}\label{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_a220ac37567b5b4d76234bafe722cee26}} 
+string {\bfseries name} = \textquotesingle{}Terminal256\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_ac5a0f1083201526e043054cb79bb7619}\label{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_ac5a0f1083201526e043054cb79bb7619}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}terminal256\textquotesingle{}, \textquotesingle{}console256\textquotesingle{}, \textquotesingle{}256\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_a18205025760d70b4b0543d34f13beca7}\label{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_a18205025760d70b4b0543d34f13beca7}} 
+list {\bfseries filenames} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Format tokens with ANSI color sequences, for output in a 256-color
+terminal or console.  Like in `TerminalFormatter` color sequences
+are terminated at newlines, so that paging the output works correctly.
+
+The formatter takes colors from a style defined by the `style` option
+and converts them to nearest ANSI 256-color escape sequences. Bold and
+underline attributes from the style are preserved (and displayed).
+
+.. versionadded:: 0.9
+
+.. versionchanged:: 2.2
+   If the used style defines foreground colors in the form ``#ansi*``, then
+   `Terminal256Formatter` will map these to non extended foreground color.
+   See :ref:`AnsiTerminalStyle` for more information.
+
+.. versionchanged:: 2.4
+   The ANSI color names have been updated with names that are easier to
+   understand and align with colornames of other projects and terminals.
+   See :ref:`this table <new-ansi-color-names>` for more information.
+
+
+Options accepted:
+
+`style`
+    The style to use, can be a string or a Style subclass (default:
+    ``'default'``).
+
+`linenos`
+    Set to ``True`` to have line numbers on the terminal output as well
+    (default: ``False`` = no line numbers).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_afe80a5d79e7bb29704144a656283cc76}\label{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_afe80a5d79e7bb29704144a656283cc76}} 
+\index{pygments.formatters.terminal256.Terminal256Formatter@{pygments.formatters.terminal256.Terminal256Formatter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.formatters.terminal256.Terminal256Formatter@{pygments.formatters.terminal256.Terminal256Formatter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+formatters.\+terminal256.\+Terminal256\+Formatter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}As with lexers, this constructor takes arbitrary optional arguments,
+and if you override it, you should first process your own options, then
+call the base class implementation.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1formatter_1_1Formatter_a010d28265423e3708a1d4199975fcbbd}{pygments.\+formatter.\+Formatter}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_a6f2dda19678ebebdc7bcdbe1a5d4cc00}\label{classpygments_1_1formatters_1_1terminal256_1_1Terminal256Formatter_a6f2dda19678ebebdc7bcdbe1a5d4cc00}} 
+\index{pygments.formatters.terminal256.Terminal256Formatter@{pygments.formatters.terminal256.Terminal256Formatter}!format@{format}}
+\index{format@{format}!pygments.formatters.terminal256.Terminal256Formatter@{pygments.formatters.terminal256.Terminal256Formatter}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily def pygments.\+formatters.\+terminal256.\+Terminal256\+Formatter.\+format (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tokensource,  }\item[{}]{outfile }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method must format the tokens from the `tokensource` iterable and
+write the formatted version to the file object `outfile`.
+
+Formatter options can control how exactly the tokens are converted.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1formatter_1_1Formatter_aa7ce771b65380920e24d47aa409ef34d}{pygments.\+formatter.\+Formatter}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/formatters/terminal256.\+py\end{DoxyCompactItemize}

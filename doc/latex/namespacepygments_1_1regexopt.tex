@@ -1,0 +1,57 @@
+\hypertarget{namespacepygments_1_1regexopt}{}\doxysection{pygments.\+regexopt Namespace Reference}
+\label{namespacepygments_1_1regexopt}\index{pygments.regexopt@{pygments.regexopt}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1regexopt_afb1cc605156fd9710dda498a3262b2ac}\label{namespacepygments_1_1regexopt_afb1cc605156fd9710dda498a3262b2ac}} 
+def {\bfseries make\+\_\+charset} (letters)
+\item 
+def \mbox{\hyperlink{namespacepygments_1_1regexopt_a8e9f07fdd6279e7bd35e50ac8eeec3a6}{regex\+\_\+opt\+\_\+inner}} (strings, open\+\_\+paren)
+\item 
+def \mbox{\hyperlink{namespacepygments_1_1regexopt_afaf62d634b24e670c7eda3fb233db499}{regex\+\_\+opt}} (strings, prefix=\textquotesingle{}\textquotesingle{}, suffix=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1regexopt_a24270d9073aeb88292e1506302e640f6}\label{namespacepygments_1_1regexopt_a24270d9073aeb88292e1506302e640f6}} 
+{\bfseries CS\+\_\+\+ESCAPE} = re.\+compile(r\textquotesingle{}\mbox{[}\textbackslash{}\mbox{[}\textbackslash{}$^\wedge$\textbackslash{}\textbackslash{}\textbackslash{}-\/\textbackslash{}\mbox{]}\mbox{]}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1regexopt_a1a04c26f630771da3341e8ec2cdebbd1}\label{namespacepygments_1_1regexopt_a1a04c26f630771da3341e8ec2cdebbd1}} 
+{\bfseries FIRST\+\_\+\+ELEMENT} = itemgetter(0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}    pygments.regexopt
+    ~~~~~~~~~~~~~~~~~
+
+    An algorithm that generates optimized regexes for matching long lists of
+    literal strings.
+
+    :copyright: Copyright 2006-2024 by the Pygments team, see AUTHORS.
+    :license: BSD, see LICENSE for details.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepygments_1_1regexopt_afaf62d634b24e670c7eda3fb233db499}\label{namespacepygments_1_1regexopt_afaf62d634b24e670c7eda3fb233db499}} 
+\index{pygments.regexopt@{pygments.regexopt}!regex\_opt@{regex\_opt}}
+\index{regex\_opt@{regex\_opt}!pygments.regexopt@{pygments.regexopt}}
+\doxysubsubsection{\texorpdfstring{regex\_opt()}{regex\_opt()}}
+{\footnotesize\ttfamily def pygments.\+regexopt.\+regex\+\_\+opt (\begin{DoxyParamCaption}\item[{}]{strings,  }\item[{}]{prefix = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{suffix = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a compiled regex that matches any string in the given list.
+
+The strings to match must be literal strings, not regexes.  They will be
+regex-escaped.
+
+*prefix* and *suffix* are pre- and appended to the final regex.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygments_1_1regexopt_a8e9f07fdd6279e7bd35e50ac8eeec3a6}\label{namespacepygments_1_1regexopt_a8e9f07fdd6279e7bd35e50ac8eeec3a6}} 
+\index{pygments.regexopt@{pygments.regexopt}!regex\_opt\_inner@{regex\_opt\_inner}}
+\index{regex\_opt\_inner@{regex\_opt\_inner}!pygments.regexopt@{pygments.regexopt}}
+\doxysubsubsection{\texorpdfstring{regex\_opt\_inner()}{regex\_opt\_inner()}}
+{\footnotesize\ttfamily def pygments.\+regexopt.\+regex\+\_\+opt\+\_\+inner (\begin{DoxyParamCaption}\item[{}]{strings,  }\item[{}]{open\+\_\+paren }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a regex that matches any string in the sorted list of strings.\end{DoxyVerb}
+ 

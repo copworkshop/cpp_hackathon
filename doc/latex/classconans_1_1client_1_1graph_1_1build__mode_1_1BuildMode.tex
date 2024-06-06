@@ -1,0 +1,62 @@
+\hypertarget{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode}{}\doxysection{conans.\+client.\+graph.\+build\+\_\+mode.\+Build\+Mode Class Reference}
+\label{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode}\index{conans.client.graph.build\_mode.BuildMode@{conans.client.graph.build\_mode.BuildMode}}
+
+
+Inheritance diagram for conans.\+client.\+graph.\+build\+\_\+mode.\+Build\+Mode\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+graph.\+build\+\_\+mode.\+Build\+Mode\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode_a3828263eda24f1021476cea135f2d3c1}\label{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode_a3828263eda24f1021476cea135f2d3c1}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, params, output)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode_a67ce0c44495017e65fd01d21c4ae9ed8}\label{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode_a67ce0c44495017e65fd01d21c4ae9ed8}} 
+def {\bfseries forced} (self, conan\+\_\+file, ref, with\+\_\+deps\+\_\+to\+\_\+build=False)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode_a91c7a083910cda94450f51bb03c287df}\label{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode_a91c7a083910cda94450f51bb03c287df}} 
+def {\bfseries allowed} (self, conan\+\_\+file)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode_a4da1cbab9ad9325fb550bdf17372d917}\label{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode_a4da1cbab9ad9325fb550bdf17372d917}} 
+def {\bfseries report\+\_\+matches} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode_a2ba2cca61e4cbc6b8d835dae3a70daef}\label{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode_a2ba2cca61e4cbc6b8d835dae3a70daef}} 
+{\bfseries outdated}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode_ae2b65b6fe7a890047ebbb1765965d364}\label{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode_ae2b65b6fe7a890047ebbb1765965d364}} 
+{\bfseries missing}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode_abff23a516008592cda2e8595daec9ded}\label{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode_abff23a516008592cda2e8595daec9ded}} 
+{\bfseries never}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode_ac0822e3274d1c4b7429568eb19579111}\label{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode_ac0822e3274d1c4b7429568eb19579111}} 
+{\bfseries cascade}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode_aeb138d6f0929d87b7df21a32d463d279}\label{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode_aeb138d6f0929d87b7df21a32d463d279}} 
+{\bfseries patterns}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode_ab5afbf93d8f5fc79e811cf8eb912e34e}\label{classconans_1_1client_1_1graph_1_1build__mode_1_1BuildMode_ab5afbf93d8f5fc79e811cf8eb912e34e}} 
+{\bfseries all}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} build_mode => ["*"] if user wrote "--build"
+               => ["hello*", "bye*"] if user wrote "--build hello --build bye"
+               => ["hello/0.1@foo/bar"] if user wrote "--build hello/0.1@foo/bar"
+               => False if user wrote "never"
+               => True if user wrote "missing"
+               => "outdated" if user wrote "--build outdated"
+               => ["!foo"] means exclude when building all from sources
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/graph/build\+\_\+mode.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+\hypertarget{namespacetqdm_1_1contrib_1_1slack}{}\doxysection{tqdm.\+contrib.\+slack Namespace Reference}
+\label{namespacetqdm_1_1contrib_1_1slack}\index{tqdm.contrib.slack@{tqdm.contrib.slack}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1contrib_1_1slack_1_1SlackIO}{Slack\+IO}}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1contrib_1_1slack_1_1tqdm__slack}{tqdm\+\_\+slack}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacetqdm_1_1contrib_1_1slack_aa3b0db750d62b71b04eb7ca0c68931d5}{tsrange}} ($\ast$args, $\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1contrib_1_1slack_a5b76df4abc47ab34c7c23f77d5bd3ff8}\label{namespacetqdm_1_1contrib_1_1slack_a5b76df4abc47ab34c7c23f77d5bd3ff8}} 
+{\bfseries tqdm} = \mbox{\hyperlink{classtqdm_1_1contrib_1_1slack_1_1tqdm__slack}{tqdm\+\_\+slack}}
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1contrib_1_1slack_a9a95c7c4ce0a7b371f1cc81e6998def0}\label{namespacetqdm_1_1contrib_1_1slack_a9a95c7c4ce0a7b371f1cc81e6998def0}} 
+def {\bfseries trange} = \mbox{\hyperlink{namespacetqdm_1_1contrib_1_1slack_aa3b0db750d62b71b04eb7ca0c68931d5}{tsrange}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Sends updates to a Slack app.
+
+Usage:
+>>> from tqdm.contrib.slack import tqdm, trange
+>>> for i in trange(10, token='{token}', channel='{channel}'):
+...     ...
+
+![screenshot](https://tqdm.github.io/img/screenshot-slack.png)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetqdm_1_1contrib_1_1slack_aa3b0db750d62b71b04eb7ca0c68931d5}\label{namespacetqdm_1_1contrib_1_1slack_aa3b0db750d62b71b04eb7ca0c68931d5}} 
+\index{tqdm.contrib.slack@{tqdm.contrib.slack}!tsrange@{tsrange}}
+\index{tsrange@{tsrange}!tqdm.contrib.slack@{tqdm.contrib.slack}}
+\doxysubsubsection{\texorpdfstring{tsrange()}{tsrange()}}
+{\footnotesize\ttfamily def tqdm.\+contrib.\+slack.\+tsrange (\begin{DoxyParamCaption}\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for `tqdm.contrib.slack.tqdm(range(*args), **kwargs)`.\end{DoxyVerb}
+ 

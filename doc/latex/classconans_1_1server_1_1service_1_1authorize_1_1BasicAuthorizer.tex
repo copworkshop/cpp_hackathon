@@ -1,0 +1,140 @@
+\hypertarget{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer}{}\doxysection{conans.\+server.\+service.\+authorize.\+Basic\+Authorizer Class Reference}
+\label{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer}\index{conans.server.service.authorize.BasicAuthorizer@{conans.server.service.authorize.BasicAuthorizer}}
+
+
+Inheritance diagram for conans.\+server.\+service.\+authorize.\+Basic\+Authorizer\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+server.\+service.\+authorize.\+Basic\+Authorizer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_a5bfa6f8b97508e171a46c9a0f30b589b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, read\+\_\+permissions, write\+\_\+permissions)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_a985273f64d82420a79e728724329e492}{check\+\_\+read\+\_\+conan}} (self, username, ref)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_a336e074648eaddc0fe6ed5940887df52}{check\+\_\+write\+\_\+conan}} (self, username, ref)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_a704dac1bad31893850376cc7cc6ff264}{check\+\_\+delete\+\_\+conan}} (self, username, ref)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_ace182abc329ec5c4d2a9aeac81740182}{check\+\_\+read\+\_\+package}} (self, username, pref)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_a88b6da0102ba2093f2ae5963de9c0d68}{check\+\_\+write\+\_\+package}} (self, username, pref)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_a8cf7853d8898fce746ba27133fd7345e}{check\+\_\+delete\+\_\+package}} (self, username, pref)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_ad3d821bf092d6e4dcda7cb8e193fdd2f}\label{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_ad3d821bf092d6e4dcda7cb8e193fdd2f}} 
+{\bfseries read\+\_\+permissions}
+\item 
+\mbox{\Hypertarget{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_a99856e3e8a0bf8047757fc53fc941a5c}\label{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_a99856e3e8a0bf8047757fc53fc941a5c}} 
+{\bfseries write\+\_\+permissions}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Reads permissions from the config file (server.cfg)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_a5bfa6f8b97508e171a46c9a0f30b589b}\label{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_a5bfa6f8b97508e171a46c9a0f30b589b}} 
+\index{conans.server.service.authorize.BasicAuthorizer@{conans.server.service.authorize.BasicAuthorizer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!conans.server.service.authorize.BasicAuthorizer@{conans.server.service.authorize.BasicAuthorizer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def conans.\+server.\+service.\+authorize.\+Basic\+Authorizer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{read\+\_\+permissions,  }\item[{}]{write\+\_\+permissions }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}List of tuples with refs and users:
+
+[(ref, "user, user, user"),
+ (ref, "user3, user, user")] \end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_a704dac1bad31893850376cc7cc6ff264}\label{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_a704dac1bad31893850376cc7cc6ff264}} 
+\index{conans.server.service.authorize.BasicAuthorizer@{conans.server.service.authorize.BasicAuthorizer}!check\_delete\_conan@{check\_delete\_conan}}
+\index{check\_delete\_conan@{check\_delete\_conan}!conans.server.service.authorize.BasicAuthorizer@{conans.server.service.authorize.BasicAuthorizer}}
+\doxysubsubsection{\texorpdfstring{check\_delete\_conan()}{check\_delete\_conan()}}
+{\footnotesize\ttfamily def conans.\+server.\+service.\+authorize.\+Basic\+Authorizer.\+check\+\_\+delete\+\_\+conan (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{username,  }\item[{}]{ref }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}username: User that request to write the conans
+ref: ConanFileReference
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconans_1_1server_1_1service_1_1authorize_1_1Authorizer_a6915d622f1fa4cddf7080d63c2a906eb}{conans.\+server.\+service.\+authorize.\+Authorizer}}.
+
+\mbox{\Hypertarget{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_a8cf7853d8898fce746ba27133fd7345e}\label{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_a8cf7853d8898fce746ba27133fd7345e}} 
+\index{conans.server.service.authorize.BasicAuthorizer@{conans.server.service.authorize.BasicAuthorizer}!check\_delete\_package@{check\_delete\_package}}
+\index{check\_delete\_package@{check\_delete\_package}!conans.server.service.authorize.BasicAuthorizer@{conans.server.service.authorize.BasicAuthorizer}}
+\doxysubsubsection{\texorpdfstring{check\_delete\_package()}{check\_delete\_package()}}
+{\footnotesize\ttfamily def conans.\+server.\+service.\+authorize.\+Basic\+Authorizer.\+check\+\_\+delete\+\_\+package (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{username,  }\item[{}]{pref }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}username: User that request to write the package
+pref: PackageReference
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconans_1_1server_1_1service_1_1authorize_1_1Authorizer_a7e472c62a18a1e366050f66966480072}{conans.\+server.\+service.\+authorize.\+Authorizer}}.
+
+\mbox{\Hypertarget{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_a985273f64d82420a79e728724329e492}\label{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_a985273f64d82420a79e728724329e492}} 
+\index{conans.server.service.authorize.BasicAuthorizer@{conans.server.service.authorize.BasicAuthorizer}!check\_read\_conan@{check\_read\_conan}}
+\index{check\_read\_conan@{check\_read\_conan}!conans.server.service.authorize.BasicAuthorizer@{conans.server.service.authorize.BasicAuthorizer}}
+\doxysubsubsection{\texorpdfstring{check\_read\_conan()}{check\_read\_conan()}}
+{\footnotesize\ttfamily def conans.\+server.\+service.\+authorize.\+Basic\+Authorizer.\+check\+\_\+read\+\_\+conan (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{username,  }\item[{}]{ref }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}username: User that request to read the conans
+ref: ConanFileReference
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconans_1_1server_1_1service_1_1authorize_1_1Authorizer_a4f3aa81f3e4ece0295a6e117c2341735}{conans.\+server.\+service.\+authorize.\+Authorizer}}.
+
+\mbox{\Hypertarget{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_ace182abc329ec5c4d2a9aeac81740182}\label{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_ace182abc329ec5c4d2a9aeac81740182}} 
+\index{conans.server.service.authorize.BasicAuthorizer@{conans.server.service.authorize.BasicAuthorizer}!check\_read\_package@{check\_read\_package}}
+\index{check\_read\_package@{check\_read\_package}!conans.server.service.authorize.BasicAuthorizer@{conans.server.service.authorize.BasicAuthorizer}}
+\doxysubsubsection{\texorpdfstring{check\_read\_package()}{check\_read\_package()}}
+{\footnotesize\ttfamily def conans.\+server.\+service.\+authorize.\+Basic\+Authorizer.\+check\+\_\+read\+\_\+package (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{username,  }\item[{}]{pref }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}username: User that request to read the package
+pref: PackageReference
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconans_1_1server_1_1service_1_1authorize_1_1Authorizer_ae5260bf05162aaacec1ee5745db3946f}{conans.\+server.\+service.\+authorize.\+Authorizer}}.
+
+\mbox{\Hypertarget{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_a336e074648eaddc0fe6ed5940887df52}\label{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_a336e074648eaddc0fe6ed5940887df52}} 
+\index{conans.server.service.authorize.BasicAuthorizer@{conans.server.service.authorize.BasicAuthorizer}!check\_write\_conan@{check\_write\_conan}}
+\index{check\_write\_conan@{check\_write\_conan}!conans.server.service.authorize.BasicAuthorizer@{conans.server.service.authorize.BasicAuthorizer}}
+\doxysubsubsection{\texorpdfstring{check\_write\_conan()}{check\_write\_conan()}}
+{\footnotesize\ttfamily def conans.\+server.\+service.\+authorize.\+Basic\+Authorizer.\+check\+\_\+write\+\_\+conan (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{username,  }\item[{}]{ref }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}username: User that request to write the conans
+ref: ConanFileReference
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconans_1_1server_1_1service_1_1authorize_1_1Authorizer_a9afd284a718bdd560838ce9b2f7ad7cf}{conans.\+server.\+service.\+authorize.\+Authorizer}}.
+
+\mbox{\Hypertarget{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_a88b6da0102ba2093f2ae5963de9c0d68}\label{classconans_1_1server_1_1service_1_1authorize_1_1BasicAuthorizer_a88b6da0102ba2093f2ae5963de9c0d68}} 
+\index{conans.server.service.authorize.BasicAuthorizer@{conans.server.service.authorize.BasicAuthorizer}!check\_write\_package@{check\_write\_package}}
+\index{check\_write\_package@{check\_write\_package}!conans.server.service.authorize.BasicAuthorizer@{conans.server.service.authorize.BasicAuthorizer}}
+\doxysubsubsection{\texorpdfstring{check\_write\_package()}{check\_write\_package()}}
+{\footnotesize\ttfamily def conans.\+server.\+service.\+authorize.\+Basic\+Authorizer.\+check\+\_\+write\+\_\+package (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{username,  }\item[{}]{pref }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}username: User that request to write the package
+pref: PackageReference
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconans_1_1server_1_1service_1_1authorize_1_1Authorizer_ad931cbf2d500495842962e009feb521e}{conans.\+server.\+service.\+authorize.\+Authorizer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/server/service/authorize.\+py\end{DoxyCompactItemize}

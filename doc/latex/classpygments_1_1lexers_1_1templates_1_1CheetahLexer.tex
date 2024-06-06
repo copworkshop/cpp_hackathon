@@ -1,0 +1,81 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Cheetah\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1CheetahLexer}\index{pygments.lexers.templates.CheetahLexer@{pygments.lexers.templates.CheetahLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Cheetah\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Cheetah\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahLexer_a4633d6a4bde6a6666ef2278c923d722c}\label{classpygments_1_1lexers_1_1templates_1_1CheetahLexer_a4633d6a4bde6a6666ef2278c923d722c}} 
+string {\bfseries name} = \textquotesingle{}Cheetah\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahLexer_aa6c5e21aafc4713862c71782de63a259}\label{classpygments_1_1lexers_1_1templates_1_1CheetahLexer_aa6c5e21aafc4713862c71782de63a259}} 
+string {\bfseries url} = \textquotesingle{}http\+://www.\+cheetahtemplate.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahLexer_a926333554fad1b773518eb8b23a2ca2a}\label{classpygments_1_1lexers_1_1templates_1_1CheetahLexer_a926333554fad1b773518eb8b23a2ca2a}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}cheetah\textquotesingle{}, \textquotesingle{}spitfire\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahLexer_ad565bb34149175e7bd7b01806fbe1c53}\label{classpygments_1_1lexers_1_1templates_1_1CheetahLexer_ad565bb34149175e7bd7b01806fbe1c53}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.tmpl\textquotesingle{}, \textquotesingle{}$\ast$.spt\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahLexer_ae996318c44646e03c3a28dd5f0b8fe86}\label{classpygments_1_1lexers_1_1templates_1_1CheetahLexer_ae996318c44646e03c3a28dd5f0b8fe86}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}application/x-\/cheetah\textquotesingle{}, \textquotesingle{}application/x-\/spitfire\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahLexer_ac46f3cca5599c5a05e16f9c91abb288e}\label{classpygments_1_1lexers_1_1templates_1_1CheetahLexer_ac46f3cca5599c5a05e16f9c91abb288e}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Generic cheetah templates lexer. Code that isn't Cheetah
+markup is yielded as `Token.Other`.  This also works for
+`spitfire templates`_ which use the same syntax.
+
+.. _spitfire templates: http://code.google.com/p/spitfire/
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahLexer_a717e99b13da4aa7b46bcf84d14f89467}\label{classpygments_1_1lexers_1_1templates_1_1CheetahLexer_a717e99b13da4aa7b46bcf84d14f89467}} 
+\index{pygments.lexers.templates.CheetahLexer@{pygments.lexers.templates.CheetahLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.templates.CheetahLexer@{pygments.lexers.templates.CheetahLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+templates.\+Cheetah\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\#\#[\string^\(\backslash\)n]*)\$'},}
+\DoxyCodeLine{             (bygroups(Comment))),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#[*](.|\(\backslash\)n)*?[*]\#'}, Comment),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#end[\string^\#\(\backslash\)n]*(?:\#|\$)'}, Comment.Preproc),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#slurp\$'}, Comment.Preproc),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\#[a-\/zA-\/Z]+)([\string^\#\(\backslash\)n]*)(\#|\$)'},}
+\DoxyCodeLine{             (bygroups(Comment.Preproc, using(CheetahPythonLexer),}
+\DoxyCodeLine{                       Comment.Preproc))),}
+\DoxyCodeLine{            \textcolor{comment}{\# TODO support other Python syntax like \$foo['bar']}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)\$)([a-\/zA-\/Z\_][\(\backslash\)w.]*\(\backslash\)w)'},}
+\DoxyCodeLine{             bygroups(Comment.Preproc, using(CheetahPythonLexer))),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(?s)(\(\backslash\)\$\(\backslash\)\{!?)(.*?)(\(\backslash\)\})'},}
+\DoxyCodeLine{             bygroups(Comment.Preproc, using(CheetahPythonLexer),}
+\DoxyCodeLine{                      Comment.Preproc)),}
+\DoxyCodeLine{            (, Other),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Text),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

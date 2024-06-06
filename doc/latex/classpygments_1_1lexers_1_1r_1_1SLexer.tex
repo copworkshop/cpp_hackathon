@@ -1,0 +1,94 @@
+\hypertarget{classpygments_1_1lexers_1_1r_1_1SLexer}{}\doxysection{pygments.\+lexers.\+r.\+SLexer Class Reference}
+\label{classpygments_1_1lexers_1_1r_1_1SLexer}\index{pygments.lexers.r.SLexer@{pygments.lexers.r.SLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+r.\+SLexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+r.\+SLexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1r_1_1SLexer_aa19137aa0c3bfa0d2a0185e37bf34462}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1r_1_1SLexer_ae707e71c5e123051b95867cc9b56d8b3}\label{classpygments_1_1lexers_1_1r_1_1SLexer_ae707e71c5e123051b95867cc9b56d8b3}} 
+string {\bfseries name} = \textquotesingle{}S\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1r_1_1SLexer_ab7deccea5b4ca0524c11fc21c42fc850}\label{classpygments_1_1lexers_1_1r_1_1SLexer_ab7deccea5b4ca0524c11fc21c42fc850}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}splus\textquotesingle{}, \textquotesingle{}s\textquotesingle{}, \textquotesingle{}r\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1r_1_1SLexer_a5163155e2dd34b81ab5276b52722dad8}\label{classpygments_1_1lexers_1_1r_1_1SLexer_a5163155e2dd34b81ab5276b52722dad8}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.S\textquotesingle{}, \textquotesingle{}$\ast$.R\textquotesingle{}, \textquotesingle{}.Rhistory\textquotesingle{}, \textquotesingle{}.Rprofile\textquotesingle{}, \textquotesingle{}.Renviron\textquotesingle{}\mbox{]}
+\item 
+list {\bfseries mimetypes}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1r_1_1SLexer_a0cb0ea6039abdc4b2cead68b4990262f}\label{classpygments_1_1lexers_1_1r_1_1SLexer_a0cb0ea6039abdc4b2cead68b4990262f}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+r-\/project.\+org\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1r_1_1SLexer_a23ff7f8c12885f3c2bce637721d7b7cc}\label{classpygments_1_1lexers_1_1r_1_1SLexer_a23ff7f8c12885f3c2bce637721d7b7cc}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}0.\+10\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1r_1_1SLexer_ad135ad5a1b9320ba86504aab912ee4cb}\label{classpygments_1_1lexers_1_1r_1_1SLexer_ad135ad5a1b9320ba86504aab912ee4cb}} 
+string {\bfseries valid\+\_\+name} = r\textquotesingle{}\`{}\mbox{[}$^\wedge$\`{}\textbackslash{}\textbackslash{}\mbox{]}$\ast$(?\+:\textbackslash{}\textbackslash{}.\mbox{[}$^\wedge$\`{}\textbackslash{}\textbackslash{}\mbox{]}$\ast$)$\ast$\`{}$\vert$(?\+:\mbox{[}a-\/zA-\/Z\mbox{]}$\vert$\textbackslash{}.\mbox{[}A-\/Za-\/z\+\_\+.\mbox{]})\mbox{[}\textbackslash{}w.\mbox{]}$\ast$$\vert$\textbackslash{}.\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1r_1_1SLexer_a774cda59b689cabe82661d8d86c0ca30}\label{classpygments_1_1lexers_1_1r_1_1SLexer_a774cda59b689cabe82661d8d86c0ca30}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For S, S-plus, and R source code.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1r_1_1SLexer_aa19137aa0c3bfa0d2a0185e37bf34462}\label{classpygments_1_1lexers_1_1r_1_1SLexer_aa19137aa0c3bfa0d2a0185e37bf34462}} 
+\index{pygments.lexers.r.SLexer@{pygments.lexers.r.SLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.r.SLexer@{pygments.lexers.r.SLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+r.\+SLexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1r_1_1SLexer_a645d14bce4fa3a8984d635605580e499}\label{classpygments_1_1lexers_1_1r_1_1SLexer_a645d14bce4fa3a8984d635605580e499}} 
+\index{pygments.lexers.r.SLexer@{pygments.lexers.r.SLexer}!mimetypes@{mimetypes}}
+\index{mimetypes@{mimetypes}!pygments.lexers.r.SLexer@{pygments.lexers.r.SLexer}}
+\doxysubsubsection{\texorpdfstring{mimetypes}{mimetypes}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+r.\+SLexer.\+mimetypes\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [\textcolor{stringliteral}{'text/S-\/plus'}, \textcolor{stringliteral}{'text/S'}, \textcolor{stringliteral}{'text/x-\/r-\/source'}, \textcolor{stringliteral}{'text/x-\/r'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'text/x-\/R'}, \textcolor{stringliteral}{'text/x-\/r-\/history'}, \textcolor{stringliteral}{'text/x-\/r-\/profile'}]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/r.\+py\end{DoxyCompactItemize}

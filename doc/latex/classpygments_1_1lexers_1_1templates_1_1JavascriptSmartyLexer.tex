@@ -1,0 +1,122 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1JavascriptSmartyLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Javascript\+Smarty\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1JavascriptSmartyLexer}\index{pygments.lexers.templates.JavascriptSmartyLexer@{pygments.lexers.templates.JavascriptSmartyLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Javascript\+Smarty\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Javascript\+Smarty\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1JavascriptSmartyLexer_a26aad75b474c1057eee944c87623ff00}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1JavascriptSmartyLexer_af64f4e4f7405e928538b73b4bbc4ab3a}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1JavascriptSmartyLexer_a15497d03dc5dc6ece4d3b5e8970541dc}\label{classpygments_1_1lexers_1_1templates_1_1JavascriptSmartyLexer_a15497d03dc5dc6ece4d3b5e8970541dc}} 
+string {\bfseries name} = \textquotesingle{}Java\+Script+Smarty\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1JavascriptSmartyLexer_a0660d9f452827a7d2a16fc9e7a939148}\label{classpygments_1_1lexers_1_1templates_1_1JavascriptSmartyLexer_a0660d9f452827a7d2a16fc9e7a939148}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}javascript+smarty\textquotesingle{}, \textquotesingle{}js+smarty\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1JavascriptSmartyLexer_a38e07cec6153104144e378bc9c02e1e2}\label{classpygments_1_1lexers_1_1templates_1_1JavascriptSmartyLexer_a38e07cec6153104144e378bc9c02e1e2}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1JavascriptSmartyLexer_a82a0db78440ca983040023dd7a6ffd21}\label{classpygments_1_1lexers_1_1templates_1_1JavascriptSmartyLexer_a82a0db78440ca983040023dd7a6ffd21}} 
+list {\bfseries alias\+\_\+filenames} = \mbox{[}\textquotesingle{}$\ast$.js\textquotesingle{}, \textquotesingle{}$\ast$.tpl\textquotesingle{}\mbox{]}
+\item 
+list {\bfseries mimetypes}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1JavascriptSmartyLexer_acffa2db3cf563db4b5121bf0dee63082}\label{classpygments_1_1lexers_1_1templates_1_1JavascriptSmartyLexer_acffa2db3cf563db4b5121bf0dee63082}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+smarty.\+net/\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Subclass of the `SmartyLexer` that highlights unlexed data with the
+`JavascriptLexer`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1JavascriptSmartyLexer_a26aad75b474c1057eee944c87623ff00}\label{classpygments_1_1lexers_1_1templates_1_1JavascriptSmartyLexer_a26aad75b474c1057eee944c87623ff00}} 
+\index{pygments.lexers.templates.JavascriptSmartyLexer@{pygments.lexers.templates.JavascriptSmartyLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.templates.JavascriptSmartyLexer@{pygments.lexers.templates.JavascriptSmartyLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Javascript\+Smarty\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1JavascriptSmartyLexer_af64f4e4f7405e928538b73b4bbc4ab3a}\label{classpygments_1_1lexers_1_1templates_1_1JavascriptSmartyLexer_af64f4e4f7405e928538b73b4bbc4ab3a}} 
+\index{pygments.lexers.templates.JavascriptSmartyLexer@{pygments.lexers.templates.JavascriptSmartyLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.templates.JavascriptSmartyLexer@{pygments.lexers.templates.JavascriptSmartyLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Javascript\+Smarty\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1JavascriptSmartyLexer_aec31fc97b02a06774f4c82dbfbf55205}\label{classpygments_1_1lexers_1_1templates_1_1JavascriptSmartyLexer_aec31fc97b02a06774f4c82dbfbf55205}} 
+\index{pygments.lexers.templates.JavascriptSmartyLexer@{pygments.lexers.templates.JavascriptSmartyLexer}!mimetypes@{mimetypes}}
+\index{mimetypes@{mimetypes}!pygments.lexers.templates.JavascriptSmartyLexer@{pygments.lexers.templates.JavascriptSmartyLexer}}
+\doxysubsubsection{\texorpdfstring{mimetypes}{mimetypes}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+templates.\+Javascript\+Smarty\+Lexer.\+mimetypes\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [\textcolor{stringliteral}{'application/x-\/javascript+smarty'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'text/x-\/javascript+smarty'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'text/javascript+smarty'}]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

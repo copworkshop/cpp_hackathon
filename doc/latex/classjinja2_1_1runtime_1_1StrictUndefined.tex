@@ -1,0 +1,37 @@
+\hypertarget{classjinja2_1_1runtime_1_1StrictUndefined}{}\doxysection{jinja2.\+runtime.\+Strict\+Undefined Class Reference}
+\label{classjinja2_1_1runtime_1_1StrictUndefined}\index{jinja2.runtime.StrictUndefined@{jinja2.runtime.StrictUndefined}}
+
+
+Inheritance diagram for jinja2.\+runtime.\+Strict\+Undefined\+:
+% FIG 0
+
+
+Collaboration diagram for jinja2.\+runtime.\+Strict\+Undefined\+:
+% FIG 1
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An undefined that barks on print and iteration as well as boolean
+tests and all kinds of comparisons.  In other words: you can do nothing
+with it except checking if it's defined using the `defined` test.
+
+>>> foo = StrictUndefined(name='foo')
+>>> str(foo)
+Traceback (most recent call last):
+  ...
+jinja2.exceptions.UndefinedError: 'foo' is undefined
+>>> not foo
+Traceback (most recent call last):
+  ...
+jinja2.exceptions.UndefinedError: 'foo' is undefined
+>>> foo + 42
+Traceback (most recent call last):
+  ...
+jinja2.exceptions.UndefinedError: 'foo' is undefined
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jinja2/runtime.\+py\end{DoxyCompactItemize}

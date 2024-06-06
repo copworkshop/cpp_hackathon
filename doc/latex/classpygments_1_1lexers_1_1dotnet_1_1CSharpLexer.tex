@@ -1,0 +1,129 @@
+\hypertarget{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer}{}\doxysection{pygments.\+lexers.\+dotnet.\+CSharp\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer}\index{pygments.lexers.dotnet.CSharpLexer@{pygments.lexers.dotnet.CSharpLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+dotnet.\+CSharp\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+dotnet.\+CSharp\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_a2b0623ae43b8332915ee98b82c8854d6}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_a90985a96afc9b36038771a5b0d37789c}\label{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_a90985a96afc9b36038771a5b0d37789c}} 
+string {\bfseries name} = \textquotesingle{}C\#\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_a805adbd626bda4eee7fc5d29c6e04748}\label{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_a805adbd626bda4eee7fc5d29c6e04748}} 
+string {\bfseries url} = \textquotesingle{}https\+://docs.\+microsoft.\+com/en-\/us/dotnet/csharp/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_aa173ae3257fb9a2e41bd8740a79bcf33}\label{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_aa173ae3257fb9a2e41bd8740a79bcf33}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}csharp\textquotesingle{}, \textquotesingle{}c\#\textquotesingle{}, \textquotesingle{}cs\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_acb98a2b3293ef84aa5291da4c8456353}\label{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_acb98a2b3293ef84aa5291da4c8456353}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.cs\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_a9ebad2b55dd7496dc2b5b2507ad3a196}\label{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_a9ebad2b55dd7496dc2b5b2507ad3a196}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/csharp\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_ab6ede05ab948128bf363e8df6b35faab}\label{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_ab6ede05ab948128bf363e8df6b35faab}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_a8b2bf156312147d959ef9a8c85c5f564}\label{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_a8b2bf156312147d959ef9a8c85c5f564}} 
+{\bfseries flags} = re.\+MULTILINE $\vert$ re.\+DOTALL
+\item 
+dictionary {\bfseries levels}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_a1141116dbb20c2b35296d3dabf585baf}\label{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_a1141116dbb20c2b35296d3dabf585baf}} 
+dictionary {\bfseries tokens} = \{\}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_ac76c8f5c643b3c7170bb7db63d3b582b}\label{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_ac76c8f5c643b3c7170bb7db63d3b582b}} 
+bool {\bfseries token\+\_\+variants} = True
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For C# source code.
+
+Additional options accepted:
+
+`unicodelevel`
+  Determines which Unicode characters this lexer allows for identifiers.
+  The possible values are:
+
+  * ``none`` -- only the ASCII letters and numbers are allowed. This
+    is the fastest selection.
+  * ``basic`` -- all Unicode characters from the specification except
+    category ``Lo`` are allowed.
+  * ``full`` -- all Unicode characters as specified in the C# specs
+    are allowed.  Note that this means a considerable slowdown since the
+    ``Lo`` category has more than 40,000 characters in it!
+
+  The default value is ``basic``.
+
+  .. versionadded:: 0.8
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_a2b0623ae43b8332915ee98b82c8854d6}\label{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_a2b0623ae43b8332915ee98b82c8854d6}} 
+\index{pygments.lexers.dotnet.CSharpLexer@{pygments.lexers.dotnet.CSharpLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.dotnet.CSharpLexer@{pygments.lexers.dotnet.CSharpLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+dotnet.\+CSharp\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_a23e1d9833878137019d00263743dfa53}\label{classpygments_1_1lexers_1_1dotnet_1_1CSharpLexer_a23e1d9833878137019d00263743dfa53}} 
+\index{pygments.lexers.dotnet.CSharpLexer@{pygments.lexers.dotnet.CSharpLexer}!levels@{levels}}
+\index{levels@{levels}!pygments.lexers.dotnet.CSharpLexer@{pygments.lexers.dotnet.CSharpLexer}}
+\doxysubsubsection{\texorpdfstring{levels}{levels}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+dotnet.\+CSharp\+Lexer.\+levels\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'none'}: \textcolor{stringliteral}{r'@?[\_a-\/zA-\/Z]\(\backslash\)w*'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'basic'}: (\textcolor{stringliteral}{'@?[\_'} + uni.combine(\textcolor{stringliteral}{'Lu'}, \textcolor{stringliteral}{'Ll'}, \textcolor{stringliteral}{'Lt'}, \textcolor{stringliteral}{'Lm'}, \textcolor{stringliteral}{'Nl'}) + \textcolor{stringliteral}{']'} +}
+\DoxyCodeLine{                  \textcolor{stringliteral}{'['} + uni.combine(\textcolor{stringliteral}{'Lu'}, \textcolor{stringliteral}{'Ll'}, \textcolor{stringliteral}{'Lt'}, \textcolor{stringliteral}{'Lm'}, \textcolor{stringliteral}{'Nl'}, \textcolor{stringliteral}{'Nd'}, \textcolor{stringliteral}{'Pc'},}
+\DoxyCodeLine{                                    \textcolor{stringliteral}{'Cf'}, \textcolor{stringliteral}{'Mn'}, \textcolor{stringliteral}{'Mc'}) + \textcolor{stringliteral}{']*'}),}
+\DoxyCodeLine{        \textcolor{stringliteral}{'full'}: (\textcolor{stringliteral}{'@?(?:\_|[\string^'} +}
+\DoxyCodeLine{                 uni.allexcept(\textcolor{stringliteral}{'Lu'}, \textcolor{stringliteral}{'Ll'}, \textcolor{stringliteral}{'Lt'}, \textcolor{stringliteral}{'Lm'}, \textcolor{stringliteral}{'Lo'}, \textcolor{stringliteral}{'Nl'}) + \textcolor{stringliteral}{'])'} +}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'[\string^'} + uni.allexcept(\textcolor{stringliteral}{'Lu'}, \textcolor{stringliteral}{'Ll'}, \textcolor{stringliteral}{'Lt'}, \textcolor{stringliteral}{'Lm'}, \textcolor{stringliteral}{'Lo'}, \textcolor{stringliteral}{'Nl'},}
+\DoxyCodeLine{                                      \textcolor{stringliteral}{'Nd'}, \textcolor{stringliteral}{'Pc'}, \textcolor{stringliteral}{'Cf'}, \textcolor{stringliteral}{'Mn'}, \textcolor{stringliteral}{'Mc'}) + \textcolor{stringliteral}{']*'}),}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/dotnet.\+py\end{DoxyCompactItemize}

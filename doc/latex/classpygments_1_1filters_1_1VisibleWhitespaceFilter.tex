@@ -1,0 +1,61 @@
+\hypertarget{classpygments_1_1filters_1_1VisibleWhitespaceFilter}{}\doxysection{pygments.\+filters.\+Visible\+Whitespace\+Filter Class Reference}
+\label{classpygments_1_1filters_1_1VisibleWhitespaceFilter}\index{pygments.filters.VisibleWhitespaceFilter@{pygments.filters.VisibleWhitespaceFilter}}
+
+
+Inheritance diagram for pygments.\+filters.\+Visible\+Whitespace\+Filter\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+filters.\+Visible\+Whitespace\+Filter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1filters_1_1VisibleWhitespaceFilter_ae3cff2877837ae26edca8d6997090949}\label{classpygments_1_1filters_1_1VisibleWhitespaceFilter_ae3cff2877837ae26edca8d6997090949}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, $\ast$$\ast$options)
+\item 
+\mbox{\Hypertarget{classpygments_1_1filters_1_1VisibleWhitespaceFilter_a6ab14400d4ae7e15fda537c2775a1d48}\label{classpygments_1_1filters_1_1VisibleWhitespaceFilter_a6ab14400d4ae7e15fda537c2775a1d48}} 
+def {\bfseries filter} (self, lexer, stream)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1filters_1_1VisibleWhitespaceFilter_a27cae07653e67051fb9eff40e08360ba}\label{classpygments_1_1filters_1_1VisibleWhitespaceFilter_a27cae07653e67051fb9eff40e08360ba}} 
+{\bfseries wstt}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Convert tabs, newlines and/or spaces to visible characters.
+
+Options accepted:
+
+`spaces` : string or bool
+  If this is a one-character string, spaces will be replaces by this string.
+  If it is another true value, spaces will be replaced by ``·`` (unicode
+  MIDDLE DOT).  If it is a false value, spaces will not be replaced.  The
+  default is ``False``.
+`tabs` : string or bool
+  The same as for `spaces`, but the default replacement character is ``»``
+  (unicode RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK).  The default value
+  is ``False``.  Note: this will not work if the `tabsize` option for the
+  lexer is nonzero, as tabs will already have been expanded then.
+`tabsize` : int
+  If tabs are to be replaced by this filter (see the `tabs` option), this
+  is the total number of characters that a tab should be expanded to.
+  The default is ``8``.
+`newlines` : string or bool
+  The same as for `spaces`, but the default replacement character is ``¶``
+  (unicode PILCROW SIGN).  The default value is ``False``.
+`wstokentype` : bool
+  If true, give whitespace the special `Whitespace` token type.  This allows
+  styling the visible whitespace differently (e.g. greyed out), but it can
+  disrupt background colors.  The default is ``True``.
+
+.. versionadded:: 0.8
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/filters/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

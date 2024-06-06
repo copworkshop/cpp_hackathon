@@ -1,0 +1,96 @@
+\hypertarget{classpygments_1_1lexers_1_1python_1_1NumPyLexer}{}\doxysection{pygments.\+lexers.\+python.\+Num\+Py\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1python_1_1NumPyLexer}\index{pygments.lexers.python.NumPyLexer@{pygments.lexers.python.NumPyLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+python.\+Num\+Py\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+python.\+Num\+Py\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1python_1_1NumPyLexer_a1ac1ff6b92ffe39516f7491d97a9e7e2}{get\+\_\+tokens\+\_\+unprocessed}} (self, text)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1python_1_1NumPyLexer_a7b4c124c8301655ebd6cb570282d203a}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1python_1_1NumPyLexer_aee5aa7f53bf1b740b7f9bc21deb61f67}\label{classpygments_1_1lexers_1_1python_1_1NumPyLexer_aee5aa7f53bf1b740b7f9bc21deb61f67}} 
+string {\bfseries name} = \textquotesingle{}Num\+Py\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1python_1_1NumPyLexer_a9752078d36b386a0bd3a207f712a75b0}\label{classpygments_1_1lexers_1_1python_1_1NumPyLexer_a9752078d36b386a0bd3a207f712a75b0}} 
+string {\bfseries url} = \textquotesingle{}https\+://numpy.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1python_1_1NumPyLexer_addf1c6916256fe8755d87d1a2fd63c70}\label{classpygments_1_1lexers_1_1python_1_1NumPyLexer_addf1c6916256fe8755d87d1a2fd63c70}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}numpy\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1python_1_1NumPyLexer_a3dd2b076e8c6137228f88554a5ec7a5a}\label{classpygments_1_1lexers_1_1python_1_1NumPyLexer_a3dd2b076e8c6137228f88554a5ec7a5a}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}0.\+10\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1python_1_1NumPyLexer_ab58e653cebfce8ba326dc0fdf77d2a37}\label{classpygments_1_1lexers_1_1python_1_1NumPyLexer_ab58e653cebfce8ba326dc0fdf77d2a37}} 
+list {\bfseries mimetypes} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1python_1_1NumPyLexer_af3f61c51ebe1ef826420dd6caad2c92b}\label{classpygments_1_1lexers_1_1python_1_1NumPyLexer_af3f61c51ebe1ef826420dd6caad2c92b}} 
+list {\bfseries filenames} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1python_1_1NumPyLexer_af765209e42a6d7fa9dac06965b7c3f82}\label{classpygments_1_1lexers_1_1python_1_1NumPyLexer_af765209e42a6d7fa9dac06965b7c3f82}} 
+dictionary {\bfseries EXTRA\+\_\+\+KEYWORDS}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A Python lexer recognizing Numerical Python builtins.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1python_1_1NumPyLexer_a7b4c124c8301655ebd6cb570282d203a}\label{classpygments_1_1lexers_1_1python_1_1NumPyLexer_a7b4c124c8301655ebd6cb570282d203a}} 
+\index{pygments.lexers.python.NumPyLexer@{pygments.lexers.python.NumPyLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.python.NumPyLexer@{pygments.lexers.python.NumPyLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+python.\+Num\+Py\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexers_1_1python_1_1PythonLexer_a5c5095354da3350975ec93be395c1427}{pygments.\+lexers.\+python.\+Python\+Lexer}}.
+
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1python_1_1NumPyLexer_a1ac1ff6b92ffe39516f7491d97a9e7e2}\label{classpygments_1_1lexers_1_1python_1_1NumPyLexer_a1ac1ff6b92ffe39516f7491d97a9e7e2}} 
+\index{pygments.lexers.python.NumPyLexer@{pygments.lexers.python.NumPyLexer}!get\_tokens\_unprocessed@{get\_tokens\_unprocessed}}
+\index{get\_tokens\_unprocessed@{get\_tokens\_unprocessed}!pygments.lexers.python.NumPyLexer@{pygments.lexers.python.NumPyLexer}}
+\doxysubsubsection{\texorpdfstring{get\_tokens\_unprocessed()}{get\_tokens\_unprocessed()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+python.\+Num\+Py\+Lexer.\+get\+\_\+tokens\+\_\+unprocessed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method should process the text and return an iterable of
+``(index, tokentype, value)`` tuples where ``index`` is the starting
+position of the token within the input text.
+
+It must be overridden by subclasses. It is recommended to
+implement it as a generator to maximize effectiveness.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_aad5c02b7f661f64f91cf8c8d880e9f67}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/python.\+py\end{DoxyCompactItemize}

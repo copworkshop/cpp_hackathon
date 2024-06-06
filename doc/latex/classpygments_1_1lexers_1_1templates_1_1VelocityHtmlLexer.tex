@@ -1,0 +1,77 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityHtmlLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Velocity\+Html\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1VelocityHtmlLexer}\index{pygments.lexers.templates.VelocityHtmlLexer@{pygments.lexers.templates.VelocityHtmlLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Velocity\+Html\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Velocity\+Html\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1VelocityHtmlLexer_a7e1a4d5d3d5d77295292035c742523b0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityHtmlLexer_a9e1a40d4f20f5df13d4a7094d6dadd96}\label{classpygments_1_1lexers_1_1templates_1_1VelocityHtmlLexer_a9e1a40d4f20f5df13d4a7094d6dadd96}} 
+string {\bfseries name} = \textquotesingle{}HTML+Velocity\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityHtmlLexer_a33888bf40ab7180d4a87d35a66edb4d2}\label{classpygments_1_1lexers_1_1templates_1_1VelocityHtmlLexer_a33888bf40ab7180d4a87d35a66edb4d2}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}html+velocity\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityHtmlLexer_a8f756d5c8acb0fb1149e6f4afccb146e}\label{classpygments_1_1lexers_1_1templates_1_1VelocityHtmlLexer_a8f756d5c8acb0fb1149e6f4afccb146e}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityHtmlLexer_ad85c857637789f937d0c55cd84b2c143}\label{classpygments_1_1lexers_1_1templates_1_1VelocityHtmlLexer_ad85c857637789f937d0c55cd84b2c143}} 
+list {\bfseries alias\+\_\+filenames} = \mbox{[}\textquotesingle{}$\ast$.html\textquotesingle{}, \textquotesingle{}$\ast$.fhtml\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityHtmlLexer_a966fdc8fb2c6b92522b3dd4b9dea0957}\label{classpygments_1_1lexers_1_1templates_1_1VelocityHtmlLexer_a966fdc8fb2c6b92522b3dd4b9dea0957}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/html+velocity\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityHtmlLexer_a336a22b6c03913e13a2e222c78bb4048}\label{classpygments_1_1lexers_1_1templates_1_1VelocityHtmlLexer_a336a22b6c03913e13a2e222c78bb4048}} 
+string {\bfseries url} = \textquotesingle{}https\+://velocity.\+apache.\+org/\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Subclass of the `VelocityLexer` that highlights unlexed data
+with the `HtmlLexer`.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityHtmlLexer_a7e1a4d5d3d5d77295292035c742523b0}\label{classpygments_1_1lexers_1_1templates_1_1VelocityHtmlLexer_a7e1a4d5d3d5d77295292035c742523b0}} 
+\index{pygments.lexers.templates.VelocityHtmlLexer@{pygments.lexers.templates.VelocityHtmlLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.templates.VelocityHtmlLexer@{pygments.lexers.templates.VelocityHtmlLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Velocity\+Html\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

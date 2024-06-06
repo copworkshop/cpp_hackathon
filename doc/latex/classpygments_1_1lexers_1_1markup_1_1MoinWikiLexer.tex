@@ -1,0 +1,90 @@
+\hypertarget{classpygments_1_1lexers_1_1markup_1_1MoinWikiLexer}{}\doxysection{pygments.\+lexers.\+markup.\+Moin\+Wiki\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1markup_1_1MoinWikiLexer}\index{pygments.lexers.markup.MoinWikiLexer@{pygments.lexers.markup.MoinWikiLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+markup.\+Moin\+Wiki\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+markup.\+Moin\+Wiki\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MoinWikiLexer_a152d600d855d171bc4bf1142e8c55850}\label{classpygments_1_1lexers_1_1markup_1_1MoinWikiLexer_a152d600d855d171bc4bf1142e8c55850}} 
+string {\bfseries name} = \textquotesingle{}Moin\+Moin/Trac Wiki markup\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MoinWikiLexer_ae3a4bccdb91e0f8d552c19eba877f260}\label{classpygments_1_1lexers_1_1markup_1_1MoinWikiLexer_ae3a4bccdb91e0f8d552c19eba877f260}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}trac-\/wiki\textquotesingle{}, \textquotesingle{}moin\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MoinWikiLexer_a2b96116f0f9dc852269df09084575ac5}\label{classpygments_1_1lexers_1_1markup_1_1MoinWikiLexer_a2b96116f0f9dc852269df09084575ac5}} 
+list {\bfseries filenames} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MoinWikiLexer_aa1db57f8e648d05afc086d8309564f0c}\label{classpygments_1_1lexers_1_1markup_1_1MoinWikiLexer_aa1db57f8e648d05afc086d8309564f0c}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/trac-\/wiki\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MoinWikiLexer_af8b0f044350147e950d048678c5d053d}\label{classpygments_1_1lexers_1_1markup_1_1MoinWikiLexer_af8b0f044350147e950d048678c5d053d}} 
+string {\bfseries url} = \textquotesingle{}https\+://moinmo.\+in\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MoinWikiLexer_aaec75a8daa43445f3a4d8e8dc5a21936}\label{classpygments_1_1lexers_1_1markup_1_1MoinWikiLexer_aaec75a8daa43445f3a4d8e8dc5a21936}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}0.\+7\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MoinWikiLexer_ad8de3a4b8e7cf1caed0e0be6090cca25}\label{classpygments_1_1lexers_1_1markup_1_1MoinWikiLexer_ad8de3a4b8e7cf1caed0e0be6090cca25}} 
+{\bfseries flags} = re.\+MULTILINE $\vert$ re.\+IGNORECASE
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For MoinMoin (and Trac) Wiki markup.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MoinWikiLexer_a7bf2c34e31b850df75f41c5aa988481e}\label{classpygments_1_1lexers_1_1markup_1_1MoinWikiLexer_a7bf2c34e31b850df75f41c5aa988481e}} 
+\index{pygments.lexers.markup.MoinWikiLexer@{pygments.lexers.markup.MoinWikiLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.markup.MoinWikiLexer@{pygments.lexers.markup.MoinWikiLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+markup.\+Moin\+Wiki\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^\#.*\$'}, Comment),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(!)(\(\backslash\)S+)'}, bygroups(Keyword, Text)),  \textcolor{comment}{\# Ignore-\/next}}
+\DoxyCodeLine{            \textcolor{comment}{\# Titles}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^(=+)([\string^=]+)(=+)(\(\backslash\)s*\#.+)?\$'},}
+\DoxyCodeLine{             bygroups(Generic.Heading, using(this), Generic.Heading, String)),}
+\DoxyCodeLine{            \textcolor{comment}{\# Literal code blocks, with optional shebang}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)\{\(\backslash\)\{\(\backslash\)\{)(\(\backslash\)n\#!.+)?'}, bygroups(Name.Builtin, Name.Namespace), \textcolor{stringliteral}{'codeblock'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)'\(\backslash\)'\(\backslash\)'?|\(\backslash\)|\(\backslash\)||`|\_\_|\string~\string~|\(\backslash\)\string^|,,|::)'}, Comment),  \textcolor{comment}{\# Formatting}}
+\DoxyCodeLine{            \textcolor{comment}{\# Lists}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^( +)([.*-\/])( )'}, bygroups(Text, Name.Builtin, Text)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^( +)([a-\/z]\{1,5\}\(\backslash\).)( )'}, bygroups(Text, Name.Builtin, Text)),}
+\DoxyCodeLine{            \textcolor{comment}{\# Other Formatting}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)[\(\backslash\)[\(\backslash\)w+.*?\(\backslash\)]\(\backslash\)]'}, Keyword),  \textcolor{comment}{\# Macro}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)[[\string^\(\backslash\)s\(\backslash\)]]+)(\(\backslash\)s+[\string^\(\backslash\)]]+?)?(\(\backslash\)])'},}
+\DoxyCodeLine{             bygroups(Keyword, String, Keyword)),  \textcolor{comment}{\# Link}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^-\/-\/-\/-\/+\$'}, Keyword),  \textcolor{comment}{\# Horizontal rules}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^\(\backslash\)n\(\backslash\)'\(\backslash\)[\{!\_\string~\string^,|]+'}, Text),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)n'}, Text),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'.'}, Text),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'codeblock'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\}\(\backslash\)\}\(\backslash\)\}'}, Name.Builtin, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            \textcolor{comment}{\# these blocks are allowed to be nested in Trac, but not MoinMoin}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\{\(\backslash\)\{\(\backslash\)\{'}, Text, \textcolor{stringliteral}{'\#push'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^\{\}]+'}, Comment.Preproc),  \textcolor{comment}{\# slurp boring text}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'.'}, Comment.Preproc),  \textcolor{comment}{\# allow loose \{ or \}}}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/markup.\+py\end{DoxyCompactItemize}

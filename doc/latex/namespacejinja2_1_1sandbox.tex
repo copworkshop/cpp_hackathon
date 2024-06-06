@@ -1,0 +1,119 @@
+\hypertarget{namespacejinja2_1_1sandbox}{}\doxysection{jinja2.\+sandbox Namespace Reference}
+\label{namespacejinja2_1_1sandbox}\index{jinja2.sandbox@{jinja2.sandbox}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classjinja2_1_1sandbox_1_1SandboxedEnvironment}{Sandboxed\+Environment}}
+\item 
+class \mbox{\hyperlink{classjinja2_1_1sandbox_1_1ImmutableSandboxedEnvironment}{Immutable\+Sandboxed\+Environment}}
+\item 
+class \mbox{\hyperlink{classjinja2_1_1sandbox_1_1SandboxedFormatter}{Sandboxed\+Formatter}}
+\item 
+class \mbox{\hyperlink{classjinja2_1_1sandbox_1_1SandboxedEscapeFormatter}{Sandboxed\+Escape\+Formatter}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacejinja2_1_1sandbox_aba500d7108149d343bd13519e9e90c9d}\label{namespacejinja2_1_1sandbox_aba500d7108149d343bd13519e9e90c9d}} 
+t.\+Optional\mbox{[}str\mbox{]} {\bfseries inspect\+\_\+format\+\_\+method} (t.\+Callable\mbox{[}..., t.\+Any\mbox{]} callable)
+\item 
+range \mbox{\hyperlink{namespacejinja2_1_1sandbox_ac65e88c63cd1343a2872a215b46440f3}{safe\+\_\+range}} ($\ast$int args)
+\item 
+F \mbox{\hyperlink{namespacejinja2_1_1sandbox_a1ece13183e6e975b0bfc6cf63469e696}{unsafe}} (F f)
+\item 
+bool \mbox{\hyperlink{namespacejinja2_1_1sandbox_a09e614e4e1392f4c1b5a3a38c6a8c0a5}{is\+\_\+internal\+\_\+attribute}} (t.\+Any obj, str attr)
+\item 
+bool \mbox{\hyperlink{namespacejinja2_1_1sandbox_addc9cda98501cd41a7bfaca993eff6b9}{modifies\+\_\+known\+\_\+mutable}} (t.\+Any obj, str attr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacejinja2_1_1sandbox_ab7a500b44019a923988a7fd86e48a44f}\label{namespacejinja2_1_1sandbox_ab7a500b44019a923988a7fd86e48a44f}} 
+{\bfseries F} = t.\+Type\+Var(\char`\"{}F\char`\"{}, bound=t.\+Callable\mbox{[}..., t.\+Any\mbox{]})
+\item 
+\mbox{\Hypertarget{namespacejinja2_1_1sandbox_abec4d3479cfadf8f68e09dfe6883ce0e}\label{namespacejinja2_1_1sandbox_abec4d3479cfadf8f68e09dfe6883ce0e}} 
+int {\bfseries MAX\+\_\+\+RANGE} = 100000
+\item 
+\mbox{\Hypertarget{namespacejinja2_1_1sandbox_abe01d103ef235faf23876b4ae916bd23}\label{namespacejinja2_1_1sandbox_abe01d103ef235faf23876b4ae916bd23}} 
+dictionary {\bfseries UNSAFE\+\_\+\+GENERATOR\+\_\+\+ATTRIBUTES} = \{\char`\"{}gi\+\_\+frame\char`\"{}, \char`\"{}gi\+\_\+code\char`\"{}\}
+\item 
+\mbox{\Hypertarget{namespacejinja2_1_1sandbox_a3d51354b084797abc9ab90ffaf4d51af}\label{namespacejinja2_1_1sandbox_a3d51354b084797abc9ab90ffaf4d51af}} 
+dictionary {\bfseries UNSAFE\+\_\+\+COROUTINE\+\_\+\+ATTRIBUTES} = \{\char`\"{}cr\+\_\+frame\char`\"{}, \char`\"{}cr\+\_\+code\char`\"{}\}
+\item 
+\mbox{\Hypertarget{namespacejinja2_1_1sandbox_a44ba1b4eac6d081c1c35838babb0d391}\label{namespacejinja2_1_1sandbox_a44ba1b4eac6d081c1c35838babb0d391}} 
+dictionary {\bfseries UNSAFE\+\_\+\+ASYNC\+\_\+\+GENERATOR\+\_\+\+ATTRIBUTES} = \{\char`\"{}ag\+\_\+code\char`\"{}, \char`\"{}ag\+\_\+frame\char`\"{}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A sandbox layer that ensures unsafe operations cannot be performed.
+Useful when the template itself comes from an untrusted source.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacejinja2_1_1sandbox_a09e614e4e1392f4c1b5a3a38c6a8c0a5}\label{namespacejinja2_1_1sandbox_a09e614e4e1392f4c1b5a3a38c6a8c0a5}} 
+\index{jinja2.sandbox@{jinja2.sandbox}!is\_internal\_attribute@{is\_internal\_attribute}}
+\index{is\_internal\_attribute@{is\_internal\_attribute}!jinja2.sandbox@{jinja2.sandbox}}
+\doxysubsubsection{\texorpdfstring{is\_internal\_attribute()}{is\_internal\_attribute()}}
+{\footnotesize\ttfamily  bool jinja2.\+sandbox.\+is\+\_\+internal\+\_\+attribute (\begin{DoxyParamCaption}\item[{t.\+Any}]{obj,  }\item[{str}]{attr }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Test if the attribute given is an internal python attribute.  For
+example this function returns `True` for the `func_code` attribute of
+python objects.  This is useful if the environment method
+:meth:`~SandboxedEnvironment.is_safe_attribute` is overridden.
+
+>>> from jinja2.sandbox import is_internal_attribute
+>>> is_internal_attribute(str, "mro")
+True
+>>> is_internal_attribute(str, "upper")
+False
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacejinja2_1_1sandbox_addc9cda98501cd41a7bfaca993eff6b9}\label{namespacejinja2_1_1sandbox_addc9cda98501cd41a7bfaca993eff6b9}} 
+\index{jinja2.sandbox@{jinja2.sandbox}!modifies\_known\_mutable@{modifies\_known\_mutable}}
+\index{modifies\_known\_mutable@{modifies\_known\_mutable}!jinja2.sandbox@{jinja2.sandbox}}
+\doxysubsubsection{\texorpdfstring{modifies\_known\_mutable()}{modifies\_known\_mutable()}}
+{\footnotesize\ttfamily  bool jinja2.\+sandbox.\+modifies\+\_\+known\+\_\+mutable (\begin{DoxyParamCaption}\item[{t.\+Any}]{obj,  }\item[{str}]{attr }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function checks if an attribute on a builtin mutable object
+(list, dict, set or deque) or the corresponding ABCs would modify it
+if called.
+
+>>> modifies_known_mutable({}, "clear")
+True
+>>> modifies_known_mutable({}, "keys")
+False
+>>> modifies_known_mutable([], "append")
+True
+>>> modifies_known_mutable([], "index")
+False
+
+If called with an unsupported object, ``False`` is returned.
+
+>>> modifies_known_mutable("foo", "upper")
+False
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacejinja2_1_1sandbox_ac65e88c63cd1343a2872a215b46440f3}\label{namespacejinja2_1_1sandbox_ac65e88c63cd1343a2872a215b46440f3}} 
+\index{jinja2.sandbox@{jinja2.sandbox}!safe\_range@{safe\_range}}
+\index{safe\_range@{safe\_range}!jinja2.sandbox@{jinja2.sandbox}}
+\doxysubsubsection{\texorpdfstring{safe\_range()}{safe\_range()}}
+{\footnotesize\ttfamily  range jinja2.\+sandbox.\+safe\+\_\+range (\begin{DoxyParamCaption}\item[{$\ast$int}]{args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A range that can't generate ranges with a length of more than
+MAX_RANGE items.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacejinja2_1_1sandbox_a1ece13183e6e975b0bfc6cf63469e696}\label{namespacejinja2_1_1sandbox_a1ece13183e6e975b0bfc6cf63469e696}} 
+\index{jinja2.sandbox@{jinja2.sandbox}!unsafe@{unsafe}}
+\index{unsafe@{unsafe}!jinja2.sandbox@{jinja2.sandbox}}
+\doxysubsubsection{\texorpdfstring{unsafe()}{unsafe()}}
+{\footnotesize\ttfamily  F jinja2.\+sandbox.\+unsafe (\begin{DoxyParamCaption}\item[{F}]{f }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Marks a function or method as unsafe.
+
+.. code-block: python
+
+    @unsafe
+    def delete(self):
+        pass
+\end{DoxyVerb}
+ 

@@ -1,0 +1,86 @@
+\hypertarget{classpygments_1_1lexers_1_1configs_1_1TermcapLexer}{}\doxysection{pygments.\+lexers.\+configs.\+Termcap\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1configs_1_1TermcapLexer}\index{pygments.lexers.configs.TermcapLexer@{pygments.lexers.configs.TermcapLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+configs.\+Termcap\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+configs.\+Termcap\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1TermcapLexer_a457b3fa2832b894622a04d20ddb3856c}\label{classpygments_1_1lexers_1_1configs_1_1TermcapLexer_a457b3fa2832b894622a04d20ddb3856c}} 
+string {\bfseries name} = \textquotesingle{}Termcap\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1TermcapLexer_a4c6013397320dad088f15202bac65217}\label{classpygments_1_1lexers_1_1configs_1_1TermcapLexer_a4c6013397320dad088f15202bac65217}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}termcap\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1TermcapLexer_a93cdbcecd281eb73ae4422db339c8e70}\label{classpygments_1_1lexers_1_1configs_1_1TermcapLexer_a93cdbcecd281eb73ae4422db339c8e70}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}termcap\textquotesingle{}, \textquotesingle{}termcap.\+src\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1TermcapLexer_ab70771ec0ca8a67d2f3f85d58edc0e28}\label{classpygments_1_1lexers_1_1configs_1_1TermcapLexer_ab70771ec0ca8a67d2f3f85d58edc0e28}} 
+list {\bfseries mimetypes} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1TermcapLexer_a515d46c5f5279d896787c61add94e98b}\label{classpygments_1_1lexers_1_1configs_1_1TermcapLexer_a515d46c5f5279d896787c61add94e98b}} 
+string {\bfseries url} = \textquotesingle{}https\+://en.\+wikipedia.\+org/wiki/Termcap\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1TermcapLexer_ad000c38fd13217b0412fd6b8dcac7a0d}\label{classpygments_1_1lexers_1_1configs_1_1TermcapLexer_ad000c38fd13217b0412fd6b8dcac7a0d}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+1\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for termcap database source.
+
+This is very simple and minimal.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1TermcapLexer_a4bee3683f7bd1cc3ac54f843950300c8}\label{classpygments_1_1lexers_1_1configs_1_1TermcapLexer_a4bee3683f7bd1cc3ac54f843950300c8}} 
+\index{pygments.lexers.configs.TermcapLexer@{pygments.lexers.configs.TermcapLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.configs.TermcapLexer@{pygments.lexers.configs.TermcapLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+configs.\+Termcap\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^\#.*'}, Comment),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^[\string^\(\backslash\)s\#:|]+'}, Name.Tag, \textcolor{stringliteral}{'names'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'names'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)n'}, Whitespace, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r':'}, Punctuation, \textcolor{stringliteral}{'defs'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)|'}, Punctuation),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^:|]+'}, Name.Attribute),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'defs'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)\(\backslash\))(\(\backslash\)n[ \(\backslash\)t]*)'}, bygroups(Text, Whitespace)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)n[ \(\backslash\)t]*'}, Whitespace, \textcolor{stringliteral}{'\#pop:2'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\#)([0-\/9]+)'}, bygroups(Operator, Number)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'='}, Operator, \textcolor{stringliteral}{'data'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r':'}, Punctuation),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^\(\backslash\)s:=\#]+'}, Name.Class),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'data'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\(\backslash\)072'}, Literal),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r':'}, Punctuation, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^:\(\backslash\)\(\backslash\)]+'}, Literal),  \textcolor{comment}{\# for performance}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'.'}, Literal),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/configs.\+py\end{DoxyCompactItemize}

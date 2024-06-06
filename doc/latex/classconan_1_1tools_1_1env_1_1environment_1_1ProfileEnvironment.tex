@@ -1,0 +1,54 @@
+\hypertarget{classconan_1_1tools_1_1env_1_1environment_1_1ProfileEnvironment}{}\doxysection{conan.\+tools.\+env.\+environment.\+Profile\+Environment Class Reference}
+\label{classconan_1_1tools_1_1env_1_1environment_1_1ProfileEnvironment}\index{conan.tools.env.environment.ProfileEnvironment@{conan.tools.env.environment.ProfileEnvironment}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1env_1_1environment_1_1ProfileEnvironment_afc299650ae72925cf0747b84c7e5fc5a}\label{classconan_1_1tools_1_1env_1_1environment_1_1ProfileEnvironment_afc299650ae72925cf0747b84c7e5fc5a}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1env_1_1environment_1_1ProfileEnvironment_a375b29b07e0c4a74813979856cdc3c3a}\label{classconan_1_1tools_1_1env_1_1environment_1_1ProfileEnvironment_a375b29b07e0c4a74813979856cdc3c3a}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1env_1_1environment_1_1ProfileEnvironment_a45395af9e9629c0dfed259730847c7ec}\label{classconan_1_1tools_1_1env_1_1environment_1_1ProfileEnvironment_a45395af9e9629c0dfed259730847c7ec}} 
+def {\bfseries \+\_\+\+\_\+bool\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1env_1_1environment_1_1ProfileEnvironment_a84e145a1e99a90f310700940c18fa552}{get\+\_\+profile\+\_\+env}} (self, ref)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1env_1_1environment_1_1ProfileEnvironment_af76c3bc734d3354e6feb4ec52a21580f}{update\+\_\+profile\+\_\+env}} (self, other)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1env_1_1environment_1_1ProfileEnvironment_a506210ce1f6b0ab8efeb77a58dad3180}\label{classconan_1_1tools_1_1env_1_1environment_1_1ProfileEnvironment_a506210ce1f6b0ab8efeb77a58dad3180}} 
+def {\bfseries dumps} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1env_1_1environment_1_1ProfileEnvironment_a7a00baad17af69b14c9af3be984b94fc}\label{classconan_1_1tools_1_1env_1_1environment_1_1ProfileEnvironment_a7a00baad17af69b14c9af3be984b94fc}} 
+def {\bfseries loads} (text)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconan_1_1tools_1_1env_1_1environment_1_1ProfileEnvironment_a84e145a1e99a90f310700940c18fa552}\label{classconan_1_1tools_1_1env_1_1environment_1_1ProfileEnvironment_a84e145a1e99a90f310700940c18fa552}} 
+\index{conan.tools.env.environment.ProfileEnvironment@{conan.tools.env.environment.ProfileEnvironment}!get\_profile\_env@{get\_profile\_env}}
+\index{get\_profile\_env@{get\_profile\_env}!conan.tools.env.environment.ProfileEnvironment@{conan.tools.env.environment.ProfileEnvironment}}
+\doxysubsubsection{\texorpdfstring{get\_profile\_env()}{get\_profile\_env()}}
+{\footnotesize\ttfamily def conan.\+tools.\+env.\+environment.\+Profile\+Environment.\+get\+\_\+profile\+\_\+env (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ref }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} computes package-specific Environment
+it is only called when conanfile.buildenv is called
+the last one found in the profile file has top priority
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconan_1_1tools_1_1env_1_1environment_1_1ProfileEnvironment_af76c3bc734d3354e6feb4ec52a21580f}\label{classconan_1_1tools_1_1env_1_1environment_1_1ProfileEnvironment_af76c3bc734d3354e6feb4ec52a21580f}} 
+\index{conan.tools.env.environment.ProfileEnvironment@{conan.tools.env.environment.ProfileEnvironment}!update\_profile\_env@{update\_profile\_env}}
+\index{update\_profile\_env@{update\_profile\_env}!conan.tools.env.environment.ProfileEnvironment@{conan.tools.env.environment.ProfileEnvironment}}
+\doxysubsubsection{\texorpdfstring{update\_profile\_env()}{update\_profile\_env()}}
+{\footnotesize\ttfamily def conan.\+tools.\+env.\+environment.\+Profile\+Environment.\+update\+\_\+profile\+\_\+env (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:type other: ProfileEnvironment
+:param other: The argument profile has priority/precedence over the current one.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conan/tools/env/environment.\+py\end{DoxyCompactItemize}

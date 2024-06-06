@@ -1,0 +1,69 @@
+\hypertarget{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer}{}\doxysection{pygments.\+lexers.\+int\+\_\+fiction.\+Tads3\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer}\index{pygments.lexers.int\_fiction.Tads3Lexer@{pygments.lexers.int\_fiction.Tads3Lexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+int\+\_\+fiction.\+Tads3\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+int\+\_\+fiction.\+Tads3\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer_a1a99cdc7323171c10c515bf02a5dd8dc}\label{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer_a1a99cdc7323171c10c515bf02a5dd8dc}} 
+def {\bfseries get\+\_\+tokens\+\_\+unprocessed} (self, text, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer_a5926a73994ca03ef43f7fc3de285b29d}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer_a28f48bc83150028d61038e33bc428dec}\label{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer_a28f48bc83150028d61038e33bc428dec}} 
+string {\bfseries name} = \textquotesingle{}TADS 3\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer_a523cab9a721c4a66520b2b46dfd8b932}\label{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer_a523cab9a721c4a66520b2b46dfd8b932}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}tads3\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer_a36dfb46124fe8ab3e6d42fd74a087e93}\label{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer_a36dfb46124fe8ab3e6d42fd74a087e93}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.t\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer_a4913be9f91b79fc9845b7b21d2fe6879}\label{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer_a4913be9f91b79fc9845b7b21d2fe6879}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+tads.\+org\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer_ae2239d243ae7347cc29193886b743907}\label{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer_ae2239d243ae7347cc29193886b743907}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer_a8de831b5feeaa9bb50d4b6120b4bf7bc}\label{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer_a8de831b5feeaa9bb50d4b6120b4bf7bc}} 
+{\bfseries flags} = re.\+DOTALL $\vert$ re.\+MULTILINE
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer_aa0839d1e5fc188d06e55fa4f5589efb8}\label{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer_aa0839d1e5fc188d06e55fa4f5589efb8}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For TADS 3 source code.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer_a5926a73994ca03ef43f7fc3de285b29d}\label{classpygments_1_1lexers_1_1int__fiction_1_1Tads3Lexer_a5926a73994ca03ef43f7fc3de285b29d}} 
+\index{pygments.lexers.int\_fiction.Tads3Lexer@{pygments.lexers.int\_fiction.Tads3Lexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.int\_fiction.Tads3Lexer@{pygments.lexers.int\_fiction.Tads3Lexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+int\+\_\+fiction.\+Tads3\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This is a rather generic descriptive language without strong
+identifiers. It looks like a 'GameMainDef' has to be present,
+and/or a 'versionInfo' with an 'IFID' field.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/int\+\_\+fiction.\+py\end{DoxyCompactItemize}

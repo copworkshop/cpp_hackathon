@@ -1,0 +1,172 @@
+\hypertarget{namespacelxml_1_1isoschematron}{}\doxysection{lxml.\+isoschematron Namespace Reference}
+\label{namespacelxml_1_1isoschematron}\index{lxml.isoschematron@{lxml.isoschematron}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classlxml_1_1isoschematron_1_1Schematron}{Schematron}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacelxml_1_1isoschematron_a064a6c802875e23a4ff5ec0b2b042ab1}\label{namespacelxml_1_1isoschematron_a064a6c802875e23a4ff5ec0b2b042ab1}} 
+def {\bfseries schematron\+\_\+schema\+\_\+valid} (arg)
+\item 
+def \mbox{\hyperlink{namespacelxml_1_1isoschematron_a0859084fafeb95838f78f2a5b8f5da01}{stylesheet\+\_\+params}} ($\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacelxml_1_1isoschematron_ad7f0e217ea1daf96185724f7be8972ec}\label{namespacelxml_1_1isoschematron_ad7f0e217ea1daf96185724f7be8972ec}} 
+{\bfseries unicode} = str
+\item 
+\mbox{\Hypertarget{namespacelxml_1_1isoschematron_a3796f5d1dc48bd7994cb332f6d4f5926}\label{namespacelxml_1_1isoschematron_a3796f5d1dc48bd7994cb332f6d4f5926}} 
+{\bfseries basestring} = str
+\item 
+\mbox{\Hypertarget{namespacelxml_1_1isoschematron_a1027dd4f447388bd3b6d1db47030b5f4}\label{namespacelxml_1_1isoschematron_a1027dd4f447388bd3b6d1db47030b5f4}} 
+string {\bfseries XML\+\_\+\+SCHEMA\+\_\+\+NS} = \char`\"{}http\+://www.\+w3.\+org/2001/XMLSchema\char`\"{}
+\item 
+\mbox{\Hypertarget{namespacelxml_1_1isoschematron_af2bf82518837ac0c698f90a9ffd0f7e0}\label{namespacelxml_1_1isoschematron_af2bf82518837ac0c698f90a9ffd0f7e0}} 
+string {\bfseries RELAXNG\+\_\+\+NS} = \char`\"{}http\+://relaxng.\+org/ns/structure/1.\+0\char`\"{}
+\item 
+\mbox{\Hypertarget{namespacelxml_1_1isoschematron_aaa1dfcc62112d345aa21af5d4a2c8103}\label{namespacelxml_1_1isoschematron_aaa1dfcc62112d345aa21af5d4a2c8103}} 
+string {\bfseries SCHEMATRON\+\_\+\+NS} = \char`\"{}http\+://purl.\+oclc.\+org/dsdl/schematron\char`\"{}
+\item 
+\mbox{\Hypertarget{namespacelxml_1_1isoschematron_aca07eadd775213f1013d16400e420225}\label{namespacelxml_1_1isoschematron_aca07eadd775213f1013d16400e420225}} 
+string {\bfseries SVRL\+\_\+\+NS} = \char`\"{}http\+://purl.\+oclc.\+org/dsdl/svrl\char`\"{}
+\item 
+{\bfseries extract\+\_\+xsd}
+\item 
+{\bfseries extract\+\_\+rng}
+\item 
+{\bfseries iso\+\_\+dsdl\+\_\+include}
+\item 
+{\bfseries iso\+\_\+abstract\+\_\+expand}
+\item 
+{\bfseries iso\+\_\+svrl\+\_\+for\+\_\+xslt1}
+\item 
+{\bfseries svrl\+\_\+validation\+\_\+errors}
+\item 
+\mbox{\Hypertarget{namespacelxml_1_1isoschematron_a9d84165843e81e1e3530f7d0c4efb14b}\label{namespacelxml_1_1isoschematron_a9d84165843e81e1e3530f7d0c4efb14b}} 
+bool {\bfseries schematron\+\_\+schema\+\_\+valid\+\_\+supported} = False
+\item 
+{\bfseries schematron\+\_\+schema\+\_\+valid}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The ``lxml.isoschematron`` package implements ISO Schematron support on top
+of the pure-xslt 'skeleton' implementation.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacelxml_1_1isoschematron_a0859084fafeb95838f78f2a5b8f5da01}\label{namespacelxml_1_1isoschematron_a0859084fafeb95838f78f2a5b8f5da01}} 
+\index{lxml.isoschematron@{lxml.isoschematron}!stylesheet\_params@{stylesheet\_params}}
+\index{stylesheet\_params@{stylesheet\_params}!lxml.isoschematron@{lxml.isoschematron}}
+\doxysubsubsection{\texorpdfstring{stylesheet\_params()}{stylesheet\_params()}}
+{\footnotesize\ttfamily def lxml.\+isoschematron.\+stylesheet\+\_\+params (\begin{DoxyParamCaption}\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert keyword args to a dictionary of stylesheet parameters.
+XSL stylesheet parameters must be XPath expressions, i.e.:
+
+* string expressions, like "'5'"
+* simple (number) expressions, like "5"
+* valid XPath expressions, like "/a/b/text()"
+
+This function converts native Python keyword arguments to stylesheet
+parameters following these rules:
+If an arg is a string wrap it with XSLT.strparam().
+If an arg is an XPath object use its path string.
+If arg is None raise TypeError.
+Else convert arg to string.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacelxml_1_1isoschematron_a0f173e193040df742028607b710d94d6}\label{namespacelxml_1_1isoschematron_a0f173e193040df742028607b710d94d6}} 
+\index{lxml.isoschematron@{lxml.isoschematron}!extract\_rng@{extract\_rng}}
+\index{extract\_rng@{extract\_rng}!lxml.isoschematron@{lxml.isoschematron}}
+\doxysubsubsection{\texorpdfstring{extract\_rng}{extract\_rng}}
+{\footnotesize\ttfamily lxml.\+isoschematron.\+extract\+\_\+rng}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \_etree.XSLT(\_etree.parse(}
+\DoxyCodeLine{2     os.path.join(\_resources\_dir, \textcolor{stringliteral}{'xsl'}, \textcolor{stringliteral}{'RNG2Schtrn.xsl'})))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacelxml_1_1isoschematron_ab0c9bc33ed903a82e38f4dcfd41aa5f8}\label{namespacelxml_1_1isoschematron_ab0c9bc33ed903a82e38f4dcfd41aa5f8}} 
+\index{lxml.isoschematron@{lxml.isoschematron}!extract\_xsd@{extract\_xsd}}
+\index{extract\_xsd@{extract\_xsd}!lxml.isoschematron@{lxml.isoschematron}}
+\doxysubsubsection{\texorpdfstring{extract\_xsd}{extract\_xsd}}
+{\footnotesize\ttfamily lxml.\+isoschematron.\+extract\+\_\+xsd}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \_etree.XSLT(\_etree.parse(}
+\DoxyCodeLine{2     os.path.join(\_resources\_dir, \textcolor{stringliteral}{'xsl'}, \textcolor{stringliteral}{'XSD2Schtrn.xsl'})))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacelxml_1_1isoschematron_afe779be65d31adf501dd65163ac485dd}\label{namespacelxml_1_1isoschematron_afe779be65d31adf501dd65163ac485dd}} 
+\index{lxml.isoschematron@{lxml.isoschematron}!iso\_abstract\_expand@{iso\_abstract\_expand}}
+\index{iso\_abstract\_expand@{iso\_abstract\_expand}!lxml.isoschematron@{lxml.isoschematron}}
+\doxysubsubsection{\texorpdfstring{iso\_abstract\_expand}{iso\_abstract\_expand}}
+{\footnotesize\ttfamily lxml.\+isoschematron.\+iso\+\_\+abstract\+\_\+expand}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \_etree.XSLT(\_etree.parse(}
+\DoxyCodeLine{2     os.path.join(\_resources\_dir, \textcolor{stringliteral}{'xsl'}, \textcolor{stringliteral}{'iso-\/schematron-\/xslt1'},}
+\DoxyCodeLine{3                  \textcolor{stringliteral}{'iso\_abstract\_expand.xsl'})))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacelxml_1_1isoschematron_a2747bd30bf8fe626b9daeede0540d52b}\label{namespacelxml_1_1isoschematron_a2747bd30bf8fe626b9daeede0540d52b}} 
+\index{lxml.isoschematron@{lxml.isoschematron}!iso\_dsdl\_include@{iso\_dsdl\_include}}
+\index{iso\_dsdl\_include@{iso\_dsdl\_include}!lxml.isoschematron@{lxml.isoschematron}}
+\doxysubsubsection{\texorpdfstring{iso\_dsdl\_include}{iso\_dsdl\_include}}
+{\footnotesize\ttfamily lxml.\+isoschematron.\+iso\+\_\+dsdl\+\_\+include}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \_etree.XSLT(\_etree.parse(}
+\DoxyCodeLine{2     os.path.join(\_resources\_dir, \textcolor{stringliteral}{'xsl'}, \textcolor{stringliteral}{'iso-\/schematron-\/xslt1'},}
+\DoxyCodeLine{3                  \textcolor{stringliteral}{'iso\_dsdl\_include.xsl'})))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacelxml_1_1isoschematron_aa49df349372a1dd9996aac19f9532863}\label{namespacelxml_1_1isoschematron_aa49df349372a1dd9996aac19f9532863}} 
+\index{lxml.isoschematron@{lxml.isoschematron}!iso\_svrl\_for\_xslt1@{iso\_svrl\_for\_xslt1}}
+\index{iso\_svrl\_for\_xslt1@{iso\_svrl\_for\_xslt1}!lxml.isoschematron@{lxml.isoschematron}}
+\doxysubsubsection{\texorpdfstring{iso\_svrl\_for\_xslt1}{iso\_svrl\_for\_xslt1}}
+{\footnotesize\ttfamily lxml.\+isoschematron.\+iso\+\_\+svrl\+\_\+for\+\_\+xslt1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \_etree.XSLT(\_etree.parse(}
+\DoxyCodeLine{2     os.path.join(\_resources\_dir,}
+\DoxyCodeLine{3                  \textcolor{stringliteral}{'xsl'}, \textcolor{stringliteral}{'iso-\/schematron-\/xslt1'}, \textcolor{stringliteral}{'iso\_svrl\_for\_xslt1.xsl'})))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacelxml_1_1isoschematron_ac1fce1724a47222472e70d3dba3b44a7}\label{namespacelxml_1_1isoschematron_ac1fce1724a47222472e70d3dba3b44a7}} 
+\index{lxml.isoschematron@{lxml.isoschematron}!schematron\_schema\_valid@{schematron\_schema\_valid}}
+\index{schematron\_schema\_valid@{schematron\_schema\_valid}!lxml.isoschematron@{lxml.isoschematron}}
+\doxysubsubsection{\texorpdfstring{schematron\_schema\_valid}{schematron\_schema\_valid}}
+{\footnotesize\ttfamily lxml.\+isoschematron.\+schematron\+\_\+schema\+\_\+valid}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \_etree.RelaxNG(}
+\DoxyCodeLine{2         file=os.path.join(\_resources\_dir, \textcolor{stringliteral}{'rng'}, \textcolor{stringliteral}{'iso-\/schematron.rng'}))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacelxml_1_1isoschematron_a013826473e9360554b3fe65acc25740b}\label{namespacelxml_1_1isoschematron_a013826473e9360554b3fe65acc25740b}} 
+\index{lxml.isoschematron@{lxml.isoschematron}!svrl\_validation\_errors@{svrl\_validation\_errors}}
+\index{svrl\_validation\_errors@{svrl\_validation\_errors}!lxml.isoschematron@{lxml.isoschematron}}
+\doxysubsubsection{\texorpdfstring{svrl\_validation\_errors}{svrl\_validation\_errors}}
+{\footnotesize\ttfamily lxml.\+isoschematron.\+svrl\+\_\+validation\+\_\+errors}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \_etree.XPath(}
+\DoxyCodeLine{2     \textcolor{stringliteral}{'//svrl:failed-\/assert'}, namespaces=\{\textcolor{stringliteral}{'svrl'}: SVRL\_NS\})}
+
+\end{DoxyCode}

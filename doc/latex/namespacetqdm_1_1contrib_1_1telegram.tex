@@ -1,0 +1,46 @@
+\hypertarget{namespacetqdm_1_1contrib_1_1telegram}{}\doxysection{tqdm.\+contrib.\+telegram Namespace Reference}
+\label{namespacetqdm_1_1contrib_1_1telegram}\index{tqdm.contrib.telegram@{tqdm.contrib.telegram}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO}{Telegram\+IO}}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1contrib_1_1telegram_1_1tqdm__telegram}{tqdm\+\_\+telegram}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacetqdm_1_1contrib_1_1telegram_ac0c02ebb1c728063cb2f6ca599944cb8}{ttgrange}} ($\ast$args, $\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1contrib_1_1telegram_a1ec7020a9e101c53e4a168cbe7a68be8}\label{namespacetqdm_1_1contrib_1_1telegram_a1ec7020a9e101c53e4a168cbe7a68be8}} 
+{\bfseries tqdm} = \mbox{\hyperlink{classtqdm_1_1contrib_1_1telegram_1_1tqdm__telegram}{tqdm\+\_\+telegram}}
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1contrib_1_1telegram_aecfc0fa7720c929bea9d83bebf3786fb}\label{namespacetqdm_1_1contrib_1_1telegram_aecfc0fa7720c929bea9d83bebf3786fb}} 
+def {\bfseries trange} = \mbox{\hyperlink{namespacetqdm_1_1contrib_1_1telegram_ac0c02ebb1c728063cb2f6ca599944cb8}{ttgrange}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Sends updates to a Telegram bot.
+
+Usage:
+>>> from tqdm.contrib.telegram import tqdm, trange
+>>> for i in trange(10, token='{token}', chat_id='{chat_id}'):
+...     ...
+
+![screenshot](https://tqdm.github.io/img/screenshot-telegram.gif)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetqdm_1_1contrib_1_1telegram_ac0c02ebb1c728063cb2f6ca599944cb8}\label{namespacetqdm_1_1contrib_1_1telegram_ac0c02ebb1c728063cb2f6ca599944cb8}} 
+\index{tqdm.contrib.telegram@{tqdm.contrib.telegram}!ttgrange@{ttgrange}}
+\index{ttgrange@{ttgrange}!tqdm.contrib.telegram@{tqdm.contrib.telegram}}
+\doxysubsubsection{\texorpdfstring{ttgrange()}{ttgrange()}}
+{\footnotesize\ttfamily def tqdm.\+contrib.\+telegram.\+ttgrange (\begin{DoxyParamCaption}\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for `tqdm.contrib.telegram.tqdm(range(*args), **kwargs)`.\end{DoxyVerb}
+ 

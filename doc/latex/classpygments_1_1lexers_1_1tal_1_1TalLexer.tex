@@ -1,0 +1,98 @@
+\hypertarget{classpygments_1_1lexers_1_1tal_1_1TalLexer}{}\doxysection{pygments.\+lexers.\+tal.\+Tal\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1tal_1_1TalLexer}\index{pygments.lexers.tal.TalLexer@{pygments.lexers.tal.TalLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+tal.\+Tal\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+tal.\+Tal\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1tal_1_1TalLexer_ae2aa52a61e576457ea7c0c2986c4f36d}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1tal_1_1TalLexer_a4f35adcb90ad00cdf1efcee111321e58}\label{classpygments_1_1lexers_1_1tal_1_1TalLexer_a4f35adcb90ad00cdf1efcee111321e58}} 
+string {\bfseries name} = \textquotesingle{}Tal\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1tal_1_1TalLexer_a0e375bdf0415587f23fd45e78be81626}\label{classpygments_1_1lexers_1_1tal_1_1TalLexer_a0e375bdf0415587f23fd45e78be81626}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}tal\textquotesingle{}, \textquotesingle{}uxntal\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1tal_1_1TalLexer_ade6d74f098701e2fd48310eac0d53be4}\label{classpygments_1_1lexers_1_1tal_1_1TalLexer_ade6d74f098701e2fd48310eac0d53be4}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.tal\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1tal_1_1TalLexer_a422bf6b159bef4bcfdfecb5fd34f364b}\label{classpygments_1_1lexers_1_1tal_1_1TalLexer_a422bf6b159bef4bcfdfecb5fd34f364b}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/uxntal\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1tal_1_1TalLexer_a0f513d4ee986b0c1ae74883c280f95b9}\label{classpygments_1_1lexers_1_1tal_1_1TalLexer_a0f513d4ee986b0c1ae74883c280f95b9}} 
+string {\bfseries url} = \textquotesingle{}https\+://wiki.\+xxiivv.\+com/site/uxntal.\+html\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1tal_1_1TalLexer_a0535fa2fae44c4ca426ba5eeb77686fa}\label{classpygments_1_1lexers_1_1tal_1_1TalLexer_a0535fa2fae44c4ca426ba5eeb77686fa}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+12\textquotesingle{}
+\item 
+list {\bfseries instructions}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1tal_1_1TalLexer_a64497e14de77306aae3481a865e94621}\label{classpygments_1_1lexers_1_1tal_1_1TalLexer_a64497e14de77306aae3481a865e94621}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For Uxntal source code.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1tal_1_1TalLexer_ae2aa52a61e576457ea7c0c2986c4f36d}\label{classpygments_1_1lexers_1_1tal_1_1TalLexer_ae2aa52a61e576457ea7c0c2986c4f36d}} 
+\index{pygments.lexers.tal.TalLexer@{pygments.lexers.tal.TalLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.tal.TalLexer@{pygments.lexers.tal.TalLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+tal.\+Tal\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1tal_1_1TalLexer_adb8b3b76304f736265eaa15a09854be7}\label{classpygments_1_1lexers_1_1tal_1_1TalLexer_adb8b3b76304f736265eaa15a09854be7}} 
+\index{pygments.lexers.tal.TalLexer@{pygments.lexers.tal.TalLexer}!instructions@{instructions}}
+\index{instructions@{instructions}!pygments.lexers.tal.TalLexer@{pygments.lexers.tal.TalLexer}}
+\doxysubsubsection{\texorpdfstring{instructions}{instructions}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+tal.\+Tal\+Lexer.\+instructions\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [}
+\DoxyCodeLine{        \textcolor{stringliteral}{'BRK'}, \textcolor{stringliteral}{'LIT'}, \textcolor{stringliteral}{'INC'}, \textcolor{stringliteral}{'POP'}, \textcolor{stringliteral}{'DUP'}, \textcolor{stringliteral}{'NIP'}, \textcolor{stringliteral}{'SWP'}, \textcolor{stringliteral}{'OVR'}, \textcolor{stringliteral}{'ROT'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'EQU'}, \textcolor{stringliteral}{'NEQ'}, \textcolor{stringliteral}{'GTH'}, \textcolor{stringliteral}{'LTH'}, \textcolor{stringliteral}{'JMP'}, \textcolor{stringliteral}{'JCN'}, \textcolor{stringliteral}{'JSR'}, \textcolor{stringliteral}{'STH'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'LDZ'}, \textcolor{stringliteral}{'STZ'}, \textcolor{stringliteral}{'LDR'}, \textcolor{stringliteral}{'STR'}, \textcolor{stringliteral}{'LDA'}, \textcolor{stringliteral}{'STA'}, \textcolor{stringliteral}{'DEI'}, \textcolor{stringliteral}{'DEO'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'ADD'}, \textcolor{stringliteral}{'SUB'}, \textcolor{stringliteral}{'MUL'}, \textcolor{stringliteral}{'DIV'}, \textcolor{stringliteral}{'AND'}, \textcolor{stringliteral}{'ORA'}, \textcolor{stringliteral}{'EOR'}, \textcolor{stringliteral}{'SFT'}}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/tal.\+py\end{DoxyCompactItemize}

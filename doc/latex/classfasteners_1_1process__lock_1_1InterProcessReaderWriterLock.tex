@@ -1,0 +1,146 @@
+\hypertarget{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock}{}\doxysection{fasteners.\+process\+\_\+lock.\+Inter\+Process\+Reader\+Writer\+Lock Class Reference}
+\label{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock}\index{fasteners.process\_lock.InterProcessReaderWriterLock@{fasteners.process\_lock.InterProcessReaderWriterLock}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_a6189d8ead339c85e4dae768e3e4ada37}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Union\mbox{[}Path, str\mbox{]} path, Callable\mbox{[}\mbox{[}float\mbox{]}, None\mbox{]} sleep\+\_\+func=time.\+sleep, Optional\mbox{[}logging.\+Logger\mbox{]} logger=None)
+\item 
+def \mbox{\hyperlink{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_ae6538660afa5b0db4e5085945b1f653b}{read\+\_\+lock}} (self, delay=0.\+01, max\+\_\+delay=0.\+1)
+\item 
+def \mbox{\hyperlink{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_a88cd111796cabe4573dd0ca4b3cb91ef}{write\+\_\+lock}} (self, delay=0.\+01, max\+\_\+delay=0.\+1)
+\item 
+bool \mbox{\hyperlink{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_ae678926a1955c56752244ae7a350b7df}{acquire\+\_\+read\+\_\+lock}} (self, bool blocking=True, float delay=0.\+01, float max\+\_\+delay=0.\+1, float timeout=None)
+\item 
+bool \mbox{\hyperlink{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_afd04421f39c22dd1a46d26caaa93e790}{acquire\+\_\+write\+\_\+lock}} (self, bool blocking=True, float delay=0.\+01, float max\+\_\+delay=0.\+1, float timeout=None)
+\item 
+def \mbox{\hyperlink{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_a5b9cbae6f02a304569210c33ca57cd53}{release\+\_\+write\+\_\+lock}} (self)
+\item 
+def \mbox{\hyperlink{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_a97df66c715a6a8f83f81924c14d23740}{release\+\_\+read\+\_\+lock}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_ac39c683e72a855135c52cfa17ddd4ceb}\label{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_ac39c683e72a855135c52cfa17ddd4ceb}} 
+{\bfseries lockfile}
+\item 
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_a113af15a9fb2c3cb1fc92cfad8c999fc}\label{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_a113af15a9fb2c3cb1fc92cfad8c999fc}} 
+{\bfseries path}
+\item 
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_a8fe4f0f2e5ab52540d88a84eeef312b2}\label{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_a8fe4f0f2e5ab52540d88a84eeef312b2}} 
+{\bfseries sleep\+\_\+func}
+\item 
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_af3c453112d857692308f530427422ea9}\label{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_af3c453112d857692308f530427422ea9}} 
+{\bfseries logger}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_a7f6c9583b9c31d9693399aa70db29b61}\label{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_a7f6c9583b9c31d9693399aa70db29b61}} 
+float {\bfseries MAX\+\_\+\+DELAY} = 0.\+1
+\item 
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_a3ff55ba8926ab0ea563517e9493732ca}\label{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_a3ff55ba8926ab0ea563517e9493732ca}} 
+float {\bfseries DELAY\+\_\+\+INCREMENT} = 0.\+01
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An interprocess readers writer lock.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_a6189d8ead339c85e4dae768e3e4ada37}\label{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_a6189d8ead339c85e4dae768e3e4ada37}} 
+\index{fasteners.process\_lock.InterProcessReaderWriterLock@{fasteners.process\_lock.InterProcessReaderWriterLock}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!fasteners.process\_lock.InterProcessReaderWriterLock@{fasteners.process\_lock.InterProcessReaderWriterLock}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def fasteners.\+process\+\_\+lock.\+Inter\+Process\+Reader\+Writer\+Lock.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Union\mbox{[}Path, str\mbox{]}}]{path,  }\item[{Callable\mbox{[}\mbox{[}float\mbox{]}, None\mbox{]} }]{sleep\+\_\+func = {\ttfamily time.sleep},  }\item[{Optional\mbox{[}logging.\+Logger\mbox{]} }]{logger = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    path:
+        Path to the file that will be used for locking.
+    sleep_func:
+        Optional function to use for sleeping.
+    logger:
+        Optional logger to use for logging.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_ae678926a1955c56752244ae7a350b7df}\label{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_ae678926a1955c56752244ae7a350b7df}} 
+\index{fasteners.process\_lock.InterProcessReaderWriterLock@{fasteners.process\_lock.InterProcessReaderWriterLock}!acquire\_read\_lock@{acquire\_read\_lock}}
+\index{acquire\_read\_lock@{acquire\_read\_lock}!fasteners.process\_lock.InterProcessReaderWriterLock@{fasteners.process\_lock.InterProcessReaderWriterLock}}
+\doxysubsubsection{\texorpdfstring{acquire\_read\_lock()}{acquire\_read\_lock()}}
+{\footnotesize\ttfamily  bool fasteners.\+process\+\_\+lock.\+Inter\+Process\+Reader\+Writer\+Lock.\+acquire\+\_\+read\+\_\+lock (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool }]{blocking = {\ttfamily True},  }\item[{float }]{delay = {\ttfamily 0.01},  }\item[{float }]{max\+\_\+delay = {\ttfamily 0.1},  }\item[{float }]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Attempt to acquire a reader's lock.
+
+Args:
+    blocking:
+        Whether to wait to try to acquire the lock.
+    delay:
+        When `blocking`, starting delay as well as the delay increment
+        (in seconds).
+    max_delay:
+        When `blocking` the maximum delay in between attempts to
+        acquire (in seconds).
+    timeout:
+        When `blocking`, maximal waiting time (in seconds).
+
+Returns:
+    whether or not the acquisition succeeded
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_afd04421f39c22dd1a46d26caaa93e790}\label{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_afd04421f39c22dd1a46d26caaa93e790}} 
+\index{fasteners.process\_lock.InterProcessReaderWriterLock@{fasteners.process\_lock.InterProcessReaderWriterLock}!acquire\_write\_lock@{acquire\_write\_lock}}
+\index{acquire\_write\_lock@{acquire\_write\_lock}!fasteners.process\_lock.InterProcessReaderWriterLock@{fasteners.process\_lock.InterProcessReaderWriterLock}}
+\doxysubsubsection{\texorpdfstring{acquire\_write\_lock()}{acquire\_write\_lock()}}
+{\footnotesize\ttfamily  bool fasteners.\+process\+\_\+lock.\+Inter\+Process\+Reader\+Writer\+Lock.\+acquire\+\_\+write\+\_\+lock (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool }]{blocking = {\ttfamily True},  }\item[{float }]{delay = {\ttfamily 0.01},  }\item[{float }]{max\+\_\+delay = {\ttfamily 0.1},  }\item[{float }]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Attempt to acquire a writer's lock.
+
+Args:
+    blocking:
+        Whether to wait to try to acquire the lock.
+    delay:
+        When `blocking`, starting delay as well as the delay increment
+        (in seconds).
+    max_delay:
+        When `blocking` the maximum delay in between attempts to
+        acquire (in seconds).
+    timeout:
+        When `blocking`, maximal waiting time (in seconds).
+
+Returns:
+    whether or not the acquisition succeeded
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_ae6538660afa5b0db4e5085945b1f653b}\label{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_ae6538660afa5b0db4e5085945b1f653b}} 
+\index{fasteners.process\_lock.InterProcessReaderWriterLock@{fasteners.process\_lock.InterProcessReaderWriterLock}!read\_lock@{read\_lock}}
+\index{read\_lock@{read\_lock}!fasteners.process\_lock.InterProcessReaderWriterLock@{fasteners.process\_lock.InterProcessReaderWriterLock}}
+\doxysubsubsection{\texorpdfstring{read\_lock()}{read\_lock()}}
+{\footnotesize\ttfamily def fasteners.\+process\+\_\+lock.\+Inter\+Process\+Reader\+Writer\+Lock.\+read\+\_\+lock (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{delay = {\ttfamily 0.01},  }\item[{}]{max\+\_\+delay = {\ttfamily 0.1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Context manager that grans a read lock\end{DoxyVerb}
+ \mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_a97df66c715a6a8f83f81924c14d23740}\label{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_a97df66c715a6a8f83f81924c14d23740}} 
+\index{fasteners.process\_lock.InterProcessReaderWriterLock@{fasteners.process\_lock.InterProcessReaderWriterLock}!release\_read\_lock@{release\_read\_lock}}
+\index{release\_read\_lock@{release\_read\_lock}!fasteners.process\_lock.InterProcessReaderWriterLock@{fasteners.process\_lock.InterProcessReaderWriterLock}}
+\doxysubsubsection{\texorpdfstring{release\_read\_lock()}{release\_read\_lock()}}
+{\footnotesize\ttfamily def fasteners.\+process\+\_\+lock.\+Inter\+Process\+Reader\+Writer\+Lock.\+release\+\_\+read\+\_\+lock (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Release the reader's lock.\end{DoxyVerb}
+ \mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_a5b9cbae6f02a304569210c33ca57cd53}\label{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_a5b9cbae6f02a304569210c33ca57cd53}} 
+\index{fasteners.process\_lock.InterProcessReaderWriterLock@{fasteners.process\_lock.InterProcessReaderWriterLock}!release\_write\_lock@{release\_write\_lock}}
+\index{release\_write\_lock@{release\_write\_lock}!fasteners.process\_lock.InterProcessReaderWriterLock@{fasteners.process\_lock.InterProcessReaderWriterLock}}
+\doxysubsubsection{\texorpdfstring{release\_write\_lock()}{release\_write\_lock()}}
+{\footnotesize\ttfamily def fasteners.\+process\+\_\+lock.\+Inter\+Process\+Reader\+Writer\+Lock.\+release\+\_\+write\+\_\+lock (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Release the writer's lock.\end{DoxyVerb}
+ \mbox{\Hypertarget{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_a88cd111796cabe4573dd0ca4b3cb91ef}\label{classfasteners_1_1process__lock_1_1InterProcessReaderWriterLock_a88cd111796cabe4573dd0ca4b3cb91ef}} 
+\index{fasteners.process\_lock.InterProcessReaderWriterLock@{fasteners.process\_lock.InterProcessReaderWriterLock}!write\_lock@{write\_lock}}
+\index{write\_lock@{write\_lock}!fasteners.process\_lock.InterProcessReaderWriterLock@{fasteners.process\_lock.InterProcessReaderWriterLock}}
+\doxysubsubsection{\texorpdfstring{write\_lock()}{write\_lock()}}
+{\footnotesize\ttfamily def fasteners.\+process\+\_\+lock.\+Inter\+Process\+Reader\+Writer\+Lock.\+write\+\_\+lock (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{delay = {\ttfamily 0.01},  }\item[{}]{max\+\_\+delay = {\ttfamily 0.1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Context manager that grans a write lock\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/fasteners/process\+\_\+lock.\+py\end{DoxyCompactItemize}

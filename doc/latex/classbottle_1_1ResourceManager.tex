@@ -1,0 +1,166 @@
+\hypertarget{classbottle_1_1ResourceManager}{}\doxysection{bottle.\+Resource\+Manager Class Reference}
+\label{classbottle_1_1ResourceManager}\index{bottle.ResourceManager@{bottle.ResourceManager}}
+
+
+Inheritance diagram for bottle.\+Resource\+Manager\+:
+% FIG 0
+
+
+Collaboration diagram for bottle.\+Resource\+Manager\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbottle_1_1ResourceManager_a37e83c57ebd41b4630ecb412f042fb60}\label{classbottle_1_1ResourceManager_a37e83c57ebd41b4630ecb412f042fb60}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, base=\textquotesingle{}./\textquotesingle{}, opener=\mbox{\hyperlink{classbottle_1_1ResourceManager_a2225b0f4a91982261973439b201664ac}{open}}, cachemode=\textquotesingle{}all\textquotesingle{})
+\item 
+def \mbox{\hyperlink{classbottle_1_1ResourceManager_aa062c9dd703ab7306c416cead48a47bd}{add\+\_\+path}} (self, path, base=None, index=None, create=False)
+\item 
+def \mbox{\hyperlink{classbottle_1_1ResourceManager_adb1af0ebc8b83dcc267663a86568da24}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1ResourceManager_affa76c334da38e22754483784fd81003}{lookup}} (self, name)
+\item 
+def \mbox{\hyperlink{classbottle_1_1ResourceManager_a2225b0f4a91982261973439b201664ac}{open}} (self, name, mode=\textquotesingle{}r\textquotesingle{}, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+\mbox{\Hypertarget{classbottle_1_1ResourceManager_a37e83c57ebd41b4630ecb412f042fb60}\label{classbottle_1_1ResourceManager_a37e83c57ebd41b4630ecb412f042fb60}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, base=\textquotesingle{}./\textquotesingle{}, opener=\mbox{\hyperlink{classbottle_1_1ResourceManager_a2225b0f4a91982261973439b201664ac}{open}}, cachemode=\textquotesingle{}all\textquotesingle{})
+\item 
+def \mbox{\hyperlink{classbottle_1_1ResourceManager_aa062c9dd703ab7306c416cead48a47bd}{add\+\_\+path}} (self, path, base=None, index=None, create=False)
+\item 
+def \mbox{\hyperlink{classbottle_1_1ResourceManager_adb1af0ebc8b83dcc267663a86568da24}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1ResourceManager_affa76c334da38e22754483784fd81003}{lookup}} (self, name)
+\item 
+def \mbox{\hyperlink{classbottle_1_1ResourceManager_a2225b0f4a91982261973439b201664ac}{open}} (self, name, mode=\textquotesingle{}r\textquotesingle{}, $\ast$args, $\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbottle_1_1ResourceManager_afb4115b0e04d3033d744e58144aca718}\label{classbottle_1_1ResourceManager_afb4115b0e04d3033d744e58144aca718}} 
+{\bfseries opener}
+\item 
+\mbox{\Hypertarget{classbottle_1_1ResourceManager_a1e46daae38a12e401a8589556ebd7d18}\label{classbottle_1_1ResourceManager_a1e46daae38a12e401a8589556ebd7d18}} 
+{\bfseries base}
+\item 
+\mbox{\Hypertarget{classbottle_1_1ResourceManager_a8fd04e50781f318e9c3692979312d1fb}\label{classbottle_1_1ResourceManager_a8fd04e50781f318e9c3692979312d1fb}} 
+{\bfseries cachemode}
+\item 
+\mbox{\Hypertarget{classbottle_1_1ResourceManager_a18b3d30507bc3c50106fc8fc5c73fcb8}\label{classbottle_1_1ResourceManager_a18b3d30507bc3c50106fc8fc5c73fcb8}} 
+{\bfseries path}
+\item 
+\mbox{\Hypertarget{classbottle_1_1ResourceManager_af386b17e4cd887d091b75a7bbb8ae8cf}\label{classbottle_1_1ResourceManager_af386b17e4cd887d091b75a7bbb8ae8cf}} 
+{\bfseries cache}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} This class manages a list of search paths and helps to find and open
+    application-bound resources (files).
+
+    :param base: default value for :meth:`add_path` calls.
+    :param opener: callable used to open resources.
+    :param cachemode: controls which lookups are cached. One of 'all',
+                     'found' or 'none'.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbottle_1_1ResourceManager_adb1af0ebc8b83dcc267663a86568da24}\label{classbottle_1_1ResourceManager_adb1af0ebc8b83dcc267663a86568da24}} 
+\index{bottle.ResourceManager@{bottle.ResourceManager}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!bottle.ResourceManager@{bottle.ResourceManager}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Resource\+Manager.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Iterate over all existing files in all registered paths. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1ResourceManager_adb1af0ebc8b83dcc267663a86568da24}\label{classbottle_1_1ResourceManager_adb1af0ebc8b83dcc267663a86568da24}} 
+\index{bottle.ResourceManager@{bottle.ResourceManager}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!bottle.ResourceManager@{bottle.ResourceManager}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Resource\+Manager.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Iterate over all existing files in all registered paths. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1ResourceManager_aa062c9dd703ab7306c416cead48a47bd}\label{classbottle_1_1ResourceManager_aa062c9dd703ab7306c416cead48a47bd}} 
+\index{bottle.ResourceManager@{bottle.ResourceManager}!add\_path@{add\_path}}
+\index{add\_path@{add\_path}!bottle.ResourceManager@{bottle.ResourceManager}}
+\doxysubsubsection{\texorpdfstring{add\_path()}{add\_path()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Resource\+Manager.\+add\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{base = {\ttfamily None},  }\item[{}]{index = {\ttfamily None},  }\item[{}]{create = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Add a new path to the list of search paths. Return False if the
+    path does not exist.
+
+    :param path: The new search path. Relative paths are turned into
+        an absolute and normalized form. If the path looks like a file
+        (not ending in `/`), the filename is stripped off.
+    :param base: Path used to absolutize relative search paths.
+        Defaults to :attr:`base` which defaults to ``os.getcwd()``.
+    :param index: Position within the list of search paths. Defaults
+        to last index (appends to the list).
+
+    The `base` parameter makes it easy to reference files installed
+    along with a python module or package::
+
+        res.add_path('./resources/', __file__)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1ResourceManager_aa062c9dd703ab7306c416cead48a47bd}\label{classbottle_1_1ResourceManager_aa062c9dd703ab7306c416cead48a47bd}} 
+\index{bottle.ResourceManager@{bottle.ResourceManager}!add\_path@{add\_path}}
+\index{add\_path@{add\_path}!bottle.ResourceManager@{bottle.ResourceManager}}
+\doxysubsubsection{\texorpdfstring{add\_path()}{add\_path()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Resource\+Manager.\+add\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{base = {\ttfamily None},  }\item[{}]{index = {\ttfamily None},  }\item[{}]{create = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Add a new path to the list of search paths. Return False if the
+    path does not exist.
+
+    :param path: The new search path. Relative paths are turned into
+        an absolute and normalized form. If the path looks like a file
+        (not ending in `/`), the filename is stripped off.
+    :param base: Path used to absolutize relative search paths.
+        Defaults to :attr:`base` which defaults to ``os.getcwd()``.
+    :param index: Position within the list of search paths. Defaults
+        to last index (appends to the list).
+
+    The `base` parameter makes it easy to reference files installed
+    along with a python module or package::
+
+        res.add_path('./resources/', __file__)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1ResourceManager_affa76c334da38e22754483784fd81003}\label{classbottle_1_1ResourceManager_affa76c334da38e22754483784fd81003}} 
+\index{bottle.ResourceManager@{bottle.ResourceManager}!lookup@{lookup}}
+\index{lookup@{lookup}!bottle.ResourceManager@{bottle.ResourceManager}}
+\doxysubsubsection{\texorpdfstring{lookup()}{lookup()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Resource\+Manager.\+lookup (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Search for a resource and return an absolute file path, or `None`.
+
+    The :attr:`path` list is searched in order. The first match is
+    returend. Symlinks are followed. The result is cached to speed up
+    future lookups. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1ResourceManager_affa76c334da38e22754483784fd81003}\label{classbottle_1_1ResourceManager_affa76c334da38e22754483784fd81003}} 
+\index{bottle.ResourceManager@{bottle.ResourceManager}!lookup@{lookup}}
+\index{lookup@{lookup}!bottle.ResourceManager@{bottle.ResourceManager}}
+\doxysubsubsection{\texorpdfstring{lookup()}{lookup()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Resource\+Manager.\+lookup (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Search for a resource and return an absolute file path, or `None`.
+
+    The :attr:`path` list is searched in order. The first match is
+    returend. Symlinks are followed. The result is cached to speed up
+    future lookups. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1ResourceManager_a2225b0f4a91982261973439b201664ac}\label{classbottle_1_1ResourceManager_a2225b0f4a91982261973439b201664ac}} 
+\index{bottle.ResourceManager@{bottle.ResourceManager}!open@{open}}
+\index{open@{open}!bottle.ResourceManager@{bottle.ResourceManager}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Resource\+Manager.\+open (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{mode = {\ttfamily \textquotesingle{}r\textquotesingle{}},  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Find a resource and return a file object, or raise IOError. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1ResourceManager_a2225b0f4a91982261973439b201664ac}\label{classbottle_1_1ResourceManager_a2225b0f4a91982261973439b201664ac}} 
+\index{bottle.ResourceManager@{bottle.ResourceManager}!open@{open}}
+\index{open@{open}!bottle.ResourceManager@{bottle.ResourceManager}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Resource\+Manager.\+open (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{mode = {\ttfamily \textquotesingle{}r\textquotesingle{}},  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Find a resource and return a file object, or raise IOError. \end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/bin/bottle.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,102 @@
+\hypertarget{classpygments_1_1lexers_1_1php_1_1PsyshConsoleLexer}{}\doxysection{pygments.\+lexers.\+php.\+Psysh\+Console\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1php_1_1PsyshConsoleLexer}\index{pygments.lexers.php.PsyshConsoleLexer@{pygments.lexers.php.PsyshConsoleLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+php.\+Psysh\+Console\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+php.\+Psysh\+Console\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1php_1_1PsyshConsoleLexer_abeb06107e08689c7daefba6cd8f200b0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1php_1_1PsyshConsoleLexer_a127c3d56bf0094fcb145a0ca7e8950cb}{get\+\_\+tokens\+\_\+unprocessed}} (self, text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1php_1_1PsyshConsoleLexer_a76fbb0cf8b6687ef9ca60b34c98d1ced}\label{classpygments_1_1lexers_1_1php_1_1PsyshConsoleLexer_a76fbb0cf8b6687ef9ca60b34c98d1ced}} 
+string {\bfseries name} = \textquotesingle{}Psy\+SH console session for PHP\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1php_1_1PsyshConsoleLexer_ae46162ed217685587da8f86307ff7b2b}\label{classpygments_1_1lexers_1_1php_1_1PsyshConsoleLexer_ae46162ed217685587da8f86307ff7b2b}} 
+string {\bfseries url} = \textquotesingle{}https\+://psysh.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1php_1_1PsyshConsoleLexer_a42aa34ba255c23d5bad71fbda09d46ca}\label{classpygments_1_1lexers_1_1php_1_1PsyshConsoleLexer_a42aa34ba255c23d5bad71fbda09d46ca}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}psysh\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1php_1_1PsyshConsoleLexer_a0e6b36b73980cc95d06f36bb6e53a5c2}\label{classpygments_1_1lexers_1_1php_1_1PsyshConsoleLexer_a0e6b36b73980cc95d06f36bb6e53a5c2}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+7\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For PsySH console output, such as:
+
+.. sourcecode:: psysh
+
+    >>> $greeting = function($name): string {
+    ...     return "Hello, {$name}";
+    ... };
+    => Closure($name): string {#2371 …3}
+    >>> $greeting('World')
+    => "Hello, World"
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1php_1_1PsyshConsoleLexer_abeb06107e08689c7daefba6cd8f200b0}\label{classpygments_1_1lexers_1_1php_1_1PsyshConsoleLexer_abeb06107e08689c7daefba6cd8f200b0}} 
+\index{pygments.lexers.php.PsyshConsoleLexer@{pygments.lexers.php.PsyshConsoleLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.php.PsyshConsoleLexer@{pygments.lexers.php.PsyshConsoleLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+php.\+Psysh\+Console\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1php_1_1PsyshConsoleLexer_a127c3d56bf0094fcb145a0ca7e8950cb}\label{classpygments_1_1lexers_1_1php_1_1PsyshConsoleLexer_a127c3d56bf0094fcb145a0ca7e8950cb}} 
+\index{pygments.lexers.php.PsyshConsoleLexer@{pygments.lexers.php.PsyshConsoleLexer}!get\_tokens\_unprocessed@{get\_tokens\_unprocessed}}
+\index{get\_tokens\_unprocessed@{get\_tokens\_unprocessed}!pygments.lexers.php.PsyshConsoleLexer@{pygments.lexers.php.PsyshConsoleLexer}}
+\doxysubsubsection{\texorpdfstring{get\_tokens\_unprocessed()}{get\_tokens\_unprocessed()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+php.\+Psysh\+Console\+Lexer.\+get\+\_\+tokens\+\_\+unprocessed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method should process the text and return an iterable of
+``(index, tokentype, value)`` tuples where ``index`` is the starting
+position of the token within the input text.
+
+It must be overridden by subclasses. It is recommended to
+implement it as a generator to maximize effectiveness.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_aad5c02b7f661f64f91cf8c8d880e9f67}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/php.\+py\end{DoxyCompactItemize}

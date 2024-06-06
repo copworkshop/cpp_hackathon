@@ -1,0 +1,44 @@
+\hypertarget{namespacetqdm_1_1asyncio}{}\doxysection{tqdm.\+asyncio Namespace Reference}
+\label{namespacetqdm_1_1asyncio}\index{tqdm.asyncio@{tqdm.asyncio}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1asyncio_1_1tqdm__asyncio}{tqdm\+\_\+asyncio}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacetqdm_1_1asyncio_a80b5bdb8052eb6303d35e665bc906f39}{tarange}} ($\ast$args, $\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1asyncio_ad13a462b4e8eb80213095ca9fa042083}\label{namespacetqdm_1_1asyncio_ad13a462b4e8eb80213095ca9fa042083}} 
+{\bfseries tqdm} = \mbox{\hyperlink{classtqdm_1_1asyncio_1_1tqdm__asyncio}{tqdm\+\_\+asyncio}}
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1asyncio_a2bda6bdd885a46dbacb30a581d2a2062}\label{namespacetqdm_1_1asyncio_a2bda6bdd885a46dbacb30a581d2a2062}} 
+def {\bfseries trange} = \mbox{\hyperlink{namespacetqdm_1_1asyncio_a80b5bdb8052eb6303d35e665bc906f39}{tarange}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Asynchronous progressbar decorator for iterators.
+Includes a default `range` iterator printing to `stderr`.
+
+Usage:
+>>> from tqdm.asyncio import trange, tqdm
+>>> async for i in trange(10):
+...     ...
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetqdm_1_1asyncio_a80b5bdb8052eb6303d35e665bc906f39}\label{namespacetqdm_1_1asyncio_a80b5bdb8052eb6303d35e665bc906f39}} 
+\index{tqdm.asyncio@{tqdm.asyncio}!tarange@{tarange}}
+\index{tarange@{tarange}!tqdm.asyncio@{tqdm.asyncio}}
+\doxysubsubsection{\texorpdfstring{tarange()}{tarange()}}
+{\footnotesize\ttfamily def tqdm.\+asyncio.\+tarange (\begin{DoxyParamCaption}\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A shortcut for `tqdm.asyncio.tqdm(range(*args), **kwargs)`.
+\end{DoxyVerb}
+ 

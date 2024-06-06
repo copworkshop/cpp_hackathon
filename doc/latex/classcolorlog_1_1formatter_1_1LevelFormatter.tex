@@ -1,0 +1,57 @@
+\hypertarget{classcolorlog_1_1formatter_1_1LevelFormatter}{}\doxysection{colorlog.\+formatter.\+Level\+Formatter Class Reference}
+\label{classcolorlog_1_1formatter_1_1LevelFormatter}\index{colorlog.formatter.LevelFormatter@{colorlog.formatter.LevelFormatter}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classcolorlog_1_1formatter_1_1LevelFormatter_aa80480de9aa88626c45b1f600c1051b3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, typing.\+Mapping\mbox{[}str, str\mbox{]} fmt, $\ast$$\ast$typing.\+Any kwargs)
+\item 
+\mbox{\Hypertarget{classcolorlog_1_1formatter_1_1LevelFormatter_a9e4d82c290da11aae97d71239db73e48}\label{classcolorlog_1_1formatter_1_1LevelFormatter_a9e4d82c290da11aae97d71239db73e48}} 
+str {\bfseries format} (self, logging.\+Log\+Record record)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcolorlog_1_1formatter_1_1LevelFormatter_acf50de8d79b3c17ac308b2dbd8a72d70}\label{classcolorlog_1_1formatter_1_1LevelFormatter_acf50de8d79b3c17ac308b2dbd8a72d70}} 
+{\bfseries formatters}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An extension of ColoredFormatter that uses per-level format strings.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcolorlog_1_1formatter_1_1LevelFormatter_aa80480de9aa88626c45b1f600c1051b3}\label{classcolorlog_1_1formatter_1_1LevelFormatter_aa80480de9aa88626c45b1f600c1051b3}} 
+\index{colorlog.formatter.LevelFormatter@{colorlog.formatter.LevelFormatter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!colorlog.formatter.LevelFormatter@{colorlog.formatter.LevelFormatter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None colorlog.\+formatter.\+Level\+Formatter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{typing.\+Mapping\mbox{[}str, str\mbox{]}}]{fmt,  }\item[{$\ast$$\ast$typing.\+Any}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configure a ColoredFormatter with its own format string for each log level.
+
+Supports fmt as a dict. All other args are passed on to the
+``colorlog.ColoredFormatter`` constructor.
+
+:Parameters:
+- fmt (dict):
+    A mapping of log levels (represented as strings, e.g. 'WARNING') to
+    format strings. (*New in version 2.7.0)
+(All other parameters are the same as in colorlog.ColoredFormatter)
+
+Example:
+
+formatter = colorlog.LevelFormatter(
+    fmt={
+        "DEBUG": "%(log_color)s%(message)s (%(module)s:%(lineno)d)",
+        "INFO": "%(log_color)s%(message)s",
+        "WARNING": "%(log_color)sWRN: %(message)s (%(module)s:%(lineno)d)",
+        "ERROR": "%(log_color)sERR: %(message)s (%(module)s:%(lineno)d)",
+        "CRITICAL": "%(log_color)sCRT: %(message)s (%(module)s:%(lineno)d)",
+    }
+)
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/colorlog/formatter.\+py\end{DoxyCompactItemize}

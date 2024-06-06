@@ -1,0 +1,37 @@
+\hypertarget{classconans_1_1client_1_1cmd_1_1uploader_1_1__UploadCollecter}{}\doxysection{conans.\+client.\+cmd.\+uploader.\+\_\+\+Upload\+Collecter Class Reference}
+\label{classconans_1_1client_1_1cmd_1_1uploader_1_1__UploadCollecter}\index{conans.client.cmd.uploader.\_UploadCollecter@{conans.client.cmd.uploader.\_UploadCollecter}}
+
+
+Inheritance diagram for conans.\+client.\+cmd.\+uploader.\+\_\+\+Upload\+Collecter\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+cmd.\+uploader.\+\_\+\+Upload\+Collecter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1cmd_1_1uploader_1_1__UploadCollecter_ac82391d1472c472df592a7dd30cc9889}\label{classconans_1_1client_1_1cmd_1_1uploader_1_1__UploadCollecter_ac82391d1472c472df592a7dd30cc9889}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, cache, user\+\_\+io, output, loader)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1cmd_1_1uploader_1_1__UploadCollecter_a091f4a77251a4b7db17cb5b5d4fd1bd9}\label{classconans_1_1client_1_1cmd_1_1uploader_1_1__UploadCollecter_a091f4a77251a4b7db17cb5b5d4fd1bd9}} 
+def {\bfseries collect} (self, package\+\_\+id, reference\+\_\+or\+\_\+pattern, confirm, remotes, all\+\_\+packages, query)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Collect all the packages in the local cache to be uploaded:
+- Collect the refs that matches the given pattern _collect_refs_to_upload
+- Collect for every ref all the binaries IDs that has to be uploaded
+  "_collect_packages_to_upload". This may discard binaries that do not
+  belong to the current RREV
+The collection of this does the interactivity (ask user if yes/no),
+the errors (don't upload packages with policy=build_always, and computing
+the full REVISIONS for every that has to be uploaded.
+No remote API calls are done in this step, everything is local
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/cmd/uploader.\+py\end{DoxyCompactItemize}

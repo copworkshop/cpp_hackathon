@@ -1,0 +1,82 @@
+\hypertarget{classcharset__normalizer_1_1md_1_1SuspiciousRange}{}\doxysection{charset\+\_\+normalizer.\+md.\+Suspicious\+Range Class Reference}
+\label{classcharset__normalizer_1_1md_1_1SuspiciousRange}\index{charset\_normalizer.md.SuspiciousRange@{charset\_normalizer.md.SuspiciousRange}}
+
+
+Inheritance diagram for charset\+\_\+normalizer.\+md.\+Suspicious\+Range\+:
+% FIG 0
+
+
+Collaboration diagram for charset\+\_\+normalizer.\+md.\+Suspicious\+Range\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1SuspiciousRange_acb14db00848067505c608ce4c514a9ef}\label{classcharset__normalizer_1_1md_1_1SuspiciousRange_acb14db00848067505c608ce4c514a9ef}} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+bool \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1SuspiciousRange_ac301c7d86ea3ca7e5522c41a9daba2b7}{eligible}} (self, str character)
+\item 
+None \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1SuspiciousRange_a9c1c585038768d30949c547ff4dcfca2}{feed}} (self, str character)
+\item 
+None \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1SuspiciousRange_a0e47543e8476c45abb95fcca095db239}{reset}} (self)
+\item 
+float \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1SuspiciousRange_a55d804593d063a23641bd34aa2e2dd08}{ratio}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1SuspiciousRange_ac301c7d86ea3ca7e5522c41a9daba2b7}\label{classcharset__normalizer_1_1md_1_1SuspiciousRange_ac301c7d86ea3ca7e5522c41a9daba2b7}} 
+\index{charset\_normalizer.md.SuspiciousRange@{charset\_normalizer.md.SuspiciousRange}!eligible@{eligible}}
+\index{eligible@{eligible}!charset\_normalizer.md.SuspiciousRange@{charset\_normalizer.md.SuspiciousRange}}
+\doxysubsubsection{\texorpdfstring{eligible()}{eligible()}}
+{\footnotesize\ttfamily  bool charset\+\_\+normalizer.\+md.\+Suspicious\+Range.\+eligible (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{character }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine if given character should be fed in.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1MessDetectorPlugin_a6c90e20b89fb11f27a99c4bb1b7b4aeb}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1SuspiciousRange_a9c1c585038768d30949c547ff4dcfca2}\label{classcharset__normalizer_1_1md_1_1SuspiciousRange_a9c1c585038768d30949c547ff4dcfca2}} 
+\index{charset\_normalizer.md.SuspiciousRange@{charset\_normalizer.md.SuspiciousRange}!feed@{feed}}
+\index{feed@{feed}!charset\_normalizer.md.SuspiciousRange@{charset\_normalizer.md.SuspiciousRange}}
+\doxysubsubsection{\texorpdfstring{feed()}{feed()}}
+{\footnotesize\ttfamily  None charset\+\_\+normalizer.\+md.\+Suspicious\+Range.\+feed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{character }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The main routine to be executed upon character.
+Insert the logic in witch the text would be considered chaotic.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1MessDetectorPlugin_a1d7b6ef49fad244c8841e7dacf4a1bdb}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1SuspiciousRange_a55d804593d063a23641bd34aa2e2dd08}\label{classcharset__normalizer_1_1md_1_1SuspiciousRange_a55d804593d063a23641bd34aa2e2dd08}} 
+\index{charset\_normalizer.md.SuspiciousRange@{charset\_normalizer.md.SuspiciousRange}!ratio@{ratio}}
+\index{ratio@{ratio}!charset\_normalizer.md.SuspiciousRange@{charset\_normalizer.md.SuspiciousRange}}
+\doxysubsubsection{\texorpdfstring{ratio()}{ratio()}}
+{\footnotesize\ttfamily  float charset\+\_\+normalizer.\+md.\+Suspicious\+Range.\+ratio (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute the chaos ratio based on what your feed() has seen.
+Must NOT be lower than 0.; No restriction gt 0.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1MessDetectorPlugin_ac8f7c272b946d769ca5d6c478b6dd8a1}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1SuspiciousRange_a0e47543e8476c45abb95fcca095db239}\label{classcharset__normalizer_1_1md_1_1SuspiciousRange_a0e47543e8476c45abb95fcca095db239}} 
+\index{charset\_normalizer.md.SuspiciousRange@{charset\_normalizer.md.SuspiciousRange}!reset@{reset}}
+\index{reset@{reset}!charset\_normalizer.md.SuspiciousRange@{charset\_normalizer.md.SuspiciousRange}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily  None charset\+\_\+normalizer.\+md.\+Suspicious\+Range.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Permit to reset the plugin to the initial state.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1MessDetectorPlugin_a82ba1b462302d9374e38614cd8a918b9}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/charset\+\_\+normalizer/md.\+py\end{DoxyCompactItemize}

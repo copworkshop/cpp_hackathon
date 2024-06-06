@@ -1,0 +1,53 @@
+\hypertarget{classconans_1_1client_1_1graph_1_1graph__binaries_1_1GraphBinariesAnalyzer}{}\doxysection{conans.\+client.\+graph.\+graph\+\_\+binaries.\+Graph\+Binaries\+Analyzer Class Reference}
+\label{classconans_1_1client_1_1graph_1_1graph__binaries_1_1GraphBinariesAnalyzer}\index{conans.client.graph.graph\_binaries.GraphBinariesAnalyzer@{conans.client.graph.graph\_binaries.GraphBinariesAnalyzer}}
+
+
+Inheritance diagram for conans.\+client.\+graph.\+graph\+\_\+binaries.\+Graph\+Binaries\+Analyzer\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+graph.\+graph\+\_\+binaries.\+Graph\+Binaries\+Analyzer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1graph_1_1graph__binaries_1_1GraphBinariesAnalyzer_a85efb81bd2a7a66a872a3759a088c97f}\label{classconans_1_1client_1_1graph_1_1graph__binaries_1_1GraphBinariesAnalyzer_a85efb81bd2a7a66a872a3759a088c97f}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, cache, output, remote\+\_\+manager)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1graph_1_1graph__binaries_1_1GraphBinariesAnalyzer_aeb4e47a786e5e052d3711a6a34d52923}\label{classconans_1_1client_1_1graph_1_1graph__binaries_1_1GraphBinariesAnalyzer_aeb4e47a786e5e052d3711a6a34d52923}} 
+def {\bfseries evaluate\+\_\+graph} (self, deps\+\_\+graph, build\+\_\+mode, update, remotes, nodes\+\_\+subset=None, root=None)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1graph_1_1graph__binaries_1_1GraphBinariesAnalyzer_aad403fa75670bcebdab5b961fbca9429}{reevaluate\+\_\+node}} (self, node, remotes, build\+\_\+mode, update)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1graph_1_1graph__binaries_1_1GraphBinariesAnalyzer_a99bf8a9aebb07940d1224e536f16df3b}{package\+\_\+id\+\_\+transitive\+\_\+reqs}} (node)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1graph_1_1graph__binaries_1_1GraphBinariesAnalyzer_a99bf8a9aebb07940d1224e536f16df3b}\label{classconans_1_1client_1_1graph_1_1graph__binaries_1_1GraphBinariesAnalyzer_a99bf8a9aebb07940d1224e536f16df3b}} 
+\index{conans.client.graph.graph\_binaries.GraphBinariesAnalyzer@{conans.client.graph.graph\_binaries.GraphBinariesAnalyzer}!package\_id\_transitive\_reqs@{package\_id\_transitive\_reqs}}
+\index{package\_id\_transitive\_reqs@{package\_id\_transitive\_reqs}!conans.client.graph.graph\_binaries.GraphBinariesAnalyzer@{conans.client.graph.graph\_binaries.GraphBinariesAnalyzer}}
+\doxysubsubsection{\texorpdfstring{package\_id\_transitive\_reqs()}{package\_id\_transitive\_reqs()}}
+{\footnotesize\ttfamily def conans.\+client.\+graph.\+graph\+\_\+binaries.\+Graph\+Binaries\+Analyzer.\+package\+\_\+id\+\_\+transitive\+\_\+reqs (\begin{DoxyParamCaption}\item[{}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}accumulate the direct and transitive requirements prefs necessary to compute the
+package_id
+:return: set(prefs) of direct deps, set(prefs) of transitive deps
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1client_1_1graph_1_1graph__binaries_1_1GraphBinariesAnalyzer_aad403fa75670bcebdab5b961fbca9429}\label{classconans_1_1client_1_1graph_1_1graph__binaries_1_1GraphBinariesAnalyzer_aad403fa75670bcebdab5b961fbca9429}} 
+\index{conans.client.graph.graph\_binaries.GraphBinariesAnalyzer@{conans.client.graph.graph\_binaries.GraphBinariesAnalyzer}!reevaluate\_node@{reevaluate\_node}}
+\index{reevaluate\_node@{reevaluate\_node}!conans.client.graph.graph\_binaries.GraphBinariesAnalyzer@{conans.client.graph.graph\_binaries.GraphBinariesAnalyzer}}
+\doxysubsubsection{\texorpdfstring{reevaluate\_node()}{reevaluate\_node()}}
+{\footnotesize\ttfamily def conans.\+client.\+graph.\+graph\+\_\+binaries.\+Graph\+Binaries\+Analyzer.\+reevaluate\+\_\+node (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{node,  }\item[{}]{remotes,  }\item[{}]{build\+\_\+mode,  }\item[{}]{update }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} reevaluate the node is necessary when there is some PACKAGE_ID_UNKNOWN due to
+package_revision_mode
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/graph/graph\+\_\+binaries.\+py\end{DoxyCompactItemize}

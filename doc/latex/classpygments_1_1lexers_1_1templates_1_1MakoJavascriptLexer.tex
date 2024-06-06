@@ -1,0 +1,90 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1MakoJavascriptLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Mako\+Javascript\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1MakoJavascriptLexer}\index{pygments.lexers.templates.MakoJavascriptLexer@{pygments.lexers.templates.MakoJavascriptLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Mako\+Javascript\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Mako\+Javascript\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1MakoJavascriptLexer_a7758f4b24f8449e121d0a3d81d5427de}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MakoJavascriptLexer_a535f597a558ccfb755c238c8efcb2256}\label{classpygments_1_1lexers_1_1templates_1_1MakoJavascriptLexer_a535f597a558ccfb755c238c8efcb2256}} 
+string {\bfseries name} = \textquotesingle{}Java\+Script+Mako\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MakoJavascriptLexer_adf21bb8e6cd0f52b139ffe1d1ae774fb}\label{classpygments_1_1lexers_1_1templates_1_1MakoJavascriptLexer_adf21bb8e6cd0f52b139ffe1d1ae774fb}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}javascript+mako\textquotesingle{}, \textquotesingle{}js+mako\textquotesingle{}\mbox{]}
+\item 
+list {\bfseries mimetypes}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MakoJavascriptLexer_afec2e91bc1e826cf340083c40fa39b42}\label{classpygments_1_1lexers_1_1templates_1_1MakoJavascriptLexer_afec2e91bc1e826cf340083c40fa39b42}} 
+string {\bfseries url} = \textquotesingle{}http\+://www.\+makotemplates.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MakoJavascriptLexer_aa7a5198352fc3991b58c3cce4c2b8db0}\label{classpygments_1_1lexers_1_1templates_1_1MakoJavascriptLexer_aa7a5198352fc3991b58c3cce4c2b8db0}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}0.\+7\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Subclass of the `MakoLexer` that highlights unlexed data
+with the `JavascriptLexer`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MakoJavascriptLexer_a7758f4b24f8449e121d0a3d81d5427de}\label{classpygments_1_1lexers_1_1templates_1_1MakoJavascriptLexer_a7758f4b24f8449e121d0a3d81d5427de}} 
+\index{pygments.lexers.templates.MakoJavascriptLexer@{pygments.lexers.templates.MakoJavascriptLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.templates.MakoJavascriptLexer@{pygments.lexers.templates.MakoJavascriptLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Mako\+Javascript\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MakoJavascriptLexer_a89c0b11894b5c6b7598925b395f04996}\label{classpygments_1_1lexers_1_1templates_1_1MakoJavascriptLexer_a89c0b11894b5c6b7598925b395f04996}} 
+\index{pygments.lexers.templates.MakoJavascriptLexer@{pygments.lexers.templates.MakoJavascriptLexer}!mimetypes@{mimetypes}}
+\index{mimetypes@{mimetypes}!pygments.lexers.templates.MakoJavascriptLexer@{pygments.lexers.templates.MakoJavascriptLexer}}
+\doxysubsubsection{\texorpdfstring{mimetypes}{mimetypes}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+templates.\+Mako\+Javascript\+Lexer.\+mimetypes\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [\textcolor{stringliteral}{'application/x-\/javascript+mako'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'text/x-\/javascript+mako'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'text/javascript+mako'}]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

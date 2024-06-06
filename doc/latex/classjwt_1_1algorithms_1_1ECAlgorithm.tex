@@ -1,0 +1,71 @@
+\hypertarget{classjwt_1_1algorithms_1_1ECAlgorithm}{}\doxysection{jwt.\+algorithms.\+ECAlgorithm Class Reference}
+\label{classjwt_1_1algorithms_1_1ECAlgorithm}\index{jwt.algorithms.ECAlgorithm@{jwt.algorithms.ECAlgorithm}}
+
+
+Inheritance diagram for jwt.\+algorithms.\+ECAlgorithm\+:
+% FIG 0
+
+
+Collaboration diagram for jwt.\+algorithms.\+ECAlgorithm\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1ECAlgorithm_a7ebd4e55a00dd4a4731adeebfb57a3e0}\label{classjwt_1_1algorithms_1_1ECAlgorithm_a7ebd4e55a00dd4a4731adeebfb57a3e0}} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, type\mbox{[}hashes.\+Hash\+Algorithm\mbox{]} hash\+\_\+alg)
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1ECAlgorithm_a54cfb019ecee276c02d58da2e6f9c95f}\label{classjwt_1_1algorithms_1_1ECAlgorithm_a54cfb019ecee276c02d58da2e6f9c95f}} 
+Allowed\+ECKeys {\bfseries prepare\+\_\+key} (self, Allowed\+ECKeys$\vert$str$\vert$bytes key)
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1ECAlgorithm_a1d680597517021dda9e59576e4bca14d}\label{classjwt_1_1algorithms_1_1ECAlgorithm_a1d680597517021dda9e59576e4bca14d}} 
+bytes {\bfseries sign} (self, bytes msg, Elliptic\+Curve\+Private\+Key key)
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1ECAlgorithm_a8025873fff1e4436086799c891b52d2c}\label{classjwt_1_1algorithms_1_1ECAlgorithm_a8025873fff1e4436086799c891b52d2c}} 
+bool {\bfseries verify} (self, bytes msg, \char`\"{}Allowed\+ECKeys\char`\"{} key, bytes sig)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1ECAlgorithm_a117f725e08096f7715dc21ced9cda790}\label{classjwt_1_1algorithms_1_1ECAlgorithm_a117f725e08096f7715dc21ced9cda790}} 
+JWKDict {\bfseries to\+\_\+jwk} (Allowed\+ECKeys key\+\_\+obj, Literal\mbox{[}True\mbox{]} as\+\_\+dict)
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1ECAlgorithm_a2869cd45322af95cfc94037fe0150832}\label{classjwt_1_1algorithms_1_1ECAlgorithm_a2869cd45322af95cfc94037fe0150832}} 
+str {\bfseries to\+\_\+jwk} (Allowed\+ECKeys key\+\_\+obj, Literal\mbox{[}False\mbox{]} as\+\_\+dict=False)
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1ECAlgorithm_ad9e0665892b19fc5e1bcac654f8854e6}\label{classjwt_1_1algorithms_1_1ECAlgorithm_ad9e0665892b19fc5e1bcac654f8854e6}} 
+Union\mbox{[}JWKDict, str\mbox{]} {\bfseries to\+\_\+jwk} (Allowed\+ECKeys key\+\_\+obj, bool as\+\_\+dict=False)
+\item 
+Allowed\+ECKeys \mbox{\hyperlink{classjwt_1_1algorithms_1_1ECAlgorithm_a6ffb88ba75b84ad860a7d5d65b7cd75f}{from\+\_\+jwk}} (str$\vert$JWKDict jwk)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1ECAlgorithm_a50953024d0b30b47bd970404c317cfd5}\label{classjwt_1_1algorithms_1_1ECAlgorithm_a50953024d0b30b47bd970404c317cfd5}} 
+{\bfseries hash\+\_\+alg}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Performs signing and verification operations using
+ECDSA and the specified hash function
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1ECAlgorithm_a6ffb88ba75b84ad860a7d5d65b7cd75f}\label{classjwt_1_1algorithms_1_1ECAlgorithm_a6ffb88ba75b84ad860a7d5d65b7cd75f}} 
+\index{jwt.algorithms.ECAlgorithm@{jwt.algorithms.ECAlgorithm}!from\_jwk@{from\_jwk}}
+\index{from\_jwk@{from\_jwk}!jwt.algorithms.ECAlgorithm@{jwt.algorithms.ECAlgorithm}}
+\doxysubsubsection{\texorpdfstring{from\_jwk()}{from\_jwk()}}
+{\footnotesize\ttfamily  Allowed\+ECKeys jwt.\+algorithms.\+ECAlgorithm.\+from\+\_\+jwk (\begin{DoxyParamCaption}\item[{str $\vert$ JWKDict}]{jwk }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Deserializes a given key from JWK back into a key object
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjwt_1_1algorithms_1_1Algorithm_af9a85ad9cdd019cc6e368338574eba75}{jwt.\+algorithms.\+Algorithm}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jwt/algorithms.\+py\end{DoxyCompactItemize}

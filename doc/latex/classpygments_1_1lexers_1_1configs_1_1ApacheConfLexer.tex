@@ -1,0 +1,88 @@
+\hypertarget{classpygments_1_1lexers_1_1configs_1_1ApacheConfLexer}{}\doxysection{pygments.\+lexers.\+configs.\+Apache\+Conf\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1configs_1_1ApacheConfLexer}\index{pygments.lexers.configs.ApacheConfLexer@{pygments.lexers.configs.ApacheConfLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+configs.\+Apache\+Conf\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+configs.\+Apache\+Conf\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1ApacheConfLexer_a9ebe3316d23d8a9597bd0902c71a813f}\label{classpygments_1_1lexers_1_1configs_1_1ApacheConfLexer_a9ebe3316d23d8a9597bd0902c71a813f}} 
+string {\bfseries name} = \textquotesingle{}Apache\+Conf\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1ApacheConfLexer_a98dd01c8999c86d63957c28077324b48}\label{classpygments_1_1lexers_1_1configs_1_1ApacheConfLexer_a98dd01c8999c86d63957c28077324b48}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}apacheconf\textquotesingle{}, \textquotesingle{}aconf\textquotesingle{}, \textquotesingle{}apache\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1ApacheConfLexer_a0ddcb1b543775ccc8562de41a2074351}\label{classpygments_1_1lexers_1_1configs_1_1ApacheConfLexer_a0ddcb1b543775ccc8562de41a2074351}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}.htaccess\textquotesingle{}, \textquotesingle{}apache.\+conf\textquotesingle{}, \textquotesingle{}apache2.\+conf\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1ApacheConfLexer_afba09ef6ceb944d302cb2bd40f30c904}\label{classpygments_1_1lexers_1_1configs_1_1ApacheConfLexer_afba09ef6ceb944d302cb2bd40f30c904}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/apacheconf\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1ApacheConfLexer_a8a67c44414014579a4dfe4101598fdb6}\label{classpygments_1_1lexers_1_1configs_1_1ApacheConfLexer_a8a67c44414014579a4dfe4101598fdb6}} 
+string {\bfseries url} = \textquotesingle{}https\+://httpd.\+apache.\+org/docs/current/configuring.\+html\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1ApacheConfLexer_af5a930de1aaab4d6e945f107ea3809be}\label{classpygments_1_1lexers_1_1configs_1_1ApacheConfLexer_af5a930de1aaab4d6e945f107ea3809be}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}0.\+6\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1ApacheConfLexer_af5bac7cc4361254d46ef97c22cce8bee}\label{classpygments_1_1lexers_1_1configs_1_1ApacheConfLexer_af5bac7cc4361254d46ef97c22cce8bee}} 
+{\bfseries flags} = re.\+MULTILINE $\vert$ re.\+IGNORECASE
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for configuration files following the Apache config file
+format.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1ApacheConfLexer_a1030c13bec00a7a8dc7bd508e71b3ae4}\label{classpygments_1_1lexers_1_1configs_1_1ApacheConfLexer_a1030c13bec00a7a8dc7bd508e71b3ae4}} 
+\index{pygments.lexers.configs.ApacheConfLexer@{pygments.lexers.configs.ApacheConfLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.configs.ApacheConfLexer@{pygments.lexers.configs.ApacheConfLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+configs.\+Apache\+Conf\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#(.*\(\backslash\)\(\backslash\)\(\backslash\)n)+.*\$|(\#.*?)\$'}, Comment),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(<[\string^\(\backslash\)s>/][\string^\(\backslash\)s>]*)(?:(\(\backslash\)s+)(.*))?(>)'},}
+\DoxyCodeLine{             bygroups(Name.Tag, Whitespace, String, Name.Tag)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(</[\string^\(\backslash\)s>]+)(>)'},}
+\DoxyCodeLine{             bygroups(Name.Tag, Name.Tag)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[a-\/z]\(\backslash\)w*'}, Name.Builtin, \textcolor{stringliteral}{'value'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\).+'}, Text),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'value'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\(\backslash\)\(\backslash\)n'}, Text),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)n+'}, Whitespace, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\(\backslash\)'}, Text),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^\(\backslash\)S\(\backslash\)n]+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)d+\(\backslash\).\(\backslash\)d+\(\backslash\).\(\backslash\)d+\(\backslash\).\(\backslash\)d+(?:/\(\backslash\)d+)?'}, Number),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)d+'}, Number),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'/([*a-\/z0-\/9][*\(\backslash\)w./-\/]+)'}, String.Other),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(on|off|none|any|all|double|email|dns|min|minimal|'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'os|productonly|full|emerg|alert|crit|error|warn|'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'notice|info|debug|registry|script|inetd|standalone|'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'user|group)\(\backslash\)b'}, Keyword),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'"{}([\string^"{}\(\backslash\)\(\backslash\)]*(?:\(\backslash\)\(\backslash\)(.|\(\backslash\)n)[\string^"{}\(\backslash\)\(\backslash\)]*)*)"{}'}, String.Double),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^\(\backslash\)s"{}\(\backslash\)\(\backslash\)]+'}, Text)}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/configs.\+py\end{DoxyCompactItemize}

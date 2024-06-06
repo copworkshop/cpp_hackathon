@@ -1,0 +1,90 @@
+\hypertarget{classgcovr_1_1exclusions_1_1markers_1_1__ExclusionRangeWarnings}{}\doxysection{gcovr.\+exclusions.\+markers.\+\_\+\+Exclusion\+Range\+Warnings Class Reference}
+\label{classgcovr_1_1exclusions_1_1markers_1_1__ExclusionRangeWarnings}\index{gcovr.exclusions.markers.\_ExclusionRangeWarnings@{gcovr.exclusions.markers.\_ExclusionRangeWarnings}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgcovr_1_1exclusions_1_1markers_1_1__ExclusionRangeWarnings_a4f9ac96fa2686611760f23ca39aafa77}\label{classgcovr_1_1exclusions_1_1markers_1_1__ExclusionRangeWarnings_a4f9ac96fa2686611760f23ca39aafa77}} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str filename)
+\item 
+None \mbox{\hyperlink{classgcovr_1_1exclusions_1_1markers_1_1__ExclusionRangeWarnings_a9a6c6d5e5f0d19880c1f83c5792e26db}{mismatched\+\_\+start\+\_\+stop}} (self, int start\+\_\+lineno, str start, int stop\+\_\+lineno, str stop)
+\item 
+None \mbox{\hyperlink{classgcovr_1_1exclusions_1_1markers_1_1__ExclusionRangeWarnings_af2dc298dc600e80358040ae0269b5d51}{stop\+\_\+without\+\_\+start}} (self, int lineno, str expected\+\_\+start, str stop)
+\item 
+None \mbox{\hyperlink{classgcovr_1_1exclusions_1_1markers_1_1__ExclusionRangeWarnings_a9d79a1e1b94af167b7ed4614c43cbbce}{start\+\_\+without\+\_\+stop}} (self, int lineno, str start, str expected\+\_\+stop)
+\item 
+None \mbox{\hyperlink{classgcovr_1_1exclusions_1_1markers_1_1__ExclusionRangeWarnings_a8f231d7d04fe851d8774e872e728e2d2}{line\+\_\+after\+\_\+start}} (self, int lineno, str start, int start\+\_\+lineno)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgcovr_1_1exclusions_1_1markers_1_1__ExclusionRangeWarnings_ae042f46784e5a1eba5b94f6e3c29dcf7}\label{classgcovr_1_1exclusions_1_1markers_1_1__ExclusionRangeWarnings_ae042f46784e5a1eba5b94f6e3c29dcf7}} 
+{\bfseries filename}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Log warnings related to exclusion marker processing.
+
+Example:
+>>> source = '''\
+... some code
+... foo // LCOV_EXCL_STOP
+... bar // GCOVR_EXCL_START
+... bar // GCOVR_EXCL_LINE
+... baz // GCOV_EXCL_STOP
+... "GCOVR_EXCL_START"
+... '''
+>>> caplog = getfixture('caplog')
+>>> caplog.clear()
+>>> _ = apply_exclusion_markers(  # doctest: +NORMALIZE_WHITESPACE
+...     FileCoverage('example.cpp'),
+...     lines=source.strip().splitlines(),
+...     exclude_lines_by_pattern=None,
+...     exclude_branches_by_pattern=None,
+...     exclude_pattern_prefix='[GL]COVR?')
+>>> for message in caplog.record_tuples:
+...     print(f"{message[1]}: {message[2]}")
+30: mismatched coverage exclusion flags.
+          LCOV_EXCL_STOP found on line 2 without corresponding LCOV_EXCL_START, when processing example.cpp.
+30: GCOVR_EXCL_LINE found on line 4 in excluded region started on line 3, when processing example.cpp.
+30: GCOVR_EXCL_START found on line 3 was terminated by GCOV_EXCL_STOP on line 5, when processing example.cpp.
+30: The coverage exclusion region start flag GCOVR_EXCL_START
+          on line 6 did not have corresponding GCOVR_EXCL_STOP flag
+          in file example.cpp.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgcovr_1_1exclusions_1_1markers_1_1__ExclusionRangeWarnings_a8f231d7d04fe851d8774e872e728e2d2}\label{classgcovr_1_1exclusions_1_1markers_1_1__ExclusionRangeWarnings_a8f231d7d04fe851d8774e872e728e2d2}} 
+\index{gcovr.exclusions.markers.\_ExclusionRangeWarnings@{gcovr.exclusions.markers.\_ExclusionRangeWarnings}!line\_after\_start@{line\_after\_start}}
+\index{line\_after\_start@{line\_after\_start}!gcovr.exclusions.markers.\_ExclusionRangeWarnings@{gcovr.exclusions.markers.\_ExclusionRangeWarnings}}
+\doxysubsubsection{\texorpdfstring{line\_after\_start()}{line\_after\_start()}}
+{\footnotesize\ttfamily  None gcovr.\+exclusions.\+markers.\+\_\+\+Exclusion\+Range\+Warnings.\+line\+\_\+after\+\_\+start (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{lineno,  }\item[{str}]{start,  }\item[{int}]{start\+\_\+lineno }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}warn that a region was started but an excluded line was found\end{DoxyVerb}
+ \mbox{\Hypertarget{classgcovr_1_1exclusions_1_1markers_1_1__ExclusionRangeWarnings_a9a6c6d5e5f0d19880c1f83c5792e26db}\label{classgcovr_1_1exclusions_1_1markers_1_1__ExclusionRangeWarnings_a9a6c6d5e5f0d19880c1f83c5792e26db}} 
+\index{gcovr.exclusions.markers.\_ExclusionRangeWarnings@{gcovr.exclusions.markers.\_ExclusionRangeWarnings}!mismatched\_start\_stop@{mismatched\_start\_stop}}
+\index{mismatched\_start\_stop@{mismatched\_start\_stop}!gcovr.exclusions.markers.\_ExclusionRangeWarnings@{gcovr.exclusions.markers.\_ExclusionRangeWarnings}}
+\doxysubsubsection{\texorpdfstring{mismatched\_start\_stop()}{mismatched\_start\_stop()}}
+{\footnotesize\ttfamily  None gcovr.\+exclusions.\+markers.\+\_\+\+Exclusion\+Range\+Warnings.\+mismatched\+\_\+start\+\_\+stop (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{start\+\_\+lineno,  }\item[{str}]{start,  }\item[{int}]{stop\+\_\+lineno,  }\item[{str     }]{stop }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}warn that start/stop region markers don't match\end{DoxyVerb}
+ \mbox{\Hypertarget{classgcovr_1_1exclusions_1_1markers_1_1__ExclusionRangeWarnings_a9d79a1e1b94af167b7ed4614c43cbbce}\label{classgcovr_1_1exclusions_1_1markers_1_1__ExclusionRangeWarnings_a9d79a1e1b94af167b7ed4614c43cbbce}} 
+\index{gcovr.exclusions.markers.\_ExclusionRangeWarnings@{gcovr.exclusions.markers.\_ExclusionRangeWarnings}!start\_without\_stop@{start\_without\_stop}}
+\index{start\_without\_stop@{start\_without\_stop}!gcovr.exclusions.markers.\_ExclusionRangeWarnings@{gcovr.exclusions.markers.\_ExclusionRangeWarnings}}
+\doxysubsubsection{\texorpdfstring{start\_without\_stop()}{start\_without\_stop()}}
+{\footnotesize\ttfamily  None gcovr.\+exclusions.\+markers.\+\_\+\+Exclusion\+Range\+Warnings.\+start\+\_\+without\+\_\+stop (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{lineno,  }\item[{str}]{start,  }\item[{str}]{expected\+\_\+stop }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}warn that a region was started but not closed\end{DoxyVerb}
+ \mbox{\Hypertarget{classgcovr_1_1exclusions_1_1markers_1_1__ExclusionRangeWarnings_af2dc298dc600e80358040ae0269b5d51}\label{classgcovr_1_1exclusions_1_1markers_1_1__ExclusionRangeWarnings_af2dc298dc600e80358040ae0269b5d51}} 
+\index{gcovr.exclusions.markers.\_ExclusionRangeWarnings@{gcovr.exclusions.markers.\_ExclusionRangeWarnings}!stop\_without\_start@{stop\_without\_start}}
+\index{stop\_without\_start@{stop\_without\_start}!gcovr.exclusions.markers.\_ExclusionRangeWarnings@{gcovr.exclusions.markers.\_ExclusionRangeWarnings}}
+\doxysubsubsection{\texorpdfstring{stop\_without\_start()}{stop\_without\_start()}}
+{\footnotesize\ttfamily  None gcovr.\+exclusions.\+markers.\+\_\+\+Exclusion\+Range\+Warnings.\+stop\+\_\+without\+\_\+start (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{lineno,  }\item[{str}]{expected\+\_\+start,  }\item[{str}]{stop }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}warn that a region was ended without corresponding start marker\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/gcovr/exclusions/markers.\+py\end{DoxyCompactItemize}

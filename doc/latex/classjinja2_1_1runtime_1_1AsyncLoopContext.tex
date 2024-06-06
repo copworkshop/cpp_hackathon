@@ -1,0 +1,114 @@
+\hypertarget{classjinja2_1_1runtime_1_1AsyncLoopContext}{}\doxysection{jinja2.\+runtime.\+Async\+Loop\+Context Class Reference}
+\label{classjinja2_1_1runtime_1_1AsyncLoopContext}\index{jinja2.runtime.AsyncLoopContext@{jinja2.runtime.AsyncLoopContext}}
+
+
+Inheritance diagram for jinja2.\+runtime.\+Async\+Loop\+Context\+:
+% FIG 0
+
+
+Collaboration diagram for jinja2.\+runtime.\+Async\+Loop\+Context\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classjinja2_1_1runtime_1_1AsyncLoopContext_aa398e1471064fad5328fb3b68e64f03e}{length}} (self)
+\item 
+int \mbox{\hyperlink{classjinja2_1_1runtime_1_1AsyncLoopContext_a43b878d12c127d7e68c88a95205f0f6d}{revindex0}} (self)
+\item 
+int \mbox{\hyperlink{classjinja2_1_1runtime_1_1AsyncLoopContext_af03471db9f7a82842d8492997846d8c5}{revindex}} (self)
+\item 
+bool \mbox{\hyperlink{classjinja2_1_1runtime_1_1AsyncLoopContext_a05f57faf024be94ac20433548b6d1b13}{last}} (self)
+\item 
+t.\+Union\mbox{[}t.\+Any, \char`\"{}Undefined\char`\"{}\mbox{]} \mbox{\hyperlink{classjinja2_1_1runtime_1_1AsyncLoopContext_ac2a384cea42163ef13deb2449b93bb61}{nextitem}} (self)
+\item 
+\mbox{\Hypertarget{classjinja2_1_1runtime_1_1AsyncLoopContext_a23ec3efc3517241b53585c7bd3eaa747}\label{classjinja2_1_1runtime_1_1AsyncLoopContext_a23ec3efc3517241b53585c7bd3eaa747}} 
+\char`\"{}Async\+Loop\+Context\char`\"{} {\bfseries \+\_\+\+\_\+aiter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classjinja2_1_1runtime_1_1AsyncLoopContext_a17512ceb52079988c17d62cd5006d2d3}\label{classjinja2_1_1runtime_1_1AsyncLoopContext_a17512ceb52079988c17d62cd5006d2d3}} 
+t.\+Tuple\mbox{[}t.\+Any, \char`\"{}Async\+Loop\+Context\char`\"{}\mbox{]} {\bfseries \+\_\+\+\_\+anext\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classjinja2_1_1runtime_1_1AsyncLoopContext_a05f57faf024be94ac20433548b6d1b13}\label{classjinja2_1_1runtime_1_1AsyncLoopContext_a05f57faf024be94ac20433548b6d1b13}} 
+\index{jinja2.runtime.AsyncLoopContext@{jinja2.runtime.AsyncLoopContext}!last@{last}}
+\index{last@{last}!jinja2.runtime.AsyncLoopContext@{jinja2.runtime.AsyncLoopContext}}
+\doxysubsubsection{\texorpdfstring{last()}{last()}}
+{\footnotesize\ttfamily  bool jinja2.\+runtime.\+Async\+Loop\+Context.\+last (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Whether this is the last iteration of the loop.
+
+Causes the iterable to advance early. See
+:func:`itertools.groupby` for issues this can cause.
+The :func:`groupby` filter avoids that issue.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1runtime_1_1LoopContext_a58bd626934ef493ae4a068c2fc5e7d68}{jinja2.\+runtime.\+Loop\+Context}}.
+
+\mbox{\Hypertarget{classjinja2_1_1runtime_1_1AsyncLoopContext_aa398e1471064fad5328fb3b68e64f03e}\label{classjinja2_1_1runtime_1_1AsyncLoopContext_aa398e1471064fad5328fb3b68e64f03e}} 
+\index{jinja2.runtime.AsyncLoopContext@{jinja2.runtime.AsyncLoopContext}!length@{length}}
+\index{length@{length}!jinja2.runtime.AsyncLoopContext@{jinja2.runtime.AsyncLoopContext}}
+\doxysubsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily  int jinja2.\+runtime.\+Async\+Loop\+Context.\+length (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Length of the iterable.
+
+If the iterable is a generator or otherwise does not have a
+size, it is eagerly evaluated to get a size.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1runtime_1_1LoopContext_a55b87ba65f7a32cbbc07869f4db16b87}{jinja2.\+runtime.\+Loop\+Context}}.
+
+\mbox{\Hypertarget{classjinja2_1_1runtime_1_1AsyncLoopContext_ac2a384cea42163ef13deb2449b93bb61}\label{classjinja2_1_1runtime_1_1AsyncLoopContext_ac2a384cea42163ef13deb2449b93bb61}} 
+\index{jinja2.runtime.AsyncLoopContext@{jinja2.runtime.AsyncLoopContext}!nextitem@{nextitem}}
+\index{nextitem@{nextitem}!jinja2.runtime.AsyncLoopContext@{jinja2.runtime.AsyncLoopContext}}
+\doxysubsubsection{\texorpdfstring{nextitem()}{nextitem()}}
+{\footnotesize\ttfamily  t.\+Union\mbox{[}t.\+Any, \char`\"{}Undefined\char`\"{}\mbox{]} jinja2.\+runtime.\+Async\+Loop\+Context.\+nextitem (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The item in the next iteration. Undefined during the last
+iteration.
+
+Causes the iterable to advance early. See
+:func:`itertools.groupby` for issues this can cause.
+The :func:`jinja-filters.groupby` filter avoids that issue.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1runtime_1_1LoopContext_a97ab6502f87cd13f6c0262114a0bf651}{jinja2.\+runtime.\+Loop\+Context}}.
+
+\mbox{\Hypertarget{classjinja2_1_1runtime_1_1AsyncLoopContext_af03471db9f7a82842d8492997846d8c5}\label{classjinja2_1_1runtime_1_1AsyncLoopContext_af03471db9f7a82842d8492997846d8c5}} 
+\index{jinja2.runtime.AsyncLoopContext@{jinja2.runtime.AsyncLoopContext}!revindex@{revindex}}
+\index{revindex@{revindex}!jinja2.runtime.AsyncLoopContext@{jinja2.runtime.AsyncLoopContext}}
+\doxysubsubsection{\texorpdfstring{revindex()}{revindex()}}
+{\footnotesize\ttfamily  int jinja2.\+runtime.\+Async\+Loop\+Context.\+revindex (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Number of iterations from the end of the loop, ending at 1.
+
+Requires calculating :attr:`length`.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1runtime_1_1LoopContext_ac3497962d617c3ed56bded1729790e64}{jinja2.\+runtime.\+Loop\+Context}}.
+
+\mbox{\Hypertarget{classjinja2_1_1runtime_1_1AsyncLoopContext_a43b878d12c127d7e68c88a95205f0f6d}\label{classjinja2_1_1runtime_1_1AsyncLoopContext_a43b878d12c127d7e68c88a95205f0f6d}} 
+\index{jinja2.runtime.AsyncLoopContext@{jinja2.runtime.AsyncLoopContext}!revindex0@{revindex0}}
+\index{revindex0@{revindex0}!jinja2.runtime.AsyncLoopContext@{jinja2.runtime.AsyncLoopContext}}
+\doxysubsubsection{\texorpdfstring{revindex0()}{revindex0()}}
+{\footnotesize\ttfamily  int jinja2.\+runtime.\+Async\+Loop\+Context.\+revindex0 (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Number of iterations from the end of the loop, ending at 0.
+
+Requires calculating :attr:`length`.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1runtime_1_1LoopContext_ac5eddc5701b290f6d936d4569a299b3c}{jinja2.\+runtime.\+Loop\+Context}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jinja2/runtime.\+py\end{DoxyCompactItemize}

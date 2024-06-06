@@ -1,0 +1,98 @@
+\hypertarget{classpygments_1_1lexers_1_1configs_1_1DesktopLexer}{}\doxysection{pygments.\+lexers.\+configs.\+Desktop\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1configs_1_1DesktopLexer}\index{pygments.lexers.configs.DesktopLexer@{pygments.lexers.configs.DesktopLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+configs.\+Desktop\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+configs.\+Desktop\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1configs_1_1DesktopLexer_af55ac1ae880ef43b244cb15e1ba112e7}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1DesktopLexer_a229dedc8cba395aa4fa0e826eb274960}\label{classpygments_1_1lexers_1_1configs_1_1DesktopLexer_a229dedc8cba395aa4fa0e826eb274960}} 
+string {\bfseries name} = \textquotesingle{}Desktop file\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1DesktopLexer_a8949f1ebbf62516bd14264ceef75782f}\label{classpygments_1_1lexers_1_1configs_1_1DesktopLexer_a8949f1ebbf62516bd14264ceef75782f}} 
+string {\bfseries url} = \char`\"{}https\+://specifications.\+freedesktop.\+org/desktop-\/entry-\/spec/desktop-\/entry-\/spec-\/latest.\+html\char`\"{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1DesktopLexer_ad9c173e93431cd073a84d4f4e9e04bc1}\label{classpygments_1_1lexers_1_1configs_1_1DesktopLexer_ad9c173e93431cd073a84d4f4e9e04bc1}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}desktop\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1DesktopLexer_aa35ee3afaf0f613d9688c9f04f8afa8e}\label{classpygments_1_1lexers_1_1configs_1_1DesktopLexer_aa35ee3afaf0f613d9688c9f04f8afa8e}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.desktop\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1DesktopLexer_a5deb8a2fabc7cdc7e89994f1cc8078d7}\label{classpygments_1_1lexers_1_1configs_1_1DesktopLexer_a5deb8a2fabc7cdc7e89994f1cc8078d7}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}application/x-\/desktop\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1DesktopLexer_a8f94756e63e3bbe5d11560e4e8649d47}\label{classpygments_1_1lexers_1_1configs_1_1DesktopLexer_a8f94756e63e3bbe5d11560e4e8649d47}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+16\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for .desktop files.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1DesktopLexer_af55ac1ae880ef43b244cb15e1ba112e7}\label{classpygments_1_1lexers_1_1configs_1_1DesktopLexer_af55ac1ae880ef43b244cb15e1ba112e7}} 
+\index{pygments.lexers.configs.DesktopLexer@{pygments.lexers.configs.DesktopLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.configs.DesktopLexer@{pygments.lexers.configs.DesktopLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+configs.\+Desktop\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1DesktopLexer_a41dbcbbc9aa24d2e9bd408c344f5bd5e}\label{classpygments_1_1lexers_1_1configs_1_1DesktopLexer_a41dbcbbc9aa24d2e9bd408c344f5bd5e}} 
+\index{pygments.lexers.configs.DesktopLexer@{pygments.lexers.configs.DesktopLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.configs.DesktopLexer@{pygments.lexers.configs.DesktopLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+configs.\+Desktop\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^[ \(\backslash\)t]*\(\backslash\)n'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^(\#.*)(\(\backslash\)n)'}, bygroups(Comment.Single, Whitespace)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)[[\string^\(\backslash\)]\(\backslash\)n]+\(\backslash\)])(\(\backslash\)n)'}, bygroups(Keyword, Whitespace)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'([-\/A-\/Za-\/z0-\/9]+)(\(\backslash\)[[\string^\(\backslash\)] \(\backslash\)t=]+\(\backslash\)])?([ \(\backslash\)t]*)(=)([ \(\backslash\)t]*)([\string^\(\backslash\)n]*)([ \(\backslash\)t\(\backslash\)n]*\(\backslash\)n)'},}
+\DoxyCodeLine{             bygroups(Name.Attribute, Name.Namespace, Whitespace, Operator, Whitespace, String, Whitespace)),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/configs.\+py\end{DoxyCompactItemize}

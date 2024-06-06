@@ -1,0 +1,94 @@
+\hypertarget{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment}{}\doxysection{conans.\+client.\+build.\+visual\+\_\+environment.\+Visual\+Studio\+Build\+Environment Class Reference}
+\label{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment}\index{conans.client.build.visual\_environment.VisualStudioBuildEnvironment@{conans.client.build.visual\_environment.VisualStudioBuildEnvironment}}
+
+
+Inheritance diagram for conans.\+client.\+build.\+visual\+\_\+environment.\+Visual\+Studio\+Build\+Environment\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+build.\+visual\+\_\+environment.\+Visual\+Studio\+Build\+Environment\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_a461e5abf510ac86a3d36561d2c0775d1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, conanfile, with\+\_\+build\+\_\+type\+\_\+flags=True)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_a0b59069672b75ff6fecca44bc7d09f6b}{vars}} (self)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_a4622de7f3c3eb5eba8842b61d0bc3e5b}{vars\+\_\+dict}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_aa917b8d06058179227acca13d81ed75b}\label{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_aa917b8d06058179227acca13d81ed75b}} 
+{\bfseries include\+\_\+paths}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_af364df9cf0697cc50d9414000a22e1d9}\label{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_af364df9cf0697cc50d9414000a22e1d9}} 
+{\bfseries lib\+\_\+paths}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_adb47d0db4e9b57926ee8ca11cb453382}\label{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_adb47d0db4e9b57926ee8ca11cb453382}} 
+{\bfseries defines}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_a40dc0fdfd32305dbe73a1c5cfdac06e1}\label{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_a40dc0fdfd32305dbe73a1c5cfdac06e1}} 
+{\bfseries flags}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_aca90d7ba97eda085b3904d9afecaf937}\label{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_aca90d7ba97eda085b3904d9afecaf937}} 
+{\bfseries cxx\+\_\+flags}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_a0d81df30c4d5f6ef86eff6ed53cf6382}\label{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_a0d81df30c4d5f6ef86eff6ed53cf6382}} 
+{\bfseries link\+\_\+flags}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_af4cd1d11eb42d4b6f2b09658e2be2c99}\label{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_af4cd1d11eb42d4b6f2b09658e2be2c99}} 
+{\bfseries libs}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_a8a423848a54a8c134332c538aaf87cda}\label{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_a8a423848a54a8c134332c538aaf87cda}} 
+{\bfseries std}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_a44524e9279d85fbe9d224fe7be932d7b}\label{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_a44524e9279d85fbe9d224fe7be932d7b}} 
+{\bfseries parallel}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}- LIB: library paths with semicolon separator
+- CL: /I (include paths)
+- _LINK_: linker options and libraries
+- UseEnv: True https://github.com/conan-io/conan/pull/4583
+
+https://msdn.microsoft.com/en-us/library/19z1t1wy.aspx
+https://msdn.microsoft.com/en-us/library/fwkeyyhe.aspx
+https://msdn.microsoft.com/en-us/library/9s7c9wdw.aspx
+https://msdn.microsoft.com/en-us/library/6y6t9esh.aspx\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_a461e5abf510ac86a3d36561d2c0775d1}\label{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_a461e5abf510ac86a3d36561d2c0775d1}} 
+\index{conans.client.build.visual\_environment.VisualStudioBuildEnvironment@{conans.client.build.visual\_environment.VisualStudioBuildEnvironment}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!conans.client.build.visual\_environment.VisualStudioBuildEnvironment@{conans.client.build.visual\_environment.VisualStudioBuildEnvironment}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def conans.\+client.\+build.\+visual\+\_\+environment.\+Visual\+Studio\+Build\+Environment.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{conanfile,  }\item[{}]{with\+\_\+build\+\_\+type\+\_\+flags = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param conanfile: ConanFile instance
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_a0b59069672b75ff6fecca44bc7d09f6b}\label{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_a0b59069672b75ff6fecca44bc7d09f6b}} 
+\index{conans.client.build.visual\_environment.VisualStudioBuildEnvironment@{conans.client.build.visual\_environment.VisualStudioBuildEnvironment}!vars@{vars}}
+\index{vars@{vars}!conans.client.build.visual\_environment.VisualStudioBuildEnvironment@{conans.client.build.visual\_environment.VisualStudioBuildEnvironment}}
+\doxysubsubsection{\texorpdfstring{vars()}{vars()}}
+{\footnotesize\ttfamily def conans.\+client.\+build.\+visual\+\_\+environment.\+Visual\+Studio\+Build\+Environment.\+vars (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Used in conanfile with environment_append\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_a4622de7f3c3eb5eba8842b61d0bc3e5b}\label{classconans_1_1client_1_1build_1_1visual__environment_1_1VisualStudioBuildEnvironment_a4622de7f3c3eb5eba8842b61d0bc3e5b}} 
+\index{conans.client.build.visual\_environment.VisualStudioBuildEnvironment@{conans.client.build.visual\_environment.VisualStudioBuildEnvironment}!vars\_dict@{vars\_dict}}
+\index{vars\_dict@{vars\_dict}!conans.client.build.visual\_environment.VisualStudioBuildEnvironment@{conans.client.build.visual\_environment.VisualStudioBuildEnvironment}}
+\doxysubsubsection{\texorpdfstring{vars\_dict()}{vars\_dict()}}
+{\footnotesize\ttfamily def conans.\+client.\+build.\+visual\+\_\+environment.\+Visual\+Studio\+Build\+Environment.\+vars\+\_\+dict (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Used in virtualbuildenvironment\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/build/visual\+\_\+environment.\+py\end{DoxyCompactItemize}

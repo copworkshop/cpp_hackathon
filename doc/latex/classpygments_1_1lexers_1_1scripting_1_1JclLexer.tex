@@ -1,0 +1,71 @@
+\hypertarget{classpygments_1_1lexers_1_1scripting_1_1JclLexer}{}\doxysection{pygments.\+lexers.\+scripting.\+Jcl\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1scripting_1_1JclLexer}\index{pygments.lexers.scripting.JclLexer@{pygments.lexers.scripting.JclLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+scripting.\+Jcl\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+scripting.\+Jcl\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1scripting_1_1JclLexer_a3aea7b91c8de3ddb5645fc6a271f211f}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1JclLexer_a5401e33253354d5cb4e2250a618c57ec}\label{classpygments_1_1lexers_1_1scripting_1_1JclLexer_a5401e33253354d5cb4e2250a618c57ec}} 
+string {\bfseries name} = \textquotesingle{}JCL\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1JclLexer_a55fb2415cdaa2341acea175d0d837fae}\label{classpygments_1_1lexers_1_1scripting_1_1JclLexer_a55fb2415cdaa2341acea175d0d837fae}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}jcl\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1JclLexer_af1c82d8dab74df9f17fb48782d5ffba9}\label{classpygments_1_1lexers_1_1scripting_1_1JclLexer_af1c82d8dab74df9f17fb48782d5ffba9}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.jcl\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1JclLexer_a636ac73ae143064125df0f2d80a9bc6f}\label{classpygments_1_1lexers_1_1scripting_1_1JclLexer_a636ac73ae143064125df0f2d80a9bc6f}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/jcl\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1JclLexer_acf64053abeaf5c0935ada4e79498d1d9}\label{classpygments_1_1lexers_1_1scripting_1_1JclLexer_acf64053abeaf5c0935ada4e79498d1d9}} 
+string {\bfseries url} = \textquotesingle{}https\+://en.\+wikipedia.\+org/wiki/Job\+\_\+\+Control\+\_\+\+Language\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1JclLexer_adfbf633c87a3158ec81d61d3b82474aa}\label{classpygments_1_1lexers_1_1scripting_1_1JclLexer_adfbf633c87a3158ec81d61d3b82474aa}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+1\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1JclLexer_aa8f9f058053fdf8a1cab8b4f4c9c9b85}\label{classpygments_1_1lexers_1_1scripting_1_1JclLexer_aa8f9f058053fdf8a1cab8b4f4c9c9b85}} 
+{\bfseries flags} = re.\+IGNORECASE
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1JclLexer_ae2219558cd4fe178c5c764683a40441d}\label{classpygments_1_1lexers_1_1scripting_1_1JclLexer_ae2219558cd4fe178c5c764683a40441d}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Job Control Language (JCL)
+is a scripting language used on mainframe platforms to instruct the system
+on how to run a batch job or start a subsystem. It is somewhat
+comparable to MS DOS batch and Unix shell scripts.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1JclLexer_a3aea7b91c8de3ddb5645fc6a271f211f}\label{classpygments_1_1lexers_1_1scripting_1_1JclLexer_a3aea7b91c8de3ddb5645fc6a271f211f}} 
+\index{pygments.lexers.scripting.JclLexer@{pygments.lexers.scripting.JclLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.scripting.JclLexer@{pygments.lexers.scripting.JclLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+scripting.\+Jcl\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Recognize JCL job by header.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/scripting.\+py\end{DoxyCompactItemize}

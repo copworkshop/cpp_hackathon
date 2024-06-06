@@ -1,0 +1,80 @@
+\hypertarget{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer}{}\doxysection{pygments.\+lexers.\+javascript.\+Objective\+JLexer Class Reference}
+\label{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer}\index{pygments.lexers.javascript.ObjectiveJLexer@{pygments.lexers.javascript.ObjectiveJLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+javascript.\+Objective\+JLexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+javascript.\+Objective\+JLexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer_aa33a941d47c5f53b5d27d11f7f446398}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer_a8d07bea79de6a59bc700bc30bcc2752e}\label{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer_a8d07bea79de6a59bc700bc30bcc2752e}} 
+string {\bfseries name} = \textquotesingle{}Objective-\/J\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer_a471c2556357f6420a65d163c7e00437e}\label{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer_a471c2556357f6420a65d163c7e00437e}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}objective-\/j\textquotesingle{}, \textquotesingle{}objectivej\textquotesingle{}, \textquotesingle{}obj-\/j\textquotesingle{}, \textquotesingle{}objj\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer_a43ddb7d20b3a393d02d0686f2a406ef8}\label{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer_a43ddb7d20b3a393d02d0686f2a406ef8}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.j\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer_a56d4609826f13bc27a51c07c4081acc7}\label{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer_a56d4609826f13bc27a51c07c4081acc7}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/objective-\/j\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer_a464d2692ec4c021bebf3c2e9f5c8a96a}\label{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer_a464d2692ec4c021bebf3c2e9f5c8a96a}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+cappuccino.\+dev/learn/objective-\/j.\+html\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer_af782736fc991e1079d36e180b092e118}\label{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer_af782736fc991e1079d36e180b092e118}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+3\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer_a8bf33c0dcc088b9699b14fb552e49bd8}\label{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer_a8bf33c0dcc088b9699b14fb552e49bd8}} 
+{\bfseries flags} = re.\+DOTALL $\vert$ re.\+MULTILINE
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer_a612e1188b8a106eb75d87c997889abd2}\label{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer_a612e1188b8a106eb75d87c997889abd2}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For Objective-J source code with preprocessor directives.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer_aa33a941d47c5f53b5d27d11f7f446398}\label{classpygments_1_1lexers_1_1javascript_1_1ObjectiveJLexer_aa33a941d47c5f53b5d27d11f7f446398}} 
+\index{pygments.lexers.javascript.ObjectiveJLexer@{pygments.lexers.javascript.ObjectiveJLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.javascript.ObjectiveJLexer@{pygments.lexers.javascript.ObjectiveJLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+javascript.\+Objective\+JLexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/javascript.\+py\end{DoxyCompactItemize}

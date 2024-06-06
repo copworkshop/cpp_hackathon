@@ -1,0 +1,58 @@
+\hypertarget{classpluginbase_1_1PluginBase}{}\doxysection{pluginbase.\+Plugin\+Base Class Reference}
+\label{classpluginbase_1_1PluginBase}\index{pluginbase.PluginBase@{pluginbase.PluginBase}}
+
+
+Inheritance diagram for pluginbase.\+Plugin\+Base\+:
+% FIG 0
+
+
+Collaboration diagram for pluginbase.\+Plugin\+Base\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpluginbase_1_1PluginBase_a5237161b89df2bf7f171a47595157913}\label{classpluginbase_1_1PluginBase_a5237161b89df2bf7f171a47595157913}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, package, searchpath=None)
+\item 
+def \mbox{\hyperlink{classpluginbase_1_1PluginBase_a12f9ad2e875e5cc0fcda65fcf5645a01}{make\+\_\+plugin\+\_\+source}} (self, $\ast$args, $\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpluginbase_1_1PluginBase_a3073d85c73e519984d39bc5d58f3f760}\label{classpluginbase_1_1PluginBase_a3073d85c73e519984d39bc5d58f3f760}} 
+{\bfseries package}
+\item 
+\mbox{\Hypertarget{classpluginbase_1_1PluginBase_abdd0f393ea053d6a2844961e706867b3}\label{classpluginbase_1_1PluginBase_abdd0f393ea053d6a2844961e706867b3}} 
+{\bfseries searchpath}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The plugin base acts as a control object around a dummy Python
+package that acts as a container for plugins.  Usually each
+application creates exactly one base object for all plugins.
+
+:param package: the name of the package that acts as the plugin base.
+                Usually this module does not exist.  Unless you know
+                what you are doing you should not create this module
+                on the file system.
+:param searchpath: optionally a shared search path for modules that
+                   will be used by all plugin sources registered.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpluginbase_1_1PluginBase_a12f9ad2e875e5cc0fcda65fcf5645a01}\label{classpluginbase_1_1PluginBase_a12f9ad2e875e5cc0fcda65fcf5645a01}} 
+\index{pluginbase.PluginBase@{pluginbase.PluginBase}!make\_plugin\_source@{make\_plugin\_source}}
+\index{make\_plugin\_source@{make\_plugin\_source}!pluginbase.PluginBase@{pluginbase.PluginBase}}
+\doxysubsubsection{\texorpdfstring{make\_plugin\_source()}{make\_plugin\_source()}}
+{\footnotesize\ttfamily def pluginbase.\+Plugin\+Base.\+make\+\_\+plugin\+\_\+source (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a plugin source for this plugin base and returns it.
+All parameters are forwarded to :class:`PluginSource`.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pluginbase.\+py\end{DoxyCompactItemize}

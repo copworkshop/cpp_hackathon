@@ -1,0 +1,81 @@
+\hypertarget{classpygments_1_1lexers_1_1amdgpu_1_1AMDGPULexer}{}\doxysection{pygments.\+lexers.\+amdgpu.\+AMDGPULexer Class Reference}
+\label{classpygments_1_1lexers_1_1amdgpu_1_1AMDGPULexer}\index{pygments.lexers.amdgpu.AMDGPULexer@{pygments.lexers.amdgpu.AMDGPULexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+amdgpu.\+AMDGPULexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+amdgpu.\+AMDGPULexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1amdgpu_1_1AMDGPULexer_afd401fc3856a4859414a4d55a5f76c04}\label{classpygments_1_1lexers_1_1amdgpu_1_1AMDGPULexer_afd401fc3856a4859414a4d55a5f76c04}} 
+string {\bfseries name} = \textquotesingle{}AMDGPU\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1amdgpu_1_1AMDGPULexer_add0ea51b0e7c6417d78d5ce707c9b0db}\label{classpygments_1_1lexers_1_1amdgpu_1_1AMDGPULexer_add0ea51b0e7c6417d78d5ce707c9b0db}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}amdgpu\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1amdgpu_1_1AMDGPULexer_ae6276322a64592407daebbaa80111afc}\label{classpygments_1_1lexers_1_1amdgpu_1_1AMDGPULexer_ae6276322a64592407daebbaa80111afc}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.isa\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1amdgpu_1_1AMDGPULexer_a0e6f3632b34689ae1d7cb1d8591a2e66}\label{classpygments_1_1lexers_1_1amdgpu_1_1AMDGPULexer_a0e6f3632b34689ae1d7cb1d8591a2e66}} 
+string {\bfseries url} = \textquotesingle{}https\+://gpuopen.\+com/amd-\/isa-\/documentation\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1amdgpu_1_1AMDGPULexer_a0c9d0be1c3d392dc43e9b37f52761bbc}\label{classpygments_1_1lexers_1_1amdgpu_1_1AMDGPULexer_a0c9d0be1c3d392dc43e9b37f52761bbc}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+8\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1amdgpu_1_1AMDGPULexer_a9682552b5830ac8d77775bcb93c84657}\label{classpygments_1_1lexers_1_1amdgpu_1_1AMDGPULexer_a9682552b5830ac8d77775bcb93c84657}} 
+{\bfseries flags} = re.\+IGNORECASE
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For AMD GPU assembly.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1amdgpu_1_1AMDGPULexer_adc48ee81afbf2ad6b8026861956eaf69}\label{classpygments_1_1lexers_1_1amdgpu_1_1AMDGPULexer_adc48ee81afbf2ad6b8026861956eaf69}} 
+\index{pygments.lexers.amdgpu.AMDGPULexer@{pygments.lexers.amdgpu.AMDGPULexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.amdgpu.AMDGPULexer@{pygments.lexers.amdgpu.AMDGPULexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+amdgpu.\+AMDGPULexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\(\backslash\)r\(\backslash\)n]+'}, Text),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(([a-\/z\_0-\/9])*:([a-\/z\_0-\/9])*)'}, Name.Attribute),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)[|\(\backslash\)]|\(\backslash\)(|\(\backslash\))|,|\(\backslash\):|\(\backslash\)\&)'}, Text),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'([;\#]|//).*?\(\backslash\)n'}, Comment.Single),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'((s\_)?(scratch|ds|buffer|flat|image)\_[a-\/z0-\/9\_]+)'}, Keyword.Reserved),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\_lo|\_hi)'}, Name.Variable),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(vmcnt|lgkmcnt|expcnt)'}, Name.Attribute),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(attr[0-\/9].[a-\/z])'}, Name.Attribute),}
+\DoxyCodeLine{            (words((}
+\DoxyCodeLine{                \textcolor{stringliteral}{'op'}, \textcolor{stringliteral}{'vaddr'}, \textcolor{stringliteral}{'vdata'}, \textcolor{stringliteral}{'off'}, \textcolor{stringliteral}{'soffset'}, \textcolor{stringliteral}{'srsrc'}, \textcolor{stringliteral}{'format'},}
+\DoxyCodeLine{                \textcolor{stringliteral}{'offset'}, \textcolor{stringliteral}{'offen'}, \textcolor{stringliteral}{'idxen'}, \textcolor{stringliteral}{'glc'}, \textcolor{stringliteral}{'dlc'}, \textcolor{stringliteral}{'slc'}, \textcolor{stringliteral}{'tfe'}, \textcolor{stringliteral}{'lds'},}
+\DoxyCodeLine{                \textcolor{stringliteral}{'lit'}, \textcolor{stringliteral}{'unorm'}), suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}), Name.Attribute),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(label\_[a-\/z0-\/9]+)'}, Keyword),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\_L[0-\/9]*)'}, Name.Variable),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(s|v)\_[a-\/z0-\/9\_]+'}, Keyword),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(v[0-\/9.]+|vcc|exec|v)'}, Name.Variable),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r's[0-\/9.]+|s'}, Name.Variable),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[0-\/9]+\(\backslash\).[\string^0-\/9]+'}, Number.Float),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(0[xX][a-\/z0-\/9]+)|([0-\/9]+)'}, Number.Integer)}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/amdgpu.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,122 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1SmartyLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Smarty\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1SmartyLexer}\index{pygments.lexers.templates.SmartyLexer@{pygments.lexers.templates.SmartyLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Smarty\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Smarty\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1SmartyLexer_a16dc96ac6e25c79167e6844e284a1197}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1SmartyLexer_a7bf28b2f6bbeb0aaa4c1b664307281f1}\label{classpygments_1_1lexers_1_1templates_1_1SmartyLexer_a7bf28b2f6bbeb0aaa4c1b664307281f1}} 
+string {\bfseries name} = \textquotesingle{}Smarty\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1SmartyLexer_a38b30ac5897bb788d8a695964ba9c69e}\label{classpygments_1_1lexers_1_1templates_1_1SmartyLexer_a38b30ac5897bb788d8a695964ba9c69e}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+smarty.\+net/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1SmartyLexer_a43fc25f26fc5811a9f7e66aa84ab980e}\label{classpygments_1_1lexers_1_1templates_1_1SmartyLexer_a43fc25f26fc5811a9f7e66aa84ab980e}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}smarty\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1SmartyLexer_a35e25314f0b1f6b14c3d705e9d17a797}\label{classpygments_1_1lexers_1_1templates_1_1SmartyLexer_a35e25314f0b1f6b14c3d705e9d17a797}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.tpl\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1SmartyLexer_aa493ae4451caa74c8459ef2f2105d72e}\label{classpygments_1_1lexers_1_1templates_1_1SmartyLexer_aa493ae4451caa74c8459ef2f2105d72e}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}application/x-\/smarty\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1SmartyLexer_a126feb210bac49b82b3e897deaab1d70}\label{classpygments_1_1lexers_1_1templates_1_1SmartyLexer_a126feb210bac49b82b3e897deaab1d70}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1SmartyLexer_a2f93d44f6a6dc6c3fc002ec59ead6409}\label{classpygments_1_1lexers_1_1templates_1_1SmartyLexer_a2f93d44f6a6dc6c3fc002ec59ead6409}} 
+{\bfseries flags} = re.\+MULTILINE $\vert$ re.\+DOTALL
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Generic Smarty template lexer.
+
+Just highlights smarty code between the preprocessor directives, other
+data is left untouched by the lexer.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1SmartyLexer_a16dc96ac6e25c79167e6844e284a1197}\label{classpygments_1_1lexers_1_1templates_1_1SmartyLexer_a16dc96ac6e25c79167e6844e284a1197}} 
+\index{pygments.lexers.templates.SmartyLexer@{pygments.lexers.templates.SmartyLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.templates.SmartyLexer@{pygments.lexers.templates.SmartyLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Smarty\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1SmartyLexer_a298184ae9b30cff58f46eeda880b0aa7}\label{classpygments_1_1lexers_1_1templates_1_1SmartyLexer_a298184ae9b30cff58f46eeda880b0aa7}} 
+\index{pygments.lexers.templates.SmartyLexer@{pygments.lexers.templates.SmartyLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.templates.SmartyLexer@{pygments.lexers.templates.SmartyLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+templates.\+Smarty\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^\{]+'}, Other),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)\{)(\(\backslash\)*.*?\(\backslash\)*)(\(\backslash\)\})'},}
+\DoxyCodeLine{             bygroups(Comment.Preproc, Comment, Comment.Preproc)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)\{php\(\backslash\)\})(.*?)(\(\backslash\)\{/php\(\backslash\)\})'},}
+\DoxyCodeLine{             bygroups(Comment.Preproc, using(PhpLexer, startinline=\textcolor{keyword}{True}),}
+\DoxyCodeLine{                      Comment.Preproc)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)\{)(/?[a-\/zA-\/Z\_]\(\backslash\)w*)(\(\backslash\)s*)'},}
+\DoxyCodeLine{             bygroups(Comment.Preproc, Name.Function, Text), \textcolor{stringliteral}{'smarty'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\{'}, Comment.Preproc, \textcolor{stringliteral}{'smarty'})}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'smarty'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Text),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\{'}, Comment.Preproc, \textcolor{stringliteral}{'\#push'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\}'}, Comment.Preproc, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#[a-\/zA-\/Z\_]\(\backslash\)w*\#'}, Name.Variable),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\$[a-\/zA-\/Z\_]\(\backslash\)w*(\(\backslash\).\(\backslash\)w+)*'}, Name.Variable),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string~!\%\string^\&*()+=|\(\backslash\)[\(\backslash\)]:;,.<>/?@-\/]'}, Operator),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(true|false|null)\(\backslash\)b'}, Keyword.Constant),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r"{}[0-\/9](\(\backslash\).[0-\/9]*)?(eE[+-\/][0-\/9])?[flFLdD]?|"{}}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r"{}0[xX][0-\/9a-\/fA-\/F]+[Ll]?"{}}, Number),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'"{}(\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\)|\(\backslash\)\(\backslash\)[\string^\(\backslash\)\(\backslash\)]|[\string^"{}\(\backslash\)\(\backslash\)])*"{}'}, String.Double),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r"{}'(\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\)|\(\backslash\)\(\backslash\)[\string^\(\backslash\)\(\backslash\)]|[\string^'\(\backslash\)\(\backslash\)])*'"{}}, String.Single),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[a-\/zA-\/Z\_]\(\backslash\)w*'}, Name.Attribute)}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

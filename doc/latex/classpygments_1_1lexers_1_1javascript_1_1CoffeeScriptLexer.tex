@@ -1,0 +1,88 @@
+\hypertarget{classpygments_1_1lexers_1_1javascript_1_1CoffeeScriptLexer}{}\doxysection{pygments.\+lexers.\+javascript.\+Coffee\+Script\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1javascript_1_1CoffeeScriptLexer}\index{pygments.lexers.javascript.CoffeeScriptLexer@{pygments.lexers.javascript.CoffeeScriptLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+javascript.\+Coffee\+Script\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+javascript.\+Coffee\+Script\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1CoffeeScriptLexer_a46378392efa1dae0f7e3282beafaf584}\label{classpygments_1_1lexers_1_1javascript_1_1CoffeeScriptLexer_a46378392efa1dae0f7e3282beafaf584}} 
+string {\bfseries name} = \textquotesingle{}Coffee\+Script\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1CoffeeScriptLexer_afb76b29c99d8892c8836bd98b2feb343}\label{classpygments_1_1lexers_1_1javascript_1_1CoffeeScriptLexer_afb76b29c99d8892c8836bd98b2feb343}} 
+string {\bfseries url} = \textquotesingle{}http\+://coffeescript.\+org\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1CoffeeScriptLexer_a1f3b1a4c1fa30f4e0d360e1a34318d7c}\label{classpygments_1_1lexers_1_1javascript_1_1CoffeeScriptLexer_a1f3b1a4c1fa30f4e0d360e1a34318d7c}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}coffeescript\textquotesingle{}, \textquotesingle{}coffee-\/script\textquotesingle{}, \textquotesingle{}coffee\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1CoffeeScriptLexer_a7b05d37902fa3e9a35058f5550e3d4cb}\label{classpygments_1_1lexers_1_1javascript_1_1CoffeeScriptLexer_a7b05d37902fa3e9a35058f5550e3d4cb}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.coffee\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1CoffeeScriptLexer_a48ebc6ca9288d8c2211a0e1b2124802b}\label{classpygments_1_1lexers_1_1javascript_1_1CoffeeScriptLexer_a48ebc6ca9288d8c2211a0e1b2124802b}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/coffeescript\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1CoffeeScriptLexer_abbfc62d597a89117551074c855d66a00}\label{classpygments_1_1lexers_1_1javascript_1_1CoffeeScriptLexer_abbfc62d597a89117551074c855d66a00}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+3\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1CoffeeScriptLexer_a0a7f0c791804fbdedb274823c50af645}\label{classpygments_1_1lexers_1_1javascript_1_1CoffeeScriptLexer_a0a7f0c791804fbdedb274823c50af645}} 
+{\bfseries flags} = re.\+DOTALL
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For CoffeeScript source code.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1CoffeeScriptLexer_a22ee82d62f5311060136c3fe650cac1b}\label{classpygments_1_1lexers_1_1javascript_1_1CoffeeScriptLexer_a22ee82d62f5311060136c3fe650cac1b}} 
+\index{pygments.lexers.javascript.CoffeeScriptLexer@{pygments.lexers.javascript.CoffeeScriptLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.javascript.CoffeeScriptLexer@{pygments.lexers.javascript.CoffeeScriptLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+javascript.\+Coffee\+Script\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'commentsandwhitespace'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#\#\#[\string^\#].*?\#\#\#'}, Comment.Multiline),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\#(?!\#\#[\string^\#]).*?)(\(\backslash\)n)'}, bygroups(Comment.Single, Whitespace)),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'multilineregex'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^/\#]+'}, String.Regex),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'///([gimuysd]+\(\backslash\)b|\(\backslash\)B)'}, String.Regex, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#\(\backslash\)\{'}, String.Interpol, \textcolor{stringliteral}{'interpoling\_string'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[/\#]'}, String.Regex),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'slashstartsregex'}: [}
+\DoxyCodeLine{            include(\textcolor{stringliteral}{'commentsandwhitespace'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'///'}, String.Regex, (\textcolor{stringliteral}{'\#pop'}, \textcolor{stringliteral}{'multilineregex'})),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'/(?! )(\(\backslash\)\(\backslash\).|[\string^[/\(\backslash\)\(\backslash\)\(\backslash\)n]|\(\backslash\)[(\(\backslash\)\(\backslash\).|[\string^\(\backslash\)]\(\backslash\)\(\backslash\)\(\backslash\)n])*])+/'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'([gimuysd]+\(\backslash\)b|\(\backslash\)B)'}, String.Regex, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            \textcolor{comment}{\# This isn't really guarding against mishighlighting well-\/formed            \# code, just the ability to infinite-\/loop between root and            \# slashstartsregex.            (r'/', Operator, '\#pop'),            default('\#pop'),        ],        'root': [            include('commentsandwhitespace'),            (r'\(\backslash\)A(?=\(\backslash\)s|/)', Text, 'slashstartsregex'),            (\_operator\_re, Operator, 'slashstartsregex'),            (r'(?:\(\backslash\)([\string^()]*\(\backslash\)))?\(\backslash\)s*[=-\/]>', Name.Function, 'slashstartsregex'),            (r'[\{(\(\backslash\)[;,]', Punctuation, 'slashstartsregex'),            (r'[\})\(\backslash\)].]', Punctuation),            (r'(?<![.\$])(for|own|in|of|while|until|'             r'loop|break|return|continue|'             r'switch|when|then|if|unless|else|'             r'throw|try|catch|finally|new|delete|typeof|instanceof|super|'             r'extends|this|class|by)\(\backslash\)b', Keyword, 'slashstartsregex'),            (r'(?<![.\$])(true|false|yes|no|on|off|null|'             r'NaN|Infinity|undefined)\(\backslash\)b',             Keyword.Constant),            (r'(Array|Boolean|Date|Error|Function|Math|'             r'Number|Object|RegExp|String|decodeURI|'             r'decodeURIComponent|encodeURI|encodeURIComponent|'             r'eval|isFinite|isNaN|parseFloat|parseInt|document|window|globalThis|Symbol)\(\backslash\)b',             Name.Builtin),            (r'([\$a-\/zA-\/Z\_][\(\backslash\)w.:\$]*)(\(\backslash\)s*)([:=])(\(\backslash\)s+)',                bygroups(Name.Variable, Whitespace, Operator, Whitespace),                'slashstartsregex'),            (r'(@[\$a-\/zA-\/Z\_][\(\backslash\)w.:\$]*)(\(\backslash\)s*)([:=])(\(\backslash\)s+)',                bygroups(Name.Variable.Instance, Whitespace, Operator, Whitespace),                'slashstartsregex'),            (r'@', Name.Other, 'slashstartsregex'),            (r'@?[\$a-\/zA-\/Z\_][\(\backslash\)w\$]*', Name.Other),            (r'[0-\/9][0-\/9]*\(\backslash\).[0-\/9]+([eE][0-\/9]+)?[fd]?', Number.Float),            (r'0x[0-\/9a-\/fA-\/F]+', Number.Hex),            (r'[0-\/9]+', Number.Integer),            ('', String, '\#pop'),            (r'\(\backslash\)\(\backslash\).|\(\backslash\)'|"{}', String),  \# no need to escape quotes in triple-\/string}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#\(\backslash\)\{'}, String.Interpol, \textcolor{stringliteral}{"{}interpoling\_string"{}}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#'}, String),}
+\DoxyCodeLine{            include(\textcolor{stringliteral}{'strings'}),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'tsqs'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r"{}'''"{}}, String, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#|\(\backslash\)\(\backslash\).|\(\backslash\)'|"{}'}, String),  \textcolor{comment}{\# no need to escape quotes in triple-\/strings}}
+\DoxyCodeLine{            include(\textcolor{stringliteral}{'strings'})}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/javascript.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+\hypertarget{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars}{}\doxysection{conan.\+tools.\+env.\+environment.\+Env\+Vars Class Reference}
+\label{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars}\index{conan.tools.env.environment.EnvVars@{conan.tools.env.environment.EnvVars}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_a8b85dfe1fab28e93967875870d6b4cdd}\label{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_a8b85dfe1fab28e93967875870d6b4cdd}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, conanfile, values, scope)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_ab84870e6f5385fca4c04674aee900a2e}\label{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_ab84870e6f5385fca4c04674aee900a2e}} 
+def {\bfseries \+\_\+\+\_\+getitem\+\_\+\+\_\+} (self, name)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_a22c1e4a7cae736ebeefaf214c07def56}\label{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_a22c1e4a7cae736ebeefaf214c07def56}} 
+def {\bfseries keys} (self)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_a3100ea3cc1ec887339d3cad7ade25b7c}{get}} (self, name, default=None, variable\+\_\+reference=None)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_a281f5ecc555f432320249044cc2908ee}{items}} (self, variable\+\_\+reference=None)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_a246d93c6d1c4467a0b822429ebba1549}\label{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_a246d93c6d1c4467a0b822429ebba1549}} 
+def {\bfseries apply} (self)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_a0aba0bd0b82e8fa82fc624afc191a6b8}\label{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_a0aba0bd0b82e8fa82fc624afc191a6b8}} 
+def {\bfseries save\+\_\+bat} (self, file\+\_\+location, generate\+\_\+deactivate=True)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_a3cb9d209d69eec13ea704be736912383}\label{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_a3cb9d209d69eec13ea704be736912383}} 
+def {\bfseries save\+\_\+ps1} (self, file\+\_\+location, generate\+\_\+deactivate=True)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_a6869633e4603441b1ac30c98f15f078b}\label{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_a6869633e4603441b1ac30c98f15f078b}} 
+def {\bfseries save\+\_\+sh} (self, file\+\_\+location, generate\+\_\+deactivate=True)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_ace30f55e22b318f84a1e6609ff9d7a77}\label{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_ace30f55e22b318f84a1e6609ff9d7a77}} 
+def {\bfseries save\+\_\+script} (self, filename)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_a3100ea3cc1ec887339d3cad7ade25b7c}\label{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_a3100ea3cc1ec887339d3cad7ade25b7c}} 
+\index{conan.tools.env.environment.EnvVars@{conan.tools.env.environment.EnvVars}!get@{get}}
+\index{get@{get}!conan.tools.env.environment.EnvVars@{conan.tools.env.environment.EnvVars}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily def conan.\+tools.\+env.\+environment.\+Env\+Vars.\+get (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{default = {\ttfamily None},  }\item[{}]{variable\+\_\+reference = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param name: The name of the environment variable
+:param default: The returned value if the variable doesn't exist, by default None
+:param variable_reference: if specified, use a variable reference instead of the
+pre-existing value of environment variable, where {name} can be used to refer to the
+name of the variable.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_a281f5ecc555f432320249044cc2908ee}\label{classconan_1_1tools_1_1env_1_1environment_1_1EnvVars_a281f5ecc555f432320249044cc2908ee}} 
+\index{conan.tools.env.environment.EnvVars@{conan.tools.env.environment.EnvVars}!items@{items}}
+\index{items@{items}!conan.tools.env.environment.EnvVars@{conan.tools.env.environment.EnvVars}}
+\doxysubsubsection{\texorpdfstring{items()}{items()}}
+{\footnotesize\ttfamily def conan.\+tools.\+env.\+environment.\+Env\+Vars.\+items (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{variable\+\_\+reference = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}returns {str: str} (varname: value)
+ :param variable_reference: if specified, use a variable reference instead of the
+pre-existing value of environment variable, where {name} can be used to refer to the
+name of the variable.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conan/tools/env/environment.\+py\end{DoxyCompactItemize}

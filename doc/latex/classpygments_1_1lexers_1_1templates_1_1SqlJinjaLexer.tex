@@ -1,0 +1,103 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1SqlJinjaLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Sql\+Jinja\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1SqlJinjaLexer}\index{pygments.lexers.templates.SqlJinjaLexer@{pygments.lexers.templates.SqlJinjaLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Sql\+Jinja\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Sql\+Jinja\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1SqlJinjaLexer_a0d828ad8ef302cfe024be495f4a44af8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1SqlJinjaLexer_a8c0ca0da20ea00b6536ba3dced8e18ec}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1SqlJinjaLexer_a1035914396a64805fd409a6685b36f9c}\label{classpygments_1_1lexers_1_1templates_1_1SqlJinjaLexer_a1035914396a64805fd409a6685b36f9c}} 
+string {\bfseries name} = \textquotesingle{}SQL+Jinja\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1SqlJinjaLexer_a0a45fbd7c585f4bb6f3f411fbf823553}\label{classpygments_1_1lexers_1_1templates_1_1SqlJinjaLexer_a0a45fbd7c585f4bb6f3f411fbf823553}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}sql+jinja\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1SqlJinjaLexer_a90a41249584f3eba0a5490ec895480ab}\label{classpygments_1_1lexers_1_1templates_1_1SqlJinjaLexer_a90a41249584f3eba0a5490ec895480ab}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.sql\textquotesingle{}, \textquotesingle{}$\ast$.sql.\+j2\textquotesingle{}, \textquotesingle{}$\ast$.sql.\+jinja2\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1SqlJinjaLexer_a97534c73ec70676018a2774270e03668}\label{classpygments_1_1lexers_1_1templates_1_1SqlJinjaLexer_a97534c73ec70676018a2774270e03668}} 
+string {\bfseries url} = \textquotesingle{}https\+://jinja.\+palletsprojects.\+com\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1SqlJinjaLexer_ae3807d7de7a518f1e64c0a816efb8eda}\label{classpygments_1_1lexers_1_1templates_1_1SqlJinjaLexer_ae3807d7de7a518f1e64c0a816efb8eda}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+13\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Templated SQL lexer.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1SqlJinjaLexer_a0d828ad8ef302cfe024be495f4a44af8}\label{classpygments_1_1lexers_1_1templates_1_1SqlJinjaLexer_a0d828ad8ef302cfe024be495f4a44af8}} 
+\index{pygments.lexers.templates.SqlJinjaLexer@{pygments.lexers.templates.SqlJinjaLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.templates.SqlJinjaLexer@{pygments.lexers.templates.SqlJinjaLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Sql\+Jinja\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1SqlJinjaLexer_a8c0ca0da20ea00b6536ba3dced8e18ec}\label{classpygments_1_1lexers_1_1templates_1_1SqlJinjaLexer_a8c0ca0da20ea00b6536ba3dced8e18ec}} 
+\index{pygments.lexers.templates.SqlJinjaLexer@{pygments.lexers.templates.SqlJinjaLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.templates.SqlJinjaLexer@{pygments.lexers.templates.SqlJinjaLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Sql\+Jinja\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

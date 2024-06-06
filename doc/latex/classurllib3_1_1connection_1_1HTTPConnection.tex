@@ -1,0 +1,156 @@
+\hypertarget{classurllib3_1_1connection_1_1HTTPConnection}{}\doxysection{urllib3.\+connection.\+HTTPConnection Class Reference}
+\label{classurllib3_1_1connection_1_1HTTPConnection}\index{urllib3.connection.HTTPConnection@{urllib3.connection.HTTPConnection}}
+
+
+Inheritance diagram for urllib3.\+connection.\+HTTPConnection\+:
+% FIG 0
+
+
+Collaboration diagram for urllib3.\+connection.\+HTTPConnection\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connection_1_1HTTPConnection_a78571581e145c017844e687db7dbae8d}\label{classurllib3_1_1connection_1_1HTTPConnection_a78571581e145c017844e687db7dbae8d}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, $\ast$args, $\ast$$\ast$kw)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1connection_1_1HTTPConnection_a4cc01187b147f45206652cd138c65614}{host}} (self)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1connection_1_1HTTPConnection_aff1bf46dcae0c987491025f57d92d4c6}{host}} (self, value)
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connection_1_1HTTPConnection_a6e86ee28dea79dd1867abcd1d0b4087d}\label{classurllib3_1_1connection_1_1HTTPConnection_a6e86ee28dea79dd1867abcd1d0b4087d}} 
+def {\bfseries connect} (self)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1connection_1_1HTTPConnection_a3c03f751ea80575616d82b54d7d0d5db}{putrequest}} (self, method, url, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1connection_1_1HTTPConnection_ac6645908b8bfa29680fdb446793382cd}{putheader}} (self, header, $\ast$values)
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connection_1_1HTTPConnection_ad8f84ce64db657d5916e637243bd4785}\label{classurllib3_1_1connection_1_1HTTPConnection_ad8f84ce64db657d5916e637243bd4785}} 
+def {\bfseries request} (self, method, url, body=None, headers=None)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1connection_1_1HTTPConnection_aa7d7ede572a3a61c0eb8dd999d3a5fd0}{request\+\_\+chunked}} (self, method, url, body=None, headers=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connection_1_1HTTPConnection_adeac2d71e3d37e09a2e3b102cd7f3f0a}\label{classurllib3_1_1connection_1_1HTTPConnection_adeac2d71e3d37e09a2e3b102cd7f3f0a}} 
+{\bfseries source\+\_\+address}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connection_1_1HTTPConnection_a8054cd74cfd4c94e5340480dfefd3585}\label{classurllib3_1_1connection_1_1HTTPConnection_a8054cd74cfd4c94e5340480dfefd3585}} 
+{\bfseries socket\+\_\+options}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connection_1_1HTTPConnection_a138f40e175e42ae521bbe2d0f6d9d9c6}\label{classurllib3_1_1connection_1_1HTTPConnection_a138f40e175e42ae521bbe2d0f6d9d9c6}} 
+{\bfseries proxy}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connection_1_1HTTPConnection_acb69d5766717630021f67595c141178d}\label{classurllib3_1_1connection_1_1HTTPConnection_acb69d5766717630021f67595c141178d}} 
+{\bfseries proxy\+\_\+config}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connection_1_1HTTPConnection_a4f2571c7c5aa18b267286ee62e4ea9b2}\label{classurllib3_1_1connection_1_1HTTPConnection_a4f2571c7c5aa18b267286ee62e4ea9b2}} 
+{\bfseries sock}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connection_1_1HTTPConnection_a988d58d324a23336e0ccbb71d9c60d57}\label{classurllib3_1_1connection_1_1HTTPConnection_a988d58d324a23336e0ccbb71d9c60d57}} 
+{\bfseries auto\+\_\+open}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connection_1_1HTTPConnection_aa8657d4e59443ab266ff7c56db0d81c3}\label{classurllib3_1_1connection_1_1HTTPConnection_aa8657d4e59443ab266ff7c56db0d81c3}} 
+{\bfseries default\+\_\+port} = port\+\_\+by\+\_\+scheme\mbox{[}\char`\"{}http\char`\"{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connection_1_1HTTPConnection_aa896bac6778f24b7a73226638ab8f97c}\label{classurllib3_1_1connection_1_1HTTPConnection_aa896bac6778f24b7a73226638ab8f97c}} 
+list {\bfseries default\+\_\+socket\+\_\+options} = \mbox{[}(socket.\+IPPROTO\+\_\+\+TCP, socket.\+TCP\+\_\+\+NODELAY, 1)\mbox{]}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connection_1_1HTTPConnection_ab2024bc528bed4d7ad133e14942968e7}\label{classurllib3_1_1connection_1_1HTTPConnection_ab2024bc528bed4d7ad133e14942968e7}} 
+bool {\bfseries is\+\_\+verified} = False
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connection_1_1HTTPConnection_a34b6c9072f77911bcaffeea574065bf6}\label{classurllib3_1_1connection_1_1HTTPConnection_a34b6c9072f77911bcaffeea574065bf6}} 
+{\bfseries proxy\+\_\+is\+\_\+verified} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Based on :class:`http.client.HTTPConnection` but provides an extra constructor
+backwards-compatibility layer between older and newer Pythons.
+
+Additional keyword parameters are used to configure attributes of the connection.
+Accepted parameters include:
+
+- ``strict``: See the documentation on :class:`urllib3.connectionpool.HTTPConnectionPool`
+- ``source_address``: Set the source address for the current connection.
+- ``socket_options``: Set specific options on the underlying socket. If not specified, then
+  defaults are loaded from ``HTTPConnection.default_socket_options`` which includes disabling
+  Nagle's algorithm (sets TCP_NODELAY to 1) unless the connection is behind a proxy.
+
+  For example, if you wish to enable TCP Keep Alive in addition to the defaults,
+  you might pass:
+
+  .. code-block:: python
+
+     HTTPConnection.default_socket_options + [
+         (socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1),
+     ]
+
+  Or you may want to disable the defaults by passing an empty list (e.g., ``[]``).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classurllib3_1_1connection_1_1HTTPConnection_a4cc01187b147f45206652cd138c65614}\label{classurllib3_1_1connection_1_1HTTPConnection_a4cc01187b147f45206652cd138c65614}} 
+\index{urllib3.connection.HTTPConnection@{urllib3.connection.HTTPConnection}!host@{host}}
+\index{host@{host}!urllib3.connection.HTTPConnection@{urllib3.connection.HTTPConnection}}
+\doxysubsubsection{\texorpdfstring{host()}{host()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def urllib3.\+connection.\+HTTPConnection.\+host (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Getter method to remove any trailing dots that indicate the hostname is an FQDN.
+
+In general, SSL certificates don't include the trailing dot indicating a
+fully-qualified domain name, and thus, they don't validate properly when
+checked against a domain name that includes the dot. In addition, some
+servers may not expect to receive the trailing dot when provided.
+
+However, the hostname with trailing dot is critical to DNS resolution; doing a
+lookup with the trailing dot will properly only resolve the appropriate FQDN,
+whereas a lookup without a trailing dot will search the system's search domain
+list. Thus, it's important to keep the original host around for use only in
+those cases where it's appropriate (i.e., when doing DNS lookup to establish the
+actual TCP connection across which we're going to send HTTP requests).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classurllib3_1_1connection_1_1HTTPConnection_aff1bf46dcae0c987491025f57d92d4c6}\label{classurllib3_1_1connection_1_1HTTPConnection_aff1bf46dcae0c987491025f57d92d4c6}} 
+\index{urllib3.connection.HTTPConnection@{urllib3.connection.HTTPConnection}!host@{host}}
+\index{host@{host}!urllib3.connection.HTTPConnection@{urllib3.connection.HTTPConnection}}
+\doxysubsubsection{\texorpdfstring{host()}{host()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def urllib3.\+connection.\+HTTPConnection.\+host (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Setter for the `host` property.
+
+We assume that only urllib3 uses the _dns_host attribute; httplib itself
+only uses `host`, and it seems reasonable that other libraries follow suit.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classurllib3_1_1connection_1_1HTTPConnection_ac6645908b8bfa29680fdb446793382cd}\label{classurllib3_1_1connection_1_1HTTPConnection_ac6645908b8bfa29680fdb446793382cd}} 
+\index{urllib3.connection.HTTPConnection@{urllib3.connection.HTTPConnection}!putheader@{putheader}}
+\index{putheader@{putheader}!urllib3.connection.HTTPConnection@{urllib3.connection.HTTPConnection}}
+\doxysubsubsection{\texorpdfstring{putheader()}{putheader()}}
+{\footnotesize\ttfamily def urllib3.\+connection.\+HTTPConnection.\+putheader (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{header,  }\item[{$\ast$}]{values }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} \end{DoxyVerb}
+ \mbox{\Hypertarget{classurllib3_1_1connection_1_1HTTPConnection_a3c03f751ea80575616d82b54d7d0d5db}\label{classurllib3_1_1connection_1_1HTTPConnection_a3c03f751ea80575616d82b54d7d0d5db}} 
+\index{urllib3.connection.HTTPConnection@{urllib3.connection.HTTPConnection}!putrequest@{putrequest}}
+\index{putrequest@{putrequest}!urllib3.connection.HTTPConnection@{urllib3.connection.HTTPConnection}}
+\doxysubsubsection{\texorpdfstring{putrequest()}{putrequest()}}
+{\footnotesize\ttfamily def urllib3.\+connection.\+HTTPConnection.\+putrequest (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{method,  }\item[{}]{url,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} \end{DoxyVerb}
+ \mbox{\Hypertarget{classurllib3_1_1connection_1_1HTTPConnection_aa7d7ede572a3a61c0eb8dd999d3a5fd0}\label{classurllib3_1_1connection_1_1HTTPConnection_aa7d7ede572a3a61c0eb8dd999d3a5fd0}} 
+\index{urllib3.connection.HTTPConnection@{urllib3.connection.HTTPConnection}!request\_chunked@{request\_chunked}}
+\index{request\_chunked@{request\_chunked}!urllib3.connection.HTTPConnection@{urllib3.connection.HTTPConnection}}
+\doxysubsubsection{\texorpdfstring{request\_chunked()}{request\_chunked()}}
+{\footnotesize\ttfamily def urllib3.\+connection.\+HTTPConnection.\+request\+\_\+chunked (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{method,  }\item[{}]{url,  }\item[{}]{body = {\ttfamily None},  }\item[{}]{headers = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Alternative to the common request method, which sends the
+body with chunked encoding and not as one block
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/urllib3/connection.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,95 @@
+\hypertarget{classpygments_1_1lexers_1_1dsls_1_1SnowballLexer}{}\doxysection{pygments.\+lexers.\+dsls.\+Snowball\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1dsls_1_1SnowballLexer}\index{pygments.lexers.dsls.SnowballLexer@{pygments.lexers.dsls.SnowballLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+dsls.\+Snowball\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+dsls.\+Snowball\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1dsls_1_1SnowballLexer_ab203fff420296b1fba454035db8cd873}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1dsls_1_1SnowballLexer_a77af2c712591c2fab6c6e061f4f7be30}{get\+\_\+tokens\+\_\+unprocessed}} (self, text=None, context=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dsls_1_1SnowballLexer_ac673e7837e3373bab90d3a3410a4c931}\label{classpygments_1_1lexers_1_1dsls_1_1SnowballLexer_ac673e7837e3373bab90d3a3410a4c931}} 
+string {\bfseries name} = \textquotesingle{}Snowball\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dsls_1_1SnowballLexer_adc140dbf742e5770f48e5230f596bedc}\label{classpygments_1_1lexers_1_1dsls_1_1SnowballLexer_adc140dbf742e5770f48e5230f596bedc}} 
+string {\bfseries url} = \textquotesingle{}https\+://snowballstem.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dsls_1_1SnowballLexer_a725fccac2df5415335b3e2178b4786c4}\label{classpygments_1_1lexers_1_1dsls_1_1SnowballLexer_a725fccac2df5415335b3e2178b4786c4}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}snowball\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dsls_1_1SnowballLexer_abc6b3a300b52c5ce1780981f561171c6}\label{classpygments_1_1lexers_1_1dsls_1_1SnowballLexer_abc6b3a300b52c5ce1780981f561171c6}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.sbl\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dsls_1_1SnowballLexer_a52f49eb401a0ac14b24df7fb7f12bbe9}\label{classpygments_1_1lexers_1_1dsls_1_1SnowballLexer_a52f49eb401a0ac14b24df7fb7f12bbe9}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+2\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dsls_1_1SnowballLexer_ab483a543ee2e350f6599a7301cec9387}\label{classpygments_1_1lexers_1_1dsls_1_1SnowballLexer_ab483a543ee2e350f6599a7301cec9387}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for Snowball source code.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dsls_1_1SnowballLexer_ab203fff420296b1fba454035db8cd873}\label{classpygments_1_1lexers_1_1dsls_1_1SnowballLexer_ab203fff420296b1fba454035db8cd873}} 
+\index{pygments.lexers.dsls.SnowballLexer@{pygments.lexers.dsls.SnowballLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.dsls.SnowballLexer@{pygments.lexers.dsls.SnowballLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+dsls.\+Snowball\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dsls_1_1SnowballLexer_a77af2c712591c2fab6c6e061f4f7be30}\label{classpygments_1_1lexers_1_1dsls_1_1SnowballLexer_a77af2c712591c2fab6c6e061f4f7be30}} 
+\index{pygments.lexers.dsls.SnowballLexer@{pygments.lexers.dsls.SnowballLexer}!get\_tokens\_unprocessed@{get\_tokens\_unprocessed}}
+\index{get\_tokens\_unprocessed@{get\_tokens\_unprocessed}!pygments.lexers.dsls.SnowballLexer@{pygments.lexers.dsls.SnowballLexer}}
+\doxysubsubsection{\texorpdfstring{get\_tokens\_unprocessed()}{get\_tokens\_unprocessed()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+dsls.\+Snowball\+Lexer.\+get\+\_\+tokens\+\_\+unprocessed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text = {\ttfamily None},  }\item[{}]{context = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Split ``text`` into (tokentype, text) pairs.
+If ``context`` is given, use this lexer context instead.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1ExtendedRegexLexer_a026a27e9b914b48c944b7a21648315c2}{pygments.\+lexer.\+Extended\+Regex\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/dsls.\+py\end{DoxyCompactItemize}

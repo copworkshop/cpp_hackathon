@@ -1,0 +1,72 @@
+\hypertarget{classpygments_1_1lexers_1_1configs_1_1LighttpdConfLexer}{}\doxysection{pygments.\+lexers.\+configs.\+Lighttpd\+Conf\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1configs_1_1LighttpdConfLexer}\index{pygments.lexers.configs.LighttpdConfLexer@{pygments.lexers.configs.LighttpdConfLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+configs.\+Lighttpd\+Conf\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+configs.\+Lighttpd\+Conf\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1LighttpdConfLexer_a43376af4f8c82d846b3ff16753f410ce}\label{classpygments_1_1lexers_1_1configs_1_1LighttpdConfLexer_a43376af4f8c82d846b3ff16753f410ce}} 
+string {\bfseries name} = \textquotesingle{}Lighttpd configuration file\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1LighttpdConfLexer_a8c210001927fda031730dec8fcf46a6d}\label{classpygments_1_1lexers_1_1configs_1_1LighttpdConfLexer_a8c210001927fda031730dec8fcf46a6d}} 
+string {\bfseries url} = \textquotesingle{}http\+://lighttpd.\+net/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1LighttpdConfLexer_a3ba6b647022be492b22d2225b6dcb8fa}\label{classpygments_1_1lexers_1_1configs_1_1LighttpdConfLexer_a3ba6b647022be492b22d2225b6dcb8fa}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}lighttpd\textquotesingle{}, \textquotesingle{}lighty\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1LighttpdConfLexer_a02a4fee0b5f27e9c3b312604eaf4b006}\label{classpygments_1_1lexers_1_1configs_1_1LighttpdConfLexer_a02a4fee0b5f27e9c3b312604eaf4b006}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}lighttpd.\+conf\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1LighttpdConfLexer_a540115266164d8381f037444dcb967d2}\label{classpygments_1_1lexers_1_1configs_1_1LighttpdConfLexer_a540115266164d8381f037444dcb967d2}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/lighttpd-\/conf\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1LighttpdConfLexer_ac55d3b543f386b4adf712ec1562365c6}\label{classpygments_1_1lexers_1_1configs_1_1LighttpdConfLexer_ac55d3b543f386b4adf712ec1562365c6}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}0.\+11\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for Lighttpd configuration files.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1LighttpdConfLexer_a3fcaa86116ee5fd0a08d91ce7146fd18}\label{classpygments_1_1lexers_1_1configs_1_1LighttpdConfLexer_a3fcaa86116ee5fd0a08d91ce7146fd18}} 
+\index{pygments.lexers.configs.LighttpdConfLexer@{pygments.lexers.configs.LighttpdConfLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.configs.LighttpdConfLexer@{pygments.lexers.configs.LighttpdConfLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+configs.\+Lighttpd\+Conf\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#.*\(\backslash\)n'}, Comment.Single),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'/\(\backslash\)S*'}, Name),  \textcolor{comment}{\# pathname}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[a-\/zA-\/Z.\_-\/]+'}, Keyword),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)d+\(\backslash\).\(\backslash\)d+\(\backslash\).\(\backslash\)d+\(\backslash\).\(\backslash\)d+(?:/\(\backslash\)d+)?'}, Number),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[0-\/9]+'}, Number),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'=>|=\string~|\(\backslash\)+=|==|=|\(\backslash\)+'}, Operator),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\$[A-\/Z]+'}, Name.Builtin),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[()\{\}\(\backslash\)[\(\backslash\)],]'}, Punctuation),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'"{}([\string^"{}\(\backslash\)\(\backslash\)]*(?:\(\backslash\)\(\backslash\).[\string^"{}\(\backslash\)\(\backslash\)]*)*)"{}'}, String.Double),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/configs.\+py\end{DoxyCompactItemize}

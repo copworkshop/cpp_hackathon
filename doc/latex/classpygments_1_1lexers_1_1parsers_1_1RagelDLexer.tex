@@ -1,0 +1,103 @@
+\hypertarget{classpygments_1_1lexers_1_1parsers_1_1RagelDLexer}{}\doxysection{pygments.\+lexers.\+parsers.\+Ragel\+DLexer Class Reference}
+\label{classpygments_1_1lexers_1_1parsers_1_1RagelDLexer}\index{pygments.lexers.parsers.RagelDLexer@{pygments.lexers.parsers.RagelDLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+parsers.\+Ragel\+DLexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+parsers.\+Ragel\+DLexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1parsers_1_1RagelDLexer_a3a41dc5ecb0edbaf330c34a18952e698}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1parsers_1_1RagelDLexer_a91caded6e493d949ae12b529a26b510b}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1RagelDLexer_aeb66f4e22b33b630da88145d06408377}\label{classpygments_1_1lexers_1_1parsers_1_1RagelDLexer_aeb66f4e22b33b630da88145d06408377}} 
+{\bfseries name}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1RagelDLexer_a49cd95bc6e46def07e9719b9014ded89}\label{classpygments_1_1lexers_1_1parsers_1_1RagelDLexer_a49cd95bc6e46def07e9719b9014ded89}} 
+{\bfseries aliases}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1RagelDLexer_a9ff6cb55d17a784b49e0ea2b7b861c31}\label{classpygments_1_1lexers_1_1parsers_1_1RagelDLexer_a9ff6cb55d17a784b49e0ea2b7b861c31}} 
+{\bfseries filenames}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1RagelDLexer_aedebe773dbc49f08e05944c4e9572b67}\label{classpygments_1_1lexers_1_1parsers_1_1RagelDLexer_aedebe773dbc49f08e05944c4e9572b67}} 
+{\bfseries url}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1RagelDLexer_af1c28da9ac85c4aba1a7a88d46df6e9e}\label{classpygments_1_1lexers_1_1parsers_1_1RagelDLexer_af1c28da9ac85c4aba1a7a88d46df6e9e}} 
+{\bfseries version\+\_\+added}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A lexer for Ragel in a D host file.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1RagelDLexer_a3a41dc5ecb0edbaf330c34a18952e698}\label{classpygments_1_1lexers_1_1parsers_1_1RagelDLexer_a3a41dc5ecb0edbaf330c34a18952e698}} 
+\index{pygments.lexers.parsers.RagelDLexer@{pygments.lexers.parsers.RagelDLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.parsers.RagelDLexer@{pygments.lexers.parsers.RagelDLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+parsers.\+Ragel\+DLexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1RagelDLexer_a91caded6e493d949ae12b529a26b510b}\label{classpygments_1_1lexers_1_1parsers_1_1RagelDLexer_a91caded6e493d949ae12b529a26b510b}} 
+\index{pygments.lexers.parsers.RagelDLexer@{pygments.lexers.parsers.RagelDLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.parsers.RagelDLexer@{pygments.lexers.parsers.RagelDLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+parsers.\+Ragel\+DLexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/parsers.\+py\end{DoxyCompactItemize}

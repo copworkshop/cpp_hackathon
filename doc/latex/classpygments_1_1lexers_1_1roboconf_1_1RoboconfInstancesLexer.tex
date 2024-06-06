@@ -1,0 +1,76 @@
+\hypertarget{classpygments_1_1lexers_1_1roboconf_1_1RoboconfInstancesLexer}{}\doxysection{pygments.\+lexers.\+roboconf.\+Roboconf\+Instances\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1roboconf_1_1RoboconfInstancesLexer}\index{pygments.lexers.roboconf.RoboconfInstancesLexer@{pygments.lexers.roboconf.RoboconfInstancesLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+roboconf.\+Roboconf\+Instances\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+roboconf.\+Roboconf\+Instances\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1roboconf_1_1RoboconfInstancesLexer_a64f75b3b951fd4b16fe393b8a7a71b47}\label{classpygments_1_1lexers_1_1roboconf_1_1RoboconfInstancesLexer_a64f75b3b951fd4b16fe393b8a7a71b47}} 
+string {\bfseries name} = \textquotesingle{}Roboconf Instances\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1roboconf_1_1RoboconfInstancesLexer_a8545d889db1b3cff521d0a3c80c9a009}\label{classpygments_1_1lexers_1_1roboconf_1_1RoboconfInstancesLexer_a8545d889db1b3cff521d0a3c80c9a009}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}roboconf-\/instances\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1roboconf_1_1RoboconfInstancesLexer_afb490967f6dbe72385fa92ead9bcd91c}\label{classpygments_1_1lexers_1_1roboconf_1_1RoboconfInstancesLexer_afb490967f6dbe72385fa92ead9bcd91c}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.instances\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1roboconf_1_1RoboconfInstancesLexer_ada94a4d291ba34cb2011fdbe95ba8689}\label{classpygments_1_1lexers_1_1roboconf_1_1RoboconfInstancesLexer_ada94a4d291ba34cb2011fdbe95ba8689}} 
+string {\bfseries url} = \textquotesingle{}https\+://roboconf.\+github.\+io\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1roboconf_1_1RoboconfInstancesLexer_a871b4b25f34845de9d1aa4c9dbf034ae}\label{classpygments_1_1lexers_1_1roboconf_1_1RoboconfInstancesLexer_a871b4b25f34845de9d1aa4c9dbf034ae}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+1\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1roboconf_1_1RoboconfInstancesLexer_a89973f7cb75515c544e0a56c39ec4ab4}\label{classpygments_1_1lexers_1_1roboconf_1_1RoboconfInstancesLexer_a89973f7cb75515c544e0a56c39ec4ab4}} 
+{\bfseries flags} = re.\+IGNORECASE $\vert$ re.\+MULTILINE
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for Roboconf instances files.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1roboconf_1_1RoboconfInstancesLexer_a136e3ea19d51794fd26bdebe75d0bc68}\label{classpygments_1_1lexers_1_1roboconf_1_1RoboconfInstancesLexer_a136e3ea19d51794fd26bdebe75d0bc68}} 
+\index{pygments.lexers.roboconf.RoboconfInstancesLexer@{pygments.lexers.roboconf.RoboconfInstancesLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.roboconf.RoboconfInstancesLexer@{pygments.lexers.roboconf.RoboconfInstancesLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+roboconf.\+Roboconf\+Instances\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{comment}{\# Skip white spaces}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Text),}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{comment}{\# Keywords}}
+\DoxyCodeLine{            (words((\textcolor{stringliteral}{'instance of'}, \textcolor{stringliteral}{'import'}), suffix=\textcolor{stringliteral}{r'\(\backslash\)s*\(\backslash\)b'}, prefix=\textcolor{stringliteral}{r'\(\backslash\)b'}), Keyword),}
+\DoxyCodeLine{            (words((\textcolor{stringliteral}{'name'}, \textcolor{stringliteral}{'count'}), suffix=\textcolor{stringliteral}{r's*:?'}, prefix=\textcolor{stringliteral}{r'\(\backslash\)b'}), Name),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s*[\(\backslash\)w.-\/]+\(\backslash\)s*:'}, Name),}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{comment}{\# Comments}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#.*\(\backslash\)n'}, Comment),}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{comment}{\# Default}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^\#]'}, Text),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'.*\(\backslash\)n'}, Text)}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/roboconf.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,82 @@
+\hypertarget{classcharset__normalizer_1_1md_1_1SuperWeirdWordPlugin}{}\doxysection{charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin Class Reference}
+\label{classcharset__normalizer_1_1md_1_1SuperWeirdWordPlugin}\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+
+
+Inheritance diagram for charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin\+:
+% FIG 0
+
+
+Collaboration diagram for charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1SuperWeirdWordPlugin_ade099380132cf2793dc78b94cf72b5f3}\label{classcharset__normalizer_1_1md_1_1SuperWeirdWordPlugin_ade099380132cf2793dc78b94cf72b5f3}} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+bool \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1SuperWeirdWordPlugin_ab33e20d3128fd17930a97838134ffe24}{eligible}} (self, str character)
+\item 
+None \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1SuperWeirdWordPlugin_ad619d1ea25d7dca135e92a1393555961}{feed}} (self, str character)
+\item 
+None \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1SuperWeirdWordPlugin_a3d18dd2c6738673bbaa40a33c47effea}{reset}} (self)
+\item 
+float \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1SuperWeirdWordPlugin_a4d8594604ece7ee400b21b6ba15c993a}{ratio}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1SuperWeirdWordPlugin_ab33e20d3128fd17930a97838134ffe24}\label{classcharset__normalizer_1_1md_1_1SuperWeirdWordPlugin_ab33e20d3128fd17930a97838134ffe24}} 
+\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}!eligible@{eligible}}
+\index{eligible@{eligible}!charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+\doxysubsubsection{\texorpdfstring{eligible()}{eligible()}}
+{\footnotesize\ttfamily  bool charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin.\+eligible (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{character }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine if given character should be fed in.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1MessDetectorPlugin_a6c90e20b89fb11f27a99c4bb1b7b4aeb}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1SuperWeirdWordPlugin_ad619d1ea25d7dca135e92a1393555961}\label{classcharset__normalizer_1_1md_1_1SuperWeirdWordPlugin_ad619d1ea25d7dca135e92a1393555961}} 
+\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}!feed@{feed}}
+\index{feed@{feed}!charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+\doxysubsubsection{\texorpdfstring{feed()}{feed()}}
+{\footnotesize\ttfamily  None charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin.\+feed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{character }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The main routine to be executed upon character.
+Insert the logic in witch the text would be considered chaotic.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1MessDetectorPlugin_a1d7b6ef49fad244c8841e7dacf4a1bdb}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1SuperWeirdWordPlugin_a4d8594604ece7ee400b21b6ba15c993a}\label{classcharset__normalizer_1_1md_1_1SuperWeirdWordPlugin_a4d8594604ece7ee400b21b6ba15c993a}} 
+\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}!ratio@{ratio}}
+\index{ratio@{ratio}!charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+\doxysubsubsection{\texorpdfstring{ratio()}{ratio()}}
+{\footnotesize\ttfamily  float charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin.\+ratio (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute the chaos ratio based on what your feed() has seen.
+Must NOT be lower than 0.; No restriction gt 0.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1MessDetectorPlugin_ac8f7c272b946d769ca5d6c478b6dd8a1}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1SuperWeirdWordPlugin_a3d18dd2c6738673bbaa40a33c47effea}\label{classcharset__normalizer_1_1md_1_1SuperWeirdWordPlugin_a3d18dd2c6738673bbaa40a33c47effea}} 
+\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}!reset@{reset}}
+\index{reset@{reset}!charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily  None charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Permit to reset the plugin to the initial state.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1MessDetectorPlugin_a82ba1b462302d9374e38614cd8a918b9}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/charset\+\_\+normalizer/md.\+py\end{DoxyCompactItemize}

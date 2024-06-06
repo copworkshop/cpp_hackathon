@@ -1,0 +1,100 @@
+\hypertarget{classtqdm_1_1keras_1_1TqdmCallback}{}\doxysection{tqdm.\+keras.\+Tqdm\+Callback Class Reference}
+\label{classtqdm_1_1keras_1_1TqdmCallback}\index{tqdm.keras.TqdmCallback@{tqdm.keras.TqdmCallback}}
+
+
+Inheritance diagram for tqdm.\+keras.\+Tqdm\+Callback\+:
+% FIG 0
+
+
+Collaboration diagram for tqdm.\+keras.\+Tqdm\+Callback\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classtqdm_1_1keras_1_1TqdmCallback_a0131b54bd3816316bbac257d663aa59b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, epochs=None, data\+\_\+size=None, batch\+\_\+size=None, verbose=1, tqdm\+\_\+class=tqdm\+\_\+auto, $\ast$$\ast$tqdm\+\_\+kwargs)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1keras_1_1TqdmCallback_abf36b635c067de73da0282931ea5c12b}\label{classtqdm_1_1keras_1_1TqdmCallback_abf36b635c067de73da0282931ea5c12b}} 
+def {\bfseries on\+\_\+train\+\_\+begin} (self, $\ast$\+\_\+, $\ast$$\ast$\+\_\+\+\_\+)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1keras_1_1TqdmCallback_a94020cd3318fd7935b520c75e19daa5b}\label{classtqdm_1_1keras_1_1TqdmCallback_a94020cd3318fd7935b520c75e19daa5b}} 
+def {\bfseries on\+\_\+epoch\+\_\+begin} (self, epoch, $\ast$\+\_\+, $\ast$$\ast$\+\_\+\+\_\+)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1keras_1_1TqdmCallback_a99e743a2b5dd90b3e158d58f689ccc26}\label{classtqdm_1_1keras_1_1TqdmCallback_a99e743a2b5dd90b3e158d58f689ccc26}} 
+def {\bfseries on\+\_\+train\+\_\+end} (self, $\ast$\+\_\+, $\ast$$\ast$\+\_\+\+\_\+)
+\item 
+def \mbox{\hyperlink{classtqdm_1_1keras_1_1TqdmCallback_a4e1c2f00d7d813a69e607d4b88de051d}{display}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1keras_1_1TqdmCallback_a029af685e93fc653fe836cf4c20b3ad8}\label{classtqdm_1_1keras_1_1TqdmCallback_a029af685e93fc653fe836cf4c20b3ad8}} 
+def {\bfseries bar2callback} (bar, pop=None, delta=(lambda logs\+:1))
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1keras_1_1TqdmCallback_ab1b608a223b7a2fdf523c6ddc74f15c0}\label{classtqdm_1_1keras_1_1TqdmCallback_ab1b608a223b7a2fdf523c6ddc74f15c0}} 
+{\bfseries tqdm\+\_\+class}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1keras_1_1TqdmCallback_a0430b963ae6cc1bf981161ef90afc33f}\label{classtqdm_1_1keras_1_1TqdmCallback_a0430b963ae6cc1bf981161ef90afc33f}} 
+{\bfseries epoch\+\_\+bar}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1keras_1_1TqdmCallback_abdc568cf72fd0a18261d47222eb879ce}\label{classtqdm_1_1keras_1_1TqdmCallback_abdc568cf72fd0a18261d47222eb879ce}} 
+{\bfseries on\+\_\+epoch\+\_\+end}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1keras_1_1TqdmCallback_ac7329c76573dad84b7662521036ae6d3}\label{classtqdm_1_1keras_1_1TqdmCallback_ac7329c76573dad84b7662521036ae6d3}} 
+{\bfseries batches}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1keras_1_1TqdmCallback_a97bf482ed7fd9e1e3f9cf0078ac7ecd6}\label{classtqdm_1_1keras_1_1TqdmCallback_a97bf482ed7fd9e1e3f9cf0078ac7ecd6}} 
+{\bfseries verbose}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1keras_1_1TqdmCallback_a27f6b33cea855fb1811c1ef10d33559c}\label{classtqdm_1_1keras_1_1TqdmCallback_a27f6b33cea855fb1811c1ef10d33559c}} 
+{\bfseries batch\+\_\+bar}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1keras_1_1TqdmCallback_a13cc05a78df1e899318892817305b1ca}\label{classtqdm_1_1keras_1_1TqdmCallback_a13cc05a78df1e899318892817305b1ca}} 
+{\bfseries on\+\_\+batch\+\_\+end}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Keras callback for epoch and batch progress.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtqdm_1_1keras_1_1TqdmCallback_a0131b54bd3816316bbac257d663aa59b}\label{classtqdm_1_1keras_1_1TqdmCallback_a0131b54bd3816316bbac257d663aa59b}} 
+\index{tqdm.keras.TqdmCallback@{tqdm.keras.TqdmCallback}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!tqdm.keras.TqdmCallback@{tqdm.keras.TqdmCallback}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def tqdm.\+keras.\+Tqdm\+Callback.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{epochs = {\ttfamily None},  }\item[{}]{data\+\_\+size = {\ttfamily None},  }\item[{}]{batch\+\_\+size = {\ttfamily None},  }\item[{}]{verbose = {\ttfamily 1},  }\item[{}]{tqdm\+\_\+class = {\ttfamily tqdm\+\_\+auto},  }\item[{$\ast$$\ast$}]{tqdm\+\_\+kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parameters
+----------
+epochs  : int, optional
+data_size  : int, optional
+    Number of training pairs.
+batch_size  : int, optional
+    Number of training pairs per batch.
+verbose  : int
+    0: epoch, 1: batch (transient), 2: batch. [default: 1].
+    Will be set to `0` unless both `data_size` and `batch_size`
+    are given.
+tqdm_class  : optional
+    `tqdm` class to use for bars [default: `tqdm.auto.tqdm`].
+tqdm_kwargs  : optional
+    Any other arguments used for all bars.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtqdm_1_1keras_1_1TqdmCallback_a4e1c2f00d7d813a69e607d4b88de051d}\label{classtqdm_1_1keras_1_1TqdmCallback_a4e1c2f00d7d813a69e607d4b88de051d}} 
+\index{tqdm.keras.TqdmCallback@{tqdm.keras.TqdmCallback}!display@{display}}
+\index{display@{display}!tqdm.keras.TqdmCallback@{tqdm.keras.TqdmCallback}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily def tqdm.\+keras.\+Tqdm\+Callback.\+display (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Displays in the current cell in Notebooks.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/tqdm/keras.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,18 @@
+digraph "conans.model.build_info._CppInfo"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="conans.model.build\l_info._CppInfo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="object",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="conans.model.build\l_info.Component",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconans_1_1model_1_1build__info_1_1Component.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="conans.model.build\l_info.CppInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconans_1_1model_1_1build__info_1_1CppInfo.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="conans.model.build\l_info._BaseDepsCppInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconans_1_1model_1_1build__info_1_1__BaseDepsCppInfo.html",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="conans.model.build\l_info.DepsCppInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconans_1_1model_1_1build__info_1_1DepsCppInfo.html",tooltip=" "];
+}

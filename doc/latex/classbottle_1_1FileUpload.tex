@@ -1,0 +1,156 @@
+\hypertarget{classbottle_1_1FileUpload}{}\doxysection{bottle.\+File\+Upload Class Reference}
+\label{classbottle_1_1FileUpload}\index{bottle.FileUpload@{bottle.FileUpload}}
+
+
+Inheritance diagram for bottle.\+File\+Upload\+:
+% FIG 0
+
+
+Collaboration diagram for bottle.\+File\+Upload\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classbottle_1_1FileUpload_a3f535f638e9239553674b047a53dbdec}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, fileobj, name, \mbox{\hyperlink{classbottle_1_1FileUpload_a54a6230260a9fa32dd3edaee4dda1100}{filename}}, headers=None)
+\item 
+def \mbox{\hyperlink{classbottle_1_1FileUpload_a0cafeeb24a35a947a6def33a9fbe701b}{get\+\_\+header}} (self, name, default=None)
+\item 
+def \mbox{\hyperlink{classbottle_1_1FileUpload_a54a6230260a9fa32dd3edaee4dda1100}{filename}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1FileUpload_a1117f5d97727089d7c4e64a2cecf42e0}{save}} (self, destination, overwrite=False, chunk\+\_\+size=2 $\ast$$\ast$16)
+\item 
+def \mbox{\hyperlink{classbottle_1_1FileUpload_a3f535f638e9239553674b047a53dbdec}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, fileobj, name, \mbox{\hyperlink{classbottle_1_1FileUpload_a54a6230260a9fa32dd3edaee4dda1100}{filename}}, headers=None)
+\item 
+def \mbox{\hyperlink{classbottle_1_1FileUpload_a0cafeeb24a35a947a6def33a9fbe701b}{get\+\_\+header}} (self, name, default=None)
+\item 
+def \mbox{\hyperlink{classbottle_1_1FileUpload_a54a6230260a9fa32dd3edaee4dda1100}{filename}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1FileUpload_a1117f5d97727089d7c4e64a2cecf42e0}{save}} (self, destination, overwrite=False, chunk\+\_\+size=2 $\ast$$\ast$16)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbottle_1_1FileUpload_aecd8b6fdded899b6b9a867895037067f}\label{classbottle_1_1FileUpload_aecd8b6fdded899b6b9a867895037067f}} 
+{\bfseries file}
+\item 
+\mbox{\Hypertarget{classbottle_1_1FileUpload_a7a79df7bd49db17f447df0f18470e6e0}\label{classbottle_1_1FileUpload_a7a79df7bd49db17f447df0f18470e6e0}} 
+{\bfseries name}
+\item 
+\mbox{\Hypertarget{classbottle_1_1FileUpload_abb1dc9a45eb178b3b3d4a3a551fabe3a}\label{classbottle_1_1FileUpload_abb1dc9a45eb178b3b3d4a3a551fabe3a}} 
+{\bfseries raw\+\_\+filename}
+\item 
+\mbox{\Hypertarget{classbottle_1_1FileUpload_ab623714bf1070d018297daf4a568e450}\label{classbottle_1_1FileUpload_ab623714bf1070d018297daf4a568e450}} 
+{\bfseries headers}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbottle_1_1FileUpload_a0c93e3af089e703cdfcc2c4183007466}\label{classbottle_1_1FileUpload_a0c93e3af089e703cdfcc2c4183007466}} 
+{\bfseries content\+\_\+type} = \mbox{\hyperlink{classbottle_1_1HeaderProperty}{Header\+Property}}(\textquotesingle{}Content-\/Type\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classbottle_1_1FileUpload_aca9d6814ac16472d22515fa35e8957c6}\label{classbottle_1_1FileUpload_aca9d6814ac16472d22515fa35e8957c6}} 
+{\bfseries content\+\_\+length} = \mbox{\hyperlink{classbottle_1_1HeaderProperty}{Header\+Property}}(\textquotesingle{}Content-\/Length\textquotesingle{}, reader=int, default=-\/1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbottle_1_1FileUpload_a3f535f638e9239553674b047a53dbdec}\label{classbottle_1_1FileUpload_a3f535f638e9239553674b047a53dbdec}} 
+\index{bottle.FileUpload@{bottle.FileUpload}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!bottle.FileUpload@{bottle.FileUpload}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+File\+Upload.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fileobj,  }\item[{}]{name,  }\item[{}]{filename,  }\item[{}]{headers = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Wrapper for file uploads. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1FileUpload_a3f535f638e9239553674b047a53dbdec}\label{classbottle_1_1FileUpload_a3f535f638e9239553674b047a53dbdec}} 
+\index{bottle.FileUpload@{bottle.FileUpload}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!bottle.FileUpload@{bottle.FileUpload}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+File\+Upload.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fileobj,  }\item[{}]{name,  }\item[{}]{filename,  }\item[{}]{headers = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Wrapper for file uploads. \end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbottle_1_1FileUpload_a54a6230260a9fa32dd3edaee4dda1100}\label{classbottle_1_1FileUpload_a54a6230260a9fa32dd3edaee4dda1100}} 
+\index{bottle.FileUpload@{bottle.FileUpload}!filename@{filename}}
+\index{filename@{filename}!bottle.FileUpload@{bottle.FileUpload}}
+\doxysubsubsection{\texorpdfstring{filename()}{filename()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+File\+Upload.\+filename (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Name of the file on the client file system, but normalized to ensure
+    file system compatibility. An empty filename is returned as 'empty'.
+
+    Only ASCII letters, digits, dashes, underscores and dots are
+    allowed in the final filename. Accents are removed, if possible.
+    Whitespace is replaced by a single dash. Leading or tailing dots
+    or dashes are removed. The filename is limited to 255 characters.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classconans_1_1server_1_1rest_1_1controller_1_1v1_1_1file__upload__download_1_1ConanFileUpload_a624eb5ca832a2f3984d298111b101b24}{conans.\+server.\+rest.\+controller.\+v1.\+file\+\_\+upload\+\_\+download.\+Conan\+File\+Upload}}.
+
+\mbox{\Hypertarget{classbottle_1_1FileUpload_a54a6230260a9fa32dd3edaee4dda1100}\label{classbottle_1_1FileUpload_a54a6230260a9fa32dd3edaee4dda1100}} 
+\index{bottle.FileUpload@{bottle.FileUpload}!filename@{filename}}
+\index{filename@{filename}!bottle.FileUpload@{bottle.FileUpload}}
+\doxysubsubsection{\texorpdfstring{filename()}{filename()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+File\+Upload.\+filename (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Name of the file on the client file system, but normalized to ensure
+    file system compatibility. An empty filename is returned as 'empty'.
+
+    Only ASCII letters, digits, dashes, underscores and dots are
+    allowed in the final filename. Accents are removed, if possible.
+    Whitespace is replaced by a single dash. Leading or tailing dots
+    or dashes are removed. The filename is limited to 255 characters.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classconans_1_1server_1_1rest_1_1controller_1_1v1_1_1file__upload__download_1_1ConanFileUpload_a624eb5ca832a2f3984d298111b101b24}{conans.\+server.\+rest.\+controller.\+v1.\+file\+\_\+upload\+\_\+download.\+Conan\+File\+Upload}}.
+
+\mbox{\Hypertarget{classbottle_1_1FileUpload_a0cafeeb24a35a947a6def33a9fbe701b}\label{classbottle_1_1FileUpload_a0cafeeb24a35a947a6def33a9fbe701b}} 
+\index{bottle.FileUpload@{bottle.FileUpload}!get\_header@{get\_header}}
+\index{get\_header@{get\_header}!bottle.FileUpload@{bottle.FileUpload}}
+\doxysubsubsection{\texorpdfstring{get\_header()}{get\_header()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+File\+Upload.\+get\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Return the value of a header within the mulripart part. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1FileUpload_a0cafeeb24a35a947a6def33a9fbe701b}\label{classbottle_1_1FileUpload_a0cafeeb24a35a947a6def33a9fbe701b}} 
+\index{bottle.FileUpload@{bottle.FileUpload}!get\_header@{get\_header}}
+\index{get\_header@{get\_header}!bottle.FileUpload@{bottle.FileUpload}}
+\doxysubsubsection{\texorpdfstring{get\_header()}{get\_header()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+File\+Upload.\+get\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Return the value of a header within the mulripart part. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1FileUpload_a1117f5d97727089d7c4e64a2cecf42e0}\label{classbottle_1_1FileUpload_a1117f5d97727089d7c4e64a2cecf42e0}} 
+\index{bottle.FileUpload@{bottle.FileUpload}!save@{save}}
+\index{save@{save}!bottle.FileUpload@{bottle.FileUpload}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+File\+Upload.\+save (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{destination,  }\item[{}]{overwrite = {\ttfamily False},  }\item[{}]{chunk\+\_\+size = {\ttfamily 2$\ast$$\ast$16} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Save file to disk or copy its content to an open file(-like) object.
+    If *destination* is a directory, :attr:`filename` is added to the
+    path. Existing files are not overwritten by default (IOError).
+
+    :param destination: File path, directory or file(-like) object.
+    :param overwrite: If True, replace existing files. (default: False)
+    :param chunk_size: Bytes to read at a time. (default: 64kb)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1FileUpload_a1117f5d97727089d7c4e64a2cecf42e0}\label{classbottle_1_1FileUpload_a1117f5d97727089d7c4e64a2cecf42e0}} 
+\index{bottle.FileUpload@{bottle.FileUpload}!save@{save}}
+\index{save@{save}!bottle.FileUpload@{bottle.FileUpload}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+File\+Upload.\+save (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{destination,  }\item[{}]{overwrite = {\ttfamily False},  }\item[{}]{chunk\+\_\+size = {\ttfamily 2$\ast$$\ast$16} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Save file to disk or copy its content to an open file(-like) object.
+    If *destination* is a directory, :attr:`filename` is added to the
+    path. Existing files are not overwritten by default (IOError).
+
+    :param destination: File path, directory or file(-like) object.
+    :param overwrite: If True, replace existing files. (default: False)
+    :param chunk_size: Bytes to read at a time. (default: 64kb)
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/bin/bottle.\+py\end{DoxyCompactItemize}

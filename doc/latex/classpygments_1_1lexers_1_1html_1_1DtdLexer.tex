@@ -1,0 +1,80 @@
+\hypertarget{classpygments_1_1lexers_1_1html_1_1DtdLexer}{}\doxysection{pygments.\+lexers.\+html.\+Dtd\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1html_1_1DtdLexer}\index{pygments.lexers.html.DtdLexer@{pygments.lexers.html.DtdLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+html.\+Dtd\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+html.\+Dtd\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1html_1_1DtdLexer_a5184238456bd778234864b0bef7404d2}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1DtdLexer_ab7fcdba8d97211ff2c353c87ad916619}\label{classpygments_1_1lexers_1_1html_1_1DtdLexer_ab7fcdba8d97211ff2c353c87ad916619}} 
+{\bfseries flags} = re.\+MULTILINE $\vert$ re.\+DOTALL
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1DtdLexer_a2cd5739ccb23e07086b9c27da2665b09}\label{classpygments_1_1lexers_1_1html_1_1DtdLexer_a2cd5739ccb23e07086b9c27da2665b09}} 
+string {\bfseries name} = \textquotesingle{}DTD\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1DtdLexer_a3f3689849476a6ff32ea0d57b7dfe2fa}\label{classpygments_1_1lexers_1_1html_1_1DtdLexer_a3f3689849476a6ff32ea0d57b7dfe2fa}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}dtd\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1DtdLexer_a1294afb25f34c1a28588a9616f52aa2e}\label{classpygments_1_1lexers_1_1html_1_1DtdLexer_a1294afb25f34c1a28588a9616f52aa2e}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.dtd\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1DtdLexer_aacfe46845fdf6e44502d05baf60d9e8a}\label{classpygments_1_1lexers_1_1html_1_1DtdLexer_aacfe46845fdf6e44502d05baf60d9e8a}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}application/xml-\/dtd\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1DtdLexer_a27a05e9d90eb0c0278eccbf1e2964380}\label{classpygments_1_1lexers_1_1html_1_1DtdLexer_a27a05e9d90eb0c0278eccbf1e2964380}} 
+string {\bfseries url} = \textquotesingle{}https\+://en.\+wikipedia.\+org/wiki/Document\+\_\+type\+\_\+definition\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1DtdLexer_a708b3ca20bfdd8aed8bb534a73b6fd8d}\label{classpygments_1_1lexers_1_1html_1_1DtdLexer_a708b3ca20bfdd8aed8bb534a73b6fd8d}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+5\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1DtdLexer_add9fa50ac15f8625a615fa23db976c6b}\label{classpygments_1_1lexers_1_1html_1_1DtdLexer_add9fa50ac15f8625a615fa23db976c6b}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A lexer for DTDs (Document Type Definitions).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1DtdLexer_a5184238456bd778234864b0bef7404d2}\label{classpygments_1_1lexers_1_1html_1_1DtdLexer_a5184238456bd778234864b0bef7404d2}} 
+\index{pygments.lexers.html.DtdLexer@{pygments.lexers.html.DtdLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.html.DtdLexer@{pygments.lexers.html.DtdLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+html.\+Dtd\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/html.\+py\end{DoxyCompactItemize}

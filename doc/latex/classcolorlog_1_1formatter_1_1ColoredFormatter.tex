@@ -1,0 +1,100 @@
+\hypertarget{classcolorlog_1_1formatter_1_1ColoredFormatter}{}\doxysection{colorlog.\+formatter.\+Colored\+Formatter Class Reference}
+\label{classcolorlog_1_1formatter_1_1ColoredFormatter}\index{colorlog.formatter.ColoredFormatter@{colorlog.formatter.ColoredFormatter}}
+
+
+Inheritance diagram for colorlog.\+formatter.\+Colored\+Formatter\+:
+% FIG 0
+
+
+Collaboration diagram for colorlog.\+formatter.\+Colored\+Formatter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classcolorlog_1_1formatter_1_1ColoredFormatter_a2c80e4255e76081ba14aca7d40ad8757}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, typing.\+Optional\mbox{[}str\mbox{]} fmt=None, typing.\+Optional\mbox{[}str\mbox{]} datefmt=None, \+\_\+\+Format\+Style style=\char`\"{}\%\char`\"{}, typing.\+Optional\mbox{[}Log\+Colors\mbox{]} log\+\_\+colors=None, bool reset=True, typing.\+Optional\mbox{[}Secondary\+Log\+Colors\mbox{]} secondary\+\_\+log\+\_\+colors=None, bool validate=True, typing.\+Optional\mbox{[}typing.\+IO\mbox{]} stream=None, bool no\+\_\+color=False, bool force\+\_\+color=False, typing.\+Optional\mbox{[}typing.\+Mapping\mbox{[}str, typing.\+Any\mbox{]}\mbox{]} defaults=None)
+\item 
+str \mbox{\hyperlink{classcolorlog_1_1formatter_1_1ColoredFormatter_a6bd0f009013c2b2521e0fcbfa4efbfcb}{format\+Message}} (self, logging.\+Log\+Record record)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcolorlog_1_1formatter_1_1ColoredFormatter_a6001b67f4fc235c95728ad9db5b2fc89}\label{classcolorlog_1_1formatter_1_1ColoredFormatter_a6001b67f4fc235c95728ad9db5b2fc89}} 
+{\bfseries log\+\_\+colors}
+\item 
+\mbox{\Hypertarget{classcolorlog_1_1formatter_1_1ColoredFormatter_a39cec5d4bfea4245dfd99d9d89fbbe67}\label{classcolorlog_1_1formatter_1_1ColoredFormatter_a39cec5d4bfea4245dfd99d9d89fbbe67}} 
+{\bfseries secondary\+\_\+log\+\_\+colors}
+\item 
+\mbox{\Hypertarget{classcolorlog_1_1formatter_1_1ColoredFormatter_a8f462cb58763b2c4bf8c684e02e9eabd}\label{classcolorlog_1_1formatter_1_1ColoredFormatter_a8f462cb58763b2c4bf8c684e02e9eabd}} 
+{\bfseries reset}
+\item 
+\mbox{\Hypertarget{classcolorlog_1_1formatter_1_1ColoredFormatter_afae79840111680950b5d3fdfe06a0f99}\label{classcolorlog_1_1formatter_1_1ColoredFormatter_afae79840111680950b5d3fdfe06a0f99}} 
+{\bfseries stream}
+\item 
+\mbox{\Hypertarget{classcolorlog_1_1formatter_1_1ColoredFormatter_a6735030de486a8f5c717be20645c2dca}\label{classcolorlog_1_1formatter_1_1ColoredFormatter_a6735030de486a8f5c717be20645c2dca}} 
+{\bfseries no\+\_\+color}
+\item 
+\mbox{\Hypertarget{classcolorlog_1_1formatter_1_1ColoredFormatter_a45e9bac8fc03fb7d367ee7bc2caf7641}\label{classcolorlog_1_1formatter_1_1ColoredFormatter_a45e9bac8fc03fb7d367ee7bc2caf7641}} 
+{\bfseries force\+\_\+color}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A formatter that allows colors to be placed in the format string.
+
+Intended to help in creating more readable logging output.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcolorlog_1_1formatter_1_1ColoredFormatter_a2c80e4255e76081ba14aca7d40ad8757}\label{classcolorlog_1_1formatter_1_1ColoredFormatter_a2c80e4255e76081ba14aca7d40ad8757}} 
+\index{colorlog.formatter.ColoredFormatter@{colorlog.formatter.ColoredFormatter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!colorlog.formatter.ColoredFormatter@{colorlog.formatter.ColoredFormatter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None colorlog.\+formatter.\+Colored\+Formatter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{typing.\+Optional\mbox{[}str\mbox{]} }]{fmt = {\ttfamily None},  }\item[{typing.\+Optional\mbox{[}str\mbox{]} }]{datefmt = {\ttfamily None},  }\item[{\+\_\+\+Format\+Style }]{style = {\ttfamily \char`\"{}\%\char`\"{}},  }\item[{typing.\+Optional\mbox{[}Log\+Colors\mbox{]} }]{log\+\_\+colors = {\ttfamily None},  }\item[{bool }]{reset = {\ttfamily True},  }\item[{typing.\+Optional\mbox{[}Secondary\+Log\+Colors\mbox{]} }]{secondary\+\_\+log\+\_\+colors = {\ttfamily None},  }\item[{bool }]{validate = {\ttfamily True},  }\item[{typing.\+Optional\mbox{[}typing.\+IO\mbox{]} }]{stream = {\ttfamily None},  }\item[{bool }]{no\+\_\+color = {\ttfamily False},  }\item[{bool }]{force\+\_\+color = {\ttfamily False},  }\item[{typing.\+Optional\mbox{[}typing.\+Mapping\mbox{[}str, typing.\+Any\mbox{]}\mbox{]} }]{defaults = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the format and colors the ColoredFormatter will use.
+
+The ``fmt``, ``datefmt``, ``style``, and ``default`` args are passed on to the
+``logging.Formatter`` constructor.
+
+The ``secondary_log_colors`` argument can be used to create additional
+``log_color`` attributes. Each key in the dictionary will set
+``{key}_log_color``, using the value to select from a different
+``log_colors`` set.
+
+:Parameters:
+- fmt (str): The format string to use.
+- datefmt (str): A format string for the date.
+- log_colors (dict):
+    A mapping of log level names to color names.
+- reset (bool):
+    Implicitly append a color reset to all records unless False.
+- style ('%' or '{' or '$'):
+    The format style to use.
+- secondary_log_colors (dict):
+    Map secondary ``log_color`` attributes. (*New in version 2.6.*)
+- validate (bool)
+    Validate the format string.
+- stream (typing.IO)
+    The stream formatted messages will be printed to. Used to toggle colour
+    on non-TTY outputs. Optional.
+- no_color (bool):
+    Disable color output.
+- force_color (bool):
+    Enable color output. Takes precedence over `no_color`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcolorlog_1_1formatter_1_1ColoredFormatter_a6bd0f009013c2b2521e0fcbfa4efbfcb}\label{classcolorlog_1_1formatter_1_1ColoredFormatter_a6bd0f009013c2b2521e0fcbfa4efbfcb}} 
+\index{colorlog.formatter.ColoredFormatter@{colorlog.formatter.ColoredFormatter}!formatMessage@{formatMessage}}
+\index{formatMessage@{formatMessage}!colorlog.formatter.ColoredFormatter@{colorlog.formatter.ColoredFormatter}}
+\doxysubsubsection{\texorpdfstring{formatMessage()}{formatMessage()}}
+{\footnotesize\ttfamily  str colorlog.\+formatter.\+Colored\+Formatter.\+format\+Message (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{logging.\+Log\+Record}]{record }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Format a message from a record object.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/colorlog/formatter.\+py\end{DoxyCompactItemize}

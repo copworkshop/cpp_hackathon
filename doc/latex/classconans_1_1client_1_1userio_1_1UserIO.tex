@@ -1,0 +1,111 @@
+\hypertarget{classconans_1_1client_1_1userio_1_1UserIO}{}\doxysection{conans.\+client.\+userio.\+User\+IO Class Reference}
+\label{classconans_1_1client_1_1userio_1_1UserIO}\index{conans.client.userio.UserIO@{conans.client.userio.UserIO}}
+
+
+Inheritance diagram for conans.\+client.\+userio.\+User\+IO\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+userio.\+User\+IO\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1userio_1_1UserIO_a660f69aa34291953f3518c2cd4701df7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, ins=sys.\+stdin, out=None)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1userio_1_1UserIO_a9479941982fb2cb17028100998f49be4}\label{classconans_1_1client_1_1userio_1_1UserIO_a9479941982fb2cb17028100998f49be4}} 
+def {\bfseries disable\+\_\+input} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1userio_1_1UserIO_ad86403e313394bbfbb148f7de7cfeed7}\label{classconans_1_1client_1_1userio_1_1UserIO_ad86403e313394bbfbb148f7de7cfeed7}} 
+def {\bfseries raw\+\_\+input} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1userio_1_1UserIO_a731845607d80eb54b56b371aaeaf9204}\label{classconans_1_1client_1_1userio_1_1UserIO_a731845607d80eb54b56b371aaeaf9204}} 
+def {\bfseries get\+\_\+pass} (self)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1userio_1_1UserIO_a4acdb23a5100df171041773412aa3333}{request\+\_\+login}} (self, remote\+\_\+name, username=None)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1userio_1_1UserIO_ab7b4efecaa4e7ed32ea9f67830f40c12}{get\+\_\+username}} (self, remote\+\_\+name)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1userio_1_1UserIO_a3d165e0d5491edbb88740f0cd974a37d}{get\+\_\+password}} (self, remote\+\_\+name)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1userio_1_1UserIO_a5dcd7cf6da2949e4650f40d709837f59}{request\+\_\+string}} (self, msg, default\+\_\+value=None)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1userio_1_1UserIO_a2fd67d4fe463d08bf8e63fc42e67262a}{request\+\_\+boolean}} (self, msg, default\+\_\+option=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1userio_1_1UserIO_a0b3664ed4e4597ee568e8718b06b24e2}\label{classconans_1_1client_1_1userio_1_1UserIO_a0b3664ed4e4597ee568e8718b06b24e2}} 
+{\bfseries out}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Class to interact with the user, used to show messages and ask for information\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1userio_1_1UserIO_a660f69aa34291953f3518c2cd4701df7}\label{classconans_1_1client_1_1userio_1_1UserIO_a660f69aa34291953f3518c2cd4701df7}} 
+\index{conans.client.userio.UserIO@{conans.client.userio.UserIO}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!conans.client.userio.UserIO@{conans.client.userio.UserIO}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def conans.\+client.\+userio.\+User\+IO.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ins = {\ttfamily sys.stdin},  }\item[{}]{out = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Params:
+    ins: input stream
+    out: ConanOutput, should have "write" method
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1userio_1_1UserIO_a3d165e0d5491edbb88740f0cd974a37d}\label{classconans_1_1client_1_1userio_1_1UserIO_a3d165e0d5491edbb88740f0cd974a37d}} 
+\index{conans.client.userio.UserIO@{conans.client.userio.UserIO}!get\_password@{get\_password}}
+\index{get\_password@{get\_password}!conans.client.userio.UserIO@{conans.client.userio.UserIO}}
+\doxysubsubsection{\texorpdfstring{get\_password()}{get\_password()}}
+{\footnotesize\ttfamily def conans.\+client.\+userio.\+User\+IO.\+get\+\_\+password (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{remote\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Overridable for testing purpose\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classconans_1_1test_1_1utils_1_1mocks_1_1MockedUserIO_ab53c06236501be6aac46c2a06cc5670f}{conans.\+test.\+utils.\+mocks.\+Mocked\+User\+IO}}.
+
+\mbox{\Hypertarget{classconans_1_1client_1_1userio_1_1UserIO_ab7b4efecaa4e7ed32ea9f67830f40c12}\label{classconans_1_1client_1_1userio_1_1UserIO_ab7b4efecaa4e7ed32ea9f67830f40c12}} 
+\index{conans.client.userio.UserIO@{conans.client.userio.UserIO}!get\_username@{get\_username}}
+\index{get\_username@{get\_username}!conans.client.userio.UserIO@{conans.client.userio.UserIO}}
+\doxysubsubsection{\texorpdfstring{get\_username()}{get\_username()}}
+{\footnotesize\ttfamily def conans.\+client.\+userio.\+User\+IO.\+get\+\_\+username (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{remote\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Overridable for testing purpose\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classconans_1_1test_1_1utils_1_1mocks_1_1MockedUserIO_a12416ffd70fc8cd3952eeec36cfad4db}{conans.\+test.\+utils.\+mocks.\+Mocked\+User\+IO}}.
+
+\mbox{\Hypertarget{classconans_1_1client_1_1userio_1_1UserIO_a2fd67d4fe463d08bf8e63fc42e67262a}\label{classconans_1_1client_1_1userio_1_1UserIO_a2fd67d4fe463d08bf8e63fc42e67262a}} 
+\index{conans.client.userio.UserIO@{conans.client.userio.UserIO}!request\_boolean@{request\_boolean}}
+\index{request\_boolean@{request\_boolean}!conans.client.userio.UserIO@{conans.client.userio.UserIO}}
+\doxysubsubsection{\texorpdfstring{request\_boolean()}{request\_boolean()}}
+{\footnotesize\ttfamily def conans.\+client.\+userio.\+User\+IO.\+request\+\_\+boolean (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg,  }\item[{}]{default\+\_\+option = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Request user to input a boolean\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1client_1_1userio_1_1UserIO_a4acdb23a5100df171041773412aa3333}\label{classconans_1_1client_1_1userio_1_1UserIO_a4acdb23a5100df171041773412aa3333}} 
+\index{conans.client.userio.UserIO@{conans.client.userio.UserIO}!request\_login@{request\_login}}
+\index{request\_login@{request\_login}!conans.client.userio.UserIO@{conans.client.userio.UserIO}}
+\doxysubsubsection{\texorpdfstring{request\_login()}{request\_login()}}
+{\footnotesize\ttfamily def conans.\+client.\+userio.\+User\+IO.\+request\+\_\+login (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{remote\+\_\+name,  }\item[{}]{username = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Request user to input their name and password
+:param username If username is specified it only request password\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1client_1_1userio_1_1UserIO_a5dcd7cf6da2949e4650f40d709837f59}\label{classconans_1_1client_1_1userio_1_1UserIO_a5dcd7cf6da2949e4650f40d709837f59}} 
+\index{conans.client.userio.UserIO@{conans.client.userio.UserIO}!request\_string@{request\_string}}
+\index{request\_string@{request\_string}!conans.client.userio.UserIO@{conans.client.userio.UserIO}}
+\doxysubsubsection{\texorpdfstring{request\_string()}{request\_string()}}
+{\footnotesize\ttfamily def conans.\+client.\+userio.\+User\+IO.\+request\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg,  }\item[{}]{default\+\_\+value = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Request user to input a msg
+:param msg Name of the msg
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/userio.\+py\end{DoxyCompactItemize}

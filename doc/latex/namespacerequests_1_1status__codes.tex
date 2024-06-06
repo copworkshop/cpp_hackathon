@@ -1,0 +1,30 @@
+\hypertarget{namespacerequests_1_1status__codes}{}\doxysection{requests.\+status\+\_\+codes Namespace Reference}
+\label{namespacerequests_1_1status__codes}\index{requests.status\_codes@{requests.status\_codes}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacerequests_1_1status__codes_a5b15629ad30a78b2e23b5efe17cee8a9}\label{namespacerequests_1_1status__codes_a5b15629ad30a78b2e23b5efe17cee8a9}} 
+{\bfseries codes} = \mbox{\hyperlink{classrequests_1_1structures_1_1LookupDict}{Lookup\+Dict}}(name=\char`\"{}status\+\_\+codes\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The ``codes`` object defines a mapping from common names for HTTP statuses
+to their numerical codes, accessible either as attributes or as dictionary
+items.
+
+Example::
+
+    >>> import requests
+    >>> requests.codes['temporary_redirect']
+    307
+    >>> requests.codes.teapot
+    418
+    >>> requests.codes['\o/']
+    200
+
+Some codes have multiple names, and both upper- and lower-case versions of
+the names are allowed. For example, ``codes.ok``, ``codes.OK``, and
+``codes.okay`` all correspond to the HTTP status code 200.
+\end{DoxyVerb}
+ 

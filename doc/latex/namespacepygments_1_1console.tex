@@ -1,0 +1,83 @@
+\hypertarget{namespacepygments_1_1console}{}\doxysection{pygments.\+console Namespace Reference}
+\label{namespacepygments_1_1console}\index{pygments.console@{pygments.console}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1console_a31a6e2dd4a1fc297f0c8deff69986d5a}\label{namespacepygments_1_1console_a31a6e2dd4a1fc297f0c8deff69986d5a}} 
+def {\bfseries reset\+\_\+color} ()
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1console_a454b927557670e551cb136f65ab6ac98}\label{namespacepygments_1_1console_a454b927557670e551cb136f65ab6ac98}} 
+def {\bfseries colorize} (color\+\_\+key, text)
+\item 
+def \mbox{\hyperlink{namespacepygments_1_1console_a5c93d39f94d794e062581ba4ce8e3368}{ansiformat}} (attr, text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1console_a791f8ffa87d7fb60a810867997c37b17}\label{namespacepygments_1_1console_a791f8ffa87d7fb60a810867997c37b17}} 
+string {\bfseries esc} = \char`\"{}\textbackslash{}x1b\mbox{[}\char`\"{}
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1console_ad2cd1011010bffd3cf57e2a416369214}\label{namespacepygments_1_1console_ad2cd1011010bffd3cf57e2a416369214}} 
+dictionary {\bfseries codes} = \{\}
+\item 
+list {\bfseries dark\+\_\+colors}
+\item 
+list {\bfseries light\+\_\+colors}
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1console_a41cb669d901309e633e88e7a932acbd6}\label{namespacepygments_1_1console_a41cb669d901309e633e88e7a932acbd6}} 
+int {\bfseries x} = 30
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}    pygments.console
+    ~~~~~~~~~~~~~~~~
+
+    Format colored console output.
+
+    :copyright: Copyright 2006-2024 by the Pygments team, see AUTHORS.
+    :license: BSD, see LICENSE for details.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepygments_1_1console_a5c93d39f94d794e062581ba4ce8e3368}\label{namespacepygments_1_1console_a5c93d39f94d794e062581ba4ce8e3368}} 
+\index{pygments.console@{pygments.console}!ansiformat@{ansiformat}}
+\index{ansiformat@{ansiformat}!pygments.console@{pygments.console}}
+\doxysubsubsection{\texorpdfstring{ansiformat()}{ansiformat()}}
+{\footnotesize\ttfamily def pygments.\+console.\+ansiformat (\begin{DoxyParamCaption}\item[{}]{attr,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Format ``text`` with a color and/or some attributes::
+
+    color       normal color
+    *color*     bold color
+    _color_     underlined color
+    +color+     blinking color
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepygments_1_1console_aa8771aedddbbe4038365d8e9a4e8a1cc}\label{namespacepygments_1_1console_aa8771aedddbbe4038365d8e9a4e8a1cc}} 
+\index{pygments.console@{pygments.console}!dark\_colors@{dark\_colors}}
+\index{dark\_colors@{dark\_colors}!pygments.console@{pygments.console}}
+\doxysubsubsection{\texorpdfstring{dark\_colors}{dark\_colors}}
+{\footnotesize\ttfamily list pygments.\+console.\+dark\+\_\+colors}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  [\textcolor{stringliteral}{"{}black"{}}, \textcolor{stringliteral}{"{}red"{}}, \textcolor{stringliteral}{"{}green"{}}, \textcolor{stringliteral}{"{}yellow"{}}, \textcolor{stringliteral}{"{}blue"{}},}
+\DoxyCodeLine{2                \textcolor{stringliteral}{"{}magenta"{}}, \textcolor{stringliteral}{"{}cyan"{}}, \textcolor{stringliteral}{"{}gray"{}}]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepygments_1_1console_aca641172c2426a6612770760d2683432}\label{namespacepygments_1_1console_aca641172c2426a6612770760d2683432}} 
+\index{pygments.console@{pygments.console}!light\_colors@{light\_colors}}
+\index{light\_colors@{light\_colors}!pygments.console@{pygments.console}}
+\doxysubsubsection{\texorpdfstring{light\_colors}{light\_colors}}
+{\footnotesize\ttfamily list pygments.\+console.\+light\+\_\+colors}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  [\textcolor{stringliteral}{"{}brightblack"{}}, \textcolor{stringliteral}{"{}brightred"{}}, \textcolor{stringliteral}{"{}brightgreen"{}}, \textcolor{stringliteral}{"{}brightyellow"{}}, \textcolor{stringliteral}{"{}brightblue"{}},}
+\DoxyCodeLine{2                 \textcolor{stringliteral}{"{}brightmagenta"{}}, \textcolor{stringliteral}{"{}brightcyan"{}}, \textcolor{stringliteral}{"{}white"{}}]}
+
+\end{DoxyCode}

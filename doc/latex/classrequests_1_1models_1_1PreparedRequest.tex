@@ -1,0 +1,160 @@
+\hypertarget{classrequests_1_1models_1_1PreparedRequest}{}\doxysection{requests.\+models.\+Prepared\+Request Class Reference}
+\label{classrequests_1_1models_1_1PreparedRequest}\index{requests.models.PreparedRequest@{requests.models.PreparedRequest}}
+
+
+Inheritance diagram for requests.\+models.\+Prepared\+Request\+:
+% FIG 0
+
+
+Collaboration diagram for requests.\+models.\+Prepared\+Request\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrequests_1_1models_1_1PreparedRequest_a7517dfe22603cd2afe417453973d7e9f}\label{classrequests_1_1models_1_1PreparedRequest_a7517dfe22603cd2afe417453973d7e9f}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classrequests_1_1models_1_1PreparedRequest_ac20add3275f88678ab838e505ae9ce5b}{prepare}} (self, method=None, url=None, headers=None, files=None, data=None, params=None, auth=None, cookies=None, hooks=None, json=None)
+\item 
+\mbox{\Hypertarget{classrequests_1_1models_1_1PreparedRequest_ac8b971e52dd3d83271637b9fc90b49fe}\label{classrequests_1_1models_1_1PreparedRequest_ac8b971e52dd3d83271637b9fc90b49fe}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classrequests_1_1models_1_1PreparedRequest_a99563ed1b41d5792a655e6b73c3db210}\label{classrequests_1_1models_1_1PreparedRequest_a99563ed1b41d5792a655e6b73c3db210}} 
+def {\bfseries copy} (self)
+\item 
+def \mbox{\hyperlink{classrequests_1_1models_1_1PreparedRequest_a57f5b34bfcaf4078b5a25be8aabf7c87}{prepare\+\_\+method}} (self, method)
+\item 
+def \mbox{\hyperlink{classrequests_1_1models_1_1PreparedRequest_ac1111fbfd92a9d4fdbac3a85af75c272}{prepare\+\_\+url}} (self, url, params)
+\item 
+def \mbox{\hyperlink{classrequests_1_1models_1_1PreparedRequest_ad6b477aa253972b9618038c570e2084e}{prepare\+\_\+headers}} (self, headers)
+\item 
+def \mbox{\hyperlink{classrequests_1_1models_1_1PreparedRequest_a9ef531f0b726e6c8ded2ab07247c021a}{prepare\+\_\+body}} (self, data, files, json=None)
+\item 
+def \mbox{\hyperlink{classrequests_1_1models_1_1PreparedRequest_aa7574a5713ce2f64070eafbe6207b7d4}{prepare\+\_\+content\+\_\+length}} (self, body)
+\item 
+def \mbox{\hyperlink{classrequests_1_1models_1_1PreparedRequest_af1d7e8ee14f18f5f1a59d3cc268dac91}{prepare\+\_\+auth}} (self, auth, url=\char`\"{}\char`\"{})
+\item 
+def \mbox{\hyperlink{classrequests_1_1models_1_1PreparedRequest_ad7dfb504538b3ca7e58d873e1ed8b18d}{prepare\+\_\+cookies}} (self, cookies)
+\item 
+def \mbox{\hyperlink{classrequests_1_1models_1_1PreparedRequest_a85d86263dcf73b48d6080b1672ed132f}{prepare\+\_\+hooks}} (self, hooks)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrequests_1_1models_1_1PreparedRequest_a70cf7454ae16a662e723e742608147da}\label{classrequests_1_1models_1_1PreparedRequest_a70cf7454ae16a662e723e742608147da}} 
+{\bfseries method}
+\item 
+\mbox{\Hypertarget{classrequests_1_1models_1_1PreparedRequest_af22f76ff8b63de16df34586a50aa7f47}\label{classrequests_1_1models_1_1PreparedRequest_af22f76ff8b63de16df34586a50aa7f47}} 
+{\bfseries url}
+\item 
+\mbox{\Hypertarget{classrequests_1_1models_1_1PreparedRequest_a8df4f55f7ac701234c96c25ffaff0f63}\label{classrequests_1_1models_1_1PreparedRequest_a8df4f55f7ac701234c96c25ffaff0f63}} 
+{\bfseries headers}
+\item 
+\mbox{\Hypertarget{classrequests_1_1models_1_1PreparedRequest_aa053f68b5caec43647d7b44e56be947c}\label{classrequests_1_1models_1_1PreparedRequest_aa053f68b5caec43647d7b44e56be947c}} 
+{\bfseries body}
+\item 
+\mbox{\Hypertarget{classrequests_1_1models_1_1PreparedRequest_a7637fc3f743ce1317ae3e891e7a348a8}\label{classrequests_1_1models_1_1PreparedRequest_a7637fc3f743ce1317ae3e891e7a348a8}} 
+{\bfseries hooks}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The fully mutable :class:`PreparedRequest <PreparedRequest>` object,
+containing the exact bytes that will be sent to the server.
+
+Instances are generated from a :class:`Request <Request>` object, and
+should not be instantiated manually; doing so may produce undesirable
+effects.
+
+Usage::
+
+  >>> import requests
+  >>> req = requests.Request('GET', 'https://httpbin.org/get')
+  >>> r = req.prepare()
+  >>> r
+  <PreparedRequest [GET]>
+
+  >>> s = requests.Session()
+  >>> s.send(r)
+  <Response [200]>
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrequests_1_1models_1_1PreparedRequest_ac20add3275f88678ab838e505ae9ce5b}\label{classrequests_1_1models_1_1PreparedRequest_ac20add3275f88678ab838e505ae9ce5b}} 
+\index{requests.models.PreparedRequest@{requests.models.PreparedRequest}!prepare@{prepare}}
+\index{prepare@{prepare}!requests.models.PreparedRequest@{requests.models.PreparedRequest}}
+\doxysubsubsection{\texorpdfstring{prepare()}{prepare()}}
+{\footnotesize\ttfamily def requests.\+models.\+Prepared\+Request.\+prepare (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{method = {\ttfamily None},  }\item[{}]{url = {\ttfamily None},  }\item[{}]{headers = {\ttfamily None},  }\item[{}]{files = {\ttfamily None},  }\item[{}]{data = {\ttfamily None},  }\item[{}]{params = {\ttfamily None},  }\item[{}]{auth = {\ttfamily None},  }\item[{}]{cookies = {\ttfamily None},  }\item[{}]{hooks = {\ttfamily None},  }\item[{}]{json = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prepares the entire request with the given parameters.\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1models_1_1PreparedRequest_af1d7e8ee14f18f5f1a59d3cc268dac91}\label{classrequests_1_1models_1_1PreparedRequest_af1d7e8ee14f18f5f1a59d3cc268dac91}} 
+\index{requests.models.PreparedRequest@{requests.models.PreparedRequest}!prepare\_auth@{prepare\_auth}}
+\index{prepare\_auth@{prepare\_auth}!requests.models.PreparedRequest@{requests.models.PreparedRequest}}
+\doxysubsubsection{\texorpdfstring{prepare\_auth()}{prepare\_auth()}}
+{\footnotesize\ttfamily def requests.\+models.\+Prepared\+Request.\+prepare\+\_\+auth (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{auth,  }\item[{}]{url = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prepares the given HTTP auth data.\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1models_1_1PreparedRequest_a9ef531f0b726e6c8ded2ab07247c021a}\label{classrequests_1_1models_1_1PreparedRequest_a9ef531f0b726e6c8ded2ab07247c021a}} 
+\index{requests.models.PreparedRequest@{requests.models.PreparedRequest}!prepare\_body@{prepare\_body}}
+\index{prepare\_body@{prepare\_body}!requests.models.PreparedRequest@{requests.models.PreparedRequest}}
+\doxysubsubsection{\texorpdfstring{prepare\_body()}{prepare\_body()}}
+{\footnotesize\ttfamily def requests.\+models.\+Prepared\+Request.\+prepare\+\_\+body (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data,  }\item[{}]{files,  }\item[{}]{json = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prepares the given HTTP body data.\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1models_1_1PreparedRequest_aa7574a5713ce2f64070eafbe6207b7d4}\label{classrequests_1_1models_1_1PreparedRequest_aa7574a5713ce2f64070eafbe6207b7d4}} 
+\index{requests.models.PreparedRequest@{requests.models.PreparedRequest}!prepare\_content\_length@{prepare\_content\_length}}
+\index{prepare\_content\_length@{prepare\_content\_length}!requests.models.PreparedRequest@{requests.models.PreparedRequest}}
+\doxysubsubsection{\texorpdfstring{prepare\_content\_length()}{prepare\_content\_length()}}
+{\footnotesize\ttfamily def requests.\+models.\+Prepared\+Request.\+prepare\+\_\+content\+\_\+length (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{body }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prepare Content-Length header based on request method and body\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1models_1_1PreparedRequest_ad7dfb504538b3ca7e58d873e1ed8b18d}\label{classrequests_1_1models_1_1PreparedRequest_ad7dfb504538b3ca7e58d873e1ed8b18d}} 
+\index{requests.models.PreparedRequest@{requests.models.PreparedRequest}!prepare\_cookies@{prepare\_cookies}}
+\index{prepare\_cookies@{prepare\_cookies}!requests.models.PreparedRequest@{requests.models.PreparedRequest}}
+\doxysubsubsection{\texorpdfstring{prepare\_cookies()}{prepare\_cookies()}}
+{\footnotesize\ttfamily def requests.\+models.\+Prepared\+Request.\+prepare\+\_\+cookies (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cookies }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prepares the given HTTP cookie data.
+
+This function eventually generates a ``Cookie`` header from the
+given cookies using cookielib. Due to cookielib's design, the header
+will not be regenerated if it already exists, meaning this function
+can only be called once for the life of the
+:class:`PreparedRequest <PreparedRequest>` object. Any subsequent calls
+to ``prepare_cookies`` will have no actual effect, unless the "Cookie"
+header is removed beforehand.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1models_1_1PreparedRequest_ad6b477aa253972b9618038c570e2084e}\label{classrequests_1_1models_1_1PreparedRequest_ad6b477aa253972b9618038c570e2084e}} 
+\index{requests.models.PreparedRequest@{requests.models.PreparedRequest}!prepare\_headers@{prepare\_headers}}
+\index{prepare\_headers@{prepare\_headers}!requests.models.PreparedRequest@{requests.models.PreparedRequest}}
+\doxysubsubsection{\texorpdfstring{prepare\_headers()}{prepare\_headers()}}
+{\footnotesize\ttfamily def requests.\+models.\+Prepared\+Request.\+prepare\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{headers }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prepares the given HTTP headers.\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1models_1_1PreparedRequest_a85d86263dcf73b48d6080b1672ed132f}\label{classrequests_1_1models_1_1PreparedRequest_a85d86263dcf73b48d6080b1672ed132f}} 
+\index{requests.models.PreparedRequest@{requests.models.PreparedRequest}!prepare\_hooks@{prepare\_hooks}}
+\index{prepare\_hooks@{prepare\_hooks}!requests.models.PreparedRequest@{requests.models.PreparedRequest}}
+\doxysubsubsection{\texorpdfstring{prepare\_hooks()}{prepare\_hooks()}}
+{\footnotesize\ttfamily def requests.\+models.\+Prepared\+Request.\+prepare\+\_\+hooks (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{hooks }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prepares the given hooks.\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1models_1_1PreparedRequest_a57f5b34bfcaf4078b5a25be8aabf7c87}\label{classrequests_1_1models_1_1PreparedRequest_a57f5b34bfcaf4078b5a25be8aabf7c87}} 
+\index{requests.models.PreparedRequest@{requests.models.PreparedRequest}!prepare\_method@{prepare\_method}}
+\index{prepare\_method@{prepare\_method}!requests.models.PreparedRequest@{requests.models.PreparedRequest}}
+\doxysubsubsection{\texorpdfstring{prepare\_method()}{prepare\_method()}}
+{\footnotesize\ttfamily def requests.\+models.\+Prepared\+Request.\+prepare\+\_\+method (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{method }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prepares the given HTTP method.\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1models_1_1PreparedRequest_ac1111fbfd92a9d4fdbac3a85af75c272}\label{classrequests_1_1models_1_1PreparedRequest_ac1111fbfd92a9d4fdbac3a85af75c272}} 
+\index{requests.models.PreparedRequest@{requests.models.PreparedRequest}!prepare\_url@{prepare\_url}}
+\index{prepare\_url@{prepare\_url}!requests.models.PreparedRequest@{requests.models.PreparedRequest}}
+\doxysubsubsection{\texorpdfstring{prepare\_url()}{prepare\_url()}}
+{\footnotesize\ttfamily def requests.\+models.\+Prepared\+Request.\+prepare\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{url,  }\item[{}]{params }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prepares the given HTTP URL.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/requests/models.\+py\end{DoxyCompactItemize}

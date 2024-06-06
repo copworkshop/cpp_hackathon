@@ -1,0 +1,77 @@
+\hypertarget{classpygments_1_1lexers_1_1fortran_1_1FortranFixedLexer}{}\doxysection{pygments.\+lexers.\+fortran.\+Fortran\+Fixed\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1fortran_1_1FortranFixedLexer}\index{pygments.lexers.fortran.FortranFixedLexer@{pygments.lexers.fortran.FortranFixedLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+fortran.\+Fortran\+Fixed\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+fortran.\+Fortran\+Fixed\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1fortran_1_1FortranFixedLexer_ac464f28a0c31293ed30b2bf6d37dadd5}\label{classpygments_1_1lexers_1_1fortran_1_1FortranFixedLexer_ac464f28a0c31293ed30b2bf6d37dadd5}} 
+string {\bfseries name} = \textquotesingle{}Fortran\+Fixed\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1fortran_1_1FortranFixedLexer_abe1ffb88ee4e3b1efb7ea02b7243efc1}\label{classpygments_1_1lexers_1_1fortran_1_1FortranFixedLexer_abe1ffb88ee4e3b1efb7ea02b7243efc1}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}fortranfixed\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1fortran_1_1FortranFixedLexer_a5ac4efbdf07e49d98e1b97b56b03fe5d}\label{classpygments_1_1lexers_1_1fortran_1_1FortranFixedLexer_a5ac4efbdf07e49d98e1b97b56b03fe5d}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.f\textquotesingle{}, \textquotesingle{}$\ast$.F\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1fortran_1_1FortranFixedLexer_a19ace63e28d1457c18e0355612678d1a}\label{classpygments_1_1lexers_1_1fortran_1_1FortranFixedLexer_a19ace63e28d1457c18e0355612678d1a}} 
+string {\bfseries url} = \textquotesingle{}https\+://fortran-\/lang.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1fortran_1_1FortranFixedLexer_a4dd385e1920718a3b5fe929f49ddae51}\label{classpygments_1_1lexers_1_1fortran_1_1FortranFixedLexer_a4dd385e1920718a3b5fe929f49ddae51}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+1\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1fortran_1_1FortranFixedLexer_a2864f7fe6b53bbb8670efaa48a7781b8}\label{classpygments_1_1lexers_1_1fortran_1_1FortranFixedLexer_a2864f7fe6b53bbb8670efaa48a7781b8}} 
+{\bfseries flags} = re.\+IGNORECASE
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for fixed format Fortran.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1fortran_1_1FortranFixedLexer_a5d5df4c3a5341388ce11069362663f78}\label{classpygments_1_1lexers_1_1fortran_1_1FortranFixedLexer_a5d5df4c3a5341388ce11069362663f78}} 
+\index{pygments.lexers.fortran.FortranFixedLexer@{pygments.lexers.fortran.FortranFixedLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.fortran.FortranFixedLexer@{pygments.lexers.fortran.FortranFixedLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+fortran.\+Fortran\+Fixed\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[C*].*\(\backslash\)n'}, Comment),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#.*\(\backslash\)n'}, Comment.Preproc),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r' \{0,4\}!.*\(\backslash\)n'}, Comment),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(.\{5\})'}, Name.Label, \textcolor{stringliteral}{'cont-\/char'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'.*\(\backslash\)n'}, using(FortranLexer)),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'cont-\/char'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{' '}, Text, \textcolor{stringliteral}{'code'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{'0'}, Comment, \textcolor{stringliteral}{'code'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{'.'}, Generic.Strong, \textcolor{stringliteral}{'code'}),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'code'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(.\{66\})(.*)(\(\backslash\)n)'},}
+\DoxyCodeLine{             bygroups(\_lex\_fortran, Comment, Text.Whitespace), \textcolor{stringliteral}{'root'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(.*)(\(\backslash\)n)'}, bygroups(\_lex\_fortran, Text.Whitespace), \textcolor{stringliteral}{'root'}),}
+\DoxyCodeLine{            default(\textcolor{stringliteral}{'root'}),}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/fortran.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,66 @@
+\hypertarget{classpygments_1_1lexers_1_1c__like_1_1MqlLexer}{}\doxysection{pygments.\+lexers.\+c\+\_\+like.\+Mql\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1c__like_1_1MqlLexer}\index{pygments.lexers.c\_like.MqlLexer@{pygments.lexers.c\_like.MqlLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+c\+\_\+like.\+Mql\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+c\+\_\+like.\+Mql\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__like_1_1MqlLexer_a8921c07515423c33d4e4536479cc7628}\label{classpygments_1_1lexers_1_1c__like_1_1MqlLexer_a8921c07515423c33d4e4536479cc7628}} 
+string {\bfseries name} = \textquotesingle{}MQL\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__like_1_1MqlLexer_a6affec2b0be61f2560a593550f663d73}\label{classpygments_1_1lexers_1_1c__like_1_1MqlLexer_a6affec2b0be61f2560a593550f663d73}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}mql\textquotesingle{}, \textquotesingle{}mq4\textquotesingle{}, \textquotesingle{}mq5\textquotesingle{}, \textquotesingle{}mql4\textquotesingle{}, \textquotesingle{}mql5\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__like_1_1MqlLexer_a4ee631413f7ea28542337220a2a02acb}\label{classpygments_1_1lexers_1_1c__like_1_1MqlLexer_a4ee631413f7ea28542337220a2a02acb}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.mq4\textquotesingle{}, \textquotesingle{}$\ast$.mq5\textquotesingle{}, \textquotesingle{}$\ast$.mqh\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__like_1_1MqlLexer_a1482f9d00a424aa4cd5c5fbd2737ba36}\label{classpygments_1_1lexers_1_1c__like_1_1MqlLexer_a1482f9d00a424aa4cd5c5fbd2737ba36}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/mql\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__like_1_1MqlLexer_aa21dc142575f150b64555e0389442c9e}\label{classpygments_1_1lexers_1_1c__like_1_1MqlLexer_aa21dc142575f150b64555e0389442c9e}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+0\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For `MQL4 <http://docs.mql4.com/>`_ and
+`MQL5 <http://www.mql5.com/en/docs>`_ source code.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__like_1_1MqlLexer_a24e910998e1092d8408734819799af36}\label{classpygments_1_1lexers_1_1c__like_1_1MqlLexer_a24e910998e1092d8408734819799af36}} 
+\index{pygments.lexers.c\_like.MqlLexer@{pygments.lexers.c\_like.MqlLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.c\_like.MqlLexer@{pygments.lexers.c\_like.MqlLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+c\+\_\+like.\+Mql\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'statements'}: [}
+\DoxyCodeLine{            (words(\_mql\_builtins.keywords, suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}), Keyword),}
+\DoxyCodeLine{            (words(\_mql\_builtins.c\_types, suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}), Keyword.Type),}
+\DoxyCodeLine{            (words(\_mql\_builtins.types, suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}), Name.Function),}
+\DoxyCodeLine{            (words(\_mql\_builtins.constants, suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}), Name.Constant),}
+\DoxyCodeLine{            (words(\_mql\_builtins.colors, prefix=\textcolor{stringliteral}{'(clr)?'}, suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}),}
+\DoxyCodeLine{             Name.Constant),}
+\DoxyCodeLine{            inherit,}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/c\+\_\+like.\+py\end{DoxyCompactItemize}

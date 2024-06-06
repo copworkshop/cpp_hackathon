@@ -1,0 +1,84 @@
+\hypertarget{classpygments_1_1lexers_1_1haskell_1_1LiterateIdrisLexer}{}\doxysection{pygments.\+lexers.\+haskell.\+Literate\+Idris\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1haskell_1_1LiterateIdrisLexer}\index{pygments.lexers.haskell.LiterateIdrisLexer@{pygments.lexers.haskell.LiterateIdrisLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+haskell.\+Literate\+Idris\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+haskell.\+Literate\+Idris\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1haskell_1_1LiterateIdrisLexer_ae9eb0c267dc9695593d9894448e48213}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1haskell_1_1LiterateIdrisLexer_a4d623329d9d254ef6b815dc3d98d84d7}\label{classpygments_1_1lexers_1_1haskell_1_1LiterateIdrisLexer_a4d623329d9d254ef6b815dc3d98d84d7}} 
+string {\bfseries name} = \textquotesingle{}Literate Idris\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1haskell_1_1LiterateIdrisLexer_a35177975c0d765cfaa0483aceb91b52b}\label{classpygments_1_1lexers_1_1haskell_1_1LiterateIdrisLexer_a35177975c0d765cfaa0483aceb91b52b}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}literate-\/idris\textquotesingle{}, \textquotesingle{}lidris\textquotesingle{}, \textquotesingle{}lidr\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1haskell_1_1LiterateIdrisLexer_a8c451ef5ce5f9c729a2882133ebd0180}\label{classpygments_1_1lexers_1_1haskell_1_1LiterateIdrisLexer_a8c451ef5ce5f9c729a2882133ebd0180}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.lidr\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1haskell_1_1LiterateIdrisLexer_a3c233a4be3ecca3701466a3fb2aba9af}\label{classpygments_1_1lexers_1_1haskell_1_1LiterateIdrisLexer_a3c233a4be3ecca3701466a3fb2aba9af}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/literate-\/idris\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1haskell_1_1LiterateIdrisLexer_a4872361e237255e5b34633c99815be71}\label{classpygments_1_1lexers_1_1haskell_1_1LiterateIdrisLexer_a4872361e237255e5b34633c99815be71}} 
+string {\bfseries url} = \textquotesingle{}https\+://idris2.\+readthedocs.\+io/en/latest/reference/literate.\+html\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1haskell_1_1LiterateIdrisLexer_a02ade853fe7183e68233ad8a094398b0}\label{classpygments_1_1lexers_1_1haskell_1_1LiterateIdrisLexer_a02ade853fe7183e68233ad8a094398b0}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+0\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For Literate Idris (Bird-style or LaTeX) source.
+
+Additional options accepted:
+
+`litstyle`
+    If given, must be ``"bird"`` or ``"latex"``.  If not given, the style
+    is autodetected: if the first non-whitespace character in the source
+    is a backslash or percent character, LaTeX is assumed, else Bird.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1haskell_1_1LiterateIdrisLexer_ae9eb0c267dc9695593d9894448e48213}\label{classpygments_1_1lexers_1_1haskell_1_1LiterateIdrisLexer_ae9eb0c267dc9695593d9894448e48213}} 
+\index{pygments.lexers.haskell.LiterateIdrisLexer@{pygments.lexers.haskell.LiterateIdrisLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.haskell.LiterateIdrisLexer@{pygments.lexers.haskell.LiterateIdrisLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+haskell.\+Literate\+Idris\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/haskell.\+py\end{DoxyCompactItemize}

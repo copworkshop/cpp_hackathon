@@ -1,0 +1,55 @@
+\hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinlocal}{}\doxysection{dateutil.\+tz.\+win.\+tzwinlocal Class Reference}
+\label{classdateutil_1_1tz_1_1win_1_1tzwinlocal}\index{dateutil.tz.win.tzwinlocal@{dateutil.tz.win.tzwinlocal}}
+
+
+Inheritance diagram for dateutil.\+tz.\+win.\+tzwinlocal\+:
+% FIG 0
+
+
+Collaboration diagram for dateutil.\+tz.\+win.\+tzwinlocal\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinlocal_a570ce1705314b330918aa8cdd7d09471}\label{classdateutil_1_1tz_1_1win_1_1tzwinlocal_a570ce1705314b330918aa8cdd7d09471}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinlocal_aa0a561ee386195a89323a4f0cdb8c2cb}\label{classdateutil_1_1tz_1_1win_1_1tzwinlocal_aa0a561ee386195a89323a4f0cdb8c2cb}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinlocal_ae06350d6ca3552f34b8bc607f545f88f}\label{classdateutil_1_1tz_1_1win_1_1tzwinlocal_ae06350d6ca3552f34b8bc607f545f88f}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinlocal_ac15c3fe43fb4a0baddc6120c9be4d87c}\label{classdateutil_1_1tz_1_1win_1_1tzwinlocal_ac15c3fe43fb4a0baddc6120c9be4d87c}} 
+def {\bfseries \+\_\+\+\_\+reduce\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinlocal_a7682b0615eb960c3c2e1570012fbaf56}\label{classdateutil_1_1tz_1_1win_1_1tzwinlocal_a7682b0615eb960c3c2e1570012fbaf56}} 
+{\bfseries hasdst}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Class representing the local time zone information in the Windows registry
+
+While :class:`dateutil.tz.tzlocal` makes system calls (via the :mod:`time`
+module) to retrieve time zone information, ``tzwinlocal`` retrieves the
+rules directly from the Windows registry and creates an object like
+:class:`dateutil.tz.tzwin`.
+
+Because Windows does not have an equivalent of :func:`time.tzset`, on
+Windows, :class:`dateutil.tz.tzlocal` instances will always reflect the
+time zone settings *at the time that the process was started*, meaning
+changes to the machine's time zone settings during the run of a program
+on Windows will **not** be reflected by :class:`dateutil.tz.tzlocal`.
+Because ``tzwinlocal`` reads the registry directly, it is unaffected by
+this issue.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/dateutil/tz/win.\+py\end{DoxyCompactItemize}

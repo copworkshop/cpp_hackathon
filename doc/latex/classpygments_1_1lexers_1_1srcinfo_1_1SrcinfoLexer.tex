@@ -1,0 +1,72 @@
+\hypertarget{classpygments_1_1lexers_1_1srcinfo_1_1SrcinfoLexer}{}\doxysection{pygments.\+lexers.\+srcinfo.\+Srcinfo\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1srcinfo_1_1SrcinfoLexer}\index{pygments.lexers.srcinfo.SrcinfoLexer@{pygments.lexers.srcinfo.SrcinfoLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+srcinfo.\+Srcinfo\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+srcinfo.\+Srcinfo\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1srcinfo_1_1SrcinfoLexer_ae25ed8ac115acd7da64daf2adb957089}\label{classpygments_1_1lexers_1_1srcinfo_1_1SrcinfoLexer_ae25ed8ac115acd7da64daf2adb957089}} 
+string {\bfseries name} = \textquotesingle{}Srcinfo\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1srcinfo_1_1SrcinfoLexer_ab888975d3d378cc09752f149a8f7dcb3}\label{classpygments_1_1lexers_1_1srcinfo_1_1SrcinfoLexer_ab888975d3d378cc09752f149a8f7dcb3}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}srcinfo\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1srcinfo_1_1SrcinfoLexer_aaeab3dc561098f8368e44f6eb568d9c6}\label{classpygments_1_1lexers_1_1srcinfo_1_1SrcinfoLexer_aaeab3dc561098f8368e44f6eb568d9c6}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}.SRCINFO\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1srcinfo_1_1SrcinfoLexer_a88a67feef2378b1190b0235f9577b396}\label{classpygments_1_1lexers_1_1srcinfo_1_1SrcinfoLexer_a88a67feef2378b1190b0235f9577b396}} 
+string {\bfseries url} = \textquotesingle{}https\+://wiki.\+archlinux.\+org/title/.SRCINFO\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1srcinfo_1_1SrcinfoLexer_a890c66789c69b8329611212780a99f03}\label{classpygments_1_1lexers_1_1srcinfo_1_1SrcinfoLexer_a890c66789c69b8329611212780a99f03}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+11\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for .SRCINFO files used by Arch Linux Packages.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1srcinfo_1_1SrcinfoLexer_aa83d76f4a710c3f89809a794c7286892}\label{classpygments_1_1lexers_1_1srcinfo_1_1SrcinfoLexer_aa83d76f4a710c3f89809a794c7286892}} 
+\index{pygments.lexers.srcinfo.SrcinfoLexer@{pygments.lexers.srcinfo.SrcinfoLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.srcinfo.SrcinfoLexer@{pygments.lexers.srcinfo.SrcinfoLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+srcinfo.\+Srcinfo\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#.*'}, Comment.Single),}
+\DoxyCodeLine{            (words(keywords), Keyword, \textcolor{stringliteral}{'assignment'}),}
+\DoxyCodeLine{            (words(architecture\_dependent\_keywords, suffix=\textcolor{stringliteral}{r'\_\(\backslash\)w+'}),}
+\DoxyCodeLine{             Keyword, \textcolor{stringliteral}{'assignment'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)w+'}, Name.Variable, \textcolor{stringliteral}{'assignment'}),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'assignment'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r' +'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'='}, Operator, \textcolor{stringliteral}{'value'}),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'value'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r' +'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'.*'}, Text, \textcolor{stringliteral}{'\#pop:2'}),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/srcinfo.\+py\end{DoxyCompactItemize}

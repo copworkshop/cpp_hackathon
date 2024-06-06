@@ -1,0 +1,69 @@
+\hypertarget{classpygments_1_1lexers_1_1xorg_1_1XorgLexer}{}\doxysection{pygments.\+lexers.\+xorg.\+Xorg\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1xorg_1_1XorgLexer}\index{pygments.lexers.xorg.XorgLexer@{pygments.lexers.xorg.XorgLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+xorg.\+Xorg\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+xorg.\+Xorg\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1xorg_1_1XorgLexer_a238f8c309934e449e92a35ee9d3884f9}\label{classpygments_1_1lexers_1_1xorg_1_1XorgLexer_a238f8c309934e449e92a35ee9d3884f9}} 
+string {\bfseries name} = \textquotesingle{}Xorg\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1xorg_1_1XorgLexer_a6ae963964386ab72a4dbd545240991f5}\label{classpygments_1_1lexers_1_1xorg_1_1XorgLexer_a6ae963964386ab72a4dbd545240991f5}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+x.\+org/wiki/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1xorg_1_1XorgLexer_aca617bc5b43ee5713d78d9cc19636066}\label{classpygments_1_1lexers_1_1xorg_1_1XorgLexer_aca617bc5b43ee5713d78d9cc19636066}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}xorg.\+conf\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1xorg_1_1XorgLexer_a7a42799c4f41cf3fe53a0eb221d8525c}\label{classpygments_1_1lexers_1_1xorg_1_1XorgLexer_a7a42799c4f41cf3fe53a0eb221d8525c}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}xorg.\+conf\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1xorg_1_1XorgLexer_a9fbe192f86a3eec704091dc2a5df703b}\label{classpygments_1_1lexers_1_1xorg_1_1XorgLexer_a9fbe192f86a3eec704091dc2a5df703b}} 
+list {\bfseries mimetypes} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1xorg_1_1XorgLexer_a4e72f873b13731ae63c60fc16e252f69}\label{classpygments_1_1lexers_1_1xorg_1_1XorgLexer_a4e72f873b13731ae63c60fc16e252f69}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for xorg.conf files.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1xorg_1_1XorgLexer_a69df6708b1c60c93c353f2075f56118c}\label{classpygments_1_1lexers_1_1xorg_1_1XorgLexer_a69df6708b1c60c93c353f2075f56118c}} 
+\index{pygments.lexers.xorg.XorgLexer@{pygments.lexers.xorg.XorgLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.xorg.XorgLexer@{pygments.lexers.xorg.XorgLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+xorg.\+Xorg\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Text),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#.*\$'}, Comment),}
+\DoxyCodeLine{}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'((?:Sub)?Section)(\(\backslash\)s+)("{}\(\backslash\)w+"{})'},}
+\DoxyCodeLine{             bygroups(String.Escape, Text, String.Escape)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(End(?:Sub)?Section)'}, String.Escape),}
+\DoxyCodeLine{}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)w+)(\(\backslash\)s+)([\string^\(\backslash\)n\#]+)'},}
+\DoxyCodeLine{             bygroups(Name.Builtin, Text, Name.Constant)),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/xorg.\+py\end{DoxyCompactItemize}

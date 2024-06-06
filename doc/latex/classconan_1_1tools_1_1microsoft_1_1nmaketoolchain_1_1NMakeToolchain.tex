@@ -1,0 +1,64 @@
+\hypertarget{classconan_1_1tools_1_1microsoft_1_1nmaketoolchain_1_1NMakeToolchain}{}\doxysection{conan.\+tools.\+microsoft.\+nmaketoolchain.\+NMake\+Toolchain Class Reference}
+\label{classconan_1_1tools_1_1microsoft_1_1nmaketoolchain_1_1NMakeToolchain}\index{conan.tools.microsoft.nmaketoolchain.NMakeToolchain@{conan.tools.microsoft.nmaketoolchain.NMakeToolchain}}
+
+
+Inheritance diagram for conan.\+tools.\+microsoft.\+nmaketoolchain.\+NMake\+Toolchain\+:
+% FIG 0
+
+
+Collaboration diagram for conan.\+tools.\+microsoft.\+nmaketoolchain.\+NMake\+Toolchain\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1microsoft_1_1nmaketoolchain_1_1NMakeToolchain_a2f22d2cd19a4fe4ecd806858eb85f030}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, conanfile)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1microsoft_1_1nmaketoolchain_1_1NMakeToolchain_a1b75535cdd8ba04a4c215b307713e8fc}\label{classconan_1_1tools_1_1microsoft_1_1nmaketoolchain_1_1NMakeToolchain_a1b75535cdd8ba04a4c215b307713e8fc}} 
+def {\bfseries environment} (self)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1microsoft_1_1nmaketoolchain_1_1NMakeToolchain_a98620bfca6aad3b4a40917e15a1df830}\label{classconan_1_1tools_1_1microsoft_1_1nmaketoolchain_1_1NMakeToolchain_a98620bfca6aad3b4a40917e15a1df830}} 
+def {\bfseries vars} (self)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1microsoft_1_1nmaketoolchain_1_1NMakeToolchain_ad501000d9b596ba22cfbfc403c5ec2e0}\label{classconan_1_1tools_1_1microsoft_1_1nmaketoolchain_1_1NMakeToolchain_ad501000d9b596ba22cfbfc403c5ec2e0}} 
+def {\bfseries generate} (self, env=None, scope=\char`\"{}build\char`\"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1microsoft_1_1nmaketoolchain_1_1NMakeToolchain_ad9bd2756ec86998573725442f7a27e83}\label{classconan_1_1tools_1_1microsoft_1_1nmaketoolchain_1_1NMakeToolchain_ad9bd2756ec86998573725442f7a27e83}} 
+{\bfseries extra\+\_\+cflags}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1microsoft_1_1nmaketoolchain_1_1NMakeToolchain_a741a45d77d559ed9ecec5ac363c8e386}\label{classconan_1_1tools_1_1microsoft_1_1nmaketoolchain_1_1NMakeToolchain_a741a45d77d559ed9ecec5ac363c8e386}} 
+{\bfseries extra\+\_\+cxxflags}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1microsoft_1_1nmaketoolchain_1_1NMakeToolchain_a65731ddb558bf2e9f21973a0b09e233f}\label{classconan_1_1tools_1_1microsoft_1_1nmaketoolchain_1_1NMakeToolchain_a65731ddb558bf2e9f21973a0b09e233f}} 
+{\bfseries extra\+\_\+ldflags}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1microsoft_1_1nmaketoolchain_1_1NMakeToolchain_a1b8dfae8316f4080e2dc6ea7f7ff092a}\label{classconan_1_1tools_1_1microsoft_1_1nmaketoolchain_1_1NMakeToolchain_a1b8dfae8316f4080e2dc6ea7f7ff092a}} 
+{\bfseries extra\+\_\+defines}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}https://learn.microsoft.com/en-us/cpp/build/reference/running-nmake?view=msvc-170#toolsini-and-nmake
+We have also explored the usage of Tools.ini:
+https://learn.microsoft.com/en-us/cpp/build/reference/running-nmake?view=msvc-170
+but not possible, because it cannot include other files, it will also potentially collide with
+a user Tool.ini, without easy resolution. At least the environment is additive.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classconan_1_1tools_1_1microsoft_1_1nmaketoolchain_1_1NMakeToolchain_a2f22d2cd19a4fe4ecd806858eb85f030}\label{classconan_1_1tools_1_1microsoft_1_1nmaketoolchain_1_1NMakeToolchain_a2f22d2cd19a4fe4ecd806858eb85f030}} 
+\index{conan.tools.microsoft.nmaketoolchain.NMakeToolchain@{conan.tools.microsoft.nmaketoolchain.NMakeToolchain}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!conan.tools.microsoft.nmaketoolchain.NMakeToolchain@{conan.tools.microsoft.nmaketoolchain.NMakeToolchain}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def conan.\+tools.\+microsoft.\+nmaketoolchain.\+NMake\+Toolchain.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{conanfile }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param conanfile: ``< ConanFile object >`` The current recipe object. Always use ``self``.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conan/tools/microsoft/nmaketoolchain.\+py\end{DoxyCompactItemize}

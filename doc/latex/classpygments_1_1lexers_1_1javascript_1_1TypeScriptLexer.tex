@@ -1,0 +1,79 @@
+\hypertarget{classpygments_1_1lexers_1_1javascript_1_1TypeScriptLexer}{}\doxysection{pygments.\+lexers.\+javascript.\+Type\+Script\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1javascript_1_1TypeScriptLexer}\index{pygments.lexers.javascript.TypeScriptLexer@{pygments.lexers.javascript.TypeScriptLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+javascript.\+Type\+Script\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+javascript.\+Type\+Script\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1TypeScriptLexer_a5c587b40614d6ff4ef40caf530894377}\label{classpygments_1_1lexers_1_1javascript_1_1TypeScriptLexer_a5c587b40614d6ff4ef40caf530894377}} 
+string {\bfseries name} = \textquotesingle{}Type\+Script\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1TypeScriptLexer_a8be83ef2e8b16697f630c054f47a2f9b}\label{classpygments_1_1lexers_1_1javascript_1_1TypeScriptLexer_a8be83ef2e8b16697f630c054f47a2f9b}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+typescriptlang.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1TypeScriptLexer_a541346acd12eff9cf0c48967f0c7fd67}\label{classpygments_1_1lexers_1_1javascript_1_1TypeScriptLexer_a541346acd12eff9cf0c48967f0c7fd67}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}typescript\textquotesingle{}, \textquotesingle{}ts\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1TypeScriptLexer_a0054ff877299fbca212a5c1b0e894e1c}\label{classpygments_1_1lexers_1_1javascript_1_1TypeScriptLexer_a0054ff877299fbca212a5c1b0e894e1c}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.ts\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1TypeScriptLexer_a7b5314bf46790f21d2864fdaeb66300d}\label{classpygments_1_1lexers_1_1javascript_1_1TypeScriptLexer_a7b5314bf46790f21d2864fdaeb66300d}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}application/x-\/typescript\textquotesingle{}, \textquotesingle{}text/x-\/typescript\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1TypeScriptLexer_a71d914f8f13f6f99d3ce43e3bd6cca0b}\label{classpygments_1_1lexers_1_1javascript_1_1TypeScriptLexer_a71d914f8f13f6f99d3ce43e3bd6cca0b}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+6\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1TypeScriptLexer_ae29b7c777a2c7ddca7a9742f09746358}\label{classpygments_1_1lexers_1_1javascript_1_1TypeScriptLexer_ae29b7c777a2c7ddca7a9742f09746358}} 
+float {\bfseries priority} = 0.\+5
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For TypeScript source code.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1TypeScriptLexer_af190d4c698404b2580545ee25b6fbabd}\label{classpygments_1_1lexers_1_1javascript_1_1TypeScriptLexer_af190d4c698404b2580545ee25b6fbabd}} 
+\index{pygments.lexers.javascript.TypeScriptLexer@{pygments.lexers.javascript.TypeScriptLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.javascript.TypeScriptLexer@{pygments.lexers.javascript.TypeScriptLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+javascript.\+Type\+Script\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(abstract|implements|private|protected|public|readonly)\(\backslash\)b'},}
+\DoxyCodeLine{                Keyword, \textcolor{stringliteral}{'slashstartsregex'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(enum|interface|override)\(\backslash\)b'}, Keyword.Declaration, \textcolor{stringliteral}{'slashstartsregex'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)b(declare|type)\(\backslash\)b'}, Keyword.Reserved),}
+\DoxyCodeLine{            \textcolor{comment}{\# Match variable type keywords}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)b(string|boolean|number)\(\backslash\)b'}, Keyword.Type),}
+\DoxyCodeLine{            \textcolor{comment}{\# Match stuff like: module name \{...\}}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)b(module)(\(\backslash\)s*)([\(\backslash\)w?.\$]+)(\(\backslash\)s*)'},}
+\DoxyCodeLine{             bygroups(Keyword.Reserved, Whitespace, Name.Other, Whitespace), \textcolor{stringliteral}{'slashstartsregex'}),}
+\DoxyCodeLine{            \textcolor{comment}{\# Match stuff like: (function: return type)}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'([\(\backslash\)w?.\$]+)(\(\backslash\)s*)(:)(\(\backslash\)s*)([\(\backslash\)w?.\$]+)'},}
+\DoxyCodeLine{             bygroups(Name.Other, Whitespace, Operator, Whitespace, Keyword.Type)),}
+\DoxyCodeLine{            \textcolor{comment}{\# Match stuff like: Decorators}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'@'} + JS\_IDENT, Keyword.Declaration),}
+\DoxyCodeLine{            inherit,}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/javascript.\+py\end{DoxyCompactItemize}

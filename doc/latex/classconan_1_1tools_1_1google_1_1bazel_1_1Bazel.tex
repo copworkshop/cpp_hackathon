@@ -1,0 +1,54 @@
+\hypertarget{classconan_1_1tools_1_1google_1_1bazel_1_1Bazel}{}\doxysection{conan.\+tools.\+google.\+bazel.\+Bazel Class Reference}
+\label{classconan_1_1tools_1_1google_1_1bazel_1_1Bazel}\index{conan.tools.google.bazel.Bazel@{conan.tools.google.bazel.Bazel}}
+
+
+Inheritance diagram for conan.\+tools.\+google.\+bazel.\+Bazel\+:
+% FIG 0
+
+
+Collaboration diagram for conan.\+tools.\+google.\+bazel.\+Bazel\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1google_1_1bazel_1_1Bazel_a89445f85dbdb10b2e4123bc859439bea}\label{classconan_1_1tools_1_1google_1_1bazel_1_1Bazel_a89445f85dbdb10b2e4123bc859439bea}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, conanfile, namespace=None)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1google_1_1bazel_1_1Bazel_a003adab498a21b61c7aed7d5b7348fdd}\label{classconan_1_1tools_1_1google_1_1bazel_1_1Bazel_a003adab498a21b61c7aed7d5b7348fdd}} 
+def {\bfseries configure} (self, args=None)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1google_1_1bazel_1_1Bazel_a769a0ead8c9b4067f3670d9f085bb0b6}{build}} (self, args=None, label=None, target=\char`\"{}//...\char`\"{}, clean=True)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1google_1_1bazel_1_1Bazel_a0f0903f9c3df439642df0acab1c1a991}{test}} (self, target=None)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconan_1_1tools_1_1google_1_1bazel_1_1Bazel_a769a0ead8c9b4067f3670d9f085bb0b6}\label{classconan_1_1tools_1_1google_1_1bazel_1_1Bazel_a769a0ead8c9b4067f3670d9f085bb0b6}} 
+\index{conan.tools.google.bazel.Bazel@{conan.tools.google.bazel.Bazel}!build@{build}}
+\index{build@{build}!conan.tools.google.bazel.Bazel@{conan.tools.google.bazel.Bazel}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily def conan.\+tools.\+google.\+bazel.\+Bazel.\+build (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args = {\ttfamily None},  }\item[{}]{label = {\ttfamily None},  }\item[{}]{target = {\ttfamily \char`\"{}//...\char`\"{}},  }\item[{}]{clean = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Runs "bazel <rcpaths> build <configs> <args> <targets>"
+
+:param label: DEPRECATED: It'll disappear in Conan 2.x. It is the target label
+:param target: It is the target label
+:param args: list of extra arguments
+:param clean: bool that indicates to run a "bazel clean" before running the "bazel build".
+              Notice that this is important to ensure a fresh bazel cache.
+:return:
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconan_1_1tools_1_1google_1_1bazel_1_1Bazel_a0f0903f9c3df439642df0acab1c1a991}\label{classconan_1_1tools_1_1google_1_1bazel_1_1Bazel_a0f0903f9c3df439642df0acab1c1a991}} 
+\index{conan.tools.google.bazel.Bazel@{conan.tools.google.bazel.Bazel}!test@{test}}
+\index{test@{test}!conan.tools.google.bazel.Bazel@{conan.tools.google.bazel.Bazel}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily def conan.\+tools.\+google.\+bazel.\+Bazel.\+test (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{target = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Runs "bazel test <target>"
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conan/tools/google/bazel.\+py\end{DoxyCompactItemize}

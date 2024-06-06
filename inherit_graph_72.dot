@@ -1,0 +1,26 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node222 [label="argparse.Action",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node222 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="conans.cli.command.Extender",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconans_1_1cli_1_1command_1_1Extender.html",tooltip=" "];
+  Node222 -> Node224 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node224 [label="conans.cli.command.OnceArgument",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconans_1_1cli_1_1command_1_1OnceArgument.html",tooltip=" "];
+  Node222 -> Node225 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node225 [label="conans.client.command.Extender",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconans_1_1client_1_1command_1_1Extender.html",tooltip=" "];
+  Node222 -> Node226 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node226 [label="conans.client.command.Once\lArgument",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconans_1_1client_1_1command_1_1OnceArgument.html",tooltip=" "];
+  Node222 -> Node227 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node227 [label="gcovr.options.GcovrConfig\lOptionAction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgcovr_1_1options_1_1GcovrConfigOptionAction.html",tooltip=" "];
+  Node227 -> Node228 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node228 [label="gcovr.options.GcovrDeprecated\lConfigOptionAction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgcovr_1_1options_1_1GcovrDeprecatedConfigOptionAction.html",tooltip=" "];
+  Node228 -> Node229 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node229 [label="gcovr.configuration.UseSort\lUncoveredNumberAction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgcovr_1_1configuration_1_1UseSortUncoveredNumberAction.html",tooltip=" "];
+  Node228 -> Node230 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node230 [label="gcovr.configuration.UseSort\lUncoveredPercentAction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgcovr_1_1configuration_1_1UseSortUncoveredPercentAction.html",tooltip=" "];
+  Node228 -> Node231 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node231 [label="gcovr.formats.txt.UseBranch\lMetricAction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgcovr_1_1formats_1_1txt_1_1UseBranchMetricAction.html",tooltip=" "];
+}

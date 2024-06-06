@@ -1,0 +1,107 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1HtmlGenshiLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Html\+Genshi\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1HtmlGenshiLexer}\index{pygments.lexers.templates.HtmlGenshiLexer@{pygments.lexers.templates.HtmlGenshiLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Html\+Genshi\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Html\+Genshi\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1HtmlGenshiLexer_a967afa7365516b07afe0ecceeb2290e5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1HtmlGenshiLexer_ab24afc2aee38e0c559b808493d04f4b8}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1HtmlGenshiLexer_accb79102d51e8c16f8fc9b566add450b}\label{classpygments_1_1lexers_1_1templates_1_1HtmlGenshiLexer_accb79102d51e8c16f8fc9b566add450b}} 
+string {\bfseries name} = \textquotesingle{}HTML+Genshi\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1HtmlGenshiLexer_a185afd9aa4876c42c42f8f275d5817ae}\label{classpygments_1_1lexers_1_1templates_1_1HtmlGenshiLexer_a185afd9aa4876c42c42f8f275d5817ae}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}html+genshi\textquotesingle{}, \textquotesingle{}html+kid\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1HtmlGenshiLexer_a03c77a721b2c02b174a78c3300ea8e59}\label{classpygments_1_1lexers_1_1templates_1_1HtmlGenshiLexer_a03c77a721b2c02b174a78c3300ea8e59}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1HtmlGenshiLexer_a05b5a710d4a39999116c0c72ac7618b7}\label{classpygments_1_1lexers_1_1templates_1_1HtmlGenshiLexer_a05b5a710d4a39999116c0c72ac7618b7}} 
+list {\bfseries alias\+\_\+filenames} = \mbox{[}\textquotesingle{}$\ast$.html\textquotesingle{}, \textquotesingle{}$\ast$.htm\textquotesingle{}, \textquotesingle{}$\ast$.xhtml\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1HtmlGenshiLexer_adaa82746f65f3d97256cd771c01c8448}\label{classpygments_1_1lexers_1_1templates_1_1HtmlGenshiLexer_adaa82746f65f3d97256cd771c01c8448}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/html+genshi\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1HtmlGenshiLexer_aa491996c0abcb56dfd642cc9e864fc8c}\label{classpygments_1_1lexers_1_1templates_1_1HtmlGenshiLexer_aa491996c0abcb56dfd642cc9e864fc8c}} 
+string {\bfseries url} = \textquotesingle{}https\+://genshi.\+edgewall.\+org/\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A lexer that highlights `genshi <https://genshi.edgewall.org/>`_ and
+`kid <http://kid-templating.org/>`_ kid HTML templates.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1HtmlGenshiLexer_a967afa7365516b07afe0ecceeb2290e5}\label{classpygments_1_1lexers_1_1templates_1_1HtmlGenshiLexer_a967afa7365516b07afe0ecceeb2290e5}} 
+\index{pygments.lexers.templates.HtmlGenshiLexer@{pygments.lexers.templates.HtmlGenshiLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.templates.HtmlGenshiLexer@{pygments.lexers.templates.HtmlGenshiLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Html\+Genshi\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1HtmlGenshiLexer_ab24afc2aee38e0c559b808493d04f4b8}\label{classpygments_1_1lexers_1_1templates_1_1HtmlGenshiLexer_ab24afc2aee38e0c559b808493d04f4b8}} 
+\index{pygments.lexers.templates.HtmlGenshiLexer@{pygments.lexers.templates.HtmlGenshiLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.templates.HtmlGenshiLexer@{pygments.lexers.templates.HtmlGenshiLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Html\+Genshi\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

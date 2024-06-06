@@ -1,0 +1,65 @@
+\hypertarget{classtqdm_1_1__monitor_1_1TMonitor}{}\doxysection{tqdm.\+\_\+monitor.\+TMonitor Class Reference}
+\label{classtqdm_1_1__monitor_1_1TMonitor}\index{tqdm.\_monitor.TMonitor@{tqdm.\_monitor.TMonitor}}
+
+
+Inheritance diagram for tqdm.\+\_\+monitor.\+TMonitor\+:
+% FIG 0
+
+
+Collaboration diagram for tqdm.\+\_\+monitor.\+TMonitor\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1__monitor_1_1TMonitor_a370c0bc1f94e043e7038f997d45221d1}\label{classtqdm_1_1__monitor_1_1TMonitor_a370c0bc1f94e043e7038f997d45221d1}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, tqdm\+\_\+cls, sleep\+\_\+interval)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1__monitor_1_1TMonitor_a53b0b46ae54643cb939bb13dea242f7d}\label{classtqdm_1_1__monitor_1_1TMonitor_a53b0b46ae54643cb939bb13dea242f7d}} 
+def {\bfseries exit} (self)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1__monitor_1_1TMonitor_af1cf78d79332761339017f130235ce1c}\label{classtqdm_1_1__monitor_1_1TMonitor_af1cf78d79332761339017f130235ce1c}} 
+def {\bfseries get\+\_\+instances} (self)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1__monitor_1_1TMonitor_a96451913c73f7d9d79885f482dff24ea}\label{classtqdm_1_1__monitor_1_1TMonitor_a96451913c73f7d9d79885f482dff24ea}} 
+def {\bfseries run} (self)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1__monitor_1_1TMonitor_a9b3785998bb551b5063e10e363b908f0}\label{classtqdm_1_1__monitor_1_1TMonitor_a9b3785998bb551b5063e10e363b908f0}} 
+def {\bfseries report} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1__monitor_1_1TMonitor_a796b59eed5705f9b770c0bd257d4375d}\label{classtqdm_1_1__monitor_1_1TMonitor_a796b59eed5705f9b770c0bd257d4375d}} 
+{\bfseries daemon}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1__monitor_1_1TMonitor_ae2ccb585f72d1fc68fbede991738b875}\label{classtqdm_1_1__monitor_1_1TMonitor_ae2ccb585f72d1fc68fbede991738b875}} 
+{\bfseries woken}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1__monitor_1_1TMonitor_ab63e2824a2aed6d411e286850409ad96}\label{classtqdm_1_1__monitor_1_1TMonitor_ab63e2824a2aed6d411e286850409ad96}} 
+{\bfseries tqdm\+\_\+cls}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1__monitor_1_1TMonitor_ada08194d00bf202c14f2e52767f80ff5}\label{classtqdm_1_1__monitor_1_1TMonitor_ada08194d00bf202c14f2e52767f80ff5}} 
+{\bfseries sleep\+\_\+interval}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1__monitor_1_1TMonitor_ab24bee61e77ecc616250aa3bae8f554b}\label{classtqdm_1_1__monitor_1_1TMonitor_ab24bee61e77ecc616250aa3bae8f554b}} 
+{\bfseries was\+\_\+killed}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Monitoring thread for tqdm bars.
+Monitors if tqdm bars are taking too much time to display
+and readjusts miniters automatically if necessary.
+
+Parameters
+----------
+tqdm_cls  : class
+    tqdm class to use (can be core tqdm or a submodule).
+sleep_interval  : float
+    Time to sleep between monitoring checks.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/tqdm/\+\_\+monitor.\+py\end{DoxyCompactItemize}

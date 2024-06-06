@@ -1,0 +1,69 @@
+\hypertarget{classpygments_1_1lexers_1_1c__like_1_1CharmciLexer}{}\doxysection{pygments.\+lexers.\+c\+\_\+like.\+Charmci\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1c__like_1_1CharmciLexer}\index{pygments.lexers.c\_like.CharmciLexer@{pygments.lexers.c\_like.CharmciLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+c\+\_\+like.\+Charmci\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+c\+\_\+like.\+Charmci\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__like_1_1CharmciLexer_a7621ad270bef7fa723b6f883acffd8b7}\label{classpygments_1_1lexers_1_1c__like_1_1CharmciLexer_a7621ad270bef7fa723b6f883acffd8b7}} 
+string {\bfseries name} = \textquotesingle{}Charmci\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__like_1_1CharmciLexer_ac3fa7b18e0048e5b5190ec5c6992ffad}\label{classpygments_1_1lexers_1_1c__like_1_1CharmciLexer_ac3fa7b18e0048e5b5190ec5c6992ffad}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}charmci\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__like_1_1CharmciLexer_a6317672717f1b5cb04de6b86e8e7df15}\label{classpygments_1_1lexers_1_1c__like_1_1CharmciLexer_a6317672717f1b5cb04de6b86e8e7df15}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.ci\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__like_1_1CharmciLexer_a77df125f93d4ecb0e4970f3e6267f03f}\label{classpygments_1_1lexers_1_1c__like_1_1CharmciLexer_a77df125f93d4ecb0e4970f3e6267f03f}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+4\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__like_1_1CharmciLexer_a30f15836a5373418ec46776af1ca291d}\label{classpygments_1_1lexers_1_1c__like_1_1CharmciLexer_a30f15836a5373418ec46776af1ca291d}} 
+list {\bfseries mimetypes} = \mbox{[}$\,$\mbox{]}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For `Charm++ <https://charm.cs.illinois.edu>`_ interface files (.ci).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__like_1_1CharmciLexer_aa1b4e88d09cca4d3540ffce75fe4ba51}\label{classpygments_1_1lexers_1_1c__like_1_1CharmciLexer_aa1b4e88d09cca4d3540ffce75fe4ba51}} 
+\index{pygments.lexers.c\_like.CharmciLexer@{pygments.lexers.c\_like.CharmciLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.c\_like.CharmciLexer@{pygments.lexers.c\_like.CharmciLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+c\+\_\+like.\+Charmci\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'keywords'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(module)(\(\backslash\)s+)'}, bygroups(Keyword, Text), \textcolor{stringliteral}{'classname'}),}
+\DoxyCodeLine{            (words((\textcolor{stringliteral}{'mainmodule'}, \textcolor{stringliteral}{'mainchare'}, \textcolor{stringliteral}{'chare'}, \textcolor{stringliteral}{'array'}, \textcolor{stringliteral}{'group'},}
+\DoxyCodeLine{                    \textcolor{stringliteral}{'nodegroup'}, \textcolor{stringliteral}{'message'}, \textcolor{stringliteral}{'conditional'})), Keyword),}
+\DoxyCodeLine{            (words((\textcolor{stringliteral}{'entry'}, \textcolor{stringliteral}{'aggregate'}, \textcolor{stringliteral}{'threaded'}, \textcolor{stringliteral}{'sync'}, \textcolor{stringliteral}{'exclusive'},}
+\DoxyCodeLine{                    \textcolor{stringliteral}{'nokeep'}, \textcolor{stringliteral}{'notrace'}, \textcolor{stringliteral}{'immediate'}, \textcolor{stringliteral}{'expedited'}, \textcolor{stringliteral}{'inline'},}
+\DoxyCodeLine{                    \textcolor{stringliteral}{'local'}, \textcolor{stringliteral}{'python'}, \textcolor{stringliteral}{'accel'}, \textcolor{stringliteral}{'readwrite'}, \textcolor{stringliteral}{'writeonly'},}
+\DoxyCodeLine{                    \textcolor{stringliteral}{'accelblock'}, \textcolor{stringliteral}{'memcritical'}, \textcolor{stringliteral}{'packed'}, \textcolor{stringliteral}{'varsize'},}
+\DoxyCodeLine{                    \textcolor{stringliteral}{'initproc'}, \textcolor{stringliteral}{'initnode'}, \textcolor{stringliteral}{'initcall'}, \textcolor{stringliteral}{'stacksize'},}
+\DoxyCodeLine{                    \textcolor{stringliteral}{'createhere'}, \textcolor{stringliteral}{'createhome'}, \textcolor{stringliteral}{'reductiontarget'}, \textcolor{stringliteral}{'iget'},}
+\DoxyCodeLine{                    \textcolor{stringliteral}{'nocopy'}, \textcolor{stringliteral}{'mutable'}, \textcolor{stringliteral}{'migratable'}, \textcolor{stringliteral}{'readonly'})), Keyword),}
+\DoxyCodeLine{            inherit,}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/c\+\_\+like.\+py\end{DoxyCompactItemize}

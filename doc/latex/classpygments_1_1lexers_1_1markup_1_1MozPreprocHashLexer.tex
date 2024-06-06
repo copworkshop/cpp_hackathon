@@ -1,0 +1,85 @@
+\hypertarget{classpygments_1_1lexers_1_1markup_1_1MozPreprocHashLexer}{}\doxysection{pygments.\+lexers.\+markup.\+Moz\+Preproc\+Hash\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1markup_1_1MozPreprocHashLexer}\index{pygments.lexers.markup.MozPreprocHashLexer@{pygments.lexers.markup.MozPreprocHashLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+markup.\+Moz\+Preproc\+Hash\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+markup.\+Moz\+Preproc\+Hash\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MozPreprocHashLexer_a3befe56387baf945ad69041bcc958cf3}\label{classpygments_1_1lexers_1_1markup_1_1MozPreprocHashLexer_a3befe56387baf945ad69041bcc958cf3}} 
+string {\bfseries name} = \textquotesingle{}mozhashpreproc\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MozPreprocHashLexer_a1cd60a7b1631788b089adbc70c0550a2}\label{classpygments_1_1lexers_1_1markup_1_1MozPreprocHashLexer_a1cd60a7b1631788b089adbc70c0550a2}} 
+list {\bfseries aliases} = \mbox{[}name\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MozPreprocHashLexer_a00aa24d3890e29d0db6ca5d95c8d9ea2}\label{classpygments_1_1lexers_1_1markup_1_1MozPreprocHashLexer_a00aa24d3890e29d0db6ca5d95c8d9ea2}} 
+list {\bfseries filenames} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MozPreprocHashLexer_a8a21d98644eee2c2f9d4fbb98bcb6b8d}\label{classpygments_1_1lexers_1_1markup_1_1MozPreprocHashLexer_a8a21d98644eee2c2f9d4fbb98bcb6b8d}} 
+list {\bfseries mimetypes} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MozPreprocHashLexer_a152000d775d7fd56296862d239ef3ab0}\label{classpygments_1_1lexers_1_1markup_1_1MozPreprocHashLexer_a152000d775d7fd56296862d239ef3ab0}} 
+string {\bfseries url} = \textquotesingle{}https\+://firefox-\/source-\/docs.\+mozilla.\+org/build/buildsystem/preprocessor.\+html\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MozPreprocHashLexer_afc7833844c0ad0e0af754b97185358e7}\label{classpygments_1_1lexers_1_1markup_1_1MozPreprocHashLexer_afc7833844c0ad0e0af754b97185358e7}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+0\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for Mozilla Preprocessor files (with '#' as the marker).
+
+Other data is left untouched.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MozPreprocHashLexer_a4d338a6635d816a9d2229ea914c0207d}\label{classpygments_1_1lexers_1_1markup_1_1MozPreprocHashLexer_a4d338a6635d816a9d2229ea914c0207d}} 
+\index{pygments.lexers.markup.MozPreprocHashLexer@{pygments.lexers.markup.MozPreprocHashLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.markup.MozPreprocHashLexer@{pygments.lexers.markup.MozPreprocHashLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+markup.\+Moz\+Preproc\+Hash\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^\#'}, Comment.Preproc, (\textcolor{stringliteral}{'expr'}, \textcolor{stringliteral}{'exprstart'})),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'.+'}, Other),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'exprstart'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(literal)(.*)'}, bygroups(Comment.Preproc, Text), \textcolor{stringliteral}{'\#pop:2'}),}
+\DoxyCodeLine{            (words((}
+\DoxyCodeLine{                \textcolor{stringliteral}{'define'}, \textcolor{stringliteral}{'undef'}, \textcolor{stringliteral}{'if'}, \textcolor{stringliteral}{'ifdef'}, \textcolor{stringliteral}{'ifndef'}, \textcolor{stringliteral}{'else'}, \textcolor{stringliteral}{'elif'},}
+\DoxyCodeLine{                \textcolor{stringliteral}{'elifdef'}, \textcolor{stringliteral}{'elifndef'}, \textcolor{stringliteral}{'endif'}, \textcolor{stringliteral}{'expand'}, \textcolor{stringliteral}{'filter'}, \textcolor{stringliteral}{'unfilter'},}
+\DoxyCodeLine{                \textcolor{stringliteral}{'include'}, \textcolor{stringliteral}{'includesubst'}, \textcolor{stringliteral}{'error'})),}
+\DoxyCodeLine{             Comment.Preproc, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'expr'}: [}
+\DoxyCodeLine{            (words((\textcolor{stringliteral}{'!'}, \textcolor{stringliteral}{'!='}, \textcolor{stringliteral}{'=='}, \textcolor{stringliteral}{'\&\&'}, \textcolor{stringliteral}{'||'})), Operator),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(defined)(\(\backslash\)()'}, bygroups(Keyword, Punctuation)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\))'}, Punctuation),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[0-\/9]+'}, Number.Decimal),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\_\_\(\backslash\)w+?\_\_'}, Name.Variable),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'@\(\backslash\)w+?@'}, Name.Class),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)w+'}, Name),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)n'}, Text, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Text),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)S'}, Punctuation),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/markup.\+py\end{DoxyCompactItemize}

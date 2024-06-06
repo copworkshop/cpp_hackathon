@@ -1,0 +1,85 @@
+\hypertarget{classurllib3_1_1util_1_1url_1_1Url}{}\doxysection{urllib3.\+util.\+url.\+Url Class Reference}
+\label{classurllib3_1_1util_1_1url_1_1Url}\index{urllib3.util.url.Url@{urllib3.util.url.Url}}
+
+
+Inheritance diagram for urllib3.\+util.\+url.\+Url\+:
+% FIG 0
+
+
+Collaboration diagram for urllib3.\+util.\+url.\+Url\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1url_1_1Url_a6f5dcf6803c58d7debf53bb6025124ae}\label{classurllib3_1_1util_1_1url_1_1Url_a6f5dcf6803c58d7debf53bb6025124ae}} 
+def {\bfseries \+\_\+\+\_\+new\+\_\+\+\_\+} (cls, scheme=None, auth=None, host=None, port=None, path=None, query=None, fragment=None)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1util_1_1url_1_1Url_afd6f96fa1dc1fe99f0057d0a948b8765}{hostname}} (self)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1util_1_1url_1_1Url_a98355de3d0cc1b621b9cb306723aad74}{request\+\_\+uri}} (self)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1util_1_1url_1_1Url_a9ee3a6bdaf791636dd1f648e5531a36b}{netloc}} (self)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1util_1_1url_1_1Url_ac02d19f128f8e7f0e56f75f5c44cfbe8}{url}} (self)
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1url_1_1Url_aadca774c2cccb7bc8d5ece292f78a974}\label{classurllib3_1_1util_1_1url_1_1Url_aadca774c2cccb7bc8d5ece292f78a974}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Data structure for representing an HTTP URL. Used as a return value for
+:func:`parse_url`. Both the scheme and host are normalized as they are
+both case-insensitive according to RFC 3986.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classurllib3_1_1util_1_1url_1_1Url_afd6f96fa1dc1fe99f0057d0a948b8765}\label{classurllib3_1_1util_1_1url_1_1Url_afd6f96fa1dc1fe99f0057d0a948b8765}} 
+\index{urllib3.util.url.Url@{urllib3.util.url.Url}!hostname@{hostname}}
+\index{hostname@{hostname}!urllib3.util.url.Url@{urllib3.util.url.Url}}
+\doxysubsubsection{\texorpdfstring{hostname()}{hostname()}}
+{\footnotesize\ttfamily def urllib3.\+util.\+url.\+Url.\+hostname (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}For backwards-compatibility with urlparse. We're nice like that.\end{DoxyVerb}
+ \mbox{\Hypertarget{classurllib3_1_1util_1_1url_1_1Url_a9ee3a6bdaf791636dd1f648e5531a36b}\label{classurllib3_1_1util_1_1url_1_1Url_a9ee3a6bdaf791636dd1f648e5531a36b}} 
+\index{urllib3.util.url.Url@{urllib3.util.url.Url}!netloc@{netloc}}
+\index{netloc@{netloc}!urllib3.util.url.Url@{urllib3.util.url.Url}}
+\doxysubsubsection{\texorpdfstring{netloc()}{netloc()}}
+{\footnotesize\ttfamily def urllib3.\+util.\+url.\+Url.\+netloc (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Network location including host and port\end{DoxyVerb}
+ \mbox{\Hypertarget{classurllib3_1_1util_1_1url_1_1Url_a98355de3d0cc1b621b9cb306723aad74}\label{classurllib3_1_1util_1_1url_1_1Url_a98355de3d0cc1b621b9cb306723aad74}} 
+\index{urllib3.util.url.Url@{urllib3.util.url.Url}!request\_uri@{request\_uri}}
+\index{request\_uri@{request\_uri}!urllib3.util.url.Url@{urllib3.util.url.Url}}
+\doxysubsubsection{\texorpdfstring{request\_uri()}{request\_uri()}}
+{\footnotesize\ttfamily def urllib3.\+util.\+url.\+Url.\+request\+\_\+uri (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Absolute path including the query string.\end{DoxyVerb}
+ \mbox{\Hypertarget{classurllib3_1_1util_1_1url_1_1Url_ac02d19f128f8e7f0e56f75f5c44cfbe8}\label{classurllib3_1_1util_1_1url_1_1Url_ac02d19f128f8e7f0e56f75f5c44cfbe8}} 
+\index{urllib3.util.url.Url@{urllib3.util.url.Url}!url@{url}}
+\index{url@{url}!urllib3.util.url.Url@{urllib3.util.url.Url}}
+\doxysubsubsection{\texorpdfstring{url()}{url()}}
+{\footnotesize\ttfamily def urllib3.\+util.\+url.\+Url.\+url (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert self into a url
+
+This function should more or less round-trip with :func:`.parse_url`. The
+returned url may not be exactly the same as the url inputted to
+:func:`.parse_url`, but it should be equivalent by the RFC (e.g., urls
+with a blank port will have : removed).
+
+Example: ::
+
+    >>> U = parse_url('http://google.com/mail/')
+    >>> U.url
+    'http://google.com/mail/'
+    >>> Url('http', 'username:password', 'host.com', 80,
+    ... '/path', 'query', 'fragment').url
+    'http://username:password@host.com:80/path?query#fragment'
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/urllib3/util/url.\+py\end{DoxyCompactItemize}

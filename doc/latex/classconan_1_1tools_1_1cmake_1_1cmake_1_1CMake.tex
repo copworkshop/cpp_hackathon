@@ -1,0 +1,41 @@
+\hypertarget{classconan_1_1tools_1_1cmake_1_1cmake_1_1CMake}{}\doxysection{conan.\+tools.\+cmake.\+cmake.\+CMake Class Reference}
+\label{classconan_1_1tools_1_1cmake_1_1cmake_1_1CMake}\index{conan.tools.cmake.cmake.CMake@{conan.tools.cmake.cmake.CMake}}
+
+
+Inheritance diagram for conan.\+tools.\+cmake.\+cmake.\+CMake\+:
+% FIG 0
+
+
+Collaboration diagram for conan.\+tools.\+cmake.\+cmake.\+CMake\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1cmake_1_1cmake_1_1CMake_af6951ba0c61e33eaaaf602e5e9d0b0f2}\label{classconan_1_1tools_1_1cmake_1_1cmake_1_1CMake_af6951ba0c61e33eaaaf602e5e9d0b0f2}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, conanfile)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1cmake_1_1cmake_1_1CMake_a5f1418c8a04d1bc6d5700efc7d14c14c}\label{classconan_1_1tools_1_1cmake_1_1cmake_1_1CMake_a5f1418c8a04d1bc6d5700efc7d14c14c}} 
+def {\bfseries configure} (self, variables=None, build\+\_\+script\+\_\+folder=None, cli\+\_\+args=None)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1cmake_1_1cmake_1_1CMake_a1c0eca6b083e2ce6dad213b02426fdfd}\label{classconan_1_1tools_1_1cmake_1_1cmake_1_1CMake_a1c0eca6b083e2ce6dad213b02426fdfd}} 
+def {\bfseries build} (self, build\+\_\+type=None, target=None, cli\+\_\+args=None, build\+\_\+tool\+\_\+args=None)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1cmake_1_1cmake_1_1CMake_ab68e174c7e00a0543543289f6b428c3f}\label{classconan_1_1tools_1_1cmake_1_1cmake_1_1CMake_ab68e174c7e00a0543543289f6b428c3f}} 
+def {\bfseries install} (self, build\+\_\+type=None, component=None)
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1cmake_1_1cmake_1_1CMake_a706cd542b22f8a7732ceecfc46e55bb7}\label{classconan_1_1tools_1_1cmake_1_1cmake_1_1CMake_a706cd542b22f8a7732ceecfc46e55bb7}} 
+def {\bfseries test} (self, build\+\_\+type=None, target=None, cli\+\_\+args=None, build\+\_\+tool\+\_\+args=None, env=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} CMake helper to use together with the toolchain feature. It implements a very simple
+wrapper to call the cmake executable, but without passing compile flags, preprocessor
+definitions... all that is set by the toolchain. Only the generator and the CMAKE_TOOLCHAIN_FILE
+are passed to the command line, plus the ``--config Release`` for builds in multi-config
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conan/tools/cmake/cmake.\+py\end{DoxyCompactItemize}

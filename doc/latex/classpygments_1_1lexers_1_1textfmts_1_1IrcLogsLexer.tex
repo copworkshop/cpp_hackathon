@@ -1,0 +1,116 @@
+\hypertarget{classpygments_1_1lexers_1_1textfmts_1_1IrcLogsLexer}{}\doxysection{pygments.\+lexers.\+textfmts.\+Irc\+Logs\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1textfmts_1_1IrcLogsLexer}\index{pygments.lexers.textfmts.IrcLogsLexer@{pygments.lexers.textfmts.IrcLogsLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+textfmts.\+Irc\+Logs\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+textfmts.\+Irc\+Logs\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1IrcLogsLexer_ad47c13ce6907e8a18aab4fceb54fb6b5}\label{classpygments_1_1lexers_1_1textfmts_1_1IrcLogsLexer_ad47c13ce6907e8a18aab4fceb54fb6b5}} 
+string {\bfseries name} = \textquotesingle{}IRC logs\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1IrcLogsLexer_af18ba941fc4ff0bb2329ad74592e3e31}\label{classpygments_1_1lexers_1_1textfmts_1_1IrcLogsLexer_af18ba941fc4ff0bb2329ad74592e3e31}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}irc\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1IrcLogsLexer_a246ead333e9732e4625f18a9a2ea6463}\label{classpygments_1_1lexers_1_1textfmts_1_1IrcLogsLexer_a246ead333e9732e4625f18a9a2ea6463}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.weechatlog\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1IrcLogsLexer_a949da6f2bc8387c18d9c3350a18d04f8}\label{classpygments_1_1lexers_1_1textfmts_1_1IrcLogsLexer_a949da6f2bc8387c18d9c3350a18d04f8}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/irclog\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1IrcLogsLexer_a7082038bf8174c3f616a33c4cda72d3b}\label{classpygments_1_1lexers_1_1textfmts_1_1IrcLogsLexer_a7082038bf8174c3f616a33c4cda72d3b}} 
+string {\bfseries url} = \textquotesingle{}https\+://en.\+wikipedia.\+org/wiki/Internet\+\_\+\+Relay\+\_\+\+Chat\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1IrcLogsLexer_a05b032ebd22f780df033a9f0de81607b}\label{classpygments_1_1lexers_1_1textfmts_1_1IrcLogsLexer_a05b032ebd22f780df033a9f0de81607b}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1IrcLogsLexer_a74ef96b0c323c779f6d7d9e1de624d4b}\label{classpygments_1_1lexers_1_1textfmts_1_1IrcLogsLexer_a74ef96b0c323c779f6d7d9e1de624d4b}} 
+{\bfseries flags} = re.\+VERBOSE $\vert$ re.\+MULTILINE
+\item 
+string {\bfseries timestamp}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for IRC logs in *irssi*, *xchat* or *weechat* style.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1IrcLogsLexer_abd74db9d8b53999f4eb9ba7b7fef31d8}\label{classpygments_1_1lexers_1_1textfmts_1_1IrcLogsLexer_abd74db9d8b53999f4eb9ba7b7fef31d8}} 
+\index{pygments.lexers.textfmts.IrcLogsLexer@{pygments.lexers.textfmts.IrcLogsLexer}!timestamp@{timestamp}}
+\index{timestamp@{timestamp}!pygments.lexers.textfmts.IrcLogsLexer@{pygments.lexers.textfmts.IrcLogsLexer}}
+\doxysubsubsection{\texorpdfstring{timestamp}{timestamp}}
+{\footnotesize\ttfamily string pygments.\+lexers.\+textfmts.\+Irc\+Logs\+Lexer.\+timestamp\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \textcolor{stringliteral}{r"{}"{}"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{        (}}
+\DoxyCodeLine{\textcolor{stringliteral}{          \# irssi / xchat and others}}
+\DoxyCodeLine{\textcolor{stringliteral}{          (?: \(\backslash\)[|\(\backslash\)()?                  \# Opening bracket or paren for the timestamp}}
+\DoxyCodeLine{\textcolor{stringliteral}{            (?:                        \# Timestamp}}
+\DoxyCodeLine{\textcolor{stringliteral}{                (?: (?:\(\backslash\)d\{1,4\} [-\//])*  \# Date as -\/ or /-\/separated groups of digits}}
+\DoxyCodeLine{\textcolor{stringliteral}{                    (?:\(\backslash\)d\{1,4\})}}
+\DoxyCodeLine{\textcolor{stringliteral}{                 [T ])?                \# Date/time separator: T or space}}
+\DoxyCodeLine{\textcolor{stringliteral}{                (?: \(\backslash\)d?\(\backslash\)d [:.])*       \# Time as :/.-\/separated groups of 1 or 2 digits}}
+\DoxyCodeLine{\textcolor{stringliteral}{                    (?: \(\backslash\)d?\(\backslash\)d)}}
+\DoxyCodeLine{\textcolor{stringliteral}{            )}}
+\DoxyCodeLine{\textcolor{stringliteral}{          (?: \(\backslash\)]|\(\backslash\)))?\(\backslash\)s+               \# Closing bracket or paren for the timestamp}}
+\DoxyCodeLine{\textcolor{stringliteral}{        |}}
+\DoxyCodeLine{\textcolor{stringliteral}{          \# weechat}}
+\DoxyCodeLine{\textcolor{stringliteral}{          \(\backslash\)d\{4\}\(\backslash\)s\(\backslash\)w\{3\}\(\backslash\)s\(\backslash\)d\{2\}\(\backslash\)s        \# Date}}
+\DoxyCodeLine{\textcolor{stringliteral}{          \(\backslash\)d\{2\}:\(\backslash\)d\{2\}:\(\backslash\)d\{2\}\(\backslash\)s+         \# Time + Whitespace}}
+\DoxyCodeLine{\textcolor{stringliteral}{        |}}
+\DoxyCodeLine{\textcolor{stringliteral}{          \# xchat}}
+\DoxyCodeLine{\textcolor{stringliteral}{          \(\backslash\)w\{3\}\(\backslash\)s\(\backslash\)d\{2\}\(\backslash\)s               \# Date}}
+\DoxyCodeLine{\textcolor{stringliteral}{          \(\backslash\)d\{2\}:\(\backslash\)d\{2\}:\(\backslash\)d\{2\}\(\backslash\)s+         \# Time + Whitespace}}
+\DoxyCodeLine{\textcolor{stringliteral}{        )?}}
+\DoxyCodeLine{\textcolor{stringliteral}{    "{}"{}"{}}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1IrcLogsLexer_ae9444cfa429c847d650940eeb1b0aaea}\label{classpygments_1_1lexers_1_1textfmts_1_1IrcLogsLexer_ae9444cfa429c847d650940eeb1b0aaea}} 
+\index{pygments.lexers.textfmts.IrcLogsLexer@{pygments.lexers.textfmts.IrcLogsLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.textfmts.IrcLogsLexer@{pygments.lexers.textfmts.IrcLogsLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+textfmts.\+Irc\+Logs\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            \textcolor{comment}{\# log start/end}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^\(\backslash\)*\(\backslash\)*\(\backslash\)*\(\backslash\)*(.*)\(\backslash\)*\(\backslash\)*\(\backslash\)*\(\backslash\)*\$'}, Comment),}
+\DoxyCodeLine{            \textcolor{comment}{\# hack}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{"{}\string^"{}} + timestamp + \textcolor{stringliteral}{r'(\(\backslash\)s*<[\string^>]*>\(\backslash\)s*)\$'}, bygroups(Comment.Preproc, Name.Tag)),}
+\DoxyCodeLine{            \textcolor{comment}{\# normal msgs}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{"{}\string^"{}} + timestamp + ,}
+\DoxyCodeLine{             bygroups(Comment.Preproc, Name.Tag), \textcolor{stringliteral}{'msg'}),}
+\DoxyCodeLine{            \textcolor{comment}{\# /me msgs}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{"{}\string^"{}} + timestamp + ,}
+\DoxyCodeLine{             bygroups(Comment.Preproc, Keyword, Generic.Inserted)),}
+\DoxyCodeLine{            \textcolor{comment}{\# join/part msgs}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{"{}\string^"{}} + timestamp + ,}
+\DoxyCodeLine{             bygroups(Comment.Preproc, Keyword, String, Comment)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r"{}\string^.*?\(\backslash\)n"{}}, Text),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'msg'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r"{}\(\backslash\)S+:(?!//)"{}}, Name.Attribute),  \textcolor{comment}{\# Prefix}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r"{}.*\(\backslash\)n"{}}, Text, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/textfmts.\+py\end{DoxyCompactItemize}

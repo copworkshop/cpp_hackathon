@@ -1,0 +1,75 @@
+\hypertarget{namespacetqdm_1_1contrib_1_1logging}{}\doxysection{tqdm.\+contrib.\+logging Namespace Reference}
+\label{namespacetqdm_1_1contrib_1_1logging}\index{tqdm.contrib.logging@{tqdm.contrib.logging}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1contrib_1_1logging_1_1__TqdmLoggingHandler}{\+\_\+\+Tqdm\+Logging\+Handler}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacetqdm_1_1contrib_1_1logging_a1dedef86c4fb061193e0279dfd20d37d}{logging\+\_\+redirect\+\_\+tqdm}} (loggers=None, tqdm\+\_\+class=std\+\_\+tqdm \# type\+:\+Type\mbox{[}std\+\_\+tqdm\mbox{]})
+\item 
+def \mbox{\hyperlink{namespacetqdm_1_1contrib_1_1logging_ab8eaa0dc528e69bf6bdc8b4935f40458}{tqdm\+\_\+logging\+\_\+redirect}} ($\ast$args, $\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Helper functionality for interoperability with stdlib `logging`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetqdm_1_1contrib_1_1logging_a1dedef86c4fb061193e0279dfd20d37d}\label{namespacetqdm_1_1contrib_1_1logging_a1dedef86c4fb061193e0279dfd20d37d}} 
+\index{tqdm.contrib.logging@{tqdm.contrib.logging}!logging\_redirect\_tqdm@{logging\_redirect\_tqdm}}
+\index{logging\_redirect\_tqdm@{logging\_redirect\_tqdm}!tqdm.contrib.logging@{tqdm.contrib.logging}}
+\doxysubsubsection{\texorpdfstring{logging\_redirect\_tqdm()}{logging\_redirect\_tqdm()}}
+{\footnotesize\ttfamily def tqdm.\+contrib.\+logging.\+logging\+\_\+redirect\+\_\+tqdm (\begin{DoxyParamCaption}\item[{}]{loggers = {\ttfamily None},  }\item[{}]{tqdm\+\_\+class = {\ttfamily std\+\_\+tqdm~~\#~type\+:~Type\mbox{[}std\+\_\+tqdm\mbox{]}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Context manager redirecting console logging to `tqdm.write()`, leaving
+other logging handlers (e.g. log files) unaffected.
+
+Parameters
+----------
+loggers  : list, optional
+  Which handlers to redirect (default: [logging.root]).
+tqdm_class  : optional
+
+Example
+-------
+```python
+import logging
+from tqdm import trange
+from tqdm.contrib.logging import logging_redirect_tqdm
+
+LOG = logging.getLogger(__name__)
+
+if __name__ == '__main__':
+    logging.basicConfig(level=logging.INFO)
+    with logging_redirect_tqdm():
+        for i in trange(9):
+            if i == 4:
+                LOG.info("console logging redirected to `tqdm.write()`")
+    # logging restored
+```
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacetqdm_1_1contrib_1_1logging_ab8eaa0dc528e69bf6bdc8b4935f40458}\label{namespacetqdm_1_1contrib_1_1logging_ab8eaa0dc528e69bf6bdc8b4935f40458}} 
+\index{tqdm.contrib.logging@{tqdm.contrib.logging}!tqdm\_logging\_redirect@{tqdm\_logging\_redirect}}
+\index{tqdm\_logging\_redirect@{tqdm\_logging\_redirect}!tqdm.contrib.logging@{tqdm.contrib.logging}}
+\doxysubsubsection{\texorpdfstring{tqdm\_logging\_redirect()}{tqdm\_logging\_redirect()}}
+{\footnotesize\ttfamily def tqdm.\+contrib.\+logging.\+tqdm\+\_\+logging\+\_\+redirect (\begin{DoxyParamCaption}\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convenience shortcut for:
+```python
+with tqdm_class(*args, **tqdm_kwargs) as pbar:
+    with logging_redirect_tqdm(loggers=loggers, tqdm_class=tqdm_class):
+        yield pbar
+```
+
+Parameters
+----------
+tqdm_class  : optional, (default: tqdm.std.tqdm).
+loggers  : optional, list.
+**tqdm_kwargs  : passed to `tqdm_class`.
+\end{DoxyVerb}
+ 

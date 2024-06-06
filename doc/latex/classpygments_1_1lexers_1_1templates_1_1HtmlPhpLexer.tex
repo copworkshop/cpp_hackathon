@@ -1,0 +1,137 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Html\+Php\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer}\index{pygments.lexers.templates.HtmlPhpLexer@{pygments.lexers.templates.HtmlPhpLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Html\+Php\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Html\+Php\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer_ad338974d5ea3d679f284967c4e46d5dd}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer_a53eb0befb64dedaf37400ad7fd476833}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer_ad1987dced6a3dd214460c3d443dadabd}\label{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer_ad1987dced6a3dd214460c3d443dadabd}} 
+string {\bfseries name} = \textquotesingle{}HTML+PHP\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer_af29bbe150585763c6ade905502982228}\label{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer_af29bbe150585763c6ade905502982228}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}html+php\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer_a1bb585f216e09143cdcf80ce6d5a3624}\label{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer_a1bb585f216e09143cdcf80ce6d5a3624}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.phtml\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer_ac0697a78f768f3828b56d5a9e534941f}\label{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer_ac0697a78f768f3828b56d5a9e534941f}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+list {\bfseries alias\+\_\+filenames}
+\item 
+list {\bfseries mimetypes}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer_a51c55a0fa496f6f4819d71ff5acb2043}\label{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer_a51c55a0fa496f6f4819d71ff5acb2043}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+php.\+net\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Subclass of `PhpLexer` that highlights unhandled data with the `HtmlLexer`.
+
+Nested Javascript and CSS is highlighted too.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer_ad338974d5ea3d679f284967c4e46d5dd}\label{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer_ad338974d5ea3d679f284967c4e46d5dd}} 
+\index{pygments.lexers.templates.HtmlPhpLexer@{pygments.lexers.templates.HtmlPhpLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.templates.HtmlPhpLexer@{pygments.lexers.templates.HtmlPhpLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Html\+Php\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer_a53eb0befb64dedaf37400ad7fd476833}\label{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer_a53eb0befb64dedaf37400ad7fd476833}} 
+\index{pygments.lexers.templates.HtmlPhpLexer@{pygments.lexers.templates.HtmlPhpLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.templates.HtmlPhpLexer@{pygments.lexers.templates.HtmlPhpLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Html\+Php\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer_a1241924903bb534ed4c64c3e2615ccfb}\label{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer_a1241924903bb534ed4c64c3e2615ccfb}} 
+\index{pygments.lexers.templates.HtmlPhpLexer@{pygments.lexers.templates.HtmlPhpLexer}!alias\_filenames@{alias\_filenames}}
+\index{alias\_filenames@{alias\_filenames}!pygments.lexers.templates.HtmlPhpLexer@{pygments.lexers.templates.HtmlPhpLexer}}
+\doxysubsubsection{\texorpdfstring{alias\_filenames}{alias\_filenames}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+templates.\+Html\+Php\+Lexer.\+alias\+\_\+filenames\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [\textcolor{stringliteral}{'*.php'}, \textcolor{stringliteral}{'*.html'}, \textcolor{stringliteral}{'*.htm'}, \textcolor{stringliteral}{'*.xhtml'},}
+\DoxyCodeLine{                       \textcolor{stringliteral}{'*.php[345]'}]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer_a2092e51288b2639f56150f5d41e8e51d}\label{classpygments_1_1lexers_1_1templates_1_1HtmlPhpLexer_a2092e51288b2639f56150f5d41e8e51d}} 
+\index{pygments.lexers.templates.HtmlPhpLexer@{pygments.lexers.templates.HtmlPhpLexer}!mimetypes@{mimetypes}}
+\index{mimetypes@{mimetypes}!pygments.lexers.templates.HtmlPhpLexer@{pygments.lexers.templates.HtmlPhpLexer}}
+\doxysubsubsection{\texorpdfstring{mimetypes}{mimetypes}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+templates.\+Html\+Php\+Lexer.\+mimetypes\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [\textcolor{stringliteral}{'application/x-\/php'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'application/x-\/httpd-\/php'}, \textcolor{stringliteral}{'application/x-\/httpd-\/php3'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'application/x-\/httpd-\/php4'}, \textcolor{stringliteral}{'application/x-\/httpd-\/php5'}]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,48 @@
+digraph "_xsltStylePreComp"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="_xsltStylePreComp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" func" ];
+  Node2 [label="_xsltTransformContext",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct__xsltTransformContext.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" docList\ndocument\nstyleList" ];
+  Node3 [label="_xsltDocument",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct__xsltDocument.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" includes\nnext" ];
+  Node4 [label="struct",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" vars\nvarsTab" ];
+  Node5 [label="_xsltStackElem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct__xsltStackElem.html",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" context" ];
+  Node4 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ];
+  Node1 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" comp" ];
+  Node2 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sortfunc" ];
+  Node6 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" style" ];
+  Node6 [label="_xsltStylesheet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct__xsltStylesheet.html",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" variables" ];
+  Node3 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" docList\nincludes" ];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" preComps" ];
+  Node7 [label="_xsltElemPreComp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct__xsltElemPreComp.html",tooltip=" "];
+  Node2 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" func" ];
+  Node7 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" free\nnext" ];
+  Node4 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" attrMatch\ncommentMatch\nelemMatch\nimports\nkeyMatch\nnext\nparent\nparentMatch\npiMatch\nrootMatch\n..." ];
+  Node6 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" principal" ];
+  Node8 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" decimalFormat" ];
+  Node8 [label="_xsltDecimalFormat",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct__xsltDecimalFormat.html",tooltip=" "];
+  Node4 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ];
+  Node9 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" templates" ];
+  Node9 [label="_xsltTemplate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct__xsltTemplate.html",tooltip=" "];
+  Node4 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next\nstyle" ];
+  Node9 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" templCalledTab" ];
+  Node10 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cache" ];
+  Node10 [label="_xsltTransformCache",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct__xsltTransformCache.html",tooltip=" "];
+  Node5 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" stackItems" ];
+  Node11 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" extras" ];
+  Node11 [label="_xsltRuntimeExtra",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct__xsltRuntimeExtra.html",tooltip=" "];
+  Node12 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" freeLocale\ngenSortKey" ];
+  Node12 [label="locale",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" currentTemplateRule\ntempl\ntemplTab" ];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" numdata" ];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" templ" ];
+}

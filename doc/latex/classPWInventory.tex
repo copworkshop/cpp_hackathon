@@ -1,0 +1,49 @@
+\hypertarget{classPWInventory}{}\doxysection{PWInventory Class Reference}
+\label{classPWInventory}\index{PWInventory@{PWInventory}}
+
+
+Inheritance diagram for PWInventory\+:
+% FIG 0
+
+
+Collaboration diagram for PWInventory\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPWInventory_a6cd399a7c8dabdfc15778adb5e5d0708}\label{classPWInventory_a6cd399a7c8dabdfc15778adb5e5d0708}} 
+{\bfseries PWInventory} (const std\+::vector$<$ \mbox{\hyperlink{classInventoryItem}{Inventory\+Item}} $>$ \&storage)
+\item 
+\mbox{\Hypertarget{classPWInventory_ad8bf097119bd845f67eb8e78460273dd}\label{classPWInventory_ad8bf097119bd845f67eb8e78460273dd}} 
+{\bfseries PWInventory} (const \mbox{\hyperlink{classPWInventory}{PWInventory}} \&)=delete
+\item 
+\mbox{\Hypertarget{classPWInventory_abd064ef8b313b4ea42bbb47f5f35d36d}\label{classPWInventory_abd064ef8b313b4ea42bbb47f5f35d36d}} 
+\mbox{\hyperlink{classPWInventory}{PWInventory}} \& {\bfseries operator=} (const \mbox{\hyperlink{classPWInventory}{PWInventory}} \&)=delete
+\item 
+\mbox{\Hypertarget{classPWInventory_aba0bdad1744fc46fd789d0c900afdf6c}\label{classPWInventory_aba0bdad1744fc46fd789d0c900afdf6c}} 
+void {\bfseries Load} (const std\+::string \&file) override
+\item 
+\mbox{\Hypertarget{classPWInventory_a94e0174a4b6648f767feaf47f71ade5b}\label{classPWInventory_a94e0174a4b6648f767feaf47f71ade5b}} 
+void {\bfseries Save} (const std\+::string \&file) override
+\item 
+\mbox{\Hypertarget{classPWInventory_a617d0f35516bc26a04f0a558a97f05f0}\label{classPWInventory_a617d0f35516bc26a04f0a558a97f05f0}} 
+void {\bfseries Update\+Quality} () override
+\item 
+\mbox{\Hypertarget{classPWInventory_a5d3a56a9dc625300ed60512c60a80ff9}\label{classPWInventory_a5d3a56a9dc625300ed60512c60a80ff9}} 
+\mbox{\hyperlink{classInventoryItem}{Inventory\+Item}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int index) override
+\item 
+\mbox{\Hypertarget{classPWInventory_a70c2dc112892aef0d34b12ea8f8e243d}\label{classPWInventory_a70c2dc112892aef0d34b12ea8f8e243d}} 
+int {\bfseries Count} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPWInventory_abd363d45b4e7c52cbdbb86d3bdbcfdf5}\label{classPWInventory_abd363d45b4e7c52cbdbb86d3bdbcfdf5}} 
+std\+::vector$<$ \mbox{\hyperlink{classInventoryItem}{Inventory\+Item}} $>$ {\bfseries items}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+PWServer/PWInventory.\+h\item 
+PWServer/PWInventory.\+cpp\end{DoxyCompactItemize}

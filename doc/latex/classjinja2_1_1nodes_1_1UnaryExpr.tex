@@ -1,0 +1,56 @@
+\hypertarget{classjinja2_1_1nodes_1_1UnaryExpr}{}\doxysection{jinja2.\+nodes.\+Unary\+Expr Class Reference}
+\label{classjinja2_1_1nodes_1_1UnaryExpr}\index{jinja2.nodes.UnaryExpr@{jinja2.nodes.UnaryExpr}}
+
+
+Inheritance diagram for jinja2.\+nodes.\+Unary\+Expr\+:
+% FIG 0
+
+
+Collaboration diagram for jinja2.\+nodes.\+Unary\+Expr\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Any \mbox{\hyperlink{classjinja2_1_1nodes_1_1UnaryExpr_a6998d4b17cc9a53a955722c0b92aca63}{as\+\_\+const}} (self, t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1EvalContext}{Eval\+Context}}\mbox{]} eval\+\_\+ctx=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjinja2_1_1nodes_1_1UnaryExpr_ae5a8192ccc933ab9b543e565098e49c1}\label{classjinja2_1_1nodes_1_1UnaryExpr_ae5a8192ccc933ab9b543e565098e49c1}} 
+tuple {\bfseries fields} = (\char`\"{}node\char`\"{},)
+\item 
+\mbox{\Hypertarget{classjinja2_1_1nodes_1_1UnaryExpr_ad8f1fca6595fc2413c3bc0aa0618a562}\label{classjinja2_1_1nodes_1_1UnaryExpr_ad8f1fca6595fc2413c3bc0aa0618a562}} 
+bool {\bfseries abstract} = True
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Baseclass for all unary expressions.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classjinja2_1_1nodes_1_1UnaryExpr_a6998d4b17cc9a53a955722c0b92aca63}\label{classjinja2_1_1nodes_1_1UnaryExpr_a6998d4b17cc9a53a955722c0b92aca63}} 
+\index{jinja2.nodes.UnaryExpr@{jinja2.nodes.UnaryExpr}!as\_const@{as\_const}}
+\index{as\_const@{as\_const}!jinja2.nodes.UnaryExpr@{jinja2.nodes.UnaryExpr}}
+\doxysubsubsection{\texorpdfstring{as\_const()}{as\_const()}}
+{\footnotesize\ttfamily  t.\+Any jinja2.\+nodes.\+Unary\+Expr.\+as\+\_\+const (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1EvalContext}{Eval\+Context}}\mbox{]} }]{eval\+\_\+ctx = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the value of the expression as constant or raise
+:exc:`Impossible` if this was not possible.
+
+An :class:`EvalContext` can be provided, if none is given
+a default context is created which requires the nodes to have
+an attached environment.
+
+.. versionchanged:: 2.4
+   the `eval_ctx` parameter was added.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1nodes_1_1Expr_afc3c83d61cdf1d87d4a3f54637efb194}{jinja2.\+nodes.\+Expr}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jinja2/nodes.\+py\end{DoxyCompactItemize}

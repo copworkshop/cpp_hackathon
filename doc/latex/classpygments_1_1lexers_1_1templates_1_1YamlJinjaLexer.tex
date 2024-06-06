@@ -1,0 +1,80 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1YamlJinjaLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Yaml\+Jinja\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1YamlJinjaLexer}\index{pygments.lexers.templates.YamlJinjaLexer@{pygments.lexers.templates.YamlJinjaLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Yaml\+Jinja\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Yaml\+Jinja\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1YamlJinjaLexer_a6eb7290785b1c9e0503aa4bff1ce4fe4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1YamlJinjaLexer_a882d84d6b9a3f87aa5ca198f42869791}\label{classpygments_1_1lexers_1_1templates_1_1YamlJinjaLexer_a882d84d6b9a3f87aa5ca198f42869791}} 
+string {\bfseries name} = \textquotesingle{}YAML+Jinja\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1YamlJinjaLexer_a93d46e556c3b7046ca6db1dc02ba0c2a}\label{classpygments_1_1lexers_1_1templates_1_1YamlJinjaLexer_a93d46e556c3b7046ca6db1dc02ba0c2a}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}yaml+jinja\textquotesingle{}, \textquotesingle{}salt\textquotesingle{}, \textquotesingle{}sls\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1YamlJinjaLexer_a77997d3c5877d331879603e17fb37aec}\label{classpygments_1_1lexers_1_1templates_1_1YamlJinjaLexer_a77997d3c5877d331879603e17fb37aec}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.sls\textquotesingle{}, \textquotesingle{}$\ast$.yaml.\+j2\textquotesingle{}, \textquotesingle{}$\ast$.yml.\+j2\textquotesingle{}, \textquotesingle{}$\ast$.yaml.\+jinja2\textquotesingle{}, \textquotesingle{}$\ast$.yml.\+jinja2\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1YamlJinjaLexer_a559bce3b38c182c1fb53eb2e394ae74e}\label{classpygments_1_1lexers_1_1templates_1_1YamlJinjaLexer_a559bce3b38c182c1fb53eb2e394ae74e}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/yaml+jinja\textquotesingle{}, \textquotesingle{}text/x-\/sls\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1YamlJinjaLexer_a0f61cce79c1c252fdaeb2b9d37dd5940}\label{classpygments_1_1lexers_1_1templates_1_1YamlJinjaLexer_a0f61cce79c1c252fdaeb2b9d37dd5940}} 
+string {\bfseries url} = \textquotesingle{}https\+://jinja.\+palletsprojects.\+com\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1YamlJinjaLexer_aa6afced66681a653827bb9232c2db8f2}\label{classpygments_1_1lexers_1_1templates_1_1YamlJinjaLexer_aa6afced66681a653827bb9232c2db8f2}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+0\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Subclass of the `DjangoLexer` that highlights unlexed data with the
+`YamlLexer`.
+
+Commonly used in Saltstack salt states.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1YamlJinjaLexer_a6eb7290785b1c9e0503aa4bff1ce4fe4}\label{classpygments_1_1lexers_1_1templates_1_1YamlJinjaLexer_a6eb7290785b1c9e0503aa4bff1ce4fe4}} 
+\index{pygments.lexers.templates.YamlJinjaLexer@{pygments.lexers.templates.YamlJinjaLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.templates.YamlJinjaLexer@{pygments.lexers.templates.YamlJinjaLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Yaml\+Jinja\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

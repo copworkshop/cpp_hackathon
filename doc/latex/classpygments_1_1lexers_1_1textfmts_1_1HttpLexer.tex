@@ -1,0 +1,134 @@
+\hypertarget{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer}{}\doxysection{pygments.\+lexers.\+textfmts.\+Http\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer}\index{pygments.lexers.textfmts.HttpLexer@{pygments.lexers.textfmts.HttpLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+textfmts.\+Http\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+textfmts.\+Http\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_a4b84b114d6d8ba54f0c676b37a3025ea}{get\+\_\+tokens\+\_\+unprocessed}} (self, text, stack=(\textquotesingle{}root\textquotesingle{},))
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_ad536c500f9053fa995e2fbdf70dc54ca}\label{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_ad536c500f9053fa995e2fbdf70dc54ca}} 
+def {\bfseries header\+\_\+callback} (self, match)
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_aace7d240a74ee34eefcc1151cb2e7dc9}\label{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_aace7d240a74ee34eefcc1151cb2e7dc9}} 
+def {\bfseries continuous\+\_\+header\+\_\+callback} (self, match)
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_a8d5b3a438553b3b2266072075709ace9}\label{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_a8d5b3a438553b3b2266072075709ace9}} 
+def {\bfseries content\+\_\+callback} (self, match)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_a05d5a4948ed6dcce5545f3e1f1425c60}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_a0e3fa53de4bdfb9612b23e6a71ed2bb3}\label{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_a0e3fa53de4bdfb9612b23e6a71ed2bb3}} 
+{\bfseries content\+\_\+type}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_a783084f8c207c5c3bb3fa5cecda691be}\label{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_a783084f8c207c5c3bb3fa5cecda691be}} 
+string {\bfseries name} = \textquotesingle{}HTTP\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_afe0ef0aa3650aa12659d154260c8a12b}\label{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_afe0ef0aa3650aa12659d154260c8a12b}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}http\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_aba58a2690d1afc816e1aa1f740368bb9}\label{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_aba58a2690d1afc816e1aa1f740368bb9}} 
+string {\bfseries url} = \textquotesingle{}https\+://httpwg.\+org/specs\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_a1b19b0a5c8725678104147c8c3340803}\label{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_a1b19b0a5c8725678104147c8c3340803}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+5\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_a2434b791247bb91bf7b44f4f2b5afd8e}\label{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_a2434b791247bb91bf7b44f4f2b5afd8e}} 
+{\bfseries flags} = re.\+DOTALL
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for HTTP sessions.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_a05d5a4948ed6dcce5545f3e1f1425c60}\label{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_a05d5a4948ed6dcce5545f3e1f1425c60}} 
+\index{pygments.lexers.textfmts.HttpLexer@{pygments.lexers.textfmts.HttpLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.textfmts.HttpLexer@{pygments.lexers.textfmts.HttpLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+textfmts.\+Http\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_a4b84b114d6d8ba54f0c676b37a3025ea}\label{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_a4b84b114d6d8ba54f0c676b37a3025ea}} 
+\index{pygments.lexers.textfmts.HttpLexer@{pygments.lexers.textfmts.HttpLexer}!get\_tokens\_unprocessed@{get\_tokens\_unprocessed}}
+\index{get\_tokens\_unprocessed@{get\_tokens\_unprocessed}!pygments.lexers.textfmts.HttpLexer@{pygments.lexers.textfmts.HttpLexer}}
+\doxysubsubsection{\texorpdfstring{get\_tokens\_unprocessed()}{get\_tokens\_unprocessed()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+textfmts.\+Http\+Lexer.\+get\+\_\+tokens\+\_\+unprocessed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text,  }\item[{}]{stack = {\ttfamily (\textquotesingle{}root\textquotesingle{},)} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reset the content-type state.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1RegexLexer_aa8821b6342bbfe77221063e270ab3371}{pygments.\+lexer.\+Regex\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_a14d9c1a2496223bcbfcfeadff68bacda}\label{classpygments_1_1lexers_1_1textfmts_1_1HttpLexer_a14d9c1a2496223bcbfcfeadff68bacda}} 
+\index{pygments.lexers.textfmts.HttpLexer@{pygments.lexers.textfmts.HttpLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.textfmts.HttpLexer@{pygments.lexers.textfmts.HttpLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+textfmts.\+Http\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'([a-\/zA-\/Z][-\/\_a-\/zA-\/Z]+)( +)([\string^ ]+)( +)'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'(HTTP)(/)(1\(\backslash\).[01]|2(?:\(\backslash\).0)?|3)(\(\backslash\)r?\(\backslash\)n|\(\backslash\)Z)'},}
+\DoxyCodeLine{             bygroups(Name.Function, Text, Name.Namespace, Text,}
+\DoxyCodeLine{                      Keyword.Reserved, Operator, Number, Text),}
+\DoxyCodeLine{             \textcolor{stringliteral}{'headers'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(HTTP)(/)(1\(\backslash\).[01]|2(?:\(\backslash\).0)?|3)( +)(\(\backslash\)d\{3\})(?:( +)([\string^\(\backslash\)r\(\backslash\)n]*))?(\(\backslash\)r?\(\backslash\)n|\(\backslash\)Z)'},}
+\DoxyCodeLine{             bygroups(Keyword.Reserved, Operator, Number, Text, Number, Text,}
+\DoxyCodeLine{                      Name.Exception, Text),}
+\DoxyCodeLine{             \textcolor{stringliteral}{'headers'}),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'headers'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'([\string^\(\backslash\)s:]+)( *)(:)( *)([\string^\(\backslash\)r\(\backslash\)n]*)(\(\backslash\)r?\(\backslash\)n|\(\backslash\)Z)'}, header\_callback),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'([\(\backslash\)t ]+)([\string^\(\backslash\)r\(\backslash\)n]+)(\(\backslash\)r?\(\backslash\)n|\(\backslash\)Z)'}, continuous\_header\_callback),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)r?\(\backslash\)n'}, Text, \textcolor{stringliteral}{'content'})}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'content'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'.+'}, content\_callback)}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/textfmts.\+py\end{DoxyCompactItemize}

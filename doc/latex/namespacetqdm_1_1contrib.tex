@@ -1,0 +1,91 @@
+\hypertarget{namespacetqdm_1_1contrib}{}\doxysection{tqdm.\+contrib Namespace Reference}
+\label{namespacetqdm_1_1contrib}\index{tqdm.contrib@{tqdm.contrib}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacetqdm_1_1contrib_1_1bells}{bells}}
+\item 
+ \mbox{\hyperlink{namespacetqdm_1_1contrib_1_1concurrent}{concurrent}}
+\item 
+ \mbox{\hyperlink{namespacetqdm_1_1contrib_1_1discord}{discord}}
+\item 
+ \mbox{\hyperlink{namespacetqdm_1_1contrib_1_1itertools}{itertools}}
+\item 
+ \mbox{\hyperlink{namespacetqdm_1_1contrib_1_1logging}{logging}}
+\item 
+ \mbox{\hyperlink{namespacetqdm_1_1contrib_1_1slack}{slack}}
+\item 
+ \mbox{\hyperlink{namespacetqdm_1_1contrib_1_1telegram}{telegram}}
+\item 
+ \mbox{\hyperlink{namespacetqdm_1_1contrib_1_1utils__worker}{utils\+\_\+worker}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1contrib_1_1DummyTqdmFile}{Dummy\+Tqdm\+File}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacetqdm_1_1contrib_a2cb80d977805ad43a48d1918e4fd4102}{builtin\+\_\+iterable}} (func)
+\item 
+def \mbox{\hyperlink{namespacetqdm_1_1contrib_a89bc0baa712c1bef053d5c0200bb9a26}{tenumerate}} (iterable, start=0, total=None, tqdm\+\_\+class=tqdm\+\_\+auto, $\ast$$\ast$tqdm\+\_\+kwargs)
+\item 
+def \mbox{\hyperlink{namespacetqdm_1_1contrib_a3181a54a831702b7f22c3f4bad27a315}{tzip}} (iter1, $\ast$iter2plus, $\ast$$\ast$tqdm\+\_\+kwargs)
+\item 
+def \mbox{\hyperlink{namespacetqdm_1_1contrib_aa3df3ac8a172e59c6fe14c7b736afcab}{tmap}} (function, $\ast$sequences, $\ast$$\ast$tqdm\+\_\+kwargs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Thin wrappers around common functions.
+
+Subpackages contain potentially unstable extensions.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetqdm_1_1contrib_a2cb80d977805ad43a48d1918e4fd4102}\label{namespacetqdm_1_1contrib_a2cb80d977805ad43a48d1918e4fd4102}} 
+\index{tqdm.contrib@{tqdm.contrib}!builtin\_iterable@{builtin\_iterable}}
+\index{builtin\_iterable@{builtin\_iterable}!tqdm.contrib@{tqdm.contrib}}
+\doxysubsubsection{\texorpdfstring{builtin\_iterable()}{builtin\_iterable()}}
+{\footnotesize\ttfamily def tqdm.\+contrib.\+builtin\+\_\+iterable (\begin{DoxyParamCaption}\item[{}]{func }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns `func`\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacetqdm_1_1contrib_a89bc0baa712c1bef053d5c0200bb9a26}\label{namespacetqdm_1_1contrib_a89bc0baa712c1bef053d5c0200bb9a26}} 
+\index{tqdm.contrib@{tqdm.contrib}!tenumerate@{tenumerate}}
+\index{tenumerate@{tenumerate}!tqdm.contrib@{tqdm.contrib}}
+\doxysubsubsection{\texorpdfstring{tenumerate()}{tenumerate()}}
+{\footnotesize\ttfamily def tqdm.\+contrib.\+tenumerate (\begin{DoxyParamCaption}\item[{}]{iterable,  }\item[{}]{start = {\ttfamily 0},  }\item[{}]{total = {\ttfamily None},  }\item[{}]{tqdm\+\_\+class = {\ttfamily tqdm\+\_\+auto},  }\item[{$\ast$$\ast$}]{tqdm\+\_\+kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Equivalent of `numpy.ndenumerate` or builtin `enumerate`.
+
+Parameters
+----------
+tqdm_class  : [default: tqdm.auto.tqdm].
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacetqdm_1_1contrib_aa3df3ac8a172e59c6fe14c7b736afcab}\label{namespacetqdm_1_1contrib_aa3df3ac8a172e59c6fe14c7b736afcab}} 
+\index{tqdm.contrib@{tqdm.contrib}!tmap@{tmap}}
+\index{tmap@{tmap}!tqdm.contrib@{tqdm.contrib}}
+\doxysubsubsection{\texorpdfstring{tmap()}{tmap()}}
+{\footnotesize\ttfamily def tqdm.\+contrib.\+tmap (\begin{DoxyParamCaption}\item[{}]{function,  }\item[{$\ast$}]{sequences,  }\item[{$\ast$$\ast$}]{tqdm\+\_\+kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Equivalent of builtin `map`.
+
+Parameters
+----------
+tqdm_class  : [default: tqdm.auto.tqdm].
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacetqdm_1_1contrib_a3181a54a831702b7f22c3f4bad27a315}\label{namespacetqdm_1_1contrib_a3181a54a831702b7f22c3f4bad27a315}} 
+\index{tqdm.contrib@{tqdm.contrib}!tzip@{tzip}}
+\index{tzip@{tzip}!tqdm.contrib@{tqdm.contrib}}
+\doxysubsubsection{\texorpdfstring{tzip()}{tzip()}}
+{\footnotesize\ttfamily def tqdm.\+contrib.\+tzip (\begin{DoxyParamCaption}\item[{}]{iter1,  }\item[{$\ast$}]{iter2plus,  }\item[{$\ast$$\ast$}]{tqdm\+\_\+kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Equivalent of builtin `zip`.
+
+Parameters
+----------
+tqdm_class  : [default: tqdm.auto.tqdm].
+\end{DoxyVerb}
+ 

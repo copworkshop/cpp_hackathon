@@ -1,0 +1,114 @@
+\hypertarget{classpygments_1_1lexers_1_1textfmts_1_1NotmuchLexer}{}\doxysection{pygments.\+lexers.\+textfmts.\+Notmuch\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1textfmts_1_1NotmuchLexer}\index{pygments.lexers.textfmts.NotmuchLexer@{pygments.lexers.textfmts.NotmuchLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+textfmts.\+Notmuch\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+textfmts.\+Notmuch\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1textfmts_1_1NotmuchLexer_aa5a6d486cc60832033d633d62451286d}{analyse\+\_\+text}} (text)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1textfmts_1_1NotmuchLexer_a1b7eee04628b421cb5dffacb75cce78a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1NotmuchLexer_a310d2cb0d3c834f6a7035d326e94539f}\label{classpygments_1_1lexers_1_1textfmts_1_1NotmuchLexer_a310d2cb0d3c834f6a7035d326e94539f}} 
+{\bfseries body\+\_\+lexer}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1NotmuchLexer_a4be97f8a124eb6d53eb86aab0810e3c3}\label{classpygments_1_1lexers_1_1textfmts_1_1NotmuchLexer_a4be97f8a124eb6d53eb86aab0810e3c3}} 
+string {\bfseries name} = \textquotesingle{}Notmuch\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1NotmuchLexer_a1b2f2704b6ce91d63d52fee1e6a87cab}\label{classpygments_1_1lexers_1_1textfmts_1_1NotmuchLexer_a1b2f2704b6ce91d63d52fee1e6a87cab}} 
+string {\bfseries url} = \textquotesingle{}https\+://notmuchmail.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1NotmuchLexer_a6264fc9d9a828c5cbe9843e16549d44b}\label{classpygments_1_1lexers_1_1textfmts_1_1NotmuchLexer_a6264fc9d9a828c5cbe9843e16549d44b}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}notmuch\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1NotmuchLexer_a45b980c2ed59c125215f42a6f40934ea}\label{classpygments_1_1lexers_1_1textfmts_1_1NotmuchLexer_a45b980c2ed59c125215f42a6f40934ea}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+5\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1NotmuchLexer_ae38cdbdd3d360fbe068d5b21378df430}\label{classpygments_1_1lexers_1_1textfmts_1_1NotmuchLexer_ae38cdbdd3d360fbe068d5b21378df430}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For Notmuch email text format.
+
+Additional options accepted:
+
+`body_lexer`
+    If given, highlight the contents of the message body with the specified
+    lexer, else guess it according to the body content (default: ``None``).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1NotmuchLexer_a1b7eee04628b421cb5dffacb75cce78a}\label{classpygments_1_1lexers_1_1textfmts_1_1NotmuchLexer_a1b7eee04628b421cb5dffacb75cce78a}} 
+\index{pygments.lexers.textfmts.NotmuchLexer@{pygments.lexers.textfmts.NotmuchLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.textfmts.NotmuchLexer@{pygments.lexers.textfmts.NotmuchLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+textfmts.\+Notmuch\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textfmts_1_1NotmuchLexer_aa5a6d486cc60832033d633d62451286d}\label{classpygments_1_1lexers_1_1textfmts_1_1NotmuchLexer_aa5a6d486cc60832033d633d62451286d}} 
+\index{pygments.lexers.textfmts.NotmuchLexer@{pygments.lexers.textfmts.NotmuchLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.textfmts.NotmuchLexer@{pygments.lexers.textfmts.NotmuchLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+textfmts.\+Notmuch\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/textfmts.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+\hypertarget{classconans_1_1client_1_1profile__loader_1_1ProfileParser}{}\doxysection{conans.\+client.\+profile\+\_\+loader.\+Profile\+Parser Class Reference}
+\label{classconans_1_1client_1_1profile__loader_1_1ProfileParser}\index{conans.client.profile\_loader.ProfileParser@{conans.client.profile\_loader.ProfileParser}}
+
+
+Inheritance diagram for conans.\+client.\+profile\+\_\+loader.\+Profile\+Parser\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+profile\+\_\+loader.\+Profile\+Parser\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1profile__loader_1_1ProfileParser_a2212a9bd300b206bfd6a37fbf26e54e7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, text)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1profile__loader_1_1ProfileParser_a9f69e31bb1a74a38c9e5d881ed687699}\label{classconans_1_1client_1_1profile__loader_1_1ProfileParser_a9f69e31bb1a74a38c9e5d881ed687699}} 
+def {\bfseries apply\+\_\+vars} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1profile__loader_1_1ProfileParser_ad61d050fd5d09049fe868eac027d47db}\label{classconans_1_1client_1_1profile__loader_1_1ProfileParser_ad61d050fd5d09049fe868eac027d47db}} 
+def {\bfseries get\+\_\+includes} (self)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1profile__loader_1_1ProfileParser_a8abacc24057270ec71bc5a65df0a8c52}{update\+\_\+vars}} (self, included\+\_\+vars)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1profile__loader_1_1ProfileParser_a0f3dd59f52d0c5fb4e4a49212063582e}\label{classconans_1_1client_1_1profile__loader_1_1ProfileParser_a0f3dd59f52d0c5fb4e4a49212063582e}} 
+{\bfseries vars}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1profile__loader_1_1ProfileParser_ac7140f718a0ba13b22d65c75e4831f82}\label{classconans_1_1client_1_1profile__loader_1_1ProfileParser_ac7140f718a0ba13b22d65c75e4831f82}} 
+{\bfseries includes}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1profile__loader_1_1ProfileParser_a7627e79793d61edc537ed05ba91dc0d8}\label{classconans_1_1client_1_1profile__loader_1_1ProfileParser_a7627e79793d61edc537ed05ba91dc0d8}} 
+{\bfseries profile\+\_\+text}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1profile__loader_1_1ProfileParser_a2212a9bd300b206bfd6a37fbf26e54e7}\label{classconans_1_1client_1_1profile__loader_1_1ProfileParser_a2212a9bd300b206bfd6a37fbf26e54e7}} 
+\index{conans.client.profile\_loader.ProfileParser@{conans.client.profile\_loader.ProfileParser}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!conans.client.profile\_loader.ProfileParser@{conans.client.profile\_loader.ProfileParser}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def conans.\+client.\+profile\+\_\+loader.\+Profile\+Parser.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} divides the text in 3 items:
+- self.vars: Dictionary with variable=value declarations
+- self.includes: List of other profiles to include
+- self.profile_text: the remaining, containing settings, options, env, etc
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1profile__loader_1_1ProfileParser_a8abacc24057270ec71bc5a65df0a8c52}\label{classconans_1_1client_1_1profile__loader_1_1ProfileParser_a8abacc24057270ec71bc5a65df0a8c52}} 
+\index{conans.client.profile\_loader.ProfileParser@{conans.client.profile\_loader.ProfileParser}!update\_vars@{update\_vars}}
+\index{update\_vars@{update\_vars}!conans.client.profile\_loader.ProfileParser@{conans.client.profile\_loader.ProfileParser}}
+\doxysubsubsection{\texorpdfstring{update\_vars()}{update\_vars()}}
+{\footnotesize\ttfamily def conans.\+client.\+profile\+\_\+loader.\+Profile\+Parser.\+update\+\_\+vars (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{included\+\_\+vars }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} update the variables dict with new ones from included profiles,
+but keeping (higher priority) existing values\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/profile\+\_\+loader.\+py\end{DoxyCompactItemize}

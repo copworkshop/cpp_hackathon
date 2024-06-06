@@ -1,0 +1,63 @@
+\hypertarget{classpygments_1_1lexers_1_1gcodelexer_1_1GcodeLexer}{}\doxysection{pygments.\+lexers.\+gcodelexer.\+Gcode\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1gcodelexer_1_1GcodeLexer}\index{pygments.lexers.gcodelexer.GcodeLexer@{pygments.lexers.gcodelexer.GcodeLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+gcodelexer.\+Gcode\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+gcodelexer.\+Gcode\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1gcodelexer_1_1GcodeLexer_ad1773db0f51922d73d148c0d4d64d1b4}\label{classpygments_1_1lexers_1_1gcodelexer_1_1GcodeLexer_ad1773db0f51922d73d148c0d4d64d1b4}} 
+string {\bfseries name} = \textquotesingle{}g-\/code\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1gcodelexer_1_1GcodeLexer_a12b7a556520c2220f553fd7cac3264d8}\label{classpygments_1_1lexers_1_1gcodelexer_1_1GcodeLexer_a12b7a556520c2220f553fd7cac3264d8}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}gcode\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1gcodelexer_1_1GcodeLexer_acf9cc0e4a5d1ef49a8932d61618785f0}\label{classpygments_1_1lexers_1_1gcodelexer_1_1GcodeLexer_acf9cc0e4a5d1ef49a8932d61618785f0}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.gcode\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1gcodelexer_1_1GcodeLexer_a37f5e749cb3d465e9aec8326df4903d2}\label{classpygments_1_1lexers_1_1gcodelexer_1_1GcodeLexer_a37f5e749cb3d465e9aec8326df4903d2}} 
+string {\bfseries url} = \textquotesingle{}https\+://en.\+wikipedia.\+org/wiki/G-\/code\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1gcodelexer_1_1GcodeLexer_a794097fead80b6e1aa373ac2ae9dcb4f}\label{classpygments_1_1lexers_1_1gcodelexer_1_1GcodeLexer_a794097fead80b6e1aa373ac2ae9dcb4f}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+9\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For gcode source code.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1gcodelexer_1_1GcodeLexer_a3b8829cb3db5489c3d8a89ff3b4f1494}\label{classpygments_1_1lexers_1_1gcodelexer_1_1GcodeLexer_a3b8829cb3db5489c3d8a89ff3b4f1494}} 
+\index{pygments.lexers.gcodelexer.GcodeLexer@{pygments.lexers.gcodelexer.GcodeLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.gcodelexer.GcodeLexer@{pygments.lexers.gcodelexer.GcodeLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+gcodelexer.\+Gcode\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r';.*\(\backslash\)n'}, Comment),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^[gmGM]\(\backslash\)d\{1,4\}\(\backslash\)s'}, Name.Builtin),  \textcolor{comment}{\# M or G commands}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'([\string^gGmM])([+-\/]?\(\backslash\)d*[.]?\(\backslash\)d+)'}, bygroups(Keyword, Number)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s'}, Text.Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'.*\(\backslash\)n'}, Text),}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/gcodelexer.\+py\end{DoxyCompactItemize}

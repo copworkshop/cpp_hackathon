@@ -1,0 +1,75 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1MakoXmlLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Mako\+Xml\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1MakoXmlLexer}\index{pygments.lexers.templates.MakoXmlLexer@{pygments.lexers.templates.MakoXmlLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Mako\+Xml\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Mako\+Xml\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1MakoXmlLexer_a95614fd95cd1edd7a2d0d41e1dce0658}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MakoXmlLexer_ac5ab5a38e99f212d9680114b949a298e}\label{classpygments_1_1lexers_1_1templates_1_1MakoXmlLexer_ac5ab5a38e99f212d9680114b949a298e}} 
+string {\bfseries name} = \textquotesingle{}XML+Mako\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MakoXmlLexer_ab4f36019a1829565837578fc3c5d15cd}\label{classpygments_1_1lexers_1_1templates_1_1MakoXmlLexer_ab4f36019a1829565837578fc3c5d15cd}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}xml+mako\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MakoXmlLexer_a06156d8495e34c6944f610739ba63e26}\label{classpygments_1_1lexers_1_1templates_1_1MakoXmlLexer_a06156d8495e34c6944f610739ba63e26}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}application/xml+mako\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MakoXmlLexer_afdeed6d6cfe38d06908bb5ba3b3e3e7e}\label{classpygments_1_1lexers_1_1templates_1_1MakoXmlLexer_afdeed6d6cfe38d06908bb5ba3b3e3e7e}} 
+string {\bfseries url} = \textquotesingle{}http\+://www.\+makotemplates.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MakoXmlLexer_a6ef9b72b878a44b6e8c3126d063030ee}\label{classpygments_1_1lexers_1_1templates_1_1MakoXmlLexer_a6ef9b72b878a44b6e8c3126d063030ee}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}0.\+7\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Subclass of the `MakoLexer` that highlights unlexed data
+with the `XmlLexer`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MakoXmlLexer_a95614fd95cd1edd7a2d0d41e1dce0658}\label{classpygments_1_1lexers_1_1templates_1_1MakoXmlLexer_a95614fd95cd1edd7a2d0d41e1dce0658}} 
+\index{pygments.lexers.templates.MakoXmlLexer@{pygments.lexers.templates.MakoXmlLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.templates.MakoXmlLexer@{pygments.lexers.templates.MakoXmlLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Mako\+Xml\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

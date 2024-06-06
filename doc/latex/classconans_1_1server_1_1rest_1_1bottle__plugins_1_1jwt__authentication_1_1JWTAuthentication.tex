@@ -1,0 +1,96 @@
+\hypertarget{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication}{}\doxysection{conans.\+server.\+rest.\+bottle\+\_\+plugins.\+jwt\+\_\+authentication.\+JWTAuthentication Class Reference}
+\label{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication}\index{conans.server.rest.bottle\_plugins.jwt\_authentication.JWTAuthentication@{conans.server.rest.bottle\_plugins.jwt\_authentication.JWTAuthentication}}
+
+
+Inheritance diagram for conans.\+server.\+rest.\+bottle\+\_\+plugins.\+jwt\+\_\+authentication.\+JWTAuthentication\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+server.\+rest.\+bottle\+\_\+plugins.\+jwt\+\_\+authentication.\+JWTAuthentication\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication_a4a258a2c079fe0f5aa16e5facc685fde}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, manager, keyword=\textquotesingle{}auth\+\_\+user\textquotesingle{})
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication_ab288a1afa3649ffcbf5b7020fe6cc45a}{get\+\_\+authorization\+\_\+type}} (self)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication_ac38ee527d139f2b781b2e32e53fc72c9}{parse\+\_\+authorization\+\_\+value}} (self, header\+\_\+value)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication_a88d7c5a7bf2c51c70839399a05b67be0}{get\+\_\+invalid\+\_\+header\+\_\+response}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication_aa2c8b28d2c48c93f9c4f0236e8273e0f}\label{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication_aa2c8b28d2c48c93f9c4f0236e8273e0f}} 
+{\bfseries manager}
+\item 
+\mbox{\Hypertarget{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication_a18d173f87d3b70e088ec3db4926e548a}\label{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication_a18d173f87d3b70e088ec3db4926e548a}} 
+{\bfseries keyword}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication_aec2f93dd674293deb3286e742dd7bd6e}\label{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication_aec2f93dd674293deb3286e742dd7bd6e}} 
+string {\bfseries name} = \textquotesingle{}jwtauthenticationbottleplugin\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication_a9ae6800e00f712004169f564f529253c}\label{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication_a9ae6800e00f712004169f564f529253c}} 
+int {\bfseries api} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} The HttpBasicAuthenticationBottlePlugin plugin requires Http Basic Authentication \end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication_a4a258a2c079fe0f5aa16e5facc685fde}\label{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication_a4a258a2c079fe0f5aa16e5facc685fde}} 
+\index{conans.server.rest.bottle\_plugins.jwt\_authentication.JWTAuthentication@{conans.server.rest.bottle\_plugins.jwt\_authentication.JWTAuthentication}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!conans.server.rest.bottle\_plugins.jwt\_authentication.JWTAuthentication@{conans.server.rest.bottle\_plugins.jwt\_authentication.JWTAuthentication}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def conans.\+server.\+rest.\+bottle\+\_\+plugins.\+jwt\+\_\+authentication.\+JWTAuthentication.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{manager,  }\item[{}]{keyword = {\ttfamily \textquotesingle{}auth\+\_\+user\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Manager should be a JWTCredentialsManager \end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication_ab288a1afa3649ffcbf5b7020fe6cc45a}\label{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication_ab288a1afa3649ffcbf5b7020fe6cc45a}} 
+\index{conans.server.rest.bottle\_plugins.jwt\_authentication.JWTAuthentication@{conans.server.rest.bottle\_plugins.jwt\_authentication.JWTAuthentication}!get\_authorization\_type@{get\_authorization\_type}}
+\index{get\_authorization\_type@{get\_authorization\_type}!conans.server.rest.bottle\_plugins.jwt\_authentication.JWTAuthentication@{conans.server.rest.bottle\_plugins.jwt\_authentication.JWTAuthentication}}
+\doxysubsubsection{\texorpdfstring{get\_authorization\_type()}{get\_authorization\_type()}}
+{\footnotesize\ttfamily def conans.\+server.\+rest.\+bottle\+\_\+plugins.\+jwt\+\_\+authentication.\+JWTAuthentication.\+get\+\_\+authorization\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}String in Authorization header for type\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1authorization__header_1_1AuthorizationHeader_ab06ff7921a9e22416bd1f566856fed6a}{conans.\+server.\+rest.\+bottle\+\_\+plugins.\+authorization\+\_\+header.\+Authorization\+Header}}.
+
+\mbox{\Hypertarget{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication_a88d7c5a7bf2c51c70839399a05b67be0}\label{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication_a88d7c5a7bf2c51c70839399a05b67be0}} 
+\index{conans.server.rest.bottle\_plugins.jwt\_authentication.JWTAuthentication@{conans.server.rest.bottle\_plugins.jwt\_authentication.JWTAuthentication}!get\_invalid\_header\_response@{get\_invalid\_header\_response}}
+\index{get\_invalid\_header\_response@{get\_invalid\_header\_response}!conans.server.rest.bottle\_plugins.jwt\_authentication.JWTAuthentication@{conans.server.rest.bottle\_plugins.jwt\_authentication.JWTAuthentication}}
+\doxysubsubsection{\texorpdfstring{get\_invalid\_header\_response()}{get\_invalid\_header\_response()}}
+{\footnotesize\ttfamily def conans.\+server.\+rest.\+bottle\+\_\+plugins.\+jwt\+\_\+authentication.\+JWTAuthentication.\+get\+\_\+invalid\+\_\+header\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A response from a malformed header. Includes WWW-Authenticate for
+ask browser to request user and password\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1authorization__header_1_1AuthorizationHeader_a829de743fb3f05f360cadd60e48bcc60}{conans.\+server.\+rest.\+bottle\+\_\+plugins.\+authorization\+\_\+header.\+Authorization\+Header}}.
+
+\mbox{\Hypertarget{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication_ac38ee527d139f2b781b2e32e53fc72c9}\label{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1jwt__authentication_1_1JWTAuthentication_ac38ee527d139f2b781b2e32e53fc72c9}} 
+\index{conans.server.rest.bottle\_plugins.jwt\_authentication.JWTAuthentication@{conans.server.rest.bottle\_plugins.jwt\_authentication.JWTAuthentication}!parse\_authorization\_value@{parse\_authorization\_value}}
+\index{parse\_authorization\_value@{parse\_authorization\_value}!conans.server.rest.bottle\_plugins.jwt\_authentication.JWTAuthentication@{conans.server.rest.bottle\_plugins.jwt\_authentication.JWTAuthentication}}
+\doxysubsubsection{\texorpdfstring{parse\_authorization\_value()}{parse\_authorization\_value()}}
+{\footnotesize\ttfamily def conans.\+server.\+rest.\+bottle\+\_\+plugins.\+jwt\+\_\+authentication.\+JWTAuthentication.\+parse\+\_\+authorization\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{header\+\_\+value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse header_value and return kwargs to apply bottle
+method parameters\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconans_1_1server_1_1rest_1_1bottle__plugins_1_1authorization__header_1_1AuthorizationHeader_af9b18d7c0062e00e9e15168ce40bd835}{conans.\+server.\+rest.\+bottle\+\_\+plugins.\+authorization\+\_\+header.\+Authorization\+Header}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/server/rest/bottle\+\_\+plugins/jwt\+\_\+authentication.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,72 @@
+\hypertarget{classpygments_1_1lexers_1_1email_1_1EmailHeaderLexer}{}\doxysection{pygments.\+lexers.\+email.\+Email\+Header\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1email_1_1EmailHeaderLexer}\index{pygments.lexers.email.EmailHeaderLexer@{pygments.lexers.email.EmailHeaderLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+email.\+Email\+Header\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+email.\+Email\+Header\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1email_1_1EmailHeaderLexer_a60967a707237d62fbcc685aac6d24e20}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1email_1_1EmailHeaderLexer_a3b11db661d85887bea298075ec806150}\label{classpygments_1_1lexers_1_1email_1_1EmailHeaderLexer_a3b11db661d85887bea298075ec806150}} 
+def {\bfseries get\+\_\+x\+\_\+header\+\_\+tokens} (self, match)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1email_1_1EmailHeaderLexer_adeac01c3b6202733668e09a7de9577d1}\label{classpygments_1_1lexers_1_1email_1_1EmailHeaderLexer_adeac01c3b6202733668e09a7de9577d1}} 
+{\bfseries highlight\+\_\+x}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1email_1_1EmailHeaderLexer_ac7b99ed118288149e8578608cd147570}\label{classpygments_1_1lexers_1_1email_1_1EmailHeaderLexer_ac7b99ed118288149e8578608cd147570}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Sub-lexer for raw E-mail. This lexer only process header part of e-mail.
+
+.. versionadded:: 2.5
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1email_1_1EmailHeaderLexer_a60967a707237d62fbcc685aac6d24e20}\label{classpygments_1_1lexers_1_1email_1_1EmailHeaderLexer_a60967a707237d62fbcc685aac6d24e20}} 
+\index{pygments.lexers.email.EmailHeaderLexer@{pygments.lexers.email.EmailHeaderLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.email.EmailHeaderLexer@{pygments.lexers.email.EmailHeaderLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+email.\+Email\+Header\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/email.\+py\end{DoxyCompactItemize}

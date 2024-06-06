@@ -1,0 +1,173 @@
+\hypertarget{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer}{}\doxysection{pygments.\+lexers.\+lean.\+Lean4\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer}\index{pygments.lexers.lean.Lean4Lexer@{pygments.lexers.lean.Lean4Lexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+lean.\+Lean4\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+lean.\+Lean4\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_a8b978fff20b40c35ed6e62f227153267}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_aa8fc1bf7a7ad91a78f8ab339710e459f}\label{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_aa8fc1bf7a7ad91a78f8ab339710e459f}} 
+string {\bfseries name} = \textquotesingle{}Lean4\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_af230cc3fb4aa79751bdfde057a78a797}\label{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_af230cc3fb4aa79751bdfde057a78a797}} 
+string {\bfseries url} = \textquotesingle{}https\+://github.\+com/leanprover/lean4\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_a6fcbed16e42b5e0428c6199faeb03654}\label{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_a6fcbed16e42b5e0428c6199faeb03654}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}lean4\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_af75dfee97e90f8a2a784ced0b0ac0039}\label{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_af75dfee97e90f8a2a784ced0b0ac0039}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.lean\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_af4503c66a177a185cf71b5fb0593c4f5}\label{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_af4503c66a177a185cf71b5fb0593c4f5}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/lean4\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_a261091b2abe5ca1eb0a095226d9ce27c}\label{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_a261091b2abe5ca1eb0a095226d9ce27c}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+18\textquotesingle{}
+\item 
+tuple {\bfseries keywords1}
+\item 
+tuple {\bfseries keywords2}
+\item 
+tuple {\bfseries keywords3}
+\item 
+tuple {\bfseries operators}
+\item 
+tuple {\bfseries punctuation}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_a9969a14735b195f95648e50824177329}\label{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_a9969a14735b195f95648e50824177329}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For the Lean 4 theorem prover.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_a8b978fff20b40c35ed6e62f227153267}\label{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_a8b978fff20b40c35ed6e62f227153267}} 
+\index{pygments.lexers.lean.Lean4Lexer@{pygments.lexers.lean.Lean4Lexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.lean.Lean4Lexer@{pygments.lexers.lean.Lean4Lexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+lean.\+Lean4\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_a247f0e1c73f8bf1e59e9071513093b84}\label{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_a247f0e1c73f8bf1e59e9071513093b84}} 
+\index{pygments.lexers.lean.Lean4Lexer@{pygments.lexers.lean.Lean4Lexer}!keywords1@{keywords1}}
+\index{keywords1@{keywords1}!pygments.lexers.lean.Lean4Lexer@{pygments.lexers.lean.Lean4Lexer}}
+\doxysubsubsection{\texorpdfstring{keywords1}{keywords1}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+lean.\+Lean4\+Lexer.\+keywords1\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (}
+\DoxyCodeLine{        \textcolor{stringliteral}{'import'}, \textcolor{stringliteral}{'unif\_hint'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'renaming'}, \textcolor{stringliteral}{'inline'}, \textcolor{stringliteral}{'hiding'}, \textcolor{stringliteral}{'lemma'}, \textcolor{stringliteral}{'variable'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'theorem'}, \textcolor{stringliteral}{'axiom'}, \textcolor{stringliteral}{'inductive'}, \textcolor{stringliteral}{'structure'}, \textcolor{stringliteral}{'universe'}, \textcolor{stringliteral}{'alias'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'\#help'},  \textcolor{stringliteral}{'precedence'}, \textcolor{stringliteral}{'postfix'}, \textcolor{stringliteral}{'prefix'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'infix'}, \textcolor{stringliteral}{'infixl'}, \textcolor{stringliteral}{'infixr'}, \textcolor{stringliteral}{'notation'}, \textcolor{stringliteral}{'\#eval'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'\#check'}, \textcolor{stringliteral}{'\#reduce'}, \textcolor{stringliteral}{'\#exit'}, \textcolor{stringliteral}{'end'}, \textcolor{stringliteral}{'private'}, \textcolor{stringliteral}{'using'}, \textcolor{stringliteral}{'namespace'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'instance'}, \textcolor{stringliteral}{'section'}, \textcolor{stringliteral}{'protected'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'export'}, \textcolor{stringliteral}{'set\_option'}, \textcolor{stringliteral}{'extends'}, \textcolor{stringliteral}{'open'}, \textcolor{stringliteral}{'example'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'\#print'}, \textcolor{stringliteral}{'opaque'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'def'}, \textcolor{stringliteral}{'macro'}, \textcolor{stringliteral}{'elab'}, \textcolor{stringliteral}{'syntax'}, \textcolor{stringliteral}{'macro\_rules'}, \textcolor{stringliteral}{'\#reduce'}, \textcolor{stringliteral}{'where'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'abbrev'}, \textcolor{stringliteral}{'noncomputable'}, \textcolor{stringliteral}{'class'}, \textcolor{stringliteral}{'attribute'}, \textcolor{stringliteral}{'\#synth'}, \textcolor{stringliteral}{'mutual'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'scoped'}, \textcolor{stringliteral}{'local'},}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_a633fde76ee2a206111bc58954ecae4ad}\label{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_a633fde76ee2a206111bc58954ecae4ad}} 
+\index{pygments.lexers.lean.Lean4Lexer@{pygments.lexers.lean.Lean4Lexer}!keywords2@{keywords2}}
+\index{keywords2@{keywords2}!pygments.lexers.lean.Lean4Lexer@{pygments.lexers.lean.Lean4Lexer}}
+\doxysubsubsection{\texorpdfstring{keywords2}{keywords2}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+lean.\+Lean4\+Lexer.\+keywords2\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (}
+\DoxyCodeLine{        \textcolor{stringliteral}{'forall'}, \textcolor{stringliteral}{'fun'}, \textcolor{stringliteral}{'obtain'}, \textcolor{stringliteral}{'from'}, \textcolor{stringliteral}{'have'}, \textcolor{stringliteral}{'show'}, \textcolor{stringliteral}{'assume'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'let'}, \textcolor{stringliteral}{'if'}, \textcolor{stringliteral}{'else'}, \textcolor{stringliteral}{'then'}, \textcolor{stringliteral}{'by'}, \textcolor{stringliteral}{'in'}, \textcolor{stringliteral}{'with'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'calc'}, \textcolor{stringliteral}{'match'}, \textcolor{stringliteral}{'nomatch'}, \textcolor{stringliteral}{'do'}, \textcolor{stringliteral}{'at'},}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_a0de6b394f7f23a5fd9a6eb9c17e658a4}\label{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_a0de6b394f7f23a5fd9a6eb9c17e658a4}} 
+\index{pygments.lexers.lean.Lean4Lexer@{pygments.lexers.lean.Lean4Lexer}!keywords3@{keywords3}}
+\index{keywords3@{keywords3}!pygments.lexers.lean.Lean4Lexer@{pygments.lexers.lean.Lean4Lexer}}
+\doxysubsubsection{\texorpdfstring{keywords3}{keywords3}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+lean.\+Lean4\+Lexer.\+keywords3\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (}
+\DoxyCodeLine{        \textcolor{comment}{\# Sorts}}
+\DoxyCodeLine{        \textcolor{stringliteral}{'Type'}, \textcolor{stringliteral}{'Prop'}, \textcolor{stringliteral}{'Sort'},}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_a25465987e8180f63ec9a28a884254e0d}\label{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_a25465987e8180f63ec9a28a884254e0d}} 
+\index{pygments.lexers.lean.Lean4Lexer@{pygments.lexers.lean.Lean4Lexer}!operators@{operators}}
+\index{operators@{operators}!pygments.lexers.lean.Lean4Lexer@{pygments.lexers.lean.Lean4Lexer}}
+\doxysubsubsection{\texorpdfstring{operators}{operators}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+lean.\+Lean4\+Lexer.\+operators\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (}
+\DoxyCodeLine{        \textcolor{stringliteral}{'!='}, \textcolor{stringliteral}{'\#'}, \textcolor{stringliteral}{'\&'}, \textcolor{stringliteral}{'\&\&'}, \textcolor{stringliteral}{'*'}, \textcolor{stringliteral}{'+'}, \textcolor{stringliteral}{'-\/'}, \textcolor{stringliteral}{'/'}, \textcolor{stringliteral}{'@'}, \textcolor{stringliteral}{'!'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'-\/.'}, \textcolor{stringliteral}{'-\/>'}, \textcolor{stringliteral}{'.'}, \textcolor{stringliteral}{'..'}, \textcolor{stringliteral}{'...'}, \textcolor{stringliteral}{'::'}, \textcolor{stringliteral}{':>'}, \textcolor{stringliteral}{';'}, \textcolor{stringliteral}{';;'}, \textcolor{stringliteral}{'<'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'<-\/'}, \textcolor{stringliteral}{'='}, \textcolor{stringliteral}{'=='}, \textcolor{stringliteral}{'>'}, \textcolor{stringliteral}{'\_'}, \textcolor{stringliteral}{'|'}, \textcolor{stringliteral}{'||'}, \textcolor{stringliteral}{'\string~'}, \textcolor{stringliteral}{'=>'}, \textcolor{stringliteral}{'<='}, \textcolor{stringliteral}{'>='},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'/\(\backslash\)\(\backslash\)'}, \textcolor{stringliteral}{'\(\backslash\)\(\backslash\)/'}, \textcolor{stringliteral}{'∀'}, \textcolor{stringliteral}{'Π'}, \textcolor{stringliteral}{'λ'}, \textcolor{stringliteral}{'↔'}, \textcolor{stringliteral}{'∧'}, \textcolor{stringliteral}{'∨'}, \textcolor{stringliteral}{'≠'}, \textcolor{stringliteral}{'≤'}, \textcolor{stringliteral}{'≥'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'¬'}, \textcolor{stringliteral}{'⁻¹'}, \textcolor{stringliteral}{'⬝'}, \textcolor{stringliteral}{'▸'}, \textcolor{stringliteral}{'→'}, \textcolor{stringliteral}{'∃'}, \textcolor{stringliteral}{'≈'}, \textcolor{stringliteral}{'×'}, \textcolor{stringliteral}{'⌞'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'⌟'}, \textcolor{stringliteral}{'≡'}, \textcolor{stringliteral}{'⟨'}, \textcolor{stringliteral}{'⟩'}, \textcolor{stringliteral}{"{}↦"{}},}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_a4b4a377e013b210184fb7746d38c834b}\label{classpygments_1_1lexers_1_1lean_1_1Lean4Lexer_a4b4a377e013b210184fb7746d38c834b}} 
+\index{pygments.lexers.lean.Lean4Lexer@{pygments.lexers.lean.Lean4Lexer}!punctuation@{punctuation}}
+\index{punctuation@{punctuation}!pygments.lexers.lean.Lean4Lexer@{pygments.lexers.lean.Lean4Lexer}}
+\doxysubsubsection{\texorpdfstring{punctuation}{punctuation}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+lean.\+Lean4\+Lexer.\+punctuation\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (\textcolor{stringliteral}{'('}, \textcolor{stringliteral}{')'}, \textcolor{stringliteral}{':'}, \textcolor{stringliteral}{'\{'}, \textcolor{stringliteral}{'\}'}, \textcolor{stringliteral}{'['}, \textcolor{stringliteral}{']'}, \textcolor{stringliteral}{'⦃'}, \textcolor{stringliteral}{'⦄'},}
+\DoxyCodeLine{                   \textcolor{stringliteral}{':='}, \textcolor{stringliteral}{','})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/lean.\+py\end{DoxyCompactItemize}

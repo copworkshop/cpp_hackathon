@@ -1,0 +1,52 @@
+\hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1ZypperTool}{}\doxysection{conans.\+client.\+tools.\+system\+\_\+pm.\+Zypper\+Tool Class Reference}
+\label{classconans_1_1client_1_1tools_1_1system__pm_1_1ZypperTool}\index{conans.client.tools.system\_pm.ZypperTool@{conans.client.tools.system\_pm.ZypperTool}}
+
+
+Inheritance diagram for conans.\+client.\+tools.\+system\+\_\+pm.\+Zypper\+Tool\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+tools.\+system\+\_\+pm.\+Zypper\+Tool\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1ZypperTool_a83a220068be8c13979d4850b618c7367}\label{classconans_1_1client_1_1tools_1_1system__pm_1_1ZypperTool_a83a220068be8c13979d4850b618c7367}} 
+def {\bfseries add\+\_\+repository} (self, repository, repo\+\_\+key=None)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1ZypperTool_ab32bc28b2e07c0f37152c012653d8eae}\label{classconans_1_1client_1_1tools_1_1system__pm_1_1ZypperTool_ab32bc28b2e07c0f37152c012653d8eae}} 
+def {\bfseries update} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1ZypperTool_af24c6ea1e9cf071b7144809cc08a78ca}\label{classconans_1_1client_1_1tools_1_1system__pm_1_1ZypperTool_af24c6ea1e9cf071b7144809cc08a78ca}} 
+def {\bfseries install} (self, package\+\_\+name)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1ZypperTool_a604334740a13a2767274a2a211fc9ec2}\label{classconans_1_1client_1_1tools_1_1system__pm_1_1ZypperTool_a604334740a13a2767274a2a211fc9ec2}} 
+def {\bfseries installed} (self, package\+\_\+name)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1tools_1_1system__pm_1_1ZypperTool_a1dafe666346c05375b6a77f9f0862bac}{get\+\_\+package\+\_\+name}} (self, package, arch, arch\+\_\+names)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1ZypperTool_a1dafe666346c05375b6a77f9f0862bac}\label{classconans_1_1client_1_1tools_1_1system__pm_1_1ZypperTool_a1dafe666346c05375b6a77f9f0862bac}} 
+\index{conans.client.tools.system\_pm.ZypperTool@{conans.client.tools.system\_pm.ZypperTool}!get\_package\_name@{get\_package\_name}}
+\index{get\_package\_name@{get\_package\_name}!conans.client.tools.system\_pm.ZypperTool@{conans.client.tools.system\_pm.ZypperTool}}
+\doxysubsubsection{\texorpdfstring{get\_package\_name()}{get\_package\_name()}}
+{\footnotesize\ttfamily def conans.\+client.\+tools.\+system\+\_\+pm.\+Zypper\+Tool.\+get\+\_\+package\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{package,  }\item[{}]{arch,  }\item[{}]{arch\+\_\+names }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Retrieve package name to installed according the target arch.
+
+:param package: Regular package name e.g libusb-dev
+:param arch: Host arch from Conanfile.settings
+:param arch_names: Dictionary with suffix/prefix names e.g {"x86_64": "amd64"}
+:return: Package name for Tool e.g. libusb-dev:i386
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconans_1_1client_1_1tools_1_1system__pm_1_1BaseTool_ad406ed642d4be5c45465269aa03d724a}{conans.\+client.\+tools.\+system\+\_\+pm.\+Base\+Tool}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/tools/system\+\_\+pm.\+py\end{DoxyCompactItemize}

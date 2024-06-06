@@ -1,0 +1,107 @@
+\hypertarget{classpygments_1_1lexers_1_1basic_1_1CbmBasicV2Lexer}{}\doxysection{pygments.\+lexers.\+basic.\+Cbm\+Basic\+V2\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1basic_1_1CbmBasicV2Lexer}\index{pygments.lexers.basic.CbmBasicV2Lexer@{pygments.lexers.basic.CbmBasicV2Lexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+basic.\+Cbm\+Basic\+V2\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+basic.\+Cbm\+Basic\+V2\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1basic_1_1CbmBasicV2Lexer_a96c4742892703379d455d9907a756dd7}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1basic_1_1CbmBasicV2Lexer_ac4fcdd153097db136af81f7393594c17}\label{classpygments_1_1lexers_1_1basic_1_1CbmBasicV2Lexer_ac4fcdd153097db136af81f7393594c17}} 
+string {\bfseries name} = \textquotesingle{}CBM BASIC V2\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1basic_1_1CbmBasicV2Lexer_aa4c286b8fd2b986a656f5e7c1daa4da1}\label{classpygments_1_1lexers_1_1basic_1_1CbmBasicV2Lexer_aa4c286b8fd2b986a656f5e7c1daa4da1}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}cbmbas\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1basic_1_1CbmBasicV2Lexer_a930f19d8d9e9f69a77d005ac20de17e3}\label{classpygments_1_1lexers_1_1basic_1_1CbmBasicV2Lexer_a930f19d8d9e9f69a77d005ac20de17e3}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.bas\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1basic_1_1CbmBasicV2Lexer_a169908bb0ed398019da28cce461f538d}\label{classpygments_1_1lexers_1_1basic_1_1CbmBasicV2Lexer_a169908bb0ed398019da28cce461f538d}} 
+string {\bfseries url} = \textquotesingle{}https\+://en.\+wikipedia.\+org/wiki/Commodore\+\_\+\+BASIC\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1basic_1_1CbmBasicV2Lexer_a6e98c182124fdf64ff971de2afa63b79}\label{classpygments_1_1lexers_1_1basic_1_1CbmBasicV2Lexer_a6e98c182124fdf64ff971de2afa63b79}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+6\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1basic_1_1CbmBasicV2Lexer_a39a44884892150481fac7209ab86c37a}\label{classpygments_1_1lexers_1_1basic_1_1CbmBasicV2Lexer_a39a44884892150481fac7209ab86c37a}} 
+{\bfseries flags} = re.\+IGNORECASE
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For CBM BASIC V2 sources.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1basic_1_1CbmBasicV2Lexer_a96c4742892703379d455d9907a756dd7}\label{classpygments_1_1lexers_1_1basic_1_1CbmBasicV2Lexer_a96c4742892703379d455d9907a756dd7}} 
+\index{pygments.lexers.basic.CbmBasicV2Lexer@{pygments.lexers.basic.CbmBasicV2Lexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.basic.CbmBasicV2Lexer@{pygments.lexers.basic.CbmBasicV2Lexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+basic.\+Cbm\+Basic\+V2\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1basic_1_1CbmBasicV2Lexer_ad0862fe986b59ca0e26ee4ca3a965d76}\label{classpygments_1_1lexers_1_1basic_1_1CbmBasicV2Lexer_ad0862fe986b59ca0e26ee4ca3a965d76}} 
+\index{pygments.lexers.basic.CbmBasicV2Lexer@{pygments.lexers.basic.CbmBasicV2Lexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.basic.CbmBasicV2Lexer@{pygments.lexers.basic.CbmBasicV2Lexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+basic.\+Cbm\+Basic\+V2\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'rem.*\(\backslash\)n'}, Comment.Single),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'new|run|end|for|to|next|step|go(to|sub)?|on|return|stop|cont'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'|if|then|input\#?|read|wait|load|save|verify|poke|sys|print\#?'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'|list|clr|cmd|open|close|get\#?'}, Keyword.Reserved),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'data|restore|dim|let|def|fn'}, Keyword.Declaration),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'tab|spc|sgn|int|abs|usr|fre|pos|sqr|rnd|log|exp|cos|sin|tan|atn'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'|peek|len|val|asc|(str|chr|left|right|mid)\(\backslash\)\$'}, Name.Builtin),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[-\/+*/\string^<>=]'}, Operator),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'not|and|or'}, Operator.Word),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'"{}[\string^"{}\(\backslash\)n]*.'}, String),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)d+|[-\/+]?\(\backslash\)d*\(\backslash\).\(\backslash\)d*(e[-\/+]?\(\backslash\)d+)?'}, Number.Float),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[(),:;]'}, Punctuation),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)w+[\$\%]?'}, Name),}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/basic.\+py\end{DoxyCompactItemize}

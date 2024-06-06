@@ -1,0 +1,139 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Javascript\+Django\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer}\index{pygments.lexers.templates.JavascriptDjangoLexer@{pygments.lexers.templates.JavascriptDjangoLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Javascript\+Django\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Javascript\+Django\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer_ad923dbd903110ec8d7afb5fae0483465}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer_aa14862eb539dfaf4d32b24f1a12a1af6}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer_a4fec47e7bb26cf4744b9d8f17dc6c752}\label{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer_a4fec47e7bb26cf4744b9d8f17dc6c752}} 
+string {\bfseries name} = \textquotesingle{}Java\+Script+Django/Jinja\textquotesingle{}
+\item 
+list {\bfseries aliases}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer_ab9b49a57c265c7d99cd208c7d2c0c063}\label{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer_ab9b49a57c265c7d99cd208c7d2c0c063}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.js.\+j2\textquotesingle{}, \textquotesingle{}$\ast$.js.\+jinja2\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer_a8dbd4373fef283faa48d84fdb9a49af8}\label{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer_a8dbd4373fef283faa48d84fdb9a49af8}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer_ad255e5355e124ed881bf53b0bec32ae9}\label{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer_ad255e5355e124ed881bf53b0bec32ae9}} 
+list {\bfseries alias\+\_\+filenames} = \mbox{[}\textquotesingle{}$\ast$.js\textquotesingle{}\mbox{]}
+\item 
+list {\bfseries mimetypes}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer_a7928c7ba2ed2428629d065ccd7c8f0e7}\label{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer_a7928c7ba2ed2428629d065ccd7c8f0e7}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+djangoproject.\+com/documentation/templates\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Subclass of the `DjangoLexer` that highlights unlexed data with the
+`JavascriptLexer`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer_ad923dbd903110ec8d7afb5fae0483465}\label{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer_ad923dbd903110ec8d7afb5fae0483465}} 
+\index{pygments.lexers.templates.JavascriptDjangoLexer@{pygments.lexers.templates.JavascriptDjangoLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.templates.JavascriptDjangoLexer@{pygments.lexers.templates.JavascriptDjangoLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Javascript\+Django\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer_aa14862eb539dfaf4d32b24f1a12a1af6}\label{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer_aa14862eb539dfaf4d32b24f1a12a1af6}} 
+\index{pygments.lexers.templates.JavascriptDjangoLexer@{pygments.lexers.templates.JavascriptDjangoLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.templates.JavascriptDjangoLexer@{pygments.lexers.templates.JavascriptDjangoLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Javascript\+Django\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer_a5477e946ef0eed6e280f73fe884d1266}\label{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer_a5477e946ef0eed6e280f73fe884d1266}} 
+\index{pygments.lexers.templates.JavascriptDjangoLexer@{pygments.lexers.templates.JavascriptDjangoLexer}!aliases@{aliases}}
+\index{aliases@{aliases}!pygments.lexers.templates.JavascriptDjangoLexer@{pygments.lexers.templates.JavascriptDjangoLexer}}
+\doxysubsubsection{\texorpdfstring{aliases}{aliases}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+templates.\+Javascript\+Django\+Lexer.\+aliases\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [\textcolor{stringliteral}{'javascript+django'}, \textcolor{stringliteral}{'js+django'},}
+\DoxyCodeLine{               \textcolor{stringliteral}{'javascript+jinja'}, \textcolor{stringliteral}{'js+jinja'}]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer_a9c26f4eee8e32a318e5c9e230803ee3a}\label{classpygments_1_1lexers_1_1templates_1_1JavascriptDjangoLexer_a9c26f4eee8e32a318e5c9e230803ee3a}} 
+\index{pygments.lexers.templates.JavascriptDjangoLexer@{pygments.lexers.templates.JavascriptDjangoLexer}!mimetypes@{mimetypes}}
+\index{mimetypes@{mimetypes}!pygments.lexers.templates.JavascriptDjangoLexer@{pygments.lexers.templates.JavascriptDjangoLexer}}
+\doxysubsubsection{\texorpdfstring{mimetypes}{mimetypes}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+templates.\+Javascript\+Django\+Lexer.\+mimetypes\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [\textcolor{stringliteral}{'application/x-\/javascript+django'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'application/x-\/javascript+jinja'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'text/x-\/javascript+django'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'text/x-\/javascript+jinja'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'text/javascript+django'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'text/javascript+jinja'}]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,39 @@
+\hypertarget{namespaceurllib3_1_1util_1_1ssl__match__hostname}{}\doxysection{urllib3.\+util.\+ssl\+\_\+match\+\_\+hostname Namespace Reference}
+\label{namespaceurllib3_1_1util_1_1ssl__match__hostname}\index{urllib3.util.ssl\_match\_hostname@{urllib3.util.ssl\_match\_hostname}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classurllib3_1_1util_1_1ssl__match__hostname_1_1CertificateError}{Certificate\+Error}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl__match__hostname_a0b4f10495fb2cf41499f57a07ba54f10}{match\+\_\+hostname}} (cert, hostname)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceurllib3_1_1util_1_1ssl__match__hostname_aa251eb25469a199a0d8fe7344c519b3c}\label{namespaceurllib3_1_1util_1_1ssl__match__hostname_aa251eb25469a199a0d8fe7344c519b3c}} 
+{\bfseries ipaddress} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The match_hostname() function from Python 3.3.3, essential when using SSL.\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceurllib3_1_1util_1_1ssl__match__hostname_a0b4f10495fb2cf41499f57a07ba54f10}\label{namespaceurllib3_1_1util_1_1ssl__match__hostname_a0b4f10495fb2cf41499f57a07ba54f10}} 
+\index{urllib3.util.ssl\_match\_hostname@{urllib3.util.ssl\_match\_hostname}!match\_hostname@{match\_hostname}}
+\index{match\_hostname@{match\_hostname}!urllib3.util.ssl\_match\_hostname@{urllib3.util.ssl\_match\_hostname}}
+\doxysubsubsection{\texorpdfstring{match\_hostname()}{match\_hostname()}}
+{\footnotesize\ttfamily def urllib3.\+util.\+ssl\+\_\+match\+\_\+hostname.\+match\+\_\+hostname (\begin{DoxyParamCaption}\item[{}]{cert,  }\item[{}]{hostname }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Verify that *cert* (in decoded format as returned by
+SSLSocket.getpeercert()) matches the *hostname*.  RFC 2818 and RFC 6125
+rules are followed, but IP addresses are not accepted for *hostname*.
+
+CertificateError is raised on failure. On success, the function
+returns nothing.
+\end{DoxyVerb}
+ 

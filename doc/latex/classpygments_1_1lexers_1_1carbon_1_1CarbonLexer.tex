@@ -1,0 +1,80 @@
+\hypertarget{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer}{}\doxysection{pygments.\+lexers.\+carbon.\+Carbon\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer}\index{pygments.lexers.carbon.CarbonLexer@{pygments.lexers.carbon.CarbonLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+carbon.\+Carbon\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+carbon.\+Carbon\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer_a1d036d1ac00f5c7f354eb987c2db0d86}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer_a031afa238f4441a563a36b853c382fe6}\label{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer_a031afa238f4441a563a36b853c382fe6}} 
+string {\bfseries name} = \textquotesingle{}Carbon\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer_a511cc60584a6131c6900ab3ea8cab7e4}\label{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer_a511cc60584a6131c6900ab3ea8cab7e4}} 
+string {\bfseries url} = \textquotesingle{}https\+://github.\+com/carbon-\/language/carbon-\/lang\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer_a1d3b951957f7058c3021195e3795c2aa}\label{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer_a1d3b951957f7058c3021195e3795c2aa}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.carbon\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer_a352dea061d4b90c26e9498ba24846c84}\label{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer_a352dea061d4b90c26e9498ba24846c84}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}carbon\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer_aec1dd201054a5152d9428beb48ccc2aa}\label{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer_aec1dd201054a5152d9428beb48ccc2aa}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/carbon\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer_aab74f234dead0ea2441fc6298b76d5ed}\label{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer_aab74f234dead0ea2441fc6298b76d5ed}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+15\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer_a43e289214c1212187696c6797d8bf8a0}\label{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer_a43e289214c1212187696c6797d8bf8a0}} 
+{\bfseries flags} = re.\+MULTILINE $\vert$ re.\+DOTALL
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer_aa3314fb9c3f52c1350a98f4122ea4694}\label{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer_aa3314fb9c3f52c1350a98f4122ea4694}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For Carbon source.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer_a1d036d1ac00f5c7f354eb987c2db0d86}\label{classpygments_1_1lexers_1_1carbon_1_1CarbonLexer_a1d036d1ac00f5c7f354eb987c2db0d86}} 
+\index{pygments.lexers.carbon.CarbonLexer@{pygments.lexers.carbon.CarbonLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.carbon.CarbonLexer@{pygments.lexers.carbon.CarbonLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+carbon.\+Carbon\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/carbon.\+py\end{DoxyCompactItemize}

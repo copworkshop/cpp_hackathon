@@ -1,0 +1,79 @@
+\hypertarget{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO}{}\doxysection{tqdm.\+contrib.\+telegram.\+Telegram\+IO Class Reference}
+\label{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO}\index{tqdm.contrib.telegram.TelegramIO@{tqdm.contrib.telegram.TelegramIO}}
+
+
+Inheritance diagram for tqdm.\+contrib.\+telegram.\+Telegram\+IO\+:
+% FIG 0
+
+
+Collaboration diagram for tqdm.\+contrib.\+telegram.\+Telegram\+IO\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_afbc18907d4e20e9ef340a1723c1b983c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, token, chat\+\_\+id)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_a352bfe960ed60745786b7249b925e0f0}\label{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_a352bfe960ed60745786b7249b925e0f0}} 
+def {\bfseries message\+\_\+id} (self)
+\item 
+def \mbox{\hyperlink{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_aa12e2ccbe27986a80ef16a44c15d9f33}{write}} (self, s)
+\item 
+def \mbox{\hyperlink{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_a82f056519703ee8914392d22a7cdab42}{delete}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_a07fda89b1dbe411bef461f8e9018ab6e}\label{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_a07fda89b1dbe411bef461f8e9018ab6e}} 
+{\bfseries token}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_a1e3c59cdc96319cf011552ff30c0956a}\label{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_a1e3c59cdc96319cf011552ff30c0956a}} 
+{\bfseries chat\+\_\+id}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_a20d36bfc2bfe5a6a7c979339a9f9d671}\label{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_a20d36bfc2bfe5a6a7c979339a9f9d671}} 
+{\bfseries session}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_a2eed7968fad586f35252551d77f92865}\label{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_a2eed7968fad586f35252551d77f92865}} 
+{\bfseries text}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_a4bda2ab6a972e24351bf7537559ff76a}\label{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_a4bda2ab6a972e24351bf7537559ff76a}} 
+string {\bfseries API} = \textquotesingle{}https\+://api.\+telegram.\+org/bot\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Non-blocking file-like IO using a Telegram Bot.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_afbc18907d4e20e9ef340a1723c1b983c}\label{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_afbc18907d4e20e9ef340a1723c1b983c}} 
+\index{tqdm.contrib.telegram.TelegramIO@{tqdm.contrib.telegram.TelegramIO}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!tqdm.contrib.telegram.TelegramIO@{tqdm.contrib.telegram.TelegramIO}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def tqdm.\+contrib.\+telegram.\+Telegram\+IO.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{token,  }\item[{}]{chat\+\_\+id }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a new message in the given `chat_id`.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_a82f056519703ee8914392d22a7cdab42}\label{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_a82f056519703ee8914392d22a7cdab42}} 
+\index{tqdm.contrib.telegram.TelegramIO@{tqdm.contrib.telegram.TelegramIO}!delete@{delete}}
+\index{delete@{delete}!tqdm.contrib.telegram.TelegramIO@{tqdm.contrib.telegram.TelegramIO}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily def tqdm.\+contrib.\+telegram.\+Telegram\+IO.\+delete (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Deletes internal `message_id`.\end{DoxyVerb}
+ \mbox{\Hypertarget{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_aa12e2ccbe27986a80ef16a44c15d9f33}\label{classtqdm_1_1contrib_1_1telegram_1_1TelegramIO_aa12e2ccbe27986a80ef16a44c15d9f33}} 
+\index{tqdm.contrib.telegram.TelegramIO@{tqdm.contrib.telegram.TelegramIO}!write@{write}}
+\index{write@{write}!tqdm.contrib.telegram.TelegramIO@{tqdm.contrib.telegram.TelegramIO}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily def tqdm.\+contrib.\+telegram.\+Telegram\+IO.\+write (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{s }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Replaces internal `message_id`'s text with `s`.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/tqdm/contrib/telegram.\+py\end{DoxyCompactItemize}

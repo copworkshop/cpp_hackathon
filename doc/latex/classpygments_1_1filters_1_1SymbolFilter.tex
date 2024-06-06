@@ -1,0 +1,57 @@
+\hypertarget{classpygments_1_1filters_1_1SymbolFilter}{}\doxysection{pygments.\+filters.\+Symbol\+Filter Class Reference}
+\label{classpygments_1_1filters_1_1SymbolFilter}\index{pygments.filters.SymbolFilter@{pygments.filters.SymbolFilter}}
+
+
+Inheritance diagram for pygments.\+filters.\+Symbol\+Filter\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+filters.\+Symbol\+Filter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1filters_1_1SymbolFilter_ae74b8f42c1e0a1292fc8f982e45c88f8}\label{classpygments_1_1filters_1_1SymbolFilter_ae74b8f42c1e0a1292fc8f982e45c88f8}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, $\ast$$\ast$options)
+\item 
+\mbox{\Hypertarget{classpygments_1_1filters_1_1SymbolFilter_a60dfe2b1405849a6d91f28f7a5a0614a}\label{classpygments_1_1filters_1_1SymbolFilter_a60dfe2b1405849a6d91f28f7a5a0614a}} 
+def {\bfseries filter} (self, lexer, stream)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1filters_1_1SymbolFilter_a805a24a4cb3ed80c207275e64301184b}\label{classpygments_1_1filters_1_1SymbolFilter_a805a24a4cb3ed80c207275e64301184b}} 
+{\bfseries symbols}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1filters_1_1SymbolFilter_a3e7a6e33eb5a33f70a4e94fcf25228a6}\label{classpygments_1_1filters_1_1SymbolFilter_a3e7a6e33eb5a33f70a4e94fcf25228a6}} 
+dictionary {\bfseries latex\+\_\+symbols}
+\item 
+\mbox{\Hypertarget{classpygments_1_1filters_1_1SymbolFilter_a5ae07f9650088e6ab0fc537ba345e32f}\label{classpygments_1_1filters_1_1SymbolFilter_a5ae07f9650088e6ab0fc537ba345e32f}} 
+dictionary {\bfseries isabelle\+\_\+symbols}
+\item 
+\mbox{\Hypertarget{classpygments_1_1filters_1_1SymbolFilter_a13ac04cae6131366003da837757b5ad7}\label{classpygments_1_1filters_1_1SymbolFilter_a13ac04cae6131366003da837757b5ad7}} 
+dictionary {\bfseries lang\+\_\+map} = \{\textquotesingle{}isabelle\textquotesingle{} \+: isabelle\+\_\+symbols, \textquotesingle{}latex\textquotesingle{} \+: latex\+\_\+symbols\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Convert mathematical symbols such as \\<longrightarrow> in Isabelle
+or \\longrightarrow in LaTeX into Unicode characters.
+
+This is mostly useful for HTML or console output when you want to
+approximate the source rendering you'd see in an IDE.
+
+Options accepted:
+
+`lang` : string
+   The symbol language. Must be one of ``'isabelle'`` or
+   ``'latex'``.  The default is ``'isabelle'``.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/filters/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,32 @@
+\hypertarget{classjinja2_1_1nodes_1_1EvalContextModifier}{}\doxysection{jinja2.\+nodes.\+Eval\+Context\+Modifier Class Reference}
+\label{classjinja2_1_1nodes_1_1EvalContextModifier}\index{jinja2.nodes.EvalContextModifier@{jinja2.nodes.EvalContextModifier}}
+
+
+Inheritance diagram for jinja2.\+nodes.\+Eval\+Context\+Modifier\+:
+% FIG 0
+
+
+Collaboration diagram for jinja2.\+nodes.\+Eval\+Context\+Modifier\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjinja2_1_1nodes_1_1EvalContextModifier_a72e48d017acca07d91e2bba659be7bd4}\label{classjinja2_1_1nodes_1_1EvalContextModifier_a72e48d017acca07d91e2bba659be7bd4}} 
+tuple {\bfseries fields} = (\char`\"{}options\char`\"{},)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Modifies the eval context.  For each option that should be modified,
+a :class:`Keyword` has to be added to the :attr:`options` list.
+
+Example to change the `autoescape` setting::
+
+    EvalContextModifier(options=[Keyword('autoescape', Const(True))])
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jinja2/nodes.\+py\end{DoxyCompactItemize}

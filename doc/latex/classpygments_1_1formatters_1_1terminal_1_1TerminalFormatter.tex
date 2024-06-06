@@ -1,0 +1,108 @@
+\hypertarget{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter}{}\doxysection{pygments.\+formatters.\+terminal.\+Terminal\+Formatter Class Reference}
+\label{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter}\index{pygments.formatters.terminal.TerminalFormatter@{pygments.formatters.terminal.TerminalFormatter}}
+
+
+Inheritance diagram for pygments.\+formatters.\+terminal.\+Terminal\+Formatter\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+formatters.\+terminal.\+Terminal\+Formatter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter_adbb873cae583478f05e998e78d2c1403}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter_a369d08c31da45b3bb9ce7bcba3af4fba}{format}} (self, tokensource, outfile)
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter_a6e31f9744bdb3ef68d637fa7e8363795}\label{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter_a6e31f9744bdb3ef68d637fa7e8363795}} 
+def {\bfseries format\+\_\+unencoded} (self, tokensource, outfile)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter_a5d86b76445047dce99d65f4e57d34f8f}\label{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter_a5d86b76445047dce99d65f4e57d34f8f}} 
+{\bfseries darkbg}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter_ab4fbff23224b01b60fdc97d0fc2321b5}\label{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter_ab4fbff23224b01b60fdc97d0fc2321b5}} 
+{\bfseries colorscheme}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter_a35ad95391ac132eae2969f0baf36bcb9}\label{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter_a35ad95391ac132eae2969f0baf36bcb9}} 
+{\bfseries linenos}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter_a585eff721cc0ecca55f51c4557362db9}\label{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter_a585eff721cc0ecca55f51c4557362db9}} 
+string {\bfseries name} = \textquotesingle{}Terminal\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter_ad1882c99f09dccedd0cba43cb249131e}\label{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter_ad1882c99f09dccedd0cba43cb249131e}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}terminal\textquotesingle{}, \textquotesingle{}console\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter_a71cb3fae796e0ac6058b5ff42e0cfd13}\label{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter_a71cb3fae796e0ac6058b5ff42e0cfd13}} 
+list {\bfseries filenames} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Format tokens with ANSI color sequences, for output in a text console.
+Color sequences are terminated at newlines, so that paging the output
+works correctly.
+
+The `get_style_defs()` method doesn't do anything special since there is
+no support for common styles.
+
+Options accepted:
+
+`bg`
+    Set to ``"light"`` or ``"dark"`` depending on the terminal's background
+    (default: ``"light"``).
+
+`colorscheme`
+    A dictionary mapping token types to (lightbg, darkbg) color names or
+    ``None`` (default: ``None`` = use builtin colorscheme).
+
+`linenos`
+    Set to ``True`` to have line numbers on the terminal output as well
+    (default: ``False`` = no line numbers).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter_adbb873cae583478f05e998e78d2c1403}\label{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter_adbb873cae583478f05e998e78d2c1403}} 
+\index{pygments.formatters.terminal.TerminalFormatter@{pygments.formatters.terminal.TerminalFormatter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.formatters.terminal.TerminalFormatter@{pygments.formatters.terminal.TerminalFormatter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+formatters.\+terminal.\+Terminal\+Formatter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}As with lexers, this constructor takes arbitrary optional arguments,
+and if you override it, you should first process your own options, then
+call the base class implementation.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1formatter_1_1Formatter_a010d28265423e3708a1d4199975fcbbd}{pygments.\+formatter.\+Formatter}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter_a369d08c31da45b3bb9ce7bcba3af4fba}\label{classpygments_1_1formatters_1_1terminal_1_1TerminalFormatter_a369d08c31da45b3bb9ce7bcba3af4fba}} 
+\index{pygments.formatters.terminal.TerminalFormatter@{pygments.formatters.terminal.TerminalFormatter}!format@{format}}
+\index{format@{format}!pygments.formatters.terminal.TerminalFormatter@{pygments.formatters.terminal.TerminalFormatter}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily def pygments.\+formatters.\+terminal.\+Terminal\+Formatter.\+format (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tokensource,  }\item[{}]{outfile }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method must format the tokens from the `tokensource` iterable and
+write the formatted version to the file object `outfile`.
+
+Formatter options can control how exactly the tokens are converted.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1formatter_1_1Formatter_aa7ce771b65380920e24d47aa409ef34d}{pygments.\+formatter.\+Formatter}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/formatters/terminal.\+py\end{DoxyCompactItemize}

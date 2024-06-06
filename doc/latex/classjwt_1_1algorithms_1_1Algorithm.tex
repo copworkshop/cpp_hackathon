@@ -1,0 +1,104 @@
+\hypertarget{classjwt_1_1algorithms_1_1Algorithm}{}\doxysection{jwt.\+algorithms.\+Algorithm Class Reference}
+\label{classjwt_1_1algorithms_1_1Algorithm}\index{jwt.algorithms.Algorithm@{jwt.algorithms.Algorithm}}
+
+
+Inheritance diagram for jwt.\+algorithms.\+Algorithm\+:
+% FIG 0
+
+
+Collaboration diagram for jwt.\+algorithms.\+Algorithm\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bytes \mbox{\hyperlink{classjwt_1_1algorithms_1_1Algorithm_a0bc5fd778194f2dfff1946c6375b894c}{compute\+\_\+hash\+\_\+digest}} (self, bytes bytestr)
+\item 
+Any \mbox{\hyperlink{classjwt_1_1algorithms_1_1Algorithm_affe0fbb87774d2f20afa5b3b59a02a9d}{prepare\+\_\+key}} (self, Any key)
+\item 
+bytes \mbox{\hyperlink{classjwt_1_1algorithms_1_1Algorithm_a42930eef6ae0379440fb6dff435889ab}{sign}} (self, bytes msg, Any key)
+\item 
+bool \mbox{\hyperlink{classjwt_1_1algorithms_1_1Algorithm_a535aa5144b3821366b777b072a025dc4}{verify}} (self, bytes msg, Any key, bytes sig)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1Algorithm_a87180ea85d694de61dfdf73e488fc1fb}\label{classjwt_1_1algorithms_1_1Algorithm_a87180ea85d694de61dfdf73e488fc1fb}} 
+JWKDict {\bfseries to\+\_\+jwk} (key\+\_\+obj, Literal\mbox{[}True\mbox{]} as\+\_\+dict)
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1Algorithm_a00ff8a30c74ef22acdebbdad61dedb84}\label{classjwt_1_1algorithms_1_1Algorithm_a00ff8a30c74ef22acdebbdad61dedb84}} 
+str {\bfseries to\+\_\+jwk} (key\+\_\+obj, Literal\mbox{[}False\mbox{]} as\+\_\+dict=False)
+\item 
+Union\mbox{[}JWKDict, str\mbox{]} \mbox{\hyperlink{classjwt_1_1algorithms_1_1Algorithm_aedcca0f41d4e5cc041978f522d857b71}{to\+\_\+jwk}} (key\+\_\+obj, bool as\+\_\+dict=False)
+\item 
+Any \mbox{\hyperlink{classjwt_1_1algorithms_1_1Algorithm_af9a85ad9cdd019cc6e368338574eba75}{from\+\_\+jwk}} (str$\vert$JWKDict jwk)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The interface for an algorithm used to sign and verify tokens.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1Algorithm_a0bc5fd778194f2dfff1946c6375b894c}\label{classjwt_1_1algorithms_1_1Algorithm_a0bc5fd778194f2dfff1946c6375b894c}} 
+\index{jwt.algorithms.Algorithm@{jwt.algorithms.Algorithm}!compute\_hash\_digest@{compute\_hash\_digest}}
+\index{compute\_hash\_digest@{compute\_hash\_digest}!jwt.algorithms.Algorithm@{jwt.algorithms.Algorithm}}
+\doxysubsubsection{\texorpdfstring{compute\_hash\_digest()}{compute\_hash\_digest()}}
+{\footnotesize\ttfamily  bytes jwt.\+algorithms.\+Algorithm.\+compute\+\_\+hash\+\_\+digest (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bytes}]{bytestr }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute a hash digest using the specified algorithm's hash algorithm.
+
+If there is no hash algorithm, raises a NotImplementedError.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classjwt_1_1algorithms_1_1Algorithm_af9a85ad9cdd019cc6e368338574eba75}\label{classjwt_1_1algorithms_1_1Algorithm_af9a85ad9cdd019cc6e368338574eba75}} 
+\index{jwt.algorithms.Algorithm@{jwt.algorithms.Algorithm}!from\_jwk@{from\_jwk}}
+\index{from\_jwk@{from\_jwk}!jwt.algorithms.Algorithm@{jwt.algorithms.Algorithm}}
+\doxysubsubsection{\texorpdfstring{from\_jwk()}{from\_jwk()}}
+{\footnotesize\ttfamily  Any jwt.\+algorithms.\+Algorithm.\+from\+\_\+jwk (\begin{DoxyParamCaption}\item[{str $\vert$ JWKDict}]{jwk }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Deserializes a given key from JWK back into a key object
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classjwt_1_1algorithms_1_1OKPAlgorithm_a8aa74975749aaa07eda3369869515236}{jwt.\+algorithms.\+OKPAlgorithm}}, \mbox{\hyperlink{classjwt_1_1algorithms_1_1ECAlgorithm_a6ffb88ba75b84ad860a7d5d65b7cd75f}{jwt.\+algorithms.\+ECAlgorithm}}, \mbox{\hyperlink{classjwt_1_1algorithms_1_1RSAAlgorithm_a5d3383bd745a8f7e3c205bcec2cc8503}{jwt.\+algorithms.\+RSAAlgorithm}}, \mbox{\hyperlink{classjwt_1_1algorithms_1_1HMACAlgorithm_aebd8401c5d4aa5f7b4570f5b637632f1}{jwt.\+algorithms.\+HMACAlgorithm}}, and \mbox{\hyperlink{classjwt_1_1algorithms_1_1NoneAlgorithm_ae7ce7f2d45fdf47e9dbf36109378cc9e}{jwt.\+algorithms.\+None\+Algorithm}}.
+
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1Algorithm_affe0fbb87774d2f20afa5b3b59a02a9d}\label{classjwt_1_1algorithms_1_1Algorithm_affe0fbb87774d2f20afa5b3b59a02a9d}} 
+\index{jwt.algorithms.Algorithm@{jwt.algorithms.Algorithm}!prepare\_key@{prepare\_key}}
+\index{prepare\_key@{prepare\_key}!jwt.algorithms.Algorithm@{jwt.algorithms.Algorithm}}
+\doxysubsubsection{\texorpdfstring{prepare\_key()}{prepare\_key()}}
+{\footnotesize\ttfamily  Any jwt.\+algorithms.\+Algorithm.\+prepare\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Any}]{key }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Performs necessary validation and conversions on the key and returns
+the key value in the proper format for sign() and verify().
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classjwt_1_1algorithms_1_1Algorithm_a42930eef6ae0379440fb6dff435889ab}\label{classjwt_1_1algorithms_1_1Algorithm_a42930eef6ae0379440fb6dff435889ab}} 
+\index{jwt.algorithms.Algorithm@{jwt.algorithms.Algorithm}!sign@{sign}}
+\index{sign@{sign}!jwt.algorithms.Algorithm@{jwt.algorithms.Algorithm}}
+\doxysubsubsection{\texorpdfstring{sign()}{sign()}}
+{\footnotesize\ttfamily  bytes jwt.\+algorithms.\+Algorithm.\+sign (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bytes}]{msg,  }\item[{Any}]{key }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a digital signature for the specified message
+using the specified key value.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classjwt_1_1algorithms_1_1Algorithm_aedcca0f41d4e5cc041978f522d857b71}\label{classjwt_1_1algorithms_1_1Algorithm_aedcca0f41d4e5cc041978f522d857b71}} 
+\index{jwt.algorithms.Algorithm@{jwt.algorithms.Algorithm}!to\_jwk@{to\_jwk}}
+\index{to\_jwk@{to\_jwk}!jwt.algorithms.Algorithm@{jwt.algorithms.Algorithm}}
+\doxysubsubsection{\texorpdfstring{to\_jwk()}{to\_jwk()}}
+{\footnotesize\ttfamily  Union\mbox{[}JWKDict, str\mbox{]} jwt.\+algorithms.\+Algorithm.\+to\+\_\+jwk (\begin{DoxyParamCaption}\item[{}]{key\+\_\+obj,  }\item[{bool }]{as\+\_\+dict = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Serializes a given key into a JWK
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classjwt_1_1algorithms_1_1Algorithm_a535aa5144b3821366b777b072a025dc4}\label{classjwt_1_1algorithms_1_1Algorithm_a535aa5144b3821366b777b072a025dc4}} 
+\index{jwt.algorithms.Algorithm@{jwt.algorithms.Algorithm}!verify@{verify}}
+\index{verify@{verify}!jwt.algorithms.Algorithm@{jwt.algorithms.Algorithm}}
+\doxysubsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily  bool jwt.\+algorithms.\+Algorithm.\+verify (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bytes}]{msg,  }\item[{Any}]{key,  }\item[{bytes}]{sig }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Verifies that the specified digital signature is valid
+for the specified message and key values.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jwt/algorithms.\+py\end{DoxyCompactItemize}

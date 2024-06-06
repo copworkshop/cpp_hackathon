@@ -1,0 +1,78 @@
+\hypertarget{classconans_1_1client_1_1file__copier_1_1FileCopier}{}\doxysection{conans.\+client.\+file\+\_\+copier.\+File\+Copier Class Reference}
+\label{classconans_1_1client_1_1file__copier_1_1FileCopier}\index{conans.client.file\_copier.FileCopier@{conans.client.file\_copier.FileCopier}}
+
+
+Inheritance diagram for conans.\+client.\+file\+\_\+copier.\+File\+Copier\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+file\+\_\+copier.\+File\+Copier\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1file__copier_1_1FileCopier_a8e621bc92099c820ee7af933ea991175}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, source\+\_\+folders, root\+\_\+destination\+\_\+folder)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1file__copier_1_1FileCopier_aeb1db9b22249453a54ea1c03d8290993}\label{classconans_1_1client_1_1file__copier_1_1FileCopier_aeb1db9b22249453a54ea1c03d8290993}} 
+def {\bfseries report} (self, output)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1file__copier_1_1FileCopier_a0d45d6fbc433e6643e9a6dd607bd6e66}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, pattern, dst=\char`\"{}\char`\"{}, src=\char`\"{}\char`\"{}, keep\+\_\+path=True, links=False, symlinks=None, excludes=None, ignore\+\_\+case=True)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1file__copier_1_1FileCopier_a92ddefcabe7e049760540746ba6630c8}\label{classconans_1_1client_1_1file__copier_1_1FileCopier_a92ddefcabe7e049760540746ba6630c8}} 
+def {\bfseries link\+\_\+folders} (src, dst, linked\+\_\+folders)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} main responsible of copying files from place to place:
+package: build folder -> package folder
+imports: package folder -> user folder
+export: user folder -> store "export" folder
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1file__copier_1_1FileCopier_a8e621bc92099c820ee7af933ea991175}\label{classconans_1_1client_1_1file__copier_1_1FileCopier_a8e621bc92099c820ee7af933ea991175}} 
+\index{conans.client.file\_copier.FileCopier@{conans.client.file\_copier.FileCopier}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!conans.client.file\_copier.FileCopier@{conans.client.file\_copier.FileCopier}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def conans.\+client.\+file\+\_\+copier.\+File\+Copier.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{source\+\_\+folders,  }\item[{}]{root\+\_\+destination\+\_\+folder }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Takes the base folders to copy resources src -> dst. These folders names
+will not be used in the relative names while copying
+param source_folders: list of folders to copy things from, typically the
+                          store build folder
+param root_destination_folder: The base folder to copy things to, typically the
+                               store package folder
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1file__copier_1_1FileCopier_a0d45d6fbc433e6643e9a6dd607bd6e66}\label{classconans_1_1client_1_1file__copier_1_1FileCopier_a0d45d6fbc433e6643e9a6dd607bd6e66}} 
+\index{conans.client.file\_copier.FileCopier@{conans.client.file\_copier.FileCopier}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!conans.client.file\_copier.FileCopier@{conans.client.file\_copier.FileCopier}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily def conans.\+client.\+file\+\_\+copier.\+File\+Copier.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pattern,  }\item[{}]{dst = {\ttfamily \char`\"{}\char`\"{}},  }\item[{}]{src = {\ttfamily \char`\"{}\char`\"{}},  }\item[{}]{keep\+\_\+path = {\ttfamily True},  }\item[{}]{links = {\ttfamily False},  }\item[{}]{symlinks = {\ttfamily None},  }\item[{}]{excludes = {\ttfamily None},  }\item[{}]{ignore\+\_\+case = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}param pattern: an fnmatch file pattern of the files that should be copied. Eg. *.dll
+param dst: the destination local folder, wrt to current conanfile dir, to which
+           the files will be copied. Eg: "bin"
+param src: the source folder in which those files will be searched. This folder
+           will be stripped from the dst name. Eg.: lib/Debug/x86
+param keep_path: False if you want the relative paths to be maintained from
+                 src to dst folders, or just drop. False is useful if you want
+                 to collect e.g. many *.libs among many dirs into a single
+                 lib dir
+param links: True to activate symlink copying
+param excludes: Single pattern or a tuple of patterns to be excluded from the copy
+param ignore_case: will do a case-insensitive pattern matching when True
+return: list of copied files
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/file\+\_\+copier.\+py\end{DoxyCompactItemize}

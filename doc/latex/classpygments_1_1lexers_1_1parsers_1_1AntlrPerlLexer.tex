@@ -1,0 +1,103 @@
+\hypertarget{classpygments_1_1lexers_1_1parsers_1_1AntlrPerlLexer}{}\doxysection{pygments.\+lexers.\+parsers.\+Antlr\+Perl\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1parsers_1_1AntlrPerlLexer}\index{pygments.lexers.parsers.AntlrPerlLexer@{pygments.lexers.parsers.AntlrPerlLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+parsers.\+Antlr\+Perl\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+parsers.\+Antlr\+Perl\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1parsers_1_1AntlrPerlLexer_a5119c520c7037ab8145730b5acbda3b7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1parsers_1_1AntlrPerlLexer_a25c9073d6316fe2276d232252b45f00c}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1AntlrPerlLexer_a7aadb53867d61080efc47c6ea46f2d82}\label{classpygments_1_1lexers_1_1parsers_1_1AntlrPerlLexer_a7aadb53867d61080efc47c6ea46f2d82}} 
+{\bfseries name}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1AntlrPerlLexer_ad066c005cc5f823cf02264047b5e75c7}\label{classpygments_1_1lexers_1_1parsers_1_1AntlrPerlLexer_ad066c005cc5f823cf02264047b5e75c7}} 
+{\bfseries aliases}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1AntlrPerlLexer_a825a46559493a2f93232d6a20bdeedd6}\label{classpygments_1_1lexers_1_1parsers_1_1AntlrPerlLexer_a825a46559493a2f93232d6a20bdeedd6}} 
+{\bfseries filenames}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1AntlrPerlLexer_add405c09b77918dfea0d3120f0ceb69c}\label{classpygments_1_1lexers_1_1parsers_1_1AntlrPerlLexer_add405c09b77918dfea0d3120f0ceb69c}} 
+{\bfseries url}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1AntlrPerlLexer_adf6747a10bb74b16ce497f48b0b29d00}\label{classpygments_1_1lexers_1_1parsers_1_1AntlrPerlLexer_adf6747a10bb74b16ce497f48b0b29d00}} 
+{\bfseries version\+\_\+added}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}ANTLR with Perl Target
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1AntlrPerlLexer_a5119c520c7037ab8145730b5acbda3b7}\label{classpygments_1_1lexers_1_1parsers_1_1AntlrPerlLexer_a5119c520c7037ab8145730b5acbda3b7}} 
+\index{pygments.lexers.parsers.AntlrPerlLexer@{pygments.lexers.parsers.AntlrPerlLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.parsers.AntlrPerlLexer@{pygments.lexers.parsers.AntlrPerlLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+parsers.\+Antlr\+Perl\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1AntlrPerlLexer_a25c9073d6316fe2276d232252b45f00c}\label{classpygments_1_1lexers_1_1parsers_1_1AntlrPerlLexer_a25c9073d6316fe2276d232252b45f00c}} 
+\index{pygments.lexers.parsers.AntlrPerlLexer@{pygments.lexers.parsers.AntlrPerlLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.parsers.AntlrPerlLexer@{pygments.lexers.parsers.AntlrPerlLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+parsers.\+Antlr\+Perl\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/parsers.\+py\end{DoxyCompactItemize}

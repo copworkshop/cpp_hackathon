@@ -1,0 +1,107 @@
+\hypertarget{classconans_1_1client_1_1loader_1_1ConanFileLoader}{}\doxysection{conans.\+client.\+loader.\+Conan\+File\+Loader Class Reference}
+\label{classconans_1_1client_1_1loader_1_1ConanFileLoader}\index{conans.client.loader.ConanFileLoader@{conans.client.loader.ConanFileLoader}}
+
+
+Inheritance diagram for conans.\+client.\+loader.\+Conan\+File\+Loader\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+loader.\+Conan\+File\+Loader\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1loader_1_1ConanFileLoader_ac1097684f333d17fdc2cab15cfdb7e4e}\label{classconans_1_1client_1_1loader_1_1ConanFileLoader_ac1097684f333d17fdc2cab15cfdb7e4e}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, runner, output, python\+\_\+requires, generator\+\_\+manager=None, pyreq\+\_\+loader=None, requester=None)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1loader_1_1ConanFileLoader_aa7ae832ad256b58641b5b00a14481535}{load\+\_\+basic}} (self, conanfile\+\_\+path, lock\+\_\+python\+\_\+requires=None, user=None, channel=None, display=\char`\"{}\char`\"{})
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1loader_1_1ConanFileLoader_afc22a3dcab7b85e3d3b834ba993ce2ba}{load\+\_\+basic\+\_\+module}} (self, conanfile\+\_\+path, lock\+\_\+python\+\_\+requires=None, user=None, channel=None, display=\char`\"{}\char`\"{})
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1loader_1_1ConanFileLoader_adeeddd3ec262cdefb646f473cef3e5be}{load\+\_\+generators}} (self, conanfile\+\_\+path)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1loader_1_1ConanFileLoader_ac6f50ef6a3d75a9b962865ace26363e8}{load\+\_\+named}} (self, conanfile\+\_\+path, name, version, user, channel, lock\+\_\+python\+\_\+requires=None)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1loader_1_1ConanFileLoader_a3c4ec9963fd37a1ea67781563a7d8142}{load\+\_\+export}} (self, conanfile\+\_\+path, name, version, user, channel, lock\+\_\+python\+\_\+requires=None)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1loader_1_1ConanFileLoader_a927fafbe6124992bb356fbc6b0f074df}{load\+\_\+consumer}} (self, conanfile\+\_\+path, profile\+\_\+host, name=None, version=None, user=None, channel=None, lock\+\_\+python\+\_\+requires=None, require\+\_\+overrides=None)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1loader_1_1ConanFileLoader_a6d245cf1b61a64fa132537f2882b99b4}{load\+\_\+conanfile}} (self, conanfile\+\_\+path, profile, ref, lock\+\_\+python\+\_\+requires=None)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1loader_1_1ConanFileLoader_ac9782ed2f3e61b6515a74d8489d6ad44}\label{classconans_1_1client_1_1loader_1_1ConanFileLoader_ac9782ed2f3e61b6515a74d8489d6ad44}} 
+def {\bfseries load\+\_\+conanfile\+\_\+txt} (self, conan\+\_\+txt\+\_\+path, profile\+\_\+host, ref=None, require\+\_\+overrides=None)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1loader_1_1ConanFileLoader_a58faa04a8808e4660b7e49b625d9a425}\label{classconans_1_1client_1_1loader_1_1ConanFileLoader_a58faa04a8808e4660b7e49b625d9a425}} 
+def {\bfseries load\+\_\+virtual} (self, references, profile\+\_\+host, scope\+\_\+options=True, build\+\_\+requires\+\_\+options=None, is\+\_\+build\+\_\+require=False, require\+\_\+overrides=None)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1loader_1_1ConanFileLoader_aa7ae832ad256b58641b5b00a14481535}\label{classconans_1_1client_1_1loader_1_1ConanFileLoader_aa7ae832ad256b58641b5b00a14481535}} 
+\index{conans.client.loader.ConanFileLoader@{conans.client.loader.ConanFileLoader}!load\_basic@{load\_basic}}
+\index{load\_basic@{load\_basic}!conans.client.loader.ConanFileLoader@{conans.client.loader.ConanFileLoader}}
+\doxysubsubsection{\texorpdfstring{load\_basic()}{load\_basic()}}
+{\footnotesize\ttfamily def conans.\+client.\+loader.\+Conan\+File\+Loader.\+load\+\_\+basic (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{conanfile\+\_\+path,  }\item[{}]{lock\+\_\+python\+\_\+requires = {\ttfamily None},  }\item[{}]{user = {\ttfamily None},  }\item[{}]{channel = {\ttfamily None},  }\item[{}]{display = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} loads a conanfile basic object without evaluating anything
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1client_1_1loader_1_1ConanFileLoader_afc22a3dcab7b85e3d3b834ba993ce2ba}\label{classconans_1_1client_1_1loader_1_1ConanFileLoader_afc22a3dcab7b85e3d3b834ba993ce2ba}} 
+\index{conans.client.loader.ConanFileLoader@{conans.client.loader.ConanFileLoader}!load\_basic\_module@{load\_basic\_module}}
+\index{load\_basic\_module@{load\_basic\_module}!conans.client.loader.ConanFileLoader@{conans.client.loader.ConanFileLoader}}
+\doxysubsubsection{\texorpdfstring{load\_basic\_module()}{load\_basic\_module()}}
+{\footnotesize\ttfamily def conans.\+client.\+loader.\+Conan\+File\+Loader.\+load\+\_\+basic\+\_\+module (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{conanfile\+\_\+path,  }\item[{}]{lock\+\_\+python\+\_\+requires = {\ttfamily None},  }\item[{}]{user = {\ttfamily None},  }\item[{}]{channel = {\ttfamily None},  }\item[{}]{display = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} loads a conanfile basic object without evaluating anything, returns the module too
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1client_1_1loader_1_1ConanFileLoader_a6d245cf1b61a64fa132537f2882b99b4}\label{classconans_1_1client_1_1loader_1_1ConanFileLoader_a6d245cf1b61a64fa132537f2882b99b4}} 
+\index{conans.client.loader.ConanFileLoader@{conans.client.loader.ConanFileLoader}!load\_conanfile@{load\_conanfile}}
+\index{load\_conanfile@{load\_conanfile}!conans.client.loader.ConanFileLoader@{conans.client.loader.ConanFileLoader}}
+\doxysubsubsection{\texorpdfstring{load\_conanfile()}{load\_conanfile()}}
+{\footnotesize\ttfamily def conans.\+client.\+loader.\+Conan\+File\+Loader.\+load\+\_\+conanfile (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{conanfile\+\_\+path,  }\item[{}]{profile,  }\item[{}]{ref,  }\item[{}]{lock\+\_\+python\+\_\+requires = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} load a conanfile with a full reference, name, version, user and channel are obtained
+from the reference, not evaluated. Main way to load from the cache
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1client_1_1loader_1_1ConanFileLoader_a927fafbe6124992bb356fbc6b0f074df}\label{classconans_1_1client_1_1loader_1_1ConanFileLoader_a927fafbe6124992bb356fbc6b0f074df}} 
+\index{conans.client.loader.ConanFileLoader@{conans.client.loader.ConanFileLoader}!load\_consumer@{load\_consumer}}
+\index{load\_consumer@{load\_consumer}!conans.client.loader.ConanFileLoader@{conans.client.loader.ConanFileLoader}}
+\doxysubsubsection{\texorpdfstring{load\_consumer()}{load\_consumer()}}
+{\footnotesize\ttfamily def conans.\+client.\+loader.\+Conan\+File\+Loader.\+load\+\_\+consumer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{conanfile\+\_\+path,  }\item[{}]{profile\+\_\+host,  }\item[{}]{name = {\ttfamily None},  }\item[{}]{version = {\ttfamily None},  }\item[{}]{user = {\ttfamily None},  }\item[{}]{channel = {\ttfamily None},  }\item[{}]{lock\+\_\+python\+\_\+requires = {\ttfamily None},  }\item[{}]{require\+\_\+overrides = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} loads a conanfile.py in user space. Might have name/version or not
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1client_1_1loader_1_1ConanFileLoader_a3c4ec9963fd37a1ea67781563a7d8142}\label{classconans_1_1client_1_1loader_1_1ConanFileLoader_a3c4ec9963fd37a1ea67781563a7d8142}} 
+\index{conans.client.loader.ConanFileLoader@{conans.client.loader.ConanFileLoader}!load\_export@{load\_export}}
+\index{load\_export@{load\_export}!conans.client.loader.ConanFileLoader@{conans.client.loader.ConanFileLoader}}
+\doxysubsubsection{\texorpdfstring{load\_export()}{load\_export()}}
+{\footnotesize\ttfamily def conans.\+client.\+loader.\+Conan\+File\+Loader.\+load\+\_\+export (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{conanfile\+\_\+path,  }\item[{}]{name,  }\item[{}]{version,  }\item[{}]{user,  }\item[{}]{channel,  }\item[{}]{lock\+\_\+python\+\_\+requires = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} loads the conanfile and evaluates its name, version, and enforce its existence
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1client_1_1loader_1_1ConanFileLoader_adeeddd3ec262cdefb646f473cef3e5be}\label{classconans_1_1client_1_1loader_1_1ConanFileLoader_adeeddd3ec262cdefb646f473cef3e5be}} 
+\index{conans.client.loader.ConanFileLoader@{conans.client.loader.ConanFileLoader}!load\_generators@{load\_generators}}
+\index{load\_generators@{load\_generators}!conans.client.loader.ConanFileLoader@{conans.client.loader.ConanFileLoader}}
+\doxysubsubsection{\texorpdfstring{load\_generators()}{load\_generators()}}
+{\footnotesize\ttfamily def conans.\+client.\+loader.\+Conan\+File\+Loader.\+load\+\_\+generators (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{conanfile\+\_\+path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Load generator classes from a module. Any non-generator classes
+will be ignored. python_requires is not processed.
+\end{DoxyVerb}
+
+
+\begin{DoxyVerb} Parses a python in-memory module and adds any generators found
+    to the provided generator list
+    @param conanfile_module: the module to be processed\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1client_1_1loader_1_1ConanFileLoader_ac6f50ef6a3d75a9b962865ace26363e8}\label{classconans_1_1client_1_1loader_1_1ConanFileLoader_ac6f50ef6a3d75a9b962865ace26363e8}} 
+\index{conans.client.loader.ConanFileLoader@{conans.client.loader.ConanFileLoader}!load\_named@{load\_named}}
+\index{load\_named@{load\_named}!conans.client.loader.ConanFileLoader@{conans.client.loader.ConanFileLoader}}
+\doxysubsubsection{\texorpdfstring{load\_named()}{load\_named()}}
+{\footnotesize\ttfamily def conans.\+client.\+loader.\+Conan\+File\+Loader.\+load\+\_\+named (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{conanfile\+\_\+path,  }\item[{}]{name,  }\item[{}]{version,  }\item[{}]{user,  }\item[{}]{channel,  }\item[{}]{lock\+\_\+python\+\_\+requires = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} loads the basic conanfile object and evaluates its name and version
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/loader.\+py\end{DoxyCompactItemize}

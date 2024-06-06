@@ -1,0 +1,101 @@
+\hypertarget{classlxml_1_1html_1_1FormElement}{}\doxysection{lxml.\+html.\+Form\+Element Class Reference}
+\label{classlxml_1_1html_1_1FormElement}\index{lxml.html.FormElement@{lxml.html.FormElement}}
+
+
+form handling  
+
+
+
+
+Inheritance diagram for lxml.\+html.\+Form\+Element\+:
+% FIG 0
+
+
+Collaboration diagram for lxml.\+html.\+Form\+Element\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classlxml_1_1html_1_1FormElement_a0708968ca81c28a7f0ecddfdb6d295b3}{inputs}} (self)
+\item 
+def \mbox{\hyperlink{classlxml_1_1html_1_1FormElement_af218c1d1b42f22a2a018cb5cbdeb92af}{fields}} (self)
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1FormElement_a92876e1e4fe5e33069c7abb940c4412a}\label{classlxml_1_1html_1_1FormElement_a92876e1e4fe5e33069c7abb940c4412a}} 
+def {\bfseries fields} (self, value)
+\item 
+def \mbox{\hyperlink{classlxml_1_1html_1_1FormElement_abd0b218fd3e9713e4ec7f7a2bd6d7203}{form\+\_\+values}} (self)
+\item 
+def \mbox{\hyperlink{classlxml_1_1html_1_1FormElement_add912a38b9ff2450606b1b517df911f5}{action}} (self)
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1FormElement_a5b88127e9da7a4adc1168cd860693d48}\label{classlxml_1_1html_1_1FormElement_a5b88127e9da7a4adc1168cd860693d48}} 
+def {\bfseries action} (self, value)
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1FormElement_add912a38b9ff2450606b1b517df911f5}\label{classlxml_1_1html_1_1FormElement_add912a38b9ff2450606b1b517df911f5}} 
+def {\bfseries action} (self)
+\item 
+def \mbox{\hyperlink{classlxml_1_1html_1_1FormElement_a1659cdac053d56b1897a81f7ba4afba6}{method}} (self)
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1FormElement_af5d286d1f404cadae55d4c472b596365}\label{classlxml_1_1html_1_1FormElement_af5d286d1f404cadae55d4c472b596365}} 
+def {\bfseries method} (self, value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+form handling 
+
+\begin{DoxyVerb}Represents a <form> element.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlxml_1_1html_1_1FormElement_add912a38b9ff2450606b1b517df911f5}\label{classlxml_1_1html_1_1FormElement_add912a38b9ff2450606b1b517df911f5}} 
+\index{lxml.html.FormElement@{lxml.html.FormElement}!action@{action}}
+\index{action@{action}!lxml.html.FormElement@{lxml.html.FormElement}}
+\doxysubsubsection{\texorpdfstring{action()}{action()}}
+{\footnotesize\ttfamily def lxml.\+html.\+Form\+Element.\+action (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get/set the form's ``action`` attribute.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classlxml_1_1html_1_1FormElement_af218c1d1b42f22a2a018cb5cbdeb92af}\label{classlxml_1_1html_1_1FormElement_af218c1d1b42f22a2a018cb5cbdeb92af}} 
+\index{lxml.html.FormElement@{lxml.html.FormElement}!fields@{fields}}
+\index{fields@{fields}!lxml.html.FormElement@{lxml.html.FormElement}}
+\doxysubsubsection{\texorpdfstring{fields()}{fields()}}
+{\footnotesize\ttfamily def lxml.\+html.\+Form\+Element.\+fields (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dictionary-like object that represents all the fields in this
+form.  You can set values in this dictionary to effect the
+form.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classlxml_1_1html_1_1FormElement_abd0b218fd3e9713e4ec7f7a2bd6d7203}\label{classlxml_1_1html_1_1FormElement_abd0b218fd3e9713e4ec7f7a2bd6d7203}} 
+\index{lxml.html.FormElement@{lxml.html.FormElement}!form\_values@{form\_values}}
+\index{form\_values@{form\_values}!lxml.html.FormElement@{lxml.html.FormElement}}
+\doxysubsubsection{\texorpdfstring{form\_values()}{form\_values()}}
+{\footnotesize\ttfamily def lxml.\+html.\+Form\+Element.\+form\+\_\+values (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of tuples of the field values for the form.
+This is suitable to be passed to ``urllib.urlencode()``.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classlxml_1_1html_1_1FormElement_a0708968ca81c28a7f0ecddfdb6d295b3}\label{classlxml_1_1html_1_1FormElement_a0708968ca81c28a7f0ecddfdb6d295b3}} 
+\index{lxml.html.FormElement@{lxml.html.FormElement}!inputs@{inputs}}
+\index{inputs@{inputs}!lxml.html.FormElement@{lxml.html.FormElement}}
+\doxysubsubsection{\texorpdfstring{inputs()}{inputs()}}
+{\footnotesize\ttfamily def lxml.\+html.\+Form\+Element.\+inputs (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns an accessor for all the input elements in the form.
+
+See `InputGetter` for more information about the object.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classlxml_1_1html_1_1FormElement_a1659cdac053d56b1897a81f7ba4afba6}\label{classlxml_1_1html_1_1FormElement_a1659cdac053d56b1897a81f7ba4afba6}} 
+\index{lxml.html.FormElement@{lxml.html.FormElement}!method@{method}}
+\index{method@{method}!lxml.html.FormElement@{lxml.html.FormElement}}
+\doxysubsubsection{\texorpdfstring{method()}{method()}}
+{\footnotesize\ttfamily def lxml.\+html.\+Form\+Element.\+method (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get/set the form's method.  Always returns a capitalized
+string, and defaults to ``'GET'``
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/lxml/html/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

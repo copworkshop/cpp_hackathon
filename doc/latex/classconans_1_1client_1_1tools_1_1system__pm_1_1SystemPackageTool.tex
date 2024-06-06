@@ -1,0 +1,81 @@
+\hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1SystemPackageTool}{}\doxysection{conans.\+client.\+tools.\+system\+\_\+pm.\+System\+Package\+Tool Class Reference}
+\label{classconans_1_1client_1_1tools_1_1system__pm_1_1SystemPackageTool}\index{conans.client.tools.system\_pm.SystemPackageTool@{conans.client.tools.system\_pm.SystemPackageTool}}
+
+
+Inheritance diagram for conans.\+client.\+tools.\+system\+\_\+pm.\+System\+Package\+Tool\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+tools.\+system\+\_\+pm.\+System\+Package\+Tool\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1SystemPackageTool_a1d4c31d87e36fb383fd04c175dfe1544}\label{classconans_1_1client_1_1tools_1_1system__pm_1_1SystemPackageTool_a1d4c31d87e36fb383fd04c175dfe1544}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, runner=None, os\+\_\+info=None, tool=None, recommends=False, output=None, conanfile=None, default\+\_\+mode=\char`\"{}enabled\char`\"{})
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1SystemPackageTool_a154b10e90a8dac47ee8b6f35dbedbc4b}\label{classconans_1_1client_1_1tools_1_1system__pm_1_1SystemPackageTool_a154b10e90a8dac47ee8b6f35dbedbc4b}} 
+def {\bfseries add\+\_\+repository} (self, repository, repo\+\_\+key=None, \mbox{\hyperlink{classconans_1_1client_1_1tools_1_1system__pm_1_1SystemPackageTool_a73cc6141d25bfe3c4f6758b2da3cd8bb}{update}}=True)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1tools_1_1system__pm_1_1SystemPackageTool_a73cc6141d25bfe3c4f6758b2da3cd8bb}{update}} (self)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1tools_1_1system__pm_1_1SystemPackageTool_a8cdc550991f7dc9861e13f070ac713f0}{install}} (self, packages, \mbox{\hyperlink{classconans_1_1client_1_1tools_1_1system__pm_1_1SystemPackageTool_a73cc6141d25bfe3c4f6758b2da3cd8bb}{update}}=True, force=False, arch\+\_\+names=None)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1tools_1_1system__pm_1_1SystemPackageTool_a2841312d01ab8059673031cd1215d1eb}{install\+\_\+packages}} (self, packages, \mbox{\hyperlink{classconans_1_1client_1_1tools_1_1system__pm_1_1SystemPackageTool_a73cc6141d25bfe3c4f6758b2da3cd8bb}{update}}=True, force=False, arch\+\_\+names=None)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1SystemPackageTool_ae1f7939127275a93996d7785ea606e0c}\label{classconans_1_1client_1_1tools_1_1system__pm_1_1SystemPackageTool_ae1f7939127275a93996d7785ea606e0c}} 
+def {\bfseries installed} (self, package\+\_\+name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1SystemPackageTool_a8cdc550991f7dc9861e13f070ac713f0}\label{classconans_1_1client_1_1tools_1_1system__pm_1_1SystemPackageTool_a8cdc550991f7dc9861e13f070ac713f0}} 
+\index{conans.client.tools.system\_pm.SystemPackageTool@{conans.client.tools.system\_pm.SystemPackageTool}!install@{install}}
+\index{install@{install}!conans.client.tools.system\_pm.SystemPackageTool@{conans.client.tools.system\_pm.SystemPackageTool}}
+\doxysubsubsection{\texorpdfstring{install()}{install()}}
+{\footnotesize\ttfamily def conans.\+client.\+tools.\+system\+\_\+pm.\+System\+Package\+Tool.\+install (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{packages,  }\item[{}]{update = {\ttfamily True},  }\item[{}]{force = {\ttfamily False},  }\item[{}]{arch\+\_\+names = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Get the system package tool install command and install one package
+
+:param packages: String with a package to be installed or a list with its variants e.g. "libusb-dev libxusb-devel"
+:param update: Run update command before to install
+:param force: Force installing all packages
+:param arch_names: Package suffix/prefix name used by installer tool e.g. {"x86_64": "amd64"}
+:return: None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1SystemPackageTool_a2841312d01ab8059673031cd1215d1eb}\label{classconans_1_1client_1_1tools_1_1system__pm_1_1SystemPackageTool_a2841312d01ab8059673031cd1215d1eb}} 
+\index{conans.client.tools.system\_pm.SystemPackageTool@{conans.client.tools.system\_pm.SystemPackageTool}!install\_packages@{install\_packages}}
+\index{install\_packages@{install\_packages}!conans.client.tools.system\_pm.SystemPackageTool@{conans.client.tools.system\_pm.SystemPackageTool}}
+\doxysubsubsection{\texorpdfstring{install\_packages()}{install\_packages()}}
+{\footnotesize\ttfamily def conans.\+client.\+tools.\+system\+\_\+pm.\+System\+Package\+Tool.\+install\+\_\+packages (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{packages,  }\item[{}]{update = {\ttfamily True},  }\item[{}]{force = {\ttfamily False},  }\item[{}]{arch\+\_\+names = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Get the system package tool install command and install all packages and/or variants.
+    Inputs:
+    "pkg-variant1"  # (1) Install only one package
+    ["pkg-variant1", "otherpkg", "thirdpkg"] # (2) All must be installed
+    [("pkg-variant1", "pkg-variant2"), "otherpkg", "thirdpkg"] # (3) Install only one variant
+                                                                     and all other packages
+    "pkg1 pkg2", "pkg3 pkg4" # (4) Invalid
+    ["pkg1 pkg2", "pkg3 pkg4"] # (5) Invalid
+
+:param packages: Supports multiple formats (string,list,tuple). Lists and tuples into a list
+are considered variants and is processed just like self.install(). A list of string is
+considered a list of packages to be installed (only not installed yet).
+:param update: Run update command before to install
+:param force: Force installing all packages, including all installed.
+:param arch_names: Package suffix/prefix name used by installer tool e.g. {"x86_64": "amd64"}
+:return: None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1SystemPackageTool_a73cc6141d25bfe3c4f6758b2da3cd8bb}\label{classconans_1_1client_1_1tools_1_1system__pm_1_1SystemPackageTool_a73cc6141d25bfe3c4f6758b2da3cd8bb}} 
+\index{conans.client.tools.system\_pm.SystemPackageTool@{conans.client.tools.system\_pm.SystemPackageTool}!update@{update}}
+\index{update@{update}!conans.client.tools.system\_pm.SystemPackageTool@{conans.client.tools.system\_pm.SystemPackageTool}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily def conans.\+client.\+tools.\+system\+\_\+pm.\+System\+Package\+Tool.\+update (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    Get the system package tool update command
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/tools/system\+\_\+pm.\+py\end{DoxyCompactItemize}

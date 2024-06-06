@@ -1,0 +1,63 @@
+\hypertarget{classconans_1_1client_1_1store_1_1localdb_1_1LocalDB}{}\doxysection{conans.\+client.\+store.\+localdb.\+Local\+DB Class Reference}
+\label{classconans_1_1client_1_1store_1_1localdb_1_1LocalDB}\index{conans.client.store.localdb.LocalDB@{conans.client.store.localdb.LocalDB}}
+
+
+Inheritance diagram for conans.\+client.\+store.\+localdb.\+Local\+DB\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+store.\+localdb.\+Local\+DB\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1store_1_1localdb_1_1LocalDB_afe7b2fc5e460ce123bbb9669c2cb4bd3}\label{classconans_1_1client_1_1store_1_1localdb_1_1LocalDB_afe7b2fc5e460ce123bbb9669c2cb4bd3}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, dbfile, encryption\+\_\+key)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1store_1_1localdb_1_1LocalDB_a8ef075b40d4660022cb5ed0d491a080c}\label{classconans_1_1client_1_1store_1_1localdb_1_1LocalDB_a8ef075b40d4660022cb5ed0d491a080c}} 
+def {\bfseries clean} (self)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1store_1_1localdb_1_1LocalDB_a4c52d5e0de683f16b0955947367a06cb}{get\+\_\+login}} (self, remote\+\_\+url)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1store_1_1localdb_1_1LocalDB_abdc4772bdbcc774c7ff3b6e0e7201f02}\label{classconans_1_1client_1_1store_1_1localdb_1_1LocalDB_abdc4772bdbcc774c7ff3b6e0e7201f02}} 
+def {\bfseries get\+\_\+username} (self, remote\+\_\+url)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1store_1_1localdb_1_1LocalDB_a80b783b1d434d6557631edb7507d80cd}{store}} (self, user, token, refresh\+\_\+token, remote\+\_\+url)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1store_1_1localdb_1_1LocalDB_ae1ea004073de4171ad342e9c744da4cc}\label{classconans_1_1client_1_1store_1_1localdb_1_1LocalDB_ae1ea004073de4171ad342e9c744da4cc}} 
+def {\bfseries create} (dbfile, encryption\+\_\+key=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1store_1_1localdb_1_1LocalDB_a19d536e5e99b2f3bfe4460d65e514b60}\label{classconans_1_1client_1_1store_1_1localdb_1_1LocalDB_a19d536e5e99b2f3bfe4460d65e514b60}} 
+{\bfseries dbfile}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1store_1_1localdb_1_1LocalDB_ad2f7431666063729e91cd60f76bebd76}\label{classconans_1_1client_1_1store_1_1localdb_1_1LocalDB_ad2f7431666063729e91cd60f76bebd76}} 
+{\bfseries encryption\+\_\+key}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1store_1_1localdb_1_1LocalDB_a4c52d5e0de683f16b0955947367a06cb}\label{classconans_1_1client_1_1store_1_1localdb_1_1LocalDB_a4c52d5e0de683f16b0955947367a06cb}} 
+\index{conans.client.store.localdb.LocalDB@{conans.client.store.localdb.LocalDB}!get\_login@{get\_login}}
+\index{get\_login@{get\_login}!conans.client.store.localdb.LocalDB@{conans.client.store.localdb.LocalDB}}
+\doxysubsubsection{\texorpdfstring{get\_login()}{get\_login()}}
+{\footnotesize\ttfamily def conans.\+client.\+store.\+localdb.\+Local\+DB.\+get\+\_\+login (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{remote\+\_\+url }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Returns login credentials. This method is also in charge of expiring them. \end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1client_1_1store_1_1localdb_1_1LocalDB_a80b783b1d434d6557631edb7507d80cd}\label{classconans_1_1client_1_1store_1_1localdb_1_1LocalDB_a80b783b1d434d6557631edb7507d80cd}} 
+\index{conans.client.store.localdb.LocalDB@{conans.client.store.localdb.LocalDB}!store@{store}}
+\index{store@{store}!conans.client.store.localdb.LocalDB@{conans.client.store.localdb.LocalDB}}
+\doxysubsubsection{\texorpdfstring{store()}{store()}}
+{\footnotesize\ttfamily def conans.\+client.\+store.\+localdb.\+Local\+DB.\+store (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{user,  }\item[{}]{token,  }\item[{}]{refresh\+\_\+token,  }\item[{}]{remote\+\_\+url }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Login is a tuple of (user, token) \end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/store/localdb.\+py\end{DoxyCompactItemize}

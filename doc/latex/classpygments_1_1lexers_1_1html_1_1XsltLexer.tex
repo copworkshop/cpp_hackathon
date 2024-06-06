@@ -1,0 +1,118 @@
+\hypertarget{classpygments_1_1lexers_1_1html_1_1XsltLexer}{}\doxysection{pygments.\+lexers.\+html.\+Xslt\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1html_1_1XsltLexer}\index{pygments.lexers.html.XsltLexer@{pygments.lexers.html.XsltLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+html.\+Xslt\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+html.\+Xslt\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1html_1_1XsltLexer_a4d49dfc33adb3290a9abd276bf035ecc}{get\+\_\+tokens\+\_\+unprocessed}} (self, text)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1html_1_1XsltLexer_a431fcbb4e3b464fbd991674cc473d6aa}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1XsltLexer_ac28ac4e2786f4e3b7efa37d22000a8f6}\label{classpygments_1_1lexers_1_1html_1_1XsltLexer_ac28ac4e2786f4e3b7efa37d22000a8f6}} 
+string {\bfseries name} = \textquotesingle{}XSLT\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1XsltLexer_ae155d6156db7297219dc9126ffaa1ce7}\label{classpygments_1_1lexers_1_1html_1_1XsltLexer_ae155d6156db7297219dc9126ffaa1ce7}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}xslt\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1XsltLexer_a1aa6626c4b2db955e94842f6ef832759}\label{classpygments_1_1lexers_1_1html_1_1XsltLexer_a1aa6626c4b2db955e94842f6ef832759}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.xsl\textquotesingle{}, \textquotesingle{}$\ast$.xslt\textquotesingle{}, \textquotesingle{}$\ast$.xpl\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1XsltLexer_a62f364b65fe1abf5e8cc384d6d895852}\label{classpygments_1_1lexers_1_1html_1_1XsltLexer_a62f364b65fe1abf5e8cc384d6d895852}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}application/xsl+xml\textquotesingle{}, \textquotesingle{}application/xslt+xml\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1XsltLexer_a1bec874a0eb8b93a9390524f76a30d3f}\label{classpygments_1_1lexers_1_1html_1_1XsltLexer_a1bec874a0eb8b93a9390524f76a30d3f}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+w3.\+org/TR/xslt-\/30\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1XsltLexer_a240101fc0661701e2dd032ac705b96dd}\label{classpygments_1_1lexers_1_1html_1_1XsltLexer_a240101fc0661701e2dd032ac705b96dd}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}0.\+10\textquotesingle{}
+\item 
+dictionary {\bfseries EXTRA\+\_\+\+KEYWORDS}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A lexer for XSLT.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1XsltLexer_a431fcbb4e3b464fbd991674cc473d6aa}\label{classpygments_1_1lexers_1_1html_1_1XsltLexer_a431fcbb4e3b464fbd991674cc473d6aa}} 
+\index{pygments.lexers.html.XsltLexer@{pygments.lexers.html.XsltLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.html.XsltLexer@{pygments.lexers.html.XsltLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+html.\+Xslt\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexers_1_1html_1_1XmlLexer_a295676fef6ed23b1953ea54968718e98}{pygments.\+lexers.\+html.\+Xml\+Lexer}}.
+
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1XsltLexer_a4d49dfc33adb3290a9abd276bf035ecc}\label{classpygments_1_1lexers_1_1html_1_1XsltLexer_a4d49dfc33adb3290a9abd276bf035ecc}} 
+\index{pygments.lexers.html.XsltLexer@{pygments.lexers.html.XsltLexer}!get\_tokens\_unprocessed@{get\_tokens\_unprocessed}}
+\index{get\_tokens\_unprocessed@{get\_tokens\_unprocessed}!pygments.lexers.html.XsltLexer@{pygments.lexers.html.XsltLexer}}
+\doxysubsubsection{\texorpdfstring{get\_tokens\_unprocessed()}{get\_tokens\_unprocessed()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+html.\+Xslt\+Lexer.\+get\+\_\+tokens\+\_\+unprocessed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method should process the text and return an iterable of
+``(index, tokentype, value)`` tuples where ``index`` is the starting
+position of the token within the input text.
+
+It must be overridden by subclasses. It is recommended to
+implement it as a generator to maximize effectiveness.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_aad5c02b7f661f64f91cf8c8d880e9f67}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1XsltLexer_a716fbcb07b2249921b4c7f69003ba22c}\label{classpygments_1_1lexers_1_1html_1_1XsltLexer_a716fbcb07b2249921b4c7f69003ba22c}} 
+\index{pygments.lexers.html.XsltLexer@{pygments.lexers.html.XsltLexer}!EXTRA\_KEYWORDS@{EXTRA\_KEYWORDS}}
+\index{EXTRA\_KEYWORDS@{EXTRA\_KEYWORDS}!pygments.lexers.html.XsltLexer@{pygments.lexers.html.XsltLexer}}
+\doxysubsubsection{\texorpdfstring{EXTRA\_KEYWORDS}{EXTRA\_KEYWORDS}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+html.\+Xslt\+Lexer.\+EXTRA\+\_\+\+KEYWORDS\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'apply-\/imports'}, \textcolor{stringliteral}{'apply-\/templates'}, \textcolor{stringliteral}{'attribute'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'attribute-\/set'}, \textcolor{stringliteral}{'call-\/template'}, \textcolor{stringliteral}{'choose'}, \textcolor{stringliteral}{'comment'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'copy'}, \textcolor{stringliteral}{'copy-\/of'}, \textcolor{stringliteral}{'decimal-\/format'}, \textcolor{stringliteral}{'element'}, \textcolor{stringliteral}{'fallback'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'for-\/each'}, \textcolor{stringliteral}{'if'}, \textcolor{stringliteral}{'import'}, \textcolor{stringliteral}{'include'}, \textcolor{stringliteral}{'key'}, \textcolor{stringliteral}{'message'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'namespace-\/alias'}, \textcolor{stringliteral}{'number'}, \textcolor{stringliteral}{'otherwise'}, \textcolor{stringliteral}{'output'}, \textcolor{stringliteral}{'param'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'preserve-\/space'}, \textcolor{stringliteral}{'processing-\/instruction'}, \textcolor{stringliteral}{'sort'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'strip-\/space'}, \textcolor{stringliteral}{'stylesheet'}, \textcolor{stringliteral}{'template'}, \textcolor{stringliteral}{'text'}, \textcolor{stringliteral}{'transform'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'value-\/of'}, \textcolor{stringliteral}{'variable'}, \textcolor{stringliteral}{'when'}, \textcolor{stringliteral}{'with-\/param'}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/html.\+py\end{DoxyCompactItemize}

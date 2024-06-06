@@ -1,0 +1,52 @@
+\hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1PacManTool}{}\doxysection{conans.\+client.\+tools.\+system\+\_\+pm.\+Pac\+Man\+Tool Class Reference}
+\label{classconans_1_1client_1_1tools_1_1system__pm_1_1PacManTool}\index{conans.client.tools.system\_pm.PacManTool@{conans.client.tools.system\_pm.PacManTool}}
+
+
+Inheritance diagram for conans.\+client.\+tools.\+system\+\_\+pm.\+Pac\+Man\+Tool\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+tools.\+system\+\_\+pm.\+Pac\+Man\+Tool\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1PacManTool_aa946873ea81f424a92fc0a8a125dcceb}\label{classconans_1_1client_1_1tools_1_1system__pm_1_1PacManTool_aa946873ea81f424a92fc0a8a125dcceb}} 
+def {\bfseries add\+\_\+repository} (self, repository, repo\+\_\+key=None)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1PacManTool_a0281dc3aaa9779de7a6fb5cb3c4add98}\label{classconans_1_1client_1_1tools_1_1system__pm_1_1PacManTool_a0281dc3aaa9779de7a6fb5cb3c4add98}} 
+def {\bfseries update} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1PacManTool_ab62cffa93f1c714ef1ecc9ec98295036}\label{classconans_1_1client_1_1tools_1_1system__pm_1_1PacManTool_ab62cffa93f1c714ef1ecc9ec98295036}} 
+def {\bfseries install} (self, package\+\_\+name)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1PacManTool_adf1dac1ef27643599a4597f3ee54f9cc}\label{classconans_1_1client_1_1tools_1_1system__pm_1_1PacManTool_adf1dac1ef27643599a4597f3ee54f9cc}} 
+def {\bfseries installed} (self, package\+\_\+name)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1tools_1_1system__pm_1_1PacManTool_a085d94d1d8400f13447008f6db9782ff}{get\+\_\+package\+\_\+name}} (self, package, arch, arch\+\_\+names)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1tools_1_1system__pm_1_1PacManTool_a085d94d1d8400f13447008f6db9782ff}\label{classconans_1_1client_1_1tools_1_1system__pm_1_1PacManTool_a085d94d1d8400f13447008f6db9782ff}} 
+\index{conans.client.tools.system\_pm.PacManTool@{conans.client.tools.system\_pm.PacManTool}!get\_package\_name@{get\_package\_name}}
+\index{get\_package\_name@{get\_package\_name}!conans.client.tools.system\_pm.PacManTool@{conans.client.tools.system\_pm.PacManTool}}
+\doxysubsubsection{\texorpdfstring{get\_package\_name()}{get\_package\_name()}}
+{\footnotesize\ttfamily def conans.\+client.\+tools.\+system\+\_\+pm.\+Pac\+Man\+Tool.\+get\+\_\+package\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{package,  }\item[{}]{arch,  }\item[{}]{arch\+\_\+names }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Retrieve package name to installed according the target arch.
+
+:param package: Regular package name e.g libusb-dev
+:param arch: Host arch from Conanfile.settings
+:param arch_names: Dictionary with suffix/prefix names e.g {"x86_64": "amd64"}
+:return: Package name for Tool e.g. libusb-dev:i386
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconans_1_1client_1_1tools_1_1system__pm_1_1BaseTool_ad406ed642d4be5c45465269aa03d724a}{conans.\+client.\+tools.\+system\+\_\+pm.\+Base\+Tool}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/tools/system\+\_\+pm.\+py\end{DoxyCompactItemize}

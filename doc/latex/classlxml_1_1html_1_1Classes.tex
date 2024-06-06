@@ -1,0 +1,111 @@
+\hypertarget{classlxml_1_1html_1_1Classes}{}\doxysection{lxml.\+html.\+Classes Class Reference}
+\label{classlxml_1_1html_1_1Classes}\index{lxml.html.Classes@{lxml.html.Classes}}
+
+
+Inheritance diagram for lxml.\+html.\+Classes\+:
+% FIG 0
+
+
+Collaboration diagram for lxml.\+html.\+Classes\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1Classes_ad6b449bf6396968a1a27dbd72b332e62}\label{classlxml_1_1html_1_1Classes_ad6b449bf6396968a1a27dbd72b332e62}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, attributes)
+\item 
+def \mbox{\hyperlink{classlxml_1_1html_1_1Classes_a9dd2aa51e62e624b2fcffc4515806d8b}{add}} (self, value)
+\item 
+def \mbox{\hyperlink{classlxml_1_1html_1_1Classes_aa92d7bd4e841cdcfc48e6329ac9c9c20}{discard}} (self, value)
+\item 
+def \mbox{\hyperlink{classlxml_1_1html_1_1Classes_a346ebae5d271ed91944d833430230073}{remove}} (self, value)
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1Classes_a0aaf60ee56d3621499dd9597710fbc62}\label{classlxml_1_1html_1_1Classes_a0aaf60ee56d3621499dd9597710fbc62}} 
+def {\bfseries \+\_\+\+\_\+contains\+\_\+\+\_\+} (self, name)
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1Classes_aa57de6a253664fb9bde9677d2d0819fa}\label{classlxml_1_1html_1_1Classes_aa57de6a253664fb9bde9677d2d0819fa}} 
+def {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1Classes_a2580bc5da1861744095d4dc3c9ed267a}\label{classlxml_1_1html_1_1Classes_a2580bc5da1861744095d4dc3c9ed267a}} 
+def {\bfseries \+\_\+\+\_\+len\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classlxml_1_1html_1_1Classes_a446bde0950a492f0c57e4acb9f535ce4}{update}} (self, values)
+\item 
+def \mbox{\hyperlink{classlxml_1_1html_1_1Classes_aec848b6e951c8de0539140003e7274a3}{toggle}} (self, value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Provides access to an element's class attribute as a set-like collection.
+Usage::
+
+    >>> el = fromstring('<p class="hidden large">Text</p>')
+    >>> classes = el.classes  # or: classes = Classes(el.attrib)
+    >>> classes |= ['block', 'paragraph']
+    >>> el.get('class')
+    'hidden large block paragraph'
+    >>> classes.toggle('hidden')
+    False
+    >>> el.get('class')
+    'large block paragraph'
+    >>> classes -= ('some', 'classes', 'block')
+    >>> el.get('class')
+    'large paragraph'
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlxml_1_1html_1_1Classes_a9dd2aa51e62e624b2fcffc4515806d8b}\label{classlxml_1_1html_1_1Classes_a9dd2aa51e62e624b2fcffc4515806d8b}} 
+\index{lxml.html.Classes@{lxml.html.Classes}!add@{add}}
+\index{add@{add}!lxml.html.Classes@{lxml.html.Classes}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily def lxml.\+html.\+Classes.\+add (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a class.
+
+This has no effect if the class is already present.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classlxml_1_1html_1_1Classes_aa92d7bd4e841cdcfc48e6329ac9c9c20}\label{classlxml_1_1html_1_1Classes_aa92d7bd4e841cdcfc48e6329ac9c9c20}} 
+\index{lxml.html.Classes@{lxml.html.Classes}!discard@{discard}}
+\index{discard@{discard}!lxml.html.Classes@{lxml.html.Classes}}
+\doxysubsubsection{\texorpdfstring{discard()}{discard()}}
+{\footnotesize\ttfamily def lxml.\+html.\+Classes.\+discard (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove a class if it is currently present.
+
+If the class is not present, do nothing.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classlxml_1_1html_1_1Classes_a346ebae5d271ed91944d833430230073}\label{classlxml_1_1html_1_1Classes_a346ebae5d271ed91944d833430230073}} 
+\index{lxml.html.Classes@{lxml.html.Classes}!remove@{remove}}
+\index{remove@{remove}!lxml.html.Classes@{lxml.html.Classes}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily def lxml.\+html.\+Classes.\+remove (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove a class; it must currently be present.
+
+If the class is not present, raise a KeyError.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classlxml_1_1html_1_1Classes_aec848b6e951c8de0539140003e7274a3}\label{classlxml_1_1html_1_1Classes_aec848b6e951c8de0539140003e7274a3}} 
+\index{lxml.html.Classes@{lxml.html.Classes}!toggle@{toggle}}
+\index{toggle@{toggle}!lxml.html.Classes@{lxml.html.Classes}}
+\doxysubsubsection{\texorpdfstring{toggle()}{toggle()}}
+{\footnotesize\ttfamily def lxml.\+html.\+Classes.\+toggle (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a class name if it isn't there yet, or remove it if it exists.
+
+Returns true if the class was added (and is now enabled) and
+false if it was removed (and is now disabled).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classlxml_1_1html_1_1Classes_a446bde0950a492f0c57e4acb9f535ce4}\label{classlxml_1_1html_1_1Classes_a446bde0950a492f0c57e4acb9f535ce4}} 
+\index{lxml.html.Classes@{lxml.html.Classes}!update@{update}}
+\index{update@{update}!lxml.html.Classes@{lxml.html.Classes}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily def lxml.\+html.\+Classes.\+update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{values }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add all names from 'values'.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/lxml/html/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

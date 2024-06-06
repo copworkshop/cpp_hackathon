@@ -1,0 +1,70 @@
+\hypertarget{classtqdm_1_1asyncio_1_1tqdm__asyncio}{}\doxysection{tqdm.\+asyncio.\+tqdm\+\_\+asyncio Class Reference}
+\label{classtqdm_1_1asyncio_1_1tqdm__asyncio}\index{tqdm.asyncio.tqdm\_asyncio@{tqdm.asyncio.tqdm\_asyncio}}
+
+
+Inheritance diagram for tqdm.\+asyncio.\+tqdm\+\_\+asyncio\+:
+% FIG 0
+
+
+Collaboration diagram for tqdm.\+asyncio.\+tqdm\+\_\+asyncio\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1asyncio_1_1tqdm__asyncio_a64e954c59b6763639df61025f2252cae}\label{classtqdm_1_1asyncio_1_1tqdm__asyncio_a64e954c59b6763639df61025f2252cae}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, iterable=None, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1asyncio_1_1tqdm__asyncio_a7c817e0384198c21197a3a95d5e0dc0c}\label{classtqdm_1_1asyncio_1_1tqdm__asyncio_a7c817e0384198c21197a3a95d5e0dc0c}} 
+def {\bfseries \+\_\+\+\_\+aiter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1asyncio_1_1tqdm__asyncio_a25bc21845dfc2e05b6c568bfcea855eb}\label{classtqdm_1_1asyncio_1_1tqdm__asyncio_a25bc21845dfc2e05b6c568bfcea855eb}} 
+def {\bfseries \+\_\+\+\_\+anext\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1asyncio_1_1tqdm__asyncio_a34f2b646d8a26f294a387b9bc7ce7564}\label{classtqdm_1_1asyncio_1_1tqdm__asyncio_a34f2b646d8a26f294a387b9bc7ce7564}} 
+def {\bfseries send} (self, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classtqdm_1_1asyncio_1_1tqdm__asyncio_a61b2f7f505e17bb466084bb5ae8675ee}{as\+\_\+completed}} (cls, fs, $\ast$loop=None, timeout=None, total=None, $\ast$$\ast$tqdm\+\_\+kwargs)
+\item 
+def \mbox{\hyperlink{classtqdm_1_1asyncio_1_1tqdm__asyncio_a937b45be1769df56cd15fac75e7f8997}{gather}} (cls, $\ast$fs, loop=None, timeout=None, total=None, $\ast$$\ast$tqdm\+\_\+kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1asyncio_1_1tqdm__asyncio_a391e1ccf8ba226b6682e6d2acd4fb6d3}\label{classtqdm_1_1asyncio_1_1tqdm__asyncio_a391e1ccf8ba226b6682e6d2acd4fb6d3}} 
+{\bfseries iterable\+\_\+awaitable}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1asyncio_1_1tqdm__asyncio_a4be2f6d0ea86436d1fcf7507f22f4c28}\label{classtqdm_1_1asyncio_1_1tqdm__asyncio_a4be2f6d0ea86436d1fcf7507f22f4c28}} 
+{\bfseries iterable\+\_\+next}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1asyncio_1_1tqdm__asyncio_af5b9fcdce12f13b00e0632159029b0d8}\label{classtqdm_1_1asyncio_1_1tqdm__asyncio_af5b9fcdce12f13b00e0632159029b0d8}} 
+{\bfseries iterable\+\_\+iterator}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Asynchronous-friendly version of tqdm.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtqdm_1_1asyncio_1_1tqdm__asyncio_a61b2f7f505e17bb466084bb5ae8675ee}\label{classtqdm_1_1asyncio_1_1tqdm__asyncio_a61b2f7f505e17bb466084bb5ae8675ee}} 
+\index{tqdm.asyncio.tqdm\_asyncio@{tqdm.asyncio.tqdm\_asyncio}!as\_completed@{as\_completed}}
+\index{as\_completed@{as\_completed}!tqdm.asyncio.tqdm\_asyncio@{tqdm.asyncio.tqdm\_asyncio}}
+\doxysubsubsection{\texorpdfstring{as\_completed()}{as\_completed()}}
+{\footnotesize\ttfamily def tqdm.\+asyncio.\+tqdm\+\_\+asyncio.\+as\+\_\+completed (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{fs,  }\item[{$\ast$}]{loop = {\ttfamily None},  }\item[{}]{timeout = {\ttfamily None},  }\item[{}]{total = {\ttfamily None},  }\item[{$\ast$$\ast$}]{tqdm\+\_\+kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wrapper for `asyncio.as_completed`.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtqdm_1_1asyncio_1_1tqdm__asyncio_a937b45be1769df56cd15fac75e7f8997}\label{classtqdm_1_1asyncio_1_1tqdm__asyncio_a937b45be1769df56cd15fac75e7f8997}} 
+\index{tqdm.asyncio.tqdm\_asyncio@{tqdm.asyncio.tqdm\_asyncio}!gather@{gather}}
+\index{gather@{gather}!tqdm.asyncio.tqdm\_asyncio@{tqdm.asyncio.tqdm\_asyncio}}
+\doxysubsubsection{\texorpdfstring{gather()}{gather()}}
+{\footnotesize\ttfamily def tqdm.\+asyncio.\+tqdm\+\_\+asyncio.\+gather (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{$\ast$}]{fs,  }\item[{}]{loop = {\ttfamily None},  }\item[{}]{timeout = {\ttfamily None},  }\item[{}]{total = {\ttfamily None},  }\item[{$\ast$$\ast$}]{tqdm\+\_\+kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wrapper for `asyncio.gather`.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/tqdm/asyncio.\+py\end{DoxyCompactItemize}

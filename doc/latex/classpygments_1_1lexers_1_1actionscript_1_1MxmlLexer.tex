@@ -1,0 +1,87 @@
+\hypertarget{classpygments_1_1lexers_1_1actionscript_1_1MxmlLexer}{}\doxysection{pygments.\+lexers.\+actionscript.\+Mxml\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1actionscript_1_1MxmlLexer}\index{pygments.lexers.actionscript.MxmlLexer@{pygments.lexers.actionscript.MxmlLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+actionscript.\+Mxml\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+actionscript.\+Mxml\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1actionscript_1_1MxmlLexer_a383bf1f92960e4ec0cbf884526a99114}\label{classpygments_1_1lexers_1_1actionscript_1_1MxmlLexer_a383bf1f92960e4ec0cbf884526a99114}} 
+{\bfseries flags} = re.\+MULTILINE $\vert$ re.\+DOTALL
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1actionscript_1_1MxmlLexer_a6073b2e1e5bbf0ab545c8ed14dbb6e90}\label{classpygments_1_1lexers_1_1actionscript_1_1MxmlLexer_a6073b2e1e5bbf0ab545c8ed14dbb6e90}} 
+string {\bfseries name} = \textquotesingle{}MXML\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1actionscript_1_1MxmlLexer_a43e0a55c82b005c32f467aff0f8955f0}\label{classpygments_1_1lexers_1_1actionscript_1_1MxmlLexer_a43e0a55c82b005c32f467aff0f8955f0}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}mxml\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1actionscript_1_1MxmlLexer_a785241b5bc33c07d7e061c26a5ee2cbe}\label{classpygments_1_1lexers_1_1actionscript_1_1MxmlLexer_a785241b5bc33c07d7e061c26a5ee2cbe}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.mxml\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1actionscript_1_1MxmlLexer_ad3106fc38ac2dccc3c78774100ffb361}\label{classpygments_1_1lexers_1_1actionscript_1_1MxmlLexer_ad3106fc38ac2dccc3c78774100ffb361}} 
+string {\bfseries url} = \textquotesingle{}https\+://en.\+wikipedia.\+org/wiki/MXML\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1actionscript_1_1MxmlLexer_ac94f989b66f7c38e29e63cbe13430f46}\label{classpygments_1_1lexers_1_1actionscript_1_1MxmlLexer_ac94f989b66f7c38e29e63cbe13430f46}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+1\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For MXML markup.
+Nested AS3 in <script> tags is highlighted by the appropriate lexer.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1actionscript_1_1MxmlLexer_abebfbb9eb76aee6f38c93a2dfa4e5c57}\label{classpygments_1_1lexers_1_1actionscript_1_1MxmlLexer_abebfbb9eb76aee6f38c93a2dfa4e5c57}} 
+\index{pygments.lexers.actionscript.MxmlLexer@{pygments.lexers.actionscript.MxmlLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.actionscript.MxmlLexer@{pygments.lexers.actionscript.MxmlLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+actionscript.\+Mxml\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{'[\string^<\&]+'}, Text),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\&\(\backslash\)S*?;'}, Name.Entity),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)<\(\backslash\)!\(\backslash\)[CDATA\(\backslash\)[)(.*?)(\(\backslash\)]\(\backslash\)]\(\backslash\)>)'},}
+\DoxyCodeLine{             bygroups(String, using(ActionScript3Lexer), String)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{'<!-\/-\/'}, Comment, \textcolor{stringliteral}{'comment'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'<\(\backslash\)?.*?\(\backslash\)?>'}, Comment.Preproc),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{'<![\string^>]*>'}, Comment.Preproc),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'<\(\backslash\)s*[\(\backslash\)w:.-\/]+'}, Name.Tag, \textcolor{stringliteral}{'tag'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'<\(\backslash\)s*/\(\backslash\)s*[\(\backslash\)w:.-\/]+\(\backslash\)s*>'}, Name.Tag),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'comment'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{'[\string^-\/]+'}, Comment),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{'-\/-\/>'}, Comment, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{'-\/'}, Comment),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'tag'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\(\backslash\)w.:-\/]+\(\backslash\)s*='}, Name.Attribute, \textcolor{stringliteral}{'attr'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'/?\(\backslash\)s*>'}, Name.Tag, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'attr'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{'"{}.*?"{}'}, String, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{"{}'.*?'"{}}, String, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^\(\backslash\)s>]+'}, String, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/actionscript.\+py\end{DoxyCompactItemize}

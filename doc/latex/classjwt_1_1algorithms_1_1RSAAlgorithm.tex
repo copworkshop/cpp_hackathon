@@ -1,0 +1,71 @@
+\hypertarget{classjwt_1_1algorithms_1_1RSAAlgorithm}{}\doxysection{jwt.\+algorithms.\+RSAAlgorithm Class Reference}
+\label{classjwt_1_1algorithms_1_1RSAAlgorithm}\index{jwt.algorithms.RSAAlgorithm@{jwt.algorithms.RSAAlgorithm}}
+
+
+Inheritance diagram for jwt.\+algorithms.\+RSAAlgorithm\+:
+% FIG 0
+
+
+Collaboration diagram for jwt.\+algorithms.\+RSAAlgorithm\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1RSAAlgorithm_a712f6357ecfe915d65b554a7562f6c8b}\label{classjwt_1_1algorithms_1_1RSAAlgorithm_a712f6357ecfe915d65b554a7562f6c8b}} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, type\mbox{[}hashes.\+Hash\+Algorithm\mbox{]} hash\+\_\+alg)
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1RSAAlgorithm_abcc07936c3044d357505530cc561816e}\label{classjwt_1_1algorithms_1_1RSAAlgorithm_abcc07936c3044d357505530cc561816e}} 
+Allowed\+RSAKeys {\bfseries prepare\+\_\+key} (self, Allowed\+RSAKeys$\vert$str$\vert$bytes key)
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1RSAAlgorithm_afb7d2a0199103ff0afdd13b59b67bf6a}\label{classjwt_1_1algorithms_1_1RSAAlgorithm_afb7d2a0199103ff0afdd13b59b67bf6a}} 
+bytes {\bfseries sign} (self, bytes msg, RSAPrivate\+Key key)
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1RSAAlgorithm_a77ae9917a9b6a60539777d2e9180df21}\label{classjwt_1_1algorithms_1_1RSAAlgorithm_a77ae9917a9b6a60539777d2e9180df21}} 
+bool {\bfseries verify} (self, bytes msg, RSAPublic\+Key key, bytes sig)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1RSAAlgorithm_a6639b99396c581652c48e09822310740}\label{classjwt_1_1algorithms_1_1RSAAlgorithm_a6639b99396c581652c48e09822310740}} 
+JWKDict {\bfseries to\+\_\+jwk} (Allowed\+RSAKeys key\+\_\+obj, Literal\mbox{[}True\mbox{]} as\+\_\+dict)
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1RSAAlgorithm_ae3d8aab9f518c9bad00c733711d80c85}\label{classjwt_1_1algorithms_1_1RSAAlgorithm_ae3d8aab9f518c9bad00c733711d80c85}} 
+str {\bfseries to\+\_\+jwk} (Allowed\+RSAKeys key\+\_\+obj, Literal\mbox{[}False\mbox{]} as\+\_\+dict=False)
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1RSAAlgorithm_a5a84012be5002541dceeeb72f50dee48}\label{classjwt_1_1algorithms_1_1RSAAlgorithm_a5a84012be5002541dceeeb72f50dee48}} 
+Union\mbox{[}JWKDict, str\mbox{]} {\bfseries to\+\_\+jwk} (Allowed\+RSAKeys key\+\_\+obj, bool as\+\_\+dict=False)
+\item 
+Allowed\+RSAKeys \mbox{\hyperlink{classjwt_1_1algorithms_1_1RSAAlgorithm_a5d3383bd745a8f7e3c205bcec2cc8503}{from\+\_\+jwk}} (str$\vert$JWKDict jwk)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1RSAAlgorithm_acc3e6b23daf49cc97855d3c65446550f}\label{classjwt_1_1algorithms_1_1RSAAlgorithm_acc3e6b23daf49cc97855d3c65446550f}} 
+{\bfseries hash\+\_\+alg}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Performs signing and verification operations using
+RSASSA-PKCS-v1_5 and the specified hash function.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1RSAAlgorithm_a5d3383bd745a8f7e3c205bcec2cc8503}\label{classjwt_1_1algorithms_1_1RSAAlgorithm_a5d3383bd745a8f7e3c205bcec2cc8503}} 
+\index{jwt.algorithms.RSAAlgorithm@{jwt.algorithms.RSAAlgorithm}!from\_jwk@{from\_jwk}}
+\index{from\_jwk@{from\_jwk}!jwt.algorithms.RSAAlgorithm@{jwt.algorithms.RSAAlgorithm}}
+\doxysubsubsection{\texorpdfstring{from\_jwk()}{from\_jwk()}}
+{\footnotesize\ttfamily  Allowed\+RSAKeys jwt.\+algorithms.\+RSAAlgorithm.\+from\+\_\+jwk (\begin{DoxyParamCaption}\item[{str $\vert$ JWKDict}]{jwk }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Deserializes a given key from JWK back into a key object
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjwt_1_1algorithms_1_1Algorithm_af9a85ad9cdd019cc6e368338574eba75}{jwt.\+algorithms.\+Algorithm}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jwt/algorithms.\+py\end{DoxyCompactItemize}

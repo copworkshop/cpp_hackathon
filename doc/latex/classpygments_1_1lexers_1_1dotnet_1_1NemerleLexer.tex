@@ -1,0 +1,144 @@
+\hypertarget{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer}{}\doxysection{pygments.\+lexers.\+dotnet.\+Nemerle\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer}\index{pygments.lexers.dotnet.NemerleLexer@{pygments.lexers.dotnet.NemerleLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+dotnet.\+Nemerle\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+dotnet.\+Nemerle\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_ad0dcc57d827f228b31919f7de7929d23}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_a362e29810d12d0fb266ca51dcf484036}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_a270823a0bef975b4331b8a418713b923}\label{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_a270823a0bef975b4331b8a418713b923}} 
+string {\bfseries name} = \textquotesingle{}Nemerle\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_a0a53a83c503f76d05cf40400506d7bad}\label{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_a0a53a83c503f76d05cf40400506d7bad}} 
+string {\bfseries url} = \textquotesingle{}http\+://nemerle.\+org\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_abff20a372e3192cf173717c067fb96e4}\label{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_abff20a372e3192cf173717c067fb96e4}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}nemerle\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_a0217f4a767b974da661918801b9b9dd9}\label{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_a0217f4a767b974da661918801b9b9dd9}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.n\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_a0592fd0775c36841d6e74936d3fead95}\label{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_a0592fd0775c36841d6e74936d3fead95}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/nemerle\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_a7d05da333628c11b9b6c495f48b3c841}\label{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_a7d05da333628c11b9b6c495f48b3c841}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+5\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_ac7cddafde2c1a8ab758578d4fb32b184}\label{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_ac7cddafde2c1a8ab758578d4fb32b184}} 
+{\bfseries flags} = re.\+MULTILINE $\vert$ re.\+DOTALL
+\item 
+dictionary {\bfseries levels}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_acc0277f5f07b560652d440b87dcf6257}\label{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_acc0277f5f07b560652d440b87dcf6257}} 
+dictionary {\bfseries tokens} = \{\}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_afa78ce1eb7f1a95c73be5efef3d14fcf}\label{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_afa78ce1eb7f1a95c73be5efef3d14fcf}} 
+bool {\bfseries token\+\_\+variants} = True
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For Nemerle source code.
+
+Additional options accepted:
+
+`unicodelevel`
+  Determines which Unicode characters this lexer allows for identifiers.
+  The possible values are:
+
+  * ``none`` -- only the ASCII letters and numbers are allowed. This
+    is the fastest selection.
+  * ``basic`` -- all Unicode characters from the specification except
+    category ``Lo`` are allowed.
+  * ``full`` -- all Unicode characters as specified in the C# specs
+    are allowed.  Note that this means a considerable slowdown since the
+    ``Lo`` category has more than 40,000 characters in it!
+
+  The default value is ``basic``.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_ad0dcc57d827f228b31919f7de7929d23}\label{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_ad0dcc57d827f228b31919f7de7929d23}} 
+\index{pygments.lexers.dotnet.NemerleLexer@{pygments.lexers.dotnet.NemerleLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.dotnet.NemerleLexer@{pygments.lexers.dotnet.NemerleLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+dotnet.\+Nemerle\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_a362e29810d12d0fb266ca51dcf484036}\label{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_a362e29810d12d0fb266ca51dcf484036}} 
+\index{pygments.lexers.dotnet.NemerleLexer@{pygments.lexers.dotnet.NemerleLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.dotnet.NemerleLexer@{pygments.lexers.dotnet.NemerleLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+dotnet.\+Nemerle\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Nemerle is quite similar to Python, but @if is relatively uncommon
+elsewhere.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_ad83f675af24531c1687b94fa21a24165}\label{classpygments_1_1lexers_1_1dotnet_1_1NemerleLexer_ad83f675af24531c1687b94fa21a24165}} 
+\index{pygments.lexers.dotnet.NemerleLexer@{pygments.lexers.dotnet.NemerleLexer}!levels@{levels}}
+\index{levels@{levels}!pygments.lexers.dotnet.NemerleLexer@{pygments.lexers.dotnet.NemerleLexer}}
+\doxysubsubsection{\texorpdfstring{levels}{levels}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+dotnet.\+Nemerle\+Lexer.\+levels\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'none'}: \textcolor{stringliteral}{r'@?[\_a-\/zA-\/Z]\(\backslash\)w*'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'basic'}: (\textcolor{stringliteral}{'@?[\_'} + uni.combine(\textcolor{stringliteral}{'Lu'}, \textcolor{stringliteral}{'Ll'}, \textcolor{stringliteral}{'Lt'}, \textcolor{stringliteral}{'Lm'}, \textcolor{stringliteral}{'Nl'}) + \textcolor{stringliteral}{']'} +}
+\DoxyCodeLine{                  \textcolor{stringliteral}{'['} + uni.combine(\textcolor{stringliteral}{'Lu'}, \textcolor{stringliteral}{'Ll'}, \textcolor{stringliteral}{'Lt'}, \textcolor{stringliteral}{'Lm'}, \textcolor{stringliteral}{'Nl'}, \textcolor{stringliteral}{'Nd'}, \textcolor{stringliteral}{'Pc'},}
+\DoxyCodeLine{                                    \textcolor{stringliteral}{'Cf'}, \textcolor{stringliteral}{'Mn'}, \textcolor{stringliteral}{'Mc'}) + \textcolor{stringliteral}{']*'}),}
+\DoxyCodeLine{        \textcolor{stringliteral}{'full'}: (\textcolor{stringliteral}{'@?(?:\_|[\string^'} +}
+\DoxyCodeLine{                 uni.allexcept(\textcolor{stringliteral}{'Lu'}, \textcolor{stringliteral}{'Ll'}, \textcolor{stringliteral}{'Lt'}, \textcolor{stringliteral}{'Lm'}, \textcolor{stringliteral}{'Lo'}, \textcolor{stringliteral}{'Nl'}) + \textcolor{stringliteral}{'])'} +}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'[\string^'} + uni.allexcept(\textcolor{stringliteral}{'Lu'}, \textcolor{stringliteral}{'Ll'}, \textcolor{stringliteral}{'Lt'}, \textcolor{stringliteral}{'Lm'}, \textcolor{stringliteral}{'Lo'}, \textcolor{stringliteral}{'Nl'},}
+\DoxyCodeLine{                                      \textcolor{stringliteral}{'Nd'}, \textcolor{stringliteral}{'Pc'}, \textcolor{stringliteral}{'Cf'}, \textcolor{stringliteral}{'Mn'}, \textcolor{stringliteral}{'Mc'}) + \textcolor{stringliteral}{']*'}),}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/dotnet.\+py\end{DoxyCompactItemize}

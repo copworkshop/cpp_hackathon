@@ -1,0 +1,68 @@
+\hypertarget{classpygments_1_1lexers_1_1configs_1_1UnixConfigLexer}{}\doxysection{pygments.\+lexers.\+configs.\+Unix\+Config\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1configs_1_1UnixConfigLexer}\index{pygments.lexers.configs.UnixConfigLexer@{pygments.lexers.configs.UnixConfigLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+configs.\+Unix\+Config\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+configs.\+Unix\+Config\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1UnixConfigLexer_aaa1064cf9181515ce7b37614abd47713}\label{classpygments_1_1lexers_1_1configs_1_1UnixConfigLexer_aaa1064cf9181515ce7b37614abd47713}} 
+string {\bfseries name} = \textquotesingle{}Unix/Linux config files\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1UnixConfigLexer_ace2b81665cead7d182168aab0104f343}\label{classpygments_1_1lexers_1_1configs_1_1UnixConfigLexer_ace2b81665cead7d182168aab0104f343}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}unixconfig\textquotesingle{}, \textquotesingle{}linuxconfig\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1UnixConfigLexer_a2ede5246a7999200769fb05091b34acc}\label{classpygments_1_1lexers_1_1configs_1_1UnixConfigLexer_a2ede5246a7999200769fb05091b34acc}} 
+list {\bfseries filenames} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1UnixConfigLexer_a1c863865fbb405607dca23ec975d9760}\label{classpygments_1_1lexers_1_1configs_1_1UnixConfigLexer_a1c863865fbb405607dca23ec975d9760}} 
+string {\bfseries url} = \textquotesingle{}https\+://en.\+wikipedia.\+org/wiki/Configuration\+\_\+file\#Unix\+\_\+and\+\_\+\+Unix-\/like\+\_\+operating\+\_\+systems\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1UnixConfigLexer_a5a29b1fbc0622217d5a09d52c1c27c10}\label{classpygments_1_1lexers_1_1configs_1_1UnixConfigLexer_a5a29b1fbc0622217d5a09d52c1c27c10}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+12\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for Unix/Linux config files using colon-separated values, e.g.
+
+* ``/etc/group``
+* ``/etc/passwd``
+* ``/etc/shadow``
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1UnixConfigLexer_a7a24b431aacc70f1d8515186807f570e}\label{classpygments_1_1lexers_1_1configs_1_1UnixConfigLexer_a7a24b431aacc70f1d8515186807f570e}} 
+\index{pygments.lexers.configs.UnixConfigLexer@{pygments.lexers.configs.UnixConfigLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.configs.UnixConfigLexer@{pygments.lexers.configs.UnixConfigLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+configs.\+Unix\+Config\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^\#.*'}, Comment),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)n'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r':'}, Punctuation),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[0-\/9]+'}, Number),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'((?!\(\backslash\)n)[a-\/zA-\/Z0-\/9\(\backslash\)\_\(\backslash\)-\/\(\backslash\)s\(\backslash\)(\(\backslash\)),])\{2,\}'}, Text),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^:\(\backslash\)n]+'}, String),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/configs.\+py\end{DoxyCompactItemize}

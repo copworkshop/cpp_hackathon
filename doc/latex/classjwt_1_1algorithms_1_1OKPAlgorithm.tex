@@ -1,0 +1,90 @@
+\hypertarget{classjwt_1_1algorithms_1_1OKPAlgorithm}{}\doxysection{jwt.\+algorithms.\+OKPAlgorithm Class Reference}
+\label{classjwt_1_1algorithms_1_1OKPAlgorithm}\index{jwt.algorithms.OKPAlgorithm@{jwt.algorithms.OKPAlgorithm}}
+
+
+Inheritance diagram for jwt.\+algorithms.\+OKPAlgorithm\+:
+% FIG 0
+
+
+Collaboration diagram for jwt.\+algorithms.\+OKPAlgorithm\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1OKPAlgorithm_af39bb5df0fc28f785f7c4305230c3703}\label{classjwt_1_1algorithms_1_1OKPAlgorithm_af39bb5df0fc28f785f7c4305230c3703}} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, $\ast$$\ast$Any kwargs)
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1OKPAlgorithm_a0800eafedbed711e3023d4a0b268a37e}\label{classjwt_1_1algorithms_1_1OKPAlgorithm_a0800eafedbed711e3023d4a0b268a37e}} 
+Allowed\+OKPKeys {\bfseries prepare\+\_\+key} (self, Allowed\+OKPKeys$\vert$str$\vert$bytes key)
+\item 
+bytes \mbox{\hyperlink{classjwt_1_1algorithms_1_1OKPAlgorithm_a6e16477d6eecfcd65dd6f54e1a82ad47}{sign}} (self, str$\vert$bytes msg, Ed25519\+Private\+Key$\vert$Ed448\+Private\+Key key)
+\item 
+bool \mbox{\hyperlink{classjwt_1_1algorithms_1_1OKPAlgorithm_aee48dc3def1c25282188b6015fc6064d}{verify}} (self, str$\vert$bytes msg, Allowed\+OKPKeys key, str$\vert$bytes sig)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1OKPAlgorithm_a9990188ddb8d4dcd2a964f0fe3491710}\label{classjwt_1_1algorithms_1_1OKPAlgorithm_a9990188ddb8d4dcd2a964f0fe3491710}} 
+JWKDict {\bfseries to\+\_\+jwk} (Allowed\+OKPKeys key, Literal\mbox{[}True\mbox{]} as\+\_\+dict)
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1OKPAlgorithm_a2078d6b787b3e749b0d3e6b624779e74}\label{classjwt_1_1algorithms_1_1OKPAlgorithm_a2078d6b787b3e749b0d3e6b624779e74}} 
+str {\bfseries to\+\_\+jwk} (Allowed\+OKPKeys key, Literal\mbox{[}False\mbox{]} as\+\_\+dict=False)
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1OKPAlgorithm_a7c849546a17265dfc7eab837d7d448dc}\label{classjwt_1_1algorithms_1_1OKPAlgorithm_a7c849546a17265dfc7eab837d7d448dc}} 
+Union\mbox{[}JWKDict, str\mbox{]} {\bfseries to\+\_\+jwk} (Allowed\+OKPKeys key, bool as\+\_\+dict=False)
+\item 
+Allowed\+OKPKeys \mbox{\hyperlink{classjwt_1_1algorithms_1_1OKPAlgorithm_a8aa74975749aaa07eda3369869515236}{from\+\_\+jwk}} (str$\vert$JWKDict jwk)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Performs signing and verification operations using EdDSA
+
+This class requires ``cryptography>=2.6`` to be installed.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1OKPAlgorithm_a8aa74975749aaa07eda3369869515236}\label{classjwt_1_1algorithms_1_1OKPAlgorithm_a8aa74975749aaa07eda3369869515236}} 
+\index{jwt.algorithms.OKPAlgorithm@{jwt.algorithms.OKPAlgorithm}!from\_jwk@{from\_jwk}}
+\index{from\_jwk@{from\_jwk}!jwt.algorithms.OKPAlgorithm@{jwt.algorithms.OKPAlgorithm}}
+\doxysubsubsection{\texorpdfstring{from\_jwk()}{from\_jwk()}}
+{\footnotesize\ttfamily  Allowed\+OKPKeys jwt.\+algorithms.\+OKPAlgorithm.\+from\+\_\+jwk (\begin{DoxyParamCaption}\item[{str $\vert$ JWKDict}]{jwk }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Deserializes a given key from JWK back into a key object
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjwt_1_1algorithms_1_1Algorithm_af9a85ad9cdd019cc6e368338574eba75}{jwt.\+algorithms.\+Algorithm}}.
+
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1OKPAlgorithm_a6e16477d6eecfcd65dd6f54e1a82ad47}\label{classjwt_1_1algorithms_1_1OKPAlgorithm_a6e16477d6eecfcd65dd6f54e1a82ad47}} 
+\index{jwt.algorithms.OKPAlgorithm@{jwt.algorithms.OKPAlgorithm}!sign@{sign}}
+\index{sign@{sign}!jwt.algorithms.OKPAlgorithm@{jwt.algorithms.OKPAlgorithm}}
+\doxysubsubsection{\texorpdfstring{sign()}{sign()}}
+{\footnotesize\ttfamily  bytes jwt.\+algorithms.\+OKPAlgorithm.\+sign (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str $\vert$ bytes}]{msg,  }\item[{Ed25519\+Private\+Key $\vert$ Ed448\+Private\+Key         }]{key }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sign a message ``msg`` using the EdDSA private key ``key``
+:param str|bytes msg: Message to sign
+:param Ed25519PrivateKey}Ed448PrivateKey key: A :class:`.Ed25519PrivateKey`
+    or :class:`.Ed448PrivateKey` isinstance
+:return bytes signature: The signature, as bytes
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classjwt_1_1algorithms_1_1OKPAlgorithm_aee48dc3def1c25282188b6015fc6064d}\label{classjwt_1_1algorithms_1_1OKPAlgorithm_aee48dc3def1c25282188b6015fc6064d}} 
+\index{jwt.algorithms.OKPAlgorithm@{jwt.algorithms.OKPAlgorithm}!verify@{verify}}
+\index{verify@{verify}!jwt.algorithms.OKPAlgorithm@{jwt.algorithms.OKPAlgorithm}}
+\doxysubsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily  bool jwt.\+algorithms.\+OKPAlgorithm.\+verify (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str $\vert$ bytes}]{msg,  }\item[{Allowed\+OKPKeys}]{key,  }\item[{str $\vert$ bytes         }]{sig }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Verify a given ``msg`` against a signature ``sig`` using the EdDSA key ``key``
+
+:param str|bytes sig: EdDSA signature to check ``msg`` against
+:param str|bytes msg: Message to sign
+:param Ed25519PrivateKey|Ed25519PublicKey|Ed448PrivateKey|Ed448PublicKey key:
+    A private or public EdDSA key instance
+:return bool verified: True if signature is valid, False if not.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jwt/algorithms.\+py\end{DoxyCompactItemize}

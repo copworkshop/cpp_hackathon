@@ -1,0 +1,78 @@
+\hypertarget{classpygments_1_1lexers_1_1markup_1_1MozPreprocCssLexer}{}\doxysection{pygments.\+lexers.\+markup.\+Moz\+Preproc\+Css\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1markup_1_1MozPreprocCssLexer}\index{pygments.lexers.markup.MozPreprocCssLexer@{pygments.lexers.markup.MozPreprocCssLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+markup.\+Moz\+Preproc\+Css\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+markup.\+Moz\+Preproc\+Css\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1markup_1_1MozPreprocCssLexer_af18ed9f0bf86961a3f57f83c40b56211}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MozPreprocCssLexer_aefcb5b670bc72b1f0fe12a29fdb19fad}\label{classpygments_1_1lexers_1_1markup_1_1MozPreprocCssLexer_aefcb5b670bc72b1f0fe12a29fdb19fad}} 
+string {\bfseries name} = \char`\"{}CSS+mozpreproc\char`\"{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MozPreprocCssLexer_a5ae4762ae18061d0177024d53279ed37}\label{classpygments_1_1lexers_1_1markup_1_1MozPreprocCssLexer_a5ae4762ae18061d0177024d53279ed37}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}css+mozpreproc\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MozPreprocCssLexer_ae1162b6fd84de7465492d1dce85da02c}\label{classpygments_1_1lexers_1_1markup_1_1MozPreprocCssLexer_ae1162b6fd84de7465492d1dce85da02c}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.css.\+in\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MozPreprocCssLexer_a4e6d1c2df5bc418cfc7093a95e9d0cb7}\label{classpygments_1_1lexers_1_1markup_1_1MozPreprocCssLexer_a4e6d1c2df5bc418cfc7093a95e9d0cb7}} 
+list {\bfseries mimetypes} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MozPreprocCssLexer_ad317f7829b40212e3674fc06a66590e0}\label{classpygments_1_1lexers_1_1markup_1_1MozPreprocCssLexer_ad317f7829b40212e3674fc06a66590e0}} 
+string {\bfseries url} = \textquotesingle{}https\+://firefox-\/source-\/docs.\+mozilla.\+org/build/buildsystem/preprocessor.\+html\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MozPreprocCssLexer_a4b55f2a942b35ebd1b2eeeb15f64c214}\label{classpygments_1_1lexers_1_1markup_1_1MozPreprocCssLexer_a4b55f2a942b35ebd1b2eeeb15f64c214}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+0\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Subclass of the `MozPreprocHashLexer` that highlights unlexed data with the
+`CssLexer`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1MozPreprocCssLexer_af18ed9f0bf86961a3f57f83c40b56211}\label{classpygments_1_1lexers_1_1markup_1_1MozPreprocCssLexer_af18ed9f0bf86961a3f57f83c40b56211}} 
+\index{pygments.lexers.markup.MozPreprocCssLexer@{pygments.lexers.markup.MozPreprocCssLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.markup.MozPreprocCssLexer@{pygments.lexers.markup.MozPreprocCssLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+markup.\+Moz\+Preproc\+Css\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/markup.\+py\end{DoxyCompactItemize}

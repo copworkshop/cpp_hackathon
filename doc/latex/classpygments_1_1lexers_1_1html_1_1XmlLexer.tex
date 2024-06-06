@@ -1,0 +1,142 @@
+\hypertarget{classpygments_1_1lexers_1_1html_1_1XmlLexer}{}\doxysection{pygments.\+lexers.\+html.\+Xml\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1html_1_1XmlLexer}\index{pygments.lexers.html.XmlLexer@{pygments.lexers.html.XmlLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+html.\+Xml\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+html.\+Xml\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1html_1_1XmlLexer_a295676fef6ed23b1953ea54968718e98}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1XmlLexer_a116bfe1051bdcc82638423615b45dff2}\label{classpygments_1_1lexers_1_1html_1_1XmlLexer_a116bfe1051bdcc82638423615b45dff2}} 
+{\bfseries flags} = re.\+MULTILINE $\vert$ re.\+DOTALL
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1XmlLexer_aaefd7f1941cd33af3212b4378159062a}\label{classpygments_1_1lexers_1_1html_1_1XmlLexer_aaefd7f1941cd33af3212b4378159062a}} 
+string {\bfseries name} = \textquotesingle{}XML\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1XmlLexer_a7df01cf5c20ef09b809c64cb1c4ffa66}\label{classpygments_1_1lexers_1_1html_1_1XmlLexer_a7df01cf5c20ef09b809c64cb1c4ffa66}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}xml\textquotesingle{}\mbox{]}
+\item 
+list {\bfseries filenames}
+\item 
+list {\bfseries mimetypes}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1XmlLexer_aefbf931f59dd8fc1536e0f645c3f7868}\label{classpygments_1_1lexers_1_1html_1_1XmlLexer_aefbf931f59dd8fc1536e0f645c3f7868}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+w3.\+org/XML\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1XmlLexer_ad7916af72f4053635ea7253851a06ded}\label{classpygments_1_1lexers_1_1html_1_1XmlLexer_ad7916af72f4053635ea7253851a06ded}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Generic lexer for XML (eXtensible Markup Language).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1XmlLexer_a295676fef6ed23b1953ea54968718e98}\label{classpygments_1_1lexers_1_1html_1_1XmlLexer_a295676fef6ed23b1953ea54968718e98}} 
+\index{pygments.lexers.html.XmlLexer@{pygments.lexers.html.XmlLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.html.XmlLexer@{pygments.lexers.html.XmlLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+html.\+Xml\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classpygments_1_1lexers_1_1html_1_1XsltLexer_a431fcbb4e3b464fbd991674cc473d6aa}{pygments.\+lexers.\+html.\+Xslt\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1XmlLexer_a9a0e082ee7467188398fe1525ff65002}\label{classpygments_1_1lexers_1_1html_1_1XmlLexer_a9a0e082ee7467188398fe1525ff65002}} 
+\index{pygments.lexers.html.XmlLexer@{pygments.lexers.html.XmlLexer}!filenames@{filenames}}
+\index{filenames@{filenames}!pygments.lexers.html.XmlLexer@{pygments.lexers.html.XmlLexer}}
+\doxysubsubsection{\texorpdfstring{filenames}{filenames}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+html.\+Xml\+Lexer.\+filenames\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [\textcolor{stringliteral}{'*.xml'}, \textcolor{stringliteral}{'*.xsl'}, \textcolor{stringliteral}{'*.rss'}, \textcolor{stringliteral}{'*.xslt'}, \textcolor{stringliteral}{'*.xsd'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'*.wsdl'}, \textcolor{stringliteral}{'*.wsf'}]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1XmlLexer_a08fc576f105093a20ad21010d53739d9}\label{classpygments_1_1lexers_1_1html_1_1XmlLexer_a08fc576f105093a20ad21010d53739d9}} 
+\index{pygments.lexers.html.XmlLexer@{pygments.lexers.html.XmlLexer}!mimetypes@{mimetypes}}
+\index{mimetypes@{mimetypes}!pygments.lexers.html.XmlLexer@{pygments.lexers.html.XmlLexer}}
+\doxysubsubsection{\texorpdfstring{mimetypes}{mimetypes}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+html.\+Xml\+Lexer.\+mimetypes\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [\textcolor{stringliteral}{'text/xml'}, \textcolor{stringliteral}{'application/xml'}, \textcolor{stringliteral}{'image/svg+xml'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'application/rss+xml'}, \textcolor{stringliteral}{'application/atom+xml'}]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1html_1_1XmlLexer_abf76a9f13e108c13d190ea00c4194131}\label{classpygments_1_1lexers_1_1html_1_1XmlLexer_abf76a9f13e108c13d190ea00c4194131}} 
+\index{pygments.lexers.html.XmlLexer@{pygments.lexers.html.XmlLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.html.XmlLexer@{pygments.lexers.html.XmlLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+html.\+Xml\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^<\&\(\backslash\)s]+'}, Text),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^<\&\(\backslash\)S]+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\&\(\backslash\)S*?;'}, Name.Entity),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)<\(\backslash\)!\(\backslash\)[CDATA\(\backslash\)[.*?\(\backslash\)]\(\backslash\)]\(\backslash\)>'}, Comment.Preproc),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'<!-\/-\/.*?-\/-\/>'}, Comment.Multiline),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'<\(\backslash\)?.*?\(\backslash\)?>'}, Comment.Preproc),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{'<![\string^>]*>'}, Comment.Preproc),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'<\(\backslash\)s*[\(\backslash\)w:.-\/]+'}, Name.Tag, \textcolor{stringliteral}{'tag'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'<\(\backslash\)s*/\(\backslash\)s*[\(\backslash\)w:.-\/]+\(\backslash\)s*>'}, Name.Tag),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'tag'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\(\backslash\)w.:-\/]+\(\backslash\)s*='}, Name.Attribute, \textcolor{stringliteral}{'attr'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'/?\(\backslash\)s*>'}, Name.Tag, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'attr'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{'"{}.*?"{}'}, String, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{"{}'.*?'"{}}, String, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^\(\backslash\)s>]+'}, String, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/html.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,40 @@
+\hypertarget{classlxml_1_1html_1_1XHTMLParser}{}\doxysection{lxml.\+html.\+XHTMLParser Class Reference}
+\label{classlxml_1_1html_1_1XHTMLParser}\index{lxml.html.XHTMLParser@{lxml.html.XHTMLParser}}
+
+
+Inheritance diagram for lxml.\+html.\+XHTMLParser\+:
+% FIG 0
+
+
+Collaboration diagram for lxml.\+html.\+XHTMLParser\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlxml_1_1html_1_1XHTMLParser_a5b211da901790e7240879d0e7b071ed7}\label{classlxml_1_1html_1_1XHTMLParser_a5b211da901790e7240879d0e7b071ed7}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, $\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An XML parser that is configured to return lxml.html Element
+objects.
+
+Note that this parser is not really XHTML aware unless you let it
+load a DTD that declares the HTML entities.  To do this, make sure
+you have the XHTML DTDs installed in your catalogs, and create the
+parser like this::
+
+    >>> parser = XHTMLParser(load_dtd=True)
+
+If you additionally want to validate the document, use this::
+
+    >>> parser = XHTMLParser(dtd_validation=True)
+
+For catalog support, see http://www.xmlsoft.org/catalog.html.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/lxml/html/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

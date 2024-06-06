@@ -1,0 +1,54 @@
+\hypertarget{namespacepygments_1_1filter}{}\doxysection{pygments.\+filter Namespace Reference}
+\label{namespacepygments_1_1filter}\index{pygments.filter@{pygments.filter}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpygments_1_1filter_1_1Filter}{Filter}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1filter_1_1FunctionFilter}{Function\+Filter}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacepygments_1_1filter_a14a02aaf1057cb520840565c1043a296}{apply\+\_\+filters}} (stream, filters, lexer=None)
+\item 
+def \mbox{\hyperlink{namespacepygments_1_1filter_abbbbb2ea2db0ff078dc8a4b8a2ac6d5d}{simplefilter}} (f)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}    pygments.filter
+    ~~~~~~~~~~~~~~~
+
+    Module that implements the default filter.
+
+    :copyright: Copyright 2006-2024 by the Pygments team, see AUTHORS.
+    :license: BSD, see LICENSE for details.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepygments_1_1filter_a14a02aaf1057cb520840565c1043a296}\label{namespacepygments_1_1filter_a14a02aaf1057cb520840565c1043a296}} 
+\index{pygments.filter@{pygments.filter}!apply\_filters@{apply\_filters}}
+\index{apply\_filters@{apply\_filters}!pygments.filter@{pygments.filter}}
+\doxysubsubsection{\texorpdfstring{apply\_filters()}{apply\_filters()}}
+{\footnotesize\ttfamily def pygments.\+filter.\+apply\+\_\+filters (\begin{DoxyParamCaption}\item[{}]{stream,  }\item[{}]{filters,  }\item[{}]{lexer = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Use this method to apply an iterable of filters to
+a stream. If lexer is given it's forwarded to the
+filter, otherwise the filter receives `None`.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygments_1_1filter_abbbbb2ea2db0ff078dc8a4b8a2ac6d5d}\label{namespacepygments_1_1filter_abbbbb2ea2db0ff078dc8a4b8a2ac6d5d}} 
+\index{pygments.filter@{pygments.filter}!simplefilter@{simplefilter}}
+\index{simplefilter@{simplefilter}!pygments.filter@{pygments.filter}}
+\doxysubsubsection{\texorpdfstring{simplefilter()}{simplefilter()}}
+{\footnotesize\ttfamily def pygments.\+filter.\+simplefilter (\begin{DoxyParamCaption}\item[{}]{f }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decorator that converts a function into a filter::
+
+    @simplefilter
+    def lowercase(self, lexer, stream, options):
+        for ttype, value in stream:
+            yield ttype, value.lower()
+\end{DoxyVerb}
+ 

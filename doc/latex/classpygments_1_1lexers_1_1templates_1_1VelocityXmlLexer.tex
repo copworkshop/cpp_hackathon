@@ -1,0 +1,106 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityXmlLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Velocity\+Xml\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1VelocityXmlLexer}\index{pygments.lexers.templates.VelocityXmlLexer@{pygments.lexers.templates.VelocityXmlLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Velocity\+Xml\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Velocity\+Xml\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1VelocityXmlLexer_a4fdc15ccbbd86952abe556e129d9a688}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1VelocityXmlLexer_af4e76b7de6437ebf027c727aa4da659d}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityXmlLexer_aadf7439d8e40b134d8c174cdbc1b59cc}\label{classpygments_1_1lexers_1_1templates_1_1VelocityXmlLexer_aadf7439d8e40b134d8c174cdbc1b59cc}} 
+string {\bfseries name} = \textquotesingle{}XML+Velocity\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityXmlLexer_a801a52cfbe34bcda3e3415e223b14b4e}\label{classpygments_1_1lexers_1_1templates_1_1VelocityXmlLexer_a801a52cfbe34bcda3e3415e223b14b4e}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}xml+velocity\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityXmlLexer_af1d6a81e325a23f6c2b4a8ff7a006dc0}\label{classpygments_1_1lexers_1_1templates_1_1VelocityXmlLexer_af1d6a81e325a23f6c2b4a8ff7a006dc0}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityXmlLexer_af322ac16fdbb7444de659c8884d872e5}\label{classpygments_1_1lexers_1_1templates_1_1VelocityXmlLexer_af322ac16fdbb7444de659c8884d872e5}} 
+list {\bfseries alias\+\_\+filenames} = \mbox{[}\textquotesingle{}$\ast$.xml\textquotesingle{}, \textquotesingle{}$\ast$.vm\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityXmlLexer_a595967c633785ba137a98092a09d9dbd}\label{classpygments_1_1lexers_1_1templates_1_1VelocityXmlLexer_a595967c633785ba137a98092a09d9dbd}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}application/xml+velocity\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityXmlLexer_a869d69f0568efa6d2f33ae1269a657f8}\label{classpygments_1_1lexers_1_1templates_1_1VelocityXmlLexer_a869d69f0568efa6d2f33ae1269a657f8}} 
+string {\bfseries url} = \textquotesingle{}https\+://velocity.\+apache.\+org/\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Subclass of the `VelocityLexer` that highlights unlexed data
+with the `XmlLexer`.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityXmlLexer_a4fdc15ccbbd86952abe556e129d9a688}\label{classpygments_1_1lexers_1_1templates_1_1VelocityXmlLexer_a4fdc15ccbbd86952abe556e129d9a688}} 
+\index{pygments.lexers.templates.VelocityXmlLexer@{pygments.lexers.templates.VelocityXmlLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.templates.VelocityXmlLexer@{pygments.lexers.templates.VelocityXmlLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Velocity\+Xml\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1VelocityXmlLexer_af4e76b7de6437ebf027c727aa4da659d}\label{classpygments_1_1lexers_1_1templates_1_1VelocityXmlLexer_af4e76b7de6437ebf027c727aa4da659d}} 
+\index{pygments.lexers.templates.VelocityXmlLexer@{pygments.lexers.templates.VelocityXmlLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.templates.VelocityXmlLexer@{pygments.lexers.templates.VelocityXmlLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Velocity\+Xml\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

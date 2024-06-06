@@ -1,0 +1,63 @@
+\hypertarget{classconans_1_1model_1_1conf_1_1__ConfValue}{}\doxysection{conans.\+model.\+conf.\+\_\+\+Conf\+Value Class Reference}
+\label{classconans_1_1model_1_1conf_1_1__ConfValue}\index{conans.model.conf.\_ConfValue@{conans.model.conf.\_ConfValue}}
+
+
+Inheritance diagram for conans.\+model.\+conf.\+\_\+\+Conf\+Value\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+model.\+conf.\+\_\+\+Conf\+Value\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1__ConfValue_a48f62cd8709ec09469ed536d8bfc46c3}\label{classconans_1_1model_1_1conf_1_1__ConfValue_a48f62cd8709ec09469ed536d8bfc46c3}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, name, value, path=False)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1__ConfValue_ab4ad1da08f9ecfd3f4ab7bd92493488d}\label{classconans_1_1model_1_1conf_1_1__ConfValue_ab4ad1da08f9ecfd3f4ab7bd92493488d}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1__ConfValue_ac2a6b6b7d3bd736cc9326e0ba751c68f}\label{classconans_1_1model_1_1conf_1_1__ConfValue_ac2a6b6b7d3bd736cc9326e0ba751c68f}} 
+def {\bfseries value} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1__ConfValue_a12c37ac4c6b9e199bd4d1d96234b97b7}\label{classconans_1_1model_1_1conf_1_1__ConfValue_a12c37ac4c6b9e199bd4d1d96234b97b7}} 
+def {\bfseries copy} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1__ConfValue_ac092f630bbdafb27ff445fdf7cf9d845}\label{classconans_1_1model_1_1conf_1_1__ConfValue_ac092f630bbdafb27ff445fdf7cf9d845}} 
+def {\bfseries dumps} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1__ConfValue_aa0e4375845c37b561764196b58958fd7}\label{classconans_1_1model_1_1conf_1_1__ConfValue_aa0e4375845c37b561764196b58958fd7}} 
+def {\bfseries update} (self, value)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1__ConfValue_aad61f622571b23c4aaf7787f470ca8d6}\label{classconans_1_1model_1_1conf_1_1__ConfValue_aad61f622571b23c4aaf7787f470ca8d6}} 
+def {\bfseries remove} (self, value)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1__ConfValue_ad0a37ea5d779adec26c1e6879d68717c}\label{classconans_1_1model_1_1conf_1_1__ConfValue_ad0a37ea5d779adec26c1e6879d68717c}} 
+def {\bfseries append} (self, value)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1__ConfValue_ad262f531b895ba102747dc8fd493ff45}\label{classconans_1_1model_1_1conf_1_1__ConfValue_ad262f531b895ba102747dc8fd493ff45}} 
+def {\bfseries prepend} (self, value)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1conf_1_1__ConfValue_a147094984c48de5f146638dde846f618}{compose\+\_\+conf\+\_\+value}} (self, other)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1__ConfValue_a662f7b2bd78e5d0a968e9460a2b40275}\label{classconans_1_1model_1_1conf_1_1__ConfValue_a662f7b2bd78e5d0a968e9460a2b40275}} 
+def {\bfseries set\+\_\+relative\+\_\+base\+\_\+folder} (self, folder)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1model_1_1conf_1_1__ConfValue_a147094984c48de5f146638dde846f618}\label{classconans_1_1model_1_1conf_1_1__ConfValue_a147094984c48de5f146638dde846f618}} 
+\index{conans.model.conf.\_ConfValue@{conans.model.conf.\_ConfValue}!compose\_conf\_value@{compose\_conf\_value}}
+\index{compose\_conf\_value@{compose\_conf\_value}!conans.model.conf.\_ConfValue@{conans.model.conf.\_ConfValue}}
+\doxysubsubsection{\texorpdfstring{compose\_conf\_value()}{compose\_conf\_value()}}
+{\footnotesize\ttfamily def conans.\+model.\+conf.\+\_\+\+Conf\+Value.\+compose\+\_\+conf\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}self has precedence, the "other" will add/append if possible and not conflicting, but
+self mandates what to do. If self has define(), without placeholder, that will remain.
+:type other: _ConfValue
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/model/conf.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\hypertarget{classgcovr_1_1formats_1_1gcov_1_1read_1_1GcovProgram}{}\doxysection{gcovr.\+formats.\+gcov.\+read.\+Gcov\+Program Class Reference}
+\label{classgcovr_1_1formats_1_1gcov_1_1read_1_1GcovProgram}\index{gcovr.formats.gcov.read.GcovProgram@{gcovr.formats.gcov.read.GcovProgram}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classgcovr_1_1formats_1_1gcov_1_1read_1_1GcovProgram_1_1LockContext}{Lock\+Context}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgcovr_1_1formats_1_1gcov_1_1read_1_1GcovProgram_a09fa92edb0822ccc111f17a6f8c7ee39}\label{classgcovr_1_1formats_1_1gcov_1_1read_1_1GcovProgram_a09fa92edb0822ccc111f17a6f8c7ee39}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str cmd)
+\item 
+\mbox{\Hypertarget{classgcovr_1_1formats_1_1gcov_1_1read_1_1GcovProgram_a5a2f29d7f1012d161ba87359a32aa424}\label{classgcovr_1_1formats_1_1gcov_1_1read_1_1GcovProgram_a5a2f29d7f1012d161ba87359a32aa424}} 
+None {\bfseries identify\+\_\+and\+\_\+cache\+\_\+capabilities} (self)
+\item 
+\mbox{\Hypertarget{classgcovr_1_1formats_1_1gcov_1_1read_1_1GcovProgram_aab352fef2b6499a3157e245e48869725}\label{classgcovr_1_1formats_1_1gcov_1_1read_1_1GcovProgram_aab352fef2b6499a3157e245e48869725}} 
+List\mbox{[}str\mbox{]} {\bfseries get\+\_\+default\+\_\+options} (self)
+\item 
+Tuple\mbox{[}str, str\mbox{]} \mbox{\hyperlink{classgcovr_1_1formats_1_1gcov_1_1read_1_1GcovProgram_a22b1c2880f808513563f981950d8e49f}{run\+\_\+with\+\_\+args}} (self, List\mbox{[}str\mbox{]} args, $\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgcovr_1_1formats_1_1gcov_1_1read_1_1GcovProgram_a22b1c2880f808513563f981950d8e49f}\label{classgcovr_1_1formats_1_1gcov_1_1read_1_1GcovProgram_a22b1c2880f808513563f981950d8e49f}} 
+\index{gcovr.formats.gcov.read.GcovProgram@{gcovr.formats.gcov.read.GcovProgram}!run\_with\_args@{run\_with\_args}}
+\index{run\_with\_args@{run\_with\_args}!gcovr.formats.gcov.read.GcovProgram@{gcovr.formats.gcov.read.GcovProgram}}
+\doxysubsubsection{\texorpdfstring{run\_with\_args()}{run\_with\_args()}}
+{\footnotesize\ttfamily  Tuple\mbox{[}str, str\mbox{]} gcovr.\+formats.\+gcov.\+read.\+Gcov\+Program.\+run\+\_\+with\+\_\+args (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{List\mbox{[}str\mbox{]}}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run the gcov program
+
+>>> import platform
+>>> if platform.system() == "Windows":
+...     print("kill not working on Windows")  # doctest: +SKIP
+... else:
+...     GcovProgram("bash").run_with_args(["-c", "exit 1"])
+Traceback (most recent call last):
+...
+RuntimeError: GCOV returncode was 1.
+>>> if platform.system() == "Windows":
+...     GcovProgram("bash").run_with_args(["-c", "exit 1"])
+... else:
+...     print("kill not working on Windows")  # doctest: +SKIP
+Traceback (most recent call last):
+...
+RuntimeError: GCOV returncode was 4294967295.
+>>> if platform.system() == "Windows":
+...     print("kill not working on Windows")  # doctest: +SKIP
+... else:
+...     GcovProgram("bash").run_with_args(["-c", "kill $$"])
+Traceback (most recent call last):
+...
+RuntimeError: GCOV returncode was -15 (exited by signal).
+>>> if platform.system() == "Windows":
+...     GcovProgram("bash").run_with_args(["-c", "kill $$"])
+... else:
+...     print("kill not working on Windows")  # doctest: +SKIP
+Traceback (most recent call last):
+...
+RuntimeError: GCOV returncode was 15.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/gcovr/formats/gcov/read.\+py\end{DoxyCompactItemize}

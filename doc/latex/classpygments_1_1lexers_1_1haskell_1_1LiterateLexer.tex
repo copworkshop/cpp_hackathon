@@ -1,0 +1,68 @@
+\hypertarget{classpygments_1_1lexers_1_1haskell_1_1LiterateLexer}{}\doxysection{pygments.\+lexers.\+haskell.\+Literate\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1haskell_1_1LiterateLexer}\index{pygments.lexers.haskell.LiterateLexer@{pygments.lexers.haskell.LiterateLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+haskell.\+Literate\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+haskell.\+Literate\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1haskell_1_1LiterateLexer_a307ab9d45c61bc02dcbf169c07a43ec0}\label{classpygments_1_1lexers_1_1haskell_1_1LiterateLexer_a307ab9d45c61bc02dcbf169c07a43ec0}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, baselexer, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1haskell_1_1LiterateLexer_a7331b0faffb3a9814a302d6a2d1b37c2}{get\+\_\+tokens\+\_\+unprocessed}} (self, text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1haskell_1_1LiterateLexer_ac5280ac36400193d258b4e67e2bebf3c}\label{classpygments_1_1lexers_1_1haskell_1_1LiterateLexer_ac5280ac36400193d258b4e67e2bebf3c}} 
+{\bfseries baselexer}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1haskell_1_1LiterateLexer_ac0cd74e4d9195e58040c2ff84c488123}\label{classpygments_1_1lexers_1_1haskell_1_1LiterateLexer_ac0cd74e4d9195e58040c2ff84c488123}} 
+{\bfseries bird\+\_\+re} = re.\+compile(r\textquotesingle{}($>$\mbox{[} \textbackslash{}t\mbox{]}$\ast$)(.$\ast$\textbackslash{}n)\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Base class for lexers of literate file formats based on LaTeX or Bird-style
+(prefixing each code line with ">").
+
+Additional options accepted:
+
+`litstyle`
+    If given, must be ``"bird"`` or ``"latex"``.  If not given, the style
+    is autodetected: if the first non-whitespace character in the source
+    is a backslash or percent character, LaTeX is assumed, else Bird.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1haskell_1_1LiterateLexer_a7331b0faffb3a9814a302d6a2d1b37c2}\label{classpygments_1_1lexers_1_1haskell_1_1LiterateLexer_a7331b0faffb3a9814a302d6a2d1b37c2}} 
+\index{pygments.lexers.haskell.LiterateLexer@{pygments.lexers.haskell.LiterateLexer}!get\_tokens\_unprocessed@{get\_tokens\_unprocessed}}
+\index{get\_tokens\_unprocessed@{get\_tokens\_unprocessed}!pygments.lexers.haskell.LiterateLexer@{pygments.lexers.haskell.LiterateLexer}}
+\doxysubsubsection{\texorpdfstring{get\_tokens\_unprocessed()}{get\_tokens\_unprocessed()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+haskell.\+Literate\+Lexer.\+get\+\_\+tokens\+\_\+unprocessed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method should process the text and return an iterable of
+``(index, tokentype, value)`` tuples where ``index`` is the starting
+position of the token within the input text.
+
+It must be overridden by subclasses. It is recommended to
+implement it as a generator to maximize effectiveness.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_aad5c02b7f661f64f91cf8c8d880e9f67}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/haskell.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,100 @@
+\hypertarget{namespacepygments_1_1filters}{}\doxysection{pygments.\+filters Namespace Reference}
+\label{namespacepygments_1_1filters}\index{pygments.filters@{pygments.filters}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpygments_1_1filters_1_1CodeTagFilter}{Code\+Tag\+Filter}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1filters_1_1SymbolFilter}{Symbol\+Filter}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1filters_1_1KeywordCaseFilter}{Keyword\+Case\+Filter}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1filters_1_1NameHighlightFilter}{Name\+Highlight\+Filter}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1filters_1_1ErrorToken}{Error\+Token}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1filters_1_1RaiseOnErrorTokenFilter}{Raise\+On\+Error\+Token\+Filter}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1filters_1_1VisibleWhitespaceFilter}{Visible\+Whitespace\+Filter}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1filters_1_1GobbleFilter}{Gobble\+Filter}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1filters_1_1TokenMergeFilter}{Token\+Merge\+Filter}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacepygments_1_1filters_a1502f3609562a1e0f03f7d5b39bb4845}{find\+\_\+filter\+\_\+class}} (filtername)
+\item 
+def \mbox{\hyperlink{namespacepygments_1_1filters_af8599bdeabd852120d48e72bb32bd550}{get\+\_\+filter\+\_\+by\+\_\+name}} (filtername, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{namespacepygments_1_1filters_ae9ded0a759cce958943f7230569b6b9d}{get\+\_\+all\+\_\+filters}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dictionary {\bfseries FILTERS}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}    pygments.filters
+    ~~~~~~~~~~~~~~~~
+
+    Module containing filter lookup functions and default
+    filters.
+
+    :copyright: Copyright 2006-2024 by the Pygments team, see AUTHORS.
+    :license: BSD, see LICENSE for details.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepygments_1_1filters_a1502f3609562a1e0f03f7d5b39bb4845}\label{namespacepygments_1_1filters_a1502f3609562a1e0f03f7d5b39bb4845}} 
+\index{pygments.filters@{pygments.filters}!find\_filter\_class@{find\_filter\_class}}
+\index{find\_filter\_class@{find\_filter\_class}!pygments.filters@{pygments.filters}}
+\doxysubsubsection{\texorpdfstring{find\_filter\_class()}{find\_filter\_class()}}
+{\footnotesize\ttfamily def pygments.\+filters.\+find\+\_\+filter\+\_\+class (\begin{DoxyParamCaption}\item[{}]{filtername }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Lookup a filter by name. Return None if not found.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygments_1_1filters_ae9ded0a759cce958943f7230569b6b9d}\label{namespacepygments_1_1filters_ae9ded0a759cce958943f7230569b6b9d}} 
+\index{pygments.filters@{pygments.filters}!get\_all\_filters@{get\_all\_filters}}
+\index{get\_all\_filters@{get\_all\_filters}!pygments.filters@{pygments.filters}}
+\doxysubsubsection{\texorpdfstring{get\_all\_filters()}{get\_all\_filters()}}
+{\footnotesize\ttfamily def pygments.\+filters.\+get\+\_\+all\+\_\+filters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a generator of all filter names.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygments_1_1filters_af8599bdeabd852120d48e72bb32bd550}\label{namespacepygments_1_1filters_af8599bdeabd852120d48e72bb32bd550}} 
+\index{pygments.filters@{pygments.filters}!get\_filter\_by\_name@{get\_filter\_by\_name}}
+\index{get\_filter\_by\_name@{get\_filter\_by\_name}!pygments.filters@{pygments.filters}}
+\doxysubsubsection{\texorpdfstring{get\_filter\_by\_name()}{get\_filter\_by\_name()}}
+{\footnotesize\ttfamily def pygments.\+filters.\+get\+\_\+filter\+\_\+by\+\_\+name (\begin{DoxyParamCaption}\item[{}]{filtername,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an instantiated filter.
+
+Options are passed to the filter initializer if wanted.
+Raise a ClassNotFound if not found.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepygments_1_1filters_a8d02c811e0c83610686abd9d4b535199}\label{namespacepygments_1_1filters_a8d02c811e0c83610686abd9d4b535199}} 
+\index{pygments.filters@{pygments.filters}!FILTERS@{FILTERS}}
+\index{FILTERS@{FILTERS}!pygments.filters@{pygments.filters}}
+\doxysubsubsection{\texorpdfstring{FILTERS}{FILTERS}}
+{\footnotesize\ttfamily dictionary pygments.\+filters.\+FILTERS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{}
+\DoxyCodeLine{2     \textcolor{stringliteral}{'codetagify'}:     CodeTagFilter,}
+\DoxyCodeLine{3     \textcolor{stringliteral}{'keywordcase'}:    KeywordCaseFilter,}
+\DoxyCodeLine{4     \textcolor{stringliteral}{'highlight'}:      NameHighlightFilter,}
+\DoxyCodeLine{5     \textcolor{stringliteral}{'raiseonerror'}:   RaiseOnErrorTokenFilter,}
+\DoxyCodeLine{6     \textcolor{stringliteral}{'whitespace'}:     VisibleWhitespaceFilter,}
+\DoxyCodeLine{7     \textcolor{stringliteral}{'gobble'}:         GobbleFilter,}
+\DoxyCodeLine{8     \textcolor{stringliteral}{'tokenmerge'}:     TokenMergeFilter,}
+\DoxyCodeLine{9     \textcolor{stringliteral}{'symbols'}:        SymbolFilter,}
+\DoxyCodeLine{10 \}}
+
+\end{DoxyCode}

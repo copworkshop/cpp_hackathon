@@ -1,0 +1,68 @@
+\hypertarget{classpygments_1_1formatters_1_1latex_1_1LatexEmbeddedLexer}{}\doxysection{pygments.\+formatters.\+latex.\+Latex\+Embedded\+Lexer Class Reference}
+\label{classpygments_1_1formatters_1_1latex_1_1LatexEmbeddedLexer}\index{pygments.formatters.latex.LatexEmbeddedLexer@{pygments.formatters.latex.LatexEmbeddedLexer}}
+
+
+Inheritance diagram for pygments.\+formatters.\+latex.\+Latex\+Embedded\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+formatters.\+latex.\+Latex\+Embedded\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1latex_1_1LatexEmbeddedLexer_a6dd5343376a27eb7dc41b0aa93a08771}\label{classpygments_1_1formatters_1_1latex_1_1LatexEmbeddedLexer_a6dd5343376a27eb7dc41b0aa93a08771}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, left, right, lang, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1formatters_1_1latex_1_1LatexEmbeddedLexer_ad55e9479f8c8a5758246a1d64c9e6148}{get\+\_\+tokens\+\_\+unprocessed}} (self, text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1latex_1_1LatexEmbeddedLexer_a518ede9be2451527344d00af08e58111}\label{classpygments_1_1formatters_1_1latex_1_1LatexEmbeddedLexer_a518ede9be2451527344d00af08e58111}} 
+{\bfseries left}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1latex_1_1LatexEmbeddedLexer_a7844c7577bf854bd8409d5542195ed2f}\label{classpygments_1_1formatters_1_1latex_1_1LatexEmbeddedLexer_a7844c7577bf854bd8409d5542195ed2f}} 
+{\bfseries right}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1latex_1_1LatexEmbeddedLexer_aed27a20205471b7e83931328cc36c083}\label{classpygments_1_1formatters_1_1latex_1_1LatexEmbeddedLexer_aed27a20205471b7e83931328cc36c083}} 
+{\bfseries lang}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This lexer takes one lexer as argument, the lexer for the language
+being formatted, and the left and right delimiters for escaped text.
+
+First everything is scanned using the language lexer to obtain
+strings and comments. All other consecutive tokens are merged and
+the resulting text is scanned for escaped segments, which are given
+the Token.Escape type. Finally text that is not escaped is scanned
+again with the language lexer.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1latex_1_1LatexEmbeddedLexer_ad55e9479f8c8a5758246a1d64c9e6148}\label{classpygments_1_1formatters_1_1latex_1_1LatexEmbeddedLexer_ad55e9479f8c8a5758246a1d64c9e6148}} 
+\index{pygments.formatters.latex.LatexEmbeddedLexer@{pygments.formatters.latex.LatexEmbeddedLexer}!get\_tokens\_unprocessed@{get\_tokens\_unprocessed}}
+\index{get\_tokens\_unprocessed@{get\_tokens\_unprocessed}!pygments.formatters.latex.LatexEmbeddedLexer@{pygments.formatters.latex.LatexEmbeddedLexer}}
+\doxysubsubsection{\texorpdfstring{get\_tokens\_unprocessed()}{get\_tokens\_unprocessed()}}
+{\footnotesize\ttfamily def pygments.\+formatters.\+latex.\+Latex\+Embedded\+Lexer.\+get\+\_\+tokens\+\_\+unprocessed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method should process the text and return an iterable of
+``(index, tokentype, value)`` tuples where ``index`` is the starting
+position of the token within the input text.
+
+It must be overridden by subclasses. It is recommended to
+implement it as a generator to maximize effectiveness.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_aad5c02b7f661f64f91cf8c8d880e9f67}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/formatters/latex.\+py\end{DoxyCompactItemize}

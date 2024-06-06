@@ -1,0 +1,56 @@
+\hypertarget{classpluginbase_1_1__ImportHook}{}\doxysection{pluginbase.\+\_\+\+Import\+Hook Class Reference}
+\label{classpluginbase_1_1__ImportHook}\index{pluginbase.\_ImportHook@{pluginbase.\_ImportHook}}
+
+
+Inheritance diagram for pluginbase.\+\_\+\+Import\+Hook\+:
+% FIG 0
+
+
+Collaboration diagram for pluginbase.\+\_\+\+Import\+Hook\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpluginbase_1_1__ImportHook_addc4408c278717094b8c8517b2c5d508}\label{classpluginbase_1_1__ImportHook_addc4408c278717094b8c8517b2c5d508}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, name, system\+\_\+import)
+\item 
+def \mbox{\hyperlink{classpluginbase_1_1__ImportHook_a3836384db07e2994efea7874998d5045}{enable}} (self)
+\item 
+def \mbox{\hyperlink{classpluginbase_1_1__ImportHook_a9147853b6742f3893a6e4cf20562ee86}{disable}} (self)
+\item 
+\mbox{\Hypertarget{classpluginbase_1_1__ImportHook_ab6619de03e39d77296972da1d0e87329}\label{classpluginbase_1_1__ImportHook_ab6619de03e39d77296972da1d0e87329}} 
+def {\bfseries plugin\+\_\+import} (self, name, globals=None, locals=None, fromlist=None, level=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpluginbase_1_1__ImportHook_a0309b1e8bbd82408b5c927be30471f13}\label{classpluginbase_1_1__ImportHook_a0309b1e8bbd82408b5c927be30471f13}} 
+{\bfseries enabled}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpluginbase_1_1__ImportHook_a9147853b6742f3893a6e4cf20562ee86}\label{classpluginbase_1_1__ImportHook_a9147853b6742f3893a6e4cf20562ee86}} 
+\index{pluginbase.\_ImportHook@{pluginbase.\_ImportHook}!disable@{disable}}
+\index{disable@{disable}!pluginbase.\_ImportHook@{pluginbase.\_ImportHook}}
+\doxysubsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily def pluginbase.\+\_\+\+Import\+Hook.\+disable (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Disables the import hook and restores the default import system
+behavior.  This effectively breaks pluginbase but can be useful
+for testing purposes.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpluginbase_1_1__ImportHook_a3836384db07e2994efea7874998d5045}\label{classpluginbase_1_1__ImportHook_a3836384db07e2994efea7874998d5045}} 
+\index{pluginbase.\_ImportHook@{pluginbase.\_ImportHook}!enable@{enable}}
+\index{enable@{enable}!pluginbase.\_ImportHook@{pluginbase.\_ImportHook}}
+\doxysubsubsection{\texorpdfstring{enable()}{enable()}}
+{\footnotesize\ttfamily def pluginbase.\+\_\+\+Import\+Hook.\+enable (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Enables the import hook which drives the plugin base system.
+This is the default.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pluginbase.\+py\end{DoxyCompactItemize}

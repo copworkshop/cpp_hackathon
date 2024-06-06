@@ -1,0 +1,99 @@
+\hypertarget{classjwt_1_1api__jws_1_1PyJWS}{}\doxysection{jwt.\+api\+\_\+jws.\+Py\+JWS Class Reference}
+\label{classjwt_1_1api__jws_1_1PyJWS}\index{jwt.api\_jws.PyJWS@{jwt.api\_jws.PyJWS}}
+
+
+Collaboration diagram for jwt.\+api\+\_\+jws.\+Py\+JWS\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjwt_1_1api__jws_1_1PyJWS_ae7027612d87464a14537db8921e0b3f7}\label{classjwt_1_1api__jws_1_1PyJWS_ae7027612d87464a14537db8921e0b3f7}} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, list\mbox{[}str\mbox{]}$\vert$None algorithms=None, dict\mbox{[}str, Any\mbox{]}$\vert$None options=None)
+\item 
+None \mbox{\hyperlink{classjwt_1_1api__jws_1_1PyJWS_a1b372eb2be0123553afba342c3a840b2}{register\+\_\+algorithm}} (self, str alg\+\_\+id, \mbox{\hyperlink{classjwt_1_1algorithms_1_1Algorithm}{Algorithm}} alg\+\_\+obj)
+\item 
+None \mbox{\hyperlink{classjwt_1_1api__jws_1_1PyJWS_a392eb6562239097ece0c15b11a342cf9}{unregister\+\_\+algorithm}} (self, str alg\+\_\+id)
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{classjwt_1_1api__jws_1_1PyJWS_a1ccc98eaf01c6dd23d2b53757605d2ba}{get\+\_\+algorithms}} (self)
+\item 
+\mbox{\hyperlink{classjwt_1_1algorithms_1_1Algorithm}{Algorithm}} \mbox{\hyperlink{classjwt_1_1api__jws_1_1PyJWS_aee3babe43610363a0fd6996e5b91d3d0}{get\+\_\+algorithm\+\_\+by\+\_\+name}} (self, str alg\+\_\+name)
+\item 
+\mbox{\Hypertarget{classjwt_1_1api__jws_1_1PyJWS_a633487bec9b4aad695ac854d59a946bd}\label{classjwt_1_1api__jws_1_1PyJWS_a633487bec9b4aad695ac854d59a946bd}} 
+str {\bfseries encode} (self, bytes payload, Allowed\+Private\+Keys$\vert$str$\vert$bytes key, str$\vert$None algorithm=\char`\"{}HS256\char`\"{}, dict\mbox{[}str, Any\mbox{]}$\vert$None headers=None, type\mbox{[}json.\+JSONEncoder\mbox{]}$\vert$None json\+\_\+encoder=None, bool is\+\_\+payload\+\_\+detached=False, bool sort\+\_\+headers=True)
+\item 
+\mbox{\Hypertarget{classjwt_1_1api__jws_1_1PyJWS_a09fd1034b0b7f37c2483b16941c06523}\label{classjwt_1_1api__jws_1_1PyJWS_a09fd1034b0b7f37c2483b16941c06523}} 
+dict\mbox{[}str, Any\mbox{]} {\bfseries decode\+\_\+complete} (self, str$\vert$bytes jwt, Allowed\+Public\+Keys$\vert$str$\vert$bytes key=\char`\"{}\char`\"{}, list\mbox{[}str\mbox{]}$\vert$None algorithms=None, dict\mbox{[}str, Any\mbox{]}$\vert$None options=None, bytes$\vert$None detached\+\_\+payload=None, $\ast$$\ast$kwargs)
+\item 
+\mbox{\Hypertarget{classjwt_1_1api__jws_1_1PyJWS_af28a859b835f489768f8e371530f9cc2}\label{classjwt_1_1api__jws_1_1PyJWS_af28a859b835f489768f8e371530f9cc2}} 
+Any {\bfseries decode} (self, str$\vert$bytes jwt, Allowed\+Public\+Keys$\vert$str$\vert$bytes key=\char`\"{}\char`\"{}, list\mbox{[}str\mbox{]}$\vert$None algorithms=None, dict\mbox{[}str, Any\mbox{]}$\vert$None options=None, bytes$\vert$None detached\+\_\+payload=None, $\ast$$\ast$kwargs)
+\item 
+dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{classjwt_1_1api__jws_1_1PyJWS_a7585e25953cb8883c9feb8a79557b31b}{get\+\_\+unverified\+\_\+header}} (self, str$\vert$bytes jwt)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjwt_1_1api__jws_1_1PyJWS_a762779167bff83c155bfa27f8d310079}\label{classjwt_1_1api__jws_1_1PyJWS_a762779167bff83c155bfa27f8d310079}} 
+{\bfseries options}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjwt_1_1api__jws_1_1PyJWS_af1faa553a4b8dce292e0f8a88a37c001}\label{classjwt_1_1api__jws_1_1PyJWS_af1faa553a4b8dce292e0f8a88a37c001}} 
+string {\bfseries header\+\_\+typ} = \char`\"{}JWT\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classjwt_1_1api__jws_1_1PyJWS_aee3babe43610363a0fd6996e5b91d3d0}\label{classjwt_1_1api__jws_1_1PyJWS_aee3babe43610363a0fd6996e5b91d3d0}} 
+\index{jwt.api\_jws.PyJWS@{jwt.api\_jws.PyJWS}!get\_algorithm\_by\_name@{get\_algorithm\_by\_name}}
+\index{get\_algorithm\_by\_name@{get\_algorithm\_by\_name}!jwt.api\_jws.PyJWS@{jwt.api\_jws.PyJWS}}
+\doxysubsubsection{\texorpdfstring{get\_algorithm\_by\_name()}{get\_algorithm\_by\_name()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classjwt_1_1algorithms_1_1Algorithm}{Algorithm}} jwt.\+api\+\_\+jws.\+Py\+JWS.\+get\+\_\+algorithm\+\_\+by\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{alg\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}For a given string name, return the matching Algorithm object.
+
+Example usage:
+
+>>> jws_obj.get_algorithm_by_name("RS256")
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classjwt_1_1api__jws_1_1PyJWS_a1ccc98eaf01c6dd23d2b53757605d2ba}\label{classjwt_1_1api__jws_1_1PyJWS_a1ccc98eaf01c6dd23d2b53757605d2ba}} 
+\index{jwt.api\_jws.PyJWS@{jwt.api\_jws.PyJWS}!get\_algorithms@{get\_algorithms}}
+\index{get\_algorithms@{get\_algorithms}!jwt.api\_jws.PyJWS@{jwt.api\_jws.PyJWS}}
+\doxysubsubsection{\texorpdfstring{get\_algorithms()}{get\_algorithms()}}
+{\footnotesize\ttfamily  list\mbox{[}str\mbox{]} jwt.\+api\+\_\+jws.\+Py\+JWS.\+get\+\_\+algorithms (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a list of supported values for the 'alg' parameter.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classjwt_1_1api__jws_1_1PyJWS_a7585e25953cb8883c9feb8a79557b31b}\label{classjwt_1_1api__jws_1_1PyJWS_a7585e25953cb8883c9feb8a79557b31b}} 
+\index{jwt.api\_jws.PyJWS@{jwt.api\_jws.PyJWS}!get\_unverified\_header@{get\_unverified\_header}}
+\index{get\_unverified\_header@{get\_unverified\_header}!jwt.api\_jws.PyJWS@{jwt.api\_jws.PyJWS}}
+\doxysubsubsection{\texorpdfstring{get\_unverified\_header()}{get\_unverified\_header()}}
+{\footnotesize\ttfamily  dict\mbox{[}str, Any\mbox{]} jwt.\+api\+\_\+jws.\+Py\+JWS.\+get\+\_\+unverified\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str $\vert$ bytes}]{jwt }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns back the JWT header parameters as a dict()
+
+Note: The signature is not verified so the header parameters
+should not be fully trusted until signature verification is complete
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classjwt_1_1api__jws_1_1PyJWS_a1b372eb2be0123553afba342c3a840b2}\label{classjwt_1_1api__jws_1_1PyJWS_a1b372eb2be0123553afba342c3a840b2}} 
+\index{jwt.api\_jws.PyJWS@{jwt.api\_jws.PyJWS}!register\_algorithm@{register\_algorithm}}
+\index{register\_algorithm@{register\_algorithm}!jwt.api\_jws.PyJWS@{jwt.api\_jws.PyJWS}}
+\doxysubsubsection{\texorpdfstring{register\_algorithm()}{register\_algorithm()}}
+{\footnotesize\ttfamily  None jwt.\+api\+\_\+jws.\+Py\+JWS.\+register\+\_\+algorithm (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{alg\+\_\+id,  }\item[{\mbox{\hyperlink{classjwt_1_1algorithms_1_1Algorithm}{Algorithm}}}]{alg\+\_\+obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Registers a new Algorithm for use when creating and verifying tokens.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classjwt_1_1api__jws_1_1PyJWS_a392eb6562239097ece0c15b11a342cf9}\label{classjwt_1_1api__jws_1_1PyJWS_a392eb6562239097ece0c15b11a342cf9}} 
+\index{jwt.api\_jws.PyJWS@{jwt.api\_jws.PyJWS}!unregister\_algorithm@{unregister\_algorithm}}
+\index{unregister\_algorithm@{unregister\_algorithm}!jwt.api\_jws.PyJWS@{jwt.api\_jws.PyJWS}}
+\doxysubsubsection{\texorpdfstring{unregister\_algorithm()}{unregister\_algorithm()}}
+{\footnotesize\ttfamily  None jwt.\+api\+\_\+jws.\+Py\+JWS.\+unregister\+\_\+algorithm (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{alg\+\_\+id }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Unregisters an Algorithm for use when creating and verifying tokens
+Throws KeyError if algorithm is not registered.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jwt/api\+\_\+jws.\+py\end{DoxyCompactItemize}

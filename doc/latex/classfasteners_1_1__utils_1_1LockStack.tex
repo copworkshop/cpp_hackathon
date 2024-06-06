@@ -1,0 +1,39 @@
+\hypertarget{classfasteners_1_1__utils_1_1LockStack}{}\doxysection{fasteners.\+\_\+utils.\+Lock\+Stack Class Reference}
+\label{classfasteners_1_1__utils_1_1LockStack}\index{fasteners.\_utils.LockStack@{fasteners.\_utils.LockStack}}
+
+
+Inheritance diagram for fasteners.\+\_\+utils.\+Lock\+Stack\+:
+% FIG 0
+
+
+Collaboration diagram for fasteners.\+\_\+utils.\+Lock\+Stack\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfasteners_1_1__utils_1_1LockStack_a0dfd11d433b81a6008776c3efa059abd}\label{classfasteners_1_1__utils_1_1LockStack_a0dfd11d433b81a6008776c3efa059abd}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, logger=None)
+\item 
+\mbox{\Hypertarget{classfasteners_1_1__utils_1_1LockStack_a6c4479c63df176eb36d9b87989b735ff}\label{classfasteners_1_1__utils_1_1LockStack_a6c4479c63df176eb36d9b87989b735ff}} 
+def {\bfseries acquire\+\_\+lock} (self, lock)
+\item 
+\mbox{\Hypertarget{classfasteners_1_1__utils_1_1LockStack_a3468723a43e890a113ef8351ba6e53e8}\label{classfasteners_1_1__utils_1_1LockStack_a3468723a43e890a113ef8351ba6e53e8}} 
+def {\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classfasteners_1_1__utils_1_1LockStack_a2be573d29f8e2999015b2cec430186f9}\label{classfasteners_1_1__utils_1_1LockStack_a2be573d29f8e2999015b2cec430186f9}} 
+def {\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, exc\+\_\+type, exc\+\_\+value, exc\+\_\+tb)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Simple lock stack to get and release many locks.
+
+An instance of this should **not** be used by many threads at the
+same time, as the stack that is maintained will be corrupted and
+invalid if that is attempted.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/fasteners/\+\_\+utils.\+py\end{DoxyCompactItemize}

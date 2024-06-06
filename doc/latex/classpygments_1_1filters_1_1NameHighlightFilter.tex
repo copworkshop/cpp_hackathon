@@ -1,0 +1,58 @@
+\hypertarget{classpygments_1_1filters_1_1NameHighlightFilter}{}\doxysection{pygments.\+filters.\+Name\+Highlight\+Filter Class Reference}
+\label{classpygments_1_1filters_1_1NameHighlightFilter}\index{pygments.filters.NameHighlightFilter@{pygments.filters.NameHighlightFilter}}
+
+
+Inheritance diagram for pygments.\+filters.\+Name\+Highlight\+Filter\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+filters.\+Name\+Highlight\+Filter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1filters_1_1NameHighlightFilter_a19c1b2abbd90ec0a00c373c2e47919d0}\label{classpygments_1_1filters_1_1NameHighlightFilter_a19c1b2abbd90ec0a00c373c2e47919d0}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, $\ast$$\ast$options)
+\item 
+\mbox{\Hypertarget{classpygments_1_1filters_1_1NameHighlightFilter_af10551314aaf8b782e32232bce5ec747}\label{classpygments_1_1filters_1_1NameHighlightFilter_af10551314aaf8b782e32232bce5ec747}} 
+def {\bfseries filter} (self, lexer, stream)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1filters_1_1NameHighlightFilter_a59ffadd86a2e25d8df37a1082bc20faf}\label{classpygments_1_1filters_1_1NameHighlightFilter_a59ffadd86a2e25d8df37a1082bc20faf}} 
+{\bfseries names}
+\item 
+\mbox{\Hypertarget{classpygments_1_1filters_1_1NameHighlightFilter_a0fe2e61dc00f345b34c576d72a9eace6}\label{classpygments_1_1filters_1_1NameHighlightFilter_a0fe2e61dc00f345b34c576d72a9eace6}} 
+{\bfseries tokentype}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Highlight a normal Name (and Name.*) token with a different token type.
+
+Example::
+
+    filter = NameHighlightFilter(
+        names=['foo', 'bar', 'baz'],
+        tokentype=Name.Function,
+    )
+
+This would highlight the names "foo", "bar" and "baz"
+as functions. `Name.Function` is the default token type.
+
+Options accepted:
+
+`names` : list of strings
+  A list of names that should be given the different token type.
+  There is no default.
+`tokentype` : TokenType or string
+  A token type or a string containing a token type name that is
+  used for highlighting the strings in `names`.  The default is
+  `Name.Function`.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/filters/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

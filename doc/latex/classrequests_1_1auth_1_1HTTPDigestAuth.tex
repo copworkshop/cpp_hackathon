@@ -1,0 +1,80 @@
+\hypertarget{classrequests_1_1auth_1_1HTTPDigestAuth}{}\doxysection{requests.\+auth.\+HTTPDigest\+Auth Class Reference}
+\label{classrequests_1_1auth_1_1HTTPDigestAuth}\index{requests.auth.HTTPDigestAuth@{requests.auth.HTTPDigestAuth}}
+
+
+Inheritance diagram for requests.\+auth.\+HTTPDigest\+Auth\+:
+% FIG 0
+
+
+Collaboration diagram for requests.\+auth.\+HTTPDigest\+Auth\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrequests_1_1auth_1_1HTTPDigestAuth_a941a734bcbbeb6fedc2715e3f768c1fd}\label{classrequests_1_1auth_1_1HTTPDigestAuth_a941a734bcbbeb6fedc2715e3f768c1fd}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, username, password)
+\item 
+\mbox{\Hypertarget{classrequests_1_1auth_1_1HTTPDigestAuth_a8d887c832fafbbc2308b929787f24347}\label{classrequests_1_1auth_1_1HTTPDigestAuth_a8d887c832fafbbc2308b929787f24347}} 
+def {\bfseries init\+\_\+per\+\_\+thread\+\_\+state} (self)
+\item 
+def \mbox{\hyperlink{classrequests_1_1auth_1_1HTTPDigestAuth_af79a8be90692508e03fff3f5495bff93}{build\+\_\+digest\+\_\+header}} (self, method, url)
+\item 
+def \mbox{\hyperlink{classrequests_1_1auth_1_1HTTPDigestAuth_a72f92429f4769400a6cb93e529a1cb8a}{handle\+\_\+redirect}} (self, r, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classrequests_1_1auth_1_1HTTPDigestAuth_a274e72cd54debf2a6a427466bd003f09}{handle\+\_\+401}} (self, r, $\ast$$\ast$kwargs)
+\item 
+\mbox{\Hypertarget{classrequests_1_1auth_1_1HTTPDigestAuth_ac37b23aad6a242c5a1dbbd27329d67e8}\label{classrequests_1_1auth_1_1HTTPDigestAuth_ac37b23aad6a242c5a1dbbd27329d67e8}} 
+def {\bfseries \+\_\+\+\_\+call\+\_\+\+\_\+} (self, r)
+\item 
+\mbox{\Hypertarget{classrequests_1_1auth_1_1HTTPDigestAuth_a8415445f8b36871c44062a2d0189a9e2}\label{classrequests_1_1auth_1_1HTTPDigestAuth_a8415445f8b36871c44062a2d0189a9e2}} 
+def {\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, other)
+\item 
+\mbox{\Hypertarget{classrequests_1_1auth_1_1HTTPDigestAuth_ad8127de8eda5846021f72cf0ef13508a}\label{classrequests_1_1auth_1_1HTTPDigestAuth_ad8127de8eda5846021f72cf0ef13508a}} 
+def {\bfseries \+\_\+\+\_\+ne\+\_\+\+\_\+} (self, other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrequests_1_1auth_1_1HTTPDigestAuth_a0a0f9877e112793528f138effb9fd31a}\label{classrequests_1_1auth_1_1HTTPDigestAuth_a0a0f9877e112793528f138effb9fd31a}} 
+{\bfseries username}
+\item 
+\mbox{\Hypertarget{classrequests_1_1auth_1_1HTTPDigestAuth_a0ca956056ff2921fd4b423a09b57d648}\label{classrequests_1_1auth_1_1HTTPDigestAuth_a0ca956056ff2921fd4b423a09b57d648}} 
+{\bfseries password}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Attaches HTTP Digest Authentication to the given Request object.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrequests_1_1auth_1_1HTTPDigestAuth_af79a8be90692508e03fff3f5495bff93}\label{classrequests_1_1auth_1_1HTTPDigestAuth_af79a8be90692508e03fff3f5495bff93}} 
+\index{requests.auth.HTTPDigestAuth@{requests.auth.HTTPDigestAuth}!build\_digest\_header@{build\_digest\_header}}
+\index{build\_digest\_header@{build\_digest\_header}!requests.auth.HTTPDigestAuth@{requests.auth.HTTPDigestAuth}}
+\doxysubsubsection{\texorpdfstring{build\_digest\_header()}{build\_digest\_header()}}
+{\footnotesize\ttfamily def requests.\+auth.\+HTTPDigest\+Auth.\+build\+\_\+digest\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{method,  }\item[{}]{url }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:rtype: str
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1auth_1_1HTTPDigestAuth_a274e72cd54debf2a6a427466bd003f09}\label{classrequests_1_1auth_1_1HTTPDigestAuth_a274e72cd54debf2a6a427466bd003f09}} 
+\index{requests.auth.HTTPDigestAuth@{requests.auth.HTTPDigestAuth}!handle\_401@{handle\_401}}
+\index{handle\_401@{handle\_401}!requests.auth.HTTPDigestAuth@{requests.auth.HTTPDigestAuth}}
+\doxysubsubsection{\texorpdfstring{handle\_401()}{handle\_401()}}
+{\footnotesize\ttfamily def requests.\+auth.\+HTTPDigest\+Auth.\+handle\+\_\+401 (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{r,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Takes the given response and tries digest-auth, if needed.
+
+:rtype: requests.Response
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1auth_1_1HTTPDigestAuth_a72f92429f4769400a6cb93e529a1cb8a}\label{classrequests_1_1auth_1_1HTTPDigestAuth_a72f92429f4769400a6cb93e529a1cb8a}} 
+\index{requests.auth.HTTPDigestAuth@{requests.auth.HTTPDigestAuth}!handle\_redirect@{handle\_redirect}}
+\index{handle\_redirect@{handle\_redirect}!requests.auth.HTTPDigestAuth@{requests.auth.HTTPDigestAuth}}
+\doxysubsubsection{\texorpdfstring{handle\_redirect()}{handle\_redirect()}}
+{\footnotesize\ttfamily def requests.\+auth.\+HTTPDigest\+Auth.\+handle\+\_\+redirect (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{r,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reset num_401_calls counter on redirects.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/requests/auth.\+py\end{DoxyCompactItemize}

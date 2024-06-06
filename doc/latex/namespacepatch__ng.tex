@@ -1,0 +1,222 @@
+\hypertarget{namespacepatch__ng}{}\doxysection{patch\+\_\+ng Namespace Reference}
+\label{namespacepatch__ng}\index{patch\_ng@{patch\_ng}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpatch__ng_1_1NullHandler}{Null\+Handler}}
+\item 
+class \mbox{\hyperlink{classpatch__ng_1_1Hunk}{Hunk}}
+\item 
+class \mbox{\hyperlink{classpatch__ng_1_1Patch}{Patch}}
+\item 
+class \mbox{\hyperlink{classpatch__ng_1_1PatchSet}{Patch\+Set}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacepatch__ng_a78ec5605601418c960922d3facba3e79}{tostr}} (b)
+\item 
+\mbox{\Hypertarget{namespacepatch__ng_ac923a2a24b935975772c677400957141}\label{namespacepatch__ng_ac923a2a24b935975772c677400957141}} 
+def {\bfseries setdebug} ()
+\item 
+def \mbox{\hyperlink{namespacepatch__ng_a31c1a3767698d331ab61686c18b30404}{xisabs}} (filename)
+\item 
+def \mbox{\hyperlink{namespacepatch__ng_aef6fc4d9c2d9dcdbe98f0c76ff6e8cf3}{xnormpath}} (path)
+\item 
+def \mbox{\hyperlink{namespacepatch__ng_acdd4e5fd0db84ac93a46137a241447a7}{xstrip}} (filename)
+\item 
+\mbox{\Hypertarget{namespacepatch__ng_a7bce542c53cbc446a90b23daf8b8388d}\label{namespacepatch__ng_a7bce542c53cbc446a90b23daf8b8388d}} 
+def {\bfseries safe\+\_\+unlink} (filepath)
+\item 
+def \mbox{\hyperlink{namespacepatch__ng_a19027e78fffc252b18925b749deb01a6}{fromfile}} (filename)
+\item 
+def \mbox{\hyperlink{namespacepatch__ng_a8a378899f975b83b1f9c113dcf2e1fbe}{fromstring}} (s)
+\item 
+def \mbox{\hyperlink{namespacepatch__ng_a42cdc7436091cb40dcbb422c54817fc6}{fromurl}} (url)
+\item 
+def \mbox{\hyperlink{namespacepatch__ng_a5fd9f258f8f894231e4e6a7a715f3131}{pathstrip}} (path, n)
+\item 
+\mbox{\Hypertarget{namespacepatch__ng_aa421ff6ba286d51245cce38dbf8a2bfc}\label{namespacepatch__ng_aa421ff6ba286d51245cce38dbf8a2bfc}} 
+def {\bfseries decode\+\_\+text} (text)
+\item 
+\mbox{\Hypertarget{namespacepatch__ng_aafc4034ac9ab68396731ab5ee562420d}\label{namespacepatch__ng_aafc4034ac9ab68396731ab5ee562420d}} 
+def {\bfseries to\+\_\+file\+\_\+bytes} (content)
+\item 
+def \mbox{\hyperlink{namespacepatch__ng_a46460361b35bb182726e0e4730017933}{load}} (path, binary=False)
+\item 
+def \mbox{\hyperlink{namespacepatch__ng_afd7caa1b5a1c657a13bdf9bbe85747a1}{save}} (path, content, only\+\_\+if\+\_\+modified=False)
+\item 
+\mbox{\Hypertarget{namespacepatch__ng_aefd51af6c84a8b4c7d68aafc255cb598}\label{namespacepatch__ng_aefd51af6c84a8b4c7d68aafc255cb598}} 
+def {\bfseries main} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepatch__ng_a9dc1cdb8f844ce2370189b1239deeb5a}\label{namespacepatch__ng_a9dc1cdb8f844ce2370189b1239deeb5a}} 
+tuple {\bfseries PY3K} = (3, 0)
+\item 
+\mbox{\Hypertarget{namespacepatch__ng_ae597ab3ab76c07d8582e52661effe98f}\label{namespacepatch__ng_ae597ab3ab76c07d8582e52661effe98f}} 
+{\bfseries compat\+\_\+next} = lambda gen\+: gen.\+next()
+\item 
+\mbox{\Hypertarget{namespacepatch__ng_a0ed7c107620dfed7b450a8c3482046cb}\label{namespacepatch__ng_a0ed7c107620dfed7b450a8c3482046cb}} 
+{\bfseries logger} = logging.\+get\+Logger(\char`\"{}patch\+\_\+ng\char`\"{})
+\item 
+\mbox{\Hypertarget{namespacepatch__ng_a58f8a57b44d0056f49f6c1961dd812e7}\label{namespacepatch__ng_a58f8a57b44d0056f49f6c1961dd812e7}} 
+{\bfseries debug} = logger.\+debug
+\item 
+\mbox{\Hypertarget{namespacepatch__ng_a62b75958967c27fca7df3d2aa5cd4174}\label{namespacepatch__ng_a62b75958967c27fca7df3d2aa5cd4174}} 
+{\bfseries info} = logger.\+info
+\item 
+\mbox{\Hypertarget{namespacepatch__ng_a7143139d8f580faee03f49e71ec0ed8d}\label{namespacepatch__ng_a7143139d8f580faee03f49e71ec0ed8d}} 
+{\bfseries warning} = logger.\+warning
+\item 
+\mbox{\Hypertarget{namespacepatch__ng_a558c00cfe52d1ceb4ddf889515a71ca1}\label{namespacepatch__ng_a558c00cfe52d1ceb4ddf889515a71ca1}} 
+{\bfseries error} = logger.\+error
+\item 
+\mbox{\Hypertarget{namespacepatch__ng_ad376cd6be37844af40e8d05c1c60c6da}\label{namespacepatch__ng_ad376cd6be37844af40e8d05c1c60c6da}} 
+{\bfseries streamhandler} = logging.\+Stream\+Handler()
+\item 
+\mbox{\Hypertarget{namespacepatch__ng_a15f8943af4715feb57520446014163a2}\label{namespacepatch__ng_a15f8943af4715feb57520446014163a2}} 
+bool {\bfseries debugmode} = False
+\item 
+\mbox{\Hypertarget{namespacepatch__ng_a1cee58ae6426170062677e97f3e4906d}\label{namespacepatch__ng_a1cee58ae6426170062677e97f3e4906d}} 
+string {\bfseries DIFF} = \char`\"{}plain\char`\"{}
+\item 
+\mbox{\Hypertarget{namespacepatch__ng_a050805e3efb2275dd94a215e1a809a6a}\label{namespacepatch__ng_a050805e3efb2275dd94a215e1a809a6a}} 
+string {\bfseries GIT} = \char`\"{}git\char`\"{}
+\item 
+\mbox{\Hypertarget{namespacepatch__ng_a4a4b446049fac3fa9c9afed2a7ff49b7}\label{namespacepatch__ng_a4a4b446049fac3fa9c9afed2a7ff49b7}} 
+string {\bfseries HG} = \char`\"{}mercurial\char`\"{}
+\item 
+\mbox{\Hypertarget{namespacepatch__ng_a6e005c27e98d9ccd2ed3190f85464fea}\label{namespacepatch__ng_a6e005c27e98d9ccd2ed3190f85464fea}} 
+string {\bfseries SVN} = \char`\"{}svn\char`\"{}
+\item 
+\mbox{\Hypertarget{namespacepatch__ng_a2419969a2067bc38a7b8700451e4769d}\label{namespacepatch__ng_a2419969a2067bc38a7b8700451e4769d}} 
+string {\bfseries MIXED} = \char`\"{}mixed\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}    Patch utility to apply unified diffs
+
+    Brute-force line-by-line non-recursive parsing
+
+    Copyright (c) 2008-2016 anatoly techtonik
+    Available under the terms of MIT license
+
+---
+    The MIT License (MIT)
+
+    Copyright (c) 2019 JFrog LTD
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+    and associated documentation files (the "Software"), to deal in the Software without
+    restriction, including without limitation the rights to use, copy, modify, merge, publish,
+    distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the
+    Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all copies or
+    substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+    PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR
+    ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+    ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepatch__ng_a19027e78fffc252b18925b749deb01a6}\label{namespacepatch__ng_a19027e78fffc252b18925b749deb01a6}} 
+\index{patch\_ng@{patch\_ng}!fromfile@{fromfile}}
+\index{fromfile@{fromfile}!patch\_ng@{patch\_ng}}
+\doxysubsubsection{\texorpdfstring{fromfile()}{fromfile()}}
+{\footnotesize\ttfamily def patch\+\_\+ng.\+fromfile (\begin{DoxyParamCaption}\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Parse patch file. If successful, returns
+    PatchSet() object. Otherwise returns False.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepatch__ng_a8a378899f975b83b1f9c113dcf2e1fbe}\label{namespacepatch__ng_a8a378899f975b83b1f9c113dcf2e1fbe}} 
+\index{patch\_ng@{patch\_ng}!fromstring@{fromstring}}
+\index{fromstring@{fromstring}!patch\_ng@{patch\_ng}}
+\doxysubsubsection{\texorpdfstring{fromstring()}{fromstring()}}
+{\footnotesize\ttfamily def patch\+\_\+ng.\+fromstring (\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Parse text string and return PatchSet()
+    object (or False if parsing fails)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepatch__ng_a42cdc7436091cb40dcbb422c54817fc6}\label{namespacepatch__ng_a42cdc7436091cb40dcbb422c54817fc6}} 
+\index{patch\_ng@{patch\_ng}!fromurl@{fromurl}}
+\index{fromurl@{fromurl}!patch\_ng@{patch\_ng}}
+\doxysubsubsection{\texorpdfstring{fromurl()}{fromurl()}}
+{\footnotesize\ttfamily def patch\+\_\+ng.\+fromurl (\begin{DoxyParamCaption}\item[{}]{url }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Parse patch from an URL, return False
+    if an error occured. Note that this also
+    can throw urlopen() exceptions.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepatch__ng_a46460361b35bb182726e0e4730017933}\label{namespacepatch__ng_a46460361b35bb182726e0e4730017933}} 
+\index{patch\_ng@{patch\_ng}!load@{load}}
+\index{load@{load}!patch\_ng@{patch\_ng}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily def patch\+\_\+ng.\+load (\begin{DoxyParamCaption}\item[{}]{path,  }\item[{}]{binary = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Loads a file content \end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepatch__ng_a5fd9f258f8f894231e4e6a7a715f3131}\label{namespacepatch__ng_a5fd9f258f8f894231e4e6a7a715f3131}} 
+\index{patch\_ng@{patch\_ng}!pathstrip@{pathstrip}}
+\index{pathstrip@{pathstrip}!patch\_ng@{patch\_ng}}
+\doxysubsubsection{\texorpdfstring{pathstrip()}{pathstrip()}}
+{\footnotesize\ttfamily def patch\+\_\+ng.\+pathstrip (\begin{DoxyParamCaption}\item[{}]{path,  }\item[{}]{n }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Strip n leading components from the given path \end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepatch__ng_afd7caa1b5a1c657a13bdf9bbe85747a1}\label{namespacepatch__ng_afd7caa1b5a1c657a13bdf9bbe85747a1}} 
+\index{patch\_ng@{patch\_ng}!save@{save}}
+\index{save@{save}!patch\_ng@{patch\_ng}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily def patch\+\_\+ng.\+save (\begin{DoxyParamCaption}\item[{}]{path,  }\item[{}]{content,  }\item[{}]{only\+\_\+if\+\_\+modified = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Saves a file with given content
+Params:
+    path: path to write file to
+    content: contents to save in the file
+    only_if_modified: file won't be modified if the content hasn't changed
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepatch__ng_a78ec5605601418c960922d3facba3e79}\label{namespacepatch__ng_a78ec5605601418c960922d3facba3e79}} 
+\index{patch\_ng@{patch\_ng}!tostr@{tostr}}
+\index{tostr@{tostr}!patch\_ng@{patch\_ng}}
+\doxysubsubsection{\texorpdfstring{tostr()}{tostr()}}
+{\footnotesize\ttfamily def patch\+\_\+ng.\+tostr (\begin{DoxyParamCaption}\item[{}]{b }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Python 3 bytes encoder. Used to print filename in
+    diffstat output. Assumes that filenames are in utf-8.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepatch__ng_a31c1a3767698d331ab61686c18b30404}\label{namespacepatch__ng_a31c1a3767698d331ab61686c18b30404}} 
+\index{patch\_ng@{patch\_ng}!xisabs@{xisabs}}
+\index{xisabs@{xisabs}!patch\_ng@{patch\_ng}}
+\doxysubsubsection{\texorpdfstring{xisabs()}{xisabs()}}
+{\footnotesize\ttfamily def patch\+\_\+ng.\+xisabs (\begin{DoxyParamCaption}\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Cross-platform version of `os.path.isabs()`
+    Returns True if `filename` is absolute on
+    Linux, OS X or Windows.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepatch__ng_aef6fc4d9c2d9dcdbe98f0c76ff6e8cf3}\label{namespacepatch__ng_aef6fc4d9c2d9dcdbe98f0c76ff6e8cf3}} 
+\index{patch\_ng@{patch\_ng}!xnormpath@{xnormpath}}
+\index{xnormpath@{xnormpath}!patch\_ng@{patch\_ng}}
+\doxysubsubsection{\texorpdfstring{xnormpath()}{xnormpath()}}
+{\footnotesize\ttfamily def patch\+\_\+ng.\+xnormpath (\begin{DoxyParamCaption}\item[{}]{path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Cross-platform version of os.path.normpath \end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepatch__ng_acdd4e5fd0db84ac93a46137a241447a7}\label{namespacepatch__ng_acdd4e5fd0db84ac93a46137a241447a7}} 
+\index{patch\_ng@{patch\_ng}!xstrip@{xstrip}}
+\index{xstrip@{xstrip}!patch\_ng@{patch\_ng}}
+\doxysubsubsection{\texorpdfstring{xstrip()}{xstrip()}}
+{\footnotesize\ttfamily def patch\+\_\+ng.\+xstrip (\begin{DoxyParamCaption}\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Make relative path out of absolute by stripping
+    prefixes used on Linux, OS X and Windows.
+
+    This function is critical for security.
+\end{DoxyVerb}
+ 

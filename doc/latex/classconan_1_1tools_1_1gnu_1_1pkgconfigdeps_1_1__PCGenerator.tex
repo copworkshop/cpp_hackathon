@@ -1,0 +1,64 @@
+\hypertarget{classconan_1_1tools_1_1gnu_1_1pkgconfigdeps_1_1__PCGenerator}{}\doxysection{conan.\+tools.\+gnu.\+pkgconfigdeps.\+\_\+\+PCGenerator Class Reference}
+\label{classconan_1_1tools_1_1gnu_1_1pkgconfigdeps_1_1__PCGenerator}\index{conan.tools.gnu.pkgconfigdeps.\_PCGenerator@{conan.tools.gnu.pkgconfigdeps.\_PCGenerator}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1gnu_1_1pkgconfigdeps_1_1__PCGenerator_a9a224e0a319b622edbaaef23c27dfbd1}\label{classconan_1_1tools_1_1gnu_1_1pkgconfigdeps_1_1__PCGenerator_a9a224e0a319b622edbaaef23c27dfbd1}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, conanfile, dep, build\+\_\+context\+\_\+suffix=None)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1gnu_1_1pkgconfigdeps_1_1__PCGenerator_a5ed8eaf90226bf4de15cbcab0e10a07f}{components\+\_\+info}} (self)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1gnu_1_1pkgconfigdeps_1_1__PCGenerator_a1b5559d3140794a736d1d64f2be706dc}{package\+\_\+info}} (self)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1gnu_1_1pkgconfigdeps_1_1__PCGenerator_add7ee4ac0557ba2ccfc55d68423eb72a}{pc\+\_\+files}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconan_1_1tools_1_1gnu_1_1pkgconfigdeps_1_1__PCGenerator_a5ed8eaf90226bf4de15cbcab0e10a07f}\label{classconan_1_1tools_1_1gnu_1_1pkgconfigdeps_1_1__PCGenerator_a5ed8eaf90226bf4de15cbcab0e10a07f}} 
+\index{conan.tools.gnu.pkgconfigdeps.\_PCGenerator@{conan.tools.gnu.pkgconfigdeps.\_PCGenerator}!components\_info@{components\_info}}
+\index{components\_info@{components\_info}!conan.tools.gnu.pkgconfigdeps.\_PCGenerator@{conan.tools.gnu.pkgconfigdeps.\_PCGenerator}}
+\doxysubsubsection{\texorpdfstring{components\_info()}{components\_info()}}
+{\footnotesize\ttfamily def conan.\+tools.\+gnu.\+pkgconfigdeps.\+\_\+\+PCGenerator.\+components\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the whole package and its components information like their own requires, names and even
+the cpp_info for each component.
+
+:return: `list` of `_PCInfo` objects with all the components information
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconan_1_1tools_1_1gnu_1_1pkgconfigdeps_1_1__PCGenerator_a1b5559d3140794a736d1d64f2be706dc}\label{classconan_1_1tools_1_1gnu_1_1pkgconfigdeps_1_1__PCGenerator_a1b5559d3140794a736d1d64f2be706dc}} 
+\index{conan.tools.gnu.pkgconfigdeps.\_PCGenerator@{conan.tools.gnu.pkgconfigdeps.\_PCGenerator}!package\_info@{package\_info}}
+\index{package\_info@{package\_info}!conan.tools.gnu.pkgconfigdeps.\_PCGenerator@{conan.tools.gnu.pkgconfigdeps.\_PCGenerator}}
+\doxysubsubsection{\texorpdfstring{package\_info()}{package\_info()}}
+{\footnotesize\ttfamily def conan.\+tools.\+gnu.\+pkgconfigdeps.\+\_\+\+PCGenerator.\+package\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the whole package information
+
+:return: `_PCInfo` object with the package information
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconan_1_1tools_1_1gnu_1_1pkgconfigdeps_1_1__PCGenerator_add7ee4ac0557ba2ccfc55d68423eb72a}\label{classconan_1_1tools_1_1gnu_1_1pkgconfigdeps_1_1__PCGenerator_add7ee4ac0557ba2ccfc55d68423eb72a}} 
+\index{conan.tools.gnu.pkgconfigdeps.\_PCGenerator@{conan.tools.gnu.pkgconfigdeps.\_PCGenerator}!pc\_files@{pc\_files}}
+\index{pc\_files@{pc\_files}!conan.tools.gnu.pkgconfigdeps.\_PCGenerator@{conan.tools.gnu.pkgconfigdeps.\_PCGenerator}}
+\doxysubsubsection{\texorpdfstring{pc\_files()}{pc\_files()}}
+{\footnotesize\ttfamily def conan.\+tools.\+gnu.\+pkgconfigdeps.\+\_\+\+PCGenerator.\+pc\+\_\+files (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get all the PC files and contents for any dependency:
+
+* If the given dependency does not have components:
+    The PC file will be the depency one.
+
+* If the given dependency has components:
+    The PC files will be saved in this order:
+        1- Package components.
+        2- Root component.
+
+    Note: If the root-package PC name matches with any other of the components one, the first one
+    is not going to be created. Components have more priority than root package.
+
+* Apart from those PC files, if there are any aliases declared, they will be created too.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conan/tools/gnu/pkgconfigdeps.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,99 @@
+\hypertarget{classpygments_1_1lexers_1_1grammar__notation_1_1PegLexer}{}\doxysection{pygments.\+lexers.\+grammar\+\_\+notation.\+Peg\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1grammar__notation_1_1PegLexer}\index{pygments.lexers.grammar\_notation.PegLexer@{pygments.lexers.grammar\_notation.PegLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+grammar\+\_\+notation.\+Peg\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+grammar\+\_\+notation.\+Peg\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1grammar__notation_1_1PegLexer_a8fd11104c3b8ef5bba1d7a814d3a2896}\label{classpygments_1_1lexers_1_1grammar__notation_1_1PegLexer_a8fd11104c3b8ef5bba1d7a814d3a2896}} 
+string {\bfseries name} = \textquotesingle{}PEG\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1grammar__notation_1_1PegLexer_ac910d986028c656c10d2a3b59aa104c2}\label{classpygments_1_1lexers_1_1grammar__notation_1_1PegLexer_ac910d986028c656c10d2a3b59aa104c2}} 
+string {\bfseries url} = \textquotesingle{}https\+://bford.\+info/pub/lang/peg.\+pdf\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1grammar__notation_1_1PegLexer_a4ca2d60a288bcac8d8e5f28143fa799b}\label{classpygments_1_1lexers_1_1grammar__notation_1_1PegLexer_a4ca2d60a288bcac8d8e5f28143fa799b}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}peg\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1grammar__notation_1_1PegLexer_a2add70d7afedb402418f8a035f346488}\label{classpygments_1_1lexers_1_1grammar__notation_1_1PegLexer_a2add70d7afedb402418f8a035f346488}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.peg\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1grammar__notation_1_1PegLexer_ae37d549092b239bd16dc26d6ffa6a422}\label{classpygments_1_1lexers_1_1grammar__notation_1_1PegLexer_ae37d549092b239bd16dc26d6ffa6a422}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/peg\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1grammar__notation_1_1PegLexer_aaa081b53b5757959518d36b966cba1ad}\label{classpygments_1_1lexers_1_1grammar__notation_1_1PegLexer_aaa081b53b5757959518d36b966cba1ad}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+6\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This lexer is for Parsing Expression Grammars (PEG).
+
+Various implementations of PEG have made different decisions
+regarding the syntax, so let's try to be accommodating:
+
+* `<-`, `←`, `:`, and `=` are all accepted as rule operators.
+
+* Both `|` and `/` are choice operators.
+
+* `^`, `↑`, and `~` are cut operators.
+
+* A single `a-z` character immediately before a string, or
+  multiple `a-z` characters following a string, are part of the
+  string (e.g., `r"..."` or `"..."ilmsuxa`).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1grammar__notation_1_1PegLexer_a63b433e6cc7c3b06559f2f5ab356f5f5}\label{classpygments_1_1lexers_1_1grammar__notation_1_1PegLexer_a63b433e6cc7c3b06559f2f5ab356f5f5}} 
+\index{pygments.lexers.grammar\_notation.PegLexer@{pygments.lexers.grammar\_notation.PegLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.grammar\_notation.PegLexer@{pygments.lexers.grammar\_notation.PegLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+grammar\+\_\+notation.\+Peg\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            \textcolor{comment}{\# Comments}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#.*\$'}, Comment.Single),}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{comment}{\# All operators}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'<-\/|[←:=/|\&!?*+\string^↑\string~]'}, Operator),}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{comment}{\# Other punctuation}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[()]'}, Punctuation),}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{comment}{\# Keywords}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\).'}, Keyword),}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{comment}{\# Character classes}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)[)([\string^\(\backslash\)]]*(?:\(\backslash\)\(\backslash\).[\string^\(\backslash\)]\(\backslash\)\(\backslash\)]*)*)(\(\backslash\)])'},}
+\DoxyCodeLine{             bygroups(Punctuation, String, Punctuation)),}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{comment}{\# Single and double quoted strings (with optional modifiers)}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[a-\/z]?"{}[\string^"{}\(\backslash\)\(\backslash\)]*(?:\(\backslash\)\(\backslash\).[\string^"{}\(\backslash\)\(\backslash\)]*)*"{}[a-\/z]*'}, String.Double),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r"{}[a-\/z]?'[\string^'\(\backslash\)\(\backslash\)]*(?:\(\backslash\)\(\backslash\).[\string^'\(\backslash\)\(\backslash\)]*)*'[a-\/z]*"{}}, String.Single),}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{comment}{\# Nonterminals are not whitespace, operators, or punctuation}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^\(\backslash\)s<←:=/|\&!?*+\(\backslash\)\string^↑\string~()\(\backslash\)[\(\backslash\)]"{}\(\backslash\)'\#]+'}, Name.Class),}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{comment}{\# Fallback}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'.'}, Text),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/grammar\+\_\+notation.\+py\end{DoxyCompactItemize}

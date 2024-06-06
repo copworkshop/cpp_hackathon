@@ -1,0 +1,77 @@
+\hypertarget{classpygments_1_1lexers_1_1matlab_1_1ScilabLexer}{}\doxysection{pygments.\+lexers.\+matlab.\+Scilab\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1matlab_1_1ScilabLexer}\index{pygments.lexers.matlab.ScilabLexer@{pygments.lexers.matlab.ScilabLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+matlab.\+Scilab\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+matlab.\+Scilab\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1matlab_1_1ScilabLexer_a8b0f5af5aae21beafdc0d1dfb84785df}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1matlab_1_1ScilabLexer_ab12656eb74537b386b934a5135b29687}\label{classpygments_1_1lexers_1_1matlab_1_1ScilabLexer_ab12656eb74537b386b934a5135b29687}} 
+string {\bfseries name} = \textquotesingle{}Scilab\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1matlab_1_1ScilabLexer_adce5820f23290701a80ee800e63187bc}\label{classpygments_1_1lexers_1_1matlab_1_1ScilabLexer_adce5820f23290701a80ee800e63187bc}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+scilab.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1matlab_1_1ScilabLexer_a0e9276421b61aedd9efbdf2e682c0b53}\label{classpygments_1_1lexers_1_1matlab_1_1ScilabLexer_a0e9276421b61aedd9efbdf2e682c0b53}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}scilab\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1matlab_1_1ScilabLexer_aa0a0818da3a2777c64c0c0953c62e8d7}\label{classpygments_1_1lexers_1_1matlab_1_1ScilabLexer_aa0a0818da3a2777c64c0c0953c62e8d7}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.sci\textquotesingle{}, \textquotesingle{}$\ast$.sce\textquotesingle{}, \textquotesingle{}$\ast$.tst\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1matlab_1_1ScilabLexer_af2264d1d6161d78687f595dac90bbfc3}\label{classpygments_1_1lexers_1_1matlab_1_1ScilabLexer_af2264d1d6161d78687f595dac90bbfc3}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/scilab\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1matlab_1_1ScilabLexer_a42734c7a297969d9beb1bc1bee1796f2}\label{classpygments_1_1lexers_1_1matlab_1_1ScilabLexer_a42734c7a297969d9beb1bc1bee1796f2}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+5\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1matlab_1_1ScilabLexer_a3e86f5a1417a64ee31a6bb3877d393c2}\label{classpygments_1_1lexers_1_1matlab_1_1ScilabLexer_a3e86f5a1417a64ee31a6bb3877d393c2}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For Scilab source code.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1matlab_1_1ScilabLexer_a8b0f5af5aae21beafdc0d1dfb84785df}\label{classpygments_1_1lexers_1_1matlab_1_1ScilabLexer_a8b0f5af5aae21beafdc0d1dfb84785df}} 
+\index{pygments.lexers.matlab.ScilabLexer@{pygments.lexers.matlab.ScilabLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.matlab.ScilabLexer@{pygments.lexers.matlab.ScilabLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+matlab.\+Scilab\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/matlab.\+py\end{DoxyCompactItemize}

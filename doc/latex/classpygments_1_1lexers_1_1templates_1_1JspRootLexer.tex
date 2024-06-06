@@ -1,0 +1,57 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1JspRootLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Jsp\+Root\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1JspRootLexer}\index{pygments.lexers.templates.JspRootLexer@{pygments.lexers.templates.JspRootLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Jsp\+Root\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Jsp\+Root\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Base for the `JspLexer`. Yields `Token.Other` for area outside of
+JSP tags.
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1JspRootLexer_a7c49ea73143fc3987ac5a9f16fa0468e}\label{classpygments_1_1lexers_1_1templates_1_1JspRootLexer_a7c49ea73143fc3987ac5a9f16fa0468e}} 
+\index{pygments.lexers.templates.JspRootLexer@{pygments.lexers.templates.JspRootLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.templates.JspRootLexer@{pygments.lexers.templates.JspRootLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+templates.\+Jsp\+Root\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'<\%\(\backslash\)S?'}, Keyword, \textcolor{stringliteral}{'sec'}),}
+\DoxyCodeLine{            \textcolor{comment}{\# FIXME: I want to make these keywords but still parse attributes.}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'</?jsp:(forward|getProperty|include|plugin|setProperty|useBean).*?>'},}
+\DoxyCodeLine{             Keyword),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^<]+'}, Other),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'<'}, Other),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'sec'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\%>'}, Keyword, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            \textcolor{comment}{\# note: '\(\backslash\)w\(\backslash\)W' != '.' without DOTALL.}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\(\backslash\)w\(\backslash\)W]+?(?=\%>|\(\backslash\)Z)'}, using(JavaLexer)),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

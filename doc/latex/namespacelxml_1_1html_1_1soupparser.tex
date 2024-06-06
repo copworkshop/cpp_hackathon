@@ -1,0 +1,82 @@
+\hypertarget{namespacelxml_1_1html_1_1soupparser}{}\doxysection{lxml.\+html.\+soupparser Namespace Reference}
+\label{namespacelxml_1_1html_1_1soupparser}\index{lxml.html.soupparser@{lxml.html.soupparser}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classlxml_1_1html_1_1soupparser_1_1__PseudoTag}{\+\_\+\+Pseudo\+Tag}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacelxml_1_1html_1_1soupparser_ab36445e4fe7699223fae1097a74d35d3}{fromstring}} (data, beautifulsoup=None, makeelement=None, $\ast$$\ast$bsargs)
+\item 
+def \mbox{\hyperlink{namespacelxml_1_1html_1_1soupparser_abfb0849e00079d512983aa873690fd4f}{parse}} (file, beautifulsoup=None, makeelement=None, $\ast$$\ast$bsargs)
+\item 
+def \mbox{\hyperlink{namespacelxml_1_1html_1_1soupparser_aa37ee44c0911da96bb209a931a2c305f}{convert\+\_\+tree}} (beautiful\+\_\+soup\+\_\+tree, makeelement=None)
+\item 
+\mbox{\Hypertarget{namespacelxml_1_1html_1_1soupparser_a7583624c21274558aeb69a5a519b238d}\label{namespacelxml_1_1html_1_1soupparser_a7583624c21274558aeb69a5a519b238d}} 
+def {\bfseries unescape} (string)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacelxml_1_1html_1_1soupparser_a2e65f7586aa28842f21f912dc31dabf9}\label{namespacelxml_1_1html_1_1soupparser_a2e65f7586aa28842f21f912dc31dabf9}} 
+{\bfseries handle\+\_\+entities} = re.\+compile(r\char`\"{}\&(\textbackslash{}w+);\char`\"{}).sub
+\item 
+\mbox{\Hypertarget{namespacelxml_1_1html_1_1soupparser_afeec4bb32655aca83ec913b55f29e222}\label{namespacelxml_1_1html_1_1soupparser_afeec4bb32655aca83ec913b55f29e222}} 
+{\bfseries unichr} = chr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}External interface to the BeautifulSoup HTML parser.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacelxml_1_1html_1_1soupparser_aa37ee44c0911da96bb209a931a2c305f}\label{namespacelxml_1_1html_1_1soupparser_aa37ee44c0911da96bb209a931a2c305f}} 
+\index{lxml.html.soupparser@{lxml.html.soupparser}!convert\_tree@{convert\_tree}}
+\index{convert\_tree@{convert\_tree}!lxml.html.soupparser@{lxml.html.soupparser}}
+\doxysubsubsection{\texorpdfstring{convert\_tree()}{convert\_tree()}}
+{\footnotesize\ttfamily def lxml.\+html.\+soupparser.\+convert\+\_\+tree (\begin{DoxyParamCaption}\item[{}]{beautiful\+\_\+soup\+\_\+tree,  }\item[{}]{makeelement = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert a BeautifulSoup tree to a list of Element trees.
+
+Returns a list instead of a single root Element to support
+HTML-like soup with more than one root element.
+
+You can pass a different Element factory through the `makeelement`
+keyword.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacelxml_1_1html_1_1soupparser_ab36445e4fe7699223fae1097a74d35d3}\label{namespacelxml_1_1html_1_1soupparser_ab36445e4fe7699223fae1097a74d35d3}} 
+\index{lxml.html.soupparser@{lxml.html.soupparser}!fromstring@{fromstring}}
+\index{fromstring@{fromstring}!lxml.html.soupparser@{lxml.html.soupparser}}
+\doxysubsubsection{\texorpdfstring{fromstring()}{fromstring()}}
+{\footnotesize\ttfamily def lxml.\+html.\+soupparser.\+fromstring (\begin{DoxyParamCaption}\item[{}]{data,  }\item[{}]{beautifulsoup = {\ttfamily None},  }\item[{}]{makeelement = {\ttfamily None},  }\item[{$\ast$$\ast$}]{bsargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse a string of HTML data into an Element tree using the
+BeautifulSoup parser.
+
+Returns the root ``<html>`` Element of the tree.
+
+You can pass a different BeautifulSoup parser through the
+`beautifulsoup` keyword, and a diffent Element factory function
+through the `makeelement` keyword.  By default, the standard
+``BeautifulSoup`` class and the default factory of `lxml.html` are
+used.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacelxml_1_1html_1_1soupparser_abfb0849e00079d512983aa873690fd4f}\label{namespacelxml_1_1html_1_1soupparser_abfb0849e00079d512983aa873690fd4f}} 
+\index{lxml.html.soupparser@{lxml.html.soupparser}!parse@{parse}}
+\index{parse@{parse}!lxml.html.soupparser@{lxml.html.soupparser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily def lxml.\+html.\+soupparser.\+parse (\begin{DoxyParamCaption}\item[{}]{file,  }\item[{}]{beautifulsoup = {\ttfamily None},  }\item[{}]{makeelement = {\ttfamily None},  }\item[{$\ast$$\ast$}]{bsargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse a file into an ElemenTree using the BeautifulSoup parser.
+
+You can pass a different BeautifulSoup parser through the
+`beautifulsoup` keyword, and a diffent Element factory function
+through the `makeelement` keyword.  By default, the standard
+``BeautifulSoup`` class and the default factory of `lxml.html` are
+used.
+\end{DoxyVerb}
+ 

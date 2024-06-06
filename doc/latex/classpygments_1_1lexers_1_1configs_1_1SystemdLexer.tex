@@ -1,0 +1,120 @@
+\hypertarget{classpygments_1_1lexers_1_1configs_1_1SystemdLexer}{}\doxysection{pygments.\+lexers.\+configs.\+Systemd\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1configs_1_1SystemdLexer}\index{pygments.lexers.configs.SystemdLexer@{pygments.lexers.configs.SystemdLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+configs.\+Systemd\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+configs.\+Systemd\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1configs_1_1SystemdLexer_ab51de9e6bda5b35a7067518d97704cad}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1SystemdLexer_ab8b836d8a2288a95427f5100b8f11c86}\label{classpygments_1_1lexers_1_1configs_1_1SystemdLexer_ab8b836d8a2288a95427f5100b8f11c86}} 
+string {\bfseries name} = \textquotesingle{}Systemd\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1SystemdLexer_a7175978fa05cba8ed38ae49f7917f502}\label{classpygments_1_1lexers_1_1configs_1_1SystemdLexer_a7175978fa05cba8ed38ae49f7917f502}} 
+string {\bfseries url} = \char`\"{}https\+://www.\+freedesktop.\+org/software/systemd/man/systemd.\+syntax.\+html\char`\"{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1SystemdLexer_a5e613ef554d349dfdf15a52f0fd88618}\label{classpygments_1_1lexers_1_1configs_1_1SystemdLexer_a5e613ef554d349dfdf15a52f0fd88618}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}systemd\textquotesingle{}\mbox{]}
+\item 
+list {\bfseries filenames}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1SystemdLexer_a90e8ddd76aa756b6105e1448c093a323}\label{classpygments_1_1lexers_1_1configs_1_1SystemdLexer_a90e8ddd76aa756b6105e1448c093a323}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+16\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for systemd unit files.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1SystemdLexer_ab51de9e6bda5b35a7067518d97704cad}\label{classpygments_1_1lexers_1_1configs_1_1SystemdLexer_ab51de9e6bda5b35a7067518d97704cad}} 
+\index{pygments.lexers.configs.SystemdLexer@{pygments.lexers.configs.SystemdLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.configs.SystemdLexer@{pygments.lexers.configs.SystemdLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+configs.\+Systemd\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1SystemdLexer_a6918f58f63ab3d2eaf9984e0fec4b485}\label{classpygments_1_1lexers_1_1configs_1_1SystemdLexer_a6918f58f63ab3d2eaf9984e0fec4b485}} 
+\index{pygments.lexers.configs.SystemdLexer@{pygments.lexers.configs.SystemdLexer}!filenames@{filenames}}
+\index{filenames@{filenames}!pygments.lexers.configs.SystemdLexer@{pygments.lexers.configs.SystemdLexer}}
+\doxysubsubsection{\texorpdfstring{filenames}{filenames}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+configs.\+Systemd\+Lexer.\+filenames\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [}
+\DoxyCodeLine{        \textcolor{stringliteral}{'*.service'}, \textcolor{stringliteral}{'*.socket'}, \textcolor{stringliteral}{'*.device'}, \textcolor{stringliteral}{'*.mount'}, \textcolor{stringliteral}{'*.automount'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'*.swap'}, \textcolor{stringliteral}{'*.target'}, \textcolor{stringliteral}{'*.path'}, \textcolor{stringliteral}{'*.timer'}, \textcolor{stringliteral}{'*.slice'}, \textcolor{stringliteral}{'*.scope'},}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1SystemdLexer_abe318feec029aaa19e4b8bc1858a1a4b}\label{classpygments_1_1lexers_1_1configs_1_1SystemdLexer_abe318feec029aaa19e4b8bc1858a1a4b}} 
+\index{pygments.lexers.configs.SystemdLexer@{pygments.lexers.configs.SystemdLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.configs.SystemdLexer@{pygments.lexers.configs.SystemdLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+configs.\+Systemd\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^[ \(\backslash\)t]*\(\backslash\)n'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^([;\#].*)(\(\backslash\)n)'}, bygroups(Comment.Single, Whitespace)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)[[\string^\(\backslash\)]\(\backslash\)n]+\(\backslash\)])(\(\backslash\)n)'}, bygroups(Keyword, Whitespace)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'([\string^=]+)([ \(\backslash\)t]*)(=)([ \(\backslash\)t]*)([\string^\(\backslash\)n]*)(\(\backslash\)\(\backslash\))(\(\backslash\)n)'},}
+\DoxyCodeLine{             bygroups(Name.Attribute, Whitespace, Operator, Whitespace, String,}
+\DoxyCodeLine{                      Text, Whitespace),}
+\DoxyCodeLine{             \textcolor{stringliteral}{"{}value"{}}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'([\string^=]+)([ \(\backslash\)t]*)(=)([ \(\backslash\)t]*)([\string^\(\backslash\)n]*)(\(\backslash\)n)'},}
+\DoxyCodeLine{             bygroups(Name.Attribute, Whitespace, Operator, Whitespace, String, Whitespace)),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'value'}: [}
+\DoxyCodeLine{            \textcolor{comment}{\# line continuation}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^([;\#].*)(\(\backslash\)n)'}, bygroups(Comment.Single, Whitespace)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'([ \(\backslash\)t]*)([\string^\(\backslash\)n]*)(\(\backslash\)\(\backslash\))(\(\backslash\)n)'},}
+\DoxyCodeLine{             bygroups(Whitespace, String, Text, Whitespace)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'([ \(\backslash\)t]*)([\string^\(\backslash\)n]*)(\(\backslash\)n)'},}
+\DoxyCodeLine{             bygroups(Whitespace, String, Whitespace), \textcolor{stringliteral}{"{}\#pop"{}}),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/configs.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,49 @@
+\hypertarget{classpygments_1_1filters_1_1GobbleFilter}{}\doxysection{pygments.\+filters.\+Gobble\+Filter Class Reference}
+\label{classpygments_1_1filters_1_1GobbleFilter}\index{pygments.filters.GobbleFilter@{pygments.filters.GobbleFilter}}
+
+
+Inheritance diagram for pygments.\+filters.\+Gobble\+Filter\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+filters.\+Gobble\+Filter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1filters_1_1GobbleFilter_ad2baa999399fdbe2232953e3e189536d}\label{classpygments_1_1filters_1_1GobbleFilter_ad2baa999399fdbe2232953e3e189536d}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, $\ast$$\ast$options)
+\item 
+\mbox{\Hypertarget{classpygments_1_1filters_1_1GobbleFilter_a14ccdf44e53904deb2e4338121fe0095}\label{classpygments_1_1filters_1_1GobbleFilter_a14ccdf44e53904deb2e4338121fe0095}} 
+def {\bfseries gobble} (self, value, left)
+\item 
+\mbox{\Hypertarget{classpygments_1_1filters_1_1GobbleFilter_a107df15c52b79d1b696dd3ad318e0a70}\label{classpygments_1_1filters_1_1GobbleFilter_a107df15c52b79d1b696dd3ad318e0a70}} 
+def {\bfseries filter} (self, lexer, stream)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1filters_1_1GobbleFilter_a2af927c77eabdceb619135bd795e60b2}\label{classpygments_1_1filters_1_1GobbleFilter_a2af927c77eabdceb619135bd795e60b2}} 
+{\bfseries n}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Gobbles source code lines (eats initial characters).
+
+This filter drops the first ``n`` characters off every line of code.  This
+may be useful when the source code fed to the lexer is indented by a fixed
+amount of space that isn't desired in the output.
+
+Options accepted:
+
+`n` : int
+   The number of characters to gobble.
+
+.. versionadded:: 1.2
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/filters/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

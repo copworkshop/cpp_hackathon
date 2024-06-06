@@ -1,0 +1,68 @@
+\hypertarget{classpygments_1_1lexers_1_1lilypond_1_1LilyPondLexer}{}\doxysection{pygments.\+lexers.\+lilypond.\+Lily\+Pond\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1lilypond_1_1LilyPondLexer}\index{pygments.lexers.lilypond.LilyPondLexer@{pygments.lexers.lilypond.LilyPondLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+lilypond.\+Lily\+Pond\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+lilypond.\+Lily\+Pond\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1lilypond_1_1LilyPondLexer_acfc5dd8cf97a0589409bec187a526aed}{get\+\_\+tokens\+\_\+unprocessed}} (self, text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lilypond_1_1LilyPondLexer_aa4d532730258d36845c02e5e705d3c87}\label{classpygments_1_1lexers_1_1lilypond_1_1LilyPondLexer_aa4d532730258d36845c02e5e705d3c87}} 
+string {\bfseries name} = \textquotesingle{}Lily\+Pond\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lilypond_1_1LilyPondLexer_ad246e43e379c85ef8eddf9a5d6290542}\label{classpygments_1_1lexers_1_1lilypond_1_1LilyPondLexer_ad246e43e379c85ef8eddf9a5d6290542}} 
+string {\bfseries url} = \textquotesingle{}https\+://lilypond.\+org\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lilypond_1_1LilyPondLexer_a84c459271bce146de06644d83d17a7af}\label{classpygments_1_1lexers_1_1lilypond_1_1LilyPondLexer_a84c459271bce146de06644d83d17a7af}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}lilypond\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lilypond_1_1LilyPondLexer_a0ad76a8ab00dbf26db4dc4038cfffd93}\label{classpygments_1_1lexers_1_1lilypond_1_1LilyPondLexer_a0ad76a8ab00dbf26db4dc4038cfffd93}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.ly\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lilypond_1_1LilyPondLexer_af4ecdcb0d720ebc85ee4ea8bb256b1a2}\label{classpygments_1_1lexers_1_1lilypond_1_1LilyPondLexer_af4ecdcb0d720ebc85ee4ea8bb256b1a2}} 
+list {\bfseries mimetypes} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lilypond_1_1LilyPondLexer_a6fae467a1e1e922d610ab06023aecb1a}\label{classpygments_1_1lexers_1_1lilypond_1_1LilyPondLexer_a6fae467a1e1e922d610ab06023aecb1a}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+11\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lilypond_1_1LilyPondLexer_a1eebae19f9c41fde1cb85e31caa5f46c}\label{classpygments_1_1lexers_1_1lilypond_1_1LilyPondLexer_a1eebae19f9c41fde1cb85e31caa5f46c}} 
+{\bfseries flags} = re.\+DOTALL $\vert$ re.\+MULTILINE
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for input to LilyPond, a text-based music typesetter.
+
+.. important::
+
+   This lexer is meant to be used in conjunction with the ``lilypond`` style.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1lilypond_1_1LilyPondLexer_acfc5dd8cf97a0589409bec187a526aed}\label{classpygments_1_1lexers_1_1lilypond_1_1LilyPondLexer_acfc5dd8cf97a0589409bec187a526aed}} 
+\index{pygments.lexers.lilypond.LilyPondLexer@{pygments.lexers.lilypond.LilyPondLexer}!get\_tokens\_unprocessed@{get\_tokens\_unprocessed}}
+\index{get\_tokens\_unprocessed@{get\_tokens\_unprocessed}!pygments.lexers.lilypond.LilyPondLexer@{pygments.lexers.lilypond.LilyPondLexer}}
+\doxysubsubsection{\texorpdfstring{get\_tokens\_unprocessed()}{get\_tokens\_unprocessed()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+lilypond.\+Lily\+Pond\+Lexer.\+get\+\_\+tokens\+\_\+unprocessed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Highlight Scheme variables as LilyPond builtins when applicable.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexers_1_1lisp_1_1SchemeLexer_a03b2a0bd3cb15949221d46f3d80ae6a4}{pygments.\+lexers.\+lisp.\+Scheme\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/lilypond.\+py\end{DoxyCompactItemize}

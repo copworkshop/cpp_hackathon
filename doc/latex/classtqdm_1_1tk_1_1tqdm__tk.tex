@@ -1,0 +1,103 @@
+\hypertarget{classtqdm_1_1tk_1_1tqdm__tk}{}\doxysection{tqdm.\+tk.\+tqdm\+\_\+tk Class Reference}
+\label{classtqdm_1_1tk_1_1tqdm__tk}\index{tqdm.tk.tqdm\_tk@{tqdm.tk.tqdm\_tk}}
+
+
+Inheritance diagram for tqdm.\+tk.\+tqdm\+\_\+tk\+:
+% FIG 0
+
+
+Collaboration diagram for tqdm.\+tk.\+tqdm\+\_\+tk\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classtqdm_1_1tk_1_1tqdm__tk_a701261b82b693152d151fdc0d844f5e4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1tk_1_1tqdm__tk_ac5b97338bf44e3264e626f22563e9201}\label{classtqdm_1_1tk_1_1tqdm__tk_ac5b97338bf44e3264e626f22563e9201}} 
+def {\bfseries close} (self)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1tk_1_1tqdm__tk_abbff26674a850e88068dd151a82a3b56}\label{classtqdm_1_1tk_1_1tqdm__tk_abbff26674a850e88068dd151a82a3b56}} 
+def {\bfseries clear} (self, $\ast$\+\_\+, $\ast$$\ast$\+\_\+\+\_\+)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1tk_1_1tqdm__tk_a970a7be1b6af6743a279200ebe3bedd4}\label{classtqdm_1_1tk_1_1tqdm__tk_a970a7be1b6af6743a279200ebe3bedd4}} 
+def {\bfseries display} (self, $\ast$\+\_\+, $\ast$$\ast$\+\_\+\+\_\+)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1tk_1_1tqdm__tk_a1d253c2a8a196028494d8adf03036fc4}\label{classtqdm_1_1tk_1_1tqdm__tk_a1d253c2a8a196028494d8adf03036fc4}} 
+def {\bfseries set\+\_\+description} (self, desc=None, refresh=True)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1tk_1_1tqdm__tk_a3d4324027e9a57b2b02a0bfd16604e77}\label{classtqdm_1_1tk_1_1tqdm__tk_a3d4324027e9a57b2b02a0bfd16604e77}} 
+def {\bfseries set\+\_\+description\+\_\+str} (self, desc=None, refresh=True)
+\item 
+def \mbox{\hyperlink{classtqdm_1_1tk_1_1tqdm__tk_aec3bca7b2cfa97e647bb64560ba0c5fd}{cancel}} (self)
+\item 
+def \mbox{\hyperlink{classtqdm_1_1tk_1_1tqdm__tk_a056e4b03d61fb941d3ea26a7a347f685}{reset}} (self, total=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1tk_1_1tqdm__tk_ab310831a65ef71f145380f812b371f7b}\label{classtqdm_1_1tk_1_1tqdm__tk_ab310831a65ef71f145380f812b371f7b}} 
+{\bfseries disable}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1tk_1_1tqdm__tk_ad4f5133fc20a30417d60942e4e9796db}\label{classtqdm_1_1tk_1_1tqdm__tk_ad4f5133fc20a30417d60942e4e9796db}} 
+{\bfseries desc}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Experimental Tkinter GUI version of tqdm!
+
+Note: Window interactivity suffers if `tqdm_tk` is not running within
+a Tkinter mainloop and values are generated infrequently. In this case,
+consider calling `tqdm_tk.refresh()` frequently in the Tk thread.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtqdm_1_1tk_1_1tqdm__tk_a701261b82b693152d151fdc0d844f5e4}\label{classtqdm_1_1tk_1_1tqdm__tk_a701261b82b693152d151fdc0d844f5e4}} 
+\index{tqdm.tk.tqdm\_tk@{tqdm.tk.tqdm\_tk}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!tqdm.tk.tqdm\_tk@{tqdm.tk.tqdm\_tk}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def tqdm.\+tk.\+tqdm\+\_\+tk.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This class accepts the following parameters *in addition* to
+the parameters accepted by `tqdm`.
+
+Parameters
+----------
+grab  : bool, optional
+    Grab the input across all windows of the process.
+tk_parent  : `tkinter.Wm`, optional
+    Parent Tk window.
+cancel_callback  : Callable, optional
+    Create a cancel button and set `cancel_callback` to be called
+    when the cancel or window close button is clicked.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtqdm_1_1tk_1_1tqdm__tk_aec3bca7b2cfa97e647bb64560ba0c5fd}\label{classtqdm_1_1tk_1_1tqdm__tk_aec3bca7b2cfa97e647bb64560ba0c5fd}} 
+\index{tqdm.tk.tqdm\_tk@{tqdm.tk.tqdm\_tk}!cancel@{cancel}}
+\index{cancel@{cancel}!tqdm.tk.tqdm\_tk@{tqdm.tk.tqdm\_tk}}
+\doxysubsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily def tqdm.\+tk.\+tqdm\+\_\+tk.\+cancel (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}`cancel_callback()` followed by `close()`
+when close/cancel buttons clicked.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtqdm_1_1tk_1_1tqdm__tk_a056e4b03d61fb941d3ea26a7a347f685}\label{classtqdm_1_1tk_1_1tqdm__tk_a056e4b03d61fb941d3ea26a7a347f685}} 
+\index{tqdm.tk.tqdm\_tk@{tqdm.tk.tqdm\_tk}!reset@{reset}}
+\index{reset@{reset}!tqdm.tk.tqdm\_tk@{tqdm.tk.tqdm\_tk}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily def tqdm.\+tk.\+tqdm\+\_\+tk.\+reset (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{total = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resets to 0 iterations for repeated use.
+
+Parameters
+----------
+total  : int or float, optional. Total to use for the new bar.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/tqdm/tk.\+py\end{DoxyCompactItemize}

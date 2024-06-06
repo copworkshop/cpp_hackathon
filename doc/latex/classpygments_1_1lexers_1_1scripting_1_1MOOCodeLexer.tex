@@ -1,0 +1,86 @@
+\hypertarget{classpygments_1_1lexers_1_1scripting_1_1MOOCodeLexer}{}\doxysection{pygments.\+lexers.\+scripting.\+MOOCode\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1scripting_1_1MOOCodeLexer}\index{pygments.lexers.scripting.MOOCodeLexer@{pygments.lexers.scripting.MOOCodeLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+scripting.\+MOOCode\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+scripting.\+MOOCode\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1MOOCodeLexer_ae23bd29d8a8bc156634acf1d71c8aba2}\label{classpygments_1_1lexers_1_1scripting_1_1MOOCodeLexer_ae23bd29d8a8bc156634acf1d71c8aba2}} 
+string {\bfseries name} = \textquotesingle{}MOOCode\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1MOOCodeLexer_aedec9dd112ec51e96328dba0ac336541}\label{classpygments_1_1lexers_1_1scripting_1_1MOOCodeLexer_aedec9dd112ec51e96328dba0ac336541}} 
+string {\bfseries url} = \textquotesingle{}http\+://www.\+moo.\+mud.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1MOOCodeLexer_a842ec11790b1fd5ea3fd6bcd5fec5452}\label{classpygments_1_1lexers_1_1scripting_1_1MOOCodeLexer_a842ec11790b1fd5ea3fd6bcd5fec5452}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.moo\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1MOOCodeLexer_a4db7120717560636f46855d3c3bd9bc1}\label{classpygments_1_1lexers_1_1scripting_1_1MOOCodeLexer_a4db7120717560636f46855d3c3bd9bc1}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}moocode\textquotesingle{}, \textquotesingle{}moo\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1MOOCodeLexer_acfdcc748e53fd6aa70b68ae126bceae7}\label{classpygments_1_1lexers_1_1scripting_1_1MOOCodeLexer_acfdcc748e53fd6aa70b68ae126bceae7}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/moocode\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1MOOCodeLexer_afac7b5bea76e3b92660300ff6e924a3b}\label{classpygments_1_1lexers_1_1scripting_1_1MOOCodeLexer_afac7b5bea76e3b92660300ff6e924a3b}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}0.\+9\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For MOOCode (the MOO scripting language).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1scripting_1_1MOOCodeLexer_a4809f062112a4214a334658b46ad248a}\label{classpygments_1_1lexers_1_1scripting_1_1MOOCodeLexer_a4809f062112a4214a334658b46ad248a}} 
+\index{pygments.lexers.scripting.MOOCodeLexer@{pygments.lexers.scripting.MOOCodeLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.scripting.MOOCodeLexer@{pygments.lexers.scripting.MOOCodeLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+scripting.\+MOOCode\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            \textcolor{comment}{\# Numbers}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(0|[1-\/9][0-\/9\_]*)'}, Number.Integer),}
+\DoxyCodeLine{            \textcolor{comment}{\# Strings}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'"{}(\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\)|\(\backslash\)\(\backslash\)[\string^\(\backslash\)\(\backslash\)]|[\string^"{}\(\backslash\)\(\backslash\)])*"{}'}, String),}
+\DoxyCodeLine{            \textcolor{comment}{\# exceptions}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(E\_PERM|E\_DIV)'}, Name.Exception),}
+\DoxyCodeLine{            \textcolor{comment}{\# db-\/refs}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'((\#[-\/0-\/9]+)|(\(\backslash\)\$\(\backslash\)w+))'}, Name.Entity),}
+\DoxyCodeLine{            \textcolor{comment}{\# Keywords}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)b(if|else|elseif|endif|for|endfor|fork|endfork|while'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'|endwhile|break|continue|return|try'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'|except|endtry|finally|in)\(\backslash\)b'}, Keyword),}
+\DoxyCodeLine{            \textcolor{comment}{\# builtins}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(random|length)'}, Name.Builtin),}
+\DoxyCodeLine{            \textcolor{comment}{\# special variables}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(player|caller|this|args)'}, Name.Variable.Instance),}
+\DoxyCodeLine{            \textcolor{comment}{\# skip whitespace}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Text),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)n'}, Text),}
+\DoxyCodeLine{            \textcolor{comment}{\# other operators}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'([!;=,\{\}\&|:.\(\backslash\)[\(\backslash\)]@()<>?]+)'}, Operator),}
+\DoxyCodeLine{            \textcolor{comment}{\# function call}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)w+)(\(\backslash\)()'}, bygroups(Name.Function, Operator)),}
+\DoxyCodeLine{            \textcolor{comment}{\# variables}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)w+)'}, Text),}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/scripting.\+py\end{DoxyCompactItemize}

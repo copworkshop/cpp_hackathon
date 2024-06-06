@@ -1,0 +1,177 @@
+\hypertarget{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer}{}\doxysection{pygments.\+lexers.\+c\+\_\+cpp.\+CFamily\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer}\index{pygments.lexers.c\_cpp.CFamilyLexer@{pygments.lexers.c\_cpp.CFamilyLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+c\+\_\+cpp.\+CFamily\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+c\+\_\+cpp.\+CFamily\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_a27bd1e5bc5165f35e9f68f4e16db72c6}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_a773c185a5f064917ba17fd36d15fc300}{get\+\_\+tokens\+\_\+unprocessed}} (self, text, stack=(\textquotesingle{}root\textquotesingle{},))
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_aa89abc2f850d22ee416a487a23b93318}\label{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_aa89abc2f850d22ee416a487a23b93318}} 
+{\bfseries stdlibhighlighting}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_a006b155568020e96bd87b9e352d83100}\label{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_a006b155568020e96bd87b9e352d83100}} 
+{\bfseries c99highlighting}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_a92b426968e480704d0d302c1851d2894}\label{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_a92b426968e480704d0d302c1851d2894}} 
+{\bfseries c11highlighting}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_a7bab002345a92bfafab1e23d3f83875c}\label{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_a7bab002345a92bfafab1e23d3f83875c}} 
+{\bfseries platformhighlighting}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_a8924f4b885adf88b8d85b1b1c87ee889}\label{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_a8924f4b885adf88b8d85b1b1c87ee889}} 
+dictionary {\bfseries tokens}
+\item 
+dictionary {\bfseries stdlib\+\_\+types}
+\item 
+dictionary {\bfseries c99\+\_\+types}
+\item 
+dictionary {\bfseries linux\+\_\+types}
+\item 
+dictionary {\bfseries c11\+\_\+atomic\+\_\+types}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For C family source code.  This is used as a base class to avoid repetitious
+definitions.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_a27bd1e5bc5165f35e9f68f4e16db72c6}\label{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_a27bd1e5bc5165f35e9f68f4e16db72c6}} 
+\index{pygments.lexers.c\_cpp.CFamilyLexer@{pygments.lexers.c\_cpp.CFamilyLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.c\_cpp.CFamilyLexer@{pygments.lexers.c\_cpp.CFamilyLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+c\+\_\+cpp.\+CFamily\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_a773c185a5f064917ba17fd36d15fc300}\label{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_a773c185a5f064917ba17fd36d15fc300}} 
+\index{pygments.lexers.c\_cpp.CFamilyLexer@{pygments.lexers.c\_cpp.CFamilyLexer}!get\_tokens\_unprocessed@{get\_tokens\_unprocessed}}
+\index{get\_tokens\_unprocessed@{get\_tokens\_unprocessed}!pygments.lexers.c\_cpp.CFamilyLexer@{pygments.lexers.c\_cpp.CFamilyLexer}}
+\doxysubsubsection{\texorpdfstring{get\_tokens\_unprocessed()}{get\_tokens\_unprocessed()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+c\+\_\+cpp.\+CFamily\+Lexer.\+get\+\_\+tokens\+\_\+unprocessed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text,  }\item[{}]{stack = {\ttfamily (\textquotesingle{}root\textquotesingle{},)} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Split ``text`` into (tokentype, text) pairs.
+
+``stack`` is the initial stack (default: ``['root']``)
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1RegexLexer_aa8821b6342bbfe77221063e270ab3371}{pygments.\+lexer.\+Regex\+Lexer}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classpygments_1_1lexers_1_1freefem_1_1FreeFemLexer_a45a5b4e2ed0c8264ccf3da0bc3e6ea6f}{pygments.\+lexers.\+freefem.\+Free\+Fem\+Lexer}}, \mbox{\hyperlink{classpygments_1_1lexers_1_1c__like_1_1ArduinoLexer_a9832cbc91ff895fe94bc54eed8450aad}{pygments.\+lexers.\+c\+\_\+like.\+Arduino\+Lexer}}, and \mbox{\hyperlink{classpygments_1_1lexers_1_1c__like_1_1CudaLexer_a2af15fc5591bbe0831d1a5754fdfd173}{pygments.\+lexers.\+c\+\_\+like.\+Cuda\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_ae58385605510ee2c618be71e49a0d9ee}\label{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_ae58385605510ee2c618be71e49a0d9ee}} 
+\index{pygments.lexers.c\_cpp.CFamilyLexer@{pygments.lexers.c\_cpp.CFamilyLexer}!c11\_atomic\_types@{c11\_atomic\_types}}
+\index{c11\_atomic\_types@{c11\_atomic\_types}!pygments.lexers.c\_cpp.CFamilyLexer@{pygments.lexers.c\_cpp.CFamilyLexer}}
+\doxysubsubsection{\texorpdfstring{c11\_atomic\_types}{c11\_atomic\_types}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+c\+\_\+cpp.\+CFamily\+Lexer.\+c11\+\_\+atomic\+\_\+types\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'atomic\_bool'}, \textcolor{stringliteral}{'atomic\_char'}, \textcolor{stringliteral}{'atomic\_schar'}, \textcolor{stringliteral}{'atomic\_uchar'}, \textcolor{stringliteral}{'atomic\_short'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'atomic\_ushort'}, \textcolor{stringliteral}{'atomic\_int'}, \textcolor{stringliteral}{'atomic\_uint'}, \textcolor{stringliteral}{'atomic\_long'}, \textcolor{stringliteral}{'atomic\_ulong'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'atomic\_llong'}, \textcolor{stringliteral}{'atomic\_ullong'}, \textcolor{stringliteral}{'atomic\_char16\_t'}, \textcolor{stringliteral}{'atomic\_char32\_t'}, \textcolor{stringliteral}{'atomic\_wchar\_t'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'atomic\_int\_least8\_t'}, \textcolor{stringliteral}{'atomic\_uint\_least8\_t'}, \textcolor{stringliteral}{'atomic\_int\_least16\_t'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'atomic\_uint\_least16\_t'}, \textcolor{stringliteral}{'atomic\_int\_least32\_t'}, \textcolor{stringliteral}{'atomic\_uint\_least32\_t'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'atomic\_int\_least64\_t'}, \textcolor{stringliteral}{'atomic\_uint\_least64\_t'}, \textcolor{stringliteral}{'atomic\_int\_fast8\_t'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'atomic\_uint\_fast8\_t'}, \textcolor{stringliteral}{'atomic\_int\_fast16\_t'}, \textcolor{stringliteral}{'atomic\_uint\_fast16\_t'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'atomic\_int\_fast32\_t'}, \textcolor{stringliteral}{'atomic\_uint\_fast32\_t'}, \textcolor{stringliteral}{'atomic\_int\_fast64\_t'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'atomic\_uint\_fast64\_t'}, \textcolor{stringliteral}{'atomic\_intptr\_t'}, \textcolor{stringliteral}{'atomic\_uintptr\_t'}, \textcolor{stringliteral}{'atomic\_size\_t'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'atomic\_ptrdiff\_t'}, \textcolor{stringliteral}{'atomic\_intmax\_t'}, \textcolor{stringliteral}{'atomic\_uintmax\_t'}\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_a2360f4368556bcd72110ddfb8fca6704}\label{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_a2360f4368556bcd72110ddfb8fca6704}} 
+\index{pygments.lexers.c\_cpp.CFamilyLexer@{pygments.lexers.c\_cpp.CFamilyLexer}!c99\_types@{c99\_types}}
+\index{c99\_types@{c99\_types}!pygments.lexers.c\_cpp.CFamilyLexer@{pygments.lexers.c\_cpp.CFamilyLexer}}
+\doxysubsubsection{\texorpdfstring{c99\_types}{c99\_types}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+c\+\_\+cpp.\+CFamily\+Lexer.\+c99\+\_\+types\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'int8\_t'}, \textcolor{stringliteral}{'int16\_t'}, \textcolor{stringliteral}{'int32\_t'}, \textcolor{stringliteral}{'int64\_t'}, \textcolor{stringliteral}{'uint8\_t'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'uint16\_t'}, \textcolor{stringliteral}{'uint32\_t'}, \textcolor{stringliteral}{'uint64\_t'}, \textcolor{stringliteral}{'int\_least8\_t'}, \textcolor{stringliteral}{'int\_least16\_t'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'int\_least32\_t'}, \textcolor{stringliteral}{'int\_least64\_t'}, \textcolor{stringliteral}{'uint\_least8\_t'}, \textcolor{stringliteral}{'uint\_least16\_t'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'uint\_least32\_t'}, \textcolor{stringliteral}{'uint\_least64\_t'}, \textcolor{stringliteral}{'int\_fast8\_t'}, \textcolor{stringliteral}{'int\_fast16\_t'}, \textcolor{stringliteral}{'int\_fast32\_t'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'int\_fast64\_t'}, \textcolor{stringliteral}{'uint\_fast8\_t'}, \textcolor{stringliteral}{'uint\_fast16\_t'}, \textcolor{stringliteral}{'uint\_fast32\_t'}, \textcolor{stringliteral}{'uint\_fast64\_t'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'intptr\_t'}, \textcolor{stringliteral}{'uintptr\_t'}, \textcolor{stringliteral}{'intmax\_t'}, \textcolor{stringliteral}{'uintmax\_t'}\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_a0a3bd83ab7232179da103836f6dedb2e}\label{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_a0a3bd83ab7232179da103836f6dedb2e}} 
+\index{pygments.lexers.c\_cpp.CFamilyLexer@{pygments.lexers.c\_cpp.CFamilyLexer}!linux\_types@{linux\_types}}
+\index{linux\_types@{linux\_types}!pygments.lexers.c\_cpp.CFamilyLexer@{pygments.lexers.c\_cpp.CFamilyLexer}}
+\doxysubsubsection{\texorpdfstring{linux\_types}{linux\_types}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+c\+\_\+cpp.\+CFamily\+Lexer.\+linux\+\_\+types\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'clockid\_t'}, \textcolor{stringliteral}{'cpu\_set\_t'}, \textcolor{stringliteral}{'cpumask\_t'}, \textcolor{stringliteral}{'dev\_t'}, \textcolor{stringliteral}{'gid\_t'}, \textcolor{stringliteral}{'id\_t'}, \textcolor{stringliteral}{'ino\_t'}, \textcolor{stringliteral}{'key\_t'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'mode\_t'}, \textcolor{stringliteral}{'nfds\_t'}, \textcolor{stringliteral}{'pid\_t'}, \textcolor{stringliteral}{'rlim\_t'}, \textcolor{stringliteral}{'sig\_t'}, \textcolor{stringliteral}{'sighandler\_t'}, \textcolor{stringliteral}{'siginfo\_t'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'sigset\_t'}, \textcolor{stringliteral}{'sigval\_t'}, \textcolor{stringliteral}{'socklen\_t'}, \textcolor{stringliteral}{'timer\_t'}, \textcolor{stringliteral}{'uid\_t'}\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_a67b4569e05bb9e8276b43707f5ab9c36}\label{classpygments_1_1lexers_1_1c__cpp_1_1CFamilyLexer_a67b4569e05bb9e8276b43707f5ab9c36}} 
+\index{pygments.lexers.c\_cpp.CFamilyLexer@{pygments.lexers.c\_cpp.CFamilyLexer}!stdlib\_types@{stdlib\_types}}
+\index{stdlib\_types@{stdlib\_types}!pygments.lexers.c\_cpp.CFamilyLexer@{pygments.lexers.c\_cpp.CFamilyLexer}}
+\doxysubsubsection{\texorpdfstring{stdlib\_types}{stdlib\_types}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+c\+\_\+cpp.\+CFamily\+Lexer.\+stdlib\+\_\+types\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'size\_t'}, \textcolor{stringliteral}{'ssize\_t'}, \textcolor{stringliteral}{'off\_t'}, \textcolor{stringliteral}{'wchar\_t'}, \textcolor{stringliteral}{'ptrdiff\_t'}, \textcolor{stringliteral}{'sig\_atomic\_t'}, \textcolor{stringliteral}{'fpos\_t'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'clock\_t'}, \textcolor{stringliteral}{'time\_t'}, \textcolor{stringliteral}{'va\_list'}, \textcolor{stringliteral}{'jmp\_buf'}, \textcolor{stringliteral}{'FILE'}, \textcolor{stringliteral}{'DIR'}, \textcolor{stringliteral}{'div\_t'}, \textcolor{stringliteral}{'ldiv\_t'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'mbstate\_t'}, \textcolor{stringliteral}{'wctrans\_t'}, \textcolor{stringliteral}{'wint\_t'}, \textcolor{stringliteral}{'wctype\_t'}\}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/c\+\_\+cpp.\+py\end{DoxyCompactItemize}

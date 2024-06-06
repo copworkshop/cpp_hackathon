@@ -1,0 +1,87 @@
+\hypertarget{classpygments_1_1lexers_1_1sgf_1_1SmartGameFormatLexer}{}\doxysection{pygments.\+lexers.\+sgf.\+Smart\+Game\+Format\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1sgf_1_1SmartGameFormatLexer}\index{pygments.lexers.sgf.SmartGameFormatLexer@{pygments.lexers.sgf.SmartGameFormatLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+sgf.\+Smart\+Game\+Format\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+sgf.\+Smart\+Game\+Format\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1sgf_1_1SmartGameFormatLexer_a246eb23d3878a045aeef974092da97cd}\label{classpygments_1_1lexers_1_1sgf_1_1SmartGameFormatLexer_a246eb23d3878a045aeef974092da97cd}} 
+string {\bfseries name} = \textquotesingle{}Smart\+Game\+Format\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1sgf_1_1SmartGameFormatLexer_a620ca2b3ad822d0c3a3770d7ca2033ba}\label{classpygments_1_1lexers_1_1sgf_1_1SmartGameFormatLexer_a620ca2b3ad822d0c3a3770d7ca2033ba}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+red-\/bean.\+com/sgf/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1sgf_1_1SmartGameFormatLexer_ade8eec10af576c301e5b3555a14c5838}\label{classpygments_1_1lexers_1_1sgf_1_1SmartGameFormatLexer_ade8eec10af576c301e5b3555a14c5838}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}sgf\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1sgf_1_1SmartGameFormatLexer_a0eebf34fa57c1f263c512ca92122b671}\label{classpygments_1_1lexers_1_1sgf_1_1SmartGameFormatLexer_a0eebf34fa57c1f263c512ca92122b671}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.sgf\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1sgf_1_1SmartGameFormatLexer_a8f96151b3437e75b11a74ee575acfd31}\label{classpygments_1_1lexers_1_1sgf_1_1SmartGameFormatLexer_a8f96151b3437e75b11a74ee575acfd31}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+4\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for Smart Game Format (sgf) file format.
+
+The format is used to store game records of board games for two players
+(mainly Go game).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1sgf_1_1SmartGameFormatLexer_ac665273ddd842e9a7bdf98073cf4de6c}\label{classpygments_1_1lexers_1_1sgf_1_1SmartGameFormatLexer_ac665273ddd842e9a7bdf98073cf4de6c}} 
+\index{pygments.lexers.sgf.SmartGameFormatLexer@{pygments.lexers.sgf.SmartGameFormatLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.sgf.SmartGameFormatLexer@{pygments.lexers.sgf.SmartGameFormatLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+sgf.\+Smart\+Game\+Format\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[():;]+'}, Punctuation),}
+\DoxyCodeLine{            \textcolor{comment}{\# tokens:}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(A[BW]|AE|AN|AP|AR|AS|[BW]L|BM|[BW]R|[BW]S|[BW]T|CA|CH|CP|CR|'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'DD|DM|DO|DT|EL|EV|EX|FF|FG|G[BW]|GC|GM|GN|HA|HO|ID|IP|IT|IY|KM|'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'KO|LB|LN|LT|L|MA|MN|M|N|OB|OM|ON|OP|OT|OV|P[BW]|PC|PL|PM|RE|RG|'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'RO|RU|SO|SC|SE|SI|SL|SO|SQ|ST|SU|SZ|T[BW]|TC|TE|TM|TR|UC|US|VW|'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'V|[BW]|C)'},}
+\DoxyCodeLine{             Name.Builtin),}
+\DoxyCodeLine{            \textcolor{comment}{\# number:}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)[)([0-\/9.]+)(\(\backslash\)])'},}
+\DoxyCodeLine{             bygroups(Punctuation, Literal.Number, Punctuation)),}
+\DoxyCodeLine{            \textcolor{comment}{\# date:}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)[)([0-\/9]\{4\}-\/[0-\/9]\{2\}-\/[0-\/9]\{2\})(\(\backslash\)])'},}
+\DoxyCodeLine{             bygroups(Punctuation, Literal.Date, Punctuation)),}
+\DoxyCodeLine{            \textcolor{comment}{\# point:}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)[)([a-\/z]\{2\})(\(\backslash\)])'},}
+\DoxyCodeLine{             bygroups(Punctuation, String, Punctuation)),}
+\DoxyCodeLine{            \textcolor{comment}{\# double points:}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)[)([a-\/z]\{2\})(:)([a-\/z]\{2\})(\(\backslash\)])'},}
+\DoxyCodeLine{             bygroups(Punctuation, String, Punctuation, String, Punctuation)),}
+\DoxyCodeLine{}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)[)([\(\backslash\)w\(\backslash\)s\#()+,\(\backslash\)-\/.:?]+)(\(\backslash\)])'},}
+\DoxyCodeLine{             bygroups(Punctuation, String, Punctuation)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)[)(\(\backslash\)s.*)(\(\backslash\)])'},}
+\DoxyCodeLine{             bygroups(Punctuation, Whitespace, Punctuation)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace)}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/sgf.\+py\end{DoxyCompactItemize}

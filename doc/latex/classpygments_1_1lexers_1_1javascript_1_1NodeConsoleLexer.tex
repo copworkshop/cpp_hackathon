@@ -1,0 +1,79 @@
+\hypertarget{classpygments_1_1lexers_1_1javascript_1_1NodeConsoleLexer}{}\doxysection{pygments.\+lexers.\+javascript.\+Node\+Console\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1javascript_1_1NodeConsoleLexer}\index{pygments.lexers.javascript.NodeConsoleLexer@{pygments.lexers.javascript.NodeConsoleLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+javascript.\+Node\+Console\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+javascript.\+Node\+Console\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1javascript_1_1NodeConsoleLexer_a037dc3c25a6f8b73e41363dbc6fd4aa1}{get\+\_\+tokens\+\_\+unprocessed}} (self, text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1NodeConsoleLexer_a0c37bb79d645d3cacbfeba1cbb2993af}\label{classpygments_1_1lexers_1_1javascript_1_1NodeConsoleLexer_a0c37bb79d645d3cacbfeba1cbb2993af}} 
+string {\bfseries name} = \textquotesingle{}Node.\+js REPL console session\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1NodeConsoleLexer_ac7376555f9076721ab16352fbd6d9ce4}\label{classpygments_1_1lexers_1_1javascript_1_1NodeConsoleLexer_ac7376555f9076721ab16352fbd6d9ce4}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}nodejsrepl\textquotesingle{}, \mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1NodeConsoleLexer_ab291593628352f05b20f7e63b66aa4e3}\label{classpygments_1_1lexers_1_1javascript_1_1NodeConsoleLexer_ab291593628352f05b20f7e63b66aa4e3}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/nodejsrepl\textquotesingle{}, \mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1NodeConsoleLexer_a6489bd2b3ba14eb9da6935b1335bf4e0}\label{classpygments_1_1lexers_1_1javascript_1_1NodeConsoleLexer_a6489bd2b3ba14eb9da6935b1335bf4e0}} 
+string {\bfseries url} = \textquotesingle{}https\+://nodejs.\+org\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1NodeConsoleLexer_a4c5a08d2fc839a3fc34e9c2130f34835}\label{classpygments_1_1lexers_1_1javascript_1_1NodeConsoleLexer_a4c5a08d2fc839a3fc34e9c2130f34835}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For parsing within an interactive Node.js REPL, such as:
+
+.. sourcecode:: nodejsrepl
+
+    > let a = 3
+    undefined
+    > a
+    3
+    > let b = '4'
+    undefined
+    > b
+    '4'
+    > b == a
+    false
+
+.. versionadded: 2.10
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1javascript_1_1NodeConsoleLexer_a037dc3c25a6f8b73e41363dbc6fd4aa1}\label{classpygments_1_1lexers_1_1javascript_1_1NodeConsoleLexer_a037dc3c25a6f8b73e41363dbc6fd4aa1}} 
+\index{pygments.lexers.javascript.NodeConsoleLexer@{pygments.lexers.javascript.NodeConsoleLexer}!get\_tokens\_unprocessed@{get\_tokens\_unprocessed}}
+\index{get\_tokens\_unprocessed@{get\_tokens\_unprocessed}!pygments.lexers.javascript.NodeConsoleLexer@{pygments.lexers.javascript.NodeConsoleLexer}}
+\doxysubsubsection{\texorpdfstring{get\_tokens\_unprocessed()}{get\_tokens\_unprocessed()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+javascript.\+Node\+Console\+Lexer.\+get\+\_\+tokens\+\_\+unprocessed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method should process the text and return an iterable of
+``(index, tokentype, value)`` tuples where ``index`` is the starting
+position of the token within the input text.
+
+It must be overridden by subclasses. It is recommended to
+implement it as a generator to maximize effectiveness.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_aad5c02b7f661f64f91cf8c8d880e9f67}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/javascript.\+py\end{DoxyCompactItemize}

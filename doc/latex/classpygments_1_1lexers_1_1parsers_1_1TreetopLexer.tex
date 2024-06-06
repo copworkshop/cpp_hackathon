@@ -1,0 +1,74 @@
+\hypertarget{classpygments_1_1lexers_1_1parsers_1_1TreetopLexer}{}\doxysection{pygments.\+lexers.\+parsers.\+Treetop\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1parsers_1_1TreetopLexer}\index{pygments.lexers.parsers.TreetopLexer@{pygments.lexers.parsers.TreetopLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+parsers.\+Treetop\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+parsers.\+Treetop\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1parsers_1_1TreetopLexer_a377c8dd5a5c6af10777e043d34651b2d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1TreetopLexer_a3971c20370ec146bb073aafd56836af0}\label{classpygments_1_1lexers_1_1parsers_1_1TreetopLexer_a3971c20370ec146bb073aafd56836af0}} 
+{\bfseries name}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1TreetopLexer_a693e7c84555fe8130733ba5d6bacedac}\label{classpygments_1_1lexers_1_1parsers_1_1TreetopLexer_a693e7c84555fe8130733ba5d6bacedac}} 
+{\bfseries aliases}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1TreetopLexer_a8148f1c47834c429ddf845c4e1ded59a}\label{classpygments_1_1lexers_1_1parsers_1_1TreetopLexer_a8148f1c47834c429ddf845c4e1ded59a}} 
+{\bfseries filenames}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1TreetopLexer_aef2065e65a5bdbd8a42726e8dd1d1050}\label{classpygments_1_1lexers_1_1parsers_1_1TreetopLexer_aef2065e65a5bdbd8a42726e8dd1d1050}} 
+{\bfseries url}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1TreetopLexer_ab78e5248ed01e1fb3fa2292f08c5c3b9}\label{classpygments_1_1lexers_1_1parsers_1_1TreetopLexer_ab78e5248ed01e1fb3fa2292f08c5c3b9}} 
+{\bfseries version\+\_\+added}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A lexer for Treetop grammars.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1TreetopLexer_a377c8dd5a5c6af10777e043d34651b2d}\label{classpygments_1_1lexers_1_1parsers_1_1TreetopLexer_a377c8dd5a5c6af10777e043d34651b2d}} 
+\index{pygments.lexers.parsers.TreetopLexer@{pygments.lexers.parsers.TreetopLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.parsers.TreetopLexer@{pygments.lexers.parsers.TreetopLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+parsers.\+Treetop\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/parsers.\+py\end{DoxyCompactItemize}

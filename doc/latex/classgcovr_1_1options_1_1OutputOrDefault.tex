@@ -1,0 +1,74 @@
+\hypertarget{classgcovr_1_1options_1_1OutputOrDefault}{}\doxysection{gcovr.\+options.\+Output\+Or\+Default Class Reference}
+\label{classgcovr_1_1options_1_1OutputOrDefault}\index{gcovr.options.OutputOrDefault@{gcovr.options.OutputOrDefault}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgcovr_1_1options_1_1OutputOrDefault_a9e6f9bf1ce3a38bb2bbc3f01fd4d9f1a}\label{classgcovr_1_1options_1_1OutputOrDefault_a9e6f9bf1ce3a38bb2bbc3f01fd4d9f1a}} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, Optional\mbox{[}str\mbox{]} value, str basedir=None)
+\item 
+\mbox{\Hypertarget{classgcovr_1_1options_1_1OutputOrDefault_a8b1e079a798f25e7d1aca826b4293f58}\label{classgcovr_1_1options_1_1OutputOrDefault_a8b1e079a798f25e7d1aca826b4293f58}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+Optional\mbox{[}\mbox{\hyperlink{classgcovr_1_1options_1_1OutputOrDefault}{Output\+Or\+Default}}\mbox{]} \mbox{\hyperlink{classgcovr_1_1options_1_1OutputOrDefault_a6e6077335285e062326ba86b61769db8}{choose}} (cls, List\mbox{[}Optional\mbox{[}\mbox{\hyperlink{classgcovr_1_1options_1_1OutputOrDefault}{Output\+Or\+Default}}\mbox{]}\mbox{]} choices, Optional\mbox{[}\mbox{\hyperlink{classgcovr_1_1options_1_1OutputOrDefault}{Output\+Or\+Default}}\mbox{]} default=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgcovr_1_1options_1_1OutputOrDefault_adb8a45ec655bf54b42de74afe6996ee7}\label{classgcovr_1_1options_1_1OutputOrDefault_adb8a45ec655bf54b42de74afe6996ee7}} 
+{\bfseries value}
+\item 
+\mbox{\Hypertarget{classgcovr_1_1options_1_1OutputOrDefault_a96bc51fcf35029a67a14e550dedd4bdb}\label{classgcovr_1_1options_1_1OutputOrDefault_a96bc51fcf35029a67a14e550dedd4bdb}} 
+{\bfseries abspath}
+\item 
+\mbox{\Hypertarget{classgcovr_1_1options_1_1OutputOrDefault_ad02cfd6318790bf0f1311b45bef6841a}\label{classgcovr_1_1options_1_1OutputOrDefault_ad02cfd6318790bf0f1311b45bef6841a}} 
+{\bfseries is\+\_\+dir}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An output path that may be empty.
+
+- ``None``: the option is not set
+- ``OutputOrDefault(None)``: fall back to some default value
+- ``OutputOrDefault(path)``: use that path
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgcovr_1_1options_1_1OutputOrDefault_a6e6077335285e062326ba86b61769db8}\label{classgcovr_1_1options_1_1OutputOrDefault_a6e6077335285e062326ba86b61769db8}} 
+\index{gcovr.options.OutputOrDefault@{gcovr.options.OutputOrDefault}!choose@{choose}}
+\index{choose@{choose}!gcovr.options.OutputOrDefault@{gcovr.options.OutputOrDefault}}
+\doxysubsubsection{\texorpdfstring{choose()}{choose()}}
+{\footnotesize\ttfamily  Optional\mbox{[}\mbox{\hyperlink{classgcovr_1_1options_1_1OutputOrDefault}{Output\+Or\+Default}}\mbox{]} gcovr.\+options.\+Output\+Or\+Default.\+choose (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{List\mbox{[}Optional\mbox{[}\mbox{\hyperlink{classgcovr_1_1options_1_1OutputOrDefault}{Output\+Or\+Default}}\mbox{]}\mbox{]}}]{choices,  }\item[{Optional\mbox{[}\mbox{\hyperlink{classgcovr_1_1options_1_1OutputOrDefault}{Output\+Or\+Default}}\mbox{]} }]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}select the first choice that contains a value
+
+Example: chooses a truthy value over None:
+>>> OutputOrDefault.choose([None, OutputOrDefault(42)])
+OutputOrDefault(42)
+
+Example: chooses a truthy value over empty value:
+>>> OutputOrDefault.choose([OutputOrDefault(None), OutputOrDefault('x')])
+OutputOrDefault('x')
+
+Example: chooses default when given empty list
+>>> OutputOrDefault.choose([], default=OutputOrDefault('default'))
+OutputOrDefault('default')
+
+Example: chooses default when only given false values:
+>>> OutputOrDefault.choose(
+...     [None, OutputOrDefault(None)],
+...     default=OutputOrDefault('default'))
+OutputOrDefault('default')
+
+Example: throws when given other value
+>>> OutputOrDefault.choose([True])
+Traceback (most recent call last):
+  ...
+TypeError: ...
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/gcovr/options.\+py\end{DoxyCompactItemize}

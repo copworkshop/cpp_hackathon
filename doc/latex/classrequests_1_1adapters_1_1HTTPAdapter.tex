@@ -1,0 +1,352 @@
+\hypertarget{classrequests_1_1adapters_1_1HTTPAdapter}{}\doxysection{requests.\+adapters.\+HTTPAdapter Class Reference}
+\label{classrequests_1_1adapters_1_1HTTPAdapter}\index{requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}}
+
+
+Inheritance diagram for requests.\+adapters.\+HTTPAdapter\+:
+% FIG 0
+
+
+Collaboration diagram for requests.\+adapters.\+HTTPAdapter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrequests_1_1adapters_1_1HTTPAdapter_a6c4be6442350c1065ce65671bec31cec}\label{classrequests_1_1adapters_1_1HTTPAdapter_a6c4be6442350c1065ce65671bec31cec}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, pool\+\_\+connections=DEFAULT\+\_\+\+POOLSIZE, pool\+\_\+maxsize=DEFAULT\+\_\+\+POOLSIZE, max\+\_\+retries=DEFAULT\+\_\+\+RETRIES, pool\+\_\+block=DEFAULT\+\_\+\+POOLBLOCK)
+\item 
+\mbox{\Hypertarget{classrequests_1_1adapters_1_1HTTPAdapter_a28a923358c3763b391a50c5dc5dbab42}\label{classrequests_1_1adapters_1_1HTTPAdapter_a28a923358c3763b391a50c5dc5dbab42}} 
+def {\bfseries \+\_\+\+\_\+getstate\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classrequests_1_1adapters_1_1HTTPAdapter_a7e45b9d3b584ac4755edc65a19f77126}\label{classrequests_1_1adapters_1_1HTTPAdapter_a7e45b9d3b584ac4755edc65a19f77126}} 
+def {\bfseries \+\_\+\+\_\+setstate\+\_\+\+\_\+} (self, state)
+\item 
+def \mbox{\hyperlink{classrequests_1_1adapters_1_1HTTPAdapter_a8d38dd94cd85b840c80323409f6d4bb4}{init\+\_\+poolmanager}} (self, connections, maxsize, block=DEFAULT\+\_\+\+POOLBLOCK, $\ast$$\ast$pool\+\_\+kwargs)
+\item 
+def \mbox{\hyperlink{classrequests_1_1adapters_1_1HTTPAdapter_aedc1943e4a569d3b8d256c7a98b86428}{proxy\+\_\+manager\+\_\+for}} (self, proxy, $\ast$$\ast$proxy\+\_\+kwargs)
+\item 
+def \mbox{\hyperlink{classrequests_1_1adapters_1_1HTTPAdapter_abdf510b840fce3956b663aff7e17b3bf}{cert\+\_\+verify}} (self, conn, url, verify, cert)
+\item 
+def \mbox{\hyperlink{classrequests_1_1adapters_1_1HTTPAdapter_aa25f597eb95f8f25f4d31ca60128fc8c}{build\+\_\+response}} (self, req, resp)
+\item 
+def \mbox{\hyperlink{classrequests_1_1adapters_1_1HTTPAdapter_a9607859b3a30f7590610889023416f1f}{build\+\_\+connection\+\_\+pool\+\_\+key\+\_\+attributes}} (self, request, verify, cert=None)
+\item 
+def \mbox{\hyperlink{classrequests_1_1adapters_1_1HTTPAdapter_aebe8ee5d18a82016dfff79a5ba5f0b03}{get\+\_\+connection\+\_\+with\+\_\+tls\+\_\+context}} (self, request, verify, proxies=None, cert=None)
+\item 
+def \mbox{\hyperlink{classrequests_1_1adapters_1_1HTTPAdapter_af0840aced8a43102f778c4e8bd3695a7}{get\+\_\+connection}} (self, url, proxies=None)
+\item 
+def \mbox{\hyperlink{classrequests_1_1adapters_1_1HTTPAdapter_a642bc9eecb09cc5b5ceb14ee09b81264}{close}} (self)
+\item 
+def \mbox{\hyperlink{classrequests_1_1adapters_1_1HTTPAdapter_a58ee9c7d3cb8b2e96dd9c8963b4e2a81}{request\+\_\+url}} (self, request, proxies)
+\item 
+def \mbox{\hyperlink{classrequests_1_1adapters_1_1HTTPAdapter_ab990ffde5354a0212e0e1db626f0b584}{add\+\_\+headers}} (self, request, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classrequests_1_1adapters_1_1HTTPAdapter_ae6499c677b9f1f5d10984b8c74a1864e}{proxy\+\_\+headers}} (self, proxy)
+\item 
+def \mbox{\hyperlink{classrequests_1_1adapters_1_1HTTPAdapter_ab739c4eeb74b81253ffeb3abdf611626}{send}} (self, request, stream=False, timeout=None, verify=True, cert=None, proxies=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrequests_1_1adapters_1_1HTTPAdapter_aa7c569d928166505bacad8dbc9b5f72f}\label{classrequests_1_1adapters_1_1HTTPAdapter_aa7c569d928166505bacad8dbc9b5f72f}} 
+{\bfseries max\+\_\+retries}
+\item 
+\mbox{\Hypertarget{classrequests_1_1adapters_1_1HTTPAdapter_a4f97ed575e01874089571d3674a9cc59}\label{classrequests_1_1adapters_1_1HTTPAdapter_a4f97ed575e01874089571d3674a9cc59}} 
+{\bfseries config}
+\item 
+\mbox{\Hypertarget{classrequests_1_1adapters_1_1HTTPAdapter_a5ddb0511dbc669ae0d301db7bb35f783}\label{classrequests_1_1adapters_1_1HTTPAdapter_a5ddb0511dbc669ae0d301db7bb35f783}} 
+{\bfseries proxy\+\_\+manager}
+\item 
+\mbox{\Hypertarget{classrequests_1_1adapters_1_1HTTPAdapter_a6b5fb1a87e5b107fcac420909a55f02a}\label{classrequests_1_1adapters_1_1HTTPAdapter_a6b5fb1a87e5b107fcac420909a55f02a}} 
+{\bfseries poolmanager}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The built-in HTTP Adapter for urllib3.
+
+Provides a general-case interface for Requests sessions to contact HTTP and
+HTTPS urls by implementing the Transport Adapter interface. This class will
+usually be created by the :class:`Session <Session>` class under the
+covers.
+
+:param pool_connections: The number of urllib3 connection pools to cache.
+:param pool_maxsize: The maximum number of connections to save in the pool.
+:param max_retries: The maximum number of retries each connection
+    should attempt. Note, this applies only to failed DNS lookups, socket
+    connections and connection timeouts, never to requests where data has
+    made it to the server. By default, Requests does not retry failed
+    connections. If you need granular control over the conditions under
+    which we retry a request, import urllib3's ``Retry`` class and pass
+    that instead.
+:param pool_block: Whether the connection pool should block for connections.
+
+Usage::
+
+  >>> import requests
+  >>> s = requests.Session()
+  >>> a = requests.adapters.HTTPAdapter(max_retries=3)
+  >>> s.mount('http://', a)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrequests_1_1adapters_1_1HTTPAdapter_ab990ffde5354a0212e0e1db626f0b584}\label{classrequests_1_1adapters_1_1HTTPAdapter_ab990ffde5354a0212e0e1db626f0b584}} 
+\index{requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}!add\_headers@{add\_headers}}
+\index{add\_headers@{add\_headers}!requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}}
+\doxysubsubsection{\texorpdfstring{add\_headers()}{add\_headers()}}
+{\footnotesize\ttfamily def requests.\+adapters.\+HTTPAdapter.\+add\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add any headers needed by the connection. As of v2.0 this does
+nothing by default, but is left for overriding by users that subclass
+the :class:`HTTPAdapter <requests.adapters.HTTPAdapter>`.
+
+This should not be called from user code, and is only exposed for use
+when subclassing the
+:class:`HTTPAdapter <requests.adapters.HTTPAdapter>`.
+
+:param request: The :class:`PreparedRequest <PreparedRequest>` to add headers to.
+:param kwargs: The keyword arguments from the call to send().
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1adapters_1_1HTTPAdapter_a9607859b3a30f7590610889023416f1f}\label{classrequests_1_1adapters_1_1HTTPAdapter_a9607859b3a30f7590610889023416f1f}} 
+\index{requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}!build\_connection\_pool\_key\_attributes@{build\_connection\_pool\_key\_attributes}}
+\index{build\_connection\_pool\_key\_attributes@{build\_connection\_pool\_key\_attributes}!requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}}
+\doxysubsubsection{\texorpdfstring{build\_connection\_pool\_key\_attributes()}{build\_connection\_pool\_key\_attributes()}}
+{\footnotesize\ttfamily def requests.\+adapters.\+HTTPAdapter.\+build\+\_\+connection\+\_\+pool\+\_\+key\+\_\+attributes (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{verify,  }\item[{}]{cert = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build the PoolKey attributes used by urllib3 to return a connection.
+
+This looks at the PreparedRequest, the user-specified verify value,
+and the value of the cert parameter to determine what PoolKey values
+to use to select a connection from a given urllib3 Connection Pool.
+
+The SSL related pool key arguments are not consistently set. As of
+this writing, use the following to determine what keys may be in that
+dictionary:
+
+* If ``verify`` is ``True``, ``"ssl_context"`` will be set and will be the
+  default Requests SSL Context
+* If ``verify`` is ``False``, ``"ssl_context"`` will not be set but
+  ``"cert_reqs"`` will be set
+* If ``verify`` is a string, (i.e., it is a user-specified trust bundle)
+  ``"ca_certs"`` will be set if the string is not a directory recognized
+  by :py:func:`os.path.isdir`, otherwise ``"ca_certs_dir"`` will be
+  set.
+* If ``"cert"`` is specified, ``"cert_file"`` will always be set. If
+  ``"cert"`` is a tuple with a second item, ``"key_file"`` will also
+  be present
+
+To override these settings, one may subclass this class, call this
+method and use the above logic to change parameters as desired. For
+example, if one wishes to use a custom :py:class:`ssl.SSLContext` one
+must both set ``"ssl_context"`` and based on what else they require,
+alter the other keys to ensure the desired behaviour.
+
+:param request:
+    The PreparedReqest being sent over the connection.
+:type request:
+    :class:`~requests.models.PreparedRequest`
+:param verify:
+    Either a boolean, in which case it controls whether
+    we verify the server's TLS certificate, or a string, in which case it
+    must be a path to a CA bundle to use.
+:param cert:
+    (optional) Any user-provided SSL certificate for client
+    authentication (a.k.a., mTLS). This may be a string (i.e., just
+    the path to a file which holds both certificate and key) or a
+    tuple of length 2 with the certificate file path and key file
+    path.
+:returns:
+    A tuple of two dictionaries. The first is the "host parameters"
+    portion of the Pool Key including scheme, hostname, and port. The
+    second is a dictionary of SSLContext related parameters.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1adapters_1_1HTTPAdapter_aa25f597eb95f8f25f4d31ca60128fc8c}\label{classrequests_1_1adapters_1_1HTTPAdapter_aa25f597eb95f8f25f4d31ca60128fc8c}} 
+\index{requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}!build\_response@{build\_response}}
+\index{build\_response@{build\_response}!requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}}
+\doxysubsubsection{\texorpdfstring{build\_response()}{build\_response()}}
+{\footnotesize\ttfamily def requests.\+adapters.\+HTTPAdapter.\+build\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{req,  }\item[{}]{resp }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Builds a :class:`Response <requests.Response>` object from a urllib3
+response. This should not be called from user code, and is only exposed
+for use when subclassing the
+:class:`HTTPAdapter <requests.adapters.HTTPAdapter>`
+
+:param req: The :class:`PreparedRequest <PreparedRequest>` used to generate the response.
+:param resp: The urllib3 response object.
+:rtype: requests.Response
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1adapters_1_1HTTPAdapter_abdf510b840fce3956b663aff7e17b3bf}\label{classrequests_1_1adapters_1_1HTTPAdapter_abdf510b840fce3956b663aff7e17b3bf}} 
+\index{requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}!cert\_verify@{cert\_verify}}
+\index{cert\_verify@{cert\_verify}!requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}}
+\doxysubsubsection{\texorpdfstring{cert\_verify()}{cert\_verify()}}
+{\footnotesize\ttfamily def requests.\+adapters.\+HTTPAdapter.\+cert\+\_\+verify (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{conn,  }\item[{}]{url,  }\item[{}]{verify,  }\item[{}]{cert }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Verify a SSL certificate. This method should not be called from user
+code, and is only exposed for use when subclassing the
+:class:`HTTPAdapter <requests.adapters.HTTPAdapter>`.
+
+:param conn: The urllib3 connection object associated with the cert.
+:param url: The requested URL.
+:param verify: Either a boolean, in which case it controls whether we verify
+    the server's TLS certificate, or a string, in which case it must be a path
+    to a CA bundle to use
+:param cert: The SSL certificate to verify.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1adapters_1_1HTTPAdapter_a642bc9eecb09cc5b5ceb14ee09b81264}\label{classrequests_1_1adapters_1_1HTTPAdapter_a642bc9eecb09cc5b5ceb14ee09b81264}} 
+\index{requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}!close@{close}}
+\index{close@{close}!requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily def requests.\+adapters.\+HTTPAdapter.\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Disposes of any internal state.
+
+Currently, this closes the PoolManager and any active ProxyManager,
+which closes any pooled connections.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classrequests_1_1adapters_1_1BaseAdapter_a03648fc5cb525a558b204783904de976}{requests.\+adapters.\+Base\+Adapter}}.
+
+\mbox{\Hypertarget{classrequests_1_1adapters_1_1HTTPAdapter_af0840aced8a43102f778c4e8bd3695a7}\label{classrequests_1_1adapters_1_1HTTPAdapter_af0840aced8a43102f778c4e8bd3695a7}} 
+\index{requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}!get\_connection@{get\_connection}}
+\index{get\_connection@{get\_connection}!requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}}
+\doxysubsubsection{\texorpdfstring{get\_connection()}{get\_connection()}}
+{\footnotesize\ttfamily def requests.\+adapters.\+HTTPAdapter.\+get\+\_\+connection (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{url,  }\item[{}]{proxies = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}DEPRECATED: Users should move to `get_connection_with_tls_context`
+for all subclasses of HTTPAdapter using Requests>=2.32.2.
+
+Returns a urllib3 connection for the given URL. This should not be
+called from user code, and is only exposed for use when subclassing the
+:class:`HTTPAdapter <requests.adapters.HTTPAdapter>`.
+
+:param url: The URL to connect to.
+:param proxies: (optional) A Requests-style dictionary of proxies used on this request.
+:rtype: urllib3.ConnectionPool
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1adapters_1_1HTTPAdapter_aebe8ee5d18a82016dfff79a5ba5f0b03}\label{classrequests_1_1adapters_1_1HTTPAdapter_aebe8ee5d18a82016dfff79a5ba5f0b03}} 
+\index{requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}!get\_connection\_with\_tls\_context@{get\_connection\_with\_tls\_context}}
+\index{get\_connection\_with\_tls\_context@{get\_connection\_with\_tls\_context}!requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}}
+\doxysubsubsection{\texorpdfstring{get\_connection\_with\_tls\_context()}{get\_connection\_with\_tls\_context()}}
+{\footnotesize\ttfamily def requests.\+adapters.\+HTTPAdapter.\+get\+\_\+connection\+\_\+with\+\_\+tls\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{verify,  }\item[{}]{proxies = {\ttfamily None},  }\item[{}]{cert = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a urllib3 connection for the given request and TLS settings.
+This should not be called from user code, and is only exposed for use
+when subclassing the :class:`HTTPAdapter <requests.adapters.HTTPAdapter>`.
+
+:param request:
+    The :class:`PreparedRequest <PreparedRequest>` object to be sent
+    over the connection.
+:param verify:
+    Either a boolean, in which case it controls whether we verify the
+    server's TLS certificate, or a string, in which case it must be a
+    path to a CA bundle to use.
+:param proxies:
+    (optional) The proxies dictionary to apply to the request.
+:param cert:
+    (optional) Any user-provided SSL certificate to be used for client
+    authentication (a.k.a., mTLS).
+:rtype:
+    urllib3.ConnectionPool
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1adapters_1_1HTTPAdapter_a8d38dd94cd85b840c80323409f6d4bb4}\label{classrequests_1_1adapters_1_1HTTPAdapter_a8d38dd94cd85b840c80323409f6d4bb4}} 
+\index{requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}!init\_poolmanager@{init\_poolmanager}}
+\index{init\_poolmanager@{init\_poolmanager}!requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}}
+\doxysubsubsection{\texorpdfstring{init\_poolmanager()}{init\_poolmanager()}}
+{\footnotesize\ttfamily def requests.\+adapters.\+HTTPAdapter.\+init\+\_\+poolmanager (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{connections,  }\item[{}]{maxsize,  }\item[{}]{block = {\ttfamily DEFAULT\+\_\+POOLBLOCK},  }\item[{$\ast$$\ast$}]{pool\+\_\+kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes a urllib3 PoolManager.
+
+This method should not be called from user code, and is only
+exposed for use when subclassing the
+:class:`HTTPAdapter <requests.adapters.HTTPAdapter>`.
+
+:param connections: The number of urllib3 connection pools to cache.
+:param maxsize: The maximum number of connections to save in the pool.
+:param block: Block when no free connections are available.
+:param pool_kwargs: Extra keyword arguments used to initialize the Pool Manager.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1adapters_1_1HTTPAdapter_ae6499c677b9f1f5d10984b8c74a1864e}\label{classrequests_1_1adapters_1_1HTTPAdapter_ae6499c677b9f1f5d10984b8c74a1864e}} 
+\index{requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}!proxy\_headers@{proxy\_headers}}
+\index{proxy\_headers@{proxy\_headers}!requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}}
+\doxysubsubsection{\texorpdfstring{proxy\_headers()}{proxy\_headers()}}
+{\footnotesize\ttfamily def requests.\+adapters.\+HTTPAdapter.\+proxy\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{proxy }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a dictionary of the headers to add to any request sent
+through a proxy. This works with urllib3 magic to ensure that they are
+correctly sent to the proxy, rather than in a tunnelled request if
+CONNECT is being used.
+
+This should not be called from user code, and is only exposed for use
+when subclassing the
+:class:`HTTPAdapter <requests.adapters.HTTPAdapter>`.
+
+:param proxy: The url of the proxy being used for this request.
+:rtype: dict
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1adapters_1_1HTTPAdapter_aedc1943e4a569d3b8d256c7a98b86428}\label{classrequests_1_1adapters_1_1HTTPAdapter_aedc1943e4a569d3b8d256c7a98b86428}} 
+\index{requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}!proxy\_manager\_for@{proxy\_manager\_for}}
+\index{proxy\_manager\_for@{proxy\_manager\_for}!requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}}
+\doxysubsubsection{\texorpdfstring{proxy\_manager\_for()}{proxy\_manager\_for()}}
+{\footnotesize\ttfamily def requests.\+adapters.\+HTTPAdapter.\+proxy\+\_\+manager\+\_\+for (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{proxy,  }\item[{$\ast$$\ast$}]{proxy\+\_\+kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return urllib3 ProxyManager for the given proxy.
+
+This method should not be called from user code, and is only
+exposed for use when subclassing the
+:class:`HTTPAdapter <requests.adapters.HTTPAdapter>`.
+
+:param proxy: The proxy to return a urllib3 ProxyManager for.
+:param proxy_kwargs: Extra keyword arguments used to configure the Proxy Manager.
+:returns: ProxyManager
+:rtype: urllib3.ProxyManager
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1adapters_1_1HTTPAdapter_a58ee9c7d3cb8b2e96dd9c8963b4e2a81}\label{classrequests_1_1adapters_1_1HTTPAdapter_a58ee9c7d3cb8b2e96dd9c8963b4e2a81}} 
+\index{requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}!request\_url@{request\_url}}
+\index{request\_url@{request\_url}!requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}}
+\doxysubsubsection{\texorpdfstring{request\_url()}{request\_url()}}
+{\footnotesize\ttfamily def requests.\+adapters.\+HTTPAdapter.\+request\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{proxies }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Obtain the url to use when making the final request.
+
+If the message is being sent through a HTTP proxy, the full URL has to
+be used. Otherwise, we should only use the path portion of the URL.
+
+This should not be called from user code, and is only exposed for use
+when subclassing the
+:class:`HTTPAdapter <requests.adapters.HTTPAdapter>`.
+
+:param request: The :class:`PreparedRequest <PreparedRequest>` being sent.
+:param proxies: A dictionary of schemes or schemes and hosts to proxy URLs.
+:rtype: str
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1adapters_1_1HTTPAdapter_ab739c4eeb74b81253ffeb3abdf611626}\label{classrequests_1_1adapters_1_1HTTPAdapter_ab739c4eeb74b81253ffeb3abdf611626}} 
+\index{requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}!send@{send}}
+\index{send@{send}!requests.adapters.HTTPAdapter@{requests.adapters.HTTPAdapter}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily def requests.\+adapters.\+HTTPAdapter.\+send (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{stream = {\ttfamily False},  }\item[{}]{timeout = {\ttfamily None},  }\item[{}]{verify = {\ttfamily True},  }\item[{}]{cert = {\ttfamily None},  }\item[{}]{proxies = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sends PreparedRequest object. Returns Response object.
+
+:param request: The :class:`PreparedRequest <PreparedRequest>` being sent.
+:param stream: (optional) Whether to stream the request content.
+:param timeout: (optional) How long to wait for the server to send
+    data before giving up, as a float, or a :ref:`(connect timeout,
+    read timeout) <timeouts>` tuple.
+:type timeout: float or tuple or urllib3 Timeout object
+:param verify: (optional) Either a boolean, in which case it controls whether
+    we verify the server's TLS certificate, or a string, in which case it
+    must be a path to a CA bundle to use
+:param cert: (optional) Any user-provided SSL certificate to be trusted.
+:param proxies: (optional) The proxies dictionary to apply to the request.
+:rtype: requests.Response
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classrequests_1_1adapters_1_1BaseAdapter_afdb91b66ad7704a13d0fbb2bbd0a881e}{requests.\+adapters.\+Base\+Adapter}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/requests/adapters.\+py\end{DoxyCompactItemize}

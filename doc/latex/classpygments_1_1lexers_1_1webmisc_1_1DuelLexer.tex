@@ -1,0 +1,75 @@
+\hypertarget{classpygments_1_1lexers_1_1webmisc_1_1DuelLexer}{}\doxysection{pygments.\+lexers.\+webmisc.\+Duel\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1webmisc_1_1DuelLexer}\index{pygments.lexers.webmisc.DuelLexer@{pygments.lexers.webmisc.DuelLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+webmisc.\+Duel\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+webmisc.\+Duel\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1webmisc_1_1DuelLexer_a512a678117bfbe8d3a185ba48aabc013}\label{classpygments_1_1lexers_1_1webmisc_1_1DuelLexer_a512a678117bfbe8d3a185ba48aabc013}} 
+string {\bfseries name} = \textquotesingle{}Duel\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1webmisc_1_1DuelLexer_a18d9ba9875fcb1e9110b28a98705872a}\label{classpygments_1_1lexers_1_1webmisc_1_1DuelLexer_a18d9ba9875fcb1e9110b28a98705872a}} 
+string {\bfseries url} = \textquotesingle{}http\+://duelengine.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1webmisc_1_1DuelLexer_a1712f57a94d53f361624ccf3d6b88d8e}\label{classpygments_1_1lexers_1_1webmisc_1_1DuelLexer_a1712f57a94d53f361624ccf3d6b88d8e}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}duel\textquotesingle{}, \textquotesingle{}jbst\textquotesingle{}, \textquotesingle{}jsonml+bst\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1webmisc_1_1DuelLexer_af385eb35ff12253c3266e14b614ca0b2}\label{classpygments_1_1lexers_1_1webmisc_1_1DuelLexer_af385eb35ff12253c3266e14b614ca0b2}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.duel\textquotesingle{}, \textquotesingle{}$\ast$.jbst\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1webmisc_1_1DuelLexer_ad2f3f9aeb3557869a42b1a9f1a36ee8e}\label{classpygments_1_1lexers_1_1webmisc_1_1DuelLexer_ad2f3f9aeb3557869a42b1a9f1a36ee8e}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/duel\textquotesingle{}, \textquotesingle{}text/x-\/jbst\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1webmisc_1_1DuelLexer_adf6be9314f4c944b10e286e58b2440c5}\label{classpygments_1_1lexers_1_1webmisc_1_1DuelLexer_adf6be9314f4c944b10e286e58b2440c5}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+4\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1webmisc_1_1DuelLexer_ad3cf2e9e63a0eefbff02be6889d41b41}\label{classpygments_1_1lexers_1_1webmisc_1_1DuelLexer_ad3cf2e9e63a0eefbff02be6889d41b41}} 
+{\bfseries flags} = re.\+DOTALL
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for Duel Views Engine (formerly JBST) markup with JavaScript code blocks.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1webmisc_1_1DuelLexer_ad8ac89a261d1a4848fcdee9b1b6d430f}\label{classpygments_1_1lexers_1_1webmisc_1_1DuelLexer_ad8ac89a261d1a4848fcdee9b1b6d430f}} 
+\index{pygments.lexers.webmisc.DuelLexer@{pygments.lexers.webmisc.DuelLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.webmisc.DuelLexer@{pygments.lexers.webmisc.DuelLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+webmisc.\+Duel\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(<\%[@=\#!:]?)(.*?)(\%>)'},}
+\DoxyCodeLine{             bygroups(Name.Tag, using(JavascriptLexer), Name.Tag)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(<\%\(\backslash\)\$)(.*?)(:)(.*?)(\%>)'},}
+\DoxyCodeLine{             bygroups(Name.Tag, Name.Function, Punctuation, String, Name.Tag)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(<\%-\/-\/)(.*?)(-\/-\/\%>)'},}
+\DoxyCodeLine{             bygroups(Name.Tag, Comment.Multiline, Name.Tag)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(<script.*?>)(.*?)(</script>)'},}
+\DoxyCodeLine{             bygroups(using(HtmlLexer),}
+\DoxyCodeLine{                      using(JavascriptLexer), using(HtmlLexer))),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(.+?)(?=<)'}, using(HtmlLexer)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'.+'}, using(HtmlLexer)),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/webmisc.\+py\end{DoxyCompactItemize}

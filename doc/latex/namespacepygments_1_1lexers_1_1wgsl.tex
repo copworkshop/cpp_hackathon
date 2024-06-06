@@ -1,0 +1,55 @@
+\hypertarget{namespacepygments_1_1lexers_1_1wgsl}{}\doxysection{pygments.\+lexers.\+wgsl Namespace Reference}
+\label{namespacepygments_1_1lexers_1_1wgsl}\index{pygments.lexers.wgsl@{pygments.lexers.wgsl}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexers_1_1wgsl_1_1WgslLexer}{Wgsl\+Lexer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_a3977e26ef1d811639693cdd508578862}\label{namespacepygments_1_1lexers_1_1wgsl_a3977e26ef1d811639693cdd508578862}} 
+string {\bfseries LF} = \textquotesingle{}\textbackslash{}\textbackslash{}u000a\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_acffb3ab1978db32fea095da6f691fa84}\label{namespacepygments_1_1lexers_1_1wgsl_acffb3ab1978db32fea095da6f691fa84}} 
+string {\bfseries VT} = \textquotesingle{}\textbackslash{}\textbackslash{}u000b\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_a32514984a2730d86c2b6c5645b3735bd}\label{namespacepygments_1_1lexers_1_1wgsl_a32514984a2730d86c2b6c5645b3735bd}} 
+string {\bfseries FF} = \textquotesingle{}\textbackslash{}\textbackslash{}u000c\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_adfded4b961b5da24b8f5b018905c52f6}\label{namespacepygments_1_1lexers_1_1wgsl_adfded4b961b5da24b8f5b018905c52f6}} 
+string {\bfseries CR} = \textquotesingle{}\textbackslash{}\textbackslash{}u000d\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_a170ce43e320847144ec19f5a718e32a8}\label{namespacepygments_1_1lexers_1_1wgsl_a170ce43e320847144ec19f5a718e32a8}} 
+string {\bfseries Next\+Line} = \textquotesingle{}\textbackslash{}\textbackslash{}u0085\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_a05efab70312cc1013251fd1eac5bfa7c}\label{namespacepygments_1_1lexers_1_1wgsl_a05efab70312cc1013251fd1eac5bfa7c}} 
+string {\bfseries Line\+Sep} = \textquotesingle{}\textbackslash{}\textbackslash{}u2028\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_a0473cf80f41b5673e1bfaf1a12dd65fc}\label{namespacepygments_1_1lexers_1_1wgsl_a0473cf80f41b5673e1bfaf1a12dd65fc}} 
+string {\bfseries Para\+Sep} = \textquotesingle{}\textbackslash{}\textbackslash{}u2029\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_af2a600b4311c4dc60b35f876d3fbc1a9}\label{namespacepygments_1_1lexers_1_1wgsl_af2a600b4311c4dc60b35f876d3fbc1a9}} 
+list {\bfseries Line\+End\+Code\+Points} = \mbox{[}LF,VT,FF,CR,Next\+Line,Line\+Sep,Para\+Sep\mbox{]}
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_a4db3c7909dbcad55817f546c60801140}\label{namespacepygments_1_1lexers_1_1wgsl_a4db3c7909dbcad55817f546c60801140}} 
+string {\bfseries Not\+Line\+End\+RE} = \textquotesingle{}\mbox{[}$^\wedge$\textquotesingle{} + \char`\"{}\char`\"{}.join(Line\+End\+Code\+Points) + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_aa6e5b4a35d2a6ac4b33054a565924474}\label{namespacepygments_1_1lexers_1_1wgsl_aa6e5b4a35d2a6ac4b33054a565924474}} 
+string {\bfseries Line\+End\+RE} = \textquotesingle{}\mbox{[}\textquotesingle{} + \char`\"{}\char`\"{}.join(Line\+End\+Code\+Points) + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_aafb3195fdfe9e78dfb4c7b87454a537c}\label{namespacepygments_1_1lexers_1_1wgsl_aafb3195fdfe9e78dfb4c7b87454a537c}} 
+string {\bfseries ident\+\_\+pattern\+\_\+token} = f\textquotesingle{}(\mbox{[}\{uni.\+xid\+\_\+start\}\mbox{]}\mbox{[}\{uni.\+xid\+\_\+continue\}\mbox{]}+)$\vert$\mbox{[}\{uni.\+xid\+\_\+start\}\mbox{]}\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}    pygments.lexers.wgsl
+    ~~~~~~~~~~~~~~~~~~~~
+
+    Lexer for the WebGPU Shading Language.
+
+    :copyright: Copyright 2006-2024 by the Pygments team, see AUTHORS.
+    :license: BSD, see LICENSE for details.
+\end{DoxyVerb}
+ 

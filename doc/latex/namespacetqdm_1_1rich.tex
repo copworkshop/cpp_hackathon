@@ -1,0 +1,46 @@
+\hypertarget{namespacetqdm_1_1rich}{}\doxysection{tqdm.\+rich Namespace Reference}
+\label{namespacetqdm_1_1rich}\index{tqdm.rich@{tqdm.rich}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1rich_1_1FractionColumn}{Fraction\+Column}}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1rich_1_1RateColumn}{Rate\+Column}}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1rich_1_1tqdm__rich}{tqdm\+\_\+rich}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacetqdm_1_1rich_a4dd17145f271be2102debde1c66eac0b}{trrange}} ($\ast$args, $\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1rich_acc288e00ef35d1fc077f415dc7be8b93}\label{namespacetqdm_1_1rich_acc288e00ef35d1fc077f415dc7be8b93}} 
+{\bfseries tqdm} = \mbox{\hyperlink{classtqdm_1_1rich_1_1tqdm__rich}{tqdm\+\_\+rich}}
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1rich_a949891a9c955dc902b190f057c6f75d1}\label{namespacetqdm_1_1rich_a949891a9c955dc902b190f057c6f75d1}} 
+def {\bfseries trange} = \mbox{\hyperlink{namespacetqdm_1_1rich_a4dd17145f271be2102debde1c66eac0b}{trrange}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}`rich.progress` decorator for iterators.
+
+Usage:
+>>> from tqdm.rich import trange, tqdm
+>>> for i in trange(10):
+...     ...
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetqdm_1_1rich_a4dd17145f271be2102debde1c66eac0b}\label{namespacetqdm_1_1rich_a4dd17145f271be2102debde1c66eac0b}} 
+\index{tqdm.rich@{tqdm.rich}!trrange@{trrange}}
+\index{trrange@{trrange}!tqdm.rich@{tqdm.rich}}
+\doxysubsubsection{\texorpdfstring{trrange()}{trrange()}}
+{\footnotesize\ttfamily def tqdm.\+rich.\+trrange (\begin{DoxyParamCaption}\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for `tqdm.rich.tqdm(range(*args), **kwargs)`.\end{DoxyVerb}
+ 

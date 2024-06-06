@@ -1,0 +1,139 @@
+\hypertarget{classpygments_1_1lexers_1_1igor_1_1IgorLexer}{}\doxysection{pygments.\+lexers.\+igor.\+Igor\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1igor_1_1IgorLexer}\index{pygments.lexers.igor.IgorLexer@{pygments.lexers.igor.IgorLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+igor.\+Igor\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+igor.\+Igor\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a339b7b6e83b46328c631e2a4d25f6ae0}\label{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a339b7b6e83b46328c631e2a4d25f6ae0}} 
+string {\bfseries name} = \textquotesingle{}Igor\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a978f192048cbd6468fffdd573cd89215}\label{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a978f192048cbd6468fffdd573cd89215}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}igor\textquotesingle{}, \textquotesingle{}igorpro\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a17005cd037e96ba697fcad4cf6e9c60e}\label{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a17005cd037e96ba697fcad4cf6e9c60e}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.ipf\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a4e58cd001c91da4a2f15c3137b0328d6}\label{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a4e58cd001c91da4a2f15c3137b0328d6}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/ipf\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a35609a7746c23b3b5d0324090b2a224c}\label{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a35609a7746c23b3b5d0324090b2a224c}} 
+string {\bfseries url} = \textquotesingle{}http\+://www.\+wavemetrics.\+com\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a9ef432094fc280b9f68ba3bf61f842ea}\label{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a9ef432094fc280b9f68ba3bf61f842ea}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+0\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a4f2384e93fd2634b325248a2d15067c3}\label{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a4f2384e93fd2634b325248a2d15067c3}} 
+{\bfseries flags} = re.\+IGNORECASE $\vert$ re.\+MULTILINE
+\item 
+tuple {\bfseries flow\+Control}
+\item 
+tuple {\bfseries types}
+\item 
+tuple {\bfseries keywords}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a05e1d5897a36a59adc5c107482050509}\label{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a05e1d5897a36a59adc5c107482050509}} 
+tuple {\bfseries operations}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1igor_1_1IgorLexer_afb25bf0bd644e1552fd9398ad328ae97}\label{classpygments_1_1lexers_1_1igor_1_1IgorLexer_afb25bf0bd644e1552fd9398ad328ae97}} 
+tuple {\bfseries functions}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Pygments Lexer for Igor Pro procedure files (.ipf).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1igor_1_1IgorLexer_aafa1aee0bfe6840ece59e571b624fa17}\label{classpygments_1_1lexers_1_1igor_1_1IgorLexer_aafa1aee0bfe6840ece59e571b624fa17}} 
+\index{pygments.lexers.igor.IgorLexer@{pygments.lexers.igor.IgorLexer}!flowControl@{flowControl}}
+\index{flowControl@{flowControl}!pygments.lexers.igor.IgorLexer@{pygments.lexers.igor.IgorLexer}}
+\doxysubsubsection{\texorpdfstring{flowControl}{flowControl}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+igor.\+Igor\+Lexer.\+flow\+Control\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (}
+\DoxyCodeLine{        \textcolor{stringliteral}{'if'}, \textcolor{stringliteral}{'else'}, \textcolor{stringliteral}{'elseif'}, \textcolor{stringliteral}{'endif'}, \textcolor{stringliteral}{'for'}, \textcolor{stringliteral}{'endfor'}, \textcolor{stringliteral}{'strswitch'}, \textcolor{stringliteral}{'switch'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'case'}, \textcolor{stringliteral}{'default'}, \textcolor{stringliteral}{'endswitch'}, \textcolor{stringliteral}{'do'}, \textcolor{stringliteral}{'while'}, \textcolor{stringliteral}{'try'}, \textcolor{stringliteral}{'catch'}, \textcolor{stringliteral}{'endtry'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'break'}, \textcolor{stringliteral}{'continue'}, \textcolor{stringliteral}{'return'}, \textcolor{stringliteral}{'AbortOnRTE'}, \textcolor{stringliteral}{'AbortOnValue'}}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a6cad720c8c26b1aa9e1e2df375a77adf}\label{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a6cad720c8c26b1aa9e1e2df375a77adf}} 
+\index{pygments.lexers.igor.IgorLexer@{pygments.lexers.igor.IgorLexer}!keywords@{keywords}}
+\index{keywords@{keywords}!pygments.lexers.igor.IgorLexer@{pygments.lexers.igor.IgorLexer}}
+\doxysubsubsection{\texorpdfstring{keywords}{keywords}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+igor.\+Igor\+Lexer.\+keywords\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (}
+\DoxyCodeLine{        \textcolor{stringliteral}{'override'}, \textcolor{stringliteral}{'ThreadSafe'}, \textcolor{stringliteral}{'MultiThread'}, \textcolor{stringliteral}{'static'},  \textcolor{stringliteral}{'Proc'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'Picture'}, \textcolor{stringliteral}{'Prompt'}, \textcolor{stringliteral}{'DoPrompt'}, \textcolor{stringliteral}{'macro'}, \textcolor{stringliteral}{'window'}, \textcolor{stringliteral}{'function'}, \textcolor{stringliteral}{'end'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'Structure'}, \textcolor{stringliteral}{'EndStructure'}, \textcolor{stringliteral}{'EndMacro'}, \textcolor{stringliteral}{'Menu'}, \textcolor{stringliteral}{'SubMenu'}}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a12dd0295ef25ca231aa94220dbfbde34}\label{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a12dd0295ef25ca231aa94220dbfbde34}} 
+\index{pygments.lexers.igor.IgorLexer@{pygments.lexers.igor.IgorLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.igor.IgorLexer@{pygments.lexers.igor.IgorLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+igor.\+Igor\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'//.*\$'}, Comment.Single),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'"{}([\string^"{}\(\backslash\)\(\backslash\)]|\(\backslash\)\(\backslash\).)*"{}'}, String),}
+\DoxyCodeLine{            \textcolor{comment}{\# Flow Control.}}
+\DoxyCodeLine{            (words(flowControl, prefix=\textcolor{stringliteral}{r'\(\backslash\)b'}, suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}), Keyword),}
+\DoxyCodeLine{            \textcolor{comment}{\# Types.}}
+\DoxyCodeLine{            (words(types, prefix=\textcolor{stringliteral}{r'\(\backslash\)b'}, suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}), Keyword.Type),}
+\DoxyCodeLine{            \textcolor{comment}{\# Keywords.}}
+\DoxyCodeLine{            (words(keywords, prefix=\textcolor{stringliteral}{r'\(\backslash\)b'}, suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}), Keyword.Reserved),}
+\DoxyCodeLine{            \textcolor{comment}{\# Built-\/in operations.}}
+\DoxyCodeLine{            (words(operations, prefix=\textcolor{stringliteral}{r'\(\backslash\)b'}, suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}), Name.Class),}
+\DoxyCodeLine{            \textcolor{comment}{\# Built-\/in functions.}}
+\DoxyCodeLine{            (words(functions, prefix=\textcolor{stringliteral}{r'\(\backslash\)b'}, suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}), Name.Function),}
+\DoxyCodeLine{            \textcolor{comment}{\# Compiler directives.}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^\#(include|pragma|define|undef|ifdef|ifndef|if|elif|else|endif)'},}
+\DoxyCodeLine{             Name.Decorator),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^a-\/z"{}/]+\$'}, Text),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'.'}, Text),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a34f697866fbae70527b383ec5196c510}\label{classpygments_1_1lexers_1_1igor_1_1IgorLexer_a34f697866fbae70527b383ec5196c510}} 
+\index{pygments.lexers.igor.IgorLexer@{pygments.lexers.igor.IgorLexer}!types@{types}}
+\index{types@{types}!pygments.lexers.igor.IgorLexer@{pygments.lexers.igor.IgorLexer}}
+\doxysubsubsection{\texorpdfstring{types}{types}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+igor.\+Igor\+Lexer.\+types\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (}
+\DoxyCodeLine{        \textcolor{stringliteral}{'variable'}, \textcolor{stringliteral}{'string'}, \textcolor{stringliteral}{'constant'}, \textcolor{stringliteral}{'strconstant'}, \textcolor{stringliteral}{'NVAR'}, \textcolor{stringliteral}{'SVAR'}, \textcolor{stringliteral}{'WAVE'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'STRUCT'}, \textcolor{stringliteral}{'dfref'}, \textcolor{stringliteral}{'funcref'}, \textcolor{stringliteral}{'char'}, \textcolor{stringliteral}{'uchar'}, \textcolor{stringliteral}{'int16'}, \textcolor{stringliteral}{'uint16'}, \textcolor{stringliteral}{'int32'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'uint32'}, \textcolor{stringliteral}{'int64'}, \textcolor{stringliteral}{'uint64'}, \textcolor{stringliteral}{'float'}, \textcolor{stringliteral}{'double'}}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/igor.\+py\end{DoxyCompactItemize}

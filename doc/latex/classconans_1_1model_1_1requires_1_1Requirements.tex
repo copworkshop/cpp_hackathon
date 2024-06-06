@@ -1,0 +1,81 @@
+\hypertarget{classconans_1_1model_1_1requires_1_1Requirements}{}\doxysection{conans.\+model.\+requires.\+Requirements Class Reference}
+\label{classconans_1_1model_1_1requires_1_1Requirements}\index{conans.model.requires.Requirements@{conans.model.requires.Requirements}}
+
+
+Inheritance diagram for conans.\+model.\+requires.\+Requirements\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+model.\+requires.\+Requirements\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1requires_1_1Requirements_a888e10233466b9a69cc54954bfecc69d}\label{classconans_1_1model_1_1requires_1_1Requirements_a888e10233466b9a69cc54954bfecc69d}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, $\ast$args)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1requires_1_1Requirements_ab4c4a148cd36d2dbb7ba945dd7dec3c7}{copy}} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1requires_1_1Requirements_a7068ea726b9b03a9b1ae5007272d373c}\label{classconans_1_1model_1_1requires_1_1Requirements_a7068ea726b9b03a9b1ae5007272d373c}} 
+def {\bfseries iteritems} (self)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1requires_1_1Requirements_a76d1a2550bfa7febd7482f7fe0ced605}{add}} (self, reference, private=False, override=False)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1requires_1_1Requirements_a80408d4c6d643f87f15805f60a1949f3}\label{classconans_1_1model_1_1requires_1_1Requirements_a80408d4c6d643f87f15805f60a1949f3}} 
+def {\bfseries add\+\_\+ref} (self, ref, private=False, override=False)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1requires_1_1Requirements_a13941a3b7e2a8d14a5d91ac53ede048a}\label{classconans_1_1model_1_1requires_1_1Requirements_a13941a3b7e2a8d14a5d91ac53ede048a}} 
+def {\bfseries override} (self, ref)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1requires_1_1Requirements_a0d570a503016775f596abee6eb566dec}{update}} (self, down\+\_\+reqs, output, own\+\_\+ref, down\+\_\+ref)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1requires_1_1Requirements_aedddccfb42de5e328c2de358a0c69bd3}\label{classconans_1_1model_1_1requires_1_1Requirements_aedddccfb42de5e328c2de358a0c69bd3}} 
+def {\bfseries \+\_\+\+\_\+call\+\_\+\+\_\+} (self, reference, private=False, override=False, $\ast$$\ast$kwargs)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1requires_1_1Requirements_aa1cbcc01d24cf18cb7878424184fd689}\label{classconans_1_1model_1_1requires_1_1Requirements_aa1cbcc01d24cf18cb7878424184fd689}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} {name: Requirement} in order, e.g. {"Hello": Requirement for Hello}
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1model_1_1requires_1_1Requirements_a76d1a2550bfa7febd7482f7fe0ced605}\label{classconans_1_1model_1_1requires_1_1Requirements_a76d1a2550bfa7febd7482f7fe0ced605}} 
+\index{conans.model.requires.Requirements@{conans.model.requires.Requirements}!add@{add}}
+\index{add@{add}!conans.model.requires.Requirements@{conans.model.requires.Requirements}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily def conans.\+model.\+requires.\+Requirements.\+add (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{reference,  }\item[{}]{private = {\ttfamily False},  }\item[{}]{override = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} to define requirements by the user in text, prior to any propagation
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1requires_1_1Requirements_ab4c4a148cd36d2dbb7ba945dd7dec3c7}\label{classconans_1_1model_1_1requires_1_1Requirements_ab4c4a148cd36d2dbb7ba945dd7dec3c7}} 
+\index{conans.model.requires.Requirements@{conans.model.requires.Requirements}!copy@{copy}}
+\index{copy@{copy}!conans.model.requires.Requirements@{conans.model.requires.Requirements}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily def conans.\+model.\+requires.\+Requirements.\+copy (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} We need a custom copy as the normal one requires __init__ to be
+properly defined. This is not a deep-copy, in fact, requirements in the dict
+are changed by RangeResolver, and are propagated upstream
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1requires_1_1Requirements_a0d570a503016775f596abee6eb566dec}\label{classconans_1_1model_1_1requires_1_1Requirements_a0d570a503016775f596abee6eb566dec}} 
+\index{conans.model.requires.Requirements@{conans.model.requires.Requirements}!update@{update}}
+\index{update@{update}!conans.model.requires.Requirements@{conans.model.requires.Requirements}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily def conans.\+model.\+requires.\+Requirements.\+update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{down\+\_\+reqs,  }\item[{}]{output,  }\item[{}]{own\+\_\+ref,  }\item[{}]{down\+\_\+ref }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Compute actual requirement values when downstream values are defined
+param down_reqs: the current requirements as coming from downstream to override
+                 current requirements
+param own_ref: ConanFileReference of the current conanfile
+param down_ref: ConanFileReference of the downstream that is overriding values or None
+return: new Requirements() value to be passed upstream
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/model/requires.\+py\end{DoxyCompactItemize}

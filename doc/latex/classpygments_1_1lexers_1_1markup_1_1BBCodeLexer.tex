@@ -1,0 +1,74 @@
+\hypertarget{classpygments_1_1lexers_1_1markup_1_1BBCodeLexer}{}\doxysection{pygments.\+lexers.\+markup.\+BBCode\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1markup_1_1BBCodeLexer}\index{pygments.lexers.markup.BBCodeLexer@{pygments.lexers.markup.BBCodeLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+markup.\+BBCode\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+markup.\+BBCode\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1BBCodeLexer_a7bfa503304c2ebe5527fe60f63ceface}\label{classpygments_1_1lexers_1_1markup_1_1BBCodeLexer_a7bfa503304c2ebe5527fe60f63ceface}} 
+string {\bfseries name} = \textquotesingle{}BBCode\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1BBCodeLexer_a2911cab5407698d7af9af56b2aa1b5bf}\label{classpygments_1_1lexers_1_1markup_1_1BBCodeLexer_a2911cab5407698d7af9af56b2aa1b5bf}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}bbcode\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1BBCodeLexer_a3df48844d49dece4188f472303196674}\label{classpygments_1_1lexers_1_1markup_1_1BBCodeLexer_a3df48844d49dece4188f472303196674}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/bbcode\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1BBCodeLexer_ae1d6b72d5a073495d7c43117ca678c91}\label{classpygments_1_1lexers_1_1markup_1_1BBCodeLexer_ae1d6b72d5a073495d7c43117ca678c91}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+bbcode.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1BBCodeLexer_a8698e1640ea8ceea96d64bd3952d76c7}\label{classpygments_1_1lexers_1_1markup_1_1BBCodeLexer_a8698e1640ea8ceea96d64bd3952d76c7}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}0.\+6\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A lexer that highlights BBCode(-like) syntax.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1markup_1_1BBCodeLexer_afb1ff7f37ed007a57a294e9f0b0fbb5e}\label{classpygments_1_1lexers_1_1markup_1_1BBCodeLexer_afb1ff7f37ed007a57a294e9f0b0fbb5e}} 
+\index{pygments.lexers.markup.BBCodeLexer@{pygments.lexers.markup.BBCodeLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.markup.BBCodeLexer@{pygments.lexers.markup.BBCodeLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+markup.\+BBCode\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^[]+'}, Text),}
+\DoxyCodeLine{            \textcolor{comment}{\# tag/end tag begin}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)[/?\(\backslash\)w+'}, Keyword, \textcolor{stringliteral}{'tag'}),}
+\DoxyCodeLine{            \textcolor{comment}{\# stray bracket}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)['}, Text),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'tag'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Text),}
+\DoxyCodeLine{            \textcolor{comment}{\# attribute with value}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)w+)(=)("{}?[\string^\(\backslash\)s"{}\(\backslash\)]]+"{}?)'},}
+\DoxyCodeLine{             bygroups(Name.Attribute, Operator, String)),}
+\DoxyCodeLine{            \textcolor{comment}{\# tag argument (a la [color=green])}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(=)("{}?[\string^\(\backslash\)s"{}\(\backslash\)]]+"{}?)'},}
+\DoxyCodeLine{             bygroups(Operator, String)),}
+\DoxyCodeLine{            \textcolor{comment}{\# tag end}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)]'}, Keyword, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/markup.\+py\end{DoxyCompactItemize}

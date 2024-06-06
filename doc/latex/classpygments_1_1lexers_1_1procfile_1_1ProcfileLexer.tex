@@ -1,0 +1,69 @@
+\hypertarget{classpygments_1_1lexers_1_1procfile_1_1ProcfileLexer}{}\doxysection{pygments.\+lexers.\+procfile.\+Procfile\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1procfile_1_1ProcfileLexer}\index{pygments.lexers.procfile.ProcfileLexer@{pygments.lexers.procfile.ProcfileLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+procfile.\+Procfile\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+procfile.\+Procfile\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1procfile_1_1ProcfileLexer_ac486cda7ad850ba02f075163f475e50f}\label{classpygments_1_1lexers_1_1procfile_1_1ProcfileLexer_ac486cda7ad850ba02f075163f475e50f}} 
+string {\bfseries name} = \textquotesingle{}Procfile\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1procfile_1_1ProcfileLexer_ad8cbcecc7d91bcdaa8c3685c2e11c5d8}\label{classpygments_1_1lexers_1_1procfile_1_1ProcfileLexer_ad8cbcecc7d91bcdaa8c3685c2e11c5d8}} 
+string {\bfseries url} = \textquotesingle{}https\+://devcenter.\+heroku.\+com/articles/procfile\#procfile-\/\mbox{\hyperlink{namespacepygments_aaac3fa31a38df031be7e8971485e94bb}{format}}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1procfile_1_1ProcfileLexer_a7743b6bbaff6b8175d7064c79ba86d3f}\label{classpygments_1_1lexers_1_1procfile_1_1ProcfileLexer_a7743b6bbaff6b8175d7064c79ba86d3f}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}procfile\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1procfile_1_1ProcfileLexer_ae776e4c4116b6ea643f1e77951b3bc2a}\label{classpygments_1_1lexers_1_1procfile_1_1ProcfileLexer_ae776e4c4116b6ea643f1e77951b3bc2a}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}Procfile\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1procfile_1_1ProcfileLexer_a83ea473871d58c4ac9ed3df5912d3e8b}\label{classpygments_1_1lexers_1_1procfile_1_1ProcfileLexer_a83ea473871d58c4ac9ed3df5912d3e8b}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+10\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for Procfile file format.
+
+The format is used to run processes on Heroku or is used by Foreman or
+Honcho tools.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1procfile_1_1ProcfileLexer_a76eeb0e5fb0fcac9de2717799b9afece}\label{classpygments_1_1lexers_1_1procfile_1_1ProcfileLexer_a76eeb0e5fb0fcac9de2717799b9afece}} 
+\index{pygments.lexers.procfile.ProcfileLexer@{pygments.lexers.procfile.ProcfileLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.procfile.ProcfileLexer@{pygments.lexers.procfile.ProcfileLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+procfile.\+Procfile\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^([a-\/z]+)(:)'}, bygroups(Name.Label, Punctuation)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Text.Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'"{}[\string^"{}]*"{}'}, String),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r"{}'[\string^']*'"{}}, String),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[0-\/9]+'}, Number.Integer),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\$[a-\/zA-\/Z\_][\(\backslash\)w]*'}, Name.Variable),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)w+)(=)(\(\backslash\)w+)'}, bygroups(Name.Variable, Punctuation, String)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'([\(\backslash\)w\(\backslash\)-\/\(\backslash\)./]+)'}, Text),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/procfile.\+py\end{DoxyCompactItemize}

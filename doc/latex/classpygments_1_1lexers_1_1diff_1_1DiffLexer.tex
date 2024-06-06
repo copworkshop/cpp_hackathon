@@ -1,0 +1,104 @@
+\hypertarget{classpygments_1_1lexers_1_1diff_1_1DiffLexer}{}\doxysection{pygments.\+lexers.\+diff.\+Diff\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1diff_1_1DiffLexer}\index{pygments.lexers.diff.DiffLexer@{pygments.lexers.diff.DiffLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+diff.\+Diff\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+diff.\+Diff\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1diff_1_1DiffLexer_a641b393d47b2811b1a7126cdad4a5c1f}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1diff_1_1DiffLexer_af3c7766d23901fa58e6d9df0f4f5e928}\label{classpygments_1_1lexers_1_1diff_1_1DiffLexer_af3c7766d23901fa58e6d9df0f4f5e928}} 
+string {\bfseries name} = \textquotesingle{}Diff\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1diff_1_1DiffLexer_a39359cf81a552e56b576c403d411af9c}\label{classpygments_1_1lexers_1_1diff_1_1DiffLexer_a39359cf81a552e56b576c403d411af9c}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}diff\textquotesingle{}, \textquotesingle{}udiff\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1diff_1_1DiffLexer_a82c914fda6597f602e4fedd81f7ece24}\label{classpygments_1_1lexers_1_1diff_1_1DiffLexer_a82c914fda6597f602e4fedd81f7ece24}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.diff\textquotesingle{}, \textquotesingle{}$\ast$.patch\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1diff_1_1DiffLexer_abe937318cca5c0ee9ed29cfb4323bc0e}\label{classpygments_1_1lexers_1_1diff_1_1DiffLexer_abe937318cca5c0ee9ed29cfb4323bc0e}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/diff\textquotesingle{}, \textquotesingle{}text/x-\/patch\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1diff_1_1DiffLexer_a21490da598718551acbdc452ba293a19}\label{classpygments_1_1lexers_1_1diff_1_1DiffLexer_a21490da598718551acbdc452ba293a19}} 
+string {\bfseries url} = \textquotesingle{}https\+://en.\+wikipedia.\+org/wiki/Diff\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1diff_1_1DiffLexer_a2ac23457f0f8da87c065ae16a0d3d4e3}\label{classpygments_1_1lexers_1_1diff_1_1DiffLexer_a2ac23457f0f8da87c065ae16a0d3d4e3}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for unified or context-style diffs or patches.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1diff_1_1DiffLexer_a641b393d47b2811b1a7126cdad4a5c1f}\label{classpygments_1_1lexers_1_1diff_1_1DiffLexer_a641b393d47b2811b1a7126cdad4a5c1f}} 
+\index{pygments.lexers.diff.DiffLexer@{pygments.lexers.diff.DiffLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.diff.DiffLexer@{pygments.lexers.diff.DiffLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+diff.\+Diff\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1diff_1_1DiffLexer_a2f4a84dc53edbdda2d27a8d61acd881f}\label{classpygments_1_1lexers_1_1diff_1_1DiffLexer_a2f4a84dc53edbdda2d27a8d61acd881f}} 
+\index{pygments.lexers.diff.DiffLexer@{pygments.lexers.diff.DiffLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.diff.DiffLexer@{pygments.lexers.diff.DiffLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+diff.\+Diff\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'( )(.*)(\(\backslash\)n)'}, bygroups(Whitespace, Text, Whitespace)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(!.*|-\/-\/-\/)(\(\backslash\)n)'}, bygroups(Generic.Strong, Whitespace)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'((?:< |-\/).*)(\(\backslash\)n)'}, bygroups(Generic.Deleted, Whitespace)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'((?:> |\(\backslash\)+).*)(\(\backslash\)n)'}, bygroups(Generic.Inserted, Whitespace)),}
+\DoxyCodeLine{            (}
+\DoxyCodeLine{                \textcolor{stringliteral}{r'(@.*|\(\backslash\)d(?:,\(\backslash\)d+)?(?:a|c|d)\(\backslash\)d+(?:,\(\backslash\)d+)?)(\(\backslash\)n)'},}
+\DoxyCodeLine{                bygroups(Generic.Subheading, Whitespace),}
+\DoxyCodeLine{            ),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'((?:[Ii]ndex|diff).*)(\(\backslash\)n)'}, bygroups(Generic.Heading, Whitespace)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(=.*)(\(\backslash\)n)'}, bygroups(Generic.Heading, Whitespace)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(.*)(\(\backslash\)n)'}, bygroups(Text, Whitespace)),}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/diff.\+py\end{DoxyCompactItemize}

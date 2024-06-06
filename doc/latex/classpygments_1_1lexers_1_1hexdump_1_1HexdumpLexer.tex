@@ -1,0 +1,58 @@
+\hypertarget{classpygments_1_1lexers_1_1hexdump_1_1HexdumpLexer}{}\doxysection{pygments.\+lexers.\+hexdump.\+Hexdump\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1hexdump_1_1HexdumpLexer}\index{pygments.lexers.hexdump.HexdumpLexer@{pygments.lexers.hexdump.HexdumpLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+hexdump.\+Hexdump\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+hexdump.\+Hexdump\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1hexdump_1_1HexdumpLexer_ab4f9fb1aac1917e4ef646e45145799ba}\label{classpygments_1_1lexers_1_1hexdump_1_1HexdumpLexer_ab4f9fb1aac1917e4ef646e45145799ba}} 
+string {\bfseries name} = \textquotesingle{}Hexdump\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1hexdump_1_1HexdumpLexer_aac77a1d7ab6e1405f0cef9c77c03de7c}\label{classpygments_1_1lexers_1_1hexdump_1_1HexdumpLexer_aac77a1d7ab6e1405f0cef9c77c03de7c}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}hexdump\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1hexdump_1_1HexdumpLexer_a32bcfd9376c0bfa3c0979f009ec62d8d}\label{classpygments_1_1lexers_1_1hexdump_1_1HexdumpLexer_a32bcfd9376c0bfa3c0979f009ec62d8d}} 
+string {\bfseries url} = \textquotesingle{}https\+://en.\+wikipedia.\+org/wiki/Hex\+\_\+dump\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1hexdump_1_1HexdumpLexer_aeef04fc56736aba79192dbf9487834e7}\label{classpygments_1_1lexers_1_1hexdump_1_1HexdumpLexer_aeef04fc56736aba79192dbf9487834e7}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+1\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1hexdump_1_1HexdumpLexer_a1cbc5e753251a5b1c13d6d49f6285881}\label{classpygments_1_1lexers_1_1hexdump_1_1HexdumpLexer_a1cbc5e753251a5b1c13d6d49f6285881}} 
+string {\bfseries hd} = r\textquotesingle{}\mbox{[}0-\/9A-\/Ha-\/h\mbox{]}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1hexdump_1_1HexdumpLexer_a7d6463178e9fadcbe6c2be819d0877f5}\label{classpygments_1_1lexers_1_1hexdump_1_1HexdumpLexer_a7d6463178e9fadcbe6c2be819d0877f5}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For typical hex dump output formats by the UNIX and GNU/Linux tools ``hexdump``,
+``hd``, ``hexcat``, ``od`` and ``xxd``, and the DOS tool ``DEBUG``. For example:
+
+.. sourcecode:: hexdump
+
+    00000000  7f 45 4c 46 02 01 01 00  00 00 00 00 00 00 00 00  |.ELF............|
+    00000010  02 00 3e 00 01 00 00 00  c5 48 40 00 00 00 00 00  |..>......H@.....|
+
+The specific supported formats are the outputs of:
+
+* ``hexdump FILE``
+* ``hexdump -C FILE`` -- the `canonical` format used in the example.
+* ``hd FILE`` -- same as ``hexdump -C FILE``.
+* ``hexcat FILE``
+* ``od -t x1z FILE``
+* ``xxd FILE``
+* ``DEBUG.EXE FILE.COM`` and entering ``d`` to the prompt.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/hexdump.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\hypertarget{classpygments_1_1lexers_1_1textedit_1_1SedLexer}{}\doxysection{pygments.\+lexers.\+textedit.\+Sed\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1textedit_1_1SedLexer}\index{pygments.lexers.textedit.SedLexer@{pygments.lexers.textedit.SedLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+textedit.\+Sed\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+textedit.\+Sed\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textedit_1_1SedLexer_ab50b304c96e4d7c60df1a89fff504ee3}\label{classpygments_1_1lexers_1_1textedit_1_1SedLexer_ab50b304c96e4d7c60df1a89fff504ee3}} 
+string {\bfseries name} = \textquotesingle{}Sed\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textedit_1_1SedLexer_adf8d12e66a3b4d781eb0608b19416e9c}\label{classpygments_1_1lexers_1_1textedit_1_1SedLexer_adf8d12e66a3b4d781eb0608b19416e9c}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}sed\textquotesingle{}, \textquotesingle{}gsed\textquotesingle{}, \textquotesingle{}ssed\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textedit_1_1SedLexer_a4589bc5f621cb6d56427836fce95788c}\label{classpygments_1_1lexers_1_1textedit_1_1SedLexer_a4589bc5f621cb6d56427836fce95788c}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.sed\textquotesingle{}, \textquotesingle{}$\ast$.\mbox{[}gs\mbox{]}sed\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textedit_1_1SedLexer_a882f2aec46766d38392a133baa08c1ed}\label{classpygments_1_1lexers_1_1textedit_1_1SedLexer_a882f2aec46766d38392a133baa08c1ed}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/sed\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textedit_1_1SedLexer_af987cf50f0eac02efc79e3eb7dfb45f9}\label{classpygments_1_1lexers_1_1textedit_1_1SedLexer_af987cf50f0eac02efc79e3eb7dfb45f9}} 
+string {\bfseries url} = \textquotesingle{}https\+://en.\+wikipedia.\+org/wiki/Sed\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textedit_1_1SedLexer_a48fdae382c093d9dbee8bf067e92fa01}\label{classpygments_1_1lexers_1_1textedit_1_1SedLexer_a48fdae382c093d9dbee8bf067e92fa01}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textedit_1_1SedLexer_aa1811bcb9ba134fe344f6bbaa08b62db}\label{classpygments_1_1lexers_1_1textedit_1_1SedLexer_aa1811bcb9ba134fe344f6bbaa08b62db}} 
+{\bfseries flags} = re.\+MULTILINE
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for Sed script files.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1textedit_1_1SedLexer_aafb7e81a18b9b6372d514fb9e0a285d5}\label{classpygments_1_1lexers_1_1textedit_1_1SedLexer_aafb7e81a18b9b6372d514fb9e0a285d5}} 
+\index{pygments.lexers.textedit.SedLexer@{pygments.lexers.textedit.SedLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.textedit.SedLexer@{pygments.lexers.textedit.SedLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+textedit.\+Sed\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#.*\$'}, Comment.Single),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[0-\/9]+'}, Number.Integer),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\$'}, Operator),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\{\};,!]'}, Punctuation),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[dDFgGhHlnNpPqQxz=]'}, Keyword),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'([berRtTvwW:])([\string^;\(\backslash\)n]*)'}, bygroups(Keyword, String.Single)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'([aci])((?:.*?\(\backslash\)\(\backslash\)\(\backslash\)n)*(?:.*?[\string^\(\backslash\)\(\backslash\)]\$))'}, bygroups(Keyword, String.Double)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'([qQ])([0-\/9]*)'}, bygroups(Keyword, Number.Integer)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(/)'} + \_inside\_delims + \textcolor{stringliteral}{r'(/)'}, bygroups(Punctuation, String.Regex, Punctuation)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)\(\backslash\)(.))'} + \_inside\_delims + \textcolor{stringliteral}{r'(\(\backslash\)2)'},}
+\DoxyCodeLine{             bygroups(Punctuation, \textcolor{keywordtype}{None}, String.Regex, Punctuation)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(y)(.)'} + \_inside\_delims + \textcolor{stringliteral}{r'(\(\backslash\)2)'} + \_inside\_delims + \textcolor{stringliteral}{r'(\(\backslash\)2)'},}
+\DoxyCodeLine{             bygroups(Keyword, Punctuation, String.Single, Punctuation, String.Single, Punctuation)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(s)(.)'} + \_inside\_delims + \textcolor{stringliteral}{r'(\(\backslash\)2)'} + \_inside\_delims + \textcolor{stringliteral}{r'(\(\backslash\)2)((?:[gpeIiMm]|[0-\/9])*)'},}
+\DoxyCodeLine{             bygroups(Keyword, Punctuation, String.Regex, Punctuation, String.Single, Punctuation,}
+\DoxyCodeLine{                      Keyword))}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/textedit.\+py\end{DoxyCompactItemize}

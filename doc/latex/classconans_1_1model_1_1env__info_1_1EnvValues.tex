@@ -1,0 +1,93 @@
+\hypertarget{classconans_1_1model_1_1env__info_1_1EnvValues}{}\doxysection{conans.\+model.\+env\+\_\+info.\+Env\+Values Class Reference}
+\label{classconans_1_1model_1_1env__info_1_1EnvValues}\index{conans.model.env\_info.EnvValues@{conans.model.env\_info.EnvValues}}
+
+
+Inheritance diagram for conans.\+model.\+env\+\_\+info.\+Env\+Values\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+model.\+env\+\_\+info.\+Env\+Values\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1env__info_1_1EnvValues_a91d887f95439eb017464a606a646ce71}\label{classconans_1_1model_1_1env__info_1_1EnvValues_a91d887f95439eb017464a606a646ce71}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1env__info_1_1EnvValues_a8abe1c061b9bca740adb878beff95031}\label{classconans_1_1model_1_1env__info_1_1EnvValues_a8abe1c061b9bca740adb878beff95031}} 
+def {\bfseries copy} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1env__info_1_1EnvValues_ae5f18887b7c0817c1b4f6dbddef4f443}\label{classconans_1_1model_1_1env__info_1_1EnvValues_ae5f18887b7c0817c1b4f6dbddef4f443}} 
+def {\bfseries dumps} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1env__info_1_1EnvValues_a6b1d42dabeec742fc639741a1f24722b}\label{classconans_1_1model_1_1env__info_1_1EnvValues_a6b1d42dabeec742fc639741a1f24722b}} 
+def {\bfseries data} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1env__info_1_1EnvValues_a27d55454bb78cfb74059d07293eed9d1}\label{classconans_1_1model_1_1env__info_1_1EnvValues_a27d55454bb78cfb74059d07293eed9d1}} 
+def {\bfseries add} (self, name, value, package=None)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1env__info_1_1EnvValues_a3503ed45221363d8d43957c37e4fa91f}\label{classconans_1_1model_1_1env__info_1_1EnvValues_a3503ed45221363d8d43957c37e4fa91f}} 
+def {\bfseries remove} (self, name, package=None)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1env__info_1_1EnvValues_ae839abf29667fec5a439971834f3897a}{update\+\_\+replace}} (self, key, value)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1env__info_1_1EnvValues_a89fcea85ae752b12c81e536a5a3c7fab}{update}} (self, env\+\_\+obj)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1env__info_1_1EnvValues_ada1f99e3cc5e8ca5741ef9ef394d5373}{env\+\_\+dicts}} (self, package\+\_\+name, version=None, user=None, channel=None)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1env__info_1_1EnvValues_ae0c563b8e1b93fcc7a8bc5ff5a45ef5e}\label{classconans_1_1model_1_1env__info_1_1EnvValues_ae0c563b8e1b93fcc7a8bc5ff5a45ef5e}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1env__info_1_1EnvValues_afbc9c9e60391d9573ef8fbdc1cca5c87}\label{classconans_1_1model_1_1env__info_1_1EnvValues_afbc9c9e60391d9573ef8fbdc1cca5c87}} 
+def {\bfseries load\+\_\+value} (the\+\_\+value)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1env__info_1_1EnvValues_ab1593972e80b77712eef904744c04969}\label{classconans_1_1model_1_1env__info_1_1EnvValues_ab1593972e80b77712eef904744c04969}} 
+def {\bfseries loads} (text)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} Object to represent the introduced env values entered by the user
+with the -e or profiles etc.
+    self._data is a dictionary with: {package: {var: value}}
+        "package" can be None if the var is global.
+        "value" can be a list or a string. If it's a list the variable
+        is appendable like PATH or PYTHONPATH
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1model_1_1env__info_1_1EnvValues_ada1f99e3cc5e8ca5741ef9ef394d5373}\label{classconans_1_1model_1_1env__info_1_1EnvValues_ada1f99e3cc5e8ca5741ef9ef394d5373}} 
+\index{conans.model.env\_info.EnvValues@{conans.model.env\_info.EnvValues}!env\_dicts@{env\_dicts}}
+\index{env\_dicts@{env\_dicts}!conans.model.env\_info.EnvValues@{conans.model.env\_info.EnvValues}}
+\doxysubsubsection{\texorpdfstring{env\_dicts()}{env\_dicts()}}
+{\footnotesize\ttfamily def conans.\+model.\+env\+\_\+info.\+Env\+Values.\+env\+\_\+dicts (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{package\+\_\+name,  }\item[{}]{version = {\ttfamily None},  }\item[{}]{user = {\ttfamily None},  }\item[{}]{channel = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns two dicts of env variables that applies to package 'name',
+ the first for simple values A=1, and the second for multiple A=1;2;3\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1env__info_1_1EnvValues_a89fcea85ae752b12c81e536a5a3c7fab}\label{classconans_1_1model_1_1env__info_1_1EnvValues_a89fcea85ae752b12c81e536a5a3c7fab}} 
+\index{conans.model.env\_info.EnvValues@{conans.model.env\_info.EnvValues}!update@{update}}
+\index{update@{update}!conans.model.env\_info.EnvValues@{conans.model.env\_info.EnvValues}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily def conans.\+model.\+env\+\_\+info.\+Env\+Values.\+update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{env\+\_\+obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}accepts other EnvValues object or DepsEnvInfo
+   it prioritize the values that are already at self._data
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1env__info_1_1EnvValues_ae839abf29667fec5a439971834f3897a}\label{classconans_1_1model_1_1env__info_1_1EnvValues_ae839abf29667fec5a439971834f3897a}} 
+\index{conans.model.env\_info.EnvValues@{conans.model.env\_info.EnvValues}!update\_replace@{update\_replace}}
+\index{update\_replace@{update\_replace}!conans.model.env\_info.EnvValues@{conans.model.env\_info.EnvValues}}
+\doxysubsubsection{\texorpdfstring{update\_replace()}{update\_replace()}}
+{\footnotesize\ttfamily def conans.\+model.\+env\+\_\+info.\+Env\+Values.\+update\+\_\+replace (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} method useful for command "conan profile update"
+to execute real update instead of soft update
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/model/env\+\_\+info.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,74 @@
+\hypertarget{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool}{}\doxysection{urllib3.\+connectionpool.\+HTTPSConnection\+Pool Class Reference}
+\label{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool}\index{urllib3.connectionpool.HTTPSConnectionPool@{urllib3.connectionpool.HTTPSConnectionPool}}
+
+
+Inheritance diagram for urllib3.\+connectionpool.\+HTTPSConnection\+Pool\+:
+% FIG 0
+
+
+Collaboration diagram for urllib3.\+connectionpool.\+HTTPSConnection\+Pool\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_a868581088c6523775390af0265a2e1f2}\label{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_a868581088c6523775390af0265a2e1f2}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, host, port=None, strict=False, timeout=Timeout.\+DEFAULT\+\_\+\+TIMEOUT, maxsize=1, block=False, headers=None, retries=None, \+\_\+proxy=None, \+\_\+proxy\+\_\+headers=None, key\+\_\+file=None, cert\+\_\+file=None, cert\+\_\+reqs=None, key\+\_\+password=None, ca\+\_\+certs=None, ssl\+\_\+version=None, assert\+\_\+hostname=None, assert\+\_\+fingerprint=None, ca\+\_\+cert\+\_\+dir=None, $\ast$$\ast$conn\+\_\+kw)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_a055d620389246cfd0058cb5e51fd2543}\label{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_a055d620389246cfd0058cb5e51fd2543}} 
+{\bfseries key\+\_\+file}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_a9725e15b578c86f8edabd68badba76a7}\label{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_a9725e15b578c86f8edabd68badba76a7}} 
+{\bfseries cert\+\_\+file}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_a87421d4b8fed654117f289face297e88}\label{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_a87421d4b8fed654117f289face297e88}} 
+{\bfseries cert\+\_\+reqs}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_ae415f349c16d09515a2d7da1d737d4d0}\label{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_ae415f349c16d09515a2d7da1d737d4d0}} 
+{\bfseries key\+\_\+password}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_a019c739f1b1cbe78d0165014ff853e2f}\label{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_a019c739f1b1cbe78d0165014ff853e2f}} 
+{\bfseries ca\+\_\+certs}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_a7ac21ec6444c0ee18cfe595655829534}\label{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_a7ac21ec6444c0ee18cfe595655829534}} 
+{\bfseries ca\+\_\+cert\+\_\+dir}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_a20e5ed6093cf846b9c63d038cf50c77c}\label{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_a20e5ed6093cf846b9c63d038cf50c77c}} 
+{\bfseries ssl\+\_\+version}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_ab7d703b580a2c651c1a286d332ca6ec4}\label{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_ab7d703b580a2c651c1a286d332ca6ec4}} 
+{\bfseries assert\+\_\+hostname}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_acb7f94858970a6aa67a14f5b2f4a0c7f}\label{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_acb7f94858970a6aa67a14f5b2f4a0c7f}} 
+{\bfseries assert\+\_\+fingerprint}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_a6db91648cb04f3a2c01b6ac294309d01}\label{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_a6db91648cb04f3a2c01b6ac294309d01}} 
+string {\bfseries scheme} = \char`\"{}https\char`\"{}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_a0158a258d8524dbfbf1cab69a808d2b2}\label{classurllib3_1_1connectionpool_1_1HTTPSConnectionPool_a0158a258d8524dbfbf1cab69a808d2b2}} 
+{\bfseries Connection\+Cls} = \mbox{\hyperlink{classurllib3_1_1connection_1_1HTTPSConnection}{HTTPSConnection}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Same as :class:`.HTTPConnectionPool`, but HTTPS.
+
+:class:`.HTTPSConnection` uses one of ``assert_fingerprint``,
+``assert_hostname`` and ``host`` in this order to verify connections.
+If ``assert_hostname`` is False, no verification is done.
+
+The ``key_file``, ``cert_file``, ``cert_reqs``, ``ca_certs``,
+``ca_cert_dir``, ``ssl_version``, ``key_password`` are only used if :mod:`ssl`
+is available and are fed into :meth:`urllib3.util.ssl_wrap_socket` to upgrade
+the connection socket into an SSL socket.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/urllib3/connectionpool.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,104 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahJavascriptLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Cheetah\+Javascript\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1CheetahJavascriptLexer}\index{pygments.lexers.templates.CheetahJavascriptLexer@{pygments.lexers.templates.CheetahJavascriptLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Cheetah\+Javascript\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Cheetah\+Javascript\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1CheetahJavascriptLexer_a38f0b5c53066584b9fc6a78c4c5b3f2e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahJavascriptLexer_ae7bef8b29a2a377f8b31d0896efbff53}\label{classpygments_1_1lexers_1_1templates_1_1CheetahJavascriptLexer_ae7bef8b29a2a377f8b31d0896efbff53}} 
+string {\bfseries name} = \textquotesingle{}Java\+Script+Cheetah\textquotesingle{}
+\item 
+list {\bfseries aliases}
+\item 
+list {\bfseries mimetypes}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahJavascriptLexer_a1fc0a0361d42821be3241ef550c81ced}\label{classpygments_1_1lexers_1_1templates_1_1CheetahJavascriptLexer_a1fc0a0361d42821be3241ef550c81ced}} 
+string {\bfseries url} = \textquotesingle{}http\+://www.\+cheetahtemplate.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahJavascriptLexer_a3693e516131917bd28b7396d9b7b38a3}\label{classpygments_1_1lexers_1_1templates_1_1CheetahJavascriptLexer_a3693e516131917bd28b7396d9b7b38a3}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Subclass of the `CheetahLexer` that highlights unlexed data
+with the `JavascriptLexer`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahJavascriptLexer_a38f0b5c53066584b9fc6a78c4c5b3f2e}\label{classpygments_1_1lexers_1_1templates_1_1CheetahJavascriptLexer_a38f0b5c53066584b9fc6a78c4c5b3f2e}} 
+\index{pygments.lexers.templates.CheetahJavascriptLexer@{pygments.lexers.templates.CheetahJavascriptLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.templates.CheetahJavascriptLexer@{pygments.lexers.templates.CheetahJavascriptLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Cheetah\+Javascript\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahJavascriptLexer_afa364aefa66bf4207889ccb21c546554}\label{classpygments_1_1lexers_1_1templates_1_1CheetahJavascriptLexer_afa364aefa66bf4207889ccb21c546554}} 
+\index{pygments.lexers.templates.CheetahJavascriptLexer@{pygments.lexers.templates.CheetahJavascriptLexer}!aliases@{aliases}}
+\index{aliases@{aliases}!pygments.lexers.templates.CheetahJavascriptLexer@{pygments.lexers.templates.CheetahJavascriptLexer}}
+\doxysubsubsection{\texorpdfstring{aliases}{aliases}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+templates.\+Cheetah\+Javascript\+Lexer.\+aliases\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [\textcolor{stringliteral}{'javascript+cheetah'}, \textcolor{stringliteral}{'js+cheetah'},}
+\DoxyCodeLine{               \textcolor{stringliteral}{'javascript+spitfire'}, \textcolor{stringliteral}{'js+spitfire'}]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1CheetahJavascriptLexer_abae253a652f7a1f601d91ae5797b10a4}\label{classpygments_1_1lexers_1_1templates_1_1CheetahJavascriptLexer_abae253a652f7a1f601d91ae5797b10a4}} 
+\index{pygments.lexers.templates.CheetahJavascriptLexer@{pygments.lexers.templates.CheetahJavascriptLexer}!mimetypes@{mimetypes}}
+\index{mimetypes@{mimetypes}!pygments.lexers.templates.CheetahJavascriptLexer@{pygments.lexers.templates.CheetahJavascriptLexer}}
+\doxysubsubsection{\texorpdfstring{mimetypes}{mimetypes}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+templates.\+Cheetah\+Javascript\+Lexer.\+mimetypes\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [\textcolor{stringliteral}{'application/x-\/javascript+cheetah'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'text/x-\/javascript+cheetah'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'text/javascript+cheetah'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'application/x-\/javascript+spitfire'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'text/x-\/javascript+spitfire'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'text/javascript+spitfire'}]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

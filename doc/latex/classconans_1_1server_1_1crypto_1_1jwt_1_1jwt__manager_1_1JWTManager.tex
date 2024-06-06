@@ -1,0 +1,76 @@
+\hypertarget{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__manager_1_1JWTManager}{}\doxysection{conans.\+server.\+crypto.\+jwt.\+jwt\+\_\+manager.\+JWTManager Class Reference}
+\label{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__manager_1_1JWTManager}\index{conans.server.crypto.jwt.jwt\_manager.JWTManager@{conans.server.crypto.jwt.jwt\_manager.JWTManager}}
+
+
+Inheritance diagram for conans.\+server.\+crypto.\+jwt.\+jwt\+\_\+manager.\+JWTManager\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+server.\+crypto.\+jwt.\+jwt\+\_\+manager.\+JWTManager\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__manager_1_1JWTManager_afa42222eaf180300653843c551be6125}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, secret, expire\+\_\+time)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__manager_1_1JWTManager_a1cb19b4c745b540247d7d54659883de8}{get\+\_\+token\+\_\+for}} (self, profile\+\_\+fields=None)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__manager_1_1JWTManager_a8bb4c7b67d30cb494888219777f1803d}{get\+\_\+profile}} (self, token)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__manager_1_1JWTManager_a04c05f23253f31a912b418a8a5f50da5}\label{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__manager_1_1JWTManager_a04c05f23253f31a912b418a8a5f50da5}} 
+{\bfseries secret}
+\item 
+\mbox{\Hypertarget{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__manager_1_1JWTManager_a0af445f2e29d7c5d141178f986ab1bdd}\label{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__manager_1_1JWTManager_a0af445f2e29d7c5d141178f986ab1bdd}} 
+{\bfseries expire\+\_\+time}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}    Handles the JWT token generation and encryption.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__manager_1_1JWTManager_afa42222eaf180300653843c551be6125}\label{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__manager_1_1JWTManager_afa42222eaf180300653843c551be6125}} 
+\index{conans.server.crypto.jwt.jwt\_manager.JWTManager@{conans.server.crypto.jwt.jwt\_manager.JWTManager}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!conans.server.crypto.jwt.jwt\_manager.JWTManager@{conans.server.crypto.jwt.jwt\_manager.JWTManager}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def conans.\+server.\+crypto.\+jwt.\+jwt\+\_\+manager.\+JWTManager.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{secret,  }\item[{}]{expire\+\_\+time }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}expire_time is a timedelta
+   secret is a string with the secret encoding key\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__updown__manager_1_1JWTUpDownAuthManager_a5f5e92b40c3953bebb5345fa78df50de}{conans.\+server.\+crypto.\+jwt.\+jwt\+\_\+updown\+\_\+manager.\+JWTUp\+Down\+Auth\+Manager}}, and \mbox{\hyperlink{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__credentials__manager_1_1JWTCredentialsManager_a251044cda3508e66bb2138bee28f0338}{conans.\+server.\+crypto.\+jwt.\+jwt\+\_\+credentials\+\_\+manager.\+JWTCredentials\+Manager}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__manager_1_1JWTManager_a8bb4c7b67d30cb494888219777f1803d}\label{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__manager_1_1JWTManager_a8bb4c7b67d30cb494888219777f1803d}} 
+\index{conans.server.crypto.jwt.jwt\_manager.JWTManager@{conans.server.crypto.jwt.jwt\_manager.JWTManager}!get\_profile@{get\_profile}}
+\index{get\_profile@{get\_profile}!conans.server.crypto.jwt.jwt\_manager.JWTManager@{conans.server.crypto.jwt.jwt\_manager.JWTManager}}
+\doxysubsubsection{\texorpdfstring{get\_profile()}{get\_profile()}}
+{\footnotesize\ttfamily def conans.\+server.\+crypto.\+jwt.\+jwt\+\_\+manager.\+JWTManager.\+get\+\_\+profile (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{token }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets the user from credentials object. None if no credentials.
+Can raise jwt.ExpiredSignature and jwt.DecodeError\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__manager_1_1JWTManager_a1cb19b4c745b540247d7d54659883de8}\label{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__manager_1_1JWTManager_a1cb19b4c745b540247d7d54659883de8}} 
+\index{conans.server.crypto.jwt.jwt\_manager.JWTManager@{conans.server.crypto.jwt.jwt\_manager.JWTManager}!get\_token\_for@{get\_token\_for}}
+\index{get\_token\_for@{get\_token\_for}!conans.server.crypto.jwt.jwt\_manager.JWTManager@{conans.server.crypto.jwt.jwt\_manager.JWTManager}}
+\doxysubsubsection{\texorpdfstring{get\_token\_for()}{get\_token\_for()}}
+{\footnotesize\ttfamily def conans.\+server.\+crypto.\+jwt.\+jwt\+\_\+manager.\+JWTManager.\+get\+\_\+token\+\_\+for (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{profile\+\_\+fields = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generates a token with the provided fields.
+if exp is True, expiration time will be used\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__credentials__manager_1_1JWTCredentialsManager_a1d3a78ec00d914fc37aea14f3d0fd3a5}{conans.\+server.\+crypto.\+jwt.\+jwt\+\_\+credentials\+\_\+manager.\+JWTCredentials\+Manager}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/server/crypto/jwt/jwt\+\_\+manager.\+py\end{DoxyCompactItemize}

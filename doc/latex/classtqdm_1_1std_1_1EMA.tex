@@ -1,0 +1,62 @@
+\hypertarget{classtqdm_1_1std_1_1EMA}{}\doxysection{tqdm.\+std.\+EMA Class Reference}
+\label{classtqdm_1_1std_1_1EMA}\index{tqdm.std.EMA@{tqdm.std.EMA}}
+
+
+Inheritance diagram for tqdm.\+std.\+EMA\+:
+% FIG 0
+
+
+Collaboration diagram for tqdm.\+std.\+EMA\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1EMA_acffa8f89d48e303f1dd3d6da6644325e}\label{classtqdm_1_1std_1_1EMA_acffa8f89d48e303f1dd3d6da6644325e}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, smoothing=0.\+3)
+\item 
+def \mbox{\hyperlink{classtqdm_1_1std_1_1EMA_a75275900faa68a776c8fe2e021520436}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, x=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1EMA_a307b9e4af32298ca467703f27afc3398}\label{classtqdm_1_1std_1_1EMA_a307b9e4af32298ca467703f27afc3398}} 
+{\bfseries alpha}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1EMA_a66ef94aac26ae6eb55ed26ba98107be1}\label{classtqdm_1_1std_1_1EMA_a66ef94aac26ae6eb55ed26ba98107be1}} 
+{\bfseries last}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1std_1_1EMA_aaeedd5d6c26175c0a27955ddafa5c7b8}\label{classtqdm_1_1std_1_1EMA_aaeedd5d6c26175c0a27955ddafa5c7b8}} 
+{\bfseries calls}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Exponential moving average: smoothing to give progressively lower
+weights to older values.
+
+Parameters
+----------
+smoothing  : float, optional
+    Smoothing factor in range [0, 1], [default: 0.3].
+    Increase to give more weight to recent values.
+    Ranges from 0 (yields old value) to 1 (yields new value).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtqdm_1_1std_1_1EMA_a75275900faa68a776c8fe2e021520436}\label{classtqdm_1_1std_1_1EMA_a75275900faa68a776c8fe2e021520436}} 
+\index{tqdm.std.EMA@{tqdm.std.EMA}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!tqdm.std.EMA@{tqdm.std.EMA}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily def tqdm.\+std.\+EMA.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parameters
+----------
+x  : float
+    New value to include in EMA.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/tqdm/std.\+py\end{DoxyCompactItemize}

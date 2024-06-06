@@ -1,0 +1,168 @@
+\hypertarget{classbottle_1_1Router}{}\doxysection{bottle.\+Router Class Reference}
+\label{classbottle_1_1Router}\index{bottle.Router@{bottle.Router}}
+
+
+Inheritance diagram for bottle.\+Router\+:
+% FIG 0
+
+
+Collaboration diagram for bottle.\+Router\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbottle_1_1Router_a9a38e36bbe9e70387aea0adb76f32dee}\label{classbottle_1_1Router_a9a38e36bbe9e70387aea0adb76f32dee}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, strict=False)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Router_ad1657a15307e4368e6d3874215c3d624}{add\+\_\+filter}} (self, name, func)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Router_a5740376fc77982dc1dc6b85145f78c16}{add}} (self, rule, method, target, name=None)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Router_af392e8395678278f813404a9139c89dd}{build}} (self, \+\_\+name, $\ast$anons, $\ast$$\ast$query)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Router_a66bbbb15074eff146aeae009102110ac}{match}} (self, environ)
+\item 
+\mbox{\Hypertarget{classbottle_1_1Router_a9a38e36bbe9e70387aea0adb76f32dee}\label{classbottle_1_1Router_a9a38e36bbe9e70387aea0adb76f32dee}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, strict=False)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Router_ad1657a15307e4368e6d3874215c3d624}{add\+\_\+filter}} (self, name, func)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Router_a5740376fc77982dc1dc6b85145f78c16}{add}} (self, rule, method, target, name=None)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Router_af392e8395678278f813404a9139c89dd}{build}} (self, \+\_\+name, $\ast$anons, $\ast$$\ast$query)
+\item 
+def \mbox{\hyperlink{classbottle_1_1Router_a66bbbb15074eff146aeae009102110ac}{match}} (self, environ)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbottle_1_1Router_afd1e3921be4479ce72e0d590805e2783}\label{classbottle_1_1Router_afd1e3921be4479ce72e0d590805e2783}} 
+{\bfseries rules}
+\item 
+\mbox{\Hypertarget{classbottle_1_1Router_a43285c4169d78d9a2b7ec5fa829c5e0e}\label{classbottle_1_1Router_a43285c4169d78d9a2b7ec5fa829c5e0e}} 
+{\bfseries builder}
+\item 
+\mbox{\Hypertarget{classbottle_1_1Router_a652098d06af1addb7741391e4292ca2e}\label{classbottle_1_1Router_a652098d06af1addb7741391e4292ca2e}} 
+{\bfseries static}
+\item 
+\mbox{\Hypertarget{classbottle_1_1Router_a9575053cf05026fe77665d9e96b1391d}\label{classbottle_1_1Router_a9575053cf05026fe77665d9e96b1391d}} 
+{\bfseries dyna\+\_\+routes}
+\item 
+\mbox{\Hypertarget{classbottle_1_1Router_adf1e8c5eec14e64f600188a8606df5ab}\label{classbottle_1_1Router_adf1e8c5eec14e64f600188a8606df5ab}} 
+{\bfseries dyna\+\_\+regexes}
+\item 
+\mbox{\Hypertarget{classbottle_1_1Router_a76857cfd059aaa5faa2c8d3f49436e51}\label{classbottle_1_1Router_a76857cfd059aaa5faa2c8d3f49436e51}} 
+{\bfseries strict\+\_\+order}
+\item 
+\mbox{\Hypertarget{classbottle_1_1Router_a6a734126f65009a2e1be2a6dd91b810e}\label{classbottle_1_1Router_a6a734126f65009a2e1be2a6dd91b810e}} 
+{\bfseries filters}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbottle_1_1Router_a04ed208cecb44b545882d4c499109759}\label{classbottle_1_1Router_a04ed208cecb44b545882d4c499109759}} 
+string {\bfseries default\+\_\+pattern} = \textquotesingle{}\mbox{[}$^\wedge$/\mbox{]}+\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classbottle_1_1Router_ae759e79e42be80cb743f14b0d47cb972}\label{classbottle_1_1Router_ae759e79e42be80cb743f14b0d47cb972}} 
+string {\bfseries default\+\_\+filter} = \textquotesingle{}re\textquotesingle{}
+\item 
+{\bfseries rule\+\_\+syntax}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} A Router is an ordered collection of route->target pairs. It is used to
+    efficiently match WSGI requests against a number of routes and return
+    the first target that satisfies the request. The target may be anything,
+    usually a string, ID or callable object. A route consists of a path-rule
+    and a HTTP method.
+
+    The path-rule is either a static path (e.g. `/contact`) or a dynamic
+    path that contains wildcards (e.g. `/wiki/<page>`). The wildcard syntax
+    and details on the matching order are described in docs:`routing`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbottle_1_1Router_a5740376fc77982dc1dc6b85145f78c16}\label{classbottle_1_1Router_a5740376fc77982dc1dc6b85145f78c16}} 
+\index{bottle.Router@{bottle.Router}!add@{add}}
+\index{add@{add}!bottle.Router@{bottle.Router}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Router.\+add (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{rule,  }\item[{}]{method,  }\item[{}]{target,  }\item[{}]{name = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Add a new rule or replace the target for an existing rule. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Router_a5740376fc77982dc1dc6b85145f78c16}\label{classbottle_1_1Router_a5740376fc77982dc1dc6b85145f78c16}} 
+\index{bottle.Router@{bottle.Router}!add@{add}}
+\index{add@{add}!bottle.Router@{bottle.Router}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Router.\+add (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{rule,  }\item[{}]{method,  }\item[{}]{target,  }\item[{}]{name = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Add a new rule or replace the target for an existing rule. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Router_ad1657a15307e4368e6d3874215c3d624}\label{classbottle_1_1Router_ad1657a15307e4368e6d3874215c3d624}} 
+\index{bottle.Router@{bottle.Router}!add\_filter@{add\_filter}}
+\index{add\_filter@{add\_filter}!bottle.Router@{bottle.Router}}
+\doxysubsubsection{\texorpdfstring{add\_filter()}{add\_filter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Router.\+add\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Add a filter. The provided function is called with the configuration
+string as parameter and must return a (regexp, to_python, to_url) tuple.
+The first element is a string, the last two are callables or None. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Router_ad1657a15307e4368e6d3874215c3d624}\label{classbottle_1_1Router_ad1657a15307e4368e6d3874215c3d624}} 
+\index{bottle.Router@{bottle.Router}!add\_filter@{add\_filter}}
+\index{add\_filter@{add\_filter}!bottle.Router@{bottle.Router}}
+\doxysubsubsection{\texorpdfstring{add\_filter()}{add\_filter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Router.\+add\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Add a filter. The provided function is called with the configuration
+string as parameter and must return a (regexp, to_python, to_url) tuple.
+The first element is a string, the last two are callables or None. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Router_af392e8395678278f813404a9139c89dd}\label{classbottle_1_1Router_af392e8395678278f813404a9139c89dd}} 
+\index{bottle.Router@{bottle.Router}!build@{build}}
+\index{build@{build}!bottle.Router@{bottle.Router}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Router.\+build (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{\+\_\+name,  }\item[{$\ast$}]{anons,  }\item[{$\ast$$\ast$}]{query }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Build an URL by filling the wildcards in a rule. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Router_af392e8395678278f813404a9139c89dd}\label{classbottle_1_1Router_af392e8395678278f813404a9139c89dd}} 
+\index{bottle.Router@{bottle.Router}!build@{build}}
+\index{build@{build}!bottle.Router@{bottle.Router}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Router.\+build (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{\+\_\+name,  }\item[{$\ast$}]{anons,  }\item[{$\ast$$\ast$}]{query }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Build an URL by filling the wildcards in a rule. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Router_a66bbbb15074eff146aeae009102110ac}\label{classbottle_1_1Router_a66bbbb15074eff146aeae009102110ac}} 
+\index{bottle.Router@{bottle.Router}!match@{match}}
+\index{match@{match}!bottle.Router@{bottle.Router}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Router.\+match (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{environ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Return a (target, url_agrs) tuple or raise HTTPError(400/404/405). \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1Router_a66bbbb15074eff146aeae009102110ac}\label{classbottle_1_1Router_a66bbbb15074eff146aeae009102110ac}} 
+\index{bottle.Router@{bottle.Router}!match@{match}}
+\index{match@{match}!bottle.Router@{bottle.Router}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Router.\+match (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{environ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Return a (target, url_agrs) tuple or raise HTTPError(400/404/405). \end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classbottle_1_1Router_aa4e6aa6c3ae8bf900478db4684ba8b63}\label{classbottle_1_1Router_aa4e6aa6c3ae8bf900478db4684ba8b63}} 
+\index{bottle.Router@{bottle.Router}!rule\_syntax@{rule\_syntax}}
+\index{rule\_syntax@{rule\_syntax}!bottle.Router@{bottle.Router}}
+\doxysubsubsection{\texorpdfstring{rule\_syntax}{rule\_syntax}}
+{\footnotesize\ttfamily bottle.\+Router.\+rule\+\_\+syntax\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  re.compile(\textcolor{stringliteral}{'(\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\)*)'}\(\backslash\)}
+\DoxyCodeLine{        \textcolor{stringliteral}{'(?:(?::([a-\/zA-\/Z\_][a-\/zA-\/Z\_0-\/9]*)?()(?:\#(.*?)\#)?)'}\(\backslash\)}
+\DoxyCodeLine{          \textcolor{stringliteral}{'|(?:<([a-\/zA-\/Z\_][a-\/zA-\/Z\_0-\/9]*)?(?::([a-\/zA-\/Z\_]*)'}\(\backslash\)}
+\DoxyCodeLine{            \textcolor{stringliteral}{'(?::((?:\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\).|[\string^\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\)>])+)?)?)?>))'})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/bin/bottle.\+py\end{DoxyCompactItemize}

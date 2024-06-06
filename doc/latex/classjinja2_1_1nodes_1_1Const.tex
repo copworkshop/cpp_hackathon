@@ -1,0 +1,69 @@
+\hypertarget{classjinja2_1_1nodes_1_1Const}{}\doxysection{jinja2.\+nodes.\+Const Class Reference}
+\label{classjinja2_1_1nodes_1_1Const}\index{jinja2.nodes.Const@{jinja2.nodes.Const}}
+
+
+Inheritance diagram for jinja2.\+nodes.\+Const\+:
+% FIG 0
+
+
+Collaboration diagram for jinja2.\+nodes.\+Const\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Any \mbox{\hyperlink{classjinja2_1_1nodes_1_1Const_a025f1463e70e44af9df3097ece338c9f}{as\+\_\+const}} (self, t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1EvalContext}{Eval\+Context}}\mbox{]} eval\+\_\+ctx=None)
+\item 
+\char`\"{}Const\char`\"{} \mbox{\hyperlink{classjinja2_1_1nodes_1_1Const_a8e32edb3126020ebdcd23e0b3804f30c}{from\+\_\+untrusted}} (cls, t.\+Any value, t.\+Optional\mbox{[}int\mbox{]} lineno=None, \char`\"{}t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1environment_1_1Environment}{Environment}}\mbox{]}\char`\"{} environment=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjinja2_1_1nodes_1_1Const_a463aebb94c867bcd6e09ca88932f7d88}\label{classjinja2_1_1nodes_1_1Const_a463aebb94c867bcd6e09ca88932f7d88}} 
+tuple {\bfseries fields} = (\char`\"{}value\char`\"{},)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}All constant values.  The parser will return this node for simple
+constants such as ``42`` or ``"foo"`` but it can be used to store more
+complex values such as lists too.  Only constants with a safe
+representation (objects where ``eval(repr(x)) == x`` is true).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classjinja2_1_1nodes_1_1Const_a025f1463e70e44af9df3097ece338c9f}\label{classjinja2_1_1nodes_1_1Const_a025f1463e70e44af9df3097ece338c9f}} 
+\index{jinja2.nodes.Const@{jinja2.nodes.Const}!as\_const@{as\_const}}
+\index{as\_const@{as\_const}!jinja2.nodes.Const@{jinja2.nodes.Const}}
+\doxysubsubsection{\texorpdfstring{as\_const()}{as\_const()}}
+{\footnotesize\ttfamily  t.\+Any jinja2.\+nodes.\+Const.\+as\+\_\+const (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1EvalContext}{Eval\+Context}}\mbox{]} }]{eval\+\_\+ctx = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the value of the expression as constant or raise
+:exc:`Impossible` if this was not possible.
+
+An :class:`EvalContext` can be provided, if none is given
+a default context is created which requires the nodes to have
+an attached environment.
+
+.. versionchanged:: 2.4
+   the `eval_ctx` parameter was added.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1nodes_1_1Expr_afc3c83d61cdf1d87d4a3f54637efb194}{jinja2.\+nodes.\+Expr}}.
+
+\mbox{\Hypertarget{classjinja2_1_1nodes_1_1Const_a8e32edb3126020ebdcd23e0b3804f30c}\label{classjinja2_1_1nodes_1_1Const_a8e32edb3126020ebdcd23e0b3804f30c}} 
+\index{jinja2.nodes.Const@{jinja2.nodes.Const}!from\_untrusted@{from\_untrusted}}
+\index{from\_untrusted@{from\_untrusted}!jinja2.nodes.Const@{jinja2.nodes.Const}}
+\doxysubsubsection{\texorpdfstring{from\_untrusted()}{from\_untrusted()}}
+{\footnotesize\ttfamily  \char`\"{}Const\char`\"{} jinja2.\+nodes.\+Const.\+from\+\_\+untrusted (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{t.\+Any}]{value,  }\item[{t.\+Optional\mbox{[}int\mbox{]} }]{lineno = {\ttfamily None},  }\item[{\char`\"{}t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1environment_1_1Environment}{Environment}}\mbox{]}\char`\"{} }]{environment = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a const object if the value is representable as
+constant value in the generated code, otherwise it will raise
+an `Impossible` exception.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jinja2/nodes.\+py\end{DoxyCompactItemize}

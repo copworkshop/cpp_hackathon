@@ -1,0 +1,80 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1MyghtyLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Myghty\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1MyghtyLexer}\index{pygments.lexers.templates.MyghtyLexer@{pygments.lexers.templates.MyghtyLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Myghty\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Myghty\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MyghtyLexer_a33354d9fd1b1f6419488fbf4f097061f}\label{classpygments_1_1lexers_1_1templates_1_1MyghtyLexer_a33354d9fd1b1f6419488fbf4f097061f}} 
+string {\bfseries name} = \textquotesingle{}Myghty\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MyghtyLexer_a309fd29a2b2d560c8d230280b3522e88}\label{classpygments_1_1lexers_1_1templates_1_1MyghtyLexer_a309fd29a2b2d560c8d230280b3522e88}} 
+string {\bfseries url} = \textquotesingle{}http\+://www.\+myghty.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MyghtyLexer_a4bda16429c607ae5ff90542a1ab6fc6a}\label{classpygments_1_1lexers_1_1templates_1_1MyghtyLexer_a4bda16429c607ae5ff90542a1ab6fc6a}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}myghty\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MyghtyLexer_abd4f197622c790651b5129e4e8c0f3e7}\label{classpygments_1_1lexers_1_1templates_1_1MyghtyLexer_abd4f197622c790651b5129e4e8c0f3e7}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.myt\textquotesingle{}, \textquotesingle{}autodelegate\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MyghtyLexer_ac7e15b8db1624bfa575339215f6b4a24}\label{classpygments_1_1lexers_1_1templates_1_1MyghtyLexer_ac7e15b8db1624bfa575339215f6b4a24}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}application/x-\/myghty\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MyghtyLexer_a332a9c5e42b9c1b0a5e65e29f9acc4a5}\label{classpygments_1_1lexers_1_1templates_1_1MyghtyLexer_a332a9c5e42b9c1b0a5e65e29f9acc4a5}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}0.\+6\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Generic myghty templates lexer. Code that isn't Myghty
+markup is yielded as `Token.Other`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MyghtyLexer_a52dd6157aabeabe393645400c4c457d8}\label{classpygments_1_1lexers_1_1templates_1_1MyghtyLexer_a52dd6157aabeabe393645400c4c457d8}} 
+\index{pygments.lexers.templates.MyghtyLexer@{pygments.lexers.templates.MyghtyLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.templates.MyghtyLexer@{pygments.lexers.templates.MyghtyLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+templates.\+Myghty\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Text),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(?s)(<\%(?:def|method))(\(\backslash\)s*)(.*?)(>)(.*?)(</\%\(\backslash\)2\(\backslash\)s*>)'},}
+\DoxyCodeLine{             bygroups(Name.Tag, Text, Name.Function, Name.Tag,}
+\DoxyCodeLine{                      using(this), Name.Tag)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(?s)(<\%\(\backslash\)w+)(.*?)(>)(.*?)(</\%\(\backslash\)2\(\backslash\)s*>)'},}
+\DoxyCodeLine{             bygroups(Name.Tag, Name.Function, Name.Tag,}
+\DoxyCodeLine{                      using(PythonLexer), Name.Tag)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(<\&[\string^|])(.*?)(,.*?)?(\&>)'},}
+\DoxyCodeLine{             bygroups(Name.Tag, Name.Function, using(PythonLexer), Name.Tag)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(?s)(<\&\(\backslash\)|)(.*?)(,.*?)?(\&>)'},}
+\DoxyCodeLine{             bygroups(Name.Tag, Name.Function, using(PythonLexer), Name.Tag)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'</\&>'}, Name.Tag),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(?s)(<\%!?)(.*?)(\%>)'},}
+\DoxyCodeLine{             bygroups(Name.Tag, using(PythonLexer), Name.Tag)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(?<=\string^)\#[\string^\(\backslash\)n]*(\(\backslash\)n|\(\backslash\)Z)'}, Comment),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(?<=\string^)(\%)([\string^\(\backslash\)n]*)(\(\backslash\)n|\(\backslash\)Z)'},}
+\DoxyCodeLine{             bygroups(Name.Tag, using(PythonLexer), Other)),}
+\DoxyCodeLine{            (, bygroups(Other, Operator)),}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+\hypertarget{namespacetqdm_1_1contrib_1_1discord}{}\doxysection{tqdm.\+contrib.\+discord Namespace Reference}
+\label{namespacetqdm_1_1contrib_1_1discord}\index{tqdm.contrib.discord@{tqdm.contrib.discord}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1contrib_1_1discord_1_1DiscordIO}{Discord\+IO}}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1contrib_1_1discord_1_1tqdm__discord}{tqdm\+\_\+discord}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacetqdm_1_1contrib_1_1discord_a89a92e4e1365abc8dbe02cdbcb894689}{tdrange}} ($\ast$args, $\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1contrib_1_1discord_a3b43c128cfbd326ff5ff5d3593678207}\label{namespacetqdm_1_1contrib_1_1discord_a3b43c128cfbd326ff5ff5d3593678207}} 
+{\bfseries tqdm} = \mbox{\hyperlink{classtqdm_1_1contrib_1_1discord_1_1tqdm__discord}{tqdm\+\_\+discord}}
+\item 
+\mbox{\Hypertarget{namespacetqdm_1_1contrib_1_1discord_ae89cfd0a4467d3e37b50821c43d19ae8}\label{namespacetqdm_1_1contrib_1_1discord_ae89cfd0a4467d3e37b50821c43d19ae8}} 
+def {\bfseries trange} = \mbox{\hyperlink{namespacetqdm_1_1contrib_1_1discord_a89a92e4e1365abc8dbe02cdbcb894689}{tdrange}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Sends updates to a Discord bot.
+
+Usage:
+>>> from tqdm.contrib.discord import tqdm, trange
+>>> for i in trange(10, token='{token}', channel_id='{channel_id}'):
+...     ...
+
+![screenshot](https://tqdm.github.io/img/screenshot-discord.png)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetqdm_1_1contrib_1_1discord_a89a92e4e1365abc8dbe02cdbcb894689}\label{namespacetqdm_1_1contrib_1_1discord_a89a92e4e1365abc8dbe02cdbcb894689}} 
+\index{tqdm.contrib.discord@{tqdm.contrib.discord}!tdrange@{tdrange}}
+\index{tdrange@{tdrange}!tqdm.contrib.discord@{tqdm.contrib.discord}}
+\doxysubsubsection{\texorpdfstring{tdrange()}{tdrange()}}
+{\footnotesize\ttfamily def tqdm.\+contrib.\+discord.\+tdrange (\begin{DoxyParamCaption}\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for `tqdm.contrib.discord.tqdm(range(*args), **kwargs)`.\end{DoxyVerb}
+ 

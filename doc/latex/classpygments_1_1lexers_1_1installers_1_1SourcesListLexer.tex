@@ -1,0 +1,117 @@
+\hypertarget{classpygments_1_1lexers_1_1installers_1_1SourcesListLexer}{}\doxysection{pygments.\+lexers.\+installers.\+Sources\+List\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1installers_1_1SourcesListLexer}\index{pygments.lexers.installers.SourcesListLexer@{pygments.lexers.installers.SourcesListLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+installers.\+Sources\+List\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+installers.\+Sources\+List\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1installers_1_1SourcesListLexer_a158a1dc0ec541d56d54f8fe329d14c21}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1installers_1_1SourcesListLexer_a74b4f5c3e6d53ef7a8b28f0072124504}\label{classpygments_1_1lexers_1_1installers_1_1SourcesListLexer_a74b4f5c3e6d53ef7a8b28f0072124504}} 
+string {\bfseries name} = \textquotesingle{}Debian Sourcelist\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1installers_1_1SourcesListLexer_a85c8f3829f7b542435cfb7d87b720fbb}\label{classpygments_1_1lexers_1_1installers_1_1SourcesListLexer_a85c8f3829f7b542435cfb7d87b720fbb}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}debsources\textquotesingle{}, \textquotesingle{}sourceslist\textquotesingle{}, \textquotesingle{}sources.\+list\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1installers_1_1SourcesListLexer_a21fa3102657a4d9d66c679197c75f255}\label{classpygments_1_1lexers_1_1installers_1_1SourcesListLexer_a21fa3102657a4d9d66c679197c75f255}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}sources.\+list\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1installers_1_1SourcesListLexer_aa7dbd04d35f3839bc86b45c209a71d29}\label{classpygments_1_1lexers_1_1installers_1_1SourcesListLexer_aa7dbd04d35f3839bc86b45c209a71d29}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}0.\+7\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1installers_1_1SourcesListLexer_a9f9f33efd2bc30871e5f93a6cbfb61db}\label{classpygments_1_1lexers_1_1installers_1_1SourcesListLexer_a9f9f33efd2bc30871e5f93a6cbfb61db}} 
+list {\bfseries mimetype} = \mbox{[}\textquotesingle{}application/x-\/debian-\/sourceslist\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1installers_1_1SourcesListLexer_a2db11ac3b9cddc0b68694a25b66c9a56}\label{classpygments_1_1lexers_1_1installers_1_1SourcesListLexer_a2db11ac3b9cddc0b68694a25b66c9a56}} 
+string {\bfseries url} = \textquotesingle{}https\+://wiki.\+debian.\+org/Sources\+List\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer that highlights debian sources.list files.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1installers_1_1SourcesListLexer_a158a1dc0ec541d56d54f8fe329d14c21}\label{classpygments_1_1lexers_1_1installers_1_1SourcesListLexer_a158a1dc0ec541d56d54f8fe329d14c21}} 
+\index{pygments.lexers.installers.SourcesListLexer@{pygments.lexers.installers.SourcesListLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.installers.SourcesListLexer@{pygments.lexers.installers.SourcesListLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+installers.\+Sources\+List\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1installers_1_1SourcesListLexer_aa034bd302003d9ae475ff39bdd6f163b}\label{classpygments_1_1lexers_1_1installers_1_1SourcesListLexer_aa034bd302003d9ae475ff39bdd6f163b}} 
+\index{pygments.lexers.installers.SourcesListLexer@{pygments.lexers.installers.SourcesListLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.installers.SourcesListLexer@{pygments.lexers.installers.SourcesListLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+installers.\+Sources\+List\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#.*?\$'}, Comment),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^(deb(?:-\/src)?)(\(\backslash\)s+)'},}
+\DoxyCodeLine{             bygroups(Keyword, Whitespace), \textcolor{stringliteral}{'distribution'})}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'distribution'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#.*?\$'}, Comment, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\$\(\backslash\)(ARCH\(\backslash\))'}, Name.Variable),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^\(\backslash\)s\$[]+'}, String),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)['}, String.Other, \textcolor{stringliteral}{'escaped-\/distribution'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\$'}, String),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace, \textcolor{stringliteral}{'components'})}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'escaped-\/distribution'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)]'}, String.Other, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\$\(\backslash\)(ARCH\(\backslash\))'}, Name.Variable),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^\(\backslash\)]\$]+'}, String.Other),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\$'}, String.Other)}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'components'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#.*?\$'}, Comment, \textcolor{stringliteral}{'\#pop:2'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\$'}, Text, \textcolor{stringliteral}{'\#pop:2'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)S+'}, Keyword.Pseudo),}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/installers.\+py\end{DoxyCompactItemize}

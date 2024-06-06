@@ -1,0 +1,116 @@
+\hypertarget{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers}{}\doxysection{gcovr.\+formats.\+gcov.\+workers.\+Workers Class Reference}
+\label{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers}\index{gcovr.formats.gcov.workers.Workers@{gcovr.formats.gcov.workers.Workers}}
+
+
+Inheritance diagram for gcovr.\+formats.\+gcov.\+workers.\+Workers\+:
+% FIG 0
+
+
+Collaboration diagram for gcovr.\+formats.\+gcov.\+workers.\+Workers\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a2ab65a425cd967f3d4eec0b2a3d69aa2}\label{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a2ab65a425cd967f3d4eec0b2a3d69aa2}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, number, context)
+\item 
+def \mbox{\hyperlink{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_aa2196938f8c754d68fbac4c8db247e98}{add}} (self, work, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_aabce5c07c0a1b1a2d0a38d31d77eddf8}{add\+\_\+sentinels}} (self)
+\item 
+def \mbox{\hyperlink{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a4111e4bd33b7d6c55dc4013331386032}{drain}} (self)
+\item 
+def \mbox{\hyperlink{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a8a19f916abf87ef3f15e8ae7f4a42e3c}{raise\+\_\+exception}} (self, exc\+\_\+info)
+\item 
+def \mbox{\hyperlink{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_af0393a7531240c441891ed8762ee717c}{size}} (self)
+\item 
+def \mbox{\hyperlink{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a7e0dcf0ce9a8815a3cad59365cb0b81b}{wait}} (self)
+\item 
+\mbox{\Hypertarget{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a9a18df20794ef1449e23ee639f38edd2}\label{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a9a18df20794ef1449e23ee639f38edd2}} 
+def {\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a6278fbd303a6a5e0d946344b62d838a0}\label{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a6278fbd303a6a5e0d946344b62d838a0}} 
+def {\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, exc\+\_\+type, exc\+\_\+val, exc\+\_\+tb)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a5cb73333d02b4b446e4a1bbba7937cf1}\label{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a5cb73333d02b4b446e4a1bbba7937cf1}} 
+{\bfseries q}
+\item 
+\mbox{\Hypertarget{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_acb5f6795501bb216a7a2f74939c8c2f8}\label{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_acb5f6795501bb216a7a2f74939c8c2f8}} 
+{\bfseries lock}
+\item 
+\mbox{\Hypertarget{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_aa183fb3372da140a3df1e8dd3da305b4}\label{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_aa183fb3372da140a3df1e8dd3da305b4}} 
+{\bfseries exceptions}
+\item 
+\mbox{\Hypertarget{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a4100644d9c62174b4560ea7ca7697c16}\label{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a4100644d9c62174b4560ea7ca7697c16}} 
+{\bfseries contexts}
+\item 
+\mbox{\Hypertarget{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a2e16f848283bdc5ea2d8d94377868a8e}\label{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a2e16f848283bdc5ea2d8d94377868a8e}} 
+{\bfseries workers}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Create a thread-pool which can be given work via an
+add method and will run until work is complete
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_aa2196938f8c754d68fbac4c8db247e98}\label{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_aa2196938f8c754d68fbac4c8db247e98}} 
+\index{gcovr.formats.gcov.workers.Workers@{gcovr.formats.gcov.workers.Workers}!add@{add}}
+\index{add@{add}!gcovr.formats.gcov.workers.Workers@{gcovr.formats.gcov.workers.Workers}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily def gcovr.\+formats.\+gcov.\+workers.\+Workers.\+add (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{work,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add in a method and the arguments to be used
+when running it
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_aabce5c07c0a1b1a2d0a38d31d77eddf8}\label{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_aabce5c07c0a1b1a2d0a38d31d77eddf8}} 
+\index{gcovr.formats.gcov.workers.Workers@{gcovr.formats.gcov.workers.Workers}!add\_sentinels@{add\_sentinels}}
+\index{add\_sentinels@{add\_sentinels}!gcovr.formats.gcov.workers.Workers@{gcovr.formats.gcov.workers.Workers}}
+\doxysubsubsection{\texorpdfstring{add\_sentinels()}{add\_sentinels()}}
+{\footnotesize\ttfamily def gcovr.\+formats.\+gcov.\+workers.\+Workers.\+add\+\_\+sentinels (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add the sentinels to the end of the queue so
+the threads know to stop
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a4111e4bd33b7d6c55dc4013331386032}\label{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a4111e4bd33b7d6c55dc4013331386032}} 
+\index{gcovr.formats.gcov.workers.Workers@{gcovr.formats.gcov.workers.Workers}!drain@{drain}}
+\index{drain@{drain}!gcovr.formats.gcov.workers.Workers@{gcovr.formats.gcov.workers.Workers}}
+\doxysubsubsection{\texorpdfstring{drain()}{drain()}}
+{\footnotesize\ttfamily def gcovr.\+formats.\+gcov.\+workers.\+Workers.\+drain (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Drain the queue
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a8a19f916abf87ef3f15e8ae7f4a42e3c}\label{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a8a19f916abf87ef3f15e8ae7f4a42e3c}} 
+\index{gcovr.formats.gcov.workers.Workers@{gcovr.formats.gcov.workers.Workers}!raise\_exception@{raise\_exception}}
+\index{raise\_exception@{raise\_exception}!gcovr.formats.gcov.workers.Workers@{gcovr.formats.gcov.workers.Workers}}
+\doxysubsubsection{\texorpdfstring{raise\_exception()}{raise\_exception()}}
+{\footnotesize\ttfamily def gcovr.\+formats.\+gcov.\+workers.\+Workers.\+raise\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{exc\+\_\+info }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A thread has failed and needs to raise an exception.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_af0393a7531240c441891ed8762ee717c}\label{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_af0393a7531240c441891ed8762ee717c}} 
+\index{gcovr.formats.gcov.workers.Workers@{gcovr.formats.gcov.workers.Workers}!size@{size}}
+\index{size@{size}!gcovr.formats.gcov.workers.Workers@{gcovr.formats.gcov.workers.Workers}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily def gcovr.\+formats.\+gcov.\+workers.\+Workers.\+size (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run the size of the thread pool
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a7e0dcf0ce9a8815a3cad59365cb0b81b}\label{classgcovr_1_1formats_1_1gcov_1_1workers_1_1Workers_a7e0dcf0ce9a8815a3cad59365cb0b81b}} 
+\index{gcovr.formats.gcov.workers.Workers@{gcovr.formats.gcov.workers.Workers}!wait@{wait}}
+\index{wait@{wait}!gcovr.formats.gcov.workers.Workers@{gcovr.formats.gcov.workers.Workers}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily def gcovr.\+formats.\+gcov.\+workers.\+Workers.\+wait (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wait until all work is complete
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/gcovr/formats/gcov/workers.\+py\end{DoxyCompactItemize}

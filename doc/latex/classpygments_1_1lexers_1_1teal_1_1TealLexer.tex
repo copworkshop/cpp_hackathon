@@ -1,0 +1,88 @@
+\hypertarget{classpygments_1_1lexers_1_1teal_1_1TealLexer}{}\doxysection{pygments.\+lexers.\+teal.\+Teal\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1teal_1_1TealLexer}\index{pygments.lexers.teal.TealLexer@{pygments.lexers.teal.TealLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+teal.\+Teal\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+teal.\+Teal\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1teal_1_1TealLexer_a66e8a41685327db9f5d4a4b3073c255b}\label{classpygments_1_1lexers_1_1teal_1_1TealLexer_a66e8a41685327db9f5d4a4b3073c255b}} 
+string {\bfseries name} = \textquotesingle{}teal\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1teal_1_1TealLexer_afc12389634dd141c5c90c3e37e5709b5}\label{classpygments_1_1lexers_1_1teal_1_1TealLexer_afc12389634dd141c5c90c3e37e5709b5}} 
+string {\bfseries url} = \textquotesingle{}https\+://developer.\+algorand.\+org/docs/reference/teal/specification/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1teal_1_1TealLexer_a87f56c53e251df2573e0d00d6edd9279}\label{classpygments_1_1lexers_1_1teal_1_1TealLexer_a87f56c53e251df2573e0d00d6edd9279}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}teal\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1teal_1_1TealLexer_a0c78088e0747f2aa25e721dbb0b9b4e4}\label{classpygments_1_1lexers_1_1teal_1_1TealLexer_a0c78088e0747f2aa25e721dbb0b9b4e4}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.teal\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1teal_1_1TealLexer_a2c071835e3f27686717cd297ba853359}\label{classpygments_1_1lexers_1_1teal_1_1TealLexer_a2c071835e3f27686717cd297ba853359}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+9\textquotesingle{}
+\item 
+{\bfseries keywords}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1teal_1_1TealLexer_a93928a1d246b9a57958519a58d2044c1}\label{classpygments_1_1lexers_1_1teal_1_1TealLexer_a93928a1d246b9a57958519a58d2044c1}} 
+string {\bfseries identifier} = r\textquotesingle{}\mbox{[}$^\wedge$ \textbackslash{}t\textbackslash{}n\mbox{]}+(?=\textbackslash{}/\textbackslash{}/)$\vert$\mbox{[}$^\wedge$ \textbackslash{}t\textbackslash{}n\mbox{]}+\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1teal_1_1TealLexer_aaec27dd09f5f2461b1e09c214057cb8e}\label{classpygments_1_1lexers_1_1teal_1_1TealLexer_aaec27dd09f5f2461b1e09c214057cb8e}} 
+string {\bfseries newline} = r\textquotesingle{}\textbackslash{}r?\textbackslash{}n\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1teal_1_1TealLexer_a4056c32cc1d7d4e598333ee568ea94f7}\label{classpygments_1_1lexers_1_1teal_1_1TealLexer_a4056c32cc1d7d4e598333ee568ea94f7}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For the Transaction Execution Approval Language (TEAL)
+
+For more information about the grammar, see:
+https://github.com/algorand/go-algorand/blob/master/data/transactions/logic/assembler.go
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1teal_1_1TealLexer_aa694f388550f10c32d473bfdf63d07de}\label{classpygments_1_1lexers_1_1teal_1_1TealLexer_aa694f388550f10c32d473bfdf63d07de}} 
+\index{pygments.lexers.teal.TealLexer@{pygments.lexers.teal.TealLexer}!keywords@{keywords}}
+\index{keywords@{keywords}!pygments.lexers.teal.TealLexer@{pygments.lexers.teal.TealLexer}}
+\doxysubsubsection{\texorpdfstring{keywords}{keywords}}
+{\footnotesize\ttfamily pygments.\+lexers.\+teal.\+Teal\+Lexer.\+keywords\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  words(\{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'Sender'}, \textcolor{stringliteral}{'Fee'}, \textcolor{stringliteral}{'FirstValid'}, \textcolor{stringliteral}{'FirstValidTime'}, \textcolor{stringliteral}{'LastValid'}, \textcolor{stringliteral}{'Note'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'Lease'}, \textcolor{stringliteral}{'Receiver'}, \textcolor{stringliteral}{'Amount'}, \textcolor{stringliteral}{'CloseRemainderTo'}, \textcolor{stringliteral}{'VotePK'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'SelectionPK'}, \textcolor{stringliteral}{'VoteFirst'}, \textcolor{stringliteral}{'VoteLast'}, \textcolor{stringliteral}{'VoteKeyDilution'}, \textcolor{stringliteral}{'Type'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'TypeEnum'}, \textcolor{stringliteral}{'XferAsset'}, \textcolor{stringliteral}{'AssetAmount'}, \textcolor{stringliteral}{'AssetSender'}, \textcolor{stringliteral}{'AssetReceiver'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'AssetCloseTo'}, \textcolor{stringliteral}{'GroupIndex'}, \textcolor{stringliteral}{'TxID'}, \textcolor{stringliteral}{'ApplicationID'}, \textcolor{stringliteral}{'OnCompletion'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'ApplicationArgs'}, \textcolor{stringliteral}{'NumAppArgs'}, \textcolor{stringliteral}{'Accounts'}, \textcolor{stringliteral}{'NumAccounts'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'ApprovalProgram'}, \textcolor{stringliteral}{'ClearStateProgram'}, \textcolor{stringliteral}{'RekeyTo'}, \textcolor{stringliteral}{'ConfigAsset'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'ConfigAssetTotal'}, \textcolor{stringliteral}{'ConfigAssetDecimals'}, \textcolor{stringliteral}{'ConfigAssetDefaultFrozen'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'ConfigAssetUnitName'}, \textcolor{stringliteral}{'ConfigAssetName'}, \textcolor{stringliteral}{'ConfigAssetURL'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'ConfigAssetMetadataHash'}, \textcolor{stringliteral}{'ConfigAssetManager'}, \textcolor{stringliteral}{'ConfigAssetReserve'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'ConfigAssetFreeze'}, \textcolor{stringliteral}{'ConfigAssetClawback'}, \textcolor{stringliteral}{'FreezeAsset'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'FreezeAssetAccount'}, \textcolor{stringliteral}{'FreezeAssetFrozen'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'NoOp'}, \textcolor{stringliteral}{'OptIn'}, \textcolor{stringliteral}{'CloseOut'}, \textcolor{stringliteral}{'ClearState'}, \textcolor{stringliteral}{'UpdateApplication'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'DeleteApplication'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'MinTxnFee'}, \textcolor{stringliteral}{'MinBalance'}, \textcolor{stringliteral}{'MaxTxnLife'}, \textcolor{stringliteral}{'ZeroAddress'}, \textcolor{stringliteral}{'GroupSize'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'LogicSigVersion'}, \textcolor{stringliteral}{'Round'}, \textcolor{stringliteral}{'LatestTimestamp'}, \textcolor{stringliteral}{'CurrentApplicationID'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'AssetBalance'}, \textcolor{stringliteral}{'AssetFrozen'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'AssetTotal'}, \textcolor{stringliteral}{'AssetDecimals'}, \textcolor{stringliteral}{'AssetDefaultFrozen'}, \textcolor{stringliteral}{'AssetUnitName'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'AssetName'}, \textcolor{stringliteral}{'AssetURL'}, \textcolor{stringliteral}{'AssetMetadataHash'}, \textcolor{stringliteral}{'AssetManager'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'AssetReserve'}, \textcolor{stringliteral}{'AssetFreeze'}, \textcolor{stringliteral}{'AssetClawback'},}
+\DoxyCodeLine{    \}, suffix=\textcolor{stringliteral}{r'\(\backslash\)b'})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/teal.\+py\end{DoxyCompactItemize}

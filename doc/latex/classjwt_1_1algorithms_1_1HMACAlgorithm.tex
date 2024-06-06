@@ -1,0 +1,71 @@
+\hypertarget{classjwt_1_1algorithms_1_1HMACAlgorithm}{}\doxysection{jwt.\+algorithms.\+HMACAlgorithm Class Reference}
+\label{classjwt_1_1algorithms_1_1HMACAlgorithm}\index{jwt.algorithms.HMACAlgorithm@{jwt.algorithms.HMACAlgorithm}}
+
+
+Inheritance diagram for jwt.\+algorithms.\+HMACAlgorithm\+:
+% FIG 0
+
+
+Collaboration diagram for jwt.\+algorithms.\+HMACAlgorithm\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1HMACAlgorithm_ac2d4aa1814c74c6d36881ac387de2832}\label{classjwt_1_1algorithms_1_1HMACAlgorithm_ac2d4aa1814c74c6d36881ac387de2832}} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, Hashlib\+Hash hash\+\_\+alg)
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1HMACAlgorithm_a8462144eb58242dffb7b0da4c4d5edf4}\label{classjwt_1_1algorithms_1_1HMACAlgorithm_a8462144eb58242dffb7b0da4c4d5edf4}} 
+bytes {\bfseries prepare\+\_\+key} (self, str$\vert$bytes key)
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1HMACAlgorithm_a08a7c2e3982f3ec658bb1b27d2e61f79}\label{classjwt_1_1algorithms_1_1HMACAlgorithm_a08a7c2e3982f3ec658bb1b27d2e61f79}} 
+bytes {\bfseries sign} (self, bytes msg, bytes key)
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1HMACAlgorithm_ac843cbbffb7b5df9f53821d766ceac99}\label{classjwt_1_1algorithms_1_1HMACAlgorithm_ac843cbbffb7b5df9f53821d766ceac99}} 
+bool {\bfseries verify} (self, bytes msg, bytes key, bytes sig)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1HMACAlgorithm_ab6ca072cb2c8cc0f6924e18beb7b7311}\label{classjwt_1_1algorithms_1_1HMACAlgorithm_ab6ca072cb2c8cc0f6924e18beb7b7311}} 
+JWKDict {\bfseries to\+\_\+jwk} (str$\vert$bytes key\+\_\+obj, Literal\mbox{[}True\mbox{]} as\+\_\+dict)
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1HMACAlgorithm_a11e6965e3033836c7cf04c197ee204ae}\label{classjwt_1_1algorithms_1_1HMACAlgorithm_a11e6965e3033836c7cf04c197ee204ae}} 
+str {\bfseries to\+\_\+jwk} (str$\vert$bytes key\+\_\+obj, Literal\mbox{[}False\mbox{]} as\+\_\+dict=False)
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1HMACAlgorithm_a59b99da3cf4d8606ff8f9ece3313372a}\label{classjwt_1_1algorithms_1_1HMACAlgorithm_a59b99da3cf4d8606ff8f9ece3313372a}} 
+Union\mbox{[}JWKDict, str\mbox{]} {\bfseries to\+\_\+jwk} (str$\vert$bytes key\+\_\+obj, bool as\+\_\+dict=False)
+\item 
+bytes \mbox{\hyperlink{classjwt_1_1algorithms_1_1HMACAlgorithm_aebd8401c5d4aa5f7b4570f5b637632f1}{from\+\_\+jwk}} (str$\vert$JWKDict jwk)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1HMACAlgorithm_a42140c9c614e211ef90718c7824f630e}\label{classjwt_1_1algorithms_1_1HMACAlgorithm_a42140c9c614e211ef90718c7824f630e}} 
+{\bfseries hash\+\_\+alg}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Performs signing and verification operations using HMAC
+and the specified hash function.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classjwt_1_1algorithms_1_1HMACAlgorithm_aebd8401c5d4aa5f7b4570f5b637632f1}\label{classjwt_1_1algorithms_1_1HMACAlgorithm_aebd8401c5d4aa5f7b4570f5b637632f1}} 
+\index{jwt.algorithms.HMACAlgorithm@{jwt.algorithms.HMACAlgorithm}!from\_jwk@{from\_jwk}}
+\index{from\_jwk@{from\_jwk}!jwt.algorithms.HMACAlgorithm@{jwt.algorithms.HMACAlgorithm}}
+\doxysubsubsection{\texorpdfstring{from\_jwk()}{from\_jwk()}}
+{\footnotesize\ttfamily  bytes jwt.\+algorithms.\+HMACAlgorithm.\+from\+\_\+jwk (\begin{DoxyParamCaption}\item[{str $\vert$ JWKDict}]{jwk }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Deserializes a given key from JWK back into a key object
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjwt_1_1algorithms_1_1Algorithm_af9a85ad9cdd019cc6e368338574eba75}{jwt.\+algorithms.\+Algorithm}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jwt/algorithms.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,58 @@
+\hypertarget{classurllib3_1_1contrib_1_1socks_1_1SOCKSProxyManager}{}\doxysection{urllib3.\+contrib.\+socks.\+SOCKSProxy\+Manager Class Reference}
+\label{classurllib3_1_1contrib_1_1socks_1_1SOCKSProxyManager}\index{urllib3.contrib.socks.SOCKSProxyManager@{urllib3.contrib.socks.SOCKSProxyManager}}
+
+
+Inheritance diagram for urllib3.\+contrib.\+socks.\+SOCKSProxy\+Manager\+:
+% FIG 0
+
+
+Collaboration diagram for urllib3.\+contrib.\+socks.\+SOCKSProxy\+Manager\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1contrib_1_1socks_1_1SOCKSProxyManager_a64693cecf87caf61674ffd57f95bfbf4}\label{classurllib3_1_1contrib_1_1socks_1_1SOCKSProxyManager_a64693cecf87caf61674ffd57f95bfbf4}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, proxy\+\_\+url, username=None, password=None, num\+\_\+pools=10, headers=None, $\ast$$\ast$connection\+\_\+pool\+\_\+kw)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1contrib_1_1socks_1_1SOCKSProxyManager_ac08028e4df85a6d35ea8f8c5943b48e0}\label{classurllib3_1_1contrib_1_1socks_1_1SOCKSProxyManager_ac08028e4df85a6d35ea8f8c5943b48e0}} 
+{\bfseries proxy\+\_\+url}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1contrib_1_1socks_1_1SOCKSProxyManager_a7665fb8e4032ea9a6e55e25547e2aec8}\label{classurllib3_1_1contrib_1_1socks_1_1SOCKSProxyManager_a7665fb8e4032ea9a6e55e25547e2aec8}} 
+{\bfseries pool\+\_\+classes\+\_\+by\+\_\+scheme}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dictionary {\bfseries pool\+\_\+classes\+\_\+by\+\_\+scheme}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A version of the urllib3 ProxyManager that routes connections via the
+defined SOCKS proxy.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classurllib3_1_1contrib_1_1socks_1_1SOCKSProxyManager_ad44f89b53a7c95e3463cc11ff3acd37f}\label{classurllib3_1_1contrib_1_1socks_1_1SOCKSProxyManager_ad44f89b53a7c95e3463cc11ff3acd37f}} 
+\index{urllib3.contrib.socks.SOCKSProxyManager@{urllib3.contrib.socks.SOCKSProxyManager}!pool\_classes\_by\_scheme@{pool\_classes\_by\_scheme}}
+\index{pool\_classes\_by\_scheme@{pool\_classes\_by\_scheme}!urllib3.contrib.socks.SOCKSProxyManager@{urllib3.contrib.socks.SOCKSProxyManager}}
+\doxysubsubsection{\texorpdfstring{pool\_classes\_by\_scheme}{pool\_classes\_by\_scheme}}
+{\footnotesize\ttfamily dictionary urllib3.\+contrib.\+socks.\+SOCKSProxy\+Manager.\+pool\+\_\+classes\+\_\+by\+\_\+scheme\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}http"{}}: SOCKSHTTPConnectionPool,}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}https"{}}: SOCKSHTTPSConnectionPool,}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/urllib3/contrib/socks.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,60 @@
+\hypertarget{classrequests_1_1exceptions_1_1JSONDecodeError}{}\doxysection{requests.\+exceptions.\+JSONDecode\+Error Class Reference}
+\label{classrequests_1_1exceptions_1_1JSONDecodeError}\index{requests.exceptions.JSONDecodeError@{requests.exceptions.JSONDecodeError}}
+
+
+Inheritance diagram for requests.\+exceptions.\+JSONDecode\+Error\+:
+% FIG 0
+
+
+Collaboration diagram for requests.\+exceptions.\+JSONDecode\+Error\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classrequests_1_1exceptions_1_1JSONDecodeError_acb8f6ce28e0167154c6d707657c299a8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classrequests_1_1exceptions_1_1JSONDecodeError_a4b649372dbcda13bcd021e37d789ba12}{\+\_\+\+\_\+reduce\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Couldn't decode the text into json\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrequests_1_1exceptions_1_1JSONDecodeError_acb8f6ce28e0167154c6d707657c299a8}\label{classrequests_1_1exceptions_1_1JSONDecodeError_acb8f6ce28e0167154c6d707657c299a8}} 
+\index{requests.exceptions.JSONDecodeError@{requests.exceptions.JSONDecodeError}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!requests.exceptions.JSONDecodeError@{requests.exceptions.JSONDecodeError}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def requests.\+exceptions.\+JSONDecode\+Error.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Construct the JSONDecodeError instance first with all
+args. Then use it's args to construct the IOError so that
+the json specific args aren't used as IOError specific args
+and the error message from JSONDecodeError is preserved.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classrequests_1_1exceptions_1_1RequestException_a2db848c9746027285f16e9d9c0683cad}{requests.\+exceptions.\+Request\+Exception}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrequests_1_1exceptions_1_1JSONDecodeError_a4b649372dbcda13bcd021e37d789ba12}\label{classrequests_1_1exceptions_1_1JSONDecodeError_a4b649372dbcda13bcd021e37d789ba12}} 
+\index{requests.exceptions.JSONDecodeError@{requests.exceptions.JSONDecodeError}!\_\_reduce\_\_@{\_\_reduce\_\_}}
+\index{\_\_reduce\_\_@{\_\_reduce\_\_}!requests.exceptions.JSONDecodeError@{requests.exceptions.JSONDecodeError}}
+\doxysubsubsection{\texorpdfstring{\_\_reduce\_\_()}{\_\_reduce\_\_()}}
+{\footnotesize\ttfamily def requests.\+exceptions.\+JSONDecode\+Error.\+\_\+\+\_\+reduce\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The __reduce__ method called when pickling the object must
+be the one from the JSONDecodeError (be it json/simplejson)
+as it expects all the arguments for instantiation, not just
+one like the IOError, and the MRO would by default call the
+__reduce__ method from the IOError due to the inheritance order.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/requests/exceptions.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,106 @@
+\hypertarget{classpygments_1_1lexers_1_1parsers_1_1RagelEmbeddedLexer}{}\doxysection{pygments.\+lexers.\+parsers.\+Ragel\+Embedded\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1parsers_1_1RagelEmbeddedLexer}\index{pygments.lexers.parsers.RagelEmbeddedLexer@{pygments.lexers.parsers.RagelEmbeddedLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+parsers.\+Ragel\+Embedded\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+parsers.\+Ragel\+Embedded\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1parsers_1_1RagelEmbeddedLexer_a60103beba68fd7bbdaa49f33dec68502}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1RagelEmbeddedLexer_a30d748a4973a648824078ba2f94236b7}\label{classpygments_1_1lexers_1_1parsers_1_1RagelEmbeddedLexer_a30d748a4973a648824078ba2f94236b7}} 
+string {\bfseries name} = \textquotesingle{}Embedded Ragel\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1RagelEmbeddedLexer_a8cb035b6900f32a068fe5b61ab03aef5}\label{classpygments_1_1lexers_1_1parsers_1_1RagelEmbeddedLexer_a8cb035b6900f32a068fe5b61ab03aef5}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}ragel-\/em\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1RagelEmbeddedLexer_a87ed5d8893fe89c8905faced66d24062}\label{classpygments_1_1lexers_1_1parsers_1_1RagelEmbeddedLexer_a87ed5d8893fe89c8905faced66d24062}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.rl\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1RagelEmbeddedLexer_ac23f398d4841bf1389f28097b6eb9a40}\label{classpygments_1_1lexers_1_1parsers_1_1RagelEmbeddedLexer_ac23f398d4841bf1389f28097b6eb9a40}} 
+string {\bfseries url} = \textquotesingle{}http\+://www.\+colm.\+net/open-\/source/ragel/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1RagelEmbeddedLexer_a82006e356a20b0a10afe96521424ed80}\label{classpygments_1_1lexers_1_1parsers_1_1RagelEmbeddedLexer_a82006e356a20b0a10afe96521424ed80}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+1\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A lexer for Ragel embedded in a host language file.
+
+This will only highlight Ragel statements. If you want host language
+highlighting then call the language-specific Ragel lexer.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1RagelEmbeddedLexer_a60103beba68fd7bbdaa49f33dec68502}\label{classpygments_1_1lexers_1_1parsers_1_1RagelEmbeddedLexer_a60103beba68fd7bbdaa49f33dec68502}} 
+\index{pygments.lexers.parsers.RagelEmbeddedLexer@{pygments.lexers.parsers.RagelEmbeddedLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.parsers.RagelEmbeddedLexer@{pygments.lexers.parsers.RagelEmbeddedLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+parsers.\+Ragel\+Embedded\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1parsers_1_1RagelEmbeddedLexer_a4ed0b594ac0a13d51a3160d1ae857bb9}\label{classpygments_1_1lexers_1_1parsers_1_1RagelEmbeddedLexer_a4ed0b594ac0a13d51a3160d1ae857bb9}} 
+\index{pygments.lexers.parsers.RagelEmbeddedLexer@{pygments.lexers.parsers.RagelEmbeddedLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.parsers.RagelEmbeddedLexer@{pygments.lexers.parsers.RagelEmbeddedLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+parsers.\+Ragel\+Embedded\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'('} + \textcolor{stringliteral}{r'|'}.join((   \textcolor{comment}{\# keep host code in largest possible chunks}}
+\DoxyCodeLine{                \textcolor{stringliteral}{r'[\string^\%\(\backslash\)'"{}/\#]+'},    \textcolor{comment}{\# exclude unsafe characters}}
+\DoxyCodeLine{                \textcolor{stringliteral}{r'\%(?=[\string^\%]|\$)'},   \textcolor{comment}{\# a single \% sign is okay, just not 2 of them}}
+\DoxyCodeLine{}
+\DoxyCodeLine{                \textcolor{comment}{\# strings and comments may safely contain unsafe characters}}
+\DoxyCodeLine{                \textcolor{stringliteral}{r'"{}(\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\)|\(\backslash\)\(\backslash\)[\string^\(\backslash\)\(\backslash\)]|[\string^"{}\(\backslash\)\(\backslash\)])*"{}'},}
+\DoxyCodeLine{                \textcolor{stringliteral}{r"{}'(\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\)|\(\backslash\)\(\backslash\)[\string^\(\backslash\)\(\backslash\)]|[\string^'\(\backslash\)\(\backslash\)])*'"{}},}
+\DoxyCodeLine{                \textcolor{stringliteral}{r'/\(\backslash\)*(.|\(\backslash\)n)*?\(\backslash\)*/'},      \textcolor{comment}{\# multi-\/line javadoc-\/style comment}}
+\DoxyCodeLine{                \textcolor{stringliteral}{r'//.*\$\(\backslash\)n?'},  \textcolor{comment}{\# single line comment}}
+\DoxyCodeLine{                \textcolor{stringliteral}{r'\(\backslash\)\#.*\$\(\backslash\)n?'},  \textcolor{comment}{\# ruby/ragel comment}}
+\DoxyCodeLine{                \textcolor{stringliteral}{r'/(?!\(\backslash\)*)(\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\)|\(\backslash\)\(\backslash\)[\string^\(\backslash\)\(\backslash\)]|[\string^/\(\backslash\)\(\backslash\)])*/'},  \textcolor{comment}{\# regular expression}}
+\DoxyCodeLine{}
+\DoxyCodeLine{                \textcolor{comment}{\# / is safe now that we've handled regex and javadoc comments                r'/',            )) + r')+', Other),            \# Single Line FSM.            \# Please don't put a quoted newline in a single line FSM.}}
+\DoxyCodeLine{            \textcolor{comment}{\# That's just mean. It will break this.            (r'(\%\%)(?![\{\%])(.*)(\$|;)(\(\backslash\)n?)', bygroups(Punctuation,                                                     using(RagelLexer),                                                     Punctuation, Text)),            \# Multi Line FSM.            (r'(\%\%\%\%|\%\%)\(\backslash\)\{', Punctuation, 'multi-\/line-\/fsm'),        ],        'multi-\/line-\/fsm': [            (r'(' + r'|'.join((  \# keep ragel code in largest possible chunks.                r'(' + r'|'.join((                    r'[\string^\}\(\backslash\)'"{}\(\backslash\)[/\#]',   \# exclude unsafe characters}}
+\DoxyCodeLine{                    \textcolor{stringliteral}{r'\(\backslash\)\}(?=[\string^\%]|\$)'},   \textcolor{comment}{\# \} is okay as long as it's not followed by \%                    r'\(\backslash\)\}\%(?=[\string^\%]|\$)',  \# ...well, one \%'s okay, just not two...}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/parsers.\+py\end{DoxyCompactItemize}

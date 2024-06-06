@@ -1,0 +1,71 @@
+\hypertarget{classurllib3_1_1__collections_1_1RecentlyUsedContainer}{}\doxysection{urllib3.\+\_\+collections.\+Recently\+Used\+Container Class Reference}
+\label{classurllib3_1_1__collections_1_1RecentlyUsedContainer}\index{urllib3.\_collections.RecentlyUsedContainer@{urllib3.\_collections.RecentlyUsedContainer}}
+
+
+Inheritance diagram for urllib3.\+\_\+collections.\+Recently\+Used\+Container\+:
+% FIG 0
+
+
+Collaboration diagram for urllib3.\+\_\+collections.\+Recently\+Used\+Container\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1__collections_1_1RecentlyUsedContainer_ab116a2d9d633bc2733601598f7eea29b}\label{classurllib3_1_1__collections_1_1RecentlyUsedContainer_ab116a2d9d633bc2733601598f7eea29b}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, maxsize=10, dispose\+\_\+func=None)
+\item 
+\mbox{\Hypertarget{classurllib3_1_1__collections_1_1RecentlyUsedContainer_aaa035147045d94d92d5fa464a5a52efe}\label{classurllib3_1_1__collections_1_1RecentlyUsedContainer_aaa035147045d94d92d5fa464a5a52efe}} 
+def {\bfseries \+\_\+\+\_\+getitem\+\_\+\+\_\+} (self, key)
+\item 
+\mbox{\Hypertarget{classurllib3_1_1__collections_1_1RecentlyUsedContainer_a79afee5c5f37f13272c44cc7db14f8e7}\label{classurllib3_1_1__collections_1_1RecentlyUsedContainer_a79afee5c5f37f13272c44cc7db14f8e7}} 
+def {\bfseries \+\_\+\+\_\+setitem\+\_\+\+\_\+} (self, key, value)
+\item 
+\mbox{\Hypertarget{classurllib3_1_1__collections_1_1RecentlyUsedContainer_a85e5121d21f7cb80ec584578b22e7719}\label{classurllib3_1_1__collections_1_1RecentlyUsedContainer_a85e5121d21f7cb80ec584578b22e7719}} 
+def {\bfseries \+\_\+\+\_\+delitem\+\_\+\+\_\+} (self, key)
+\item 
+\mbox{\Hypertarget{classurllib3_1_1__collections_1_1RecentlyUsedContainer_a91a8cc37bc7f32737d24cc7bcb375740}\label{classurllib3_1_1__collections_1_1RecentlyUsedContainer_a91a8cc37bc7f32737d24cc7bcb375740}} 
+def {\bfseries \+\_\+\+\_\+len\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classurllib3_1_1__collections_1_1RecentlyUsedContainer_a256c71277c938e260ad31e86b23f2e0b}\label{classurllib3_1_1__collections_1_1RecentlyUsedContainer_a256c71277c938e260ad31e86b23f2e0b}} 
+def {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classurllib3_1_1__collections_1_1RecentlyUsedContainer_a3cd50398d5f6639d1ba6235ef13797db}\label{classurllib3_1_1__collections_1_1RecentlyUsedContainer_a3cd50398d5f6639d1ba6235ef13797db}} 
+def {\bfseries clear} (self)
+\item 
+\mbox{\Hypertarget{classurllib3_1_1__collections_1_1RecentlyUsedContainer_ae808124dce48addd4f87119f13c10825}\label{classurllib3_1_1__collections_1_1RecentlyUsedContainer_ae808124dce48addd4f87119f13c10825}} 
+def {\bfseries keys} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1__collections_1_1RecentlyUsedContainer_a4261fe76bd235a2aef6ba82ee6b16c24}\label{classurllib3_1_1__collections_1_1RecentlyUsedContainer_a4261fe76bd235a2aef6ba82ee6b16c24}} 
+{\bfseries dispose\+\_\+func}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1__collections_1_1RecentlyUsedContainer_aab00b29d890ff12970d83d0155f0442d}\label{classurllib3_1_1__collections_1_1RecentlyUsedContainer_aab00b29d890ff12970d83d0155f0442d}} 
+{\bfseries lock}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1__collections_1_1RecentlyUsedContainer_aca2849718c2732dd584d46f76063d9de}\label{classurllib3_1_1__collections_1_1RecentlyUsedContainer_aca2849718c2732dd584d46f76063d9de}} 
+{\bfseries Container\+Cls} = Ordered\+Dict
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Provides a thread-safe dict-like container which maintains up to
+``maxsize`` keys while throwing away the least-recently-used keys beyond
+``maxsize``.
+
+:param maxsize:
+    Maximum number of recent elements to retain.
+
+:param dispose_func:
+    Every time an item is evicted from the container,
+    ``dispose_func(value)`` is called.  Callback which will get called
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/urllib3/\+\_\+collections.\+py\end{DoxyCompactItemize}

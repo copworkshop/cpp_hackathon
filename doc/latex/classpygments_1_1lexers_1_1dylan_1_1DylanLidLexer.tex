@@ -1,0 +1,73 @@
+\hypertarget{classpygments_1_1lexers_1_1dylan_1_1DylanLidLexer}{}\doxysection{pygments.\+lexers.\+dylan.\+Dylan\+Lid\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1dylan_1_1DylanLidLexer}\index{pygments.lexers.dylan.DylanLidLexer@{pygments.lexers.dylan.DylanLidLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+dylan.\+Dylan\+Lid\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+dylan.\+Dylan\+Lid\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dylan_1_1DylanLidLexer_a35c3bc54e83807cf7a58ea7dc8496c78}\label{classpygments_1_1lexers_1_1dylan_1_1DylanLidLexer_a35c3bc54e83807cf7a58ea7dc8496c78}} 
+string {\bfseries name} = \textquotesingle{}Dylan\+LID\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dylan_1_1DylanLidLexer_a571635cf85748b111407ad5a72385e1c}\label{classpygments_1_1lexers_1_1dylan_1_1DylanLidLexer_a571635cf85748b111407ad5a72385e1c}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}dylan-\/lid\textquotesingle{}, \textquotesingle{}lid\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dylan_1_1DylanLidLexer_a5b3bd8f13304c430f9a18c305a19688f}\label{classpygments_1_1lexers_1_1dylan_1_1DylanLidLexer_a5b3bd8f13304c430f9a18c305a19688f}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.lid\textquotesingle{}, \textquotesingle{}$\ast$.hdp\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dylan_1_1DylanLidLexer_a87c382282d320efc298b67c4d2c66b46}\label{classpygments_1_1lexers_1_1dylan_1_1DylanLidLexer_a87c382282d320efc298b67c4d2c66b46}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/dylan-\/lid\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dylan_1_1DylanLidLexer_a797a449fb62b48c2fada8ca451c9ffaf}\label{classpygments_1_1lexers_1_1dylan_1_1DylanLidLexer_a797a449fb62b48c2fada8ca451c9ffaf}} 
+string {\bfseries url} = \textquotesingle{}http\+://www.\+opendylan.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dylan_1_1DylanLidLexer_accb94b409801f5de7d10b5bb3bfe617d}\label{classpygments_1_1lexers_1_1dylan_1_1DylanLidLexer_accb94b409801f5de7d10b5bb3bfe617d}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+6\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dylan_1_1DylanLidLexer_a405e50947d3b9b8f317931571296fceb}\label{classpygments_1_1lexers_1_1dylan_1_1DylanLidLexer_a405e50947d3b9b8f317931571296fceb}} 
+{\bfseries flags} = re.\+IGNORECASE
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For Dylan LID (Library Interchange Definition) files.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1dylan_1_1DylanLidLexer_a524b8a545be052152c5f8f2e8c4552a1}\label{classpygments_1_1lexers_1_1dylan_1_1DylanLidLexer_a524b8a545be052152c5f8f2e8c4552a1}} 
+\index{pygments.lexers.dylan.DylanLidLexer@{pygments.lexers.dylan.DylanLidLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.dylan.DylanLidLexer@{pygments.lexers.dylan.DylanLidLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+dylan.\+Dylan\+Lid\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            \textcolor{comment}{\# Whitespace}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{comment}{\# single line comment}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(//.*?)(\(\backslash\)n)'}, bygroups(Comment.Single, Whitespace)),}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{comment}{\# lid header}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(.*?)(:)([ \(\backslash\)t]*)(.*(?:\(\backslash\)n[ \(\backslash\)t].+)*)'},}
+\DoxyCodeLine{             bygroups(Name.Attribute, Operator, Whitespace, String)),}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/dylan.\+py\end{DoxyCompactItemize}

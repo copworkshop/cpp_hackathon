@@ -1,0 +1,65 @@
+\hypertarget{classjinja2_1_1nativetypes_1_1NativeTemplate}{}\doxysection{jinja2.\+nativetypes.\+Native\+Template Class Reference}
+\label{classjinja2_1_1nativetypes_1_1NativeTemplate}\index{jinja2.nativetypes.NativeTemplate@{jinja2.nativetypes.NativeTemplate}}
+
+
+Inheritance diagram for jinja2.\+nativetypes.\+Native\+Template\+:
+% FIG 0
+
+
+Collaboration diagram for jinja2.\+nativetypes.\+Native\+Template\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Any \mbox{\hyperlink{classjinja2_1_1nativetypes_1_1NativeTemplate_a97c8605273784a0f415fd048bb122a19}{render}} (self, $\ast$t.\+Any args, $\ast$$\ast$t.\+Any kwargs)
+\item 
+t.\+Any \mbox{\hyperlink{classjinja2_1_1nativetypes_1_1NativeTemplate_a695235d6ce52d957653050d5e65aa892}{render\+\_\+async}} (self, $\ast$t.\+Any args, $\ast$$\ast$t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjinja2_1_1nativetypes_1_1NativeTemplate_a764548637550ecfe11e9be3905f4732c}\label{classjinja2_1_1nativetypes_1_1NativeTemplate_a764548637550ecfe11e9be3905f4732c}} 
+{\bfseries environment\+\_\+class} = \mbox{\hyperlink{classjinja2_1_1nativetypes_1_1NativeEnvironment}{Native\+Environment}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classjinja2_1_1nativetypes_1_1NativeTemplate_a97c8605273784a0f415fd048bb122a19}\label{classjinja2_1_1nativetypes_1_1NativeTemplate_a97c8605273784a0f415fd048bb122a19}} 
+\index{jinja2.nativetypes.NativeTemplate@{jinja2.nativetypes.NativeTemplate}!render@{render}}
+\index{render@{render}!jinja2.nativetypes.NativeTemplate@{jinja2.nativetypes.NativeTemplate}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily  t.\+Any jinja2.\+nativetypes.\+Native\+Template.\+render (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$t.\+Any}]{args,  }\item[{$\ast$$\ast$t.\+Any}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Render the template to produce a native Python type. If the
+result is a single node, its value is returned. Otherwise, the
+nodes are concatenated as strings. If the result can be parsed
+with :func:`ast.literal_eval`, the parsed value is returned.
+Otherwise, the string is returned.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1environment_1_1Template_a36cfef680e004196e4f72b6b8cc0574e}{jinja2.\+environment.\+Template}}.
+
+\mbox{\Hypertarget{classjinja2_1_1nativetypes_1_1NativeTemplate_a695235d6ce52d957653050d5e65aa892}\label{classjinja2_1_1nativetypes_1_1NativeTemplate_a695235d6ce52d957653050d5e65aa892}} 
+\index{jinja2.nativetypes.NativeTemplate@{jinja2.nativetypes.NativeTemplate}!render\_async@{render\_async}}
+\index{render\_async@{render\_async}!jinja2.nativetypes.NativeTemplate@{jinja2.nativetypes.NativeTemplate}}
+\doxysubsubsection{\texorpdfstring{render\_async()}{render\_async()}}
+{\footnotesize\ttfamily  t.\+Any jinja2.\+nativetypes.\+Native\+Template.\+render\+\_\+async (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$t.\+Any}]{args,  }\item[{$\ast$$\ast$t.\+Any}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This works similar to :meth:`render` but returns a coroutine
+that when awaited returns the entire rendered template string.  This
+requires the async feature to be enabled.
+
+Example usage::
+
+    await template.render_async(knights='that say nih; asynchronously')
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1environment_1_1Template_a4ee286bbe14c578c28a35c4e0d93a52e}{jinja2.\+environment.\+Template}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jinja2/nativetypes.\+py\end{DoxyCompactItemize}

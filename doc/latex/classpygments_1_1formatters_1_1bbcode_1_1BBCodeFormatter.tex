@@ -1,0 +1,88 @@
+\hypertarget{classpygments_1_1formatters_1_1bbcode_1_1BBCodeFormatter}{}\doxysection{pygments.\+formatters.\+bbcode.\+BBCode\+Formatter Class Reference}
+\label{classpygments_1_1formatters_1_1bbcode_1_1BBCodeFormatter}\index{pygments.formatters.bbcode.BBCodeFormatter@{pygments.formatters.bbcode.BBCodeFormatter}}
+
+
+Inheritance diagram for pygments.\+formatters.\+bbcode.\+BBCode\+Formatter\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+formatters.\+bbcode.\+BBCode\+Formatter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1formatters_1_1bbcode_1_1BBCodeFormatter_aacd101714b681c7e9b8ba8ef1caea08f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1bbcode_1_1BBCodeFormatter_a0e597d5a3e61f6535f5b6a44977e7597}\label{classpygments_1_1formatters_1_1bbcode_1_1BBCodeFormatter_a0e597d5a3e61f6535f5b6a44977e7597}} 
+def {\bfseries format\+\_\+unencoded} (self, tokensource, outfile)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1bbcode_1_1BBCodeFormatter_a991fb661ab2e5b9d297edfe36002757b}\label{classpygments_1_1formatters_1_1bbcode_1_1BBCodeFormatter_a991fb661ab2e5b9d297edfe36002757b}} 
+{\bfseries styles}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1bbcode_1_1BBCodeFormatter_a9615ab84ffd38c685a9e7597eb634835}\label{classpygments_1_1formatters_1_1bbcode_1_1BBCodeFormatter_a9615ab84ffd38c685a9e7597eb634835}} 
+string {\bfseries name} = \textquotesingle{}BBCode\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1bbcode_1_1BBCodeFormatter_a7a7a3e238e96d897a6f56e7f4bfa40d2}\label{classpygments_1_1formatters_1_1bbcode_1_1BBCodeFormatter_a7a7a3e238e96d897a6f56e7f4bfa40d2}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}bbcode\textquotesingle{}, \textquotesingle{}bb\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1bbcode_1_1BBCodeFormatter_a0cb9fea9d6180673f96670ca1170d1f3}\label{classpygments_1_1formatters_1_1bbcode_1_1BBCodeFormatter_a0cb9fea9d6180673f96670ca1170d1f3}} 
+list {\bfseries filenames} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Format tokens with BBcodes. These formatting codes are used by many
+bulletin boards, so you can highlight your sourcecode with pygments before
+posting it there.
+
+This formatter has no support for background colors and borders, as there
+are no common BBcode tags for that.
+
+Some board systems (e.g. phpBB) don't support colors in their [code] tag,
+so you can't use the highlighting together with that tag.
+Text in a [code] tag usually is shown with a monospace font (which this
+formatter can do with the ``monofont`` option) and no spaces (which you
+need for indentation) are removed.
+
+Additional options accepted:
+
+`style`
+    The style to use, can be a string or a Style subclass (default:
+    ``'default'``).
+
+`codetag`
+    If set to true, put the output into ``[code]`` tags (default:
+    ``false``)
+
+`monofont`
+    If set to true, add a tag to show the code with a monospace font
+    (default: ``false``).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1formatters_1_1bbcode_1_1BBCodeFormatter_aacd101714b681c7e9b8ba8ef1caea08f}\label{classpygments_1_1formatters_1_1bbcode_1_1BBCodeFormatter_aacd101714b681c7e9b8ba8ef1caea08f}} 
+\index{pygments.formatters.bbcode.BBCodeFormatter@{pygments.formatters.bbcode.BBCodeFormatter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.formatters.bbcode.BBCodeFormatter@{pygments.formatters.bbcode.BBCodeFormatter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+formatters.\+bbcode.\+BBCode\+Formatter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}As with lexers, this constructor takes arbitrary optional arguments,
+and if you override it, you should first process your own options, then
+call the base class implementation.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1formatter_1_1Formatter_a010d28265423e3708a1d4199975fcbbd}{pygments.\+formatter.\+Formatter}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/formatters/bbcode.\+py\end{DoxyCompactItemize}

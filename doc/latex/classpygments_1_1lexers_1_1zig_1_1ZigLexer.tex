@@ -1,0 +1,179 @@
+\hypertarget{classpygments_1_1lexers_1_1zig_1_1ZigLexer}{}\doxysection{pygments.\+lexers.\+zig.\+Zig\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1zig_1_1ZigLexer}\index{pygments.lexers.zig.ZigLexer@{pygments.lexers.zig.ZigLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+zig.\+Zig\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+zig.\+Zig\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1zig_1_1ZigLexer_a51c56c1b11d2cd2724dbf1b477c11533}\label{classpygments_1_1lexers_1_1zig_1_1ZigLexer_a51c56c1b11d2cd2724dbf1b477c11533}} 
+string {\bfseries name} = \textquotesingle{}Zig\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1zig_1_1ZigLexer_a86fe4646773536b769339bbfb369db43}\label{classpygments_1_1lexers_1_1zig_1_1ZigLexer_a86fe4646773536b769339bbfb369db43}} 
+string {\bfseries url} = \textquotesingle{}http\+://www.\+ziglang.\+org\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1zig_1_1ZigLexer_a34d386d5beb4e5a052ef7edc6f8f8be1}\label{classpygments_1_1lexers_1_1zig_1_1ZigLexer_a34d386d5beb4e5a052ef7edc6f8f8be1}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}zig\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1zig_1_1ZigLexer_a5bce73b98237bd75784106d681590970}\label{classpygments_1_1lexers_1_1zig_1_1ZigLexer_a5bce73b98237bd75784106d681590970}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.zig\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1zig_1_1ZigLexer_aabe0626cb7e8ddf7754e430dd844e539}\label{classpygments_1_1lexers_1_1zig_1_1ZigLexer_aabe0626cb7e8ddf7754e430dd844e539}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/zig\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1zig_1_1ZigLexer_a9c756eebc1ce46a57252a0b2c2dd9418}\label{classpygments_1_1lexers_1_1zig_1_1ZigLexer_a9c756eebc1ce46a57252a0b2c2dd9418}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\item 
+tuple {\bfseries type\+\_\+keywords}
+\item 
+tuple {\bfseries storage\+\_\+keywords}
+\item 
+tuple {\bfseries structure\+\_\+keywords}
+\item 
+tuple {\bfseries statement\+\_\+keywords}
+\item 
+tuple {\bfseries conditional\+\_\+keywords}
+\item 
+tuple {\bfseries repeat\+\_\+keywords}
+\item 
+tuple {\bfseries other\+\_\+keywords}
+\item 
+tuple {\bfseries constant\+\_\+keywords}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1zig_1_1ZigLexer_a8973eb3b0956b651dc3feb84d8294df1}\label{classpygments_1_1lexers_1_1zig_1_1ZigLexer_a8973eb3b0956b651dc3feb84d8294df1}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for the Zig language.
+
+grammar: https://ziglang.org/documentation/master/#Grammar
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1zig_1_1ZigLexer_a63ff9ad60b42dfa937f98248ed736fd9}\label{classpygments_1_1lexers_1_1zig_1_1ZigLexer_a63ff9ad60b42dfa937f98248ed736fd9}} 
+\index{pygments.lexers.zig.ZigLexer@{pygments.lexers.zig.ZigLexer}!conditional\_keywords@{conditional\_keywords}}
+\index{conditional\_keywords@{conditional\_keywords}!pygments.lexers.zig.ZigLexer@{pygments.lexers.zig.ZigLexer}}
+\doxysubsubsection{\texorpdfstring{conditional\_keywords}{conditional\_keywords}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+zig.\+Zig\+Lexer.\+conditional\+\_\+keywords\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (}
+\DoxyCodeLine{        words((\textcolor{stringliteral}{'if'}, \textcolor{stringliteral}{'else'}, \textcolor{stringliteral}{'switch'}, \textcolor{stringliteral}{'and'}, \textcolor{stringliteral}{'or'}, \textcolor{stringliteral}{'orelse'}), suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}),}
+\DoxyCodeLine{        Keyword)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1zig_1_1ZigLexer_ac41aafe9d45a985812d51b3a91941dc8}\label{classpygments_1_1lexers_1_1zig_1_1ZigLexer_ac41aafe9d45a985812d51b3a91941dc8}} 
+\index{pygments.lexers.zig.ZigLexer@{pygments.lexers.zig.ZigLexer}!constant\_keywords@{constant\_keywords}}
+\index{constant\_keywords@{constant\_keywords}!pygments.lexers.zig.ZigLexer@{pygments.lexers.zig.ZigLexer}}
+\doxysubsubsection{\texorpdfstring{constant\_keywords}{constant\_keywords}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+zig.\+Zig\+Lexer.\+constant\+\_\+keywords\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (}
+\DoxyCodeLine{        words((\textcolor{stringliteral}{'true'}, \textcolor{stringliteral}{'false'}, \textcolor{stringliteral}{'null'}, \textcolor{stringliteral}{'undefined'}), suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}),}
+\DoxyCodeLine{        Keyword.Constant)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1zig_1_1ZigLexer_aa8a505f8232f864025f2b1f05a8b4640}\label{classpygments_1_1lexers_1_1zig_1_1ZigLexer_aa8a505f8232f864025f2b1f05a8b4640}} 
+\index{pygments.lexers.zig.ZigLexer@{pygments.lexers.zig.ZigLexer}!other\_keywords@{other\_keywords}}
+\index{other\_keywords@{other\_keywords}!pygments.lexers.zig.ZigLexer@{pygments.lexers.zig.ZigLexer}}
+\doxysubsubsection{\texorpdfstring{other\_keywords}{other\_keywords}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+zig.\+Zig\+Lexer.\+other\+\_\+keywords\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (}
+\DoxyCodeLine{        words((\textcolor{stringliteral}{'fn'}, \textcolor{stringliteral}{'usingnamespace'}, \textcolor{stringliteral}{'test'}), suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}),}
+\DoxyCodeLine{        Keyword)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1zig_1_1ZigLexer_acb6a45188a3b5ec0b1a5392d55a0d280}\label{classpygments_1_1lexers_1_1zig_1_1ZigLexer_acb6a45188a3b5ec0b1a5392d55a0d280}} 
+\index{pygments.lexers.zig.ZigLexer@{pygments.lexers.zig.ZigLexer}!repeat\_keywords@{repeat\_keywords}}
+\index{repeat\_keywords@{repeat\_keywords}!pygments.lexers.zig.ZigLexer@{pygments.lexers.zig.ZigLexer}}
+\doxysubsubsection{\texorpdfstring{repeat\_keywords}{repeat\_keywords}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+zig.\+Zig\+Lexer.\+repeat\+\_\+keywords\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (}
+\DoxyCodeLine{        words((\textcolor{stringliteral}{'while'}, \textcolor{stringliteral}{'for'}), suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}),}
+\DoxyCodeLine{        Keyword)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1zig_1_1ZigLexer_a983deb87242268e878a0761285a23aa9}\label{classpygments_1_1lexers_1_1zig_1_1ZigLexer_a983deb87242268e878a0761285a23aa9}} 
+\index{pygments.lexers.zig.ZigLexer@{pygments.lexers.zig.ZigLexer}!statement\_keywords@{statement\_keywords}}
+\index{statement\_keywords@{statement\_keywords}!pygments.lexers.zig.ZigLexer@{pygments.lexers.zig.ZigLexer}}
+\doxysubsubsection{\texorpdfstring{statement\_keywords}{statement\_keywords}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+zig.\+Zig\+Lexer.\+statement\+\_\+keywords\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (}
+\DoxyCodeLine{        words((\textcolor{stringliteral}{'break'}, \textcolor{stringliteral}{'return'}, \textcolor{stringliteral}{'continue'}, \textcolor{stringliteral}{'asm'}, \textcolor{stringliteral}{'defer'}, \textcolor{stringliteral}{'errdefer'},}
+\DoxyCodeLine{               \textcolor{stringliteral}{'unreachable'}, \textcolor{stringliteral}{'try'}, \textcolor{stringliteral}{'catch'}, \textcolor{stringliteral}{'async'}, \textcolor{stringliteral}{'await'}, \textcolor{stringliteral}{'suspend'},}
+\DoxyCodeLine{               \textcolor{stringliteral}{'resume'}, \textcolor{stringliteral}{'cancel'}), suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}),}
+\DoxyCodeLine{        Keyword)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1zig_1_1ZigLexer_ae64207194e22a221136714051f02e9a2}\label{classpygments_1_1lexers_1_1zig_1_1ZigLexer_ae64207194e22a221136714051f02e9a2}} 
+\index{pygments.lexers.zig.ZigLexer@{pygments.lexers.zig.ZigLexer}!storage\_keywords@{storage\_keywords}}
+\index{storage\_keywords@{storage\_keywords}!pygments.lexers.zig.ZigLexer@{pygments.lexers.zig.ZigLexer}}
+\doxysubsubsection{\texorpdfstring{storage\_keywords}{storage\_keywords}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+zig.\+Zig\+Lexer.\+storage\+\_\+keywords\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (}
+\DoxyCodeLine{        words((\textcolor{stringliteral}{'const'}, \textcolor{stringliteral}{'var'}, \textcolor{stringliteral}{'extern'}, \textcolor{stringliteral}{'packed'}, \textcolor{stringliteral}{'export'}, \textcolor{stringliteral}{'pub'}, \textcolor{stringliteral}{'noalias'},}
+\DoxyCodeLine{               \textcolor{stringliteral}{'inline'}, \textcolor{stringliteral}{'comptime'}, \textcolor{stringliteral}{'nakedcc'}, \textcolor{stringliteral}{'stdcallcc'}, \textcolor{stringliteral}{'volatile'}, \textcolor{stringliteral}{'allowzero'},}
+\DoxyCodeLine{               \textcolor{stringliteral}{'align'}, \textcolor{stringliteral}{'linksection'}, \textcolor{stringliteral}{'threadlocal'}), suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}),}
+\DoxyCodeLine{        Keyword.Reserved)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1zig_1_1ZigLexer_ae72fbe1c09059fead5bafbc579b7fe79}\label{classpygments_1_1lexers_1_1zig_1_1ZigLexer_ae72fbe1c09059fead5bafbc579b7fe79}} 
+\index{pygments.lexers.zig.ZigLexer@{pygments.lexers.zig.ZigLexer}!structure\_keywords@{structure\_keywords}}
+\index{structure\_keywords@{structure\_keywords}!pygments.lexers.zig.ZigLexer@{pygments.lexers.zig.ZigLexer}}
+\doxysubsubsection{\texorpdfstring{structure\_keywords}{structure\_keywords}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+zig.\+Zig\+Lexer.\+structure\+\_\+keywords\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (}
+\DoxyCodeLine{        words((\textcolor{stringliteral}{'struct'}, \textcolor{stringliteral}{'enum'}, \textcolor{stringliteral}{'union'}, \textcolor{stringliteral}{'error'}), suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}),}
+\DoxyCodeLine{        Keyword)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1zig_1_1ZigLexer_a0f01f6931ec541018506ec02d0bffab0}\label{classpygments_1_1lexers_1_1zig_1_1ZigLexer_a0f01f6931ec541018506ec02d0bffab0}} 
+\index{pygments.lexers.zig.ZigLexer@{pygments.lexers.zig.ZigLexer}!type\_keywords@{type\_keywords}}
+\index{type\_keywords@{type\_keywords}!pygments.lexers.zig.ZigLexer@{pygments.lexers.zig.ZigLexer}}
+\doxysubsubsection{\texorpdfstring{type\_keywords}{type\_keywords}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+zig.\+Zig\+Lexer.\+type\+\_\+keywords\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (}
+\DoxyCodeLine{        words((\textcolor{stringliteral}{'bool'}, \textcolor{stringliteral}{'f16'}, \textcolor{stringliteral}{'f32'}, \textcolor{stringliteral}{'f64'}, \textcolor{stringliteral}{'f128'}, \textcolor{stringliteral}{'void'}, \textcolor{stringliteral}{'noreturn'}, \textcolor{stringliteral}{'type'},}
+\DoxyCodeLine{               \textcolor{stringliteral}{'anyerror'}, \textcolor{stringliteral}{'promise'}, \textcolor{stringliteral}{'i0'}, \textcolor{stringliteral}{'u0'}, \textcolor{stringliteral}{'isize'},  \textcolor{stringliteral}{'usize'}, \textcolor{stringliteral}{'comptime\_int'},}
+\DoxyCodeLine{               \textcolor{stringliteral}{'comptime\_float'}, \textcolor{stringliteral}{'c\_short'}, \textcolor{stringliteral}{'c\_ushort'}, \textcolor{stringliteral}{'c\_int'}, \textcolor{stringliteral}{'c\_uint'}, \textcolor{stringliteral}{'c\_long'},}
+\DoxyCodeLine{               \textcolor{stringliteral}{'c\_ulong'}, \textcolor{stringliteral}{'c\_longlong'}, \textcolor{stringliteral}{'c\_ulonglong'}, \textcolor{stringliteral}{'c\_longdouble'}, \textcolor{stringliteral}{'c\_void'}}
+\DoxyCodeLine{               \textcolor{stringliteral}{'i8'}, \textcolor{stringliteral}{'u8'}, \textcolor{stringliteral}{'i16'}, \textcolor{stringliteral}{'u16'}, \textcolor{stringliteral}{'i32'}, \textcolor{stringliteral}{'u32'}, \textcolor{stringliteral}{'i64'}, \textcolor{stringliteral}{'u64'}, \textcolor{stringliteral}{'i128'},}
+\DoxyCodeLine{               \textcolor{stringliteral}{'u128'}), suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}),}
+\DoxyCodeLine{        Keyword.Type)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/zig.\+py\end{DoxyCompactItemize}

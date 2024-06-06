@@ -1,0 +1,160 @@
+\hypertarget{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer}{}\doxysection{pygments.\+lexers.\+maxima.\+Maxima\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer}\index{pygments.lexers.maxima.MaximaLexer@{pygments.lexers.maxima.MaximaLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+maxima.\+Maxima\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+maxima.\+Maxima\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_a80c8ead9b9b45df1e93409490594e2c0}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_acbb24a318e1e334079f20205ff417630}\label{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_acbb24a318e1e334079f20205ff417630}} 
+string {\bfseries name} = \textquotesingle{}Maxima\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_a7858e315c8b16de1ace0b832838c96b1}\label{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_a7858e315c8b16de1ace0b832838c96b1}} 
+string {\bfseries url} = \textquotesingle{}http\+://maxima.\+sourceforge.\+net\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_aca7af403f5f4b5f1bdfd24d8e96aaad9}\label{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_aca7af403f5f4b5f1bdfd24d8e96aaad9}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}maxima\textquotesingle{}, \textquotesingle{}macsyma\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_ac66e5194cb767b1619a970d97a3afeee}\label{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_ac66e5194cb767b1619a970d97a3afeee}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.mac\textquotesingle{}, \textquotesingle{}$\ast$.max\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_a4b957aa48205dfd6cbb5b62bd5b063f4}\label{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_a4b957aa48205dfd6cbb5b62bd5b063f4}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+11\textquotesingle{}
+\item 
+tuple {\bfseries keywords}
+\item 
+tuple {\bfseries constants}
+\item 
+tuple {\bfseries operators}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_ab38649dcc5f4eb250e2ad7d35e9cf737}\label{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_ab38649dcc5f4eb250e2ad7d35e9cf737}} 
+tuple {\bfseries operator\+\_\+words} = (\textquotesingle{}and\textquotesingle{}, \textquotesingle{}or\textquotesingle{}, \textquotesingle{}not\textquotesingle{})
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A Maxima lexer.
+Derived from pygments.lexers.MuPADLexer.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_a80c8ead9b9b45df1e93409490594e2c0}\label{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_a80c8ead9b9b45df1e93409490594e2c0}} 
+\index{pygments.lexers.maxima.MaximaLexer@{pygments.lexers.maxima.MaximaLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.maxima.MaximaLexer@{pygments.lexers.maxima.MaximaLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+maxima.\+Maxima\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_a13bdbca10631ae75a5028f82befad4df}\label{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_a13bdbca10631ae75a5028f82befad4df}} 
+\index{pygments.lexers.maxima.MaximaLexer@{pygments.lexers.maxima.MaximaLexer}!constants@{constants}}
+\index{constants@{constants}!pygments.lexers.maxima.MaximaLexer@{pygments.lexers.maxima.MaximaLexer}}
+\doxysubsubsection{\texorpdfstring{constants}{constants}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+maxima.\+Maxima\+Lexer.\+constants\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (\textcolor{stringliteral}{'\%pi'}, \textcolor{stringliteral}{'\%e'}, \textcolor{stringliteral}{'\%phi'}, \textcolor{stringliteral}{'\%gamma'}, \textcolor{stringliteral}{'\%i'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'und'}, \textcolor{stringliteral}{'ind'}, \textcolor{stringliteral}{'infinity'}, \textcolor{stringliteral}{'inf'}, \textcolor{stringliteral}{'minf'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'true'}, \textcolor{stringliteral}{'false'}, \textcolor{stringliteral}{'unknown'}, \textcolor{stringliteral}{'done'})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_a041a0a3ec18adfaed797b9732d089ef5}\label{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_a041a0a3ec18adfaed797b9732d089ef5}} 
+\index{pygments.lexers.maxima.MaximaLexer@{pygments.lexers.maxima.MaximaLexer}!keywords@{keywords}}
+\index{keywords@{keywords}!pygments.lexers.maxima.MaximaLexer@{pygments.lexers.maxima.MaximaLexer}}
+\doxysubsubsection{\texorpdfstring{keywords}{keywords}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+maxima.\+Maxima\+Lexer.\+keywords\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (\textcolor{stringliteral}{'if'}, \textcolor{stringliteral}{'then'}, \textcolor{stringliteral}{'else'}, \textcolor{stringliteral}{'elseif'},}
+\DoxyCodeLine{                \textcolor{stringliteral}{'do'}, \textcolor{stringliteral}{'while'}, \textcolor{stringliteral}{'repeat'}, \textcolor{stringliteral}{'until'},}
+\DoxyCodeLine{                \textcolor{stringliteral}{'for'}, \textcolor{stringliteral}{'from'}, \textcolor{stringliteral}{'to'}, \textcolor{stringliteral}{'downto'}, \textcolor{stringliteral}{'step'}, \textcolor{stringliteral}{'thru'})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_ae51d2fd925881237c7bf2daabc24e089}\label{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_ae51d2fd925881237c7bf2daabc24e089}} 
+\index{pygments.lexers.maxima.MaximaLexer@{pygments.lexers.maxima.MaximaLexer}!operators@{operators}}
+\index{operators@{operators}!pygments.lexers.maxima.MaximaLexer@{pygments.lexers.maxima.MaximaLexer}}
+\doxysubsubsection{\texorpdfstring{operators}{operators}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+maxima.\+Maxima\+Lexer.\+operators\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (\textcolor{stringliteral}{r'.'}, \textcolor{stringliteral}{r':'}, \textcolor{stringliteral}{r'='}, \textcolor{stringliteral}{r'\#'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{r'+'}, \textcolor{stringliteral}{r'-\/'}, \textcolor{stringliteral}{r'*'}, \textcolor{stringliteral}{r'/'}, \textcolor{stringliteral}{r'\string^'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{r'@'}, \textcolor{stringliteral}{r'>'}, \textcolor{stringliteral}{r'<'}, \textcolor{stringliteral}{r'|'}, \textcolor{stringliteral}{r'!'}, \textcolor{stringliteral}{r"{}'"{}})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_a02773605dfbd3765f9a98b8efa255a69}\label{classpygments_1_1lexers_1_1maxima_1_1MaximaLexer_a02773605dfbd3765f9a98b8efa255a69}} 
+\index{pygments.lexers.maxima.MaximaLexer@{pygments.lexers.maxima.MaximaLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.maxima.MaximaLexer@{pygments.lexers.maxima.MaximaLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+maxima.\+Maxima\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'/\(\backslash\)*'}, Comment.Multiline, \textcolor{stringliteral}{'comment'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'"{}(?:[\string^"{}\(\backslash\)\(\backslash\)]|\(\backslash\)\(\backslash\).)*"{}'}, String),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)(|\(\backslash\))|\(\backslash\)[|\(\backslash\)]|\(\backslash\)\{|\(\backslash\)\}'}, Punctuation),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[,;\$]'}, Punctuation),}
+\DoxyCodeLine{            (words (constants), Name.Constant),}
+\DoxyCodeLine{            (words (keywords), Keyword),}
+\DoxyCodeLine{            (words (operators), Operator),}
+\DoxyCodeLine{            (words (operator\_words), Operator.Word),}
+\DoxyCodeLine{            (,}
+\DoxyCodeLine{             bygroups(Name.Function, Text.Whitespace, Punctuation)),}
+\DoxyCodeLine{            (, Name.Variable),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[-\/+]?(\(\backslash\)d*\(\backslash\).\(\backslash\)d+([bdefls][-\/+]?\(\backslash\)d+)?|\(\backslash\)d+(\(\backslash\).\(\backslash\)d*)?[bdefls][-\/+]?\(\backslash\)d+)'}, Number.Float),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[-\/+]?\(\backslash\)d+'}, Number.Integer),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Text.Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'.'}, Text)}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'comment'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^*/]+'}, Comment.Multiline),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'/\(\backslash\)*'}, Comment.Multiline, \textcolor{stringliteral}{'\#push'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)*/'}, Comment.Multiline, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[*/]'}, Comment.Multiline)}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/maxima.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,37 @@
+\hypertarget{classjinja2_1_1nodes_1_1OverlayScope}{}\doxysection{jinja2.\+nodes.\+Overlay\+Scope Class Reference}
+\label{classjinja2_1_1nodes_1_1OverlayScope}\index{jinja2.nodes.OverlayScope@{jinja2.nodes.OverlayScope}}
+
+
+Inheritance diagram for jinja2.\+nodes.\+Overlay\+Scope\+:
+% FIG 0
+
+
+Collaboration diagram for jinja2.\+nodes.\+Overlay\+Scope\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjinja2_1_1nodes_1_1OverlayScope_a5f7727de5738c294a6575b2898a87271}\label{classjinja2_1_1nodes_1_1OverlayScope_a5f7727de5738c294a6575b2898a87271}} 
+tuple {\bfseries fields} = (\char`\"{}context\char`\"{}, \char`\"{}body\char`\"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An overlay scope for extensions.  This is a largely unoptimized scope
+that however can be used to introduce completely arbitrary variables into
+a sub scope from a dictionary or dictionary like object.  The `context`
+field has to evaluate to a dictionary object.
+
+Example usage::
+
+    OverlayScope(context=self.call_method('get_context'),
+                 body=[...])
+
+.. versionadded:: 2.10
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/jinja2/nodes.\+py\end{DoxyCompactItemize}

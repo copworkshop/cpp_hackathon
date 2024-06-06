@@ -1,0 +1,133 @@
+\hypertarget{classpygments_1_1lexers_1_1asc_1_1AscLexer}{}\doxysection{pygments.\+lexers.\+asc.\+Asc\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1asc_1_1AscLexer}\index{pygments.lexers.asc.AscLexer@{pygments.lexers.asc.AscLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+asc.\+Asc\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+asc.\+Asc\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1asc_1_1AscLexer_aeb6794d6d47055270cbea5bebd70bca5}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asc_1_1AscLexer_a74300d88ee8bdd79acd921d2f96c8119}\label{classpygments_1_1lexers_1_1asc_1_1AscLexer_a74300d88ee8bdd79acd921d2f96c8119}} 
+string {\bfseries name} = \textquotesingle{}ASCII armored\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asc_1_1AscLexer_ab8ee6fa063712a5a30fff0673008d3b4}\label{classpygments_1_1lexers_1_1asc_1_1AscLexer_ab8ee6fa063712a5a30fff0673008d3b4}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}asc\textquotesingle{}, \textquotesingle{}pem\textquotesingle{}\mbox{]}
+\item 
+list {\bfseries filenames}
+\item 
+list {\bfseries mimetypes}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asc_1_1AscLexer_a3bfa21822efc9d9830f04f8bca6906f0}\label{classpygments_1_1lexers_1_1asc_1_1AscLexer_a3bfa21822efc9d9830f04f8bca6906f0}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+openpgp.\+org\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asc_1_1AscLexer_a0fc5bbd4c3cb08731241c6742cd507a1}\label{classpygments_1_1lexers_1_1asc_1_1AscLexer_a0fc5bbd4c3cb08731241c6742cd507a1}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+10\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asc_1_1AscLexer_ae07730883b2cd769ea1d11abf501b298}\label{classpygments_1_1lexers_1_1asc_1_1AscLexer_ae07730883b2cd769ea1d11abf501b298}} 
+{\bfseries flags} = re.\+MULTILINE
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for ASCII armored files, containing `-----BEGIN/END ...-----` wrapped
+base64 data.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asc_1_1AscLexer_aeb6794d6d47055270cbea5bebd70bca5}\label{classpygments_1_1lexers_1_1asc_1_1AscLexer_aeb6794d6d47055270cbea5bebd70bca5}} 
+\index{pygments.lexers.asc.AscLexer@{pygments.lexers.asc.AscLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.asc.AscLexer@{pygments.lexers.asc.AscLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+asc.\+Asc\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asc_1_1AscLexer_abc82514deca3e9bb1c95bc5688783d98}\label{classpygments_1_1lexers_1_1asc_1_1AscLexer_abc82514deca3e9bb1c95bc5688783d98}} 
+\index{pygments.lexers.asc.AscLexer@{pygments.lexers.asc.AscLexer}!filenames@{filenames}}
+\index{filenames@{filenames}!pygments.lexers.asc.AscLexer@{pygments.lexers.asc.AscLexer}}
+\doxysubsubsection{\texorpdfstring{filenames}{filenames}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+asc.\+Asc\+Lexer.\+filenames\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [}
+\DoxyCodeLine{        \textcolor{stringliteral}{'*.asc'},  \textcolor{comment}{\# PGP; *.gpg, *.pgp, and *.sig too, but those can be binary}}
+\DoxyCodeLine{        \textcolor{stringliteral}{'*.pem'},  \textcolor{comment}{\# X.509; *.cer, *.crt, *.csr, and key etc too, but those can be binary}}
+\DoxyCodeLine{        \textcolor{stringliteral}{'id\_dsa'}, \textcolor{stringliteral}{'id\_ecdsa'}, \textcolor{stringliteral}{'id\_ecdsa\_sk'}, \textcolor{stringliteral}{'id\_ed25519'}, \textcolor{stringliteral}{'id\_ed25519\_sk'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'id\_rsa'},  \textcolor{comment}{\# SSH private keys}}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asc_1_1AscLexer_a8192187e01b15be54d7b05ab06085889}\label{classpygments_1_1lexers_1_1asc_1_1AscLexer_a8192187e01b15be54d7b05ab06085889}} 
+\index{pygments.lexers.asc.AscLexer@{pygments.lexers.asc.AscLexer}!mimetypes@{mimetypes}}
+\index{mimetypes@{mimetypes}!pygments.lexers.asc.AscLexer@{pygments.lexers.asc.AscLexer}}
+\doxysubsubsection{\texorpdfstring{mimetypes}{mimetypes}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+asc.\+Asc\+Lexer.\+mimetypes\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [\textcolor{stringliteral}{'application/pgp-\/keys'}, \textcolor{stringliteral}{'application/pgp-\/encrypted'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'application/pgp-\/signature'}, \textcolor{stringliteral}{'application/pem-\/certificate-\/chain'}]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1asc_1_1AscLexer_a39c39b00348235cb545781f7eef6e75e}\label{classpygments_1_1lexers_1_1asc_1_1AscLexer_a39c39b00348235cb545781f7eef6e75e}} 
+\index{pygments.lexers.asc.AscLexer@{pygments.lexers.asc.AscLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.asc.AscLexer@{pygments.lexers.asc.AscLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+asc.\+Asc\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^-\/-\/-\/-\/-\/BEGIN [\string^\(\backslash\)n]+-\/-\/-\/-\/-\/\$'}, Generic.Heading, \textcolor{stringliteral}{'data'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)S+'}, Comment),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'data'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^([\string^:]+)(:)([ \(\backslash\)t]+)(.*)'},}
+\DoxyCodeLine{             bygroups(Name.Attribute, Operator, Whitespace, String)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\string^-\/-\/-\/-\/-\/END [\string^\(\backslash\)n]+-\/-\/-\/-\/-\/\$'}, Generic.Heading, \textcolor{stringliteral}{'root'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)S+'}, String),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/asc.\+py\end{DoxyCompactItemize}

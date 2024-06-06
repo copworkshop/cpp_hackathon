@@ -1,0 +1,278 @@
+\hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar}{}\doxysection{requests.\+cookies.\+Requests\+Cookie\+Jar Class Reference}
+\label{classrequests_1_1cookies_1_1RequestsCookieJar}\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+
+
+Inheritance diagram for requests.\+cookies.\+Requests\+Cookie\+Jar\+:
+% FIG 0
+
+
+Collaboration diagram for requests.\+cookies.\+Requests\+Cookie\+Jar\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classrequests_1_1cookies_1_1RequestsCookieJar_a92fe54e7eb99b6dda27cf5d5daae4cbd}{get}} (self, name, default=None, domain=None, path=None)
+\item 
+def \mbox{\hyperlink{classrequests_1_1cookies_1_1RequestsCookieJar_a6ef619001265f3499e837daba02ab1f4}{set}} (self, name, value, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classrequests_1_1cookies_1_1RequestsCookieJar_a82144dd7b3a867d6d5ac8311a685a878}{iterkeys}} (self)
+\item 
+def \mbox{\hyperlink{classrequests_1_1cookies_1_1RequestsCookieJar_a2c3c3f8f67ce1a7a9a94d3c9512a8fac}{keys}} (self)
+\item 
+def \mbox{\hyperlink{classrequests_1_1cookies_1_1RequestsCookieJar_abf3cdfbf4edd6a437f914682bcfac26b}{itervalues}} (self)
+\item 
+def \mbox{\hyperlink{classrequests_1_1cookies_1_1RequestsCookieJar_abe20e1a27b98257a80a04f67d87099fa}{values}} (self)
+\item 
+def \mbox{\hyperlink{classrequests_1_1cookies_1_1RequestsCookieJar_a83078f8a71d253d30034fd23263f4ff7}{iteritems}} (self)
+\item 
+def \mbox{\hyperlink{classrequests_1_1cookies_1_1RequestsCookieJar_a772085a787d92abe0be8f0b6fcc5e872}{items}} (self)
+\item 
+def \mbox{\hyperlink{classrequests_1_1cookies_1_1RequestsCookieJar_ae36e55c725166e26230cde195d297d45}{list\+\_\+domains}} (self)
+\item 
+def \mbox{\hyperlink{classrequests_1_1cookies_1_1RequestsCookieJar_ad0854f684bbe62b730d441c826d8265b}{list\+\_\+paths}} (self)
+\item 
+def \mbox{\hyperlink{classrequests_1_1cookies_1_1RequestsCookieJar_aabb9a11c736297e450384bfcea451787}{multiple\+\_\+domains}} (self)
+\item 
+def \mbox{\hyperlink{classrequests_1_1cookies_1_1RequestsCookieJar_a9d94c5e2097ed7c6322e2ba03bdb4213}{get\+\_\+dict}} (self, domain=None, path=None)
+\item 
+\mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_aa5d57d77e000f9f1d8809576091702af}\label{classrequests_1_1cookies_1_1RequestsCookieJar_aa5d57d77e000f9f1d8809576091702af}} 
+def {\bfseries \+\_\+\+\_\+contains\+\_\+\+\_\+} (self, name)
+\item 
+def \mbox{\hyperlink{classrequests_1_1cookies_1_1RequestsCookieJar_a3ea4e8515d5c95c10e23ef5ffaf8d834}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, name)
+\item 
+def \mbox{\hyperlink{classrequests_1_1cookies_1_1RequestsCookieJar_aaf1c5918fc63ebfa467aa6e161beb910}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, name, value)
+\item 
+def \mbox{\hyperlink{classrequests_1_1cookies_1_1RequestsCookieJar_ad9d86f59b720d12663f2652004d8ff37}{\+\_\+\+\_\+delitem\+\_\+\+\_\+}} (self, name)
+\item 
+\mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_a01cd6783d35a1a2f1bddac75492063e6}\label{classrequests_1_1cookies_1_1RequestsCookieJar_a01cd6783d35a1a2f1bddac75492063e6}} 
+def {\bfseries set\+\_\+cookie} (self, cookie, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classrequests_1_1cookies_1_1RequestsCookieJar_ae181c116ca074f2590e3868f5bc81100}{update}} (self, other)
+\item 
+def \mbox{\hyperlink{classrequests_1_1cookies_1_1RequestsCookieJar_a881741b5b09bb22d074488df2b0c04ca}{\+\_\+\+\_\+getstate\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classrequests_1_1cookies_1_1RequestsCookieJar_a8596d36560aceb66d05976d990f088c7}{\+\_\+\+\_\+setstate\+\_\+\+\_\+}} (self, state)
+\item 
+def \mbox{\hyperlink{classrequests_1_1cookies_1_1RequestsCookieJar_a48685ae952822ff25f0ae4153d0ff305}{copy}} (self)
+\item 
+def \mbox{\hyperlink{classrequests_1_1cookies_1_1RequestsCookieJar_a39bbcd224f5080b468c52d92d9b8c830}{get\+\_\+policy}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Compatibility class; is a http.cookiejar.CookieJar, but exposes a dict
+interface.
+
+This is the CookieJar we create by default for requests and sessions that
+don't specify one, since some clients may expect response.cookies and
+session.cookies to support dict operations.
+
+Requests does not use the dict interface internally; it's just for
+compatibility with external client code. All requests code should work
+out of the box with externally provided instances of ``CookieJar``, e.g.
+``LWPCookieJar`` and ``FileCookieJar``.
+
+Unlike a regular CookieJar, this class is pickleable.
+
+.. warning:: dictionary operations that are normally O(1) may be O(n).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_ad9d86f59b720d12663f2652004d8ff37}\label{classrequests_1_1cookies_1_1RequestsCookieJar_ad9d86f59b720d12663f2652004d8ff37}} 
+\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}!\_\_delitem\_\_@{\_\_delitem\_\_}}
+\index{\_\_delitem\_\_@{\_\_delitem\_\_}!requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+\doxysubsubsection{\texorpdfstring{\_\_delitem\_\_()}{\_\_delitem\_\_()}}
+{\footnotesize\ttfamily def requests.\+cookies.\+Requests\+Cookie\+Jar.\+\_\+\+\_\+delitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Deletes a cookie given a name. Wraps ``http.cookiejar.CookieJar``'s
+``remove_cookie_by_name()``.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_a3ea4e8515d5c95c10e23ef5ffaf8d834}\label{classrequests_1_1cookies_1_1RequestsCookieJar_a3ea4e8515d5c95c10e23ef5ffaf8d834}} 
+\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily def requests.\+cookies.\+Requests\+Cookie\+Jar.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dict-like __getitem__() for compatibility with client code. Throws
+exception if there are more than one cookie with name. In that case,
+use the more explicit get() method instead.
+
+.. warning:: operation is O(n), not O(1).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_a881741b5b09bb22d074488df2b0c04ca}\label{classrequests_1_1cookies_1_1RequestsCookieJar_a881741b5b09bb22d074488df2b0c04ca}} 
+\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}!\_\_getstate\_\_@{\_\_getstate\_\_}}
+\index{\_\_getstate\_\_@{\_\_getstate\_\_}!requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+\doxysubsubsection{\texorpdfstring{\_\_getstate\_\_()}{\_\_getstate\_\_()}}
+{\footnotesize\ttfamily def requests.\+cookies.\+Requests\+Cookie\+Jar.\+\_\+\+\_\+getstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Unlike a normal CookieJar, this class is pickleable.\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_aaf1c5918fc63ebfa467aa6e161beb910}\label{classrequests_1_1cookies_1_1RequestsCookieJar_aaf1c5918fc63ebfa467aa6e161beb910}} 
+\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}}
+{\footnotesize\ttfamily def requests.\+cookies.\+Requests\+Cookie\+Jar.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dict-like __setitem__ for compatibility with client code. Throws
+exception if there is already a cookie of that name in the jar. In that
+case, use the more explicit set() method instead.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_a8596d36560aceb66d05976d990f088c7}\label{classrequests_1_1cookies_1_1RequestsCookieJar_a8596d36560aceb66d05976d990f088c7}} 
+\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}!\_\_setstate\_\_@{\_\_setstate\_\_}}
+\index{\_\_setstate\_\_@{\_\_setstate\_\_}!requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+\doxysubsubsection{\texorpdfstring{\_\_setstate\_\_()}{\_\_setstate\_\_()}}
+{\footnotesize\ttfamily def requests.\+cookies.\+Requests\+Cookie\+Jar.\+\_\+\+\_\+setstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{state }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Unlike a normal CookieJar, this class is pickleable.\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_a48685ae952822ff25f0ae4153d0ff305}\label{classrequests_1_1cookies_1_1RequestsCookieJar_a48685ae952822ff25f0ae4153d0ff305}} 
+\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}!copy@{copy}}
+\index{copy@{copy}!requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily def requests.\+cookies.\+Requests\+Cookie\+Jar.\+copy (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a copy of this RequestsCookieJar.\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_a92fe54e7eb99b6dda27cf5d5daae4cbd}\label{classrequests_1_1cookies_1_1RequestsCookieJar_a92fe54e7eb99b6dda27cf5d5daae4cbd}} 
+\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}!get@{get}}
+\index{get@{get}!requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily def requests.\+cookies.\+Requests\+Cookie\+Jar.\+get (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{default = {\ttfamily None},  }\item[{}]{domain = {\ttfamily None},  }\item[{}]{path = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dict-like get() that also supports optional domain and path args in
+order to resolve naming collisions from using one cookie jar over
+multiple domains.
+
+.. warning:: operation is O(n), not O(1).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_a9d94c5e2097ed7c6322e2ba03bdb4213}\label{classrequests_1_1cookies_1_1RequestsCookieJar_a9d94c5e2097ed7c6322e2ba03bdb4213}} 
+\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}!get\_dict@{get\_dict}}
+\index{get\_dict@{get\_dict}!requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+\doxysubsubsection{\texorpdfstring{get\_dict()}{get\_dict()}}
+{\footnotesize\ttfamily def requests.\+cookies.\+Requests\+Cookie\+Jar.\+get\+\_\+dict (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{domain = {\ttfamily None},  }\item[{}]{path = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Takes as an argument an optional domain and path and returns a plain
+old Python dict of name-value pairs of cookies that meet the
+requirements.
+
+:rtype: dict
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_a39bbcd224f5080b468c52d92d9b8c830}\label{classrequests_1_1cookies_1_1RequestsCookieJar_a39bbcd224f5080b468c52d92d9b8c830}} 
+\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}!get\_policy@{get\_policy}}
+\index{get\_policy@{get\_policy}!requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+\doxysubsubsection{\texorpdfstring{get\_policy()}{get\_policy()}}
+{\footnotesize\ttfamily def requests.\+cookies.\+Requests\+Cookie\+Jar.\+get\+\_\+policy (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the CookiePolicy instance used.\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_a772085a787d92abe0be8f0b6fcc5e872}\label{classrequests_1_1cookies_1_1RequestsCookieJar_a772085a787d92abe0be8f0b6fcc5e872}} 
+\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}!items@{items}}
+\index{items@{items}!requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+\doxysubsubsection{\texorpdfstring{items()}{items()}}
+{\footnotesize\ttfamily def requests.\+cookies.\+Requests\+Cookie\+Jar.\+items (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dict-like items() that returns a list of name-value tuples from the
+jar. Allows client-code to call ``dict(RequestsCookieJar)`` and get a
+vanilla python dict of key value pairs.
+
+.. seealso:: keys() and values().
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_a83078f8a71d253d30034fd23263f4ff7}\label{classrequests_1_1cookies_1_1RequestsCookieJar_a83078f8a71d253d30034fd23263f4ff7}} 
+\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}!iteritems@{iteritems}}
+\index{iteritems@{iteritems}!requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+\doxysubsubsection{\texorpdfstring{iteritems()}{iteritems()}}
+{\footnotesize\ttfamily def requests.\+cookies.\+Requests\+Cookie\+Jar.\+iteritems (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dict-like iteritems() that returns an iterator of name-value tuples
+from the jar.
+
+.. seealso:: iterkeys() and itervalues().
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_a82144dd7b3a867d6d5ac8311a685a878}\label{classrequests_1_1cookies_1_1RequestsCookieJar_a82144dd7b3a867d6d5ac8311a685a878}} 
+\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}!iterkeys@{iterkeys}}
+\index{iterkeys@{iterkeys}!requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+\doxysubsubsection{\texorpdfstring{iterkeys()}{iterkeys()}}
+{\footnotesize\ttfamily def requests.\+cookies.\+Requests\+Cookie\+Jar.\+iterkeys (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dict-like iterkeys() that returns an iterator of names of cookies
+from the jar.
+
+.. seealso:: itervalues() and iteritems().
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_abf3cdfbf4edd6a437f914682bcfac26b}\label{classrequests_1_1cookies_1_1RequestsCookieJar_abf3cdfbf4edd6a437f914682bcfac26b}} 
+\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}!itervalues@{itervalues}}
+\index{itervalues@{itervalues}!requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+\doxysubsubsection{\texorpdfstring{itervalues()}{itervalues()}}
+{\footnotesize\ttfamily def requests.\+cookies.\+Requests\+Cookie\+Jar.\+itervalues (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dict-like itervalues() that returns an iterator of values of cookies
+from the jar.
+
+.. seealso:: iterkeys() and iteritems().
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_a2c3c3f8f67ce1a7a9a94d3c9512a8fac}\label{classrequests_1_1cookies_1_1RequestsCookieJar_a2c3c3f8f67ce1a7a9a94d3c9512a8fac}} 
+\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}!keys@{keys}}
+\index{keys@{keys}!requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+\doxysubsubsection{\texorpdfstring{keys()}{keys()}}
+{\footnotesize\ttfamily def requests.\+cookies.\+Requests\+Cookie\+Jar.\+keys (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dict-like keys() that returns a list of names of cookies from the
+jar.
+
+.. seealso:: values() and items().
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_ae36e55c725166e26230cde195d297d45}\label{classrequests_1_1cookies_1_1RequestsCookieJar_ae36e55c725166e26230cde195d297d45}} 
+\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}!list\_domains@{list\_domains}}
+\index{list\_domains@{list\_domains}!requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+\doxysubsubsection{\texorpdfstring{list\_domains()}{list\_domains()}}
+{\footnotesize\ttfamily def requests.\+cookies.\+Requests\+Cookie\+Jar.\+list\+\_\+domains (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Utility method to list all the domains in the jar.\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_ad0854f684bbe62b730d441c826d8265b}\label{classrequests_1_1cookies_1_1RequestsCookieJar_ad0854f684bbe62b730d441c826d8265b}} 
+\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}!list\_paths@{list\_paths}}
+\index{list\_paths@{list\_paths}!requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+\doxysubsubsection{\texorpdfstring{list\_paths()}{list\_paths()}}
+{\footnotesize\ttfamily def requests.\+cookies.\+Requests\+Cookie\+Jar.\+list\+\_\+paths (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Utility method to list all the paths in the jar.\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_aabb9a11c736297e450384bfcea451787}\label{classrequests_1_1cookies_1_1RequestsCookieJar_aabb9a11c736297e450384bfcea451787}} 
+\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}!multiple\_domains@{multiple\_domains}}
+\index{multiple\_domains@{multiple\_domains}!requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+\doxysubsubsection{\texorpdfstring{multiple\_domains()}{multiple\_domains()}}
+{\footnotesize\ttfamily def requests.\+cookies.\+Requests\+Cookie\+Jar.\+multiple\+\_\+domains (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns True if there are multiple domains in the jar.
+Returns False otherwise.
+
+:rtype: bool
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_a6ef619001265f3499e837daba02ab1f4}\label{classrequests_1_1cookies_1_1RequestsCookieJar_a6ef619001265f3499e837daba02ab1f4}} 
+\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}!set@{set}}
+\index{set@{set}!requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily def requests.\+cookies.\+Requests\+Cookie\+Jar.\+set (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{value,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dict-like set() that also supports optional domain and path args in
+order to resolve naming collisions from using one cookie jar over
+multiple domains.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_ae181c116ca074f2590e3868f5bc81100}\label{classrequests_1_1cookies_1_1RequestsCookieJar_ae181c116ca074f2590e3868f5bc81100}} 
+\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}!update@{update}}
+\index{update@{update}!requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily def requests.\+cookies.\+Requests\+Cookie\+Jar.\+update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Updates this jar with cookies from another CookieJar or dict-like\end{DoxyVerb}
+ \mbox{\Hypertarget{classrequests_1_1cookies_1_1RequestsCookieJar_abe20e1a27b98257a80a04f67d87099fa}\label{classrequests_1_1cookies_1_1RequestsCookieJar_abe20e1a27b98257a80a04f67d87099fa}} 
+\index{requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}!values@{values}}
+\index{values@{values}!requests.cookies.RequestsCookieJar@{requests.cookies.RequestsCookieJar}}
+\doxysubsubsection{\texorpdfstring{values()}{values()}}
+{\footnotesize\ttfamily def requests.\+cookies.\+Requests\+Cookie\+Jar.\+values (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dict-like values() that returns a list of values of cookies from the
+jar.
+
+.. seealso:: keys() and items().
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/requests/cookies.\+py\end{DoxyCompactItemize}

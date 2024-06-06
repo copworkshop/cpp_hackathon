@@ -1,0 +1,117 @@
+\hypertarget{classurllib3_1_1poolmanager_1_1ProxyManager}{}\doxysection{urllib3.\+poolmanager.\+Proxy\+Manager Class Reference}
+\label{classurllib3_1_1poolmanager_1_1ProxyManager}\index{urllib3.poolmanager.ProxyManager@{urllib3.poolmanager.ProxyManager}}
+
+
+Inheritance diagram for urllib3.\+poolmanager.\+Proxy\+Manager\+:
+% FIG 0
+
+
+Collaboration diagram for urllib3.\+poolmanager.\+Proxy\+Manager\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1ProxyManager_ae8ef037788602c4baecb88d504236478}\label{classurllib3_1_1poolmanager_1_1ProxyManager_ae8ef037788602c4baecb88d504236478}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, proxy\+\_\+url, num\+\_\+pools=10, headers=None, proxy\+\_\+headers=None, proxy\+\_\+ssl\+\_\+context=None, use\+\_\+forwarding\+\_\+for\+\_\+https=False, $\ast$$\ast$connection\+\_\+pool\+\_\+kw)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1poolmanager_1_1ProxyManager_a07bf04a6211bbb5b0bbacb7b0914a9f1}{connection\+\_\+from\+\_\+host}} (self, host, port=None, scheme=\char`\"{}http\char`\"{}, pool\+\_\+kwargs=None)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1poolmanager_1_1ProxyManager_ab8905f067c5f9f2b6a3ff8daddff7d8a}{urlopen}} (self, method, url, redirect=True, $\ast$$\ast$kw)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1ProxyManager_a6ff39ee2efd48f09e27d6d69da902371}\label{classurllib3_1_1poolmanager_1_1ProxyManager_a6ff39ee2efd48f09e27d6d69da902371}} 
+{\bfseries proxy}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1ProxyManager_a4abbffa614acf42ce7b6636e8e6d2b46}\label{classurllib3_1_1poolmanager_1_1ProxyManager_a4abbffa614acf42ce7b6636e8e6d2b46}} 
+{\bfseries proxy\+\_\+headers}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1ProxyManager_aae2e3a8df9d25dc650bd8a15ea7d5296}\label{classurllib3_1_1poolmanager_1_1ProxyManager_aae2e3a8df9d25dc650bd8a15ea7d5296}} 
+{\bfseries proxy\+\_\+ssl\+\_\+context}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1ProxyManager_a09747c9a614cd329c017a99c81a381cb}\label{classurllib3_1_1poolmanager_1_1ProxyManager_a09747c9a614cd329c017a99c81a381cb}} 
+{\bfseries proxy\+\_\+config}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Behaves just like :class:`PoolManager`, but sends all requests through
+the defined proxy, using the CONNECT method for HTTPS URLs.
+
+:param proxy_url:
+    The URL of the proxy to be used.
+
+:param proxy_headers:
+    A dictionary containing headers that will be sent to the proxy. In case
+    of HTTP they are being sent with each request, while in the
+    HTTPS/CONNECT case they are sent only once. Could be used for proxy
+    authentication.
+
+:param proxy_ssl_context:
+    The proxy SSL context is used to establish the TLS connection to the
+    proxy when using HTTPS proxies.
+
+:param use_forwarding_for_https:
+    (Defaults to False) If set to True will forward requests to the HTTPS
+    proxy to be made on behalf of the client instead of creating a TLS
+    tunnel via the CONNECT method. **Enabling this flag means that request
+    and response headers and content will be visible from the HTTPS proxy**
+    whereas tunneling keeps request and response headers and content
+    private.  IP address, target hostname, SNI, and port are always visible
+    to an HTTPS proxy even when this flag is disabled.
+
+Example:
+    >>> proxy = urllib3.ProxyManager('http://localhost:3128/')
+    >>> r1 = proxy.request('GET', 'http://google.com/')
+    >>> r2 = proxy.request('GET', 'http://httpbin.org/')
+    >>> len(proxy.pools)
+    1
+    >>> r3 = proxy.request('GET', 'https://httpbin.org/')
+    >>> r4 = proxy.request('GET', 'https://twitter.com/')
+    >>> len(proxy.pools)
+    3\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1ProxyManager_a07bf04a6211bbb5b0bbacb7b0914a9f1}\label{classurllib3_1_1poolmanager_1_1ProxyManager_a07bf04a6211bbb5b0bbacb7b0914a9f1}} 
+\index{urllib3.poolmanager.ProxyManager@{urllib3.poolmanager.ProxyManager}!connection\_from\_host@{connection\_from\_host}}
+\index{connection\_from\_host@{connection\_from\_host}!urllib3.poolmanager.ProxyManager@{urllib3.poolmanager.ProxyManager}}
+\doxysubsubsection{\texorpdfstring{connection\_from\_host()}{connection\_from\_host()}}
+{\footnotesize\ttfamily def urllib3.\+poolmanager.\+Proxy\+Manager.\+connection\+\_\+from\+\_\+host (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{host,  }\item[{}]{port = {\ttfamily None},  }\item[{}]{scheme = {\ttfamily \char`\"{}http\char`\"{}},  }\item[{}]{pool\+\_\+kwargs = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a :class:`urllib3.connectionpool.ConnectionPool` based on the host, port, and scheme.
+
+If ``port`` isn't given, it will be derived from the ``scheme`` using
+``urllib3.connectionpool.port_by_scheme``. If ``pool_kwargs`` is
+provided, it is merged with the instance's ``connection_pool_kw``
+variable and used to create the new connection pool, if one is
+needed.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1poolmanager_1_1PoolManager_a984ad10715cd5eb8d215aebbffa7384e}{urllib3.\+poolmanager.\+Pool\+Manager}}.
+
+\mbox{\Hypertarget{classurllib3_1_1poolmanager_1_1ProxyManager_ab8905f067c5f9f2b6a3ff8daddff7d8a}\label{classurllib3_1_1poolmanager_1_1ProxyManager_ab8905f067c5f9f2b6a3ff8daddff7d8a}} 
+\index{urllib3.poolmanager.ProxyManager@{urllib3.poolmanager.ProxyManager}!urlopen@{urlopen}}
+\index{urlopen@{urlopen}!urllib3.poolmanager.ProxyManager@{urllib3.poolmanager.ProxyManager}}
+\doxysubsubsection{\texorpdfstring{urlopen()}{urlopen()}}
+{\footnotesize\ttfamily def urllib3.\+poolmanager.\+Proxy\+Manager.\+urlopen (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{method,  }\item[{}]{url,  }\item[{}]{redirect = {\ttfamily True},  }\item[{$\ast$$\ast$}]{kw }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Same as :meth:`urllib3.HTTPConnectionPool.urlopen`
+with custom cross-host redirect logic and only sends the request-uri
+portion of the ``url``.
+
+The given ``url`` parameter must be absolute, such that an appropriate
+:class:`urllib3.connectionpool.ConnectionPool` can be chosen for it.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1poolmanager_1_1PoolManager_a688edca7f32cc4762114f197ecca0d1b}{urllib3.\+poolmanager.\+Pool\+Manager}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/urllib3/poolmanager.\+py\end{DoxyCompactItemize}

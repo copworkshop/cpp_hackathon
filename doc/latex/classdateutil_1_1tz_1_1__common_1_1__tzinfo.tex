@@ -1,0 +1,73 @@
+\hypertarget{classdateutil_1_1tz_1_1__common_1_1__tzinfo}{}\doxysection{dateutil.\+tz.\+\_\+common.\+\_\+tzinfo Class Reference}
+\label{classdateutil_1_1tz_1_1__common_1_1__tzinfo}\index{dateutil.tz.\_common.\_tzinfo@{dateutil.tz.\_common.\_tzinfo}}
+
+
+Inheritance diagram for dateutil.\+tz.\+\_\+common.\+\_\+tzinfo\+:
+% FIG 0
+
+
+Collaboration diagram for dateutil.\+tz.\+\_\+common.\+\_\+tzinfo\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo_a13210a0c147bb97440e89babe38ac60c}{is\+\_\+ambiguous}} (self, dt)
+\item 
+def \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo_ab3260efb99632430daa43df1b481e8e7}{fromutc}} (self, dt)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Base class for all ``dateutil`` ``tzinfo`` objects.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdateutil_1_1tz_1_1__common_1_1__tzinfo_ab3260efb99632430daa43df1b481e8e7}\label{classdateutil_1_1tz_1_1__common_1_1__tzinfo_ab3260efb99632430daa43df1b481e8e7}} 
+\index{dateutil.tz.\_common.\_tzinfo@{dateutil.tz.\_common.\_tzinfo}!fromutc@{fromutc}}
+\index{fromutc@{fromutc}!dateutil.tz.\_common.\_tzinfo@{dateutil.tz.\_common.\_tzinfo}}
+\doxysubsubsection{\texorpdfstring{fromutc()}{fromutc()}}
+{\footnotesize\ttfamily def dateutil.\+tz.\+\_\+common.\+\_\+tzinfo.\+fromutc (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dt }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a timezone-aware datetime in a given timezone, calculates a
+timezone-aware datetime in a new timezone.
+
+Since this is the one time that we *know* we have an unambiguous
+datetime object, we take this opportunity to determine whether the
+datetime is ambiguous and in a "fold" state (e.g. if it's the first
+occurrence, chronologically, of the ambiguous datetime).
+
+:param dt:
+    A timezone-aware :class:`datetime.datetime` object.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzfile_a8c6d4edca5ed781e176a92ccca3cfb6b}{dateutil.\+tz.\+tz.\+tzfile}}, and \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1tzrangebase_a11bed1ed28dbf29eca50eea0718edce4}{dateutil.\+tz.\+\_\+common.\+tzrangebase}}.
+
+\mbox{\Hypertarget{classdateutil_1_1tz_1_1__common_1_1__tzinfo_a13210a0c147bb97440e89babe38ac60c}\label{classdateutil_1_1tz_1_1__common_1_1__tzinfo_a13210a0c147bb97440e89babe38ac60c}} 
+\index{dateutil.tz.\_common.\_tzinfo@{dateutil.tz.\_common.\_tzinfo}!is\_ambiguous@{is\_ambiguous}}
+\index{is\_ambiguous@{is\_ambiguous}!dateutil.tz.\_common.\_tzinfo@{dateutil.tz.\_common.\_tzinfo}}
+\doxysubsubsection{\texorpdfstring{is\_ambiguous()}{is\_ambiguous()}}
+{\footnotesize\ttfamily def dateutil.\+tz.\+\_\+common.\+\_\+tzinfo.\+is\+\_\+ambiguous (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dt }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Whether or not the "wall time" of a given datetime is ambiguous in this
+zone.
+
+:param dt:
+    A :py:class:`datetime.datetime`, naive or time zone aware.
+
+
+:return:
+    Returns ``True`` if ambiguous, ``False`` otherwise.
+
+.. versionadded:: 2.6.0
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzlocal_a5d3804d2c977eaf14ccbd3a8d14240fe}{dateutil.\+tz.\+tz.\+tzlocal}}, and \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1tzrangebase_a5a73d01b931cf74cb138dc443be487c6}{dateutil.\+tz.\+\_\+common.\+tzrangebase}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/dateutil/tz/\+\_\+common.\+py\end{DoxyCompactItemize}

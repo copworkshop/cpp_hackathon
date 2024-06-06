@@ -1,0 +1,18 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3551 [label="MutableMapping",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3551 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="lxml.html.FieldsDict",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlxml_1_1html_1_1FieldsDict.html",tooltip=" "];
+  Node3551 -> Node3553 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3553 [label="pip._vendor.urllib3.\l_collections.HTTPHeaderDict",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1urllib3_1_1__collections_1_1HTTPHeaderDict.html",tooltip=" "];
+  Node3551 -> Node3554 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3554 [label="pip._vendor.urllib3.\l_collections.RecentlyUsedContainer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1urllib3_1_1__collections_1_1RecentlyUsedContainer.html",tooltip=" "];
+  Node3551 -> Node3555 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3555 [label="urllib3._collections.HTTPHeaderDict",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classurllib3_1_1__collections_1_1HTTPHeaderDict.html",tooltip=" "];
+  Node3551 -> Node3556 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3556 [label="urllib3._collections.Recently\lUsedContainer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classurllib3_1_1__collections_1_1RecentlyUsedContainer.html",tooltip=" "];
+}

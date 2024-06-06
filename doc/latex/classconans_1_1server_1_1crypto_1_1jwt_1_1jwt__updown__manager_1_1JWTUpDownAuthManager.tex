@@ -1,0 +1,62 @@
+\hypertarget{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__updown__manager_1_1JWTUpDownAuthManager}{}\doxysection{conans.\+server.\+crypto.\+jwt.\+jwt\+\_\+updown\+\_\+manager.\+JWTUp\+Down\+Auth\+Manager Class Reference}
+\label{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__updown__manager_1_1JWTUpDownAuthManager}\index{conans.server.crypto.jwt.jwt\_updown\_manager.JWTUpDownAuthManager@{conans.server.crypto.jwt.jwt\_updown\_manager.JWTUpDownAuthManager}}
+
+
+Inheritance diagram for conans.\+server.\+crypto.\+jwt.\+jwt\+\_\+updown\+\_\+manager.\+JWTUp\+Down\+Auth\+Manager\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+server.\+crypto.\+jwt.\+jwt\+\_\+updown\+\_\+manager.\+JWTUp\+Down\+Auth\+Manager\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__updown__manager_1_1JWTUpDownAuthManager_a5f5e92b40c3953bebb5345fa78df50de}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, secret, expire\+\_\+time)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__updown__manager_1_1JWTUpDownAuthManager_affe427cb765ef7382e5fe259c51d3f8e}{get\+\_\+token\+\_\+for}} (self, resource\+\_\+path, username, filesize=None)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__updown__manager_1_1JWTUpDownAuthManager_af7e85ecb8259d2659bc74a8a7252b2c9}{get\+\_\+resource\+\_\+info}} (self, token)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}JWT for manage auth credentials\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__updown__manager_1_1JWTUpDownAuthManager_a5f5e92b40c3953bebb5345fa78df50de}\label{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__updown__manager_1_1JWTUpDownAuthManager_a5f5e92b40c3953bebb5345fa78df50de}} 
+\index{conans.server.crypto.jwt.jwt\_updown\_manager.JWTUpDownAuthManager@{conans.server.crypto.jwt.jwt\_updown\_manager.JWTUpDownAuthManager}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!conans.server.crypto.jwt.jwt\_updown\_manager.JWTUpDownAuthManager@{conans.server.crypto.jwt.jwt\_updown\_manager.JWTUpDownAuthManager}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def conans.\+server.\+crypto.\+jwt.\+jwt\+\_\+updown\+\_\+manager.\+JWTUp\+Down\+Auth\+Manager.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{secret,  }\item[{}]{expire\+\_\+time }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}expire_time is a timedelta
+   secret is a string with the secret encoding key\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__manager_1_1JWTManager_afa42222eaf180300653843c551be6125}{conans.\+server.\+crypto.\+jwt.\+jwt\+\_\+manager.\+JWTManager}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__updown__manager_1_1JWTUpDownAuthManager_af7e85ecb8259d2659bc74a8a7252b2c9}\label{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__updown__manager_1_1JWTUpDownAuthManager_af7e85ecb8259d2659bc74a8a7252b2c9}} 
+\index{conans.server.crypto.jwt.jwt\_updown\_manager.JWTUpDownAuthManager@{conans.server.crypto.jwt.jwt\_updown\_manager.JWTUpDownAuthManager}!get\_resource\_info@{get\_resource\_info}}
+\index{get\_resource\_info@{get\_resource\_info}!conans.server.crypto.jwt.jwt\_updown\_manager.JWTUpDownAuthManager@{conans.server.crypto.jwt.jwt\_updown\_manager.JWTUpDownAuthManager}}
+\doxysubsubsection{\texorpdfstring{get\_resource\_info()}{get\_resource\_info()}}
+{\footnotesize\ttfamily def conans.\+server.\+crypto.\+jwt.\+jwt\+\_\+updown\+\_\+manager.\+JWTUp\+Down\+Auth\+Manager.\+get\+\_\+resource\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{token }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets the user from credentials object. None if no credentials.
+Can raise jwt.ExpiredSignature and jwt.DecodeError\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__updown__manager_1_1JWTUpDownAuthManager_affe427cb765ef7382e5fe259c51d3f8e}\label{classconans_1_1server_1_1crypto_1_1jwt_1_1jwt__updown__manager_1_1JWTUpDownAuthManager_affe427cb765ef7382e5fe259c51d3f8e}} 
+\index{conans.server.crypto.jwt.jwt\_updown\_manager.JWTUpDownAuthManager@{conans.server.crypto.jwt.jwt\_updown\_manager.JWTUpDownAuthManager}!get\_token\_for@{get\_token\_for}}
+\index{get\_token\_for@{get\_token\_for}!conans.server.crypto.jwt.jwt\_updown\_manager.JWTUpDownAuthManager@{conans.server.crypto.jwt.jwt\_updown\_manager.JWTUpDownAuthManager}}
+\doxysubsubsection{\texorpdfstring{get\_token\_for()}{get\_token\_for()}}
+{\footnotesize\ttfamily def conans.\+server.\+crypto.\+jwt.\+jwt\+\_\+updown\+\_\+manager.\+JWTUp\+Down\+Auth\+Manager.\+get\+\_\+token\+\_\+for (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{resource\+\_\+path,  }\item[{}]{username,  }\item[{}]{filesize = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generates a token with the brl_user and additional data dict if needed\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/server/crypto/jwt/jwt\+\_\+updown\+\_\+manager.\+py\end{DoxyCompactItemize}

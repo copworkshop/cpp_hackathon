@@ -1,0 +1,113 @@
+\hypertarget{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter}{}\doxysection{conans.\+server.\+store.\+disk\+\_\+adapter.\+Server\+Disk\+Adapter Class Reference}
+\label{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter}\index{conans.server.store.disk\_adapter.ServerDiskAdapter@{conans.server.store.disk\_adapter.ServerDiskAdapter}}
+
+
+Inheritance diagram for conans.\+server.\+store.\+disk\+\_\+adapter.\+Server\+Disk\+Adapter\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+server.\+store.\+disk\+\_\+adapter.\+Server\+Disk\+Adapter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_aee9186b8959e2ef3cb07f67629e4e2af}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, base\+\_\+url, base\+\_\+storage\+\_\+path, updown\+\_\+auth\+\_\+manager)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_a7ae83a735ed3587f111263889cf646ff}{get\+\_\+download\+\_\+urls}} (self, paths, user=None)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_ab194645d120f07fc72e39389dd4cfe3d}{get\+\_\+upload\+\_\+urls}} (self, paths\+\_\+sizes, user=None)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_a4c4ffab6bd5277e76f9620623a652d26}{get\+\_\+snapshot}} (self, absolute\+\_\+path=\char`\"{}\char`\"{}, files\+\_\+subset=None)
+\item 
+\mbox{\Hypertarget{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_abf275bf5f66f72d3cfc034777a33c480}\label{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_abf275bf5f66f72d3cfc034777a33c480}} 
+def {\bfseries get\+\_\+file\+\_\+list} (self, absolute\+\_\+path=\char`\"{}\char`\"{}, files\+\_\+subset=None)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_ab6b1929659b40d08005da90074692705}{delete\+\_\+folder}} (self, path)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_a1786629ebf5bf18af587b32bb36e9b47}{delete\+\_\+file}} (self, path)
+\item 
+\mbox{\Hypertarget{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_aae61b9d7453d0b769525fabe9a47e58e}\label{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_aae61b9d7453d0b769525fabe9a47e58e}} 
+def {\bfseries path\+\_\+exists} (self, path)
+\item 
+\mbox{\Hypertarget{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_a3f0815180b6d0d5770df098ed213df3a}\label{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_a3f0815180b6d0d5770df098ed213df3a}} 
+def {\bfseries read\+\_\+file} (self, path, lock\+\_\+file)
+\item 
+\mbox{\Hypertarget{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_a63d27bb7d79b31d175694b53415c15e8}\label{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_a63d27bb7d79b31d175694b53415c15e8}} 
+def {\bfseries write\+\_\+file} (self, path, contents, lock\+\_\+file)
+\item 
+\mbox{\Hypertarget{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_a604495e1cfc81941a3c5a60151d1d73e}\label{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_a604495e1cfc81941a3c5a60151d1d73e}} 
+def {\bfseries base\+\_\+storage\+\_\+folder} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_a201defb536a1312f084da0ad7d363527}\label{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_a201defb536a1312f084da0ad7d363527}} 
+{\bfseries base\+\_\+url}
+\item 
+\mbox{\Hypertarget{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_ac3023c3274137101e07c50dc5681ee33}\label{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_ac3023c3274137101e07c50dc5681ee33}} 
+{\bfseries updown\+\_\+auth\+\_\+manager}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Manage access to disk files with common methods required
+for conan operations\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_aee9186b8959e2ef3cb07f67629e4e2af}\label{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_aee9186b8959e2ef3cb07f67629e4e2af}} 
+\index{conans.server.store.disk\_adapter.ServerDiskAdapter@{conans.server.store.disk\_adapter.ServerDiskAdapter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!conans.server.store.disk\_adapter.ServerDiskAdapter@{conans.server.store.disk\_adapter.ServerDiskAdapter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def conans.\+server.\+store.\+disk\+\_\+adapter.\+Server\+Disk\+Adapter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{base\+\_\+url,  }\item[{}]{base\+\_\+storage\+\_\+path,  }\item[{}]{updown\+\_\+auth\+\_\+manager }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param: base_url Base url for generate urls to download and upload operations\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_a1786629ebf5bf18af587b32bb36e9b47}\label{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_a1786629ebf5bf18af587b32bb36e9b47}} 
+\index{conans.server.store.disk\_adapter.ServerDiskAdapter@{conans.server.store.disk\_adapter.ServerDiskAdapter}!delete\_file@{delete\_file}}
+\index{delete\_file@{delete\_file}!conans.server.store.disk\_adapter.ServerDiskAdapter@{conans.server.store.disk\_adapter.ServerDiskAdapter}}
+\doxysubsubsection{\texorpdfstring{delete\_file()}{delete\_file()}}
+{\footnotesize\ttfamily def conans.\+server.\+store.\+disk\+\_\+adapter.\+Server\+Disk\+Adapter.\+delete\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Delete files from bucket. Path already contains base dir\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_ab6b1929659b40d08005da90074692705}\label{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_ab6b1929659b40d08005da90074692705}} 
+\index{conans.server.store.disk\_adapter.ServerDiskAdapter@{conans.server.store.disk\_adapter.ServerDiskAdapter}!delete\_folder@{delete\_folder}}
+\index{delete\_folder@{delete\_folder}!conans.server.store.disk\_adapter.ServerDiskAdapter@{conans.server.store.disk\_adapter.ServerDiskAdapter}}
+\doxysubsubsection{\texorpdfstring{delete\_folder()}{delete\_folder()}}
+{\footnotesize\ttfamily def conans.\+server.\+store.\+disk\+\_\+adapter.\+Server\+Disk\+Adapter.\+delete\+\_\+folder (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Delete folder from disk. Path already contains base dir\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_a7ae83a735ed3587f111263889cf646ff}\label{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_a7ae83a735ed3587f111263889cf646ff}} 
+\index{conans.server.store.disk\_adapter.ServerDiskAdapter@{conans.server.store.disk\_adapter.ServerDiskAdapter}!get\_download\_urls@{get\_download\_urls}}
+\index{get\_download\_urls@{get\_download\_urls}!conans.server.store.disk\_adapter.ServerDiskAdapter@{conans.server.store.disk\_adapter.ServerDiskAdapter}}
+\doxysubsubsection{\texorpdfstring{get\_download\_urls()}{get\_download\_urls()}}
+{\footnotesize\ttfamily def conans.\+server.\+store.\+disk\+\_\+adapter.\+Server\+Disk\+Adapter.\+get\+\_\+download\+\_\+urls (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{paths,  }\item[{}]{user = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the urls for download the specified files using s3 signed request.
+returns a dict with this structure: {"filepath": "http://..."}
+
+paths is a list of path files \end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_a4c4ffab6bd5277e76f9620623a652d26}\label{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_a4c4ffab6bd5277e76f9620623a652d26}} 
+\index{conans.server.store.disk\_adapter.ServerDiskAdapter@{conans.server.store.disk\_adapter.ServerDiskAdapter}!get\_snapshot@{get\_snapshot}}
+\index{get\_snapshot@{get\_snapshot}!conans.server.store.disk\_adapter.ServerDiskAdapter@{conans.server.store.disk\_adapter.ServerDiskAdapter}}
+\doxysubsubsection{\texorpdfstring{get\_snapshot()}{get\_snapshot()}}
+{\footnotesize\ttfamily def conans.\+server.\+store.\+disk\+\_\+adapter.\+Server\+Disk\+Adapter.\+get\+\_\+snapshot (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{absolute\+\_\+path = {\ttfamily \char`\"{}\char`\"{}},  }\item[{}]{files\+\_\+subset = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}returns a dict with the filepaths and md5\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_ab194645d120f07fc72e39389dd4cfe3d}\label{classconans_1_1server_1_1store_1_1disk__adapter_1_1ServerDiskAdapter_ab194645d120f07fc72e39389dd4cfe3d}} 
+\index{conans.server.store.disk\_adapter.ServerDiskAdapter@{conans.server.store.disk\_adapter.ServerDiskAdapter}!get\_upload\_urls@{get\_upload\_urls}}
+\index{get\_upload\_urls@{get\_upload\_urls}!conans.server.store.disk\_adapter.ServerDiskAdapter@{conans.server.store.disk\_adapter.ServerDiskAdapter}}
+\doxysubsubsection{\texorpdfstring{get\_upload\_urls()}{get\_upload\_urls()}}
+{\footnotesize\ttfamily def conans.\+server.\+store.\+disk\+\_\+adapter.\+Server\+Disk\+Adapter.\+get\+\_\+upload\+\_\+urls (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{paths\+\_\+sizes,  }\item[{}]{user = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the urls for upload the specified files using s3 signed request.
+returns a dict with this structure: {"filepath": "http://..."}
+
+paths_sizes is a dict of {path: size_in_bytes} \end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/server/store/disk\+\_\+adapter.\+py\end{DoxyCompactItemize}

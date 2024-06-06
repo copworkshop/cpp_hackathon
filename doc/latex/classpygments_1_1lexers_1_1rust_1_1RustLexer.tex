@@ -1,0 +1,118 @@
+\hypertarget{classpygments_1_1lexers_1_1rust_1_1RustLexer}{}\doxysection{pygments.\+lexers.\+rust.\+Rust\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1rust_1_1RustLexer}\index{pygments.lexers.rust.RustLexer@{pygments.lexers.rust.RustLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+rust.\+Rust\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+rust.\+Rust\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rust_1_1RustLexer_a6efd314c02a0acbb70bc322458e21f33}\label{classpygments_1_1lexers_1_1rust_1_1RustLexer_a6efd314c02a0acbb70bc322458e21f33}} 
+string {\bfseries name} = \textquotesingle{}Rust\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rust_1_1RustLexer_aa39082bd05b8f548e34575a72422f3b3}\label{classpygments_1_1lexers_1_1rust_1_1RustLexer_aa39082bd05b8f548e34575a72422f3b3}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+rust-\/lang.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rust_1_1RustLexer_aeffdbefb12695bd8af85e8b9fb23ad44}\label{classpygments_1_1lexers_1_1rust_1_1RustLexer_aeffdbefb12695bd8af85e8b9fb23ad44}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.rs\textquotesingle{}, \textquotesingle{}$\ast$.rs.\+in\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rust_1_1RustLexer_a6d1703446956ee5be9f2156eaf799d23}\label{classpygments_1_1lexers_1_1rust_1_1RustLexer_a6d1703446956ee5be9f2156eaf799d23}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}rust\textquotesingle{}, \textquotesingle{}rs\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rust_1_1RustLexer_a0a4be67e6f9dc3cfd448c5bc0ba90c83}\label{classpygments_1_1lexers_1_1rust_1_1RustLexer_a0a4be67e6f9dc3cfd448c5bc0ba90c83}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/rust\textquotesingle{}, \textquotesingle{}text/x-\/rust\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rust_1_1RustLexer_ac6a0d4f02dc462d9b097755909556868}\label{classpygments_1_1lexers_1_1rust_1_1RustLexer_ac6a0d4f02dc462d9b097755909556868}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+6\textquotesingle{}
+\item 
+tuple {\bfseries keyword\+\_\+types}
+\item 
+tuple {\bfseries builtin\+\_\+funcs\+\_\+types}
+\item 
+tuple {\bfseries builtin\+\_\+macros}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rust_1_1RustLexer_a73a8ee344d5d6d3bd31a7833e81022d2}\label{classpygments_1_1lexers_1_1rust_1_1RustLexer_a73a8ee344d5d6d3bd31a7833e81022d2}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for the Rust programming language (version 1.47).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rust_1_1RustLexer_a4633dc567822ecd35783e0dee8d9b653}\label{classpygments_1_1lexers_1_1rust_1_1RustLexer_a4633dc567822ecd35783e0dee8d9b653}} 
+\index{pygments.lexers.rust.RustLexer@{pygments.lexers.rust.RustLexer}!builtin\_funcs\_types@{builtin\_funcs\_types}}
+\index{builtin\_funcs\_types@{builtin\_funcs\_types}!pygments.lexers.rust.RustLexer@{pygments.lexers.rust.RustLexer}}
+\doxysubsubsection{\texorpdfstring{builtin\_funcs\_types}{builtin\_funcs\_types}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+rust.\+Rust\+Lexer.\+builtin\+\_\+funcs\+\_\+types\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (words((}
+\DoxyCodeLine{        \textcolor{stringliteral}{'Copy'}, \textcolor{stringliteral}{'Send'}, \textcolor{stringliteral}{'Sized'}, \textcolor{stringliteral}{'Sync'}, \textcolor{stringliteral}{'Unpin'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'Drop'}, \textcolor{stringliteral}{'Fn'}, \textcolor{stringliteral}{'FnMut'}, \textcolor{stringliteral}{'FnOnce'}, \textcolor{stringliteral}{'drop'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'Box'}, \textcolor{stringliteral}{'ToOwned'}, \textcolor{stringliteral}{'Clone'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'PartialEq'}, \textcolor{stringliteral}{'PartialOrd'}, \textcolor{stringliteral}{'Eq'}, \textcolor{stringliteral}{'Ord'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'AsRef'}, \textcolor{stringliteral}{'AsMut'}, \textcolor{stringliteral}{'Into'}, \textcolor{stringliteral}{'From'}, \textcolor{stringliteral}{'Default'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'Iterator'}, \textcolor{stringliteral}{'Extend'}, \textcolor{stringliteral}{'IntoIterator'}, \textcolor{stringliteral}{'DoubleEndedIterator'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'ExactSizeIterator'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'Option'}, \textcolor{stringliteral}{'Some'}, \textcolor{stringliteral}{'None'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'Result'}, \textcolor{stringliteral}{'Ok'}, \textcolor{stringliteral}{'Err'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'String'}, \textcolor{stringliteral}{'ToString'}, \textcolor{stringliteral}{'Vec'},}
+\DoxyCodeLine{    ), suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}), Name.Builtin)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rust_1_1RustLexer_af9584730bcf4fef0463cfbf5dbfa062c}\label{classpygments_1_1lexers_1_1rust_1_1RustLexer_af9584730bcf4fef0463cfbf5dbfa062c}} 
+\index{pygments.lexers.rust.RustLexer@{pygments.lexers.rust.RustLexer}!builtin\_macros@{builtin\_macros}}
+\index{builtin\_macros@{builtin\_macros}!pygments.lexers.rust.RustLexer@{pygments.lexers.rust.RustLexer}}
+\doxysubsubsection{\texorpdfstring{builtin\_macros}{builtin\_macros}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+rust.\+Rust\+Lexer.\+builtin\+\_\+macros\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (words((}
+\DoxyCodeLine{        \textcolor{stringliteral}{'asm'}, \textcolor{stringliteral}{'assert'}, \textcolor{stringliteral}{'assert\_eq'}, \textcolor{stringliteral}{'assert\_ne'}, \textcolor{stringliteral}{'cfg'}, \textcolor{stringliteral}{'column'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'compile\_error'}, \textcolor{stringliteral}{'concat'}, \textcolor{stringliteral}{'concat\_idents'}, \textcolor{stringliteral}{'dbg'}, \textcolor{stringliteral}{'debug\_assert'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'debug\_assert\_eq'}, \textcolor{stringliteral}{'debug\_assert\_ne'}, \textcolor{stringliteral}{'env'}, \textcolor{stringliteral}{'eprint'}, \textcolor{stringliteral}{'eprintln'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'file'}, \textcolor{stringliteral}{'format'}, \textcolor{stringliteral}{'format\_args'}, \textcolor{stringliteral}{'format\_args\_nl'}, \textcolor{stringliteral}{'global\_asm'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'include'}, \textcolor{stringliteral}{'include\_bytes'}, \textcolor{stringliteral}{'include\_str'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'is\_aarch64\_feature\_detected'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'is\_arm\_feature\_detected'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'is\_mips64\_feature\_detected'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'is\_mips\_feature\_detected'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'is\_powerpc64\_feature\_detected'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'is\_powerpc\_feature\_detected'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'is\_x86\_feature\_detected'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'line'}, \textcolor{stringliteral}{'llvm\_asm'}, \textcolor{stringliteral}{'log\_syntax'}, \textcolor{stringliteral}{'macro\_rules'}, \textcolor{stringliteral}{'matches'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'module\_path'}, \textcolor{stringliteral}{'option\_env'}, \textcolor{stringliteral}{'panic'}, \textcolor{stringliteral}{'print'}, \textcolor{stringliteral}{'println'}, \textcolor{stringliteral}{'stringify'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'thread\_local'}, \textcolor{stringliteral}{'todo'}, \textcolor{stringliteral}{'trace\_macros'}, \textcolor{stringliteral}{'unimplemented'}, \textcolor{stringliteral}{'unreachable'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'vec'}, \textcolor{stringliteral}{'write'}, \textcolor{stringliteral}{'writeln'},}
+\DoxyCodeLine{    ), suffix=\textcolor{stringliteral}{r'!'}), Name.Function.Magic)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1rust_1_1RustLexer_a40b9ccc2bc722f32b57e8cff537e7cca}\label{classpygments_1_1lexers_1_1rust_1_1RustLexer_a40b9ccc2bc722f32b57e8cff537e7cca}} 
+\index{pygments.lexers.rust.RustLexer@{pygments.lexers.rust.RustLexer}!keyword\_types@{keyword\_types}}
+\index{keyword\_types@{keyword\_types}!pygments.lexers.rust.RustLexer@{pygments.lexers.rust.RustLexer}}
+\doxysubsubsection{\texorpdfstring{keyword\_types}{keyword\_types}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+rust.\+Rust\+Lexer.\+keyword\+\_\+types\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (words((}
+\DoxyCodeLine{        \textcolor{stringliteral}{'u8'}, \textcolor{stringliteral}{'u16'}, \textcolor{stringliteral}{'u32'}, \textcolor{stringliteral}{'u64'}, \textcolor{stringliteral}{'u128'}, \textcolor{stringliteral}{'i8'}, \textcolor{stringliteral}{'i16'}, \textcolor{stringliteral}{'i32'}, \textcolor{stringliteral}{'i64'}, \textcolor{stringliteral}{'i128'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'usize'}, \textcolor{stringliteral}{'isize'}, \textcolor{stringliteral}{'f32'}, \textcolor{stringliteral}{'f64'}, \textcolor{stringliteral}{'char'}, \textcolor{stringliteral}{'str'}, \textcolor{stringliteral}{'bool'},}
+\DoxyCodeLine{    ), suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}), Keyword.Type)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/rust.\+py\end{DoxyCompactItemize}

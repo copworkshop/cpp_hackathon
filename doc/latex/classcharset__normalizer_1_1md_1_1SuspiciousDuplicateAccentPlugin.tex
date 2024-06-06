@@ -1,0 +1,82 @@
+\hypertarget{classcharset__normalizer_1_1md_1_1SuspiciousDuplicateAccentPlugin}{}\doxysection{charset\+\_\+normalizer.\+md.\+Suspicious\+Duplicate\+Accent\+Plugin Class Reference}
+\label{classcharset__normalizer_1_1md_1_1SuspiciousDuplicateAccentPlugin}\index{charset\_normalizer.md.SuspiciousDuplicateAccentPlugin@{charset\_normalizer.md.SuspiciousDuplicateAccentPlugin}}
+
+
+Inheritance diagram for charset\+\_\+normalizer.\+md.\+Suspicious\+Duplicate\+Accent\+Plugin\+:
+% FIG 0
+
+
+Collaboration diagram for charset\+\_\+normalizer.\+md.\+Suspicious\+Duplicate\+Accent\+Plugin\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1SuspiciousDuplicateAccentPlugin_a3ce2b434f911ad83177d02499786e086}\label{classcharset__normalizer_1_1md_1_1SuspiciousDuplicateAccentPlugin_a3ce2b434f911ad83177d02499786e086}} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+bool \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1SuspiciousDuplicateAccentPlugin_a3f979de0e5d220d5a7f4f9d46c9d8c6e}{eligible}} (self, str character)
+\item 
+None \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1SuspiciousDuplicateAccentPlugin_a6a076ed0d9cc5fec925a6ae98da8382f}{feed}} (self, str character)
+\item 
+None \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1SuspiciousDuplicateAccentPlugin_ab25e5983fd601c7c0caa98ac3e9ba4f0}{reset}} (self)
+\item 
+float \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1SuspiciousDuplicateAccentPlugin_ab94e4beb1808c59ce2d3b0818f4dee1c}{ratio}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1SuspiciousDuplicateAccentPlugin_a3f979de0e5d220d5a7f4f9d46c9d8c6e}\label{classcharset__normalizer_1_1md_1_1SuspiciousDuplicateAccentPlugin_a3f979de0e5d220d5a7f4f9d46c9d8c6e}} 
+\index{charset\_normalizer.md.SuspiciousDuplicateAccentPlugin@{charset\_normalizer.md.SuspiciousDuplicateAccentPlugin}!eligible@{eligible}}
+\index{eligible@{eligible}!charset\_normalizer.md.SuspiciousDuplicateAccentPlugin@{charset\_normalizer.md.SuspiciousDuplicateAccentPlugin}}
+\doxysubsubsection{\texorpdfstring{eligible()}{eligible()}}
+{\footnotesize\ttfamily  bool charset\+\_\+normalizer.\+md.\+Suspicious\+Duplicate\+Accent\+Plugin.\+eligible (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{character }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine if given character should be fed in.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1MessDetectorPlugin_a6c90e20b89fb11f27a99c4bb1b7b4aeb}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1SuspiciousDuplicateAccentPlugin_a6a076ed0d9cc5fec925a6ae98da8382f}\label{classcharset__normalizer_1_1md_1_1SuspiciousDuplicateAccentPlugin_a6a076ed0d9cc5fec925a6ae98da8382f}} 
+\index{charset\_normalizer.md.SuspiciousDuplicateAccentPlugin@{charset\_normalizer.md.SuspiciousDuplicateAccentPlugin}!feed@{feed}}
+\index{feed@{feed}!charset\_normalizer.md.SuspiciousDuplicateAccentPlugin@{charset\_normalizer.md.SuspiciousDuplicateAccentPlugin}}
+\doxysubsubsection{\texorpdfstring{feed()}{feed()}}
+{\footnotesize\ttfamily  None charset\+\_\+normalizer.\+md.\+Suspicious\+Duplicate\+Accent\+Plugin.\+feed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{character }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The main routine to be executed upon character.
+Insert the logic in witch the text would be considered chaotic.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1MessDetectorPlugin_a1d7b6ef49fad244c8841e7dacf4a1bdb}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1SuspiciousDuplicateAccentPlugin_ab94e4beb1808c59ce2d3b0818f4dee1c}\label{classcharset__normalizer_1_1md_1_1SuspiciousDuplicateAccentPlugin_ab94e4beb1808c59ce2d3b0818f4dee1c}} 
+\index{charset\_normalizer.md.SuspiciousDuplicateAccentPlugin@{charset\_normalizer.md.SuspiciousDuplicateAccentPlugin}!ratio@{ratio}}
+\index{ratio@{ratio}!charset\_normalizer.md.SuspiciousDuplicateAccentPlugin@{charset\_normalizer.md.SuspiciousDuplicateAccentPlugin}}
+\doxysubsubsection{\texorpdfstring{ratio()}{ratio()}}
+{\footnotesize\ttfamily  float charset\+\_\+normalizer.\+md.\+Suspicious\+Duplicate\+Accent\+Plugin.\+ratio (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute the chaos ratio based on what your feed() has seen.
+Must NOT be lower than 0.; No restriction gt 0.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1MessDetectorPlugin_ac8f7c272b946d769ca5d6c478b6dd8a1}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1SuspiciousDuplicateAccentPlugin_ab25e5983fd601c7c0caa98ac3e9ba4f0}\label{classcharset__normalizer_1_1md_1_1SuspiciousDuplicateAccentPlugin_ab25e5983fd601c7c0caa98ac3e9ba4f0}} 
+\index{charset\_normalizer.md.SuspiciousDuplicateAccentPlugin@{charset\_normalizer.md.SuspiciousDuplicateAccentPlugin}!reset@{reset}}
+\index{reset@{reset}!charset\_normalizer.md.SuspiciousDuplicateAccentPlugin@{charset\_normalizer.md.SuspiciousDuplicateAccentPlugin}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily  None charset\+\_\+normalizer.\+md.\+Suspicious\+Duplicate\+Accent\+Plugin.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Permit to reset the plugin to the initial state.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1MessDetectorPlugin_a82ba1b462302d9374e38614cd8a918b9}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/charset\+\_\+normalizer/md.\+py\end{DoxyCompactItemize}

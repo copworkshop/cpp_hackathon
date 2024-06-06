@@ -1,0 +1,134 @@
+\hypertarget{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods}{}\doxysection{conans.\+client.\+rest.\+rest\+\_\+client\+\_\+common.\+Rest\+Common\+Methods Class Reference}
+\label{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods}\index{conans.client.rest.rest\_client\_common.RestCommonMethods@{conans.client.rest.rest\_client\_common.RestCommonMethods}}
+
+
+Inheritance diagram for conans.\+client.\+rest.\+rest\+\_\+client\+\_\+common.\+Rest\+Common\+Methods\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+rest.\+rest\+\_\+client\+\_\+common.\+Rest\+Common\+Methods\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_ab792a0a6611c1080fd35af6b7e6dd77f}\label{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_ab792a0a6611c1080fd35af6b7e6dd77f}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, remote\+\_\+url, token, custom\+\_\+headers, output, requester, config, verify\+\_\+ssl, artifacts\+\_\+properties=None, matrix\+\_\+params=False)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_aa004fcd6f0fc67183c2d14126aa129c0}\label{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_aa004fcd6f0fc67183c2d14126aa129c0}} 
+def {\bfseries auth} (self)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a10ea5948ffdd3cd5269f5a548bc334fb}{authenticate}} (self, user, password)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a29ef9f84a45d862971e9f62d830ef496}{authenticate\+\_\+oauth}} (self, user, password)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_ad0a809bdc23af62f34ddd2cdce5422c6}{refresh\+\_\+token}} (self, token, refresh\+\_\+token)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_aec400da600b2aeeede34012bf2e198ae}{check\+\_\+credentials}} (self)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a04b73c87ab8693c8b7d281aca2c0361d}{server\+\_\+capabilities}} (self, user=None, password=None)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a665c512c221ed8b3cb46793176144289}\label{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a665c512c221ed8b3cb46793176144289}} 
+def {\bfseries get\+\_\+json} (self, url, data=None, headers=None)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a0c6a2e970645e69983863d3c616ebabc}\label{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a0c6a2e970645e69983863d3c616ebabc}} 
+def {\bfseries upload\+\_\+recipe} (self, ref, files\+\_\+to\+\_\+upload, deleted, retry, retry\+\_\+wait)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_ad09126f9f9a26551f9135ad35cb73d45}\label{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_ad09126f9f9a26551f9135ad35cb73d45}} 
+def {\bfseries get\+\_\+recipe\+\_\+snapshot} (self, ref)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a0ca595ede4c5759e1658b5e91a6f296f}\label{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a0ca595ede4c5759e1658b5e91a6f296f}} 
+def {\bfseries get\+\_\+package\+\_\+snapshot} (self, pref)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a4ab7722cfe983c36be475953b06b75b0}\label{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a4ab7722cfe983c36be475953b06b75b0}} 
+def {\bfseries upload\+\_\+package} (self, pref, files\+\_\+to\+\_\+upload, deleted, retry, retry\+\_\+wait)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_abd2bddb0f69f5e0965e172c7570afdf6}{search}} (self, pattern=None, ignorecase=True)
+\item 
+def \mbox{\hyperlink{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a904becf8603a0b77d95f441c95cc1e63}{search\+\_\+packages}} (self, ref)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_ae3dcb7ba678281db8d43fb99a9ede095}\label{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_ae3dcb7ba678281db8d43fb99a9ede095}} 
+{\bfseries token}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a3a16325ad4dffaa080ce12b3f1050b34}\label{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a3a16325ad4dffaa080ce12b3f1050b34}} 
+{\bfseries remote\+\_\+url}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_adab39960ccdee957840b4485e214a817}\label{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_adab39960ccdee957840b4485e214a817}} 
+{\bfseries custom\+\_\+headers}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a167086a7db34aadd05356e0a53bf059e}\label{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a167086a7db34aadd05356e0a53bf059e}} 
+{\bfseries requester}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a8a6cee994f7eed96503f656812744d30}\label{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a8a6cee994f7eed96503f656812744d30}} 
+{\bfseries verify\+\_\+ssl}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a10ea5948ffdd3cd5269f5a548bc334fb}\label{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a10ea5948ffdd3cd5269f5a548bc334fb}} 
+\index{conans.client.rest.rest\_client\_common.RestCommonMethods@{conans.client.rest.rest\_client\_common.RestCommonMethods}!authenticate@{authenticate}}
+\index{authenticate@{authenticate}!conans.client.rest.rest\_client\_common.RestCommonMethods@{conans.client.rest.rest\_client\_common.RestCommonMethods}}
+\doxysubsubsection{\texorpdfstring{authenticate()}{authenticate()}}
+{\footnotesize\ttfamily def conans.\+client.\+rest.\+rest\+\_\+client\+\_\+common.\+Rest\+Common\+Methods.\+authenticate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{user,  }\item[{}]{password }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sends user + password to get:
+  - A plain response with a regular token (not supported refresh in the remote) and None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a29ef9f84a45d862971e9f62d830ef496}\label{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a29ef9f84a45d862971e9f62d830ef496}} 
+\index{conans.client.rest.rest\_client\_common.RestCommonMethods@{conans.client.rest.rest\_client\_common.RestCommonMethods}!authenticate\_oauth@{authenticate\_oauth}}
+\index{authenticate\_oauth@{authenticate\_oauth}!conans.client.rest.rest\_client\_common.RestCommonMethods@{conans.client.rest.rest\_client\_common.RestCommonMethods}}
+\doxysubsubsection{\texorpdfstring{authenticate\_oauth()}{authenticate\_oauth()}}
+{\footnotesize\ttfamily def conans.\+client.\+rest.\+rest\+\_\+client\+\_\+common.\+Rest\+Common\+Methods.\+authenticate\+\_\+oauth (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{user,  }\item[{}]{password }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sends user + password to get:
+    - A json with an access_token and a refresh token (if supported in the remote)
+            Artifactory >= 6.13.X
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_aec400da600b2aeeede34012bf2e198ae}\label{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_aec400da600b2aeeede34012bf2e198ae}} 
+\index{conans.client.rest.rest\_client\_common.RestCommonMethods@{conans.client.rest.rest\_client\_common.RestCommonMethods}!check\_credentials@{check\_credentials}}
+\index{check\_credentials@{check\_credentials}!conans.client.rest.rest\_client\_common.RestCommonMethods@{conans.client.rest.rest\_client\_common.RestCommonMethods}}
+\doxysubsubsection{\texorpdfstring{check\_credentials()}{check\_credentials()}}
+{\footnotesize\ttfamily def conans.\+client.\+rest.\+rest\+\_\+client\+\_\+common.\+Rest\+Common\+Methods.\+check\+\_\+credentials (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If token is not valid will raise AuthenticationException.
+User will be asked for new user/pass\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_ad0a809bdc23af62f34ddd2cdce5422c6}\label{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_ad0a809bdc23af62f34ddd2cdce5422c6}} 
+\index{conans.client.rest.rest\_client\_common.RestCommonMethods@{conans.client.rest.rest\_client\_common.RestCommonMethods}!refresh\_token@{refresh\_token}}
+\index{refresh\_token@{refresh\_token}!conans.client.rest.rest\_client\_common.RestCommonMethods@{conans.client.rest.rest\_client\_common.RestCommonMethods}}
+\doxysubsubsection{\texorpdfstring{refresh\_token()}{refresh\_token()}}
+{\footnotesize\ttfamily def conans.\+client.\+rest.\+rest\+\_\+client\+\_\+common.\+Rest\+Common\+Methods.\+refresh\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{token,  }\item[{}]{refresh\+\_\+token }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sends access_token and the refresh_token to get a pair of
+access_token and refresh token
+
+Artifactory >= 6.13.X
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_abd2bddb0f69f5e0965e172c7570afdf6}\label{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_abd2bddb0f69f5e0965e172c7570afdf6}} 
+\index{conans.client.rest.rest\_client\_common.RestCommonMethods@{conans.client.rest.rest\_client\_common.RestCommonMethods}!search@{search}}
+\index{search@{search}!conans.client.rest.rest\_client\_common.RestCommonMethods@{conans.client.rest.rest\_client\_common.RestCommonMethods}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily def conans.\+client.\+rest.\+rest\+\_\+client\+\_\+common.\+Rest\+Common\+Methods.\+search (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pattern = {\ttfamily None},  }\item[{}]{ignorecase = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}the_files: dict with relative_path: content
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a904becf8603a0b77d95f441c95cc1e63}\label{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a904becf8603a0b77d95f441c95cc1e63}} 
+\index{conans.client.rest.rest\_client\_common.RestCommonMethods@{conans.client.rest.rest\_client\_common.RestCommonMethods}!search\_packages@{search\_packages}}
+\index{search\_packages@{search\_packages}!conans.client.rest.rest\_client\_common.RestCommonMethods@{conans.client.rest.rest\_client\_common.RestCommonMethods}}
+\doxysubsubsection{\texorpdfstring{search\_packages()}{search\_packages()}}
+{\footnotesize\ttfamily def conans.\+client.\+rest.\+rest\+\_\+client\+\_\+common.\+Rest\+Common\+Methods.\+search\+\_\+packages (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ref }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Client is filtering by the query\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a04b73c87ab8693c8b7d281aca2c0361d}\label{classconans_1_1client_1_1rest_1_1rest__client__common_1_1RestCommonMethods_a04b73c87ab8693c8b7d281aca2c0361d}} 
+\index{conans.client.rest.rest\_client\_common.RestCommonMethods@{conans.client.rest.rest\_client\_common.RestCommonMethods}!server\_capabilities@{server\_capabilities}}
+\index{server\_capabilities@{server\_capabilities}!conans.client.rest.rest\_client\_common.RestCommonMethods@{conans.client.rest.rest\_client\_common.RestCommonMethods}}
+\doxysubsubsection{\texorpdfstring{server\_capabilities()}{server\_capabilities()}}
+{\footnotesize\ttfamily def conans.\+client.\+rest.\+rest\+\_\+client\+\_\+common.\+Rest\+Common\+Methods.\+server\+\_\+capabilities (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{user = {\ttfamily None},  }\item[{}]{password = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get information about the server: status, version, type and capabilities\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/rest/rest\+\_\+client\+\_\+common.\+py\end{DoxyCompactItemize}

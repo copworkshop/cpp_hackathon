@@ -1,0 +1,33 @@
+\hypertarget{classbottle_1_1LocalRequest}{}\doxysection{bottle.\+Local\+Request Class Reference}
+\label{classbottle_1_1LocalRequest}\index{bottle.LocalRequest@{bottle.LocalRequest}}
+
+
+Inheritance diagram for bottle.\+Local\+Request\+:
+% FIG 0
+
+
+Collaboration diagram for bottle.\+Local\+Request\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbottle_1_1LocalRequest_afe480def02d854b1ba5d93d4c9fcc516}\label{classbottle_1_1LocalRequest_afe480def02d854b1ba5d93d4c9fcc516}} 
+{\bfseries bind} = \mbox{\hyperlink{classbottle_1_1BaseRequest_ade8ddc6b83c70748112b14d39d9a262e}{Base\+Request.\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\item 
+\mbox{\Hypertarget{classbottle_1_1LocalRequest_a5db72b4a4a8ab4fb63b4ca60c423c186}\label{classbottle_1_1LocalRequest_a5db72b4a4a8ab4fb63b4ca60c423c186}} 
+{\bfseries environ} = local\+\_\+property()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} A thread-local subclass of :class:`BaseRequest` with a different
+    set of attributes for each thread. There is usually only one global
+    instance of this class (:data:`request`). If accessed during a
+    request/response cycle, this instance always refers to the *current*
+    request (even on a multithreaded server). \end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/bin/bottle.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,83 @@
+\hypertarget{classpygments_1_1lexers_1_1tls_1_1TlsLexer}{}\doxysection{pygments.\+lexers.\+tls.\+Tls\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1tls_1_1TlsLexer}\index{pygments.lexers.tls.TlsLexer@{pygments.lexers.tls.TlsLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+tls.\+Tls\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+tls.\+Tls\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1tls_1_1TlsLexer_a852189f21bffb36977b930f5fd691c1d}\label{classpygments_1_1lexers_1_1tls_1_1TlsLexer_a852189f21bffb36977b930f5fd691c1d}} 
+string {\bfseries name} = \textquotesingle{}TLS Presentation Language\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1tls_1_1TlsLexer_aa41712bfee5f1d85d314623f126b9085}\label{classpygments_1_1lexers_1_1tls_1_1TlsLexer_aa41712bfee5f1d85d314623f126b9085}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+rfc-\/editor.\+org/rfc/rfc8446\#section-\/3\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1tls_1_1TlsLexer_acb4d1d19ef8470f7c99db7624a182e3f}\label{classpygments_1_1lexers_1_1tls_1_1TlsLexer_acb4d1d19ef8470f7c99db7624a182e3f}} 
+list {\bfseries filenames} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1tls_1_1TlsLexer_a625aa4d3eb440be01ef3f225775c0cc2}\label{classpygments_1_1lexers_1_1tls_1_1TlsLexer_a625aa4d3eb440be01ef3f225775c0cc2}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}tls\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1tls_1_1TlsLexer_aeaf3aacf24c3914f73cac768995196df}\label{classpygments_1_1lexers_1_1tls_1_1TlsLexer_aeaf3aacf24c3914f73cac768995196df}} 
+list {\bfseries mimetypes} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1tls_1_1TlsLexer_a8527dc1723397928ba704df0e79d55ef}\label{classpygments_1_1lexers_1_1tls_1_1TlsLexer_a8527dc1723397928ba704df0e79d55ef}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+16\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1tls_1_1TlsLexer_af8e4f15429828eee9554a22be28bd88b}\label{classpygments_1_1lexers_1_1tls_1_1TlsLexer_af8e4f15429828eee9554a22be28bd88b}} 
+{\bfseries flags} = re.\+MULTILINE $\vert$ re.\+DOTALL
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The TLS presentation language, described in RFC 8446.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1tls_1_1TlsLexer_ac689782794d515417d97fc7a2efed31d}\label{classpygments_1_1lexers_1_1tls_1_1TlsLexer_ac689782794d515417d97fc7a2efed31d}} 
+\index{pygments.lexers.tls.TlsLexer@{pygments.lexers.tls.TlsLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.tls.TlsLexer@{pygments.lexers.tls.TlsLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+tls.\+Tls\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            \textcolor{comment}{\# comments}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'/[*].*?[*]/'}, Comment.Multiline),}
+\DoxyCodeLine{            \textcolor{comment}{\# Keywords}}
+\DoxyCodeLine{            (words((\textcolor{stringliteral}{'struct'}, \textcolor{stringliteral}{'enum'}, \textcolor{stringliteral}{'select'}, \textcolor{stringliteral}{'case'}), suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}),}
+\DoxyCodeLine{             Keyword),}
+\DoxyCodeLine{            (words((\textcolor{stringliteral}{'uint8'}, \textcolor{stringliteral}{'uint16'}, \textcolor{stringliteral}{'uint24'}, \textcolor{stringliteral}{'uint32'}, \textcolor{stringliteral}{'uint64'}, \textcolor{stringliteral}{'opaque'}),}
+\DoxyCodeLine{                   suffix=\textcolor{stringliteral}{r'\(\backslash\)b'}), Keyword.Type),}
+\DoxyCodeLine{            \textcolor{comment}{\# numeric literals}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'0x[0-\/9a-\/fA-\/F]+'}, Number.Hex),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[0-\/9]+'}, Number.Integer),}
+\DoxyCodeLine{            \textcolor{comment}{\# string literal}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'"{}(\(\backslash\)\(\backslash\).|[\string^"{}\(\backslash\)\(\backslash\)])*"{}'}, String),}
+\DoxyCodeLine{            \textcolor{comment}{\# tokens}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[.]\{2\}'}, Operator),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[+\(\backslash\)-\/*/\&\string^]'}, Operator),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[|<>=!()\(\backslash\)[\(\backslash\)]\{\}.,;:\(\backslash\)?]'}, Punctuation),}
+\DoxyCodeLine{            \textcolor{comment}{\# identifiers}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^\(\backslash\)W\(\backslash\)d]\(\backslash\)w*'}, Name.Other),}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/tls.\+py\end{DoxyCompactItemize}

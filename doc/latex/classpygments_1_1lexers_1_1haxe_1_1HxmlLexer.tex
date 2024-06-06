@@ -1,0 +1,83 @@
+\hypertarget{classpygments_1_1lexers_1_1haxe_1_1HxmlLexer}{}\doxysection{pygments.\+lexers.\+haxe.\+Hxml\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1haxe_1_1HxmlLexer}\index{pygments.lexers.haxe.HxmlLexer@{pygments.lexers.haxe.HxmlLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+haxe.\+Hxml\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+haxe.\+Hxml\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1haxe_1_1HxmlLexer_aff36e8cfa821e8990328992a156d7c45}\label{classpygments_1_1lexers_1_1haxe_1_1HxmlLexer_aff36e8cfa821e8990328992a156d7c45}} 
+string {\bfseries name} = \textquotesingle{}Hxml\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1haxe_1_1HxmlLexer_acf2df5e88eb80971c298e57b92d5bed1}\label{classpygments_1_1lexers_1_1haxe_1_1HxmlLexer_acf2df5e88eb80971c298e57b92d5bed1}} 
+string {\bfseries url} = \textquotesingle{}https\+://haxe.\+org/manual/compiler-\/usage-\/hxml.\+html\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1haxe_1_1HxmlLexer_a75735861ec6224feb9ce15ab82a1e360}\label{classpygments_1_1lexers_1_1haxe_1_1HxmlLexer_a75735861ec6224feb9ce15ab82a1e360}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}haxeml\textquotesingle{}, \textquotesingle{}hxml\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1haxe_1_1HxmlLexer_a7238263669c37fc5d396c26a8f43b03e}\label{classpygments_1_1lexers_1_1haxe_1_1HxmlLexer_a7238263669c37fc5d396c26a8f43b03e}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.hxml\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1haxe_1_1HxmlLexer_a5b90c66fc1fa08ff3eb113c7920e6ce8}\label{classpygments_1_1lexers_1_1haxe_1_1HxmlLexer_a5b90c66fc1fa08ff3eb113c7920e6ce8}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+6\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for haXe build files.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1haxe_1_1HxmlLexer_a0940b076c1f731e9b74fa0093aaa2dd2}\label{classpygments_1_1lexers_1_1haxe_1_1HxmlLexer_a0940b076c1f731e9b74fa0093aaa2dd2}} 
+\index{pygments.lexers.haxe.HxmlLexer@{pygments.lexers.haxe.HxmlLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.haxe.HxmlLexer@{pygments.lexers.haxe.HxmlLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+haxe.\+Hxml\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            \textcolor{comment}{\# Separator}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(-\/-\/)(next)'}, bygroups(Punctuation, Generic.Heading)),}
+\DoxyCodeLine{            \textcolor{comment}{\# Compiler switches with one dash}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(-\/)(prompt|debug|v)'}, bygroups(Punctuation, Keyword.Keyword)),}
+\DoxyCodeLine{            \textcolor{comment}{\# Compilerswitches with two dashes}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(-\/-\/)(neko-\/source|flash-\/strict|flash-\/use-\/stage|no-\/opt|no-\/traces|'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'no-\/inline|times|no-\/output)'}, bygroups(Punctuation, Keyword)),}
+\DoxyCodeLine{            \textcolor{comment}{\# Targets and other options that take an argument}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(-\/)(cpp|js|neko|x|as3|swf9?|swf-\/lib|php|xml|main|lib|D|resource|'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'cp|cmd)( +)(.+)'},}
+\DoxyCodeLine{             bygroups(Punctuation, Keyword, Whitespace, String)),}
+\DoxyCodeLine{            \textcolor{comment}{\# Options that take only numerical arguments}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(-\/)(swf-\/version)( +)(\(\backslash\)d+)'},}
+\DoxyCodeLine{             bygroups(Punctuation, Keyword, Whitespace, Number.Integer)),}
+\DoxyCodeLine{            \textcolor{comment}{\# An Option that defines the size, the fps and the background}}
+\DoxyCodeLine{            \textcolor{comment}{\# color of an flash movie}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(-\/)(swf-\/header)( +)(\(\backslash\)d+)(:)(\(\backslash\)d+)(:)(\(\backslash\)d+)(:)([A-\/Fa-\/f0-\/9]\{6\})'},}
+\DoxyCodeLine{             bygroups(Punctuation, Keyword, Whitespace, Number.Integer,}
+\DoxyCodeLine{                      Punctuation, Number.Integer, Punctuation, Number.Integer,}
+\DoxyCodeLine{                      Punctuation, Number.Hex)),}
+\DoxyCodeLine{            \textcolor{comment}{\# options with two dashes that takes arguments}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(-\/-\/)(js-\/namespace|php-\/front|php-\/lib|remap|gen-\/hx-\/classes)( +)'}}
+\DoxyCodeLine{             \textcolor{stringliteral}{r'(.+)'}, bygroups(Punctuation, Keyword, Whitespace, String)),}
+\DoxyCodeLine{            \textcolor{comment}{\# Single line comment, multiline ones are not allowed.}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#.*'}, Comment.Single)}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/haxe.\+py\end{DoxyCompactItemize}

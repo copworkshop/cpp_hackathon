@@ -1,0 +1,150 @@
+\hypertarget{classpatch__ng_1_1PatchSet}{}\doxysection{patch\+\_\+ng.\+Patch\+Set Class Reference}
+\label{classpatch__ng_1_1PatchSet}\index{patch\_ng.PatchSet@{patch\_ng.PatchSet}}
+
+
+Inheritance diagram for patch\+\_\+ng.\+Patch\+Set\+:
+% FIG 0
+
+
+Collaboration diagram for patch\+\_\+ng.\+Patch\+Set\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpatch__ng_1_1PatchSet_afbda743793f3ce569ee3c266bc0d69df}\label{classpatch__ng_1_1PatchSet_afbda743793f3ce569ee3c266bc0d69df}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, stream=None)
+\item 
+\mbox{\Hypertarget{classpatch__ng_1_1PatchSet_a3f714b60d44ddf4e79a49fd3694514c2}\label{classpatch__ng_1_1PatchSet_a3f714b60d44ddf4e79a49fd3694514c2}} 
+def {\bfseries \+\_\+\+\_\+len\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classpatch__ng_1_1PatchSet_a3b809821b9e66c8292d8ebb988a5eac3}\label{classpatch__ng_1_1PatchSet_a3b809821b9e66c8292d8ebb988a5eac3}} 
+def {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classpatch__ng_1_1PatchSet_a4808a3cd9d90db3a16cd4720287120c4}{parse}} (self, stream)
+\item 
+def \mbox{\hyperlink{classpatch__ng_1_1PatchSet_a180348c3dc4790b955296ffcde6a8d8e}{diffstat}} (self)
+\item 
+def \mbox{\hyperlink{classpatch__ng_1_1PatchSet_a36e436d3fac9a8faa9bee38641c0cfe3}{findfiles}} (self, old, new)
+\item 
+\mbox{\Hypertarget{classpatch__ng_1_1PatchSet_ae5cc5258fced925297f513dc39794e55}\label{classpatch__ng_1_1PatchSet_ae5cc5258fced925297f513dc39794e55}} 
+def {\bfseries decode\+\_\+clean} (self, path, prefix)
+\item 
+\mbox{\Hypertarget{classpatch__ng_1_1PatchSet_ab1041e113e7acc3c390e761d7b40b629}\label{classpatch__ng_1_1PatchSet_ab1041e113e7acc3c390e761d7b40b629}} 
+def {\bfseries strip\+\_\+path} (self, path, base\+\_\+path, strip=0)
+\item 
+def \mbox{\hyperlink{classpatch__ng_1_1PatchSet_aef316002508cde75cf5b9f627ed5c5f8}{apply}} (self, strip=0, root=None, fuzz=False)
+\item 
+def \mbox{\hyperlink{classpatch__ng_1_1PatchSet_aff0ac578ef1a4adfac538a44f64d216c}{revert}} (self, strip=0, root=None)
+\item 
+def \mbox{\hyperlink{classpatch__ng_1_1PatchSet_a0743f27a12f907f58ea6b848157b5560}{can\+\_\+patch}} (self, filename)
+\item 
+def \mbox{\hyperlink{classpatch__ng_1_1PatchSet_ae67d40ac859bac09700e994a555f3872}{patch\+\_\+stream}} (self, instream, hunks)
+\item 
+\mbox{\Hypertarget{classpatch__ng_1_1PatchSet_aa50c57491e37c233690a3f371f9ac660}\label{classpatch__ng_1_1PatchSet_aa50c57491e37c233690a3f371f9ac660}} 
+def {\bfseries write\+\_\+hunks} (self, srcname, tgtname, hunks)
+\item 
+\mbox{\Hypertarget{classpatch__ng_1_1PatchSet_afe85579037abd2763fe9e29fa7da3ad1}\label{classpatch__ng_1_1PatchSet_afe85579037abd2763fe9e29fa7da3ad1}} 
+def {\bfseries dump} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpatch__ng_1_1PatchSet_a441293049b52f3accb1eef480b4997df}\label{classpatch__ng_1_1PatchSet_a441293049b52f3accb1eef480b4997df}} 
+{\bfseries name}
+\item 
+\mbox{\Hypertarget{classpatch__ng_1_1PatchSet_ab908df6f8dfe1e7b8239bd1c76b15b0e}\label{classpatch__ng_1_1PatchSet_ab908df6f8dfe1e7b8239bd1c76b15b0e}} 
+{\bfseries type}
+\item 
+\mbox{\Hypertarget{classpatch__ng_1_1PatchSet_ae5a8c450a9ea20b157047b00655bb6f7}\label{classpatch__ng_1_1PatchSet_ae5a8c450a9ea20b157047b00655bb6f7}} 
+{\bfseries items}
+\item 
+\mbox{\Hypertarget{classpatch__ng_1_1PatchSet_a3ba9465f0afd64afe9fdb97e29b70cef}\label{classpatch__ng_1_1PatchSet_a3ba9465f0afd64afe9fdb97e29b70cef}} 
+{\bfseries errors}
+\item 
+\mbox{\Hypertarget{classpatch__ng_1_1PatchSet_a4b03f080e22fa71eba9532a9f5aba380}\label{classpatch__ng_1_1PatchSet_a4b03f080e22fa71eba9532a9f5aba380}} 
+{\bfseries warnings}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} PatchSet is a patch parser and container.
+    When used as an iterable, returns patches.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpatch__ng_1_1PatchSet_aef316002508cde75cf5b9f627ed5c5f8}\label{classpatch__ng_1_1PatchSet_aef316002508cde75cf5b9f627ed5c5f8}} 
+\index{patch\_ng.PatchSet@{patch\_ng.PatchSet}!apply@{apply}}
+\index{apply@{apply}!patch\_ng.PatchSet@{patch\_ng.PatchSet}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily def patch\+\_\+ng.\+Patch\+Set.\+apply (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{strip = {\ttfamily 0},  }\item[{}]{root = {\ttfamily None},  }\item[{}]{fuzz = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Apply parsed patch, optionally stripping leading components
+    from file paths. `root` parameter specifies working dir.
+    :param strip: Strip patch path
+    :param root: Folder to apply the patch
+    :param fuzz: Accept fuzzy patches
+    return True on success
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpatch__ng_1_1PatchSet_a0743f27a12f907f58ea6b848157b5560}\label{classpatch__ng_1_1PatchSet_a0743f27a12f907f58ea6b848157b5560}} 
+\index{patch\_ng.PatchSet@{patch\_ng.PatchSet}!can\_patch@{can\_patch}}
+\index{can\_patch@{can\_patch}!patch\_ng.PatchSet@{patch\_ng.PatchSet}}
+\doxysubsubsection{\texorpdfstring{can\_patch()}{can\_patch()}}
+{\footnotesize\ttfamily def patch\+\_\+ng.\+Patch\+Set.\+can\+\_\+patch (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Check if specified filename can be patched. Returns None if file can
+not be found among source filenames. False if patch can not be applied
+clearly. True otherwise.
+
+:returns: True, False or None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpatch__ng_1_1PatchSet_a180348c3dc4790b955296ffcde6a8d8e}\label{classpatch__ng_1_1PatchSet_a180348c3dc4790b955296ffcde6a8d8e}} 
+\index{patch\_ng.PatchSet@{patch\_ng.PatchSet}!diffstat@{diffstat}}
+\index{diffstat@{diffstat}!patch\_ng.PatchSet@{patch\_ng.PatchSet}}
+\doxysubsubsection{\texorpdfstring{diffstat()}{diffstat()}}
+{\footnotesize\ttfamily def patch\+\_\+ng.\+Patch\+Set.\+diffstat (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} calculate diffstat and return as a string
+    Notes:
+      - original diffstat ouputs target filename
+      - single + or - shouldn't escape histogram
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpatch__ng_1_1PatchSet_a36e436d3fac9a8faa9bee38641c0cfe3}\label{classpatch__ng_1_1PatchSet_a36e436d3fac9a8faa9bee38641c0cfe3}} 
+\index{patch\_ng.PatchSet@{patch\_ng.PatchSet}!findfiles@{findfiles}}
+\index{findfiles@{findfiles}!patch\_ng.PatchSet@{patch\_ng.PatchSet}}
+\doxysubsubsection{\texorpdfstring{findfiles()}{findfiles()}}
+{\footnotesize\ttfamily def patch\+\_\+ng.\+Patch\+Set.\+findfiles (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{old,  }\item[{}]{new }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} return tuple of source file, target file \end{DoxyVerb}
+ \mbox{\Hypertarget{classpatch__ng_1_1PatchSet_a4808a3cd9d90db3a16cd4720287120c4}\label{classpatch__ng_1_1PatchSet_a4808a3cd9d90db3a16cd4720287120c4}} 
+\index{patch\_ng.PatchSet@{patch\_ng.PatchSet}!parse@{parse}}
+\index{parse@{parse}!patch\_ng.PatchSet@{patch\_ng.PatchSet}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily def patch\+\_\+ng.\+Patch\+Set.\+parse (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{stream }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} parse unified diff
+    return True on success
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpatch__ng_1_1PatchSet_ae67d40ac859bac09700e994a555f3872}\label{classpatch__ng_1_1PatchSet_ae67d40ac859bac09700e994a555f3872}} 
+\index{patch\_ng.PatchSet@{patch\_ng.PatchSet}!patch\_stream@{patch\_stream}}
+\index{patch\_stream@{patch\_stream}!patch\_ng.PatchSet@{patch\_ng.PatchSet}}
+\doxysubsubsection{\texorpdfstring{patch\_stream()}{patch\_stream()}}
+{\footnotesize\ttfamily def patch\+\_\+ng.\+Patch\+Set.\+patch\+\_\+stream (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{instream,  }\item[{}]{hunks }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Generator that yields stream patched with hunks iterable
+
+    Converts lineends in hunk lines to the best suitable format
+    autodetected from input
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpatch__ng_1_1PatchSet_aff0ac578ef1a4adfac538a44f64d216c}\label{classpatch__ng_1_1PatchSet_aff0ac578ef1a4adfac538a44f64d216c}} 
+\index{patch\_ng.PatchSet@{patch\_ng.PatchSet}!revert@{revert}}
+\index{revert@{revert}!patch\_ng.PatchSet@{patch\_ng.PatchSet}}
+\doxysubsubsection{\texorpdfstring{revert()}{revert()}}
+{\footnotesize\ttfamily def patch\+\_\+ng.\+Patch\+Set.\+revert (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{strip = {\ttfamily 0},  }\item[{}]{root = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} apply patch in reverse order \end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/patch\+\_\+ng.\+py\end{DoxyCompactItemize}

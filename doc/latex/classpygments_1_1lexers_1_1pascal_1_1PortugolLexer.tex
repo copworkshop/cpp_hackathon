@@ -1,0 +1,103 @@
+\hypertarget{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer}{}\doxysection{pygments.\+lexers.\+pascal.\+Portugol\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer}\index{pygments.lexers.pascal.PortugolLexer@{pygments.lexers.pascal.PortugolLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+pascal.\+Portugol\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+pascal.\+Portugol\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer_aedfc2acbc7bacdcf795c12052a6292c7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer_a0df444f570462e8d728528fa1ecae03a}{get\+\_\+tokens\+\_\+unprocessed}} (self, text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer_a824282ac78629ba5c9d2ac1c07464afb}\label{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer_a824282ac78629ba5c9d2ac1c07464afb}} 
+{\bfseries lexer}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer_a68658566bfab98b797195bc9613d5bb0}\label{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer_a68658566bfab98b797195bc9613d5bb0}} 
+string {\bfseries name} = \textquotesingle{}Portugol\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer_a71cf32e2d341c927227bb2025649b893}\label{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer_a71cf32e2d341c927227bb2025649b893}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}portugol\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer_a0c317f77bb628ae79e3b4ed4a8e8221a}\label{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer_a0c317f77bb628ae79e3b4ed4a8e8221a}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.alg\textquotesingle{}, \textquotesingle{}$\ast$.portugol\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer_aaebf11643646110bc55e9d89e45f6f52}\label{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer_aaebf11643646110bc55e9d89e45f6f52}} 
+list {\bfseries mimetypes} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer_a98e330ea2643105ab5111fbb85e17a73}\label{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer_a98e330ea2643105ab5111fbb85e17a73}} 
+string {\bfseries url} = \char`\"{}https\+://www.\+apoioinformatica.\+inf.\+br/produtos/visualg/linguagem\char`\"{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer_a38d989eadb5c65dcc03ac0b8b4d9c81e}\label{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer_a38d989eadb5c65dcc03ac0b8b4d9c81e}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For Portugol, a Pascal dialect with keywords in Portuguese.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer_aedfc2acbc7bacdcf795c12052a6292c7}\label{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer_aedfc2acbc7bacdcf795c12052a6292c7}} 
+\index{pygments.lexers.pascal.PortugolLexer@{pygments.lexers.pascal.PortugolLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.pascal.PortugolLexer@{pygments.lexers.pascal.PortugolLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+pascal.\+Portugol\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer_a0df444f570462e8d728528fa1ecae03a}\label{classpygments_1_1lexers_1_1pascal_1_1PortugolLexer_a0df444f570462e8d728528fa1ecae03a}} 
+\index{pygments.lexers.pascal.PortugolLexer@{pygments.lexers.pascal.PortugolLexer}!get\_tokens\_unprocessed@{get\_tokens\_unprocessed}}
+\index{get\_tokens\_unprocessed@{get\_tokens\_unprocessed}!pygments.lexers.pascal.PortugolLexer@{pygments.lexers.pascal.PortugolLexer}}
+\doxysubsubsection{\texorpdfstring{get\_tokens\_unprocessed()}{get\_tokens\_unprocessed()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+pascal.\+Portugol\+Lexer.\+get\+\_\+tokens\+\_\+unprocessed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method should process the text and return an iterable of
+``(index, tokentype, value)`` tuples where ``index`` is the starting
+position of the token within the input text.
+
+It must be overridden by subclasses. It is recommended to
+implement it as a generator to maximize effectiveness.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_aad5c02b7f661f64f91cf8c8d880e9f67}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/pascal.\+py\end{DoxyCompactItemize}

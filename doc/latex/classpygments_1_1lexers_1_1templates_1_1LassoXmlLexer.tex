@@ -1,0 +1,121 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1LassoXmlLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Lasso\+Xml\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1LassoXmlLexer}\index{pygments.lexers.templates.LassoXmlLexer@{pygments.lexers.templates.LassoXmlLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Lasso\+Xml\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Lasso\+Xml\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1LassoXmlLexer_a694e926e699c705ef55324ec02f18a6f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1LassoXmlLexer_a90e3255966a65e4e98caeb4d838351b0}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1LassoXmlLexer_a7b00e85c042a09bf313e1449dd327e4a}\label{classpygments_1_1lexers_1_1templates_1_1LassoXmlLexer_a7b00e85c042a09bf313e1449dd327e4a}} 
+string {\bfseries name} = \textquotesingle{}XML+Lasso\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1LassoXmlLexer_a3475c95b1e06ce57ff0cb1928b6498bc}\label{classpygments_1_1lexers_1_1templates_1_1LassoXmlLexer_a3475c95b1e06ce57ff0cb1928b6498bc}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}xml+lasso\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1LassoXmlLexer_ac026097266e72d5b9788b522b6b485a8}\label{classpygments_1_1lexers_1_1templates_1_1LassoXmlLexer_ac026097266e72d5b9788b522b6b485a8}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+6\textquotesingle{}
+\item 
+list {\bfseries alias\+\_\+filenames}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1LassoXmlLexer_ada33d179532d337dab87df9b6d7421cd}\label{classpygments_1_1lexers_1_1templates_1_1LassoXmlLexer_ada33d179532d337dab87df9b6d7421cd}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}application/xml+lasso\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1LassoXmlLexer_a3aae87916836c9e35acff8ccfc1cfa14}\label{classpygments_1_1lexers_1_1templates_1_1LassoXmlLexer_a3aae87916836c9e35acff8ccfc1cfa14}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+lassosoft.\+com\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Subclass of the `LassoLexer` which highlights unhandled data with the
+`XmlLexer`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1LassoXmlLexer_a694e926e699c705ef55324ec02f18a6f}\label{classpygments_1_1lexers_1_1templates_1_1LassoXmlLexer_a694e926e699c705ef55324ec02f18a6f}} 
+\index{pygments.lexers.templates.LassoXmlLexer@{pygments.lexers.templates.LassoXmlLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.templates.LassoXmlLexer@{pygments.lexers.templates.LassoXmlLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Lasso\+Xml\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1LassoXmlLexer_a90e3255966a65e4e98caeb4d838351b0}\label{classpygments_1_1lexers_1_1templates_1_1LassoXmlLexer_a90e3255966a65e4e98caeb4d838351b0}} 
+\index{pygments.lexers.templates.LassoXmlLexer@{pygments.lexers.templates.LassoXmlLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.templates.LassoXmlLexer@{pygments.lexers.templates.LassoXmlLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Lasso\+Xml\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1LassoXmlLexer_a7b250b206f8cdd650a9a52e025a2102b}\label{classpygments_1_1lexers_1_1templates_1_1LassoXmlLexer_a7b250b206f8cdd650a9a52e025a2102b}} 
+\index{pygments.lexers.templates.LassoXmlLexer@{pygments.lexers.templates.LassoXmlLexer}!alias\_filenames@{alias\_filenames}}
+\index{alias\_filenames@{alias\_filenames}!pygments.lexers.templates.LassoXmlLexer@{pygments.lexers.templates.LassoXmlLexer}}
+\doxysubsubsection{\texorpdfstring{alias\_filenames}{alias\_filenames}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+templates.\+Lasso\+Xml\+Lexer.\+alias\+\_\+filenames\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [\textcolor{stringliteral}{'*.xml'}, \textcolor{stringliteral}{'*.lasso'}, \textcolor{stringliteral}{'*.lasso[89]'},}
+\DoxyCodeLine{                       \textcolor{stringliteral}{'*.incl'}, \textcolor{stringliteral}{'*.inc'}, \textcolor{stringliteral}{'*.las'}]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

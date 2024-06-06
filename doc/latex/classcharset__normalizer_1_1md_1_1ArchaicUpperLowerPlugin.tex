@@ -1,0 +1,82 @@
+\hypertarget{classcharset__normalizer_1_1md_1_1ArchaicUpperLowerPlugin}{}\doxysection{charset\+\_\+normalizer.\+md.\+Archaic\+Upper\+Lower\+Plugin Class Reference}
+\label{classcharset__normalizer_1_1md_1_1ArchaicUpperLowerPlugin}\index{charset\_normalizer.md.ArchaicUpperLowerPlugin@{charset\_normalizer.md.ArchaicUpperLowerPlugin}}
+
+
+Inheritance diagram for charset\+\_\+normalizer.\+md.\+Archaic\+Upper\+Lower\+Plugin\+:
+% FIG 0
+
+
+Collaboration diagram for charset\+\_\+normalizer.\+md.\+Archaic\+Upper\+Lower\+Plugin\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1ArchaicUpperLowerPlugin_ae02e5d532db3a7c0e7d8fa259d7e32d1}\label{classcharset__normalizer_1_1md_1_1ArchaicUpperLowerPlugin_ae02e5d532db3a7c0e7d8fa259d7e32d1}} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+bool \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1ArchaicUpperLowerPlugin_a773dcc4019d8243bb4042b4620736373}{eligible}} (self, str character)
+\item 
+None \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1ArchaicUpperLowerPlugin_a86c97de5c4917e9333d9bca4b46de6eb}{feed}} (self, str character)
+\item 
+None \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1ArchaicUpperLowerPlugin_ad77981ef6b55707fc26a6fc5bfd7915f}{reset}} (self)
+\item 
+float \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1ArchaicUpperLowerPlugin_a211c33473a5bc1fbd6a82bd04b2fe768}{ratio}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1ArchaicUpperLowerPlugin_a773dcc4019d8243bb4042b4620736373}\label{classcharset__normalizer_1_1md_1_1ArchaicUpperLowerPlugin_a773dcc4019d8243bb4042b4620736373}} 
+\index{charset\_normalizer.md.ArchaicUpperLowerPlugin@{charset\_normalizer.md.ArchaicUpperLowerPlugin}!eligible@{eligible}}
+\index{eligible@{eligible}!charset\_normalizer.md.ArchaicUpperLowerPlugin@{charset\_normalizer.md.ArchaicUpperLowerPlugin}}
+\doxysubsubsection{\texorpdfstring{eligible()}{eligible()}}
+{\footnotesize\ttfamily  bool charset\+\_\+normalizer.\+md.\+Archaic\+Upper\+Lower\+Plugin.\+eligible (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{character }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine if given character should be fed in.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1MessDetectorPlugin_a6c90e20b89fb11f27a99c4bb1b7b4aeb}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1ArchaicUpperLowerPlugin_a86c97de5c4917e9333d9bca4b46de6eb}\label{classcharset__normalizer_1_1md_1_1ArchaicUpperLowerPlugin_a86c97de5c4917e9333d9bca4b46de6eb}} 
+\index{charset\_normalizer.md.ArchaicUpperLowerPlugin@{charset\_normalizer.md.ArchaicUpperLowerPlugin}!feed@{feed}}
+\index{feed@{feed}!charset\_normalizer.md.ArchaicUpperLowerPlugin@{charset\_normalizer.md.ArchaicUpperLowerPlugin}}
+\doxysubsubsection{\texorpdfstring{feed()}{feed()}}
+{\footnotesize\ttfamily  None charset\+\_\+normalizer.\+md.\+Archaic\+Upper\+Lower\+Plugin.\+feed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{character }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The main routine to be executed upon character.
+Insert the logic in witch the text would be considered chaotic.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1MessDetectorPlugin_a1d7b6ef49fad244c8841e7dacf4a1bdb}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1ArchaicUpperLowerPlugin_a211c33473a5bc1fbd6a82bd04b2fe768}\label{classcharset__normalizer_1_1md_1_1ArchaicUpperLowerPlugin_a211c33473a5bc1fbd6a82bd04b2fe768}} 
+\index{charset\_normalizer.md.ArchaicUpperLowerPlugin@{charset\_normalizer.md.ArchaicUpperLowerPlugin}!ratio@{ratio}}
+\index{ratio@{ratio}!charset\_normalizer.md.ArchaicUpperLowerPlugin@{charset\_normalizer.md.ArchaicUpperLowerPlugin}}
+\doxysubsubsection{\texorpdfstring{ratio()}{ratio()}}
+{\footnotesize\ttfamily  float charset\+\_\+normalizer.\+md.\+Archaic\+Upper\+Lower\+Plugin.\+ratio (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute the chaos ratio based on what your feed() has seen.
+Must NOT be lower than 0.; No restriction gt 0.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1MessDetectorPlugin_ac8f7c272b946d769ca5d6c478b6dd8a1}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+\mbox{\Hypertarget{classcharset__normalizer_1_1md_1_1ArchaicUpperLowerPlugin_ad77981ef6b55707fc26a6fc5bfd7915f}\label{classcharset__normalizer_1_1md_1_1ArchaicUpperLowerPlugin_ad77981ef6b55707fc26a6fc5bfd7915f}} 
+\index{charset\_normalizer.md.ArchaicUpperLowerPlugin@{charset\_normalizer.md.ArchaicUpperLowerPlugin}!reset@{reset}}
+\index{reset@{reset}!charset\_normalizer.md.ArchaicUpperLowerPlugin@{charset\_normalizer.md.ArchaicUpperLowerPlugin}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily  None charset\+\_\+normalizer.\+md.\+Archaic\+Upper\+Lower\+Plugin.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Permit to reset the plugin to the initial state.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1MessDetectorPlugin_a82ba1b462302d9374e38614cd8a918b9}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/charset\+\_\+normalizer/md.\+py\end{DoxyCompactItemize}

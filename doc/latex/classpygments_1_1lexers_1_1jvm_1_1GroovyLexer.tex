@@ -1,0 +1,80 @@
+\hypertarget{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer}{}\doxysection{pygments.\+lexers.\+jvm.\+Groovy\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer}\index{pygments.lexers.jvm.GroovyLexer@{pygments.lexers.jvm.GroovyLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+jvm.\+Groovy\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+jvm.\+Groovy\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer_a602fcbcbd8a5ca2ed0835e5edc386585}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer_a43d0b8fdf6d69134ab2b461855325aca}\label{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer_a43d0b8fdf6d69134ab2b461855325aca}} 
+string {\bfseries name} = \textquotesingle{}Groovy\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer_a80fe333007173ff3b44b65cc47097c35}\label{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer_a80fe333007173ff3b44b65cc47097c35}} 
+string {\bfseries url} = \textquotesingle{}https\+://groovy-\/lang.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer_a2c933c6a623256a19e2a72fae7d3a9f7}\label{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer_a2c933c6a623256a19e2a72fae7d3a9f7}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}groovy\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer_a3a7e5dd58ca79b8f68c3c50fe488716c}\label{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer_a3a7e5dd58ca79b8f68c3c50fe488716c}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.groovy\textquotesingle{},\textquotesingle{}$\ast$.gradle\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer_a8ab0722370cc09351d62544d0d3c5355}\label{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer_a8ab0722370cc09351d62544d0d3c5355}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/groovy\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer_a827362efe6777fc6193a28174110a791}\label{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer_a827362efe6777fc6193a28174110a791}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+5\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer_ae537608ef19cc6d222e3bea6ed723d32}\label{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer_ae537608ef19cc6d222e3bea6ed723d32}} 
+{\bfseries flags} = re.\+MULTILINE $\vert$ re.\+DOTALL
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer_a31636b828eabb0400af43e7bbe5c3adf}\label{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer_a31636b828eabb0400af43e7bbe5c3adf}} 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For Groovy source code.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer_a602fcbcbd8a5ca2ed0835e5edc386585}\label{classpygments_1_1lexers_1_1jvm_1_1GroovyLexer_a602fcbcbd8a5ca2ed0835e5edc386585}} 
+\index{pygments.lexers.jvm.GroovyLexer@{pygments.lexers.jvm.GroovyLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.jvm.GroovyLexer@{pygments.lexers.jvm.GroovyLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+jvm.\+Groovy\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/jvm.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,77 @@
+\hypertarget{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse}{}\doxysection{conans.\+test.\+utils.\+tools.\+Testing\+Response Class Reference}
+\label{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse}\index{conans.test.utils.tools.TestingResponse@{conans.test.utils.tools.TestingResponse}}
+
+
+Inheritance diagram for conans.\+test.\+utils.\+tools.\+Testing\+Response\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+test.\+utils.\+tools.\+Testing\+Response\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a63608a6b03cd38011295cdac0c1ffcdd}\label{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a63608a6b03cd38011295cdac0c1ffcdd}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, test\+\_\+response)
+\item 
+\mbox{\Hypertarget{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a56c8500fbd4dccc213b6a89e2af954b0}\label{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a56c8500fbd4dccc213b6a89e2af954b0}} 
+def {\bfseries close} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a73374b6e40f591c2383dbbdb7cfe5936}\label{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a73374b6e40f591c2383dbbdb7cfe5936}} 
+def {\bfseries headers} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a95548cfaa8cf20fb1b81e1206ba3d390}\label{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a95548cfaa8cf20fb1b81e1206ba3d390}} 
+def {\bfseries ok} (self)
+\item 
+def \mbox{\hyperlink{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a0da82b1019170fb0c9e729900da93358}{raise\+\_\+for\+\_\+status}} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a66541079eb5740b1102f198cb836a553}\label{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a66541079eb5740b1102f198cb836a553}} 
+def {\bfseries content} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a5e84d483df0fcbe0b0f165735935cac9}\label{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a5e84d483df0fcbe0b0f165735935cac9}} 
+def {\bfseries charset} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a6f6d4eb71fa6615582ea2d72f6932acc}\label{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a6f6d4eb71fa6615582ea2d72f6932acc}} 
+def {\bfseries charset} (self, newcharset)
+\item 
+\mbox{\Hypertarget{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a516af0568cf0598199e575ddfd853397}\label{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a516af0568cf0598199e575ddfd853397}} 
+def {\bfseries text} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a079f48f24947ff99d9e01416cc657b1f}\label{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a079f48f24947ff99d9e01416cc657b1f}} 
+def {\bfseries iter\+\_\+content} (self, chunk\+\_\+size=1)
+\item 
+\mbox{\Hypertarget{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_afc65a225d689ed23a0efa1fde86bd99f}\label{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_afc65a225d689ed23a0efa1fde86bd99f}} 
+def {\bfseries status\+\_\+code} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a3de5eb86a0e79aa0f35bcd0d8bde3f35}\label{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a3de5eb86a0e79aa0f35bcd0d8bde3f35}} 
+def {\bfseries json} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_ab76387dd34b44050fc4874bd96422caf}\label{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_ab76387dd34b44050fc4874bd96422caf}} 
+{\bfseries test\+\_\+response}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Wraps a response from TestApp external tool
+to guarantee the presence of response.ok, response.content
+and response.status_code, as it was a requests library object.
+
+Is instanced by TestRequester on each request\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a0da82b1019170fb0c9e729900da93358}\label{classconans_1_1test_1_1utils_1_1tools_1_1TestingResponse_a0da82b1019170fb0c9e729900da93358}} 
+\index{conans.test.utils.tools.TestingResponse@{conans.test.utils.tools.TestingResponse}!raise\_for\_status@{raise\_for\_status}}
+\index{raise\_for\_status@{raise\_for\_status}!conans.test.utils.tools.TestingResponse@{conans.test.utils.tools.TestingResponse}}
+\doxysubsubsection{\texorpdfstring{raise\_for\_status()}{raise\_for\_status()}}
+{\footnotesize\ttfamily def conans.\+test.\+utils.\+tools.\+Testing\+Response.\+raise\+\_\+for\+\_\+status (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Raises stored :class:`HTTPError`, if one occurred.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/test/utils/tools.\+py\end{DoxyCompactItemize}

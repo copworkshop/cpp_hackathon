@@ -1,0 +1,68 @@
+\hypertarget{classgcovr_1_1coverage_1_1DirectoryCoverage}{}\doxysection{gcovr.\+coverage.\+Directory\+Coverage Class Reference}
+\label{classgcovr_1_1coverage_1_1DirectoryCoverage}\index{gcovr.coverage.DirectoryCoverage@{gcovr.coverage.DirectoryCoverage}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgcovr_1_1coverage_1_1DirectoryCoverage_ab699e3dde2a9b79ac1e8264f4ef93b83}\label{classgcovr_1_1coverage_1_1DirectoryCoverage_ab699e3dde2a9b79ac1e8264f4ef93b83}} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str dirname)
+\item 
+str \mbox{\hyperlink{classgcovr_1_1coverage_1_1DirectoryCoverage_a8107cd296f7be2b21a2348049c6001fb}{filename}} (self)
+\item 
+\mbox{\hyperlink{classgcovr_1_1coverage_1_1CoverageStat}{Coverage\+Stat}} \mbox{\hyperlink{classgcovr_1_1coverage_1_1DirectoryCoverage_a0cd10101097a6f9148c8cfc87dee1387}{line\+\_\+coverage}} (self)
+\item 
+\mbox{\hyperlink{classgcovr_1_1coverage_1_1CoverageStat}{Coverage\+Stat}} \mbox{\hyperlink{classgcovr_1_1coverage_1_1DirectoryCoverage_a62ce35f6191fadf6e2fc548d1345ecdc}{branch\+\_\+coverage}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgcovr_1_1coverage_1_1DirectoryCoverage_a83a16122883cdebf141f404ea8c87a24}\label{classgcovr_1_1coverage_1_1DirectoryCoverage_a83a16122883cdebf141f404ea8c87a24}} 
+str {\bfseries directory\+\_\+root} (Cov\+Data\+\_\+directories subdirs, re.\+Pattern root\+\_\+filter)
+\item 
+Cov\+Data\+\_\+directories \mbox{\hyperlink{classgcovr_1_1coverage_1_1DirectoryCoverage_a5b5360b675607f95ccc66b0a511a1677}{from\+\_\+covdata}} (Cov\+Data covdata, Iterable sorted\+\_\+keys, re.\+Pattern root\+\_\+filter)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgcovr_1_1coverage_1_1DirectoryCoverage_a62ce35f6191fadf6e2fc548d1345ecdc}\label{classgcovr_1_1coverage_1_1DirectoryCoverage_a62ce35f6191fadf6e2fc548d1345ecdc}} 
+\index{gcovr.coverage.DirectoryCoverage@{gcovr.coverage.DirectoryCoverage}!branch\_coverage@{branch\_coverage}}
+\index{branch\_coverage@{branch\_coverage}!gcovr.coverage.DirectoryCoverage@{gcovr.coverage.DirectoryCoverage}}
+\doxysubsubsection{\texorpdfstring{branch\_coverage()}{branch\_coverage()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classgcovr_1_1coverage_1_1CoverageStat}{Coverage\+Stat}} gcovr.\+coverage.\+Directory\+Coverage.\+branch\+\_\+coverage (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A simple wrapper function necessary for sort_coverage().\end{DoxyVerb}
+ \mbox{\Hypertarget{classgcovr_1_1coverage_1_1DirectoryCoverage_a8107cd296f7be2b21a2348049c6001fb}\label{classgcovr_1_1coverage_1_1DirectoryCoverage_a8107cd296f7be2b21a2348049c6001fb}} 
+\index{gcovr.coverage.DirectoryCoverage@{gcovr.coverage.DirectoryCoverage}!filename@{filename}}
+\index{filename@{filename}!gcovr.coverage.DirectoryCoverage@{gcovr.coverage.DirectoryCoverage}}
+\doxysubsubsection{\texorpdfstring{filename()}{filename()}}
+{\footnotesize\ttfamily  str gcovr.\+coverage.\+Directory\+Coverage.\+filename (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Helpful function for when we use this DirectoryCoverage in a union with FileCoverage\end{DoxyVerb}
+ \mbox{\Hypertarget{classgcovr_1_1coverage_1_1DirectoryCoverage_a5b5360b675607f95ccc66b0a511a1677}\label{classgcovr_1_1coverage_1_1DirectoryCoverage_a5b5360b675607f95ccc66b0a511a1677}} 
+\index{gcovr.coverage.DirectoryCoverage@{gcovr.coverage.DirectoryCoverage}!from\_covdata@{from\_covdata}}
+\index{from\_covdata@{from\_covdata}!gcovr.coverage.DirectoryCoverage@{gcovr.coverage.DirectoryCoverage}}
+\doxysubsubsection{\texorpdfstring{from\_covdata()}{from\_covdata()}}
+{\footnotesize\ttfamily  Cov\+Data\+\_\+directories gcovr.\+coverage.\+Directory\+Coverage.\+from\+\_\+covdata (\begin{DoxyParamCaption}\item[{Cov\+Data}]{covdata,  }\item[{Iterable}]{sorted\+\_\+keys,  }\item[{re.\+Pattern     }]{root\+\_\+filter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Add a file coverage item to the directory structure and accumulate stats.
+
+This recursive function will accumulate statistics such that every directory
+above it will know the statistics associated with all files deep within a
+directory structure.
+
+Args:
+    covdata: The file coverage statistics to get the directory coverage from
+    sorted_keys: The sorted keys for covdata
+    root_filter: Information about the filter used with the root directory
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgcovr_1_1coverage_1_1DirectoryCoverage_a0cd10101097a6f9148c8cfc87dee1387}\label{classgcovr_1_1coverage_1_1DirectoryCoverage_a0cd10101097a6f9148c8cfc87dee1387}} 
+\index{gcovr.coverage.DirectoryCoverage@{gcovr.coverage.DirectoryCoverage}!line\_coverage@{line\_coverage}}
+\index{line\_coverage@{line\_coverage}!gcovr.coverage.DirectoryCoverage@{gcovr.coverage.DirectoryCoverage}}
+\doxysubsubsection{\texorpdfstring{line\_coverage()}{line\_coverage()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classgcovr_1_1coverage_1_1CoverageStat}{Coverage\+Stat}} gcovr.\+coverage.\+Directory\+Coverage.\+line\+\_\+coverage (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A simple wrapper function necessary for sort_coverage().\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/gcovr/coverage.\+py\end{DoxyCompactItemize}

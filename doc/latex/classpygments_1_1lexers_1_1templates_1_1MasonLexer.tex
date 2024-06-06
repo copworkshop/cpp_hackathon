@@ -1,0 +1,113 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1MasonLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Mason\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1MasonLexer}\index{pygments.lexers.templates.MasonLexer@{pygments.lexers.templates.MasonLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Mason\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Mason\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1MasonLexer_ae7663bcb5a5923a0d1cc5e345063ba73}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MasonLexer_a7e27b3628c261ebfad5cda4bb2c1cd51}\label{classpygments_1_1lexers_1_1templates_1_1MasonLexer_a7e27b3628c261ebfad5cda4bb2c1cd51}} 
+string {\bfseries name} = \textquotesingle{}Mason\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MasonLexer_aafd4dcf5a492e0acdb08488954e55f03}\label{classpygments_1_1lexers_1_1templates_1_1MasonLexer_aafd4dcf5a492e0acdb08488954e55f03}} 
+string {\bfseries url} = \textquotesingle{}http\+://www.\+masonhq.\+com/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MasonLexer_a9e401fc06092d83a8d34b08913613031}\label{classpygments_1_1lexers_1_1templates_1_1MasonLexer_a9e401fc06092d83a8d34b08913613031}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}mason\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MasonLexer_a73d74a52fd940a5eefc8a7f95110494e}\label{classpygments_1_1lexers_1_1templates_1_1MasonLexer_a73d74a52fd940a5eefc8a7f95110494e}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.m\textquotesingle{}, \textquotesingle{}$\ast$.mhtml\textquotesingle{}, \textquotesingle{}$\ast$.mc\textquotesingle{}, \textquotesingle{}$\ast$.mi\textquotesingle{}, \textquotesingle{}autohandler\textquotesingle{}, \textquotesingle{}dhandler\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MasonLexer_ab8a5e5bab52f38aa2f34c27cedd295ca}\label{classpygments_1_1lexers_1_1templates_1_1MasonLexer_ab8a5e5bab52f38aa2f34c27cedd295ca}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}application/x-\/mason\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MasonLexer_a4de80d255389d39ca6c319c4a885419e}\label{classpygments_1_1lexers_1_1templates_1_1MasonLexer_a4de80d255389d39ca6c319c4a885419e}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+4\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Generic mason templates lexer. Stolen from Myghty lexer. Code that isn't
+Mason markup is HTML.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MasonLexer_ae7663bcb5a5923a0d1cc5e345063ba73}\label{classpygments_1_1lexers_1_1templates_1_1MasonLexer_ae7663bcb5a5923a0d1cc5e345063ba73}} 
+\index{pygments.lexers.templates.MasonLexer@{pygments.lexers.templates.MasonLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.templates.MasonLexer@{pygments.lexers.templates.MasonLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Mason\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1MasonLexer_ad16ea8ee38ce56f166f97b0ed8ca92ac}\label{classpygments_1_1lexers_1_1templates_1_1MasonLexer_ad16ea8ee38ce56f166f97b0ed8ca92ac}} 
+\index{pygments.lexers.templates.MasonLexer@{pygments.lexers.templates.MasonLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.templates.MasonLexer@{pygments.lexers.templates.MasonLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+templates.\+Mason\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(?s)(<\%doc>)(.*?)(</\%doc>)'},}
+\DoxyCodeLine{             bygroups(Name.Tag, Comment.Multiline, Name.Tag)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(?s)(<\%(?:def|method))(\(\backslash\)s*)(.*?)(>)(.*?)(</\%\(\backslash\)2\(\backslash\)s*>)'},}
+\DoxyCodeLine{             bygroups(Name.Tag, Whitespace, Name.Function, Name.Tag,}
+\DoxyCodeLine{                      using(this), Name.Tag)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(?s)(<\%(\(\backslash\)w+)(.*?)(>))(.*?)(</\%\(\backslash\)2\(\backslash\)s*>)'},}
+\DoxyCodeLine{             bygroups(Name.Tag, \textcolor{keywordtype}{None}, \textcolor{keywordtype}{None}, \textcolor{keywordtype}{None}, using(PerlLexer), Name.Tag)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(?s)(<\&[\string^|])(.*?)(,.*?)?(\&>)'},}
+\DoxyCodeLine{             bygroups(Name.Tag, Name.Function, using(PerlLexer), Name.Tag)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(?s)(<\&\(\backslash\)|)(.*?)(,.*?)?(\&>)'},}
+\DoxyCodeLine{             bygroups(Name.Tag, Name.Function, using(PerlLexer), Name.Tag)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'</\&>'}, Name.Tag),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(?s)(<\%!?)(.*?)(\%>)'},}
+\DoxyCodeLine{             bygroups(Name.Tag, using(PerlLexer), Name.Tag)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(?<=\string^)\#[\string^\(\backslash\)n]*(\(\backslash\)n|\(\backslash\)Z)'}, Comment),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(?<=\string^)(\%)([\string^\(\backslash\)n]*)(\(\backslash\)n|\(\backslash\)Z)'},}
+\DoxyCodeLine{             bygroups(Name.Tag, using(PerlLexer), Other)),}
+\DoxyCodeLine{            (, bygroups(using(HtmlLexer), Operator)),}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

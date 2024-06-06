@@ -1,0 +1,338 @@
+\hypertarget{classurllib3_1_1util_1_1retry_1_1Retry}{}\doxysection{urllib3.\+util.\+retry.\+Retry Class Reference}
+\label{classurllib3_1_1util_1_1retry_1_1Retry}\index{urllib3.util.retry.Retry@{urllib3.util.retry.Retry}}
+
+
+Inheritance diagram for urllib3.\+util.\+retry.\+Retry\+:
+% FIG 0
+
+
+Collaboration diagram for urllib3.\+util.\+retry.\+Retry\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_a5e90dcebaae03231a79c3f0e36118af1}\label{classurllib3_1_1util_1_1retry_1_1Retry_a5e90dcebaae03231a79c3f0e36118af1}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, total=10, connect=None, read=None, redirect=None, status=None, other=None, allowed\+\_\+methods=\+\_\+\+Default, status\+\_\+forcelist=None, backoff\+\_\+factor=0, raise\+\_\+on\+\_\+redirect=True, raise\+\_\+on\+\_\+status=True, history=None, respect\+\_\+retry\+\_\+after\+\_\+header=True, remove\+\_\+headers\+\_\+on\+\_\+redirect=\+\_\+\+Default, method\+\_\+whitelist=\+\_\+\+Default)
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_ad84e6d594a3cdd9fe97750416e24b51c}\label{classurllib3_1_1util_1_1retry_1_1Retry_ad84e6d594a3cdd9fe97750416e24b51c}} 
+def {\bfseries new} (self, $\ast$$\ast$kw)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1util_1_1retry_1_1Retry_a2e11319b8f6bccdd98ee04896385b75b}{from\+\_\+int}} (cls, retries, redirect=True, default=None)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1util_1_1retry_1_1Retry_a6536e0aaeb5801c5fb6f1e0be3b2bfa5}{get\+\_\+backoff\+\_\+time}} (self)
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_ae59a229ead2a53ae363422b6e31b15a9}\label{classurllib3_1_1util_1_1retry_1_1Retry_ae59a229ead2a53ae363422b6e31b15a9}} 
+def {\bfseries parse\+\_\+retry\+\_\+after} (self, retry\+\_\+after)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1util_1_1retry_1_1Retry_a6bd1facdffdedde639d287402f2ea9a1}{get\+\_\+retry\+\_\+after}} (self, response)
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_adf45c0a76e6650133136652a2c7fa554}\label{classurllib3_1_1util_1_1retry_1_1Retry_adf45c0a76e6650133136652a2c7fa554}} 
+def {\bfseries sleep\+\_\+for\+\_\+retry} (self, response=None)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1util_1_1retry_1_1Retry_a1f4c9815abaf9b107349892734c8b1a8}{sleep}} (self, response=None)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1util_1_1retry_1_1Retry_ac21d249f91aa42784f7193ab08619e90}{is\+\_\+retry}} (self, method, status\+\_\+code, has\+\_\+retry\+\_\+after=False)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1util_1_1retry_1_1Retry_ad22f0fcaa7c7dbca5ef54b0b2808e24c}{is\+\_\+exhausted}} (self)
+\item 
+def \mbox{\hyperlink{classurllib3_1_1util_1_1retry_1_1Retry_a7f28bc6eb68a9c6730a08030e4f3ddc8}{increment}} (self, method=None, url=None, response=None, error=None, \+\_\+pool=None, \+\_\+stacktrace=None)
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_aaf2fdcebd48789f6c7c04cf552c1ec52}\label{classurllib3_1_1util_1_1retry_1_1Retry_aaf2fdcebd48789f6c7c04cf552c1ec52}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_aab7707cf5a092419b27b4b162da27271}\label{classurllib3_1_1util_1_1retry_1_1Retry_aab7707cf5a092419b27b4b162da27271}} 
+def {\bfseries \+\_\+\+\_\+getattr\+\_\+\+\_\+} (self, item)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_a085db4cadffb971a84e62ab37bf9ecd9}\label{classurllib3_1_1util_1_1retry_1_1Retry_a085db4cadffb971a84e62ab37bf9ecd9}} 
+{\bfseries total}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_ad612ee6e5411f67e42d55ced05f0f89d}\label{classurllib3_1_1util_1_1retry_1_1Retry_ad612ee6e5411f67e42d55ced05f0f89d}} 
+{\bfseries connect}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_ad15e83efaabdefb875865cbefa72210c}\label{classurllib3_1_1util_1_1retry_1_1Retry_ad15e83efaabdefb875865cbefa72210c}} 
+{\bfseries read}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_a1e156eb8d091d121e5d9287d2b10f113}\label{classurllib3_1_1util_1_1retry_1_1Retry_a1e156eb8d091d121e5d9287d2b10f113}} 
+{\bfseries status}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_aac27572def25232345a9cbba701880a6}\label{classurllib3_1_1util_1_1retry_1_1Retry_aac27572def25232345a9cbba701880a6}} 
+{\bfseries other}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_a16e37fec44cf2e29707497aa4ed1e92a}\label{classurllib3_1_1util_1_1retry_1_1Retry_a16e37fec44cf2e29707497aa4ed1e92a}} 
+{\bfseries redirect}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_abb37fde0695d5fe37e90bd09bdfc2db9}\label{classurllib3_1_1util_1_1retry_1_1Retry_abb37fde0695d5fe37e90bd09bdfc2db9}} 
+{\bfseries status\+\_\+forcelist}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_a8b3ded3197c6fc0b1926a67053d28f5d}\label{classurllib3_1_1util_1_1retry_1_1Retry_a8b3ded3197c6fc0b1926a67053d28f5d}} 
+{\bfseries allowed\+\_\+methods}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_a7c201adfe2a8f15d0a13461f4e17ff72}\label{classurllib3_1_1util_1_1retry_1_1Retry_a7c201adfe2a8f15d0a13461f4e17ff72}} 
+{\bfseries backoff\+\_\+factor}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_ad2cb07b5a70924aecb246927f240ed26}\label{classurllib3_1_1util_1_1retry_1_1Retry_ad2cb07b5a70924aecb246927f240ed26}} 
+{\bfseries raise\+\_\+on\+\_\+redirect}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_a86ff5f24256766ae2614b5d42fa6e623}\label{classurllib3_1_1util_1_1retry_1_1Retry_a86ff5f24256766ae2614b5d42fa6e623}} 
+{\bfseries raise\+\_\+on\+\_\+status}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_af0eee4689c00bea4ad1781e04a8d4808}\label{classurllib3_1_1util_1_1retry_1_1Retry_af0eee4689c00bea4ad1781e04a8d4808}} 
+{\bfseries history}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_a9a5bfd2982b8bb6a2f925b968fdd116f}\label{classurllib3_1_1util_1_1retry_1_1Retry_a9a5bfd2982b8bb6a2f925b968fdd116f}} 
+{\bfseries respect\+\_\+retry\+\_\+after\+\_\+header}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_a47c3a57ed7607482e867afb4c84e2b05}\label{classurllib3_1_1util_1_1retry_1_1Retry_a47c3a57ed7607482e867afb4c84e2b05}} 
+{\bfseries remove\+\_\+headers\+\_\+on\+\_\+redirect}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries DEFAULT\+\_\+\+ALLOWED\+\_\+\+METHODS}
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_a1bfaa035e78d08d110c1623bd10879d4}\label{classurllib3_1_1util_1_1retry_1_1Retry_a1bfaa035e78d08d110c1623bd10879d4}} 
+{\bfseries RETRY\+\_\+\+AFTER\+\_\+\+STATUS\+\_\+\+CODES} = frozenset(\mbox{[}413, 429, 503\mbox{]})
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_ab9ba59b3efe9c867a0292037f7045e20}\label{classurllib3_1_1util_1_1retry_1_1Retry_ab9ba59b3efe9c867a0292037f7045e20}} 
+{\bfseries DEFAULT\+\_\+\+REMOVE\+\_\+\+HEADERS\+\_\+\+ON\+\_\+\+REDIRECT} = frozenset(\mbox{[}\char`\"{}Cookie\char`\"{}, \char`\"{}Authorization\char`\"{}\mbox{]})
+\item 
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_a3cdf8ddf9ebc20e940752f45fd25b509}\label{classurllib3_1_1util_1_1retry_1_1Retry_a3cdf8ddf9ebc20e940752f45fd25b509}} 
+int {\bfseries DEFAULT\+\_\+\+BACKOFF\+\_\+\+MAX} = 120
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Retry configuration.
+
+Each retry attempt will create a new Retry object with updated values, so
+they can be safely reused.
+
+Retries can be defined as a default for a pool::
+
+    retries = Retry(connect=5, read=2, redirect=5)
+    http = PoolManager(retries=retries)
+    response = http.request('GET', 'http://example.com/')
+
+Or per-request (which overrides the default for the pool)::
+
+    response = http.request('GET', 'http://example.com/', retries=Retry(10))
+
+Retries can be disabled by passing ``False``::
+
+    response = http.request('GET', 'http://example.com/', retries=False)
+
+Errors will be wrapped in :class:`~urllib3.exceptions.MaxRetryError` unless
+retries are disabled, in which case the causing exception will be raised.
+
+:param int total:
+    Total number of retries to allow. Takes precedence over other counts.
+
+    Set to ``None`` to remove this constraint and fall back on other
+    counts.
+
+    Set to ``0`` to fail on the first retry.
+
+    Set to ``False`` to disable and imply ``raise_on_redirect=False``.
+
+:param int connect:
+    How many connection-related errors to retry on.
+
+    These are errors raised before the request is sent to the remote server,
+    which we assume has not triggered the server to process the request.
+
+    Set to ``0`` to fail on the first retry of this type.
+
+:param int read:
+    How many times to retry on read errors.
+
+    These errors are raised after the request was sent to the server, so the
+    request may have side-effects.
+
+    Set to ``0`` to fail on the first retry of this type.
+
+:param int redirect:
+    How many redirects to perform. Limit this to avoid infinite redirect
+    loops.
+
+    A redirect is a HTTP response with a status code 301, 302, 303, 307 or
+    308.
+
+    Set to ``0`` to fail on the first retry of this type.
+
+    Set to ``False`` to disable and imply ``raise_on_redirect=False``.
+
+:param int status:
+    How many times to retry on bad status codes.
+
+    These are retries made on responses, where status code matches
+    ``status_forcelist``.
+
+    Set to ``0`` to fail on the first retry of this type.
+
+:param int other:
+    How many times to retry on other errors.
+
+    Other errors are errors that are not connect, read, redirect or status errors.
+    These errors might be raised after the request was sent to the server, so the
+    request might have side-effects.
+
+    Set to ``0`` to fail on the first retry of this type.
+
+    If ``total`` is not set, it's a good idea to set this to 0 to account
+    for unexpected edge cases and avoid infinite retry loops.
+
+:param iterable allowed_methods:
+    Set of uppercased HTTP method verbs that we should retry on.
+
+    By default, we only retry on methods which are considered to be
+    idempotent (multiple requests with the same parameters end with the
+    same state). See :attr:`Retry.DEFAULT_ALLOWED_METHODS`.
+
+    Set to a ``False`` value to retry on any verb.
+
+    .. warning::
+
+        Previously this parameter was named ``method_whitelist``, that
+        usage is deprecated in v1.26.0 and will be removed in v2.0.
+
+:param iterable status_forcelist:
+    A set of integer HTTP status codes that we should force a retry on.
+    A retry is initiated if the request method is in ``allowed_methods``
+    and the response status code is in ``status_forcelist``.
+
+    By default, this is disabled with ``None``.
+
+:param float backoff_factor:
+    A backoff factor to apply between attempts after the second try
+    (most errors are resolved immediately by a second try without a
+    delay). urllib3 will sleep for::
+
+        {backoff factor} * (2 ** ({number of total retries} - 1))
+
+    seconds. If the backoff_factor is 0.1, then :func:`.sleep` will sleep
+    for [0.0s, 0.2s, 0.4s, ...] between retries. It will never be longer
+    than :attr:`Retry.DEFAULT_BACKOFF_MAX`.
+
+    By default, backoff is disabled (set to 0).
+
+:param bool raise_on_redirect: Whether, if the number of redirects is
+    exhausted, to raise a MaxRetryError, or to return a response with a
+    response code in the 3xx range.
+
+:param bool raise_on_status: Similar meaning to ``raise_on_redirect``:
+    whether we should raise an exception, or return a response,
+    if status falls in ``status_forcelist`` range and retries have
+    been exhausted.
+
+:param tuple history: The history of the request encountered during
+    each call to :meth:`~Retry.increment`. The list is in the order
+    the requests occurred. Each list item is of class :class:`RequestHistory`.
+
+:param bool respect_retry_after_header:
+    Whether to respect Retry-After header on status codes defined as
+    :attr:`Retry.RETRY_AFTER_STATUS_CODES` or not.
+
+:param iterable remove_headers_on_redirect:
+    Sequence of headers to remove from the request when a response
+    indicating a redirect is returned before firing off the redirected
+    request.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_a2e11319b8f6bccdd98ee04896385b75b}\label{classurllib3_1_1util_1_1retry_1_1Retry_a2e11319b8f6bccdd98ee04896385b75b}} 
+\index{urllib3.util.retry.Retry@{urllib3.util.retry.Retry}!from\_int@{from\_int}}
+\index{from\_int@{from\_int}!urllib3.util.retry.Retry@{urllib3.util.retry.Retry}}
+\doxysubsubsection{\texorpdfstring{from\_int()}{from\_int()}}
+{\footnotesize\ttfamily def urllib3.\+util.\+retry.\+Retry.\+from\+\_\+int (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{retries,  }\item[{}]{redirect = {\ttfamily True},  }\item[{}]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Backwards-compatibility for the old retries format.\end{DoxyVerb}
+ \mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_a6536e0aaeb5801c5fb6f1e0be3b2bfa5}\label{classurllib3_1_1util_1_1retry_1_1Retry_a6536e0aaeb5801c5fb6f1e0be3b2bfa5}} 
+\index{urllib3.util.retry.Retry@{urllib3.util.retry.Retry}!get\_backoff\_time@{get\_backoff\_time}}
+\index{get\_backoff\_time@{get\_backoff\_time}!urllib3.util.retry.Retry@{urllib3.util.retry.Retry}}
+\doxysubsubsection{\texorpdfstring{get\_backoff\_time()}{get\_backoff\_time()}}
+{\footnotesize\ttfamily def urllib3.\+util.\+retry.\+Retry.\+get\+\_\+backoff\+\_\+time (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Formula for computing the current backoff
+
+:rtype: float
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_a6bd1facdffdedde639d287402f2ea9a1}\label{classurllib3_1_1util_1_1retry_1_1Retry_a6bd1facdffdedde639d287402f2ea9a1}} 
+\index{urllib3.util.retry.Retry@{urllib3.util.retry.Retry}!get\_retry\_after@{get\_retry\_after}}
+\index{get\_retry\_after@{get\_retry\_after}!urllib3.util.retry.Retry@{urllib3.util.retry.Retry}}
+\doxysubsubsection{\texorpdfstring{get\_retry\_after()}{get\_retry\_after()}}
+{\footnotesize\ttfamily def urllib3.\+util.\+retry.\+Retry.\+get\+\_\+retry\+\_\+after (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{response }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the value of Retry-After in seconds.\end{DoxyVerb}
+ \mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_a7f28bc6eb68a9c6730a08030e4f3ddc8}\label{classurllib3_1_1util_1_1retry_1_1Retry_a7f28bc6eb68a9c6730a08030e4f3ddc8}} 
+\index{urllib3.util.retry.Retry@{urllib3.util.retry.Retry}!increment@{increment}}
+\index{increment@{increment}!urllib3.util.retry.Retry@{urllib3.util.retry.Retry}}
+\doxysubsubsection{\texorpdfstring{increment()}{increment()}}
+{\footnotesize\ttfamily def urllib3.\+util.\+retry.\+Retry.\+increment (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{method = {\ttfamily None},  }\item[{}]{url = {\ttfamily None},  }\item[{}]{response = {\ttfamily None},  }\item[{}]{error = {\ttfamily None},  }\item[{}]{\+\_\+pool = {\ttfamily None},  }\item[{}]{\+\_\+stacktrace = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new Retry object with incremented retry counters.
+
+:param response: A response object, or None, if the server did not
+    return a response.
+:type response: :class:`~urllib3.response.HTTPResponse`
+:param Exception error: An error encountered during the request, or
+    None if the response was received successfully.
+
+:return: A new ``Retry`` object.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_ad22f0fcaa7c7dbca5ef54b0b2808e24c}\label{classurllib3_1_1util_1_1retry_1_1Retry_ad22f0fcaa7c7dbca5ef54b0b2808e24c}} 
+\index{urllib3.util.retry.Retry@{urllib3.util.retry.Retry}!is\_exhausted@{is\_exhausted}}
+\index{is\_exhausted@{is\_exhausted}!urllib3.util.retry.Retry@{urllib3.util.retry.Retry}}
+\doxysubsubsection{\texorpdfstring{is\_exhausted()}{is\_exhausted()}}
+{\footnotesize\ttfamily def urllib3.\+util.\+retry.\+Retry.\+is\+\_\+exhausted (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Are we out of retries?\end{DoxyVerb}
+ \mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_ac21d249f91aa42784f7193ab08619e90}\label{classurllib3_1_1util_1_1retry_1_1Retry_ac21d249f91aa42784f7193ab08619e90}} 
+\index{urllib3.util.retry.Retry@{urllib3.util.retry.Retry}!is\_retry@{is\_retry}}
+\index{is\_retry@{is\_retry}!urllib3.util.retry.Retry@{urllib3.util.retry.Retry}}
+\doxysubsubsection{\texorpdfstring{is\_retry()}{is\_retry()}}
+{\footnotesize\ttfamily def urllib3.\+util.\+retry.\+Retry.\+is\+\_\+retry (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{method,  }\item[{}]{status\+\_\+code,  }\item[{}]{has\+\_\+retry\+\_\+after = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Is this method/status code retryable? (Based on allowlists and control
+variables such as the number of total retries to allow, whether to
+respect the Retry-After header, whether this header is present, and
+whether the returned status code is on the list of status codes to
+be retried upon on the presence of the aforementioned header)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_a1f4c9815abaf9b107349892734c8b1a8}\label{classurllib3_1_1util_1_1retry_1_1Retry_a1f4c9815abaf9b107349892734c8b1a8}} 
+\index{urllib3.util.retry.Retry@{urllib3.util.retry.Retry}!sleep@{sleep}}
+\index{sleep@{sleep}!urllib3.util.retry.Retry@{urllib3.util.retry.Retry}}
+\doxysubsubsection{\texorpdfstring{sleep()}{sleep()}}
+{\footnotesize\ttfamily def urllib3.\+util.\+retry.\+Retry.\+sleep (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{response = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sleep between retry attempts.
+
+This method will respect a server's ``Retry-After`` response header
+and sleep the duration of the time requested. If that is not present, it
+will use an exponential backoff. By default, the backoff factor is 0 and
+this method will return immediately.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classurllib3_1_1util_1_1retry_1_1Retry_af125fee326a6b7f87dbb7ab104616cd9}\label{classurllib3_1_1util_1_1retry_1_1Retry_af125fee326a6b7f87dbb7ab104616cd9}} 
+\index{urllib3.util.retry.Retry@{urllib3.util.retry.Retry}!DEFAULT\_ALLOWED\_METHODS@{DEFAULT\_ALLOWED\_METHODS}}
+\index{DEFAULT\_ALLOWED\_METHODS@{DEFAULT\_ALLOWED\_METHODS}!urllib3.util.retry.Retry@{urllib3.util.retry.Retry}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_ALLOWED\_METHODS}{DEFAULT\_ALLOWED\_METHODS}}
+{\footnotesize\ttfamily urllib3.\+util.\+retry.\+Retry.\+DEFAULT\+\_\+\+ALLOWED\+\_\+\+METHODS\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  frozenset(}
+\DoxyCodeLine{        [\textcolor{stringliteral}{"{}HEAD"{}}, \textcolor{stringliteral}{"{}GET"{}}, \textcolor{stringliteral}{"{}PUT"{}}, \textcolor{stringliteral}{"{}DELETE"{}}, \textcolor{stringliteral}{"{}OPTIONS"{}}, \textcolor{stringliteral}{"{}TRACE"{}}]}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/urllib3/util/retry.\+py\end{DoxyCompactItemize}

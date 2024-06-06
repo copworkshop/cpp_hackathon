@@ -1,0 +1,122 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1LassoJavascriptLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Lasso\+Javascript\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1LassoJavascriptLexer}\index{pygments.lexers.templates.LassoJavascriptLexer@{pygments.lexers.templates.LassoJavascriptLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Lasso\+Javascript\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Lasso\+Javascript\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1LassoJavascriptLexer_a9c4a94e0b38bf3eb8c8e50f7429ed5f6}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1LassoJavascriptLexer_a4bfc01178ead1b82a878a6c3ccc5b1f4}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1LassoJavascriptLexer_ac07e2de5ec6879fa8693feddf6284fa0}\label{classpygments_1_1lexers_1_1templates_1_1LassoJavascriptLexer_ac07e2de5ec6879fa8693feddf6284fa0}} 
+string {\bfseries name} = \textquotesingle{}Java\+Script+Lasso\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1LassoJavascriptLexer_a30f6bfdf6b0ea06392a77490ad058cf5}\label{classpygments_1_1lexers_1_1templates_1_1LassoJavascriptLexer_a30f6bfdf6b0ea06392a77490ad058cf5}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}javascript+lasso\textquotesingle{}, \textquotesingle{}js+lasso\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1LassoJavascriptLexer_a59b7fe27fec6bd081819db23e274ce2e}\label{classpygments_1_1lexers_1_1templates_1_1LassoJavascriptLexer_a59b7fe27fec6bd081819db23e274ce2e}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+6\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1LassoJavascriptLexer_a309cd659c2d730bcbae405b1cf40b7f2}\label{classpygments_1_1lexers_1_1templates_1_1LassoJavascriptLexer_a309cd659c2d730bcbae405b1cf40b7f2}} 
+list {\bfseries alias\+\_\+filenames} = \mbox{[}\textquotesingle{}$\ast$.js\textquotesingle{}\mbox{]}
+\item 
+list {\bfseries mimetypes}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1LassoJavascriptLexer_ac31a1b003ade7eff7b68ddbaf4ad686c}\label{classpygments_1_1lexers_1_1templates_1_1LassoJavascriptLexer_ac31a1b003ade7eff7b68ddbaf4ad686c}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+lassosoft.\+com\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Subclass of the `LassoLexer` which highlights unhandled data with the
+`JavascriptLexer`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1LassoJavascriptLexer_a9c4a94e0b38bf3eb8c8e50f7429ed5f6}\label{classpygments_1_1lexers_1_1templates_1_1LassoJavascriptLexer_a9c4a94e0b38bf3eb8c8e50f7429ed5f6}} 
+\index{pygments.lexers.templates.LassoJavascriptLexer@{pygments.lexers.templates.LassoJavascriptLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.templates.LassoJavascriptLexer@{pygments.lexers.templates.LassoJavascriptLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Lasso\+Javascript\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1LassoJavascriptLexer_a4bfc01178ead1b82a878a6c3ccc5b1f4}\label{classpygments_1_1lexers_1_1templates_1_1LassoJavascriptLexer_a4bfc01178ead1b82a878a6c3ccc5b1f4}} 
+\index{pygments.lexers.templates.LassoJavascriptLexer@{pygments.lexers.templates.LassoJavascriptLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.templates.LassoJavascriptLexer@{pygments.lexers.templates.LassoJavascriptLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Lasso\+Javascript\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1LassoJavascriptLexer_a3a9640053ba96721093d1e605d09e8ed}\label{classpygments_1_1lexers_1_1templates_1_1LassoJavascriptLexer_a3a9640053ba96721093d1e605d09e8ed}} 
+\index{pygments.lexers.templates.LassoJavascriptLexer@{pygments.lexers.templates.LassoJavascriptLexer}!mimetypes@{mimetypes}}
+\index{mimetypes@{mimetypes}!pygments.lexers.templates.LassoJavascriptLexer@{pygments.lexers.templates.LassoJavascriptLexer}}
+\doxysubsubsection{\texorpdfstring{mimetypes}{mimetypes}}
+{\footnotesize\ttfamily list pygments.\+lexers.\+templates.\+Lasso\+Javascript\+Lexer.\+mimetypes\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [\textcolor{stringliteral}{'application/x-\/javascript+lasso'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'text/x-\/javascript+lasso'},}
+\DoxyCodeLine{                 \textcolor{stringliteral}{'text/javascript+lasso'}]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

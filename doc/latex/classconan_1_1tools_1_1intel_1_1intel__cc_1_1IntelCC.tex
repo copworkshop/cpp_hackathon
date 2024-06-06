@@ -1,0 +1,98 @@
+\hypertarget{classconan_1_1tools_1_1intel_1_1intel__cc_1_1IntelCC}{}\doxysection{conan.\+tools.\+intel.\+intel\+\_\+cc.\+Intel\+CC Class Reference}
+\label{classconan_1_1tools_1_1intel_1_1intel__cc_1_1IntelCC}\index{conan.tools.intel.intel\_cc.IntelCC@{conan.tools.intel.intel\_cc.IntelCC}}
+
+
+Collaboration diagram for conan.\+tools.\+intel.\+intel\+\_\+cc.\+Intel\+CC\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1intel_1_1intel__cc_1_1IntelCC_a4ab40b3a3e208f4dce975716c2f3571b}\label{classconan_1_1tools_1_1intel_1_1intel__cc_1_1IntelCC_a4ab40b3a3e208f4dce975716c2f3571b}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, conanfile)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1intel_1_1intel__cc_1_1IntelCC_a9e9df8004b15aa5b40caf87a8371348e}{ms\+\_\+toolset}} (self)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1intel_1_1intel__cc_1_1IntelCC_a9c70a2f2df305c302732fcd5f608aabe}{generate}} (self, scope=\char`\"{}build\char`\"{})
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1intel_1_1intel__cc_1_1IntelCC_ade7186adae71ab7777d1a037ce583020}{installation\+\_\+path}} (self)
+\item 
+def \mbox{\hyperlink{classconan_1_1tools_1_1intel_1_1intel__cc_1_1IntelCC_a9f25bf03698cfd1a560594a7bcee6c35}{command}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1intel_1_1intel__cc_1_1IntelCC_ae54b5841d92760cf1971bc3c4bbbfa0b}\label{classconan_1_1tools_1_1intel_1_1intel__cc_1_1IntelCC_ae54b5841d92760cf1971bc3c4bbbfa0b}} 
+{\bfseries arch}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconan_1_1tools_1_1intel_1_1intel__cc_1_1IntelCC_a0d6cfbaf0a2dc91405c1793738e2fecb}\label{classconan_1_1tools_1_1intel_1_1intel__cc_1_1IntelCC_a0d6cfbaf0a2dc91405c1793738e2fecb}} 
+string {\bfseries filename} = \char`\"{}conanintelsetvars\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Class that manages Intel oneAPI DPC++/C++/Classic Compilers vars generation\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconan_1_1tools_1_1intel_1_1intel__cc_1_1IntelCC_a9f25bf03698cfd1a560594a7bcee6c35}\label{classconan_1_1tools_1_1intel_1_1intel__cc_1_1IntelCC_a9f25bf03698cfd1a560594a7bcee6c35}} 
+\index{conan.tools.intel.intel\_cc.IntelCC@{conan.tools.intel.intel\_cc.IntelCC}!command@{command}}
+\index{command@{command}!conan.tools.intel.intel\_cc.IntelCC@{conan.tools.intel.intel\_cc.IntelCC}}
+\doxysubsubsection{\texorpdfstring{command()}{command()}}
+{\footnotesize\ttfamily def conan.\+tools.\+intel.\+intel\+\_\+cc.\+Intel\+CC.\+command (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The Intel oneAPI DPC++/C++ Compiler includes environment configuration scripts to
+configure your build and development environment variables:
+    On Linux*, the file is a shell script called setvars.sh.
+    On Windows*, the file is a batch file called setvars.bat.
+
+* Linux:
+    >> . /<install-dir>/setvars.sh <arg1> <arg2> … <argn><arg1> <arg2> … <argn>
+
+    The compiler environment script file accepts an optional target architecture
+    argument <arg>:
+        intel64: Generate code and use libraries for Intel 64 architecture-based targets.
+        ia32: Generate code and use libraries for IA-32 architecture-based targets.
+* Windows:
+    >> call <install-dir>\\setvars.bat [<arg1>] [<arg2>]
+
+    Where <arg1> is optional and can be one of the following:
+        intel64: Generate code and use libraries for Intel 64 architecture
+                 (host and target).
+        ia32: Generate code and use libraries for IA-32 architecture (host and target).
+    With the dpcpp compiler, <arg1> is intel64 by default.
+
+    The <arg2> is optional. If specified, it is one of the following:
+        vs2019: Microsoft Visual Studio* 2019
+        vs2017: Microsoft Visual Studio 2017
+
+:return: `str` setvars.sh|bat command to be run
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconan_1_1tools_1_1intel_1_1intel__cc_1_1IntelCC_a9c70a2f2df305c302732fcd5f608aabe}\label{classconan_1_1tools_1_1intel_1_1intel__cc_1_1IntelCC_a9c70a2f2df305c302732fcd5f608aabe}} 
+\index{conan.tools.intel.intel\_cc.IntelCC@{conan.tools.intel.intel\_cc.IntelCC}!generate@{generate}}
+\index{generate@{generate}!conan.tools.intel.intel\_cc.IntelCC@{conan.tools.intel.intel\_cc.IntelCC}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily def conan.\+tools.\+intel.\+intel\+\_\+cc.\+Intel\+CC.\+generate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{scope = {\ttfamily \char`\"{}build\char`\"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate the Conan Intel file to be loaded in build environment by default\end{DoxyVerb}
+ \mbox{\Hypertarget{classconan_1_1tools_1_1intel_1_1intel__cc_1_1IntelCC_ade7186adae71ab7777d1a037ce583020}\label{classconan_1_1tools_1_1intel_1_1intel__cc_1_1IntelCC_ade7186adae71ab7777d1a037ce583020}} 
+\index{conan.tools.intel.intel\_cc.IntelCC@{conan.tools.intel.intel\_cc.IntelCC}!installation\_path@{installation\_path}}
+\index{installation\_path@{installation\_path}!conan.tools.intel.intel\_cc.IntelCC@{conan.tools.intel.intel\_cc.IntelCC}}
+\doxysubsubsection{\texorpdfstring{installation\_path()}{installation\_path()}}
+{\footnotesize\ttfamily def conan.\+tools.\+intel.\+intel\+\_\+cc.\+Intel\+CC.\+installation\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the Intel oneAPI installation root path\end{DoxyVerb}
+ \mbox{\Hypertarget{classconan_1_1tools_1_1intel_1_1intel__cc_1_1IntelCC_a9e9df8004b15aa5b40caf87a8371348e}\label{classconan_1_1tools_1_1intel_1_1intel__cc_1_1IntelCC_a9e9df8004b15aa5b40caf87a8371348e}} 
+\index{conan.tools.intel.intel\_cc.IntelCC@{conan.tools.intel.intel\_cc.IntelCC}!ms\_toolset@{ms\_toolset}}
+\index{ms\_toolset@{ms\_toolset}!conan.tools.intel.intel\_cc.IntelCC@{conan.tools.intel.intel\_cc.IntelCC}}
+\doxysubsubsection{\texorpdfstring{ms\_toolset()}{ms\_toolset()}}
+{\footnotesize\ttfamily def conan.\+tools.\+intel.\+intel\+\_\+cc.\+Intel\+CC.\+ms\+\_\+toolset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get Microsoft Visual Studio Toolset depending on the mode selected\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conan/tools/intel/intel\+\_\+cc.\+py\end{DoxyCompactItemize}

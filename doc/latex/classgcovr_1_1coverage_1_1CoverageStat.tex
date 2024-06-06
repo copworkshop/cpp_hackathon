@@ -1,0 +1,65 @@
+\hypertarget{classgcovr_1_1coverage_1_1CoverageStat}{}\doxysection{gcovr.\+coverage.\+Coverage\+Stat Class Reference}
+\label{classgcovr_1_1coverage_1_1CoverageStat}\index{gcovr.coverage.CoverageStat@{gcovr.coverage.CoverageStat}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Optional\mbox{[}float\mbox{]} \mbox{\hyperlink{classgcovr_1_1coverage_1_1CoverageStat_a97ef5e656f67a05fe4ac8ad7587731eb}{percent}} (self)
+\item 
+Union\mbox{[}float, \+\_\+T\mbox{]} \mbox{\hyperlink{classgcovr_1_1coverage_1_1CoverageStat_a6cc520d7fca0834a1ee11349892cfa2c}{percent\+\_\+or}} (self, \+\_\+T default)
+\item 
+\mbox{\Hypertarget{classgcovr_1_1coverage_1_1CoverageStat_aa260d01f5dd24327e530661389a6d0e7}\label{classgcovr_1_1coverage_1_1CoverageStat_aa260d01f5dd24327e530661389a6d0e7}} 
+\mbox{\hyperlink{classgcovr_1_1coverage_1_1CoverageStat}{Coverage\+Stat}} {\bfseries \+\_\+\+\_\+iadd\+\_\+\+\_\+} (self, \mbox{\hyperlink{classgcovr_1_1coverage_1_1CoverageStat}{Coverage\+Stat}} other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgcovr_1_1coverage_1_1CoverageStat_a138549bf5411a9ee6b430d53f15ad6fd}\label{classgcovr_1_1coverage_1_1CoverageStat_a138549bf5411a9ee6b430d53f15ad6fd}} 
+\mbox{\hyperlink{classgcovr_1_1coverage_1_1CoverageStat}{Coverage\+Stat}} {\bfseries new\+\_\+empty} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgcovr_1_1coverage_1_1CoverageStat_a9f593bd1b1a4797a203230436acf09a2}\label{classgcovr_1_1coverage_1_1CoverageStat_a9f593bd1b1a4797a203230436acf09a2}} 
+{\bfseries covered}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A single coverage metric, e.g. the line coverage percentage of a file.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgcovr_1_1coverage_1_1CoverageStat_a97ef5e656f67a05fe4ac8ad7587731eb}\label{classgcovr_1_1coverage_1_1CoverageStat_a97ef5e656f67a05fe4ac8ad7587731eb}} 
+\index{gcovr.coverage.CoverageStat@{gcovr.coverage.CoverageStat}!percent@{percent}}
+\index{percent@{percent}!gcovr.coverage.CoverageStat@{gcovr.coverage.CoverageStat}}
+\doxysubsubsection{\texorpdfstring{percent()}{percent()}}
+{\footnotesize\ttfamily  Optional\mbox{[}float\mbox{]} gcovr.\+coverage.\+Coverage\+Stat.\+percent (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Percentage of covered elements, equivalent to ``self.percent_or(None)``\end{DoxyVerb}
+ \mbox{\Hypertarget{classgcovr_1_1coverage_1_1CoverageStat_a6cc520d7fca0834a1ee11349892cfa2c}\label{classgcovr_1_1coverage_1_1CoverageStat_a6cc520d7fca0834a1ee11349892cfa2c}} 
+\index{gcovr.coverage.CoverageStat@{gcovr.coverage.CoverageStat}!percent\_or@{percent\_or}}
+\index{percent\_or@{percent\_or}!gcovr.coverage.CoverageStat@{gcovr.coverage.CoverageStat}}
+\doxysubsubsection{\texorpdfstring{percent\_or()}{percent\_or()}}
+{\footnotesize\ttfamily  Union\mbox{[}float, \+\_\+T\mbox{]} gcovr.\+coverage.\+Coverage\+Stat.\+percent\+\_\+or (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\+\_\+T}]{default }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Percentage of covered elements.
+
+Coverage is truncated to one decimal:
+>>> CoverageStat(1234, 10000).percent_or("default")
+12.3
+
+Coverage is capped at 99.9% unless everything is covered:
+>>> CoverageStat(9999, 10000).percent_or("default")
+99.9
+>>> CoverageStat(10000, 10000).percent_or("default")
+100.0
+
+If there are no elements, percentage is NaN and the default will be returned:
+>>> CoverageStat(0, 0).percent_or("default")
+'default'
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/gcovr/coverage.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,57 @@
+\hypertarget{classconans_1_1client_1_1graph_1_1graph__builder_1_1DepsGraphBuilder}{}\doxysection{conans.\+client.\+graph.\+graph\+\_\+builder.\+Deps\+Graph\+Builder Class Reference}
+\label{classconans_1_1client_1_1graph_1_1graph__builder_1_1DepsGraphBuilder}\index{conans.client.graph.graph\_builder.DepsGraphBuilder@{conans.client.graph.graph\_builder.DepsGraphBuilder}}
+
+
+Inheritance diagram for conans.\+client.\+graph.\+graph\+\_\+builder.\+Deps\+Graph\+Builder\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+client.\+graph.\+graph\+\_\+builder.\+Deps\+Graph\+Builder\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1graph_1_1graph__builder_1_1DepsGraphBuilder_a3929a05e8cfca09d24f7a843dd8f5717}\label{classconans_1_1client_1_1graph_1_1graph__builder_1_1DepsGraphBuilder_a3929a05e8cfca09d24f7a843dd8f5717}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, proxy, output, loader, resolver, recorder)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1graph_1_1graph__builder_1_1DepsGraphBuilder_adcd9657e4ce8b3bf978d2a3141e84b20}\label{classconans_1_1client_1_1graph_1_1graph__builder_1_1DepsGraphBuilder_adcd9657e4ce8b3bf978d2a3141e84b20}} 
+def {\bfseries load\+\_\+graph} (self, root\+\_\+node, check\+\_\+updates, update, remotes, profile\+\_\+host, profile\+\_\+build, graph\+\_\+lock=None)
+\item 
+\mbox{\Hypertarget{classconans_1_1client_1_1graph_1_1graph__builder_1_1DepsGraphBuilder_af53fb8669e85e13098d874eab65bcddd}\label{classconans_1_1client_1_1graph_1_1graph__builder_1_1DepsGraphBuilder_af53fb8669e85e13098d874eab65bcddd}} 
+def {\bfseries extend\+\_\+build\+\_\+requires} (self, graph, node, build\+\_\+requires\+\_\+refs, check\+\_\+updates, update, remotes, profile\+\_\+host, profile\+\_\+build, graph\+\_\+lock)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This is a summary, in pseudo-code of the execution and structure of the graph
+resolution algorithm
+
+load_graph(root_node)
+    init root_node
+    expand_node(root_node)
+        # 1. Evaluate requirements(), overrides, and version ranges
+        get_node_requirements(node)
+            node.conanfile.requirements()                         # call the requirements()
+            resolve_cached_alias(node.conanfile.requires)         # replace cached alias
+            update_requires_from_downstream(down_requires)        # process overrides
+            resolve_ranges(node)                                  # resolve version-ranges
+                resolve_cached_alias(node.conanfile.requires)     # replace cached alias again
+
+        # 2. Process each requires of this node
+        for req in node.conanfile.requires:
+            expand_require(req)
+                if req.name not in graph:                         # New node
+                    new_node = create_new_node(req)               # fetch and load conanfile.py
+                        if alias => create_new_node(alias)        # recurse alias
+                    expand_node(new_node)                         # recursion
+                else:                                             # Node exists, closing diamond
+                    resolve_cached_alias(req)
+                    check_conflicts(req)                          # diamonds can cause conflicts
+                    if need_recurse:                              # check for conflicts upstream
+                        expand_node(previous_node)                # recursion
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/client/graph/graph\+\_\+builder.\+py\end{DoxyCompactItemize}

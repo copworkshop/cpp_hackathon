@@ -1,0 +1,118 @@
+\hypertarget{namespacelxml_1_1html_1_1html5parser}{}\doxysection{lxml.\+html.\+html5parser Namespace Reference}
+\label{namespacelxml_1_1html_1_1html5parser}\index{lxml.html.html5parser@{lxml.html.html5parser}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classlxml_1_1html_1_1html5parser_1_1HTMLParser}{HTMLParser}}
+\item 
+class \mbox{\hyperlink{classlxml_1_1html_1_1html5parser_1_1XHTMLParser}{XHTMLParser}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacelxml_1_1html_1_1html5parser_a4032c7a31d69a1f7c3287c9a2ad8b8f0}{document\+\_\+fromstring}} (html, guess\+\_\+charset=None, parser=None)
+\item 
+def \mbox{\hyperlink{namespacelxml_1_1html_1_1html5parser_aeec919e190e1633398a630600b4371ec}{fragments\+\_\+fromstring}} (html, no\+\_\+leading\+\_\+text=False, guess\+\_\+charset=None, parser=None)
+\item 
+def \mbox{\hyperlink{namespacelxml_1_1html_1_1html5parser_af219a698e7f420a05cd04506e34796ee}{fragment\+\_\+fromstring}} (html, create\+\_\+parent=False, guess\+\_\+charset=None, parser=None)
+\item 
+def \mbox{\hyperlink{namespacelxml_1_1html_1_1html5parser_afaf60676592b81e682601e9a2789a268}{fromstring}} (html, guess\+\_\+charset=None, parser=None)
+\item 
+def \mbox{\hyperlink{namespacelxml_1_1html_1_1html5parser_a40829f33203473b33d0d25319c3ee89e}{parse}} (filename\+\_\+url\+\_\+or\+\_\+file, guess\+\_\+charset=None, parser=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacelxml_1_1html_1_1html5parser_aab1d1ff8edbe275293cb3f98f6e6baeb}\label{namespacelxml_1_1html_1_1html5parser_aab1d1ff8edbe275293cb3f98f6e6baeb}} 
+{\bfseries xhtml\+\_\+parser}
+\item 
+\mbox{\Hypertarget{namespacelxml_1_1html_1_1html5parser_a44ade662e6d59ad2802b5183c27cd2bd}\label{namespacelxml_1_1html_1_1html5parser_a44ade662e6d59ad2802b5183c27cd2bd}} 
+{\bfseries html\+\_\+parser} = \mbox{\hyperlink{classlxml_1_1html_1_1html5parser_1_1HTMLParser}{HTMLParser}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An interface to html5lib that mimics the lxml.html interface.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacelxml_1_1html_1_1html5parser_a4032c7a31d69a1f7c3287c9a2ad8b8f0}\label{namespacelxml_1_1html_1_1html5parser_a4032c7a31d69a1f7c3287c9a2ad8b8f0}} 
+\index{lxml.html.html5parser@{lxml.html.html5parser}!document\_fromstring@{document\_fromstring}}
+\index{document\_fromstring@{document\_fromstring}!lxml.html.html5parser@{lxml.html.html5parser}}
+\doxysubsubsection{\texorpdfstring{document\_fromstring()}{document\_fromstring()}}
+{\footnotesize\ttfamily def lxml.\+html.\+html5parser.\+document\+\_\+fromstring (\begin{DoxyParamCaption}\item[{}]{html,  }\item[{}]{guess\+\_\+charset = {\ttfamily None},  }\item[{}]{parser = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse a whole document into a string.
+
+If `guess_charset` is true, or if the input is not Unicode but a
+byte string, the `chardet` library will perform charset guessing
+on the string.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacelxml_1_1html_1_1html5parser_af219a698e7f420a05cd04506e34796ee}\label{namespacelxml_1_1html_1_1html5parser_af219a698e7f420a05cd04506e34796ee}} 
+\index{lxml.html.html5parser@{lxml.html.html5parser}!fragment\_fromstring@{fragment\_fromstring}}
+\index{fragment\_fromstring@{fragment\_fromstring}!lxml.html.html5parser@{lxml.html.html5parser}}
+\doxysubsubsection{\texorpdfstring{fragment\_fromstring()}{fragment\_fromstring()}}
+{\footnotesize\ttfamily def lxml.\+html.\+html5parser.\+fragment\+\_\+fromstring (\begin{DoxyParamCaption}\item[{}]{html,  }\item[{}]{create\+\_\+parent = {\ttfamily False},  }\item[{}]{guess\+\_\+charset = {\ttfamily None},  }\item[{}]{parser = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parses a single HTML element; it is an error if there is more than
+one element, or if anything but whitespace precedes or follows the
+element.
+
+If 'create_parent' is true (or is a tag name) then a parent node
+will be created to encapsulate the HTML in a single element.  In
+this case, leading or trailing text is allowed.
+
+If `guess_charset` is true, the `chardet` library will perform charset
+guessing on the string.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacelxml_1_1html_1_1html5parser_aeec919e190e1633398a630600b4371ec}\label{namespacelxml_1_1html_1_1html5parser_aeec919e190e1633398a630600b4371ec}} 
+\index{lxml.html.html5parser@{lxml.html.html5parser}!fragments\_fromstring@{fragments\_fromstring}}
+\index{fragments\_fromstring@{fragments\_fromstring}!lxml.html.html5parser@{lxml.html.html5parser}}
+\doxysubsubsection{\texorpdfstring{fragments\_fromstring()}{fragments\_fromstring()}}
+{\footnotesize\ttfamily def lxml.\+html.\+html5parser.\+fragments\+\_\+fromstring (\begin{DoxyParamCaption}\item[{}]{html,  }\item[{}]{no\+\_\+leading\+\_\+text = {\ttfamily False},  }\item[{}]{guess\+\_\+charset = {\ttfamily None},  }\item[{}]{parser = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parses several HTML elements, returning a list of elements.
+
+The first item in the list may be a string.  If no_leading_text is true,
+then it will be an error if there is leading text, and it will always be
+a list of only elements.
+
+If `guess_charset` is true, the `chardet` library will perform charset
+guessing on the string.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacelxml_1_1html_1_1html5parser_afaf60676592b81e682601e9a2789a268}\label{namespacelxml_1_1html_1_1html5parser_afaf60676592b81e682601e9a2789a268}} 
+\index{lxml.html.html5parser@{lxml.html.html5parser}!fromstring@{fromstring}}
+\index{fromstring@{fromstring}!lxml.html.html5parser@{lxml.html.html5parser}}
+\doxysubsubsection{\texorpdfstring{fromstring()}{fromstring()}}
+{\footnotesize\ttfamily def lxml.\+html.\+html5parser.\+fromstring (\begin{DoxyParamCaption}\item[{}]{html,  }\item[{}]{guess\+\_\+charset = {\ttfamily None},  }\item[{}]{parser = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse the html, returning a single element/document.
+
+This tries to minimally parse the chunk of text, without knowing if it
+is a fragment or a document.
+
+'base_url' will set the document's base_url attribute (and the tree's
+docinfo.URL)
+
+If `guess_charset` is true, or if the input is not Unicode but a
+byte string, the `chardet` library will perform charset guessing
+on the string.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacelxml_1_1html_1_1html5parser_a40829f33203473b33d0d25319c3ee89e}\label{namespacelxml_1_1html_1_1html5parser_a40829f33203473b33d0d25319c3ee89e}} 
+\index{lxml.html.html5parser@{lxml.html.html5parser}!parse@{parse}}
+\index{parse@{parse}!lxml.html.html5parser@{lxml.html.html5parser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily def lxml.\+html.\+html5parser.\+parse (\begin{DoxyParamCaption}\item[{}]{filename\+\_\+url\+\_\+or\+\_\+file,  }\item[{}]{guess\+\_\+charset = {\ttfamily None},  }\item[{}]{parser = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse a filename, URL, or file-like object into an HTML document
+tree.  Note: this returns a tree, not an element.  Use
+``parse(...).getroot()`` to get the document root.
+
+If ``guess_charset`` is true, the ``useChardet`` option is passed into
+html5lib to enable character detection.  This option is on by default
+when parsing from URLs, off by default when parsing from file(-like)
+objects (which tend to return Unicode more often than not), and on by
+default when parsing from a file path (which is read in binary mode).
+\end{DoxyVerb}
+ 

@@ -1,0 +1,86 @@
+\hypertarget{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService}{}\doxysection{conans.\+server.\+service.\+v1.\+service.\+Conan\+Service Class Reference}
+\label{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService}\index{conans.server.service.v1.service.ConanService@{conans.server.service.v1.service.ConanService}}
+
+
+Inheritance diagram for conans.\+server.\+service.\+v1.\+service.\+Conan\+Service\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+server.\+service.\+v1.\+service.\+Conan\+Service\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService_a6f8f2486853c5467c763b6ba9aff5b63}\label{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService_a6f8f2486853c5467c763b6ba9aff5b63}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, authorizer, server\+\_\+store, auth\+\_\+user)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService_aa5fcee81757232bcc6d5611c8baa322d}{get\+\_\+recipe\+\_\+snapshot}} (self, ref)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService_a9ebc76a87ca166c87f4c93ff0a8aabf3}{get\+\_\+conanfile\+\_\+download\+\_\+urls}} (self, ref, files\+\_\+subset=None)
+\item 
+\mbox{\Hypertarget{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService_a37d6c424db25eff56357117b550cc69c}\label{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService_a37d6c424db25eff56357117b550cc69c}} 
+def {\bfseries get\+\_\+conanfile\+\_\+upload\+\_\+urls} (self, ref, filesizes)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService_a2696f8963188b9bf4fb089255606fe15}{get\+\_\+package\+\_\+snapshot}} (self, pref)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService_af09d57f3e024476dd27eae92db76e3a6}{get\+\_\+package\+\_\+download\+\_\+urls}} (self, pref, files\+\_\+subset=None)
+\item 
+def \mbox{\hyperlink{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService_ada826e0444ac440278a243881be52f11}{get\+\_\+package\+\_\+upload\+\_\+urls}} (self, pref, filesizes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Handles authorization and expose methods for REST API\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService_a9ebc76a87ca166c87f4c93ff0a8aabf3}\label{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService_a9ebc76a87ca166c87f4c93ff0a8aabf3}} 
+\index{conans.server.service.v1.service.ConanService@{conans.server.service.v1.service.ConanService}!get\_conanfile\_download\_urls@{get\_conanfile\_download\_urls}}
+\index{get\_conanfile\_download\_urls@{get\_conanfile\_download\_urls}!conans.server.service.v1.service.ConanService@{conans.server.service.v1.service.ConanService}}
+\doxysubsubsection{\texorpdfstring{get\_conanfile\_download\_urls()}{get\_conanfile\_download\_urls()}}
+{\footnotesize\ttfamily def conans.\+server.\+service.\+v1.\+service.\+Conan\+Service.\+get\+\_\+conanfile\+\_\+download\+\_\+urls (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ref,  }\item[{}]{files\+\_\+subset = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets a dict with filepaths and the urls:
+    {filename: url}
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService_af09d57f3e024476dd27eae92db76e3a6}\label{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService_af09d57f3e024476dd27eae92db76e3a6}} 
+\index{conans.server.service.v1.service.ConanService@{conans.server.service.v1.service.ConanService}!get\_package\_download\_urls@{get\_package\_download\_urls}}
+\index{get\_package\_download\_urls@{get\_package\_download\_urls}!conans.server.service.v1.service.ConanService@{conans.server.service.v1.service.ConanService}}
+\doxysubsubsection{\texorpdfstring{get\_package\_download\_urls()}{get\_package\_download\_urls()}}
+{\footnotesize\ttfamily def conans.\+server.\+service.\+v1.\+service.\+Conan\+Service.\+get\+\_\+package\+\_\+download\+\_\+urls (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pref,  }\item[{}]{files\+\_\+subset = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets a list with filepaths and the urls and md5:
+    [filename: {'url': url, 'md5': md5}]
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService_a2696f8963188b9bf4fb089255606fe15}\label{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService_a2696f8963188b9bf4fb089255606fe15}} 
+\index{conans.server.service.v1.service.ConanService@{conans.server.service.v1.service.ConanService}!get\_package\_snapshot@{get\_package\_snapshot}}
+\index{get\_package\_snapshot@{get\_package\_snapshot}!conans.server.service.v1.service.ConanService@{conans.server.service.v1.service.ConanService}}
+\doxysubsubsection{\texorpdfstring{get\_package\_snapshot()}{get\_package\_snapshot()}}
+{\footnotesize\ttfamily def conans.\+server.\+service.\+v1.\+service.\+Conan\+Service.\+get\+\_\+package\+\_\+snapshot (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pref }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets a list with filepaths and the urls and md5:
+    [filename: {'url': url, 'md5': md5}]
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService_ada826e0444ac440278a243881be52f11}\label{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService_ada826e0444ac440278a243881be52f11}} 
+\index{conans.server.service.v1.service.ConanService@{conans.server.service.v1.service.ConanService}!get\_package\_upload\_urls@{get\_package\_upload\_urls}}
+\index{get\_package\_upload\_urls@{get\_package\_upload\_urls}!conans.server.service.v1.service.ConanService@{conans.server.service.v1.service.ConanService}}
+\doxysubsubsection{\texorpdfstring{get\_package\_upload\_urls()}{get\_package\_upload\_urls()}}
+{\footnotesize\ttfamily def conans.\+server.\+service.\+v1.\+service.\+Conan\+Service.\+get\+\_\+package\+\_\+upload\+\_\+urls (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pref,  }\item[{}]{filesizes }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param pref: PackageReference
+:param filesizes: {filepath: bytes}
+:return {filepath: url} \end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService_aa5fcee81757232bcc6d5611c8baa322d}\label{classconans_1_1server_1_1service_1_1v1_1_1service_1_1ConanService_aa5fcee81757232bcc6d5611c8baa322d}} 
+\index{conans.server.service.v1.service.ConanService@{conans.server.service.v1.service.ConanService}!get\_recipe\_snapshot@{get\_recipe\_snapshot}}
+\index{get\_recipe\_snapshot@{get\_recipe\_snapshot}!conans.server.service.v1.service.ConanService@{conans.server.service.v1.service.ConanService}}
+\doxysubsubsection{\texorpdfstring{get\_recipe\_snapshot()}{get\_recipe\_snapshot()}}
+{\footnotesize\ttfamily def conans.\+server.\+service.\+v1.\+service.\+Conan\+Service.\+get\+\_\+recipe\+\_\+snapshot (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ref }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets a dict with file paths and the md5:
+    {filename: md5}
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/server/service/v1/service.\+py\end{DoxyCompactItemize}

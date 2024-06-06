@@ -1,0 +1,74 @@
+\hypertarget{classpygments_1_1lexers_1_1typoscript_1_1TypoScriptHtmlDataLexer}{}\doxysection{pygments.\+lexers.\+typoscript.\+Typo\+Script\+Html\+Data\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1typoscript_1_1TypoScriptHtmlDataLexer}\index{pygments.lexers.typoscript.TypoScriptHtmlDataLexer@{pygments.lexers.typoscript.TypoScriptHtmlDataLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+typoscript.\+Typo\+Script\+Html\+Data\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+typoscript.\+Typo\+Script\+Html\+Data\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1typoscript_1_1TypoScriptHtmlDataLexer_a3cba6cd69b375eb29f1f3fc96976e79f}\label{classpygments_1_1lexers_1_1typoscript_1_1TypoScriptHtmlDataLexer_a3cba6cd69b375eb29f1f3fc96976e79f}} 
+string {\bfseries name} = \textquotesingle{}Typo\+Script\+Html\+Data\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1typoscript_1_1TypoScriptHtmlDataLexer_ae084aec4dfd2dc68bf1d422c1e3d2f5c}\label{classpygments_1_1lexers_1_1typoscript_1_1TypoScriptHtmlDataLexer_ae084aec4dfd2dc68bf1d422c1e3d2f5c}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}typoscripthtmldata\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1typoscript_1_1TypoScriptHtmlDataLexer_a62adc6230a7dc02ccfedb7d1515b6d52}\label{classpygments_1_1lexers_1_1typoscript_1_1TypoScriptHtmlDataLexer_a62adc6230a7dc02ccfedb7d1515b6d52}} 
+string {\bfseries url} = \textquotesingle{}http\+://docs.\+typo3.\+org/typo3cms/Typoscript\+Reference/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1typoscript_1_1TypoScriptHtmlDataLexer_a5c0476077b5c41a8bc51b37631d9d4dc}\label{classpygments_1_1lexers_1_1typoscript_1_1TypoScriptHtmlDataLexer_a5c0476077b5c41a8bc51b37631d9d4dc}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+2\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer that highlights markers, constants and registers within html tags.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1typoscript_1_1TypoScriptHtmlDataLexer_a25e17e38db69c54ee0646042ee07388b}\label{classpygments_1_1lexers_1_1typoscript_1_1TypoScriptHtmlDataLexer_a25e17e38db69c54ee0646042ee07388b}} 
+\index{pygments.lexers.typoscript.TypoScriptHtmlDataLexer@{pygments.lexers.typoscript.TypoScriptHtmlDataLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.typoscript.TypoScriptHtmlDataLexer@{pygments.lexers.typoscript.TypoScriptHtmlDataLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+typoscript.\+Typo\+Script\+Html\+Data\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            \textcolor{comment}{\# INCLUDE\_TYPOSCRIPT}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(INCLUDE\_TYPOSCRIPT)'}, Name.Class),}
+\DoxyCodeLine{            \textcolor{comment}{\# Language label or extension resource FILE:... or LLL:... or EXT:...}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(EXT|FILE|LLL):[\string^\}\(\backslash\)n"{}]*'}, String),}
+\DoxyCodeLine{            \textcolor{comment}{\# marker: \#\#\#MARK\#\#\#}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(.*)(\#\#\#\(\backslash\)w+\#\#\#)(.*)'}, bygroups(String, Name.Constant, String)),}
+\DoxyCodeLine{            \textcolor{comment}{\# constant: \{\$some.constant\}}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)\{)(\(\backslash\)\$)((?:[\(\backslash\)w\(\backslash\)-\/]+\(\backslash\).)*)([\(\backslash\)w\(\backslash\)-\/]+)(\(\backslash\)\})'},}
+\DoxyCodeLine{             bygroups(String.Symbol, Operator, Name.Constant,}
+\DoxyCodeLine{                      Name.Constant, String.Symbol)),  \textcolor{comment}{\# constant}}
+\DoxyCodeLine{            \textcolor{comment}{\# constant: \{register:somevalue\}}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(.*)(\(\backslash\)\{)([\(\backslash\)w\(\backslash\)-\/]+)(\(\backslash\)s*:\(\backslash\)s*)([\(\backslash\)w\(\backslash\)-\/]+)(\(\backslash\)\})(.*)'},}
+\DoxyCodeLine{             bygroups(String, String.Symbol, Name.Constant, Operator,}
+\DoxyCodeLine{                      Name.Constant, String.Symbol, String)),  \textcolor{comment}{\# constant}}
+\DoxyCodeLine{            \textcolor{comment}{\# whitespace}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Text),}
+\DoxyCodeLine{            \textcolor{comment}{\# other}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[<>,:=.*\%+|]'}, String),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\(\backslash\)w"{}\(\backslash\)-\/!/\&;()\{\}\#]+'}, String),}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/typoscript.\+py\end{DoxyCompactItemize}

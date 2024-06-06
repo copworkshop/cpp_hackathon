@@ -1,0 +1,35 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3183 [label="url_attrs",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3183 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="pip._vendor.urllib3.util.url.Url",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1urllib3_1_1util_1_1url_1_1Url.html",tooltip=" "];
+  Node3183 -> Node3185 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3185 [label="urllib3.util.url.Url",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classurllib3_1_1util_1_1url_1_1Url.html",tooltip=" "];
+  Node3568 [label="namedtuple",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3568 -> Node3569 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3569 [label="conans.build_info.build\l_info.Artifact",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconans_1_1build__info_1_1build__info_1_1Artifact.html",tooltip=" "];
+  Node3568 -> Node3570 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3570 [label="conans.client.conan\l_api.ProfileData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconans_1_1client_1_1conan__api_1_1ProfileData.html",tooltip=" "];
+  Node3568 -> Node3571 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3571 [label="conans.client.recorder.action\l_recorder.Action",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconans_1_1client_1_1recorder_1_1action__recorder_1_1Action.html",tooltip=" "];
+  Node3568 -> Node3572 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3572 [label="conans.client.recorder.search\l_recorder._SearchPackage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconans_1_1client_1_1recorder_1_1search__recorder_1_1__SearchPackage.html",tooltip=" "];
+  Node3568 -> Node3573 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3573 [label="conans.client.recorder.search\l_recorder._SearchRecipe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconans_1_1client_1_1recorder_1_1search__recorder_1_1__SearchRecipe.html",tooltip=" "];
+  Node3568 -> Node3574 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3574 [label="conans.client.recorder.upload\l_recoder._UploadElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconans_1_1client_1_1recorder_1_1upload__recoder_1_1__UploadElement.html",tooltip=" "];
+  Node3568 -> Node3575 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3575 [label="conans.model.ref.ConanFile\lReference",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconans_1_1model_1_1ref_1_1ConanFileReference.html",tooltip=" "];
+  Node3568 -> Node3576 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3576 [label="conans.model.ref.Package\lReference",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconans_1_1model_1_1ref_1_1PackageReference.html",tooltip=" "];
+  Node3568 -> Node3577 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3577 [label="conans.server.rest.bottle\l_plugins.http_basic_authentication.\lUserPasswordPair",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconans_1_1server_1_1rest_1_1bottle__plugins_1_1http__basic__authentication_1_1UserPasswordPair.html",tooltip=" "];
+  Node3568 -> Node3578 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3578 [label="pip._vendor.msgpack.ext.\lExtType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1msgpack_1_1ext_1_1ExtType.html",tooltip=" "];
+  Node3568 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3568 -> Node3185 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

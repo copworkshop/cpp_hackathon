@@ -1,0 +1,114 @@
+\hypertarget{classpygments_1_1lexers_1_1configs_1_1RegeditLexer}{}\doxysection{pygments.\+lexers.\+configs.\+Regedit\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1configs_1_1RegeditLexer}\index{pygments.lexers.configs.RegeditLexer@{pygments.lexers.configs.RegeditLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+configs.\+Regedit\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+configs.\+Regedit\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1configs_1_1RegeditLexer_a86eccda86e16c8519a6135bee9202146}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1RegeditLexer_a5309627e3168da072c32404ac571b496}\label{classpygments_1_1lexers_1_1configs_1_1RegeditLexer_a5309627e3168da072c32404ac571b496}} 
+string {\bfseries name} = \textquotesingle{}reg\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1RegeditLexer_af48e416f19c0c751bf0a2b0ef8c14d0d}\label{classpygments_1_1lexers_1_1configs_1_1RegeditLexer_af48e416f19c0c751bf0a2b0ef8c14d0d}} 
+string {\bfseries url} = \textquotesingle{}http\+://en.\+wikipedia.\+org/wiki/Windows\+\_\+\+Registry\#.REG\+\_\+files\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1RegeditLexer_ad8a6df455a2ce506c132fa03cabe9878}\label{classpygments_1_1lexers_1_1configs_1_1RegeditLexer_ad8a6df455a2ce506c132fa03cabe9878}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}registry\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1RegeditLexer_adf293ea1925c923cdff78da25b7341c9}\label{classpygments_1_1lexers_1_1configs_1_1RegeditLexer_adf293ea1925c923cdff78da25b7341c9}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.reg\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1RegeditLexer_a53717182688c42ac34a810caf88106c0}\label{classpygments_1_1lexers_1_1configs_1_1RegeditLexer_a53717182688c42ac34a810caf88106c0}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/windows-\/registry\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1RegeditLexer_a7600e77ea55d1965eb085845f740dc9d}\label{classpygments_1_1lexers_1_1configs_1_1RegeditLexer_a7600e77ea55d1965eb085845f740dc9d}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+6\textquotesingle{}
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for Windows Registry files produced by regedit.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1RegeditLexer_a86eccda86e16c8519a6135bee9202146}\label{classpygments_1_1lexers_1_1configs_1_1RegeditLexer_a86eccda86e16c8519a6135bee9202146}} 
+\index{pygments.lexers.configs.RegeditLexer@{pygments.lexers.configs.RegeditLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.configs.RegeditLexer@{pygments.lexers.configs.RegeditLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+configs.\+Regedit\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_a7253d400b43b1336bb8be9b817cae1d6}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1configs_1_1RegeditLexer_a8fde0e88fa5bbfa2d66626e28b8c4cc3}\label{classpygments_1_1lexers_1_1configs_1_1RegeditLexer_a8fde0e88fa5bbfa2d66626e28b8c4cc3}} 
+\index{pygments.lexers.configs.RegeditLexer@{pygments.lexers.configs.RegeditLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.configs.RegeditLexer@{pygments.lexers.configs.RegeditLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+configs.\+Regedit\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'Windows Registry Editor.*'}, Text),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[;\#].*'}, Comment.Single),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(\(\backslash\)[)(-\/?)(HKEY\_[A-\/Z\_]+)(.*?\(\backslash\)])\$'},}
+\DoxyCodeLine{             bygroups(Keyword, Operator, Name.Builtin, Keyword)),}
+\DoxyCodeLine{            \textcolor{comment}{\# String keys, which obey somewhat normal escaping}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'("{}(?:\(\backslash\)\(\backslash\)"{}|\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\)|[\string^"{}])+"{})([ \(\backslash\)t]*)(=)([ \(\backslash\)t]*)'},}
+\DoxyCodeLine{             bygroups(Name.Attribute, Whitespace, Operator, Whitespace),}
+\DoxyCodeLine{             \textcolor{stringliteral}{'value'}),}
+\DoxyCodeLine{            \textcolor{comment}{\# Bare keys (includes @)}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(.*?)([ \(\backslash\)t]*)(=)([ \(\backslash\)t]*)'},}
+\DoxyCodeLine{             bygroups(Name.Attribute, Whitespace, Operator, Whitespace),}
+\DoxyCodeLine{             \textcolor{stringliteral}{'value'}),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'value'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'-\/'}, Operator, \textcolor{stringliteral}{'\#pop'}),  \textcolor{comment}{\# delete value}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(dword|hex(?:\(\backslash\)([0-\/9a-\/fA-\/F]\(\backslash\)))?)(:)([0-\/9a-\/fA-\/F,]+)'},}
+\DoxyCodeLine{             bygroups(Name.Variable, Punctuation, Number), \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            \textcolor{comment}{\# As far as I know, .reg files do not support line continuation.}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'.+'}, String, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            default(\textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/configs.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,813 @@
+\hypertarget{classbottle_1_1BaseRequest}{}\doxysection{bottle.\+Base\+Request Class Reference}
+\label{classbottle_1_1BaseRequest}\index{bottle.BaseRequest@{bottle.BaseRequest}}
+
+
+Inheritance diagram for bottle.\+Base\+Request\+:
+% FIG 0
+
+
+Collaboration diagram for bottle.\+Base\+Request\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_ade8ddc6b83c70748112b14d39d9a262e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, environ=None)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a7aa846c857e25cadd5e090ba44950fda}{app}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_ad30c9ef878e38c2a64fb93e8a929eea4}{route}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_ade4d9d1c361743abc3475f264a35f994}{url\+\_\+args}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a2ed5101a61351883800eab4543467ba3}{path}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a292de37a7cde23bfb928d8f5d8094cdb}{method}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a4f28d4f4215f8ed46d97eb78d4f93f72}{headers}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_aa618bf5b2990a99e83e5e5ae91950e45}{get\+\_\+header}} (self, name, default=None)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a644d873db7a35f25655088ba07f50c4e}{cookies}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_af8d68a5a6706fb383e91bc44ff335f2d}{get\+\_\+cookie}} (self, key, default=None, secret=None)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a4ab472578785fdc2dab546409a087b13}{query}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a4990b06d16ed8d0b6a9d9695d067c828}{forms}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a213a398239eb8994bc2f602e61a1ea92}{params}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a789c4ec688d267c162c9081f6aa3d4f5}{files}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_abee3020255bdffbce056d5533faa4a19}{json}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_acdd73f12275fc03eb3e78f5dd3fca35d}{body}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a513842fa599bbf0fece596dd9bcf5fe6}{chunked}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a287e7ca5f334c9070d2ef6e0357185b9}{POST}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a4f2e166f215cc3fd709a9bd672a63431}{url}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a398e8da6e4bd197975b5c3a804258459}{urlparts}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_af1a9a47bace1832974ebf26ce7ae5a8c}{fullpath}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a4879cd3e95f9a989edcbfee1178cd077}{query\+\_\+string}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_ae8b6e65d35af014cf3f551e65e0d5d2e}{script\+\_\+name}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a24201470bd5bf1196e6988ef25b80b3b}{path\+\_\+shift}} (self, shift=1)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a8c78139d95aef486cd3321e5edbb5418}{content\+\_\+length}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a71bcd967a91e2c339b48aa07cecd79b4}{content\+\_\+type}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a8d37b9761bdc13e56cf97feaf32b10fe}{is\+\_\+xhr}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a1fc44aa85ad9839ea18683b4b9dc7465}{is\+\_\+ajax}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a79d0bb028a69c62cdb4e56d820ea0d95}{auth}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a17738cd7dcd6445907a8134519558366}{remote\+\_\+route}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a5dc52e9648d1da82af155f2c60ae3fa0}{remote\+\_\+addr}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a43a3147bc4623435f98228a672ec959f}{copy}} (self)
+\item 
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_a127e9d13207df8c2649f20aacc1bafa3}\label{classbottle_1_1BaseRequest_a127e9d13207df8c2649f20aacc1bafa3}} 
+def {\bfseries get} (self, value, default=None)
+\item 
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_aa8394934b1a5602cd5d4cf20232c3e04}\label{classbottle_1_1BaseRequest_aa8394934b1a5602cd5d4cf20232c3e04}} 
+def {\bfseries \+\_\+\+\_\+getitem\+\_\+\+\_\+} (self, key)
+\item 
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_a0a216301978362dde15d2fbbc8347fce}\label{classbottle_1_1BaseRequest_a0a216301978362dde15d2fbbc8347fce}} 
+def {\bfseries \+\_\+\+\_\+delitem\+\_\+\+\_\+} (self, key)
+\item 
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_ac7cfa01cb70ac0dedb5ac2586f06b101}\label{classbottle_1_1BaseRequest_ac7cfa01cb70ac0dedb5ac2586f06b101}} 
+def {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_a70514131691277007f99f58c3a2efb0c}\label{classbottle_1_1BaseRequest_a70514131691277007f99f58c3a2efb0c}} 
+def {\bfseries \+\_\+\+\_\+len\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_a0cf3f36e3f1ed83080aafde146b20d6e}\label{classbottle_1_1BaseRequest_a0cf3f36e3f1ed83080aafde146b20d6e}} 
+def {\bfseries keys} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a055d65c4d59d80d325202fb8f46c164a}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, key, value)
+\item 
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_ad1749eac268870deca65a37d274ee650}\label{classbottle_1_1BaseRequest_ad1749eac268870deca65a37d274ee650}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a15c1438ab224b0ac459019696d7a40fc}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, name)
+\item 
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_a4a7ac7f3efada091cc41f02ac7bbfccc}\label{classbottle_1_1BaseRequest_a4a7ac7f3efada091cc41f02ac7bbfccc}} 
+def {\bfseries \+\_\+\+\_\+setattr\+\_\+\+\_\+} (self, name, value)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_ade8ddc6b83c70748112b14d39d9a262e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, environ=None)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a7aa846c857e25cadd5e090ba44950fda}{app}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_ad30c9ef878e38c2a64fb93e8a929eea4}{route}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_ade4d9d1c361743abc3475f264a35f994}{url\+\_\+args}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a2ed5101a61351883800eab4543467ba3}{path}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a292de37a7cde23bfb928d8f5d8094cdb}{method}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a4f28d4f4215f8ed46d97eb78d4f93f72}{headers}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_aa618bf5b2990a99e83e5e5ae91950e45}{get\+\_\+header}} (self, name, default=None)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a644d873db7a35f25655088ba07f50c4e}{cookies}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_af8d68a5a6706fb383e91bc44ff335f2d}{get\+\_\+cookie}} (self, key, default=None, secret=None)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a4ab472578785fdc2dab546409a087b13}{query}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a4990b06d16ed8d0b6a9d9695d067c828}{forms}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a213a398239eb8994bc2f602e61a1ea92}{params}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a789c4ec688d267c162c9081f6aa3d4f5}{files}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_abee3020255bdffbce056d5533faa4a19}{json}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_acdd73f12275fc03eb3e78f5dd3fca35d}{body}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a513842fa599bbf0fece596dd9bcf5fe6}{chunked}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a287e7ca5f334c9070d2ef6e0357185b9}{POST}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a4f2e166f215cc3fd709a9bd672a63431}{url}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a398e8da6e4bd197975b5c3a804258459}{urlparts}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_af1a9a47bace1832974ebf26ce7ae5a8c}{fullpath}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a4879cd3e95f9a989edcbfee1178cd077}{query\+\_\+string}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_ae8b6e65d35af014cf3f551e65e0d5d2e}{script\+\_\+name}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a24201470bd5bf1196e6988ef25b80b3b}{path\+\_\+shift}} (self, shift=1)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a8c78139d95aef486cd3321e5edbb5418}{content\+\_\+length}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a71bcd967a91e2c339b48aa07cecd79b4}{content\+\_\+type}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a8d37b9761bdc13e56cf97feaf32b10fe}{is\+\_\+xhr}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a1fc44aa85ad9839ea18683b4b9dc7465}{is\+\_\+ajax}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a79d0bb028a69c62cdb4e56d820ea0d95}{auth}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a17738cd7dcd6445907a8134519558366}{remote\+\_\+route}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a5dc52e9648d1da82af155f2c60ae3fa0}{remote\+\_\+addr}} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a43a3147bc4623435f98228a672ec959f}{copy}} (self)
+\item 
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_a127e9d13207df8c2649f20aacc1bafa3}\label{classbottle_1_1BaseRequest_a127e9d13207df8c2649f20aacc1bafa3}} 
+def {\bfseries get} (self, value, default=None)
+\item 
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_aa8394934b1a5602cd5d4cf20232c3e04}\label{classbottle_1_1BaseRequest_aa8394934b1a5602cd5d4cf20232c3e04}} 
+def {\bfseries \+\_\+\+\_\+getitem\+\_\+\+\_\+} (self, key)
+\item 
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_a0a216301978362dde15d2fbbc8347fce}\label{classbottle_1_1BaseRequest_a0a216301978362dde15d2fbbc8347fce}} 
+def {\bfseries \+\_\+\+\_\+delitem\+\_\+\+\_\+} (self, key)
+\item 
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_ac7cfa01cb70ac0dedb5ac2586f06b101}\label{classbottle_1_1BaseRequest_ac7cfa01cb70ac0dedb5ac2586f06b101}} 
+def {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_a70514131691277007f99f58c3a2efb0c}\label{classbottle_1_1BaseRequest_a70514131691277007f99f58c3a2efb0c}} 
+def {\bfseries \+\_\+\+\_\+len\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_a0cf3f36e3f1ed83080aafde146b20d6e}\label{classbottle_1_1BaseRequest_a0cf3f36e3f1ed83080aafde146b20d6e}} 
+def {\bfseries keys} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a055d65c4d59d80d325202fb8f46c164a}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, key, value)
+\item 
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_ad1749eac268870deca65a37d274ee650}\label{classbottle_1_1BaseRequest_ad1749eac268870deca65a37d274ee650}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classbottle_1_1BaseRequest_a15c1438ab224b0ac459019696d7a40fc}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, name)
+\item 
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_a4a7ac7f3efada091cc41f02ac7bbfccc}\label{classbottle_1_1BaseRequest_a4a7ac7f3efada091cc41f02ac7bbfccc}} 
+def {\bfseries \+\_\+\+\_\+setattr\+\_\+\+\_\+} (self, name, value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_a7b46c09df2a04f4306ec6a0ecfd7f089}\label{classbottle_1_1BaseRequest_a7b46c09df2a04f4306ec6a0ecfd7f089}} 
+{\bfseries environ}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_a7b58e23e41eff4662f85e7e7311bcbd4}\label{classbottle_1_1BaseRequest_a7b58e23e41eff4662f85e7e7311bcbd4}} 
+int {\bfseries MEMFILE\+\_\+\+MAX} = 102400
+\item 
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_af6a91720e5bd459d52ce501171edbeca}\label{classbottle_1_1BaseRequest_af6a91720e5bd459d52ce501171edbeca}} 
+def {\bfseries GET} = \mbox{\hyperlink{classbottle_1_1BaseRequest_a4ab472578785fdc2dab546409a087b13}{query}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} A wrapper for WSGI environment dictionaries that adds a lot of
+    convenient access methods and properties. Most of them are read-only.
+
+    Adding new attributes to a request actually adds them to the environ
+    dictionary (as 'bottle.request.ext.<name>'). This is the recommended
+    way to store and access request-specific data.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_ade8ddc6b83c70748112b14d39d9a262e}\label{classbottle_1_1BaseRequest_ade8ddc6b83c70748112b14d39d9a262e}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{environ = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Wrap a WSGI environ dictionary. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_ade8ddc6b83c70748112b14d39d9a262e}\label{classbottle_1_1BaseRequest_ade8ddc6b83c70748112b14d39d9a262e}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{environ = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Wrap a WSGI environ dictionary. \end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbottle_1_1BaseRequest_a15c1438ab224b0ac459019696d7a40fc}\label{classbottle_1_1BaseRequest_a15c1438ab224b0ac459019696d7a40fc}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Search in self.environ for additional user defined attributes. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a15c1438ab224b0ac459019696d7a40fc}\label{classbottle_1_1BaseRequest_a15c1438ab224b0ac459019696d7a40fc}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Search in self.environ for additional user defined attributes. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a055d65c4d59d80d325202fb8f46c164a}\label{classbottle_1_1BaseRequest_a055d65c4d59d80d325202fb8f46c164a}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Change an environ value and clear all caches that depend on it. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a055d65c4d59d80d325202fb8f46c164a}\label{classbottle_1_1BaseRequest_a055d65c4d59d80d325202fb8f46c164a}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Change an environ value and clear all caches that depend on it. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a7aa846c857e25cadd5e090ba44950fda}\label{classbottle_1_1BaseRequest_a7aa846c857e25cadd5e090ba44950fda}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!app@{app}}
+\index{app@{app}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{app()}{app()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+app (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Bottle application handling this request. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a7aa846c857e25cadd5e090ba44950fda}\label{classbottle_1_1BaseRequest_a7aa846c857e25cadd5e090ba44950fda}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!app@{app}}
+\index{app@{app}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{app()}{app()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+app (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Bottle application handling this request. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a79d0bb028a69c62cdb4e56d820ea0d95}\label{classbottle_1_1BaseRequest_a79d0bb028a69c62cdb4e56d820ea0d95}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!auth@{auth}}
+\index{auth@{auth}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{auth()}{auth()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+auth (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} HTTP authentication data as a (user, password) tuple. This
+    implementation currently supports basic (not digest) authentication
+    only. If the authentication happened at a higher level (e.g. in the
+    front web-server or a middleware), the password field is None, but
+    the user field is looked up from the ``REMOTE_USER`` environ
+    variable. On any errors, None is returned. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a79d0bb028a69c62cdb4e56d820ea0d95}\label{classbottle_1_1BaseRequest_a79d0bb028a69c62cdb4e56d820ea0d95}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!auth@{auth}}
+\index{auth@{auth}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{auth()}{auth()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+auth (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} HTTP authentication data as a (user, password) tuple. This
+    implementation currently supports basic (not digest) authentication
+    only. If the authentication happened at a higher level (e.g. in the
+    front web-server or a middleware), the password field is None, but
+    the user field is looked up from the ``REMOTE_USER`` environ
+    variable. On any errors, None is returned. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_acdd73f12275fc03eb3e78f5dd3fca35d}\label{classbottle_1_1BaseRequest_acdd73f12275fc03eb3e78f5dd3fca35d}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!body@{body}}
+\index{body@{body}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{body()}{body()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+body (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The HTTP request body as a seek-able file-like object. Depending on
+    :attr:`MEMFILE_MAX`, this is either a temporary file or a
+    :class:`io.BytesIO` instance. Accessing this property for the first
+    time reads and replaces the ``wsgi.input`` environ variable.
+    Subsequent accesses just do a `seek(0)` on the file object. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_acdd73f12275fc03eb3e78f5dd3fca35d}\label{classbottle_1_1BaseRequest_acdd73f12275fc03eb3e78f5dd3fca35d}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!body@{body}}
+\index{body@{body}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{body()}{body()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+body (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The HTTP request body as a seek-able file-like object. Depending on
+    :attr:`MEMFILE_MAX`, this is either a temporary file or a
+    :class:`io.BytesIO` instance. Accessing this property for the first
+    time reads and replaces the ``wsgi.input`` environ variable.
+    Subsequent accesses just do a `seek(0)` on the file object. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a513842fa599bbf0fece596dd9bcf5fe6}\label{classbottle_1_1BaseRequest_a513842fa599bbf0fece596dd9bcf5fe6}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!chunked@{chunked}}
+\index{chunked@{chunked}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{chunked()}{chunked()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+chunked (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} True if Chunked transfer encoding was. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a513842fa599bbf0fece596dd9bcf5fe6}\label{classbottle_1_1BaseRequest_a513842fa599bbf0fece596dd9bcf5fe6}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!chunked@{chunked}}
+\index{chunked@{chunked}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{chunked()}{chunked()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+chunked (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} True if Chunked transfer encoding was. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a8c78139d95aef486cd3321e5edbb5418}\label{classbottle_1_1BaseRequest_a8c78139d95aef486cd3321e5edbb5418}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!content\_length@{content\_length}}
+\index{content\_length@{content\_length}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{content\_length()}{content\_length()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+content\+\_\+length (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The request body length as an integer. The client is responsible to
+    set this header. Otherwise, the real length of the body is unknown
+    and -1 is returned. In this case, :attr:`body` will be empty. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a8c78139d95aef486cd3321e5edbb5418}\label{classbottle_1_1BaseRequest_a8c78139d95aef486cd3321e5edbb5418}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!content\_length@{content\_length}}
+\index{content\_length@{content\_length}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{content\_length()}{content\_length()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+content\+\_\+length (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The request body length as an integer. The client is responsible to
+    set this header. Otherwise, the real length of the body is unknown
+    and -1 is returned. In this case, :attr:`body` will be empty. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a71bcd967a91e2c339b48aa07cecd79b4}\label{classbottle_1_1BaseRequest_a71bcd967a91e2c339b48aa07cecd79b4}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!content\_type@{content\_type}}
+\index{content\_type@{content\_type}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{content\_type()}{content\_type()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+content\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The Content-Type header as a lowercase-string (default: empty). \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a71bcd967a91e2c339b48aa07cecd79b4}\label{classbottle_1_1BaseRequest_a71bcd967a91e2c339b48aa07cecd79b4}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!content\_type@{content\_type}}
+\index{content\_type@{content\_type}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{content\_type()}{content\_type()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+content\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The Content-Type header as a lowercase-string (default: empty). \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a644d873db7a35f25655088ba07f50c4e}\label{classbottle_1_1BaseRequest_a644d873db7a35f25655088ba07f50c4e}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!cookies@{cookies}}
+\index{cookies@{cookies}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{cookies()}{cookies()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+cookies (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Cookies parsed into a :class:`FormsDict`. Signed cookies are NOT
+    decoded. Use :meth:`get_cookie` if you expect signed cookies. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a644d873db7a35f25655088ba07f50c4e}\label{classbottle_1_1BaseRequest_a644d873db7a35f25655088ba07f50c4e}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!cookies@{cookies}}
+\index{cookies@{cookies}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{cookies()}{cookies()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+cookies (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Cookies parsed into a :class:`FormsDict`. Signed cookies are NOT
+    decoded. Use :meth:`get_cookie` if you expect signed cookies. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a43a3147bc4623435f98228a672ec959f}\label{classbottle_1_1BaseRequest_a43a3147bc4623435f98228a672ec959f}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!copy@{copy}}
+\index{copy@{copy}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+copy (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Return a new :class:`Request` with a shallow :attr:`environ` copy. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a43a3147bc4623435f98228a672ec959f}\label{classbottle_1_1BaseRequest_a43a3147bc4623435f98228a672ec959f}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!copy@{copy}}
+\index{copy@{copy}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+copy (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Return a new :class:`Request` with a shallow :attr:`environ` copy. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a789c4ec688d267c162c9081f6aa3d4f5}\label{classbottle_1_1BaseRequest_a789c4ec688d267c162c9081f6aa3d4f5}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!files@{files}}
+\index{files@{files}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{files()}{files()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+files (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} File uploads parsed from `multipart/form-data` encoded POST or PUT
+    request body. The values are instances of :class:`FileUpload`.\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a789c4ec688d267c162c9081f6aa3d4f5}\label{classbottle_1_1BaseRequest_a789c4ec688d267c162c9081f6aa3d4f5}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!files@{files}}
+\index{files@{files}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{files()}{files()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+files (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} File uploads parsed from `multipart/form-data` encoded POST or PUT
+    request body. The values are instances of :class:`FileUpload`.\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a4990b06d16ed8d0b6a9d9695d067c828}\label{classbottle_1_1BaseRequest_a4990b06d16ed8d0b6a9d9695d067c828}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!forms@{forms}}
+\index{forms@{forms}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{forms()}{forms()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+forms (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Form values parsed from an `url-encoded` or `multipart/form-data`
+    encoded POST or PUT request body. The result is returned as a
+    :class:`FormsDict`. All keys and values are strings. File uploads
+    are stored separately in :attr:`files`. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a4990b06d16ed8d0b6a9d9695d067c828}\label{classbottle_1_1BaseRequest_a4990b06d16ed8d0b6a9d9695d067c828}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!forms@{forms}}
+\index{forms@{forms}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{forms()}{forms()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+forms (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Form values parsed from an `url-encoded` or `multipart/form-data`
+    encoded POST or PUT request body. The result is returned as a
+    :class:`FormsDict`. All keys and values are strings. File uploads
+    are stored separately in :attr:`files`. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_af1a9a47bace1832974ebf26ce7ae5a8c}\label{classbottle_1_1BaseRequest_af1a9a47bace1832974ebf26ce7ae5a8c}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!fullpath@{fullpath}}
+\index{fullpath@{fullpath}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{fullpath()}{fullpath()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+fullpath (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Request path including :attr:`script_name` (if present). \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_af1a9a47bace1832974ebf26ce7ae5a8c}\label{classbottle_1_1BaseRequest_af1a9a47bace1832974ebf26ce7ae5a8c}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!fullpath@{fullpath}}
+\index{fullpath@{fullpath}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{fullpath()}{fullpath()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+fullpath (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Request path including :attr:`script_name` (if present). \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_af8d68a5a6706fb383e91bc44ff335f2d}\label{classbottle_1_1BaseRequest_af8d68a5a6706fb383e91bc44ff335f2d}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!get\_cookie@{get\_cookie}}
+\index{get\_cookie@{get\_cookie}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{get\_cookie()}{get\_cookie()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+get\+\_\+cookie (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{default = {\ttfamily None},  }\item[{}]{secret = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Return the content of a cookie. To read a `Signed Cookie`, the
+    `secret` must match the one used to create the cookie (see
+    :meth:`BaseResponse.set_cookie`). If anything goes wrong (missing
+    cookie or wrong signature), return a default value. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_af8d68a5a6706fb383e91bc44ff335f2d}\label{classbottle_1_1BaseRequest_af8d68a5a6706fb383e91bc44ff335f2d}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!get\_cookie@{get\_cookie}}
+\index{get\_cookie@{get\_cookie}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{get\_cookie()}{get\_cookie()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+get\+\_\+cookie (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{default = {\ttfamily None},  }\item[{}]{secret = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Return the content of a cookie. To read a `Signed Cookie`, the
+    `secret` must match the one used to create the cookie (see
+    :meth:`BaseResponse.set_cookie`). If anything goes wrong (missing
+    cookie or wrong signature), return a default value. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_aa618bf5b2990a99e83e5e5ae91950e45}\label{classbottle_1_1BaseRequest_aa618bf5b2990a99e83e5e5ae91950e45}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!get\_header@{get\_header}}
+\index{get\_header@{get\_header}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{get\_header()}{get\_header()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+get\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Return the value of a request header, or a given default value. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_aa618bf5b2990a99e83e5e5ae91950e45}\label{classbottle_1_1BaseRequest_aa618bf5b2990a99e83e5e5ae91950e45}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!get\_header@{get\_header}}
+\index{get\_header@{get\_header}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{get\_header()}{get\_header()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+get\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Return the value of a request header, or a given default value. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a4f28d4f4215f8ed46d97eb78d4f93f72}\label{classbottle_1_1BaseRequest_a4f28d4f4215f8ed46d97eb78d4f93f72}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!headers@{headers}}
+\index{headers@{headers}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{headers()}{headers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+headers (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} A :class:`WSGIHeaderDict` that provides case-insensitive access to
+    HTTP request headers. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a4f28d4f4215f8ed46d97eb78d4f93f72}\label{classbottle_1_1BaseRequest_a4f28d4f4215f8ed46d97eb78d4f93f72}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!headers@{headers}}
+\index{headers@{headers}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{headers()}{headers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+headers (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} A :class:`WSGIHeaderDict` that provides case-insensitive access to
+    HTTP request headers. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a1fc44aa85ad9839ea18683b4b9dc7465}\label{classbottle_1_1BaseRequest_a1fc44aa85ad9839ea18683b4b9dc7465}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!is\_ajax@{is\_ajax}}
+\index{is\_ajax@{is\_ajax}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{is\_ajax()}{is\_ajax()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+is\+\_\+ajax (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Alias for :attr:`is_xhr`. "Ajax" is not the right term. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a1fc44aa85ad9839ea18683b4b9dc7465}\label{classbottle_1_1BaseRequest_a1fc44aa85ad9839ea18683b4b9dc7465}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!is\_ajax@{is\_ajax}}
+\index{is\_ajax@{is\_ajax}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{is\_ajax()}{is\_ajax()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+is\+\_\+ajax (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Alias for :attr:`is_xhr`. "Ajax" is not the right term. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a8d37b9761bdc13e56cf97feaf32b10fe}\label{classbottle_1_1BaseRequest_a8d37b9761bdc13e56cf97feaf32b10fe}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!is\_xhr@{is\_xhr}}
+\index{is\_xhr@{is\_xhr}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{is\_xhr()}{is\_xhr()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+is\+\_\+xhr (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} True if the request was triggered by a XMLHttpRequest. This only
+    works with JavaScript libraries that support the `X-Requested-With`
+    header (most of the popular libraries do). \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a8d37b9761bdc13e56cf97feaf32b10fe}\label{classbottle_1_1BaseRequest_a8d37b9761bdc13e56cf97feaf32b10fe}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!is\_xhr@{is\_xhr}}
+\index{is\_xhr@{is\_xhr}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{is\_xhr()}{is\_xhr()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+is\+\_\+xhr (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} True if the request was triggered by a XMLHttpRequest. This only
+    works with JavaScript libraries that support the `X-Requested-With`
+    header (most of the popular libraries do). \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_abee3020255bdffbce056d5533faa4a19}\label{classbottle_1_1BaseRequest_abee3020255bdffbce056d5533faa4a19}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!json@{json}}
+\index{json@{json}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{json()}{json()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+json (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} If the ``Content-Type`` header is ``application/json``, this
+    property holds the parsed content of the request body. Only requests
+    smaller than :attr:`MEMFILE_MAX` are processed to avoid memory
+    exhaustion. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_abee3020255bdffbce056d5533faa4a19}\label{classbottle_1_1BaseRequest_abee3020255bdffbce056d5533faa4a19}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!json@{json}}
+\index{json@{json}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{json()}{json()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+json (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} If the ``Content-Type`` header is ``application/json``, this
+    property holds the parsed content of the request body. Only requests
+    smaller than :attr:`MEMFILE_MAX` are processed to avoid memory
+    exhaustion. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a292de37a7cde23bfb928d8f5d8094cdb}\label{classbottle_1_1BaseRequest_a292de37a7cde23bfb928d8f5d8094cdb}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!method@{method}}
+\index{method@{method}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{method()}{method()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+method (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The ``REQUEST_METHOD`` value as an uppercase string. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a292de37a7cde23bfb928d8f5d8094cdb}\label{classbottle_1_1BaseRequest_a292de37a7cde23bfb928d8f5d8094cdb}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!method@{method}}
+\index{method@{method}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{method()}{method()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+method (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The ``REQUEST_METHOD`` value as an uppercase string. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a213a398239eb8994bc2f602e61a1ea92}\label{classbottle_1_1BaseRequest_a213a398239eb8994bc2f602e61a1ea92}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!params@{params}}
+\index{params@{params}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{params()}{params()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+params (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} A :class:`FormsDict` with the combined values of :attr:`query` and
+    :attr:`forms`. File uploads are stored in :attr:`files`. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a213a398239eb8994bc2f602e61a1ea92}\label{classbottle_1_1BaseRequest_a213a398239eb8994bc2f602e61a1ea92}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!params@{params}}
+\index{params@{params}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{params()}{params()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+params (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} A :class:`FormsDict` with the combined values of :attr:`query` and
+    :attr:`forms`. File uploads are stored in :attr:`files`. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a2ed5101a61351883800eab4543467ba3}\label{classbottle_1_1BaseRequest_a2ed5101a61351883800eab4543467ba3}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!path@{path}}
+\index{path@{path}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{path()}{path()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+path (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The value of ``PATH_INFO`` with exactly one prefixed slash (to fix
+    broken clients and avoid the "empty path" edge case). \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a2ed5101a61351883800eab4543467ba3}\label{classbottle_1_1BaseRequest_a2ed5101a61351883800eab4543467ba3}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!path@{path}}
+\index{path@{path}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{path()}{path()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+path (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The value of ``PATH_INFO`` with exactly one prefixed slash (to fix
+    broken clients and avoid the "empty path" edge case). \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a24201470bd5bf1196e6988ef25b80b3b}\label{classbottle_1_1BaseRequest_a24201470bd5bf1196e6988ef25b80b3b}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!path\_shift@{path\_shift}}
+\index{path\_shift@{path\_shift}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{path\_shift()}{path\_shift()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+path\+\_\+shift (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{shift = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Shift path segments from :attr:`path` to :attr:`script_name` and
+    vice versa.
+
+   :param shift: The number of path segments to shift. May be negative
+                 to change the shift direction. (default: 1)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a24201470bd5bf1196e6988ef25b80b3b}\label{classbottle_1_1BaseRequest_a24201470bd5bf1196e6988ef25b80b3b}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!path\_shift@{path\_shift}}
+\index{path\_shift@{path\_shift}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{path\_shift()}{path\_shift()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+path\+\_\+shift (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{shift = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Shift path segments from :attr:`path` to :attr:`script_name` and
+    vice versa.
+
+   :param shift: The number of path segments to shift. May be negative
+                 to change the shift direction. (default: 1)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a287e7ca5f334c9070d2ef6e0357185b9}\label{classbottle_1_1BaseRequest_a287e7ca5f334c9070d2ef6e0357185b9}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!POST@{POST}}
+\index{POST@{POST}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{POST()}{POST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+POST (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The values of :attr:`forms` and :attr:`files` combined into a single
+    :class:`FormsDict`. Values are either strings (form values) or
+    instances of :class:`cgi.FieldStorage` (file uploads).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a287e7ca5f334c9070d2ef6e0357185b9}\label{classbottle_1_1BaseRequest_a287e7ca5f334c9070d2ef6e0357185b9}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!POST@{POST}}
+\index{POST@{POST}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{POST()}{POST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+POST (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The values of :attr:`forms` and :attr:`files` combined into a single
+    :class:`FormsDict`. Values are either strings (form values) or
+    instances of :class:`cgi.FieldStorage` (file uploads).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a4ab472578785fdc2dab546409a087b13}\label{classbottle_1_1BaseRequest_a4ab472578785fdc2dab546409a087b13}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!query@{query}}
+\index{query@{query}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+query (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The :attr:`query_string` parsed into a :class:`FormsDict`. These
+    values are sometimes called "URL arguments" or "GET parameters", but
+    not to be confused with "URL wildcards" as they are provided by the
+    :class:`Router`. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a4ab472578785fdc2dab546409a087b13}\label{classbottle_1_1BaseRequest_a4ab472578785fdc2dab546409a087b13}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!query@{query}}
+\index{query@{query}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+query (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The :attr:`query_string` parsed into a :class:`FormsDict`. These
+    values are sometimes called "URL arguments" or "GET parameters", but
+    not to be confused with "URL wildcards" as they are provided by the
+    :class:`Router`. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a4879cd3e95f9a989edcbfee1178cd077}\label{classbottle_1_1BaseRequest_a4879cd3e95f9a989edcbfee1178cd077}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!query\_string@{query\_string}}
+\index{query\_string@{query\_string}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{query\_string()}{query\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+query\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The raw :attr:`query` part of the URL (everything in between ``?``
+    and ``#``) as a string. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a4879cd3e95f9a989edcbfee1178cd077}\label{classbottle_1_1BaseRequest_a4879cd3e95f9a989edcbfee1178cd077}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!query\_string@{query\_string}}
+\index{query\_string@{query\_string}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{query\_string()}{query\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+query\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The raw :attr:`query` part of the URL (everything in between ``?``
+    and ``#``) as a string. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a5dc52e9648d1da82af155f2c60ae3fa0}\label{classbottle_1_1BaseRequest_a5dc52e9648d1da82af155f2c60ae3fa0}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!remote\_addr@{remote\_addr}}
+\index{remote\_addr@{remote\_addr}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{remote\_addr()}{remote\_addr()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+remote\+\_\+addr (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The client IP as a string. Note that this information can be forged
+    by malicious clients. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a5dc52e9648d1da82af155f2c60ae3fa0}\label{classbottle_1_1BaseRequest_a5dc52e9648d1da82af155f2c60ae3fa0}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!remote\_addr@{remote\_addr}}
+\index{remote\_addr@{remote\_addr}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{remote\_addr()}{remote\_addr()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+remote\+\_\+addr (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The client IP as a string. Note that this information can be forged
+    by malicious clients. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a17738cd7dcd6445907a8134519558366}\label{classbottle_1_1BaseRequest_a17738cd7dcd6445907a8134519558366}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!remote\_route@{remote\_route}}
+\index{remote\_route@{remote\_route}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{remote\_route()}{remote\_route()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+remote\+\_\+route (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} A list of all IPs that were involved in this request, starting with
+    the client IP and followed by zero or more proxies. This does only
+    work if all proxies support the ```X-Forwarded-For`` header. Note
+    that this information can be forged by malicious clients. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a17738cd7dcd6445907a8134519558366}\label{classbottle_1_1BaseRequest_a17738cd7dcd6445907a8134519558366}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!remote\_route@{remote\_route}}
+\index{remote\_route@{remote\_route}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{remote\_route()}{remote\_route()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+remote\+\_\+route (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} A list of all IPs that were involved in this request, starting with
+    the client IP and followed by zero or more proxies. This does only
+    work if all proxies support the ```X-Forwarded-For`` header. Note
+    that this information can be forged by malicious clients. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_ad30c9ef878e38c2a64fb93e8a929eea4}\label{classbottle_1_1BaseRequest_ad30c9ef878e38c2a64fb93e8a929eea4}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!route@{route}}
+\index{route@{route}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{route()}{route()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+route (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The bottle :class:`Route` object that matches this request. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_ad30c9ef878e38c2a64fb93e8a929eea4}\label{classbottle_1_1BaseRequest_ad30c9ef878e38c2a64fb93e8a929eea4}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!route@{route}}
+\index{route@{route}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{route()}{route()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+route (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The bottle :class:`Route` object that matches this request. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_ae8b6e65d35af014cf3f551e65e0d5d2e}\label{classbottle_1_1BaseRequest_ae8b6e65d35af014cf3f551e65e0d5d2e}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!script\_name@{script\_name}}
+\index{script\_name@{script\_name}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{script\_name()}{script\_name()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+script\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The initial portion of the URL's `path` that was removed by a higher
+    level (server or routing middleware) before the application was
+    called. This script path is returned with leading and tailing
+    slashes. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_ae8b6e65d35af014cf3f551e65e0d5d2e}\label{classbottle_1_1BaseRequest_ae8b6e65d35af014cf3f551e65e0d5d2e}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!script\_name@{script\_name}}
+\index{script\_name@{script\_name}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{script\_name()}{script\_name()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+script\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The initial portion of the URL's `path` that was removed by a higher
+    level (server or routing middleware) before the application was
+    called. This script path is returned with leading and tailing
+    slashes. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a4f2e166f215cc3fd709a9bd672a63431}\label{classbottle_1_1BaseRequest_a4f2e166f215cc3fd709a9bd672a63431}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!url@{url}}
+\index{url@{url}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{url()}{url()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+url (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The full request URI including hostname and scheme. If your app
+    lives behind a reverse proxy or load balancer and you get confusing
+    results, make sure that the ``X-Forwarded-Host`` header is set
+    correctly. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a4f2e166f215cc3fd709a9bd672a63431}\label{classbottle_1_1BaseRequest_a4f2e166f215cc3fd709a9bd672a63431}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!url@{url}}
+\index{url@{url}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{url()}{url()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+url (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The full request URI including hostname and scheme. If your app
+    lives behind a reverse proxy or load balancer and you get confusing
+    results, make sure that the ``X-Forwarded-Host`` header is set
+    correctly. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_ade4d9d1c361743abc3475f264a35f994}\label{classbottle_1_1BaseRequest_ade4d9d1c361743abc3475f264a35f994}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!url\_args@{url\_args}}
+\index{url\_args@{url\_args}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{url\_args()}{url\_args()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+url\+\_\+args (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The arguments extracted from the URL. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_ade4d9d1c361743abc3475f264a35f994}\label{classbottle_1_1BaseRequest_ade4d9d1c361743abc3475f264a35f994}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!url\_args@{url\_args}}
+\index{url\_args@{url\_args}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{url\_args()}{url\_args()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+url\+\_\+args (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The arguments extracted from the URL. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a398e8da6e4bd197975b5c3a804258459}\label{classbottle_1_1BaseRequest_a398e8da6e4bd197975b5c3a804258459}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!urlparts@{urlparts}}
+\index{urlparts@{urlparts}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{urlparts()}{urlparts()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+urlparts (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The :attr:`url` string as an :class:`urlparse.SplitResult` tuple.
+    The tuple contains (scheme, host, path, query_string and fragment),
+    but the fragment is always empty because it is not visible to the
+    server. \end{DoxyVerb}
+ \mbox{\Hypertarget{classbottle_1_1BaseRequest_a398e8da6e4bd197975b5c3a804258459}\label{classbottle_1_1BaseRequest_a398e8da6e4bd197975b5c3a804258459}} 
+\index{bottle.BaseRequest@{bottle.BaseRequest}!urlparts@{urlparts}}
+\index{urlparts@{urlparts}!bottle.BaseRequest@{bottle.BaseRequest}}
+\doxysubsubsection{\texorpdfstring{urlparts()}{urlparts()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def bottle.\+Base\+Request.\+urlparts (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The :attr:`url` string as an :class:`urlparse.SplitResult` tuple.
+    The tuple contains (scheme, host, path, query_string and fragment),
+    but the fragment is always empty because it is not visible to the
+    server. \end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/bin/bottle.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,77 @@
+\hypertarget{classpygments_1_1lexers_1_1templates_1_1ColdfusionCFCLexer}{}\doxysection{pygments.\+lexers.\+templates.\+Coldfusion\+CFCLexer Class Reference}
+\label{classpygments_1_1lexers_1_1templates_1_1ColdfusionCFCLexer}\index{pygments.lexers.templates.ColdfusionCFCLexer@{pygments.lexers.templates.ColdfusionCFCLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+templates.\+Coldfusion\+CFCLexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+templates.\+Coldfusion\+CFCLexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1templates_1_1ColdfusionCFCLexer_a7a8cf78464f1db71a9ed57d3d4ee92ca}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1ColdfusionCFCLexer_afdfbeeef6736c55d8e7e85c505a4b1da}\label{classpygments_1_1lexers_1_1templates_1_1ColdfusionCFCLexer_afdfbeeef6736c55d8e7e85c505a4b1da}} 
+string {\bfseries name} = \textquotesingle{}Coldfusion CFC\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1ColdfusionCFCLexer_a9e28eb7278e79cdd7b1da46cfb802d62}\label{classpygments_1_1lexers_1_1templates_1_1ColdfusionCFCLexer_a9e28eb7278e79cdd7b1da46cfb802d62}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}cfc\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1ColdfusionCFCLexer_aa9d1670b56944af5bd50f0d2b93126c3}\label{classpygments_1_1lexers_1_1templates_1_1ColdfusionCFCLexer_aa9d1670b56944af5bd50f0d2b93126c3}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.cfc\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1ColdfusionCFCLexer_acb8962bb8501d8a7f346f190f909f957}\label{classpygments_1_1lexers_1_1templates_1_1ColdfusionCFCLexer_acb8962bb8501d8a7f346f190f909f957}} 
+list {\bfseries mimetypes} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1ColdfusionCFCLexer_ad71e88d269143817b3a28c9186fa00fa}\label{classpygments_1_1lexers_1_1templates_1_1ColdfusionCFCLexer_ad71e88d269143817b3a28c9186fa00fa}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+adobe.\+com/products/coldfusion-\/family.\+html\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1ColdfusionCFCLexer_aea11a8c5f88d20affae1d66fdb67aa4d}\label{classpygments_1_1lexers_1_1templates_1_1ColdfusionCFCLexer_aea11a8c5f88d20affae1d66fdb67aa4d}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+0\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Coldfusion markup/script components
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1templates_1_1ColdfusionCFCLexer_a7a8cf78464f1db71a9ed57d3d4ee92ca}\label{classpygments_1_1lexers_1_1templates_1_1ColdfusionCFCLexer_a7a8cf78464f1db71a9ed57d3d4ee92ca}} 
+\index{pygments.lexers.templates.ColdfusionCFCLexer@{pygments.lexers.templates.ColdfusionCFCLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.templates.ColdfusionCFCLexer@{pygments.lexers.templates.ColdfusionCFCLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+templates.\+Coldfusion\+CFCLexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/templates.\+py\end{DoxyCompactItemize}

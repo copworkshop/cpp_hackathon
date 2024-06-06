@@ -1,0 +1,89 @@
+\hypertarget{classpygments_1_1lexers_1_1business_1_1GoodDataCLLexer}{}\doxysection{pygments.\+lexers.\+business.\+Good\+Data\+CLLexer Class Reference}
+\label{classpygments_1_1lexers_1_1business_1_1GoodDataCLLexer}\index{pygments.lexers.business.GoodDataCLLexer@{pygments.lexers.business.GoodDataCLLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+business.\+Good\+Data\+CLLexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+business.\+Good\+Data\+CLLexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1business_1_1GoodDataCLLexer_a73d426193aff34c94fdf07616baba5a2}\label{classpygments_1_1lexers_1_1business_1_1GoodDataCLLexer_a73d426193aff34c94fdf07616baba5a2}} 
+string {\bfseries name} = \textquotesingle{}Good\+Data-\/CL\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1business_1_1GoodDataCLLexer_a51982b2a44c1f0f495de2ece770e9f67}\label{classpygments_1_1lexers_1_1business_1_1GoodDataCLLexer_a51982b2a44c1f0f495de2ece770e9f67}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}gooddata-\/cl\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1business_1_1GoodDataCLLexer_ac106326c3fb9b7860cf7793e3078f190}\label{classpygments_1_1lexers_1_1business_1_1GoodDataCLLexer_ac106326c3fb9b7860cf7793e3078f190}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.gdc\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1business_1_1GoodDataCLLexer_a1d0a071d60b7228d5488d7c311cea993}\label{classpygments_1_1lexers_1_1business_1_1GoodDataCLLexer_a1d0a071d60b7228d5488d7c311cea993}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/gooddata-\/cl\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1business_1_1GoodDataCLLexer_a40bc48ae82358c3760c632e44af76d59}\label{classpygments_1_1lexers_1_1business_1_1GoodDataCLLexer_a40bc48ae82358c3760c632e44af76d59}} 
+string {\bfseries url} = \textquotesingle{}https\+://github.\+com/gooddata/Good\+Data-\/CL\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1business_1_1GoodDataCLLexer_af691f2aba3c18f99952949454742738b}\label{classpygments_1_1lexers_1_1business_1_1GoodDataCLLexer_af691f2aba3c18f99952949454742738b}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+4\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1business_1_1GoodDataCLLexer_a4d81344ad4c0aba44fb2619e7aeaed16}\label{classpygments_1_1lexers_1_1business_1_1GoodDataCLLexer_a4d81344ad4c0aba44fb2619e7aeaed16}} 
+{\bfseries flags} = re.\+IGNORECASE
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for GoodData-CL script files.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1business_1_1GoodDataCLLexer_ad488b4275bce1948583ed7eadc73fba1}\label{classpygments_1_1lexers_1_1business_1_1GoodDataCLLexer_ad488b4275bce1948583ed7eadc73fba1}} 
+\index{pygments.lexers.business.GoodDataCLLexer@{pygments.lexers.business.GoodDataCLLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.business.GoodDataCLLexer@{pygments.lexers.business.GoodDataCLLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+business.\+Good\+Data\+CLLexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            \textcolor{comment}{\# Comments}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#.*'}, Comment.Single),}
+\DoxyCodeLine{            \textcolor{comment}{\# Function call}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[a-\/z]\(\backslash\)w*'}, Name.Function),}
+\DoxyCodeLine{            \textcolor{comment}{\# Argument list}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)('}, Punctuation, \textcolor{stringliteral}{'args-\/list'}),}
+\DoxyCodeLine{            \textcolor{comment}{\# Punctuation}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r';'}, Punctuation),}
+\DoxyCodeLine{            \textcolor{comment}{\# Space is not significant}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Text)}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'args-\/list'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\))'}, Punctuation, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r','}, Punctuation),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[a-\/z]\(\backslash\)w*'}, Name.Variable),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'='}, Operator),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'"{}'}, String, \textcolor{stringliteral}{'string-\/literal'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[0-\/9]+(?:\(\backslash\).[0-\/9]+)?(?:e[+-\/]?[0-\/9]\{1,3\})?'}, Number),}
+\DoxyCodeLine{            \textcolor{comment}{\# Space is not significant}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s'}, Whitespace)}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{        \textcolor{stringliteral}{'string-\/literal'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)\(\backslash\)[tnrfbae"{}\(\backslash\)\(\backslash\)]'}, String.Escape),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'"{}'}, String, \textcolor{stringliteral}{'\#pop'}),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'[\string^\(\backslash\)\(\backslash\)"{}]+'}, String)}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/business.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,90 @@
+\hypertarget{classpygments_1_1lexers_1_1ldap_1_1LdaprcLexer}{}\doxysection{pygments.\+lexers.\+ldap.\+Ldaprc\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1ldap_1_1LdaprcLexer}\index{pygments.lexers.ldap.LdaprcLexer@{pygments.lexers.ldap.LdaprcLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+ldap.\+Ldaprc\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+ldap.\+Ldaprc\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1ldap_1_1LdaprcLexer_a3d5e4c451508852c9ae3b2caa13ed050}\label{classpygments_1_1lexers_1_1ldap_1_1LdaprcLexer_a3d5e4c451508852c9ae3b2caa13ed050}} 
+string {\bfseries name} = \textquotesingle{}LDAP configuration file\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1ldap_1_1LdaprcLexer_aaca6a02756b89d1553af98dc90afedcd}\label{classpygments_1_1lexers_1_1ldap_1_1LdaprcLexer_aaca6a02756b89d1553af98dc90afedcd}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}ldapconf\textquotesingle{}, \textquotesingle{}ldaprc\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1ldap_1_1LdaprcLexer_a4d36723b7999f6d34563ce2488a3ba74}\label{classpygments_1_1lexers_1_1ldap_1_1LdaprcLexer_a4d36723b7999f6d34563ce2488a3ba74}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}.ldaprc\textquotesingle{}, \textquotesingle{}ldaprc\textquotesingle{}, \textquotesingle{}ldap.\+conf\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1ldap_1_1LdaprcLexer_a1c950aea4d4b3a3b1f7736e3d5a15e44}\label{classpygments_1_1lexers_1_1ldap_1_1LdaprcLexer_a1c950aea4d4b3a3b1f7736e3d5a15e44}} 
+list {\bfseries mimetypes} = \mbox{[}\char`\"{}text/x-\/ldapconf\char`\"{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1ldap_1_1LdaprcLexer_adb4067bde9012f83360570480cd32358}\label{classpygments_1_1lexers_1_1ldap_1_1LdaprcLexer_adb4067bde9012f83360570480cd32358}} 
+string {\bfseries url} = \textquotesingle{}https\+://www.\+openldap.\+org/software//man.\+cgi?query=ldap.\+conf\&sektion=5\&apropos=0\&manpath=Open\+LDAP+2.\+4-\/Release\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1ldap_1_1LdaprcLexer_a31fd59611b758cea5ce3d03045d850c6}\label{classpygments_1_1lexers_1_1ldap_1_1LdaprcLexer_a31fd59611b758cea5ce3d03045d850c6}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}2.\+17\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1ldap_1_1LdaprcLexer_a69dbaac4e538744ad1c042fc518e1184}\label{classpygments_1_1lexers_1_1ldap_1_1LdaprcLexer_a69dbaac4e538744ad1c042fc518e1184}} 
+{\bfseries flags} = re.\+IGNORECASE $\vert$ re.\+MULTILINE
+\item 
+dictionary {\bfseries tokens}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for OpenLDAP configuration files.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1ldap_1_1LdaprcLexer_a2d255b2db75cb3983e5459cd91ecae43}\label{classpygments_1_1lexers_1_1ldap_1_1LdaprcLexer_a2d255b2db75cb3983e5459cd91ecae43}} 
+\index{pygments.lexers.ldap.LdaprcLexer@{pygments.lexers.ldap.LdaprcLexer}!tokens@{tokens}}
+\index{tokens@{tokens}!pygments.lexers.ldap.LdaprcLexer@{pygments.lexers.ldap.LdaprcLexer}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily dictionary pygments.\+lexers.\+ldap.\+Ldaprc\+Lexer.\+tokens\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'root'}: [}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\#.*'}, Comment.Single),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'\(\backslash\)s+'}, Whitespace),}
+\DoxyCodeLine{            (rf\textcolor{stringliteral}{'(\{\_boolean\_keywords\})(\(\backslash\)s+)(on|true|yes|off|false|no)\$'},}
+\DoxyCodeLine{             bygroups(Keyword, Whitespace, Keyword.Constant)),}
+\DoxyCodeLine{            (rf\textcolor{stringliteral}{'(\{\_integer\_keywords\})(\(\backslash\)s+)(\(\backslash\)d+)'},}
+\DoxyCodeLine{             bygroups(Keyword, Whitespace, Number.Integer)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(VERSION)(\(\backslash\)s+)(2|3)'}, bygroups(Keyword, Whitespace, Number.Integer)),}
+\DoxyCodeLine{            \textcolor{comment}{\# Constants}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(DEREF)(\(\backslash\)s+)(never|searching|finding|always)'},}
+\DoxyCodeLine{             bygroups(Keyword, Whitespace, Keyword.Constant)),}
+\DoxyCodeLine{            (rf\textcolor{stringliteral}{'(SASL\_SECPROPS)(\(\backslash\)s+)((?:\{\_secprops\})(?:,\{\_secprops\})*)'},}
+\DoxyCodeLine{             bygroups(Keyword, Whitespace, Keyword.Constant)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(SASL\_CBINDING)(\(\backslash\)s+)(none|tls-\/unique|tls-\/endpoint)'},}
+\DoxyCodeLine{             bygroups(Keyword, Whitespace, Keyword.Constant)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(TLS\_REQ(?:CERT|SAN))(\(\backslash\)s+)(allow|demand|hard|never|try)'},}
+\DoxyCodeLine{             bygroups(Keyword, Whitespace, Keyword.Constant)),}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(TLS\_CRLCHECK)(\(\backslash\)s+)(none|peer|all)'},}
+\DoxyCodeLine{             bygroups(Keyword, Whitespace, Keyword.Constant)),}
+\DoxyCodeLine{            \textcolor{comment}{\# Literals}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(BASE|BINDDN)(\(\backslash\)s+)(\(\backslash\)S+)\$'},}
+\DoxyCodeLine{             bygroups(Keyword, Whitespace, Literal)),}
+\DoxyCodeLine{            \textcolor{comment}{\# Accepts hostname with or without port.}}
+\DoxyCodeLine{            (\textcolor{stringliteral}{r'(HOST)(\(\backslash\)s+)([a-\/z0-\/9]+)((?::(\(\backslash\)d+))?)'},}
+\DoxyCodeLine{             bygroups(Keyword, Whitespace, Literal, Number.Integer)),}
+\DoxyCodeLine{            (rf\textcolor{stringliteral}{'(\{\_literal\_keywords\})(\(\backslash\)s+)(\(\backslash\)S+)\$'},}
+\DoxyCodeLine{             bygroups(Keyword, Whitespace, Literal)),}
+\DoxyCodeLine{        ],}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/ldap.\+py\end{DoxyCompactItemize}

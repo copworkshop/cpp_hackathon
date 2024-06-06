@@ -1,0 +1,45 @@
+\hypertarget{classtqdm_1_1utils_1_1DisableOnWriteError}{}\doxysection{tqdm.\+utils.\+Disable\+On\+Write\+Error Class Reference}
+\label{classtqdm_1_1utils_1_1DisableOnWriteError}\index{tqdm.utils.DisableOnWriteError@{tqdm.utils.DisableOnWriteError}}
+
+
+Inheritance diagram for tqdm.\+utils.\+Disable\+On\+Write\+Error\+:
+% FIG 0
+
+
+Collaboration diagram for tqdm.\+utils.\+Disable\+On\+Write\+Error\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1utils_1_1DisableOnWriteError_aecc78fb92227ff7b583727a69d7d06b6}\label{classtqdm_1_1utils_1_1DisableOnWriteError_aecc78fb92227ff7b583727a69d7d06b6}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, wrapped, tqdm\+\_\+instance)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1utils_1_1DisableOnWriteError_ab2d1c7da2721af3a25d6048a8c79e3fe}\label{classtqdm_1_1utils_1_1DisableOnWriteError_ab2d1c7da2721af3a25d6048a8c79e3fe}} 
+def {\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classtqdm_1_1utils_1_1DisableOnWriteError_a7761c55a30d2ccc386992ab06d5fe9b3}{disable\+\_\+on\+\_\+exception}} (tqdm\+\_\+instance, func)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Disable the given `tqdm_instance` upon `write()` or `flush()` errors.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtqdm_1_1utils_1_1DisableOnWriteError_a7761c55a30d2ccc386992ab06d5fe9b3}\label{classtqdm_1_1utils_1_1DisableOnWriteError_a7761c55a30d2ccc386992ab06d5fe9b3}} 
+\index{tqdm.utils.DisableOnWriteError@{tqdm.utils.DisableOnWriteError}!disable\_on\_exception@{disable\_on\_exception}}
+\index{disable\_on\_exception@{disable\_on\_exception}!tqdm.utils.DisableOnWriteError@{tqdm.utils.DisableOnWriteError}}
+\doxysubsubsection{\texorpdfstring{disable\_on\_exception()}{disable\_on\_exception()}}
+{\footnotesize\ttfamily def tqdm.\+utils.\+Disable\+On\+Write\+Error.\+disable\+\_\+on\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{tqdm\+\_\+instance,  }\item[{}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Quietly set `tqdm_instance.miniters=inf` if `func` raises `errno=5`.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/tqdm/utils.\+py\end{DoxyCompactItemize}

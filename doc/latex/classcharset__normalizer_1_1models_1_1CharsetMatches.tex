@@ -1,0 +1,73 @@
+\hypertarget{classcharset__normalizer_1_1models_1_1CharsetMatches}{}\doxysection{charset\+\_\+normalizer.\+models.\+Charset\+Matches Class Reference}
+\label{classcharset__normalizer_1_1models_1_1CharsetMatches}\index{charset\_normalizer.models.CharsetMatches@{charset\_normalizer.models.CharsetMatches}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcharset__normalizer_1_1models_1_1CharsetMatches_a4e4f5cb47d25db4e45bce7b1f2173b9c}\label{classcharset__normalizer_1_1models_1_1CharsetMatches_a4e4f5cb47d25db4e45bce7b1f2173b9c}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, Optional\mbox{[}List\mbox{[}\mbox{\hyperlink{classcharset__normalizer_1_1models_1_1CharsetMatch}{Charset\+Match}}\mbox{]}\mbox{]} results=None)
+\item 
+\mbox{\Hypertarget{classcharset__normalizer_1_1models_1_1CharsetMatches_ade2335cd412cd28163cde31f17c0d2cf}\label{classcharset__normalizer_1_1models_1_1CharsetMatches_ade2335cd412cd28163cde31f17c0d2cf}} 
+Iterator\mbox{[}\mbox{\hyperlink{classcharset__normalizer_1_1models_1_1CharsetMatch}{Charset\+Match}}\mbox{]} {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\hyperlink{classcharset__normalizer_1_1models_1_1CharsetMatch}{Charset\+Match}} \mbox{\hyperlink{classcharset__normalizer_1_1models_1_1CharsetMatches_a876413faf3b8d2f3f5c32d80ba562359}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, Union\mbox{[}int, str\mbox{]} item)
+\item 
+\mbox{\Hypertarget{classcharset__normalizer_1_1models_1_1CharsetMatches_ad56dff5c3360a182b5702e4ea19db076}\label{classcharset__normalizer_1_1models_1_1CharsetMatches_ad56dff5c3360a182b5702e4ea19db076}} 
+int {\bfseries \+\_\+\+\_\+len\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classcharset__normalizer_1_1models_1_1CharsetMatches_aa4ae3265060607a4d580521f6c9434ea}\label{classcharset__normalizer_1_1models_1_1CharsetMatches_aa4ae3265060607a4d580521f6c9434ea}} 
+bool {\bfseries \+\_\+\+\_\+bool\+\_\+\+\_\+} (self)
+\item 
+None \mbox{\hyperlink{classcharset__normalizer_1_1models_1_1CharsetMatches_a67f26ca3d40980d804e11649069c2f26}{append}} (self, \mbox{\hyperlink{classcharset__normalizer_1_1models_1_1CharsetMatch}{Charset\+Match}} item)
+\item 
+Optional\mbox{[}\char`\"{}Charset\+Match\char`\"{}\mbox{]} \mbox{\hyperlink{classcharset__normalizer_1_1models_1_1CharsetMatches_aa03f60f3ce3cd386ae176473654541fe}{best}} (self)
+\item 
+Optional\mbox{[}\char`\"{}Charset\+Match\char`\"{}\mbox{]} \mbox{\hyperlink{classcharset__normalizer_1_1models_1_1CharsetMatches_a61c2c198c415be4ee0ca81ba4dbba8e1}{first}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Container with every CharsetMatch items ordered by default from most probable to the less one.
+Act like a list(iterable) but does not implements all related methods.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcharset__normalizer_1_1models_1_1CharsetMatches_a876413faf3b8d2f3f5c32d80ba562359}\label{classcharset__normalizer_1_1models_1_1CharsetMatches_a876413faf3b8d2f3f5c32d80ba562359}} 
+\index{charset\_normalizer.models.CharsetMatches@{charset\_normalizer.models.CharsetMatches}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!charset\_normalizer.models.CharsetMatches@{charset\_normalizer.models.CharsetMatches}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classcharset__normalizer_1_1models_1_1CharsetMatch}{Charset\+Match}} charset\+\_\+normalizer.\+models.\+Charset\+Matches.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Union\mbox{[}int, str\mbox{]}}]{item }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieve a single item either by its position or encoding name (alias may be used here).
+Raise KeyError upon invalid index or encoding not present in results.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classcharset__normalizer_1_1models_1_1CharsetMatches_a67f26ca3d40980d804e11649069c2f26}\label{classcharset__normalizer_1_1models_1_1CharsetMatches_a67f26ca3d40980d804e11649069c2f26}} 
+\index{charset\_normalizer.models.CharsetMatches@{charset\_normalizer.models.CharsetMatches}!append@{append}}
+\index{append@{append}!charset\_normalizer.models.CharsetMatches@{charset\_normalizer.models.CharsetMatches}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily  None charset\+\_\+normalizer.\+models.\+Charset\+Matches.\+append (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classcharset__normalizer_1_1models_1_1CharsetMatch}{Charset\+Match}}}]{item }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Insert a single match. Will be inserted accordingly to preserve sort.
+Can be inserted as a submatch.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classcharset__normalizer_1_1models_1_1CharsetMatches_aa03f60f3ce3cd386ae176473654541fe}\label{classcharset__normalizer_1_1models_1_1CharsetMatches_aa03f60f3ce3cd386ae176473654541fe}} 
+\index{charset\_normalizer.models.CharsetMatches@{charset\_normalizer.models.CharsetMatches}!best@{best}}
+\index{best@{best}!charset\_normalizer.models.CharsetMatches@{charset\_normalizer.models.CharsetMatches}}
+\doxysubsubsection{\texorpdfstring{best()}{best()}}
+{\footnotesize\ttfamily  Optional\mbox{[}\char`\"{}Charset\+Match\char`\"{}\mbox{]} charset\+\_\+normalizer.\+models.\+Charset\+Matches.\+best (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Simply return the first match. Strict equivalent to matches[0].
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classcharset__normalizer_1_1models_1_1CharsetMatches_a61c2c198c415be4ee0ca81ba4dbba8e1}\label{classcharset__normalizer_1_1models_1_1CharsetMatches_a61c2c198c415be4ee0ca81ba4dbba8e1}} 
+\index{charset\_normalizer.models.CharsetMatches@{charset\_normalizer.models.CharsetMatches}!first@{first}}
+\index{first@{first}!charset\_normalizer.models.CharsetMatches@{charset\_normalizer.models.CharsetMatches}}
+\doxysubsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily  Optional\mbox{[}\char`\"{}Charset\+Match\char`\"{}\mbox{]} charset\+\_\+normalizer.\+models.\+Charset\+Matches.\+first (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Redundant method, call the method best(). Kept for BC reasons.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/charset\+\_\+normalizer/models.\+py\end{DoxyCompactItemize}

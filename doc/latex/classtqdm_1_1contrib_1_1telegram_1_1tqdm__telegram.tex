@@ -1,0 +1,73 @@
+\hypertarget{classtqdm_1_1contrib_1_1telegram_1_1tqdm__telegram}{}\doxysection{tqdm.\+contrib.\+telegram.\+tqdm\+\_\+telegram Class Reference}
+\label{classtqdm_1_1contrib_1_1telegram_1_1tqdm__telegram}\index{tqdm.contrib.telegram.tqdm\_telegram@{tqdm.contrib.telegram.tqdm\_telegram}}
+
+
+Inheritance diagram for tqdm.\+contrib.\+telegram.\+tqdm\+\_\+telegram\+:
+% FIG 0
+
+
+Collaboration diagram for tqdm.\+contrib.\+telegram.\+tqdm\+\_\+telegram\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classtqdm_1_1contrib_1_1telegram_1_1tqdm__telegram_a25dc3eec636f212fba43a02150c03de9}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1telegram_1_1tqdm__telegram_a127c51ac0ba7918c8f8066861c0ff352}\label{classtqdm_1_1contrib_1_1telegram_1_1tqdm__telegram_a127c51ac0ba7918c8f8066861c0ff352}} 
+def {\bfseries display} (self, $\ast$$\ast$kwargs)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1telegram_1_1tqdm__telegram_a9834bf8ed80dd61955abd03e6c6d2e16}\label{classtqdm_1_1contrib_1_1telegram_1_1tqdm__telegram_a9834bf8ed80dd61955abd03e6c6d2e16}} 
+def {\bfseries clear} (self, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1telegram_1_1tqdm__telegram_a0b7c5ee9ed24709f77c42305fcbaa8b8}\label{classtqdm_1_1contrib_1_1telegram_1_1tqdm__telegram_a0b7c5ee9ed24709f77c42305fcbaa8b8}} 
+def {\bfseries close} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1telegram_1_1tqdm__telegram_a70ecfdae6abe3cce212b23a218eda5bc}\label{classtqdm_1_1contrib_1_1telegram_1_1tqdm__telegram_a70ecfdae6abe3cce212b23a218eda5bc}} 
+{\bfseries tgio}
+\item 
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1telegram_1_1tqdm__telegram_a491999a648803b1aa6ef17a17671357e}\label{classtqdm_1_1contrib_1_1telegram_1_1tqdm__telegram_a491999a648803b1aa6ef17a17671357e}} 
+{\bfseries pos}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Standard `tqdm.auto.tqdm` but also sends updates to a Telegram Bot.
+May take a few seconds to create (`__init__`).
+
+- create a bot <https://core.telegram.org/bots#6-botfather>
+- copy its `{token}`
+- add the bot to a chat and send it a message such as `/start`
+- go to <https://api.telegram.org/bot`{token}`/getUpdates> to find out
+  the `{chat_id}`
+- paste the `{token}` & `{chat_id}` below
+
+>>> from tqdm.contrib.telegram import tqdm, trange
+>>> for i in tqdm(iterable, token='{token}', chat_id='{chat_id}'):
+...     ...
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtqdm_1_1contrib_1_1telegram_1_1tqdm__telegram_a25dc3eec636f212fba43a02150c03de9}\label{classtqdm_1_1contrib_1_1telegram_1_1tqdm__telegram_a25dc3eec636f212fba43a02150c03de9}} 
+\index{tqdm.contrib.telegram.tqdm\_telegram@{tqdm.contrib.telegram.tqdm\_telegram}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!tqdm.contrib.telegram.tqdm\_telegram@{tqdm.contrib.telegram.tqdm\_telegram}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def tqdm.\+contrib.\+telegram.\+tqdm\+\_\+telegram.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parameters
+----------
+token  : str, required. Telegram token
+    [default: ${TQDM_TELEGRAM_TOKEN}].
+chat_id  : str, required. Telegram chat ID
+    [default: ${TQDM_TELEGRAM_CHAT_ID}].
+
+See `tqdm.auto.tqdm.__init__` for other parameters.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/tqdm/contrib/telegram.\+py\end{DoxyCompactItemize}

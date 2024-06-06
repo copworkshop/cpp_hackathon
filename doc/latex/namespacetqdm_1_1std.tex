@@ -1,0 +1,61 @@
+\hypertarget{namespacetqdm_1_1std}{}\doxysection{tqdm.\+std Namespace Reference}
+\label{namespacetqdm_1_1std}\index{tqdm.std@{tqdm.std}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1std_1_1TqdmTypeError}{Tqdm\+Type\+Error}}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1std_1_1TqdmKeyError}{Tqdm\+Key\+Error}}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1std_1_1TqdmWarning}{Tqdm\+Warning}}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1std_1_1TqdmExperimentalWarning}{Tqdm\+Experimental\+Warning}}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1std_1_1TqdmDeprecationWarning}{Tqdm\+Deprecation\+Warning}}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1std_1_1TqdmMonitorWarning}{Tqdm\+Monitor\+Warning}}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1std_1_1TqdmDefaultWriteLock}{Tqdm\+Default\+Write\+Lock}}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1std_1_1Bar}{Bar}}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1std_1_1EMA}{EMA}}
+\item 
+class \mbox{\hyperlink{classtqdm_1_1std_1_1tqdm}{tqdm}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacetqdm_1_1std_ae54e45a01a9e5409ea4113e606915937}{TRLock}} ($\ast$args, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{namespacetqdm_1_1std_a16445daf44386a16dac5c16bac56b021}{trange}} ($\ast$args, $\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Customisable progressbar decorator for iterators.
+Includes a default `range` iterator printing to `stderr`.
+
+Usage:
+>>> from tqdm import trange, tqdm
+>>> for i in trange(10):
+...     ...
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetqdm_1_1std_a16445daf44386a16dac5c16bac56b021}\label{namespacetqdm_1_1std_a16445daf44386a16dac5c16bac56b021}} 
+\index{tqdm.std@{tqdm.std}!trange@{trange}}
+\index{trange@{trange}!tqdm.std@{tqdm.std}}
+\doxysubsubsection{\texorpdfstring{trange()}{trange()}}
+{\footnotesize\ttfamily def tqdm.\+std.\+trange (\begin{DoxyParamCaption}\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for tqdm(range(*args), **kwargs).\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacetqdm_1_1std_ae54e45a01a9e5409ea4113e606915937}\label{namespacetqdm_1_1std_ae54e45a01a9e5409ea4113e606915937}} 
+\index{tqdm.std@{tqdm.std}!TRLock@{TRLock}}
+\index{TRLock@{TRLock}!tqdm.std@{tqdm.std}}
+\doxysubsubsection{\texorpdfstring{TRLock()}{TRLock()}}
+{\footnotesize\ttfamily def tqdm.\+std.\+TRLock (\begin{DoxyParamCaption}\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}threading RLock\end{DoxyVerb}
+ 

@@ -1,0 +1,83 @@
+\hypertarget{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer}{}\doxysection{pygments.\+lexers.\+jvm.\+Clojure\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer}\index{pygments.lexers.jvm.ClojureLexer@{pygments.lexers.jvm.ClojureLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+jvm.\+Clojure\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+jvm.\+Clojure\+Lexer\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer_a79568e5a91cd9507b235be725b96700a}\label{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer_a79568e5a91cd9507b235be725b96700a}} 
+string {\bfseries name} = \textquotesingle{}Clojure\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer_ac24c34728a525cd27397fb8631534e89}\label{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer_ac24c34728a525cd27397fb8631534e89}} 
+string {\bfseries url} = \textquotesingle{}http\+://clojure.\+org/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer_aa4b57ed14f8786e3af39d2a88cfc72b6}\label{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer_aa4b57ed14f8786e3af39d2a88cfc72b6}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}clojure\textquotesingle{}, \textquotesingle{}clj\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer_ab816070a1661e15102d91b64f4c5171f}\label{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer_ab816070a1661e15102d91b64f4c5171f}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.clj\textquotesingle{}, \textquotesingle{}$\ast$.cljc\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer_a7f626371e48dea7913f1d003fdf27b3c}\label{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer_a7f626371e48dea7913f1d003fdf27b3c}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/clojure\textquotesingle{}, \textquotesingle{}application/x-\/clojure\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer_a9aeaa70c8f4904c122317d826aa0eb1c}\label{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer_a9aeaa70c8f4904c122317d826aa0eb1c}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}0.\+11\textquotesingle{}
+\item 
+tuple {\bfseries special\+\_\+forms}
+\item 
+tuple {\bfseries declarations}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer_a801f72d695b5206ee38d9eabf3981057}\label{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer_a801f72d695b5206ee38d9eabf3981057}} 
+tuple {\bfseries builtins}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer_a0127760fceddccd4673694c56cbf9ad1}\label{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer_a0127760fceddccd4673694c56cbf9ad1}} 
+string {\bfseries valid\+\_\+name} = r\textquotesingle{}(?!\#)\mbox{[}\textbackslash{}w!\$\%$\ast$+$<$=$>$?/.\#$\vert$-\/\mbox{]}+\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lexer for Clojure source code.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer_aa94a51d298ba34b1c7f32c668f5d736a}\label{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer_aa94a51d298ba34b1c7f32c668f5d736a}} 
+\index{pygments.lexers.jvm.ClojureLexer@{pygments.lexers.jvm.ClojureLexer}!declarations@{declarations}}
+\index{declarations@{declarations}!pygments.lexers.jvm.ClojureLexer@{pygments.lexers.jvm.ClojureLexer}}
+\doxysubsubsection{\texorpdfstring{declarations}{declarations}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+jvm.\+Clojure\+Lexer.\+declarations\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (}
+\DoxyCodeLine{        \textcolor{stringliteral}{'def-\/'}, \textcolor{stringliteral}{'defn'}, \textcolor{stringliteral}{'defn-\/'}, \textcolor{stringliteral}{'defmacro'}, \textcolor{stringliteral}{'defmulti'}, \textcolor{stringliteral}{'defmethod'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'defstruct'}, \textcolor{stringliteral}{'defonce'}, \textcolor{stringliteral}{'declare'}, \textcolor{stringliteral}{'definline'}, \textcolor{stringliteral}{'definterface'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'defprotocol'}, \textcolor{stringliteral}{'defrecord'}, \textcolor{stringliteral}{'deftype'}, \textcolor{stringliteral}{'defproject'}, \textcolor{stringliteral}{'ns'}}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer_afd3d7e2533ac6f5a8bcc2392cc0a7416}\label{classpygments_1_1lexers_1_1jvm_1_1ClojureLexer_afd3d7e2533ac6f5a8bcc2392cc0a7416}} 
+\index{pygments.lexers.jvm.ClojureLexer@{pygments.lexers.jvm.ClojureLexer}!special\_forms@{special\_forms}}
+\index{special\_forms@{special\_forms}!pygments.lexers.jvm.ClojureLexer@{pygments.lexers.jvm.ClojureLexer}}
+\doxysubsubsection{\texorpdfstring{special\_forms}{special\_forms}}
+{\footnotesize\ttfamily tuple pygments.\+lexers.\+jvm.\+Clojure\+Lexer.\+special\+\_\+forms\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  (}
+\DoxyCodeLine{        \textcolor{stringliteral}{'.'}, \textcolor{stringliteral}{'def'}, \textcolor{stringliteral}{'do'}, \textcolor{stringliteral}{'fn'}, \textcolor{stringliteral}{'if'}, \textcolor{stringliteral}{'let'}, \textcolor{stringliteral}{'new'}, \textcolor{stringliteral}{'quote'}, \textcolor{stringliteral}{'var'}, \textcolor{stringliteral}{'loop'}}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/jvm.\+py\end{DoxyCompactItemize}

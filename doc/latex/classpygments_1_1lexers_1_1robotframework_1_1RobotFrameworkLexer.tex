@@ -1,0 +1,101 @@
+\hypertarget{classpygments_1_1lexers_1_1robotframework_1_1RobotFrameworkLexer}{}\doxysection{pygments.\+lexers.\+robotframework.\+Robot\+Framework\+Lexer Class Reference}
+\label{classpygments_1_1lexers_1_1robotframework_1_1RobotFrameworkLexer}\index{pygments.lexers.robotframework.RobotFrameworkLexer@{pygments.lexers.robotframework.RobotFrameworkLexer}}
+
+
+Inheritance diagram for pygments.\+lexers.\+robotframework.\+Robot\+Framework\+Lexer\+:
+% FIG 0
+
+
+Collaboration diagram for pygments.\+lexers.\+robotframework.\+Robot\+Framework\+Lexer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1robotframework_1_1RobotFrameworkLexer_a0e1c96937d71a4802374db4aab92112e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$$\ast$options)
+\item 
+def \mbox{\hyperlink{classpygments_1_1lexers_1_1robotframework_1_1RobotFrameworkLexer_a21b94b0ce4d64b54e74be057a0a5170c}{get\+\_\+tokens\+\_\+unprocessed}} (self, text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1robotframework_1_1RobotFrameworkLexer_a9ec643b3a6ad1be59d337b47e2c54c79}\label{classpygments_1_1lexers_1_1robotframework_1_1RobotFrameworkLexer_a9ec643b3a6ad1be59d337b47e2c54c79}} 
+string {\bfseries name} = \textquotesingle{}Robot\+Framework\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1robotframework_1_1RobotFrameworkLexer_a1da8659b1b80b289fbb971033fdcff3a}\label{classpygments_1_1lexers_1_1robotframework_1_1RobotFrameworkLexer_a1da8659b1b80b289fbb971033fdcff3a}} 
+string {\bfseries url} = \textquotesingle{}http\+://robotframework.\+org\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1robotframework_1_1RobotFrameworkLexer_a0f2d7a235298988b45dcebc2e646cc76}\label{classpygments_1_1lexers_1_1robotframework_1_1RobotFrameworkLexer_a0f2d7a235298988b45dcebc2e646cc76}} 
+list {\bfseries aliases} = \mbox{[}\textquotesingle{}robotframework\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1robotframework_1_1RobotFrameworkLexer_a386b17b88e3c636dbac44d2122dc1b31}\label{classpygments_1_1lexers_1_1robotframework_1_1RobotFrameworkLexer_a386b17b88e3c636dbac44d2122dc1b31}} 
+list {\bfseries filenames} = \mbox{[}\textquotesingle{}$\ast$.robot\textquotesingle{}, \textquotesingle{}$\ast$.resource\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1robotframework_1_1RobotFrameworkLexer_a01b0fd89377db513387c02f4a1f0155f}\label{classpygments_1_1lexers_1_1robotframework_1_1RobotFrameworkLexer_a01b0fd89377db513387c02f4a1f0155f}} 
+list {\bfseries mimetypes} = \mbox{[}\textquotesingle{}text/x-\/robotframework\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1robotframework_1_1RobotFrameworkLexer_aba8b1a06e405739e050abc676c633d56}\label{classpygments_1_1lexers_1_1robotframework_1_1RobotFrameworkLexer_aba8b1a06e405739e050abc676c633d56}} 
+string {\bfseries version\+\_\+added} = \textquotesingle{}1.\+6\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For Robot Framework test data.
+
+Supports both space and pipe separated plain text formats.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1robotframework_1_1RobotFrameworkLexer_a0e1c96937d71a4802374db4aab92112e}\label{classpygments_1_1lexers_1_1robotframework_1_1RobotFrameworkLexer_a0e1c96937d71a4802374db4aab92112e}} 
+\index{pygments.lexers.robotframework.RobotFrameworkLexer@{pygments.lexers.robotframework.RobotFrameworkLexer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pygments.lexers.robotframework.RobotFrameworkLexer@{pygments.lexers.robotframework.RobotFrameworkLexer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+robotframework.\+Robot\+Framework\+Lexer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This constructor takes arbitrary options as keyword arguments.
+Every subclass must first process its own options and then call
+the `Lexer` constructor, since it processes the basic
+options like `stripnl`.
+
+An example looks like this:
+
+.. sourcecode:: python
+
+   def __init__(self, **options):
+       self.compress = options.get('compress', '')
+       Lexer.__init__(self, **options)
+
+As these options must all be specifiable as strings (due to the
+command line usage), there are various utility functions
+available to help with that, see `Utilities`_.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_ada928d32346707cdabc4a23af3b35b4a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygments_1_1lexers_1_1robotframework_1_1RobotFrameworkLexer_a21b94b0ce4d64b54e74be057a0a5170c}\label{classpygments_1_1lexers_1_1robotframework_1_1RobotFrameworkLexer_a21b94b0ce4d64b54e74be057a0a5170c}} 
+\index{pygments.lexers.robotframework.RobotFrameworkLexer@{pygments.lexers.robotframework.RobotFrameworkLexer}!get\_tokens\_unprocessed@{get\_tokens\_unprocessed}}
+\index{get\_tokens\_unprocessed@{get\_tokens\_unprocessed}!pygments.lexers.robotframework.RobotFrameworkLexer@{pygments.lexers.robotframework.RobotFrameworkLexer}}
+\doxysubsubsection{\texorpdfstring{get\_tokens\_unprocessed()}{get\_tokens\_unprocessed()}}
+{\footnotesize\ttfamily def pygments.\+lexers.\+robotframework.\+Robot\+Framework\+Lexer.\+get\+\_\+tokens\+\_\+unprocessed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method should process the text and return an iterable of
+``(index, tokentype, value)`` tuples where ``index`` is the starting
+position of the token within the input text.
+
+It must be overridden by subclasses. It is recommended to
+implement it as a generator to maximize effectiveness.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1Lexer_aad5c02b7f661f64f91cf8c8d880e9f67}{pygments.\+lexer.\+Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/pygments/lexers/robotframework.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,115 @@
+\hypertarget{namespaceurllib3_1_1contrib_1_1securetransport}{}\doxysection{urllib3.\+contrib.\+securetransport Namespace Reference}
+\label{namespaceurllib3_1_1contrib_1_1securetransport}\index{urllib3.contrib.securetransport@{urllib3.contrib.securetransport}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classurllib3_1_1contrib_1_1securetransport_1_1WrappedSocket}{Wrapped\+Socket}}
+\item 
+class \mbox{\hyperlink{classurllib3_1_1contrib_1_1securetransport_1_1SecureTransportContext}{Secure\+Transport\+Context}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceurllib3_1_1contrib_1_1securetransport_a0296b0515f93027d94586ca6a70d4402}{inject\+\_\+into\+\_\+urllib3}} ()
+\item 
+def \mbox{\hyperlink{namespaceurllib3_1_1contrib_1_1securetransport_a58056749d1677ea1d6189f0dfc680116}{extract\+\_\+from\+\_\+urllib3}} ()
+\item 
+\mbox{\Hypertarget{namespaceurllib3_1_1contrib_1_1securetransport_aa1f2fd9c09a76267311a6051a0ceef34}\label{namespaceurllib3_1_1contrib_1_1securetransport_aa1f2fd9c09a76267311a6051a0ceef34}} 
+def {\bfseries makefile} (self, mode, bufsize=-\/1)
+\item 
+\mbox{\Hypertarget{namespaceurllib3_1_1contrib_1_1securetransport_a834a4b936ddb74d75418f822ebfe61fb}\label{namespaceurllib3_1_1contrib_1_1securetransport_a834a4b936ddb74d75418f822ebfe61fb}} 
+def {\bfseries makefile} (self, mode=\char`\"{}r\char`\"{}, buffering=None, $\ast$args, $\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceurllib3_1_1contrib_1_1securetransport_a39f244ac9683a24a051e3e6aa00c9169}\label{namespaceurllib3_1_1contrib_1_1securetransport_a39f244ac9683a24a051e3e6aa00c9169}} 
+bool {\bfseries HAS\+\_\+\+SNI} = True
+\item 
+\mbox{\Hypertarget{namespaceurllib3_1_1contrib_1_1securetransport_a8d36c792d72806b546d2802235260b58}\label{namespaceurllib3_1_1contrib_1_1securetransport_a8d36c792d72806b546d2802235260b58}} 
+bool {\bfseries orig\+\_\+util\+\_\+\+HAS\+\_\+\+SNI} = util.\+HAS\+\_\+\+SNI
+\item 
+\mbox{\Hypertarget{namespaceurllib3_1_1contrib_1_1securetransport_aea4aa8c5d39fb95d8efc7d7a46ff5eaf}\label{namespaceurllib3_1_1contrib_1_1securetransport_aea4aa8c5d39fb95d8efc7d7a46ff5eaf}} 
+{\bfseries orig\+\_\+util\+\_\+\+SSLContext} = \mbox{\hyperlink{classurllib3_1_1util_1_1ssl___1_1SSLContext}{util.\+ssl\+\_\+.\+SSLContext}}
+\item 
+\mbox{\Hypertarget{namespaceurllib3_1_1contrib_1_1securetransport_ad3f67e932b4ef0486696ab52dc880e6b}\label{namespaceurllib3_1_1contrib_1_1securetransport_ad3f67e932b4ef0486696ab52dc880e6b}} 
+int {\bfseries SSL\+\_\+\+WRITE\+\_\+\+BLOCKSIZE} = 16384
+\item 
+\mbox{\Hypertarget{namespaceurllib3_1_1contrib_1_1securetransport_a9e4e63154c3c8c51f96613e3f2a21a4e}\label{namespaceurllib3_1_1contrib_1_1securetransport_a9e4e63154c3c8c51f96613e3f2a21a4e}} 
+list {\bfseries CIPHER\+\_\+\+SUITES}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}SecureTranport support for urllib3 via ctypes.
+
+This makes platform-native TLS available to urllib3 users on macOS without the
+use of a compiler. This is an important feature because the Python Package
+Index is moving to become a TLSv1.2-or-higher server, and the default OpenSSL
+that ships with macOS is not capable of doing TLSv1.2. The only way to resolve
+this is to give macOS users an alternative solution to the problem, and that
+solution is to use SecureTransport.
+
+We use ctypes here because this solution must not require a compiler. That's
+because pip is not allowed to require a compiler either.
+
+This is not intended to be a seriously long-term solution to this problem.
+The hope is that PEP 543 will eventually solve this issue for us, at which
+point we can retire this contrib module. But in the short term, we need to
+solve the impending tire fire that is Python on Mac without this kind of
+contrib module. So...here we are.
+
+To use this module, simply import and inject it::
+
+    import urllib3.contrib.securetransport
+    urllib3.contrib.securetransport.inject_into_urllib3()
+
+Happy TLSing!
+
+This code is a bastardised version of the code found in Will Bond's oscrypto
+library. An enormous debt is owed to him for blazing this trail for us. For
+that reason, this code should be considered to be covered both by urllib3's
+license and by oscrypto's:
+
+.. code-block::
+
+    Copyright (c) 2015-2016 Will Bond <will@wbond.net>
+
+    Permission is hereby granted, free of charge, to any person obtaining a
+    copy of this software and associated documentation files (the "Software"),
+    to deal in the Software without restriction, including without limitation
+    the rights to use, copy, modify, merge, publish, distribute, sublicense,
+    and/or sell copies of the Software, and to permit persons to whom the
+    Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+    DEALINGS IN THE SOFTWARE.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceurllib3_1_1contrib_1_1securetransport_a58056749d1677ea1d6189f0dfc680116}\label{namespaceurllib3_1_1contrib_1_1securetransport_a58056749d1677ea1d6189f0dfc680116}} 
+\index{urllib3.contrib.securetransport@{urllib3.contrib.securetransport}!extract\_from\_urllib3@{extract\_from\_urllib3}}
+\index{extract\_from\_urllib3@{extract\_from\_urllib3}!urllib3.contrib.securetransport@{urllib3.contrib.securetransport}}
+\doxysubsubsection{\texorpdfstring{extract\_from\_urllib3()}{extract\_from\_urllib3()}}
+{\footnotesize\ttfamily def urllib3.\+contrib.\+securetransport.\+extract\+\_\+from\+\_\+urllib3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Undo monkey-patching by :func:`inject_into_urllib3`.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceurllib3_1_1contrib_1_1securetransport_a0296b0515f93027d94586ca6a70d4402}\label{namespaceurllib3_1_1contrib_1_1securetransport_a0296b0515f93027d94586ca6a70d4402}} 
+\index{urllib3.contrib.securetransport@{urllib3.contrib.securetransport}!inject\_into\_urllib3@{inject\_into\_urllib3}}
+\index{inject\_into\_urllib3@{inject\_into\_urllib3}!urllib3.contrib.securetransport@{urllib3.contrib.securetransport}}
+\doxysubsubsection{\texorpdfstring{inject\_into\_urllib3()}{inject\_into\_urllib3()}}
+{\footnotesize\ttfamily def urllib3.\+contrib.\+securetransport.\+inject\+\_\+into\+\_\+urllib3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Monkey-patch urllib3 with SecureTransport-backed SSL-support.
+\end{DoxyVerb}
+ 

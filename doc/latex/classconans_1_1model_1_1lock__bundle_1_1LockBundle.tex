@@ -1,0 +1,85 @@
+\hypertarget{classconans_1_1model_1_1lock__bundle_1_1LockBundle}{}\doxysection{conans.\+model.\+lock\+\_\+bundle.\+Lock\+Bundle Class Reference}
+\label{classconans_1_1model_1_1lock__bundle_1_1LockBundle}\index{conans.model.lock\_bundle.LockBundle@{conans.model.lock\_bundle.LockBundle}}
+
+
+Inheritance diagram for conans.\+model.\+lock\+\_\+bundle.\+Lock\+Bundle\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+model.\+lock\+\_\+bundle.\+Lock\+Bundle\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1lock__bundle_1_1LockBundle_ac49e4907deb333f870b26f3c8fe45d3f}\label{classconans_1_1model_1_1lock__bundle_1_1LockBundle_ac49e4907deb333f870b26f3c8fe45d3f}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1lock__bundle_1_1LockBundle_a818519b6d802c85c76d88969de60e454}\label{classconans_1_1model_1_1lock__bundle_1_1LockBundle_a818519b6d802c85c76d88969de60e454}} 
+def {\bfseries dumps} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1lock__bundle_1_1LockBundle_abeed0886c379121bb64bd6ebbf8abd4e}\label{classconans_1_1model_1_1lock__bundle_1_1LockBundle_abeed0886c379121bb64bd6ebbf8abd4e}} 
+def {\bfseries loads} (self, text)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1lock__bundle_1_1LockBundle_ab7cf73038ec11f636db10fd4b08f3838}\label{classconans_1_1model_1_1lock__bundle_1_1LockBundle_ab7cf73038ec11f636db10fd4b08f3838}} 
+def {\bfseries build\+\_\+order} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1lock__bundle_1_1LockBundle_aee9f3987afed0bc4db56f860f117d03d}\label{classconans_1_1model_1_1lock__bundle_1_1LockBundle_aee9f3987afed0bc4db56f860f117d03d}} 
+def {\bfseries create} (lockfiles, revisions\+\_\+enabled, cwd)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1lock__bundle_1_1LockBundle_a3449607e014ed36a5923140397a66653}{update\+\_\+bundle}} (bundle\+\_\+path, revisions\+\_\+enabled)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1lock__bundle_1_1LockBundle_aee7aff14f0cea606ff5b9dff855b85b3}\label{classconans_1_1model_1_1lock__bundle_1_1LockBundle_aee7aff14f0cea606ff5b9dff855b85b3}} 
+def {\bfseries clean\+\_\+modified} (bundle\+\_\+path, revisions\+\_\+enabled)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} aggregated view of multiple lockfiles, coming from different configurations and also
+different products, that is, completely independent graphs, that could have incompatible
+versions. This bundle is not useful for restoring a state for a configuration, cannot be
+used to lock a graph, but it it useful for computing the build order in CI for multiple
+products. The format is a json with: For every reference, for each "package_id" for that
+reference, list the lockfiles that contain such reference:package_id and the node indexes
+inside that lockfile
+
+lock_bundle": {
+    "app1/0.1@#584778f98ba1d0eb7c80a5ae1fe12fe2": {
+        "packages": [
+            {
+                "package_id": "3bcd6800847f779e0883ee91b411aad9ddd8e83c",
+                "lockfiles": {
+                    "app1_windows.lock": [
+                        "1"
+                    ]
+                },
+                "prev": null,
+                "modified": null
+            },
+        ],
+        "requires": [
+            "pkgb/0.1@#cd8f22d6f264f65398d8c534046e8e20",
+            "tool/0.1@#f096d7d54098b7ad7012f9435d9c33f3"
+        ]
+    },
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1model_1_1lock__bundle_1_1LockBundle_a3449607e014ed36a5923140397a66653}\label{classconans_1_1model_1_1lock__bundle_1_1LockBundle_a3449607e014ed36a5923140397a66653}} 
+\index{conans.model.lock\_bundle.LockBundle@{conans.model.lock\_bundle.LockBundle}!update\_bundle@{update\_bundle}}
+\index{update\_bundle@{update\_bundle}!conans.model.lock\_bundle.LockBundle@{conans.model.lock\_bundle.LockBundle}}
+\doxysubsubsection{\texorpdfstring{update\_bundle()}{update\_bundle()}}
+{\footnotesize\ttfamily def conans.\+model.\+lock\+\_\+bundle.\+Lock\+Bundle.\+update\+\_\+bundle (\begin{DoxyParamCaption}\item[{}]{bundle\+\_\+path,  }\item[{}]{revisions\+\_\+enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb} Update both the bundle information as well as every individual lockfile, from the
+information that was modified in the individual lockfile. At the end, all lockfiles will
+have the same PREV for the binary of same package_id
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/model/lock\+\_\+bundle.\+py\end{DoxyCompactItemize}

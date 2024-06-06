@@ -1,0 +1,183 @@
+\hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock}{}\doxysection{conans.\+model.\+graph\+\_\+lock.\+Graph\+Lock Class Reference}
+\label{classconans_1_1model_1_1graph__lock_1_1GraphLock}\index{conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}}
+
+
+Inheritance diagram for conans.\+model.\+graph\+\_\+lock.\+Graph\+Lock\+:
+% FIG 0
+
+
+Collaboration diagram for conans.\+model.\+graph\+\_\+lock.\+Graph\+Lock\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock_a7ee78bf6e46b9af6a99c60ae0d0ab927}\label{classconans_1_1model_1_1graph__lock_1_1GraphLock_a7ee78bf6e46b9af6a99c60ae0d0ab927}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, deps\+\_\+graph, revisions\+\_\+enabled)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock_a0e83bbe9ab6a60a2ce911690f9efd0f4}\label{classconans_1_1model_1_1graph__lock_1_1GraphLock_a0e83bbe9ab6a60a2ce911690f9efd0f4}} 
+def {\bfseries nodes} (self)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1graph__lock_1_1GraphLock_a15f459cb66d1d432d69967a29cee75b3}{relax}} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock_aad4a7edce49ad4e4a1455ab30ef5e577}\label{classconans_1_1model_1_1graph__lock_1_1GraphLock_aad4a7edce49ad4e4a1455ab30ef5e577}} 
+def {\bfseries relaxed} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock_a2368d749d29ae962e7faa1b0189c2ca0}\label{classconans_1_1model_1_1graph__lock_1_1GraphLock_a2368d749d29ae962e7faa1b0189c2ca0}} 
+def {\bfseries clean\+\_\+modified} (self)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1graph__lock_1_1GraphLock_a60408edcd12d8aeed649be98670a6dc0}{build\+\_\+order}} (self)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1graph__lock_1_1GraphLock_af43e7fdb696879a52bb374a20eaadb52}{complete\+\_\+matching\+\_\+prevs}} (self)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1graph__lock_1_1GraphLock_a2496fce63da2dbd357bebb62b79d698a}{only\+\_\+recipes}} (self)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1graph__lock_1_1GraphLock_a89d6138b43899877f7cd7b7e255936af}{initial\+\_\+counter}} (self)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock_ad87fd7d8462bc42c4a3aef17ccb608c9}\label{classconans_1_1model_1_1graph__lock_1_1GraphLock_ad87fd7d8462bc42c4a3aef17ccb608c9}} 
+def {\bfseries root\+\_\+node\+\_\+id} (self)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1graph__lock_1_1GraphLock_a0fb1131fce506d08c447092620de9fcf}{serialize}} (self)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1graph__lock_1_1GraphLock_a27719c34dd845cb3981aa2d5b1a5d705}{update\+\_\+lock}} (self, new\+\_\+lock)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock_a05ff5532c1bd6319ea25cc6a15338f89}\label{classconans_1_1model_1_1graph__lock_1_1GraphLock_a05ff5532c1bd6319ea25cc6a15338f89}} 
+def {\bfseries pre\+\_\+lock\+\_\+node} (self, node)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1graph__lock_1_1GraphLock_af81b3d461f9895f2487fe320c8b1bf90}{lock\+\_\+node}} (self, node, requires, build\+\_\+requires=False)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock_a3a66791d80cd199060d35c001cd2661e}\label{classconans_1_1model_1_1graph__lock_1_1GraphLock_a3a66791d80cd199060d35c001cd2661e}} 
+def {\bfseries check\+\_\+locked\+\_\+build\+\_\+requires} (self, node, package\+\_\+build\+\_\+requires, profile\+\_\+build\+\_\+requires)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock_ac5faaa80221be8f6c8ea420142a6bcc2}\label{classconans_1_1model_1_1graph__lock_1_1GraphLock_ac5faaa80221be8f6c8ea420142a6bcc2}} 
+def {\bfseries python\+\_\+requires} (self, node\+\_\+id)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1graph__lock_1_1GraphLock_a16638f4c9765c6ed85bbc588a911446a}{get\+\_\+consumer}} (self, ref)
+\item 
+\mbox{\Hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock_ad0a4295b7494fa3ed470b4ab1da364fd}\label{classconans_1_1model_1_1graph__lock_1_1GraphLock_ad0a4295b7494fa3ed470b4ab1da364fd}} 
+def {\bfseries find\+\_\+require\+\_\+and\+\_\+lock} (self, reference, conanfile, lockfile\+\_\+node\+\_\+id=None)
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1graph__lock_1_1GraphLock_a48b0d14fc71bce9e0095ac941b51e85a}{update\+\_\+exported\+\_\+ref}} (self, node\+\_\+id, ref)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classconans_1_1model_1_1graph__lock_1_1GraphLock_a82f3c47251009e7cb8e00dc509196165}{deserialize}} (data, revisions\+\_\+enabled)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock_a60408edcd12d8aeed649be98670a6dc0}\label{classconans_1_1model_1_1graph__lock_1_1GraphLock_a60408edcd12d8aeed649be98670a6dc0}} 
+\index{conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}!build\_order@{build\_order}}
+\index{build\_order@{build\_order}!conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}}
+\doxysubsubsection{\texorpdfstring{build\_order()}{build\_order()}}
+{\footnotesize\ttfamily def conans.\+model.\+graph\+\_\+lock.\+Graph\+Lock.\+build\+\_\+order (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} This build order uses empty PREVs to decide which packages need to be built
+
+:return: An ordered list of lists, each inner element is a tuple with the node ID and the
+         reference (as string), possibly including revision, of the node
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock_af43e7fdb696879a52bb374a20eaadb52}\label{classconans_1_1model_1_1graph__lock_1_1GraphLock_af43e7fdb696879a52bb374a20eaadb52}} 
+\index{conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}!complete\_matching\_prevs@{complete\_matching\_prevs}}
+\index{complete\_matching\_prevs@{complete\_matching\_prevs}!conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}}
+\doxysubsubsection{\texorpdfstring{complete\_matching\_prevs()}{complete\_matching\_prevs()}}
+{\footnotesize\ttfamily def conans.\+model.\+graph\+\_\+lock.\+Graph\+Lock.\+complete\+\_\+matching\+\_\+prevs (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} when a build_require that has the same ref and package_id is built, only one node
+gets its PREV updated. This method fills the repeated nodes missing PREV to the same one.
+The build-order only returned 1 node (matching ref:package_id).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock_a82f3c47251009e7cb8e00dc509196165}\label{classconans_1_1model_1_1graph__lock_1_1GraphLock_a82f3c47251009e7cb8e00dc509196165}} 
+\index{conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily def conans.\+model.\+graph\+\_\+lock.\+Graph\+Lock.\+deserialize (\begin{DoxyParamCaption}\item[{}]{data,  }\item[{}]{revisions\+\_\+enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb} constructs a GraphLock from a json like dict
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock_a16638f4c9765c6ed85bbc588a911446a}\label{classconans_1_1model_1_1graph__lock_1_1GraphLock_a16638f4c9765c6ed85bbc588a911446a}} 
+\index{conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}!get\_consumer@{get\_consumer}}
+\index{get\_consumer@{get\_consumer}!conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}}
+\doxysubsubsection{\texorpdfstring{get\_consumer()}{get\_consumer()}}
+{\footnotesize\ttfamily def conans.\+model.\+graph\+\_\+lock.\+Graph\+Lock.\+get\+\_\+consumer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ref }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} given a REF of a conanfile.txt (None) or conanfile.py in user folder,
+return the Node of the package in the lockfile that correspond to that
+REF, or raise if it cannot find it.
+First, search with REF without revisions is done, then approximate search by just name
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock_a89d6138b43899877f7cd7b7e255936af}\label{classconans_1_1model_1_1graph__lock_1_1GraphLock_a89d6138b43899877f7cd7b7e255936af}} 
+\index{conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}!initial\_counter@{initial\_counter}}
+\index{initial\_counter@{initial\_counter}!conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}}
+\doxysubsubsection{\texorpdfstring{initial\_counter()}{initial\_counter()}}
+{\footnotesize\ttfamily def conans.\+model.\+graph\+\_\+lock.\+Graph\+Lock.\+initial\+\_\+counter (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} When a new, relaxed graph is being created based on this lockfile, it can add new
+nodes. The IDs of those nodes need a base ID, to not collide with the existing ones
+
+:return: the maximum ID of this lockfile, as integer
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock_af81b3d461f9895f2487fe320c8b1bf90}\label{classconans_1_1model_1_1graph__lock_1_1GraphLock_af81b3d461f9895f2487fe320c8b1bf90}} 
+\index{conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}!lock\_node@{lock\_node}}
+\index{lock\_node@{lock\_node}!conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}}
+\doxysubsubsection{\texorpdfstring{lock\_node()}{lock\_node()}}
+{\footnotesize\ttfamily def conans.\+model.\+graph\+\_\+lock.\+Graph\+Lock.\+lock\+\_\+node (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{node,  }\item[{}]{requires,  }\item[{}]{build\+\_\+requires = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} apply options and constraints on requirements of a node, given the information from
+the lockfile. Requires remove their version ranges.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock_a2496fce63da2dbd357bebb62b79d698a}\label{classconans_1_1model_1_1graph__lock_1_1GraphLock_a2496fce63da2dbd357bebb62b79d698a}} 
+\index{conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}!only\_recipes@{only\_recipes}}
+\index{only\_recipes@{only\_recipes}!conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}}
+\doxysubsubsection{\texorpdfstring{only\_recipes()}{only\_recipes()}}
+{\footnotesize\ttfamily def conans.\+model.\+graph\+\_\+lock.\+Graph\+Lock.\+only\+\_\+recipes (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} call this method to remove the packages/binaries information from the lockfile, and
+keep only the reference version and RREV. A lockfile with this stripped information can
+be used for creating new lockfiles based on it
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock_a15f459cb66d1d432d69967a29cee75b3}\label{classconans_1_1model_1_1graph__lock_1_1GraphLock_a15f459cb66d1d432d69967a29cee75b3}} 
+\index{conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}!relax@{relax}}
+\index{relax@{relax}!conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}}
+\doxysubsubsection{\texorpdfstring{relax()}{relax()}}
+{\footnotesize\ttfamily def conans.\+model.\+graph\+\_\+lock.\+Graph\+Lock.\+relax (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} A lockfile is strict in its topology. It cannot add new nodes, have non-locked
+requirements or have unused locked requirements. This method is called only:
+- With "conan lock create --lockfile=existing --lockfile-out=new
+- for the "test_package" functionality, as test_package/conanfile.py can have requirements
+  and those will never exist in the lockfile
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock_a0fb1131fce506d08c447092620de9fcf}\label{classconans_1_1model_1_1graph__lock_1_1GraphLock_a0fb1131fce506d08c447092620de9fcf}} 
+\index{conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}!serialize@{serialize}}
+\index{serialize@{serialize}!conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily def conans.\+model.\+graph\+\_\+lock.\+Graph\+Lock.\+serialize (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} returns the object serialized as a dict of plain python types
+that can be converted to json
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock_a48b0d14fc71bce9e0095ac941b51e85a}\label{classconans_1_1model_1_1graph__lock_1_1GraphLock_a48b0d14fc71bce9e0095ac941b51e85a}} 
+\index{conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}!update\_exported\_ref@{update\_exported\_ref}}
+\index{update\_exported\_ref@{update\_exported\_ref}!conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}}
+\doxysubsubsection{\texorpdfstring{update\_exported\_ref()}{update\_exported\_ref()}}
+{\footnotesize\ttfamily def conans.\+model.\+graph\+\_\+lock.\+Graph\+Lock.\+update\+\_\+exported\+\_\+ref (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{node\+\_\+id,  }\item[{}]{ref }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} when the recipe is exported, it will complete the missing RREV, otherwise it should
+match the existing RREV
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classconans_1_1model_1_1graph__lock_1_1GraphLock_a27719c34dd845cb3981aa2d5b1a5d705}\label{classconans_1_1model_1_1graph__lock_1_1GraphLock_a27719c34dd845cb3981aa2d5b1a5d705}} 
+\index{conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}!update\_lock@{update\_lock}}
+\index{update\_lock@{update\_lock}!conans.model.graph\_lock.GraphLock@{conans.model.graph\_lock.GraphLock}}
+\doxysubsubsection{\texorpdfstring{update\_lock()}{update\_lock()}}
+{\footnotesize\ttfamily def conans.\+model.\+graph\+\_\+lock.\+Graph\+Lock.\+update\+\_\+lock (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{new\+\_\+lock }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} update the lockfile with the contents of other one that was branched from this
+one and had some node re-built. Only missing package_id and PREV information will be
+updated, the references must match or it will be an error. The nodes IDS must match too.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+10/site-\/packages/conans/model/graph\+\_\+lock.\+py\end{DoxyCompactItemize}
