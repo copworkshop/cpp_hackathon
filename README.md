@@ -133,5 +133,5 @@ OR
             *	/update (POST) – performs an update action of the current stock
         ii.	You have integrated the existing application with the webserver 
         Note: The preferred approach would be to set up a webserver in a language, that can use the C++ modules directly. We strongly suggest Python for server and direct calls to business logic of what you initially saw as an UpdateQuality() method.
-        iii. You have covered the solution with unit tests
+        iii. You have covered the solution with unit tests.
 
