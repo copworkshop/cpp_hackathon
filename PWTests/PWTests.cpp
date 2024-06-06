@@ -59,3 +59,14 @@ TEST(PWInventory, CountNonEmpty) {
 	PWInventory inventory{ { InventoryItem{ "Item1", 0 , 0 }, InventoryItem{ "Item2", 0 , 0 }, InventoryItem{ "Item3", 0 , 0 } } };
 	EXPECT_EQ(inventory.Count(), 3);
 }
+TEST(PWInventory, OperatorThrow) {
+	PWInventory inventory{ { InventoryItem{ "Item1", 0 , 0 }, InventoryItem{ "Item2", 0 , 0 }, InventoryItem{ "Item3", 0 , 0 } } };
+	EXPECT_THROW(inventory[3], PWException);
+}
+
+TEST(PWInventory, OperatorNoThrow) {
+	PWInventory inventory{ { InventoryItem{ "Item1", 0 , 0 }, InventoryItem{ "Item2", 0 , 0 }, InventoryItem{ "Item3", 0 , 0 } } };
+	EXPECT_NO_THROW(inventory[0]);
+	EXPECT_NO_THROW(inventory[1]);
+	EXPECT_NO_THROW(inventory[2]);
+}
