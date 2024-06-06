@@ -112,3 +112,16 @@ jobs:
       working-directory: ${{github.workspace}}/server
       run:
         python -m tornado.test.runtests tests
+
+    - name: Install Doxygen
+      run: sudo apt-get install doxygen graphviz
+
+    - name: Generate Doxygen
+      run: |
+        doxygen Doxyfile
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@4.1.5
+      with:
+        branch: gh-pages
+        folder: docs/html
