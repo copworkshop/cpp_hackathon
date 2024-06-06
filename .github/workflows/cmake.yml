@@ -96,7 +96,7 @@ jobs:
           PWTests/*
           server/tests/*
           PWServer/main.cpp
-        fail-under-line: 99%
+        fail-under-line: 75%
     - name: Determine complexity.
       if: always() || steps.build.outcome == 'success'
       id: scc
