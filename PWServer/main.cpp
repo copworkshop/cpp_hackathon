@@ -38,7 +38,7 @@ int main(int argc, char* argv[])
             // Print the database configuration
             std::cout << "Database configuration: " << dbConfig << std::endl;
 
-            PWServer server(infile, outfile);
+            PWServer server(infile, outfile, dbConfig);
             server.Start();
         } else {
             PWServer server(infile, outfile);

@@ -18,6 +18,11 @@ PWServer::PWServer(const std::string& invFile, const std::string& outFile, const
 
 void PWServer::connectToDatabase() {
     con = mysql_init(NULL);
+    std::cout << "Connecting to database..." << std::endl;
+    std::cout << "Host: " << dbConfig["host"] << std::endl;
+    std::cout << "User: " << dbConfig["user"] << std::endl; 
+    std::cout << "Database: " << dbConfig["database"] << std::endl; 
+    
     if (!mysql_real_connect(con, dbConfig["host"].get<std::string>().c_str(), dbConfig["user"].get<std::string>().c_str(), dbConfig["password"].get<std::string>().c_str(), dbConfig["database"].get<std::string>().c_str(), 0, NULL, 0)) {
         std::cerr << mysql_error(con) << std::endl;
         exit(1);
