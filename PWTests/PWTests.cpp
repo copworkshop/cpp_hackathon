@@ -63,6 +63,26 @@ TEST(PWInventory, Load_Parse_Exception) {
 
 }
 
+TEST(PWInventory, Load_Invalid_Json_Exception) {
+
+	PWInventory inventory;
+	std::ofstream inventoryStream;
+	inventoryStream.open("invalid.json");
+	inventoryStream << "{ \"inventory\": [ { \"name\": \"Foo\", \"sellby\": 0 } ] }";
+	inventoryStream.close();
+
+	EXPECT_THROW({
+		try {
+			inventory.Load("invalid.json");
+		}
+		catch (const PWException& ex) {
+			EXPECT_TRUE(std::string(ex.what()).find("Invalid JSON format") != std::string::npos);
+			throw;
+		}
+	}, PWException);
+
+}
+
 TEST(PWInventory, UpdateQuality) {
 	PWInventory inventory{ { InventoryItem{ "Foo", 0 , 0 } } };
 	inventory.UpdateQuality();
