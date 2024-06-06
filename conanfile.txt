@@ -1,6 +1,7 @@
 [requires]
 nlohmann_json/[>=3.10.5]
 gtest/1.14.0
+libmysqlclient/8.1.0
 
 [generators]
 cmake_find_package
