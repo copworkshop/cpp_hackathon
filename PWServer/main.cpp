@@ -3,6 +3,13 @@
 #include <PWServer.h>
 #include <PWException.h>
 
+/**
+ * The main function of the program.
+ *
+ * @param argc The number of command-line arguments.
+ * @param argv An array of C-style strings containing the command-line arguments.
+ * @return The exit status of the program.
+ */
 int main(int argc, char* argv[])
 {
 	std::string infile,outfile;

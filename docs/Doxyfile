@@ -1,0 +1,19 @@
+# Doxyfile
+
+# Project name
+PROJECT_NAME = PWServer
+
+# Project version
+PROJECT_NUMBER = 1.0
+
+# Source code directory
+INPUT = ../
+
+# Output directory for generated documentation
+OUTPUT_DIRECTORY = ./html
+
+# Enable/disable the generation of the documentation
+GENERATE_HTML = YES
+GENERATE_LATEX = NO
+
+# Additional configuration options can be added here

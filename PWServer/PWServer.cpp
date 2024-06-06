@@ -10,6 +10,12 @@ PWServer::PWServer(const std::string& invFile,
 {
 }
 
+/**
+ * @brief Starts the PWServer.
+ * 
+ * This function initializes the inventory, updates the quality of the items in the inventory,
+ * and saves the updated inventory to a file.
+ */
 void PWServer::Start()
 {
 	//Init inventory
