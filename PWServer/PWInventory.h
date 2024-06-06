@@ -65,6 +65,24 @@ public:
     void UpdateQuality() override;
 
     /**
+     * @brief Updates the quality of the specified item.
+     * @param item The item to update the quality for.
+     */
+    void UpdateQualityForItem(InventoryItem& item);
+
+    /**
+     * @brief Updates the quality of regular items in the inventory.
+     * @param item The item to update the quality for.
+     */
+    void UpdateQualityForRegularItems(InventoryItem& item);
+
+    /**
+     * @brief Updates the quality of special items in the inventory.
+     * @param item The item to update the quality for.
+     */
+    void UpdateQualityForSpecialItems(InventoryItem& item);
+
+    /**
      * @brief Accesses the item at the specified index.
      * @param index The index of the item to access.
      * @return A reference to the InventoryItem at the specified index.

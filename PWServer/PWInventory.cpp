@@ -58,80 +58,62 @@ void PWInventory::Load(const std::string& file)
 	}
 }
 
-void PWInventory::UpdateQuality()
-{
-	for (size_t i = 0; i < items.size(); i++)
-	{
-		if (items[i].name != "Polka Dot Begonia" && items[i].name != "Gardening Workshop")
-		{
-			if (items[i].value > 0)
-			{
-				if (items[i].name != "White Monstera")
-				{
-					items[i].value = items[i].value - 1;
-				}
-			}
-		}
-		else
-		{
-			if (items[i].value < 50)
-			{
-				items[i].value = items[i].value + 1;
+void PWInventory::UpdateQualityForItem(InventoryItem& item) {
+    if (item.name == "Polka Dot Begonia" || item.name == "Gardening Workshop") {
+        UpdateQualityForSpecialItems(item);
+    } else {
+        UpdateQualityForRegularItems(item);
+    }
+}
 
-				if (items[i].name == "Gardening Workshop")
-				{
-					if (items[i].sellBy < 11)
-					{
-						if (items[i].value < 50)
-						{
-							items[i].value = items[i].value + 1;
-						}
-					}
+void PWInventory::UpdateQualityForSpecialItems(InventoryItem& item) {
+    if (item.value < 50) {
+        item.value += 1;
 
-					if (items[i].sellBy < 6)
-					{
-						if (items[i].value < 50)
-						{
-							items[i].value = items[i].value + 1;
-						}
-					}
-				}
-			}
-		}
+        if (item.name == "Gardening Workshop") {
+            if (item.sellBy < 11 && item.value < 50) {
+                item.value += 1;
+            }
 
-		if (items[i].name != "White Monstera")
-		{
-			items[i].sellBy = items[i].sellBy - 1;
-		}
+            if (item.sellBy < 6 && item.value < 50) {
+                item.value += 1;
+            }
+        }
+    }
 
-		if (items[i].sellBy < 0)
-		{
-			if (items[i].name != "Polka Dot Begonia")
-			{
-				if (items[i].name != "Gardening Workshop")
-				{
-					if (items[i].value > 0)
-					{
-						if (items[i].name != "White Monstera")
-						{
-							items[i].value = items[i].value - 1;
-						}
-					}
-				}
-				else
-				{
-					items[i].value = items[i].value - items[i].value;
-				}
-			}
-			else
-			{
-				if (items[i].value < 50)
-				{
-					items[i].value = items[i].value + 1;
-				}
-			}
-		}
-	}
+    if (item.name != "White Monstera") {
+        item.sellBy -= 1;
+    }
+
+    if (item.sellBy < 0) {
+        if (item.name == "Gardening Workshop") {
+            item.value = 0;
+        } else if (item.value < 50) {
+            item.value += 1;
+        }
+    }
+}
+
+void PWInventory::UpdateQualityForRegularItems(InventoryItem& item) {
+    if (item.value > 0 && item.name != "White Monstera") {
+        item.value -= 1;
+    }
+
+    if (item.name != "White Monstera") {
+        item.sellBy -= 1;
+    }
+
+    if (item.sellBy < 0) {
+        if (item.name != "White Monstera" && item.value > 0) {
+            item.value -= 1;
+        }
+    }
+}
+
+void PWInventory::UpdateQuality() {
+    for (size_t i = 0; i < items.size(); i++) {
+        UpdateQualityForItem(items[i]);
+    }
 }
 
 InventoryItem& PWInventory::operator[](int index)
