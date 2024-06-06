@@ -3,10 +3,10 @@ name: Measure Complexity
 on:
   push:
     branches:
-      - teamd/middlewest
+      - team/middlewest
   pull_request:
     branches:
-      - teamd/middlewest
+      - team/middlewest
 
 jobs:
   complexity:
