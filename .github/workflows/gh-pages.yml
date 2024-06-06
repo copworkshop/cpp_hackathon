@@ -15,7 +15,16 @@ jobs:
 
         steps:
         - uses: actions/checkout@v4.1.5
-        - uses: mattnotmitt/doxygen-action@v1.9.5
+
+        # Generate Doxygen documentation
+        - name: Generate Doxygen Documentation
+          uses: mattnotmitt/doxygen-action@v1.9.5
+
+        # Upload the generated documentation to the artifact store
+        - name: Upload Doxygen Documentation
+          uses: actions/upload-pages-artifact
+          with:
+            path: html
 
     # Deploy job
     deploy:
