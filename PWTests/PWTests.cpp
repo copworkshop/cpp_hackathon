@@ -13,6 +13,22 @@ TEST(PWInventory, Load) {
 	inventory.Load("test.json");
 }
 
+TEST(PWInventory, Load_Exception) {
+
+	PWInventory inventory;
+
+	EXPECT_THROW({
+		try {
+			inventory.Load("nonexistent.json");
+		}
+		catch (const PWException& ex) {
+			EXPECT_TRUE(std::string(ex.what()).find("failed to open inventory file") != std::string::npos);
+			throw;
+		}
+	}, PWException);
+
+}
+
 TEST(PWInventory, UpdateQuality) {
 	PWInventory inventory{ { InventoryItem{ "Foo", 0 , 0 } } };
 	inventory.UpdateQuality();
