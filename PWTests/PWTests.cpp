@@ -44,6 +44,25 @@ TEST(PWInventory, Load_Exception) {
 
 }
 
+TEST(PWInventory, Load_Parse_Exception) {
+
+	PWInventory inventory;
+	std::ofstream inventoryStream;
+	inventoryStream.open("empty.json");
+	inventoryStream << "";
+
+	EXPECT_THROW({
+		try {
+			inventory.Load("empty.json");
+		}
+		catch (const PWException& ex) {
+			EXPECT_TRUE(std::string(ex.what()).find("Failed to parse JSON") != std::string::npos);
+			throw;
+		}
+	}, PWException);
+
+}
+
 TEST(PWInventory, UpdateQuality) {
 	PWInventory inventory{ { InventoryItem{ "Foo", 0 , 0 } } };
 	inventory.UpdateQuality();
