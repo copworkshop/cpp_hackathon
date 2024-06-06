@@ -2,7 +2,7 @@ name: C/C++ CI
 
 on:
   push:
-    branches: [ team_ghc_ca ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -15,11 +15,17 @@ jobs:
     - name: Install dependencies
       run: sudo apt-get install lcov
 
+    - name: Create Build Directory
+      run: mkdir build
+
+    - name: Configure CMake
+      run: cmake -B build -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=YES
+
     - name: Build
-      run: g++ -fprofile-arcs -ftest-coverage -o test PWTests.cpp
+      run: cmake --build build --config Debug
 
     - name: Test
-      run: ./test
+      run: cd build && ctest
 
     - name: Coverage
       run: |
