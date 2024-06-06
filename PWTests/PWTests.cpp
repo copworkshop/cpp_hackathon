@@ -208,3 +208,10 @@ TEST(PWInventory, UpdateQuality_GardeningWorkshop_SellByBelow6_Value47) {
 	EXPECT_EQ(inventory[0].sellBy, 4);
 	EXPECT_EQ(inventory[0].value, 50);
 }
+
+TEST(PWInventory, UpdateQuality_GardeningWorkshop_SellByBelow0_Value0) {
+	PWInventory inventory{ { InventoryItem{ "Gardening Workshop", -1, 20 } } };
+	inventory.UpdateQuality();
+	EXPECT_EQ(inventory[0].sellBy, -2);
+	EXPECT_EQ(inventory[0].value, 0);
+}
