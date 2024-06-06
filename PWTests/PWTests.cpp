@@ -10,6 +10,19 @@ TEST(PWInventory, Save) {
 	inventory.Save("test.json");
 }
 
+TEST(PWInventory, Save_Exception) {
+	PWInventory inventory{ { InventoryItem{ "Foo", 0 , 0 } } };
+	EXPECT_THROW({
+		try {
+			inventory.Save("/nonexistent_directory/test.json");
+		}
+		catch (const PWException& ex) {
+			EXPECT_TRUE(std::string(ex.what()).find("failed to open inventory file") != std::string::npos);
+			throw;
+		}
+	}, PWException);
+}
+
 TEST(PWInventory, Load) {
 	PWInventory inventory;
 	inventory.Load("test.json");
