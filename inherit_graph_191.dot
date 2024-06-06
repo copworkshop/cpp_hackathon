@@ -1,8 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="jwt.jwk_set_cache.JWKSet\lCache",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjwt_1_1jwk__set__cache_1_1JWKSetCache.html",tooltip=" "];
-}
