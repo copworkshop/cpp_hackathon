@@ -1,0 +1,19 @@
+name: Generate GitHub Pages
+
+on:
+    push:
+      branches: 
+        - "master"
+        - "team/**"
+    pull_request:
+      branches: [ "master" ]
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: DenverCoder1/doxygen-github-pages-action@v1.3.0
+            with:
+                folder: html
+                github_token: ${{ secrets.GITHUB_TOKEN }}
