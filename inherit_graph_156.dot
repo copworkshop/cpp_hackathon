@@ -1,0 +1,30 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2965 [label="RuntimeError",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node2965 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="jinja2.compiler.VisitorExit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjinja2_1_1compiler_1_1VisitorExit.html",tooltip=" "];
+  Node2965 -> Node2967 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2967 [label="pip._vendor.pkg_resources.\lExtractionError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1pkg__resources_1_1ExtractionError.html",tooltip=" "];
+  Node2965 -> Node2968 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2968 [label="pip._vendor.pygments.scanner.\lEndOfText",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1pygments_1_1scanner_1_1EndOfText.html",tooltip=" "];
+  Node2965 -> Node2969 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2969 [label="pip._vendor.requests.cookies.\lCookieConflictError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1requests_1_1cookies_1_1CookieConflictError.html",tooltip=" "];
+  Node2965 -> Node2970 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2970 [label="pkg_resources.Extraction\lError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg__resources_1_1ExtractionError.html",tooltip=" "];
+  Node2965 -> Node2971 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2971 [label="pygments.scanner.EndOfText",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpygments_1_1scanner_1_1EndOfText.html",tooltip=" "];
+  Node2965 -> Node2972 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2972 [label="requests.cookies.CookieConflict\lError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrequests_1_1cookies_1_1CookieConflictError.html",tooltip=" "];
+  Node2965 -> Node2973 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2973 [label="setuptools.errors.Removed\lCommandError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsetuptools_1_1errors_1_1RemovedCommandError.html",tooltip=" "];
+  Node3478 [label="DistutilsError",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3478 -> Node3479 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3479 [label="setuptools.archive\l_util.UnrecognizedFormat",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsetuptools_1_1archive__util_1_1UnrecognizedFormat.html",tooltip=" "];
+  Node3478 -> Node2973 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3478 -> Node3480 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3480 [label="setuptools.sandbox.Sandbox\lViolation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsetuptools_1_1sandbox_1_1SandboxViolation.html",tooltip=" "];
+}

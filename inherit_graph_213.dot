@@ -1,0 +1,38 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node423 [label="etree.CommentBase",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node423 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="lxml.html.HtmlComment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlxml_1_1html_1_1HtmlComment.html",tooltip=" "];
+  Node518 [label="etree.ElementBase",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node518 -> Node519 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node519 [label="lxml.html.HtmlElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlxml_1_1html_1_1HtmlElement.html",tooltip=" "];
+  Node519 -> Node520 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node520 [label="lxml.html.FormElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlxml_1_1html_1_1FormElement.html",tooltip="form handling"];
+  Node519 -> Node521 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node521 [label="lxml.html.InputElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlxml_1_1html_1_1InputElement.html",tooltip=" "];
+  Node519 -> Node522 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node522 [label="lxml.html.LabelElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlxml_1_1html_1_1LabelElement.html",tooltip=" "];
+  Node519 -> Node523 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node523 [label="lxml.html.SelectElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlxml_1_1html_1_1SelectElement.html",tooltip=" "];
+  Node519 -> Node524 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node524 [label="lxml.html.TextareaElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlxml_1_1html_1_1TextareaElement.html",tooltip=" "];
+  Node529 [label="etree.EntityBase",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node529 -> Node530 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node530 [label="lxml.html.HtmlEntity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlxml_1_1html_1_1HtmlEntity.html",tooltip=" "];
+  Node967 [label="lxml.html.HtmlMixin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlxml_1_1html_1_1HtmlMixin.html",tooltip=" "];
+  Node967 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node967 -> Node519 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node967 -> Node530 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node967 -> Node968 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node968 [label="lxml.html.HtmlProcessing\lInstruction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlxml_1_1html_1_1HtmlProcessingInstruction.html",tooltip=" "];
+  Node996 [label="lxml.html.InputMixin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlxml_1_1html_1_1InputMixin.html",tooltip=" "];
+  Node996 -> Node521 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node996 -> Node523 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node996 -> Node524 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2886 [label="etree.PIBase",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node2886 -> Node968 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

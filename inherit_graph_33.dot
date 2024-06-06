@@ -1,0 +1,36 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node476 [label="dict",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node476 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="bottle.ConfigDict",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbottle_1_1ConfigDict.html",tooltip=" "];
+  Node476 -> Node478 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node478 [label="conans.model.build\l_info.BuildModulesDict",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconans_1_1model_1_1build__info_1_1BuildModulesDict.html",tooltip=" "];
+  Node476 -> Node479 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node479 [label="pip._vendor.distlib.compat.\lConvertingDict",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1distlib_1_1compat_1_1ConvertingDict.html",tooltip=" "];
+  Node476 -> Node480 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node480 [label="pip._vendor.distlib.compat.\lOrderedDict",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1distlib_1_1compat_1_1OrderedDict.html",tooltip=" "];
+  Node476 -> Node481 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node481 [label="pip._vendor.html5lib.\l_utils.MethodDispatcher",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1html5lib_1_1__utils_1_1MethodDispatcher.html",tooltip=" "];
+  Node476 -> Node482 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node482 [label="pip._vendor.pkg_resources.\lZipManifests",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1pkg__resources_1_1ZipManifests.html",tooltip=" "];
+  Node482 -> Node483 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node483 [label="pip._vendor.pkg_resources.\lMemoizedZipManifests",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1pkg__resources_1_1MemoizedZipManifests.html",tooltip=" "];
+  Node476 -> Node484 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node484 [label="pip._vendor.pkg_resources.\l_ReqExtras",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1pkg__resources_1_1__ReqExtras.html",tooltip=" "];
+  Node476 -> Node485 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node485 [label="pip._vendor.pyparsing.util.\lUnboundedMemo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1pyparsing_1_1util_1_1UnboundedMemo.html",tooltip=" "];
+  Node476 -> Node486 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node486 [label="pip._vendor.requests.structures.\lLookupDict",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1requests_1_1structures_1_1LookupDict.html",tooltip=" "];
+  Node476 -> Node487 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node487 [label="pkg_resources.ZipManifests",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg__resources_1_1ZipManifests.html",tooltip=" "];
+  Node487 -> Node488 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node488 [label="pkg_resources.MemoizedZip\lManifests",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg__resources_1_1MemoizedZipManifests.html",tooltip=" "];
+  Node476 -> Node489 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node489 [label="pkg_resources._ReqExtras",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg__resources_1_1__ReqExtras.html",tooltip=" "];
+  Node476 -> Node490 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node490 [label="requests.structures.LookupDict",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrequests_1_1structures_1_1LookupDict.html",tooltip=" "];
+}
