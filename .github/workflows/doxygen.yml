@@ -14,7 +14,10 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Install Doxygen
-      run: sudo apt-get install doxygen
+      run: |
+        sudo apt-get install doxygen
+        rm docs/html -rf
+        mkdir docs/html
 
     - name: Generate Doxygen
       run: doxygen docs/Doxyfile
