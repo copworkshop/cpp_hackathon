@@ -1,9 +1,36 @@
 #include "PWInventory.h"
 
 namespace {
+void updateValue(InventoryItem& item)
+{
+	if (item.name == "Polka Dot Begonia") { item.value = std::min(item.value + 1, 50); return; }
+
+	if (item.name == "Gardening Workshop")
+	{
+		item.value = std::min(item.value + 1, 50);
+
+		if (item.sellBy < 11 && item.value < 50)
+		{
+			item.value++;
+		}
+
+		if (item.sellBy < 6 && item.value < 50)
+		{
+			item.value++;
+		}
+
+		return;
+	}
+
+	if (item.name == "White Monstera") return;
+
+	if (item.value > 0) --item.value;
+}
+
 void decrementSellBy(InventoryItem& item)
 {
-	item.sellBy -= item.name != "White Monstera" ? 1 : 0;
+	if (item.name == "White Monstera") return;
+	--item.sellBy;
 }
 
 void applyDiscount(InventoryItem& item)
@@ -16,7 +43,7 @@ void applyDiscount(InventoryItem& item)
 
 	if (item.name == "White Monstera") return;
 
-	item.value = std::max(item.value - 1, 0);
+	if (item.value > 0) --item.value;
 }
 }
 
@@ -82,35 +109,7 @@ void PWInventory::UpdateQuality()
 {
 	for (auto& item : items)
 	{
-		if (item.name != "Polka Dot Begonia" && item.name != "Gardening Workshop")
-		{
-			if (item.value > 0 && item.name != "White Monstera")
-			{
-				item.value--;
-			}
-		}
-		else
-		{
-			if (item.value < 50)
-			{
-				item.value++;
-
-				if (item.name == "Gardening Workshop")
-				{
-					if (item.sellBy < 11 && item.value < 50)
-					{
-						item.value++;
-					}
-
-					if (item.sellBy < 6 && item.value < 50)
-					{
-						item.value++;
-					}
-				}
-			}
-		}
-
-
+		updateValue(item);
 		decrementSellBy(item);
 		applyDiscount(item);
 	}
