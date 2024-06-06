@@ -1,0 +1,4 @@
+<map id="PWException" name="PWException">
+<area shape="rect" id="node1" title="Custom exception class derived from std::exception." alt="" coords="7,79,105,104"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,107,31"/>
+</map>
