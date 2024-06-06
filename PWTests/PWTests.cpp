@@ -2,6 +2,8 @@
 #include <PWInventory.h>
 #include <PWServer.h>
 #include <PWException.h>
+#include <gmock/gmock.h>
+
 // TIP: Keep the tests simple, aim for good coverage 
 // TEST(PWInventory, FooBad) {
 // 	PWInventory inventory{ { InventoryItem{ "Foo", 0 , 0 } } };
@@ -12,7 +14,9 @@ TEST(PWInventory, FooGood) {
 	EXPECT_EQ(inventory[0].name, "Foo");
 }
 
-TEST(PWServerTest, shouldThrowIfFileCantBeOpened)
+
+using namespace ::testing;
+TEST(PWServerTest, shouldThrowIfFileCouldntBeOpen)
 {
     // Arrange
     std::string invFile = "input_inventory.txt";
