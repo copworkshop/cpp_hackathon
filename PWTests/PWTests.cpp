@@ -188,7 +188,6 @@ TEST(PWInventory, UpdateQuality_GardeningWorkshopbelow50) {
 	EXPECT_EQ(inventory[0].value, 50);
 }
 
-
 TEST(PWInventory, UpdateQuality_GardeningWorkshop_SellByBelow6_Value48) {
 	PWInventory inventory{ { InventoryItem{ "Gardening Workshop", 5, 48 } } };
 	inventory.UpdateQuality();
@@ -198,6 +197,13 @@ TEST(PWInventory, UpdateQuality_GardeningWorkshop_SellByBelow6_Value48) {
 
 TEST(PWInventory, UpdateQuality_GardeningWorkshop_SellByBelow6_Value49) {
 	PWInventory inventory{ { InventoryItem{ "Gardening Workshop", 5, 49 } } };
+	inventory.UpdateQuality();
+	EXPECT_EQ(inventory[0].sellBy, 4);
+	EXPECT_EQ(inventory[0].value, 50);
+}
+
+TEST(PWInventory, UpdateQuality_GardeningWorkshop_SellByBelow6_Value47) {
+	PWInventory inventory{ { InventoryItem{ "Gardening Workshop", 5, 47 } } };
 	inventory.UpdateQuality();
 	EXPECT_EQ(inventory[0].sellBy, 4);
 	EXPECT_EQ(inventory[0].value, 50);
