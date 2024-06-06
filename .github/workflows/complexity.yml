@@ -1,0 +1,23 @@
+name: Measure Complexity
+
+on:
+  push:
+    branches:
+      - teamd/middlewest
+  pull_request:
+    branches:
+      - teamd/middlewest
+
+jobs:
+  complexity:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install lizard
+        run: pip install lizard
+
+      - name: Run lizard
+        run: lizard -x "./PWTests/*" -l C++ .
