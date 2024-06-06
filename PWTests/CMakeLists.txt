@@ -51,3 +51,8 @@ add_custom_target(unit_tests
     DEPENDS
         test_project
 )
+
+
+install(FILES dummy_inventory.json
+    DESTINATION .
+)

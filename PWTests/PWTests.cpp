@@ -25,7 +25,7 @@ TEST(PWInventory, LoadShouldThrowIfCantLoad) {
 
 TEST(PWInventory, LoadShouldLoadSampleFile) {
 	PWInventory inventory;
-	std::string filename = "../../../PWTests/dummy_inventory.json";
+	std::string filename = "dummy_inventory.json";
 
 	inventory.Load(filename);
 	EXPECT_EQ(5, inventory.Count());
