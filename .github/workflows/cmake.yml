@@ -98,7 +98,7 @@ jobs:
       id: scc
       uses: hdmsantander/scc-docker-action@3.0
       with:
-        args: ${{ env.workspace }} PWServer
+        args: ${{ env.workspace }}/PWServer
     - name: Run CSV file tests
       if: always() || steps.install.outcome == 'success'
       working-directory: ${{github.workspace}}/tests/src
