@@ -112,4 +112,3 @@ jobs:
       working-directory: ${{github.workspace}}/server
       run:
         python -m tornado.test.runtests tests
-  

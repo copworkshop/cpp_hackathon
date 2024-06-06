@@ -9,12 +9,7 @@ on:
         branches: [ "master" ]
 
 jobs:
-    # Build job
-    build:
-        # Grant GITHUB_TOKEN the permissions required to commit to branch
-        permissions:
-            contents: write   # to commit to gh-pages branch
-
+    generate:
         runs-on: ubuntu-latest
 
         steps:
@@ -22,12 +17,34 @@ jobs:
 
         # Generate Doxygen documentation
         - name: Generate Doxygen Documentation
-          uses: mattnotmitt/doxygen-action@v1.9.5
+          uses: mattnotmitt/doxygen-action@v1.9.8
 
-        # Push the generated documentation to the gh-pages-CodeAvengers branch
-        - name: Push to gh-pages-CodeAvengers
-          uses: JamesIves/github-pages-deploy-action@4.1.5
+        # Setup pages
+        - name: Setup Pages
+          uses: actions/configure-pages@v5
+
+        # Upload the generated documentation to the artifact store
+        - name: Upload Artifact
+          uses: actions/upload-pages-artifact@v3
           with:
-            branch: gh-pages-CodeAvengers
-            folder: html
-            target-folder: html
+            path: html
+
+    deploy:
+        runs-on: ubuntu-latest
+        needs: generate
+
+        # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+        permissions:
+            pages: write      # to deploy to Pages
+            id-token: write   # to verify the deployment originates from an appropriate source
+
+        # Deploy to the github-pages environment
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+    
+        steps:
+            # Deploy the documentation to GitHub Pages
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v4
