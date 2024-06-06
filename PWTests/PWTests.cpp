@@ -173,3 +173,17 @@ TEST(PWServer, StartNoThrow) {
 
 	EXPECT_NO_THROW(server.Start());
 }
+
+TEST(PWInventory, UpdateQualityMaxValue) {
+	PWInventory inventory{ { InventoryItem{ "Gardening Workshop", 10, 50 } } };
+	inventory.UpdateQuality();
+	EXPECT_EQ(inventory[0].sellBy, 9);
+	EXPECT_EQ(inventory[0].value, 50);
+}
+
+TEST(PWInventory, UpdateQualityMinValue) {
+	PWInventory inventory{ { InventoryItem{ "Low Value Item", 10, 0 } } };
+	inventory.UpdateQuality();
+	EXPECT_EQ(inventory[0].sellBy, 9);
+	EXPECT_EQ(inventory[0].value, 0);
+}
