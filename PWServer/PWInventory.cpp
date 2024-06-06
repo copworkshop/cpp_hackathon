@@ -71,17 +71,19 @@ void PWInventory::updatePolkaDotBegonia(InventoryItem &item) {
 void PWInventory::updateGardeningWorkshop(InventoryItem &item) {
     if (item.value < 50) {
         item.value++;
-        if (item.sellBy < 11 && item.value < 50) {
+        if (item.sellBy < 11 ) {
             item.value++;
         }
-        if (item.sellBy < 6 && item.value < 50) {
+        if (item.sellBy < 6 ) {
             item.value++;
         }
     }
+	
+	item.sellBy--;
+
     if (item.sellBy < 0) {
         item.value = 0;
     }
-    item.sellBy--;
 }
 
 void PWInventory::UpdateQuality() {
