@@ -69,74 +69,74 @@ void PWInventory::Load(const std::string& file)
 }
 void PWInventory::UpdateQuality()
 {
-	for (size_t i = 0; i < items.size(); i++)
+	for (auto& item : items)
 	{
-		if (items[i].name != "Polka Dot Begonia" && items[i].name != "Gardening Workshop")
+		if (item.name != "Polka Dot Begonia" && item.name != "Gardening Workshop")
 		{
-			if (items[i].value > 0)
+			if (item.value > 0)
 			{
-				if (items[i].name != "White Monstera")
+				if (item.name != "White Monstera")
 				{
-					items[i].value = items[i].value - 1;
+					item.value = item.value - 1;
 				}
 			}
 		}
 		else
 		{
-			if (items[i].value < 50)
+			if (item.value < 50)
 			{
-				items[i].value = items[i].value + 1;
+				item.value = item.value + 1;
 
-				if (items[i].name == "Gardening Workshop")
+				if (item.name == "Gardening Workshop")
 				{
-					if (items[i].sellBy < 11)
+					if (item.sellBy < 11)
 					{
-						if (items[i].value < 50)
+						if (item.value < 50)
 						{
-							items[i].value = items[i].value + 1;
+							item.value = item.value + 1;
 						}
 					}
 
-					if (items[i].sellBy < 6)
+					if (item.sellBy < 6)
 					{
-						if (items[i].value < 50)
+						if (item.value < 50)
 						{
-							items[i].value = items[i].value + 1;
+							item.value = item.value + 1;
 						}
 					}
 				}
 			}
 		}
 
-		if (items[i].name != "White Monstera")
+		if (item.name != "White Monstera")
 		{
-			items[i].sellBy = items[i].sellBy - 1;
+			item.sellBy = item.sellBy - 1;
 		}
 
-		if (items[i].sellBy < 0)
+		if (item.sellBy < 0)
 		{
-			if (items[i].name != "Polka Dot Begonia")
+			if (item.name != "Polka Dot Begonia")
 			{
-				if (items[i].name != "Gardening Workshop")
+				if (item.name != "Gardening Workshop")
 				{
-					if (items[i].value > 0)
+					if (item.value > 0)
 					{
-						if (items[i].name != "White Monstera")
+						if (item.name != "White Monstera")
 						{
-							items[i].value = items[i].value - 1;
+							item.value = item.value - 1;
 						}
 					}
 				}
 				else
 				{
-					items[i].value = items[i].value - items[i].value;
+					item.value = item.value - item.value;
 				}
 			}
 			else
 			{
-				if (items[i].value < 50)
+				if (item.value < 50)
 				{
-					items[i].value = items[i].value + 1;
+					item.value = item.value + 1;
 				}
 			}
 		}
