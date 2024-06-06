@@ -23,3 +23,4 @@ jobs:
       with:
         branch: team_ghc-ca
         folder: doc/html  # or replace with the directory where your HTML files are generated
+        token: ${{ secrets.GH_TOKEN }}
