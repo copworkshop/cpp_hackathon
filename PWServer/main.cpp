@@ -28,18 +28,22 @@ int main(int argc, char* argv[])
 
     try
     {
-        // if (!dbfile.empty()) {
-        //     // Read database configuration from file
-        //     std::ifstream dbConfigFile(dbfile);
-        //     nlohmann::json dbConfig;
-        //     dbConfigFile >> dbConfig;
+        if (!dbfile.empty()) {
+            // Read database configuration from file
+			std::cout << "Reading database configuration from file: " << dbfile << std::endl;
+            std::ifstream dbConfigFile(dbfile);
+            nlohmann::json dbConfig;
+            dbConfigFile >> dbConfig;
 
-        //     PWServer server(infile, outfile, dbConfig);
-        //     server.Start();
-        // } else {
+            // Print the database configuration
+            std::cout << "Database configuration: " << dbConfig << std::endl;
+
             PWServer server(infile, outfile);
             server.Start();
-        // }
+        } else {
+            PWServer server(infile, outfile);
+            server.Start();
+        }
     }
     catch (const PWException& exp)
     {
