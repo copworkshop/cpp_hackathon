@@ -7,7 +7,10 @@ void updateValue(InventoryItem& item)
 
 	if (item.name == "Gardening Workshop")
 	{
-		int increaseBy = item.sellBy < 11 ? item.sellBy < 6 ? 3 : 2 : 1;
+		int increaseBy = 1;
+		if (item.sellBy < 11) ++increaseBy;
+		if (item.sellBy < 6) ++increaseBy;
+	
 		item.value = std::min(item.value + increaseBy, 50);
 
 		return;
