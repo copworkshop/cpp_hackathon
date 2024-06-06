@@ -109,3 +109,9 @@ TEST(PWInventory, SaveFileSuccess) {
 
 	EXPECT_EQ(fileContent, expectedContent);
 }
+
+TEST(PWException, MessageConstructor) {
+	constexpr auto message = "Test exception message";
+	PWException exception(message);
+	EXPECT_STREQ(exception.what(), message);
+}
