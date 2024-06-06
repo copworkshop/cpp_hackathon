@@ -1,5 +1,6 @@
 
 find_package(nlohmann_json REQUIRED)
+find_package(MySQL REQUIRED)
 
 add_library(PW_Server)
 add_library(PW::SERVER ALIAS PW_Server)
@@ -17,6 +18,7 @@ target_link_libraries(PW_Server
     PUBLIC
         PW::COMMON
         nlohmann_json::nlohmann_json
+        MySQL::MySQL
 )
 
 target_include_directories(PW_Server 
