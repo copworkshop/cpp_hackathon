@@ -113,7 +113,8 @@ jobs:
       run:
         python -m tornado.test.runtests tests
     - name: Install Google Test
-    run: sudo apt-get install libgtest-dev && cd /usr/src/gtest && sudo cmake . && sudo make && sudo cp *.a /usr/lib
+      run: |
+        sudo apt-get install libgtest-dev && cd /usr/src/gtest && sudo cmake . && sudo make && sudo cp *.a /usr/lib
 
     - name: Build and Test
       run: |
@@ -122,4 +123,3 @@ jobs:
         cmake ..
         make
         ctest --output-on-failure
-    
