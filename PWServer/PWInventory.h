@@ -32,7 +32,6 @@ public:
 
 protected:
 	std::vector<InventoryItem> items;
-	void UpdatePolkaDotBegonia(InventoryItem& item);
-	void UpdateGardeningWorkshop(InventoryItem& item);
-	void UpdateOtherItems(InventoryItem& item);
+	void UpdateQualityForNormalItem(InventoryItem& item);
+	void UpdateQualityForSpecialItem(InventoryItem& item);
 };

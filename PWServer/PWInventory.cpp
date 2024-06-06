@@ -1,4 +1,9 @@
 #include "PWInventory.h"
+#include "PWException.h"
+#include <fstream>
+#include <filesystem>
+#include <nlohmann/json.hpp>
+
 
 void PWInventory::Save(const std::string& file)
 {
@@ -29,19 +34,31 @@ void PWInventory::Save(const std::string& file)
 
 void PWInventory::Load(const std::string& file)
 {
-	std::ifstream inventoryStream;
-	inventoryStream.open(file.c_str(), std::ios::in);
+	if (!std::filesystem::exists(file)) {
+		throw PWException("File does not exist: " + file);
+	}
+
+	std::ifstream inventoryStream(file.c_str(), std::ios::in);
+
 	if (!inventoryStream) {
-		throw PWException("failed to open inventory file at %s: ", file.c_str());
+		throw PWException("Failed to open inventory file: " + file);
 	}
 
 	nlohmann::json inventoryJson;
-	inventoryStream >> inventoryJson;
+	try {
+		inventoryStream >> inventoryJson;
+	} catch (nlohmann::json::parse_error& e) {
+		throw PWException("Failed to parse JSON: " + std::string(e.what()));
+	}
 
 	auto root = inventoryJson["inventory"];
 
 	for (auto& jsonItem : root)
 	{
+		if (!jsonItem.contains("name") || !jsonItem.contains("sellby") || !jsonItem.contains("value")) {
+			throw PWException("Invalid JSON format");
+		}
+
 		InventoryItem newItem;
 		newItem.name = jsonItem["name"];
 		newItem.sellBy = jsonItem["sellby"];
@@ -51,68 +68,56 @@ void PWInventory::Load(const std::string& file)
 	}
 }
 
-void PWInventory::UpdateQuality()
+void PWInventory::UpdateQualityForNormalItem(InventoryItem& item)
 {
-    for (auto& item : items)
+    if (item.value > 0)
     {
-        if (item.name == "Polka Dot Begonia")
-        {
-            UpdatePolkaDotBegonia(item);
-        }
-        else if (item.name == "Gardening Workshop")
-        {
-            UpdateGardeningWorkshop(item);
-        }
-        else
-        {
-            UpdateOtherItems(item);
-        }
+        item.value--;
+    }
+    if (item.sellBy < 0 && item.value > 0)
+    {
+        item.value--;
     }
 }
 
-void PWInventory::UpdatePolkaDotBegonia(InventoryItem& item)
+void PWInventory::UpdateQualityForSpecialItem(InventoryItem& item)
 {
     if (item.value < 50)
     {
         item.value++;
+        if (item.sellBy < 11 && item.value < 50)
+        {
+            item.value++;
+        }
+        if (item.sellBy < 6 && item.value < 50)
+        {
+            item.value++;
+        }
     }
-
-    if (item.sellBy < 0 && item.value < 50)
-    {
-        item.value++;
-    }
-
-    item.sellBy--;
-}
-
-void PWInventory::UpdateGardeningWorkshop(InventoryItem& item)
-{
-    if (item.sellBy < 11 && item.value < 50)
-    {
-        item.value++;
-    }
-
     if (item.sellBy < 0)
     {
         item.value = 0;
     }
-
-    item.sellBy--;
 }
 
-void PWInventory::UpdateOtherItems(InventoryItem& item)
+void PWInventory::UpdateQuality()
 {
-    if (item.value > 0 && item.name != "White Monstera")
+    for (auto& item : items)
     {
-        item.value--;
-    }
+        if (item.name == "Polka Dot Begonia" || item.name == "Gardening Workshop")
+        {
+            UpdateQualityForSpecialItem(item);
+        }
+        else if (item.name != "White Monstera")
+        {
+            UpdateQualityForNormalItem(item);
+        }
 
-    if (item.sellBy < 0 && item.value > 0 && item.name != "White Monstera")
-    {
-        item.value--;
+        if (item.name != "White Monstera")
+        {
+            item.sellBy--;
+        }
     }
-
-    item.sellBy--;
 }
 
 InventoryItem& PWInventory::operator[](int index)

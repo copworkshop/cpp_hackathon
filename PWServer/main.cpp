@@ -1,7 +1,7 @@
-#include <iostream>
-
 #include <PWServer.h>
 #include <PWException.h>
+
+#include <iostream>
 
 /**
  * The main function of the program.
