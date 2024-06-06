@@ -53,6 +53,8 @@ add_custom_target(unit_tests
 )
 
 
-install(FILES dummy_inventory.json
-    DESTINATION .
+add_custom_command(TARGET test_project POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        ${CMAKE_CURRENT_SOURCE_DIR}/dummy_inventory.json
+        $<TARGET_FILE_DIR:test_project>
 )
