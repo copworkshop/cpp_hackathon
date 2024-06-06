@@ -62,7 +62,7 @@ void PWInventory::Load(const std::string& file)
 }
 
 void PWInventory::updatePolkaDotBegonia(InventoryItem &item) {
-    if (item.sellBy < 0 && item.value < 50) {
+    if (item.value < 50) {
         item.value++;
     }
     item.sellBy--;
