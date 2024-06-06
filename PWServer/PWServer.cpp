@@ -13,6 +13,8 @@ PWServer::PWServer(const std::string& invFile,
 void PWServer::Start()
 {
 	//Init inventory
+	// TODO: Refactor to allow mock injection, but PWInventory has operator[] function
+	// which is not supported by gmock to be mocked so it needs another refactor.
 	std::unique_ptr<PWInventory> inventory = std::make_unique<PWInventory>();
 	inventory->Load(invFile);
 
