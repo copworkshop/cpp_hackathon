@@ -1,5 +1,7 @@
 #include <gtest/gtest.h>
 #include <PWInventory.h>
+#include <PWException.h>
+#include <string>
 
 // TIP: Keep the tests simple, aim for good coverage 
 
@@ -22,7 +24,7 @@ TEST(PWInventory, Load_Exception) {
 			inventory.Load("nonexistent.json");
 		}
 		catch (const PWException& ex) {
-			EXPECT_TRUE(std::string(ex.what()).find("failed to open inventory file") != std::string::npos);
+			EXPECT_TRUE(std::string(ex.what()).find("File does not exist") != std::string::npos);
 			throw;
 		}
 	}, PWException);
