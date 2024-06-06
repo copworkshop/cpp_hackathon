@@ -31,3 +31,9 @@ compiler.version=12
 [env]
 CC=C:/msys64/mingw64/bin/gcc
 CXX=C:/msys64/mingw64/bin/g++
+
+[requires]
+mysqlcppconn/8.0.17
+
+[generators]
+cmake
